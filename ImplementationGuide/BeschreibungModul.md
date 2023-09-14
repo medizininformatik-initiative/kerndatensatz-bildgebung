@@ -10,8 +10,14 @@ Zur Modellierung wurde die Imaging Study in drei Teilmodule strukturiert:
 2. Studienebene (Referenzen)
 3. Serienebene
 
-## 1. Studie (nicht Referenzen)
+### 1. Studie (nicht Referenzen)
 
-## 2. Studie (Referenzen)
+### 2. Studie (Referenzen)
 
-## 3. Serie
+### 3. Serie
+
+#### Ausschnitt aus ART-DECOR
+![image](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/assets/98951773/14231b52-43a7-414f-8f3c-4167736815df)
+
+Die Referenzen "Endpoint" und "Specimen" wurden weggelassen. Alle anderen Elemente des Profils "Imaging Study" wurden übernommen. 
+Die Originalnamen der Elemente aus dem FHIR Profil wurden ins Deutsche übersetzt und ggf. zur besseren Lesbarkeit angepasst.
