@@ -137,7 +137,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://radlex.org/RID/RID1559"
+          "valueSet": "https://radlex.org"
         }
       },
       {
@@ -146,7 +146,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "example",
-          "valueSet": "http://hl7.org/fhir/R4/valueset-procedure-reason.html"
+          "valueSet": "http://hl7.org/fhir/ValueSet/procedure-reason"
         }
       },
       {
@@ -236,33 +236,12 @@
         "mustSupport": true
       },
       {
-        "id": "ImagingStudy.series.instance",
-        "path": "ImagingStudy.series.instance",
-        "mustSupport": true
-      },
-      {
-        "id": "ImagingStudy.series.instance.uid",
-        "path": "ImagingStudy.series.instance.uid",
-        "mustSupport": true
-      },
-      {
         "id": "ImagingStudy.series.instance.sopClass",
         "path": "ImagingStudy.series.instance.sopClass",
-        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html"
         }
-      },
-      {
-        "id": "ImagingStudy.series.instance.number",
-        "path": "ImagingStudy.series.instance.number",
-        "mustSupport": true
-      },
-      {
-        "id": "ImagingStudy.series.instance.title",
-        "path": "ImagingStudy.series.instance.title",
-        "mustSupport": true
       }
     ]
   }

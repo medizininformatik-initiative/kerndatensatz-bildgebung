@@ -18,9 +18,9 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * numberOfSeries 0..1 MS
 * numberOfInstances 0..1 MS
 * procedureCode 0..* MS
-* procedureCode from https://radlex.org/RID/RID1559 (extensible)
+* procedureCode from $radlex (extensible)
 * reasonCode 0..* MS
-* reasonCode from http://hl7.org/fhir/R4/valueset-procedure-reason.html (example)
+* reasonCode from $reasonCode (example)
 * note 0..* MS
 * description 0..1 MS
 
@@ -32,17 +32,17 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.description 0..1 MS
 * series.numberOfInstances 0..1 MS
 * series.bodySite 0..1 MS 
-* series.bodySite from http://hl7.org/fhir/ValueSet/body-site
+* series.bodySite from $bodySite
 * series.laterality 0..1 MS
-* series.laterality from http://hl7.org/fhir/ValueSet/bodysite-laterality
+* series.laterality from $laterality
 * series.started 0..1 MS
 * series.performer 0..* MS 
 * series.performer.function 0..1 MS 
-* series.performer.function from http://hl7.org/fhir/ValueSet/series-performer-function
+* series.performer.function from $performerFunction
 * series.performer.actor 1..1 MS
-* series.instance 0..* MS
-* series.instance.uid 1..1 MS
-* series.instance.sopClass 1..1 MS
+* series.instance 0..*
+* series.instance.uid 1..1
+* series.instance.sopClass 1..1
 * series.instance.sopClass from https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html
-* series.instance.number 0..1 MS
-* series.instance.title 0..1 MS
+* series.instance.number 0..1
+* series.instance.title 0..1 
