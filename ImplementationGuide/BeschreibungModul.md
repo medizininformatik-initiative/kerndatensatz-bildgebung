@@ -10,8 +10,8 @@ Zur Modellierung wurde die Imaging Study in drei Teilmodule strukturiert:
 2. Studienebene (Referenzen)
 3. Serienebene
 
-# 1. Studie (nicht Referenzen)
+### 1. Studie (nicht Referenzen)
 
-# 2. Studie (Referenzen)
+### 2. Studie (Referenzen)
 
-# 3. Serie
+### 3. Serie
