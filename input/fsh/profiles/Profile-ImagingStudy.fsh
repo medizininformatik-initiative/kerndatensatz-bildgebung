@@ -23,7 +23,6 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * reasonCode from http://hl7.org/fhir/R4/valueset-procedure-reason.html (example)
 * note 0..* MS
 * description 0..1 MS
-<<<<<<< HEAD
 
 * series 0..* MS 
 * series.uid 1..1 MS 
@@ -46,6 +45,4 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.instance.sopClass 1..1 MS
 * series.instance.sopClass from https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html
 * series.instance.number 0..1 MS
-* series.instance.title 0..1 MS 
-=======
->>>>>>> ffbeb19d4f36ae5efc24c30d7ccf981f8abb8d26
+* series.instance.title 0..1 MS
