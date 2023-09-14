@@ -1,0 +1,16 @@
+canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung
+fhirVersion: 4.0.1
+FSHOnly: false
+applyExtensionMetadataToRoot: false
+id: mii-ig-bildgebung-v2023
+name: MII_IG_Bildgebung_v2023
+status: active
+version: "v2023.0.0"
+packageId: de.medizininformatikinitiative.kerndatensatz.bildgebung
+copyrightYear: 2023+
+releaseLabel: ci-build
+publisher:
+  name: Medizininformatik Initiative
+  url: https://www.medizininformatik-initiative.de/
+dependencies:
+  de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3
