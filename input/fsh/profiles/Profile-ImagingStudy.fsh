@@ -9,13 +9,18 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * insert Translation(^description, en-US, The profile describes a prepackaged drug or formulation.)
 * insert PR_CS_VS_Version
 
-* identifier 0..1 MS 
+* identifier 0..* MS 
 * status 1..1 MS
+* status from http://hl7.org/fhir/R4/valueset-imagingstudy-status.html (required)
 * modality 0..* MS 
+* modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html
+ (extensible)
 * started 0..1 MS
 * numberOfSeries 0..1 MS
 * numberOfInstances 0..1 MS
 * procedureCode 0..* MS
+* procedureCode from https://radlex.org/RID/RID1559 (extensible)
 * reasonCode 0..* MS
+* reasonCode from http://hl7.org/fhir/R4/valueset-procedure-reason.html (example)
 * note 0..* MS
 * description 0..1 MS
