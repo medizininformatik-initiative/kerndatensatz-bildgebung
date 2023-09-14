@@ -8,3 +8,14 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * insert Translation(^title, en-US, MII PR Medikation Medication)
 * insert Translation(^description, en-US, The profile describes a prepackaged drug or formulation.)
 * insert PR_CS_VS_Version
+
+* identifier 0..1 MS 
+* status 1..1 MS
+* modality 0..* MS 
+* started 0..1 MS
+* numberOfSeries 0..1 MS
+* numberOfInstances 0..1 MS
+* procedureCode 0..* MS
+* reasonCode 0..* MS
+* note 0..* MS
+* description 0..1 MS
