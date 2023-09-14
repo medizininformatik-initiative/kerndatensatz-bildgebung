@@ -40,9 +40,9 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.performer.function 0..1 MS 
 * series.performer.function from $performerFunction
 * series.performer.actor 1..1 MS
-* series.instance 0..* MS
-* series.instance.uid 1..1 MS
-* series.instance.sopClass 1..1 MS
+* series.instance 0..*
+* series.instance.uid 1..1
+* series.instance.sopClass 1..1
 * series.instance.sopClass from https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html
-* series.instance.number 0..1 MS
-* series.instance.title 0..1 MS
+* series.instance.number 0..1
+* series.instance.title 0..1 
