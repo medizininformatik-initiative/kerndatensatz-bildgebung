@@ -12,7 +12,7 @@
    <version value="2023.0.0"/>
    <name value="MII_IG_Bildgebung"/>
    <status value="active"/>
-   <date value="2023-09-14T16:00:34+02:00"/>
+   <date value="2023-09-14T16:07:19+02:00"/>
    <publisher value="Medizininformatik Initiative"/>
    <contact>
       <name value="Medizininformatik Initiative"/>
@@ -414,6 +414,14 @@
          <nameUrl value="toc.html"/>
          <title value="Table of Contents"/>
          <generation value="html"/>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="index.html"/>
+            </extension>
+            <nameUrl value="index.html"/>
+            <title value="Home"/>
+            <generation value="markdown"/>
+         </page>
       </page>
       <parameter>
          <code value="path-resource"/>
