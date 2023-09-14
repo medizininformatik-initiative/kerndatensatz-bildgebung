@@ -15,7 +15,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Medikation_Medication"
+            "valueString": "MII_PR_Bildgebung_ImagingStudy"
           }
         ]
       }
@@ -33,14 +33,14 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Medikation Medication"
+            "valueString": "MII PR Bildgebung ImagingStudy"
           }
         ]
       }
     ]
   },
   "status": "active",
-  "description": "Dieses Profil beschreibt die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Angabe mindestens eines Wirkstoffes wird verlangt.",
+  "description": "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten auf Studien-, Serien- sowie Instanzen-Ebene der jeweiligen DICOM-Studie.",
   "_description": {
     "extension": [
       {
@@ -52,7 +52,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a prepackaged drug or formulation."
+            "valueString": "The profile describes the metadata of an DICOM imaging study."
           }
         ]
       }
@@ -104,7 +104,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/R4/valueset-imagingstudy-status.html"
+          "valueSet": "http://hl7.org/fhir/ValueSet/imagingstudy-status"
         }
       },
       {
@@ -137,7 +137,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://radlex.org/RID/RID1559"
+          "valueSet": "https://radlex.org"
         }
       },
       {
@@ -146,7 +146,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "example",
-          "valueSet": "http://hl7.org/fhir/R4/valueset-procedure-reason.html"
+          "valueSet": "http://hl7.org/fhir/ValueSet/procedure-reason"
         }
       },
       {
