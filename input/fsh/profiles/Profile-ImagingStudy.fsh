@@ -20,7 +20,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * procedureCode 0..* MS
 * procedureCode from https://radlex.org/RID/RID1559 (extensible)
 * reasonCode 0..* MS
-* reasonCode from http://hl7.org/fhir/R4/valueset-procedure-reason.html (example)
+* reasonCode from http://hl7.org/fhir/ValueSet/procedure-reason (example)
 * note 0..* MS
 * description 0..1 MS
 
