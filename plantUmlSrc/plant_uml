@@ -1,0 +1,113 @@
+@startuml
+class ImagingStudy {
+  + identifier: Identifier[*]
+  + status: Coding
+  + modality: Coding[*]
+  + subject: Reference(Patient)
+  + encounter: Reference(Encounter)
+  + started: dateTime
+  + basedOn: Reference(CarePlan|ServiceRequest|Appointment)[*]
+  + referrer: Reference(Practitioner|PractitionerRole)
+  + interpreter: Reference(Practitioner|PractitionerRole)[*]
+  + endpoint: Reference(Endpoint)[*]
+  + numberOfSeries: unsignedInt
+  + numberOfInstances: unsignedInt
+  + procedureReference: Reference(Procedure)
+  + procedureCode: CodeableConcept[*]
+  + location: Reference(Location)
+  + reasonCode: CodeableConcept[*]
+  + reasonReference: Reference(Condition|Observation|Media|DiagnosticReport|DocumentReference)[*]
+  + note: Annotation[*]
+  + description: string
+  + series: Series[*]
+}
+
+class Identifier {
+  + value: id
+}
+
+class Coding {
+  + value: code
+}
+
+class Reference(Types) {
+  + reference: Types
+}
+
+class Annotation {
+  + text: string
+}
+
+class unsignedInt {
+  + value: int
+}
+
+class Procedure {
+  // Add Procedure attributes here
+}
+
+class Location {
+  // Add Location attributes here
+}
+
+class CodeableConcept {
+  // Add CodeableConcept attributes here
+}
+
+class Series {
+  + uid: id
+  + number: unsignedInt
+  + modality: Coding
+  + description: string
+  + numberOfInstances: unsignedInt
+  + endpoint: Reference(Endpoint)[*]
+  + bodySite: Coding
+  + laterality: Coding
+  + specimen: Reference(Specimen)[*]
+  + started: dateTime
+  + performer: Performer[*]
+  + instance: Instance[*]
+}
+
+class Performer {
+  + function: CodeableConcept
+  + actor: Reference(Practitioner|PractitionerRole|Organization|CareTeam|Patient|Device|RelatedPerson)
+}
+
+class Specimen {
+  // Add Specimen attributes here
+}
+
+class Instance {
+  + uid: id
+  + sopClass: Coding
+  + number: unsignedInt
+  + title: string
+}
+
+class Endpoint {
+  // Add Endpoint attributes here
+}
+
+ImagingStudy "1..N" -- "0..*" Identifier : has
+ImagingStudy "1..N" -- "1..1" Coding : has
+ImagingStudy -- Reference : has
+ImagingStudy -- Annotation : has
+ImagingStudy -- string : has
+ImagingStudy -- unsignedInt : has
+ImagingStudy -- Series : has
+
+Series -- Coding : has
+Series -- Reference : has
+Series -- unsignedInt : has
+Series -- dateTime : has
+Series -- Performer : has
+Series -- Instance : has
+
+Performer -- CodeableConcept : has
+Performer -- Reference : has
+
+Instance -- Coding : has
+Instance -- unsignedInt : has
+Instance -- string : has
+@enduml
