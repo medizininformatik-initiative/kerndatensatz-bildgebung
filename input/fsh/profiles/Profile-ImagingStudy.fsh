@@ -13,8 +13,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * status 1..1 MS
 * status from http://hl7.org/fhir/R4/valueset-imagingstudy-status.html (required)
 * modality 0..* MS 
-* modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html
- (extensible)
+* modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html (extensible)
 * started 0..1 MS
 * numberOfSeries 0..1 MS
 * numberOfInstances 0..1 MS
@@ -24,3 +23,26 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * reasonCode from http://hl7.org/fhir/R4/valueset-procedure-reason.html (example)
 * note 0..* MS
 * description 0..1 MS
+
+* series 0..* MS 
+* series.uid 1..1 MS 
+* series.number 0..1 MS
+* series.modality 1..1 MS 
+* series.modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html (extensible)
+* series.description 0..1 MS
+* series.numberOfInstances 0..1 MS
+* series.bodySite 0..1 MS 
+* series.bodySite from http://hl7.org/fhir/ValueSet/body-site
+* series.laterality 0..1 MS
+* series.laterality from http://hl7.org/fhir/ValueSet/bodysite-laterality
+* series.started 0..1 MS
+* series.performer 0..* MS 
+* series.performer.function 0..1 MS 
+* series.performer.function from http://hl7.org/fhir/ValueSet/series-performer-function
+* series.performer.actor 1..1 MS
+* series.instance 0..* MS
+* series.instance.uid 1..1 MS
+* series.instance.sopClass 1..1 MS
+* series.instance.sopClass from https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html
+* series.instance.number 0..1 MS
+* series.instance.title 0..1 MS 
