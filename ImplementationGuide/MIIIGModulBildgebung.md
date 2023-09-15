@@ -1,13 +1,13 @@
 # Kerndatensatz Modul Medikation
 
-Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Medikation' der Medizinformatik-Initative.
+Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Bildgebung' der Medizinformatik-Initative.
 Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 13.06.2023 |
-| Version | 2.0.0 |
-| Status  | active      |
+| Datum   | XXXXXX |
+| Version | 0.0.0 |
+| Status  | wip      |
 | Realm   | DE          | 
 
 ## Inhaltsverzeichnis
@@ -31,24 +31,9 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 
 ## Autoren (in alphabetischer Reihenfolge)
 
-* Alexander Zautke (HL7 e.V.)
-* Andrea Riedel (MIRACUM) 
-* Caroline Bönisch (HiGHmed)
-* Danny Ammon (SMITH)
-* Editha Räuscher(TMF e.V.)
-* Heinrich	Lautenbacher (DIFUTURE)
-* Julian Saß (HiGHmed)
-* Karoline Buckow (TMF e.V.)
-* Martin Boeker (DIFUTURE)
-* Matthias Löbe (SMITH)
-* Maximilian Reith (KBV) 
-* Noemi Deppenwiese (MIRACUM) 
-* Sebastian Semler (TMF e.V.)
-* Stefanie Schild (MIRACUM) 
-* Susann Wrobel (SMITH)
-* Susanne Zabka (MIRACUM)
-* Sylvia Thun (HL7 Deutschland e.V.)
-* Thomas Ganslandt (MIRACUM)
+* A
+* B
+* C
 
 ## Copyright-Hinweis, Nutzungshinweise
 Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin
