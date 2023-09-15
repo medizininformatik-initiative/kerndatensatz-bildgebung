@@ -1,0 +1,41 @@
+@startuml
+class ImagingStudy #LightCyan {
+  + Identifier der ImagingStudy: Identifier[0..*]
+  + Status: Coding [1..1]
+  + Modalitäten: Coding[0..*]
+  + Personen-Identifikation: Reference(Patient) [1..1]
+  + Fall-Referenz: Reference(Encounter) [0..1]
+  + Beginn: dateTime [0..1]
+  + Anfordernde Maßnahme: Reference(ServiceRequest)[0..*]
+  + Quelle zum PACS Bild: Reference(Endpoint)[0..*]
+  + Anzahl an enhaltenen Serien: unsignedInt [0..1]
+  + Anzahl an enthaltenen SOP Instanzen: unsignedInt [0..1]
+  + Übergeordnete Maßnahme: Reference(Procedure) [0..1]
+  + Bildgebungsgrund: Reference(Condition|Observation)[0..*]
+  + Studien-Beschreibung: string [0..1]
+  + DICOM-Serien: DICOM-Serie[0..*]
+}
+note left: Work in Progress
+
+class DICOMSerie #LightBlue {
+  + Serien-UID: id [1..1]
+  + Serien-Nummer: unsignedInt [0..1]
+  + Modalität: Coding [1..1]
+  + Serienbeschreibung: string [0..1]
+  + Anzahl an in Serie enthaltenen Instanzen: unsignedInt [0..1]
+  + Untersuchte Körperregion: Coding [0..1]
+  + Körperseite: Coding [0..1]
+  + Beginn: dateTime [0..1]
+  + DICOM-Instanzen: Instance[0..*]
+}
+
+class DICOMInstanz #LightGreen {
+  + SOP-Instanz UID: id [1..1]
+  + SOP-Klasse: Coding [1..1]
+  + Instanz-Nummer: unsignedInt [0..1]
+  + Beschreibung der SOP Instanz: string [0..1]
+}
+
+ImagingStudy "1..N" -- "0..*" DICOMSerie
+DICOMSerie "1..N" -- "0..*" DICOMInstanz
+@enduml

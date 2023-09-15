@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  fhs-service:
+    image: kerndatensatz-bildgebung-fhs-service:latest
+  #  build:
+  #    dockerfile: Dockerfile

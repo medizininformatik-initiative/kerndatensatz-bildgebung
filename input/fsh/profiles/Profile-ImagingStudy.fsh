@@ -20,7 +20,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * procedureCode 0..* MS
 * procedureCode from $radlex (extensible)
 * reasonCode 0..* MS
-* reasonCode from $reasonCode (example)
+* reasonCode from $reasonCode (preferred)
 * note 0..* MS
 * description 0..1 MS
 
