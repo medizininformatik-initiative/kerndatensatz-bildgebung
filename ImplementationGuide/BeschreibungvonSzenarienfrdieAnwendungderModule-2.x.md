@@ -2,10 +2,12 @@
 
 Konkrete Beispiele:
 
-**Angabe zur Medikation während stationärer Behandlung mit entsprechender Dokumention des Operationen- und Prozedurenschlüssels (OPS):**
+**Angabe und Dokumentation einer Bildgebung zur Diagnosestellung:**
 
-Beispiel: Eine Patientin mit Mammakarzinom wird während ihres stationären Aufenthaltes mit einem Chemotherapeutikum behandelt. Die behandelnde Ärztin verordnet zunächst die Therapie mit Doxorubicin (Caelyx) einmal alle vier Wochen. Die Anordnung des Wirkstoffes bzw. des Arzneimittels wird dokumentiert.
+Beispiel: Eine Patientin mit Verdacht auf Axiale Spondyloarthritis mit Morbus Bechterew kommt stationär zur Diagnoseevaluation. Hierbei wird eine native MRT zur Diagnosestellung durchgeführt.
 
-Entsprechend der Anwendungshinweise des verordneten Arzenimittelproduktes wird die auf die Patientin abgestimmte Dosis von 85mg Doxorubicin in 5%-iger Glucoselösung zu einer Infusionslösung vorbereitet. Die Infusionslösung mit ihren Einzelbestandteilen sowie Zeitpunkt bzw. Zeitraum der Verabreichung werden festgehalten.
+Die MRT ist zur Fürhdiagnostik geeignet, da entzündliche Veränderungen in den Sakroilikalgelenken bereits sichtbar sind, wenn konventionelle Verfahren (Röntgen) noch unauffällig sind.
 
-Nach nach erfolgter Verabreichung der Infusion wird der OPS-Code 6-002.87 (Pegyliertes liposomales Doxorubicin, parenteral 80 mg bis unter 90 mg) codiert.
+Für diese MRT-Aufnahme wird eine Serie vom Hüftbereich generiert. Die Aufnahmeparameter, die auch im DICOM-Header hinterlegt sind, werden auf die einzelnen FHIR Ressourcen gematcht und die Bildgebung somit dokumentiert (bspw. Study-Instance-UID, Series-Instance-UID, Modalität etc.).
+
+Falls beispielsweise für Forschungszwecke angefragt wird, wie viele native Hüft-MRTs zur Diagnostestellung von Morbus Bechterew in diesem Krankenhaus durchgeführt wurden, kann dies durch die Implementation in FHIR ohne viel Aufwand beantwortet werden.
