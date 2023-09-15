@@ -12,7 +12,7 @@
    <version value="2023.0.0"/>
    <name value="MII_IG_Bildgebung"/>
    <status value="active"/>
-   <date value="2023-09-14T16:07:19+02:00"/>
+   <date value="2023-09-15T10:59:20+02:00"/>
    <publisher value="Medizininformatik Initiative"/>
    <contact>
       <name value="Medizininformatik Initiative"/>
@@ -44,6 +44,16 @@
       <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta"/>
       <packageId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
       <version value="1.0.3"/>
+   </dependsOn>
+   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_prozedur">
+      <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.prozedur/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.prozedur"/>
+      <packageId value="de.medizininformatikinitiative.kerndatensatz.prozedur"/>
+      <version value="2.0.0-alpha5"/>
+   </dependsOn>
+   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_medikation">
+      <uri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation-v2"/>
+      <packageId value="de.medizininformatikinitiative.kerndatensatz.medikation"/>
+      <version value="2.0.0"/>
    </dependsOn>
    <definition>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -264,6 +274,10 @@
          <name value="Structures: Extension Definitions"/>
          <description value="These define constraints on FHIR data types for systems conforming to this implementation guide."/>
       </grouping>
+      <grouping id="-term-valueset">
+         <name value="Terminology: Value Sets"/>
+         <description value="These define sets of codes used by systems conforming to this implementation guide."/>
+      </grouping>
       
       
       
@@ -274,7 +288,96 @@
       
       
       
-      
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-mii-pr-bildgebendeverfahren-servicerequest.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/mii-pr-bildgebendeverfahren-servicerequest"/>
+         </reference>
+         <name value="MII Bildgebende Verfahren ServiceRequest"/>
+         <description value="TODO"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-mii-pr-bildgebendeverfahren-diagnosticreport.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/mii-pr-bildgebendeverfahren-diagnosticreport"/>
+         </reference>
+         <name value="MII PR BildgebendeVerfahren DiagnosticReport"/>
+         <description value="TODO"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-mii-pr-bildgebendeverfahren-medicationadministration.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/mii-pr-bildgebendeverfahren-medicationadministration"/>
+         </reference>
+         <name value="MII PR BildgebendeVerfahren MedicationAdministration"/>
+         <description value="TODO"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-mii-pr-bildgebendeverfahren-procedure.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/mii-pr-bildgebendeverfahren-procedure"/>
+         </reference>
+         <name value="MII PR BildgebendeVerfahren Procedure"/>
+         <description value="TODO"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-mii-pr-bildgebendeverfahren-reasonobservation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/mii-pr-bildgebendeverfahren-reasonobservation"/>
+         </reference>
+         <name value="MII PR BildgebendeVerfahren ReasonObservation"/>
+         <description value="TODO"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
             <valueInteger value="999999999"/>
@@ -298,24 +401,6 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-MIIRadiologyServiceRequest.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/MIIRadiologyServiceRequest"/>
-         </reference>
-         <name value="MII Radiology ServiceRequest"/>
-         <description value="TODO"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:extension"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -328,6 +413,42 @@
          <description value="Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MR Daten zu erweitern."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-mii-vs-bildgebendeverfahren-servicerequest-coding.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/mii-vs-bildgebendeverfahren-servicerequest-coding"/>
+         </reference>
+         <name value="MII VS BildgebendeVerfahren ServiceRequest Coding"/>
+         <description value="TODO"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-mii-vs-bildgebendeverfahren-servicerequest-reason.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/mii-vs-bildgebendeverfahren-servicerequest-reason"/>
+         </reference>
+         <name value="MII VS BildgebendeVerfahren ServiceRequest Reason"/>
+         <description value="TODO"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
       </resource>
       <page>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -345,22 +466,60 @@
             <generation value="markdown"/>
          </page>
          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="Einleitung.html"/>
+            </extension>
+            <nameUrl value="Einleitung.html"/>
+            <title value="Einleitung"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
             <nameUrl value="artifacts.html"/>
             <title value="Artifacts Summary"/>
             <generation value="html"/>
+            <page>
+               <nameUrl value="StructureDefinition-mii-pr-bildgebendeverfahren-servicerequest.html"/>
+               <title value="MII Bildgebende Verfahren ServiceRequest"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-mii-pr-bildgebendeverfahren-diagnosticreport.html"/>
+               <title value="MII PR BildgebendeVerfahren DiagnosticReport"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-mii-pr-bildgebendeverfahren-medicationadministration.html"/>
+               <title value="MII PR BildgebendeVerfahren MedicationAdministration"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-mii-pr-bildgebendeverfahren-procedure.html"/>
+               <title value="MII PR BildgebendeVerfahren Procedure"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-mii-pr-bildgebendeverfahren-reasonobservation.html"/>
+               <title value="MII PR BildgebendeVerfahren ReasonObservation"/>
+               <generation value="generated"/>
+            </page>
             <page>
                <nameUrl value="StructureDefinition-mii-pr-imagingstudy-imagingstudy.html"/>
                <title value="MII PR ImagingStudy ImagingStudy"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-MIIRadiologyServiceRequest.html"/>
-               <title value="MII Radiology ServiceRequest"/>
+               <nameUrl value="StructureDefinition-mii-ex-modalitaet-mr.html"/>
+               <title value="MII EX Modality MR"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-mii-ex-modalitaet-mr.html"/>
-               <title value="MII EX Modality MR"/>
+               <nameUrl value="ValueSet-mii-vs-bildgebendeverfahren-servicerequest-coding.html"/>
+               <title value="MII VS BildgebendeVerfahren ServiceRequest Coding"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-mii-vs-bildgebendeverfahren-servicerequest-reason.html"/>
+               <title value="MII VS BildgebendeVerfahren ServiceRequest Reason"/>
                <generation value="generated"/>
             </page>
          </page>
