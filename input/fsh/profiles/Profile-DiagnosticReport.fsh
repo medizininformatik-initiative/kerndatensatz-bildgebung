@@ -17,6 +17,7 @@ Description: "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung.
 * subject MS
 * encounter MS
 // effective[x] , issued , performer, resultsInterpreter, specimen
+
 * result 1..* MS
 * imagingStudy 1..* MS
 // media
