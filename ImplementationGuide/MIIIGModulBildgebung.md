@@ -26,7 +26,7 @@ für die vernetzte medizinische Forschung e.V.
 
 Fragen zu der vorliegenden Publikation können jederzeit unter [chat.fhir.org](chat.fhir.org) im Stream 'german/mi-initiative' gestellt werden.
 
-Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.com/medizininformatik-initiative/kerndatensatzmodul-bildgebung/issues) gern entgegengenommen.
+Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/issues) gern entgegengenommen.
 
 
 ## Autoren (in alphabetischer Reihenfolge)
