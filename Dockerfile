@@ -16,7 +16,7 @@ RUN gem install jekyll bundler
 
 WORKDIR /fhir-ig-publisher
 
-COPY --from=download /fhir-ig-publisher/input-cache/ .
+COPY --from=download /fhir-ig-publisher/ .
 
 COPY input/* input/fsh/
 COPY _genonce.sh .
@@ -24,7 +24,7 @@ COPY sushi-config.yaml .
 
 COPY ig.ini .
 
-RUN mkdir input-cache && mkdir fsh-generated && sushi build
+RUN mkdir fsh-generated && sushi build
 
 RUN ./_genonce.sh -y
 
