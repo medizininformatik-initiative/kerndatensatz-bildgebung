@@ -1,4 +1,4 @@
-# Kerndatensatz Modul Medikation
+# Kerndatensatz Modul Bildgebung
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Bildgebung' der Medizinformatik-Initative.
 Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
