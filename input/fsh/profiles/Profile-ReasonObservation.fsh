@@ -7,6 +7,12 @@ Description: "TODO"
 * code = $loinc#18785-6
 * valueString 1..1 MS
 * subject 1..1 MS
-* subject only $miiRef 
-* encounter only $miiRef
+* subject ^type.profile = Canonical($miiRef)
+// fixme: only allow a Patient reference
+* subject ^type.targetProfile[+] = Canonical(http://hl7.org/fhir/StructureDefinition/Patient)
+* subject ^type.targetProfile[+] = Canonical(http://hl7.org/fhir/StructureDefinition/Patient)
+* subject ^type.targetProfile[+] = Canonical(http://hl7.org/fhir/StructureDefinition/Patient)
+* subject ^type.targetProfile[+] = Canonical(http://hl7.org/fhir/StructureDefinition/Patient)
+* encounter ^type.profile = $miiRef
+* encounter ^type.targetProfile = http://hl7.org/fhir/StructureDefinition/Encounter
 * encounter 0..1 MS
