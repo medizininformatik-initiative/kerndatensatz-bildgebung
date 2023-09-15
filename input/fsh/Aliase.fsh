@@ -5,3 +5,6 @@ Alias: $reasonCode = http://hl7.org/fhir/ValueSet/procedure-reason
 Alias: $bodySite = http://hl7.org/fhir/ValueSet/body-site
 Alias: $laterality = http://hl7.org/fhir/ValueSet/bodysite-laterality
 Alias: $performerFunction = http://hl7.org/fhir/ValueSet/series-performer-function
+Alias: $miiRef = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
+Alias: $miiRefPatient = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference(Patient)
+Alias: $SCT = http://snomed.info/sct
