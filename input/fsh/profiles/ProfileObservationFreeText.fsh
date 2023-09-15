@@ -16,4 +16,3 @@ Description: "Dieses Profil beschreibt die Resultate einer Bildgebung als Freite
 * code MS
 * value[x] only string
 * value[x] MS
-

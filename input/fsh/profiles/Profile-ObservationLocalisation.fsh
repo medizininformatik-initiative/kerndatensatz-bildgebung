@@ -11,6 +11,6 @@ Description: "Dieses Profil beschreibt die Lokalisation des pathologischen Befun
 * insert PR_CS_VS_Version
 
 * identifier MS
-// * status = registered
-// TODO: korrekten Code auswählen. (body organ structure?)
 * code MS
+* value[x] only CodeableConcept
+* value[x] MS
