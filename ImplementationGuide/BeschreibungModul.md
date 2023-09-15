@@ -21,4 +21,3 @@ Zur Modellierung wurde die Imaging Study in drei Teilmodule strukturiert:
 
 Die Referenzen "Endpoint" und "Specimen" wurden weggelassen. Alle anderen Elemente des Profils "Imaging Study" wurden übernommen. 
 Die Originalnamen der Elemente aus dem FHIR Profil wurden ins Deutsche übersetzt und ggf. zur besseren Lesbarkeit angepasst.
-Die Instanzebene soll optional sein und muss nicht befüllt werden. Dafür müssen allerdings die verpflichtende Elemente mit Kardinalität 1 Series.instance.uid (bzw. SOP-Instanz-UID) und Series.instance.sopClass (bzw. SOP-Klasse) noch auf optional gesetzt werden.
