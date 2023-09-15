@@ -6,7 +6,7 @@ class ImagingStudy #LightCyan {
   + Personen-Identifikation: Reference(Patient)
   + Fall-Referenz: Reference(Encounter)
   + Beginn: dateTime
-  + Anfordernde Maßnahme: Reference(CarePlan|ServiceRequest|Appointment)[*]
+  + Anfordernde Maßnahme: Reference(ServiceRequest)[*]
   + Quelle zum PACS Bild: Reference(Endpoint)[*]
   + Anzahl an enhaltenen Serien: unsignedInt
   + Anzahl an enthaltenen SOP Instanzen: unsignedInt
@@ -17,7 +17,7 @@ class ImagingStudy #LightCyan {
 }
 note left: Work in Progress
 
-class DICOM-Serie #LightBlue {
+class DICOMSerie #LightBlue {
   + Serien-UID: id
   + Serien-Nummer: unsignedInt
   + Modalität: Coding
@@ -30,19 +30,19 @@ class DICOM-Serie #LightBlue {
   + Bilderzeugende Einrichtung: Reference[0..*]
 }
 
-class DICOM-Instanz #LightGreen {
+class DICOMInstanz #LightGreen {
   + SOP-Instanz UID: id [1..1]
   + SOP-Klasse: Coding [1..1]
   + Instanz-Nummer: unsignedInt [0..1]
   + Beschreibung der SOP Instanz: string [0..1]
 }
 
-class Bilderzeugende Einrichtung #LightGreen {
-  + Akteur: Reference(Practitioner|PractitionerRole|Organization|CareTeam|Patient|Device|RelatedPerson) [1..1]
+class BilderzeugendeEinrichtung #LightGreen {
+  + Akteur: Reference(PractitionerRole|Organization|CareTeam|Device) [1..1]
   + Funktion: string [0..1]
 }
 
-ImagingStudy "1..N" -- "0..*" DICOM-Serie
-DICOM-Serie "1..N" -- "0..*" DICOM-Instanz
-DICOM-Serie "1..N" -- "0..*" Bilderzeugende Einrichtung 
+ImagingStudy "1..N" -- "0..*" DICOMSerie
+DICOMSerie "1..N" -- "0..*" DICOMInstanz
+DICOMSerie "1..N" -- "0..*" BilderzeugendeEinrichtung 
 @enduml
