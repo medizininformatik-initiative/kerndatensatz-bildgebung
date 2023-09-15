@@ -193,7 +193,7 @@ fabric.properties
 # Windows Installer files
 
 # Windows shortcuts
-/output/
+/output/*
 .idea/.gitignore
 .idea/adt-gekid-on-fhir.iml
 .idea/misc.xml
@@ -202,3 +202,7 @@ fabric.properties
 /fsh-generated/*
 /temp/*
 /input-cache/*
+/node_modules/*
+package-lock.json
+package.json
+.idea/*
