@@ -1,12 +1,12 @@
-Profile: MIIRadiologyObservationExpansion
+Profile: MIIRadiologyObservation
 Parent: Observation
-Id: MIIRadiologyObservationExpansion
-Title: "MII Radiology Observation Expansion"
-Description: "Dieses Profil beschreibt die Ausdehnungs-Resultate radiologischer Bildgebung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ObservationExpansion"
-* insert Translation(^name, en-US, MII_PR_ObservationExpansion)
-* insert Translation(^title, en-US, MII PR ObservationExpansion)
-* insert Translation(^description, en-US, The profile describes the expansion observations for radiological images.)
+Id: MIIRadiologyObservation
+Title: "MII Radiology Observation"
+Description: "Dieses Profil beschreibt die Resultate ... radiologischer Bildgebung."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Observation"
+* insert Translation(^name, en-US, MII_PR_Bildgebung_Observation)
+* insert Translation(^title, en-US, MII PR Bildgebung Observation)
+* insert Translation(^description, en-US, The profile describes the observations ...... for radiological images.)
 * insert PR_CS_VS_Version
 
 * identifier MS
@@ -34,7 +34,7 @@ and expansion
 * component[is-pathological] only
 
 * code MS
-    * value[x] MS
+* value[x] MS
 
 
 ------------------------------------------------------------------------------
