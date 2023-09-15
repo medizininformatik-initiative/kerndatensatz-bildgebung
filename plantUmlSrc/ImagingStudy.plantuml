@@ -27,7 +27,6 @@ class DICOMSerie #LightBlue {
   + Körperseite: Coding
   + Beginn: dateTime
   + DICOM-Instanzen: Instance[0..*]
-  + Bilderzeugende Einrichtung: Reference[0..*]
 }
 
 class DICOMInstanz #LightGreen {
@@ -37,12 +36,6 @@ class DICOMInstanz #LightGreen {
   + Beschreibung der SOP Instanz: string [0..1]
 }
 
-class BilderzeugendeEinrichtung #LightGreen {
-  + Akteur: Reference(PractitionerRole|Organization|CareTeam|Device) [1..1]
-  + Funktion: string [0..1]
-}
-
 ImagingStudy "1..N" -- "0..*" DICOMSerie
 DICOMSerie "1..N" -- "0..*" DICOMInstanz
-DICOMSerie "1..N" -- "0..*" BilderzeugendeEinrichtung 
 @enduml
