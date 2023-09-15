@@ -19,34 +19,18 @@ Description: "Dieses Profil beschreibt die Resultate ... radiologischer Bildgebu
 * effective MS
 // issued, performer
 
-// parent observation hat dann Feld über welches member abgefragt werden können
-* hasMember 1..4 MS
-* hasMember only Reference(Observation)
-
-* component 1..*
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = code
-* component ^slicing.rules = #open
-* component contains is-pathological 0..1 MS
-and localisation 0..1 MS
-and morphology 0..1 MS
-and expansion
-* component[is-pathological] only
+* category 1.. MS
+* coding 1.. MS
+* system 1.. MS
+* code 1.. MS
+* category.code = imaging
 
 * code MS
-* value[x] MS
+* coding from TODO (preferred)  // TODO find suitable snomed? observable entity
+* coding 1.. MS
+* code 1.. MS
+* system 1.. MS
 
-
-------------------------------------------------------------------------------
-
-Option 1:
-- mehrere obs.components mit spezifischen extra definierten und geslicten teilen
-- Schwierigkeit "Ausdehnung" da slicing im slicing nicht möglich
-
-Option 2:
-- eine "parent Observation"
-- diese hat bis zu 4 members bei obs.hasMember
-- hier kann Ausdehnung geslict werden
-- dadurch auch leichter abfragbar, da nicht super spezifisch
-
-
+// parent observation has members that describe the findings
+* hasMember 1..4 MS
+* hasMember only Reference(Observation)
