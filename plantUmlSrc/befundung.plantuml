@@ -1,0 +1,67 @@
+@startuml "Kleines-Modell-1"
+
+class Befunde_Bildgebende_Verfahren #LightCyan {
+}
+note left: Work in progress
+
+class Indikation #LightBlue {
+    Indikation_Code: code
+    Fließtext: string
+}
+
+class Voruntersuchungen #LightBlue {
+    Bildgebung: reference
+}
+
+class Prozeduren_Bildparameter #LightBlue {
+    Metadaten: reference
+    Kontrastmittelgabe: boolean
+}
+
+class Befund #LightBlue {
+    Körperregion: code
+    Befundfragestellung: integer
+    Beschreibung: reference
+}
+
+class Beschreibung #LightSteelBlue {
+    Fließtext: string
+}
+
+class StrukturierteForm #LightSteelBlue {
+    Fließtext: string
+}
+
+class Organ_System #LightSteelBlue {
+    organcode: code
+}
+
+class Beobachtung #LightSteelBlue {
+    Pathologiebefund: reference
+    Lokalisation: code
+    Morphologie: code 
+    Ausdehnung: dataCollection  
+}
+
+class Beurteilung #LightSteelBlue {
+    Diagnosereferenz: reference
+    DiagnoseCode: code
+    Fließtext: string
+}
+
+class Empfehlung #LightSteelBlue {
+    Fließtext: string 
+}
+
+Befunde_Bildgebende_Verfahren "1..*" -- "0..1" Indikation
+Befunde_Bildgebende_Verfahren "0..*" -- "0..1" Voruntersuchungen
+Befunde_Bildgebende_Verfahren "0..*" -- "0..1" Prozeduren_Bildparameter
+Befunde_Bildgebende_Verfahren "0..*" -- "0..1" Befund
+
+Befund "1..1" -- "0..1" Beschreibung
+Befund "1..1" -- "1..1" Beurteilung
+Befund "1..1" -- "1..1" Empfehlung
+
+Beschreibung "1..1" --left "0..1" StrukturierteForm
+StrukturierteForm "1..1" --left "0..1" Organ_System
+Organ_System "1..1" --left "0..1" Beobachtung
