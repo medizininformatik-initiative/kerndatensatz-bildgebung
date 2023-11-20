@@ -48,27 +48,28 @@ class ModalitätMR #LightYellow {
 }
 
 class ModalitätCT #LightYellow {
-} note left "Work in progress"
+  + Work in Progress Dummy: string [0..1]
+} 
 
 class ModalitätDX #LightYellow {
-
-} note left "Work in progress"
+  + Work in Progress Dummy: string [0..1]
+} 
 
 class ModalitätCR #LightYellow {
-
-} note left "Work in progress"
+  + Work in Progress Dummy: string [0..1]
+} 
 
 class ModalitätMG #LightYellow {
-
-} note left "Work in progress"
+  + Work in Progress Dummy: string [0..1]
+} 
 
 class ModalitätNM #LightYellow {
-
-} note left "Work in progress"
+  + Work in Progress Dummy: string [0..1]
+} 
 
 class ModalitätPET #LightYellow {
-
-} note left "Work in progress"
+  + Work in Progress Dummy: string [0..1]
+} 
 
 ImagingStudy "1..N" -- "0..*" DICOMSerie
 DICOMSerie "1..N" -- "0..*" DICOMInstanz
