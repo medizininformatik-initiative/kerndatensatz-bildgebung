@@ -17,7 +17,6 @@ class ImagingStudy #LightCyan {
   + Personen-Identifikation: Reference(Patient) [1..1]
   + DICOM-Serien: DICOM-Serie[0..*]
 }
-note left: Work in Progress
 
 class DICOMSerie #LightBlue {
   + Serien-UID: id [1..1]
@@ -42,6 +41,42 @@ class DICOMInstanz #LightGreen {
   + Beschreibung der SOP Instanz: string [0..1]
 }
 
+class ModalitätMR #LightYellow {
+  + Scanning Sequenz: CodeableConcept [1..*]
+  + Scanning Sequenz Untervariante: CodeableConcept [1..1]
+  + Magnetische Feldstärke: Quantity [1..1]
+}
+
+class ModalitätCT #LightYellow {
+} note left "Work in progress"
+
+class ModalitätDX #LightYellow {
+
+} note left "Work in progress"
+
+class ModalitätCR #LightYellow {
+
+} note left "Work in progress"
+
+class ModalitätMG #LightYellow {
+
+} note left "Work in progress"
+
+class ModalitätNM #LightYellow {
+
+} note left "Work in progress"
+
+class ModalitätPET #LightYellow {
+
+} note left "Work in progress"
+
 ImagingStudy "1..N" -- "0..*" DICOMSerie
 DICOMSerie "1..N" -- "0..*" DICOMInstanz
+DICOMSerie "0..1" -- "1..1" ModalitätMR
+DICOMSerie "0..1" -- "1..1" ModalitätCT
+DICOMSerie "0..1" -- "1..1" ModalitätDX
+DICOMSerie "0..1" -- "1..1" ModalitätCR
+DICOMSerie "0..1" -- "1..1" ModalitätMG
+DICOMSerie "0..1" -- "1..1" ModalitätNM
+DICOMSerie "0..1" -- "1..1" ModalitätPET
 @enduml
