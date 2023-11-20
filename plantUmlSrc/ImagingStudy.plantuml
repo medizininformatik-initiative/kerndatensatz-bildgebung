@@ -27,6 +27,10 @@ class DICOMSerie #LightBlue {
   + Körperseite: Coding [0..1]
   + Beginn: dateTime [0..1]
   + DICOM-Instanzen: Instance[0..*]
+  + Hersteller: CodeableConcept [0..1]
+  + Modell: string [0..1]
+  + Kontrastmittelgabe: boolean [0..1]
+  + Kontrastmitteldetails: Reference(MII_PR_Medikation_MedicationStatement) [0..*]
 }
 
 class DICOMInstanz #LightGreen {
