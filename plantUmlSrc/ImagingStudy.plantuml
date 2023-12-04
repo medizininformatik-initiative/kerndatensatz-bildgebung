@@ -50,38 +50,46 @@ class ModalitätMR #LightYellow {
 class ModalitätCT #LightYellow {
   + CTDIvolume: Quantity[mGy] [0..1]
   + Maximale Röntgenröhrenspannung: Quantity[kV] [0..1]
-  + Expositionszeit: : Quantity[msec] [0..1]
+  + Expositionszeit: Quantity[ms] [0..1]
   + Exposition: Quantity[mAs] [0..1]
   + Röntgenröhrenstrom: Quantity[mA] [0..1]
 } 
 
 class ModalitätDX #LightYellow {
   + Maximale Röntgenröhrenspannung: Quantity[kV] [0..1]
-  + Expositionszeit: : Quantity[msec] [0..1]
+  + Expositionszeit: Quantity[ms] [0..1]
   + Exposition: Quantity[mAs] [0..1]
   + Röntgenröhrenstrom: Quantity[mA] [0..1]
 } 
 
 class ModalitätCR #LightYellow {
   + Maximale Röntgenröhrenspannung: Quantity[kV] [0..1]
-  + Expositionszeit: : Quantity[msec] [0..1]
+  + Expositionszeit: Quantity[ms] [0..1]
   + Exposition: Quantity[mAs] [0..1]
   + Röntgenröhrenstrom: Quantity[mA] [0..1]
 } 
 
 class ModalitätMG #LightYellow {
   + Maximale Röntgenröhrenspannung: Quantity[kV] [0..1]
-  + Expositionszeit: : Quantity[msec] [0..1]
+  + Expositionszeit: Quantity[ms] [0..1]
   + Exposition: Quantity[mAs] [0..1]
   + Röntgenröhrenstrom: Quantity[mA] [0..1]
 } 
 
 class ModalitätNM #LightYellow {
-  + Work in Progress Dummy: string [0..1]
+  + Radiopharmakon: string [0..1]
+  + Applikationsstartzeit: dateTime [0..1]
+  + Applikationsstopzeit: dateTime [0..1]
+  + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
+  + Halbwertszeit: Quantity[s] [0..1]
 } 
 
 class ModalitätPET #LightYellow {
-  + Work in Progress Dummy: string [0..1]
+  + Radiopharmakon: string [0..1]
+  + Applikationsstartzeit: dateTime [0..1]
+  + Applikationsstopzeit: dateTime [0..1]
+  + Gesamte Radionukliddosis: Quantity[Bq] [0..1]
+  + Halbwertszeit: Quantity[s] [0..1]
 } 
 
 ImagingStudy "1..N" -- "0..*" DICOMSerie
