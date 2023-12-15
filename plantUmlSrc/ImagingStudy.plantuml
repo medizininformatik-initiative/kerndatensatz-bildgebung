@@ -80,6 +80,7 @@ class ModalitätNM #LightYellow {
   + Radiopharmakon: string [0..1]
   + Applikationsstartzeit: dateTime [0..1]
   + Applikationsstopzeit: dateTime [0..1]
+  + Reskalierungstyp: String [0..1]
   + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
   + Halbwertszeit: Quantity[s] [0..1]
 } 
@@ -88,9 +89,11 @@ class ModalitätPET #LightYellow {
   + Radiopharmakon: string [0..1]
   + Applikationsstartzeit: dateTime [0..1]
   + Applikationsstopzeit: dateTime [0..1]
+  + Reskalierungstyp: String [0..1]
   + Gesamte Radionukliddosis: Quantity[Bq] [0..1]
   + Halbwertszeit: Quantity[s] [0..1]
 } 
+
 
 ImagingStudy "1..N" -- "0..*" DICOMSerie
 DICOMSerie "1..N" -- "0..*" DICOMInstanz
