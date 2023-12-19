@@ -6,6 +6,12 @@ Subtask AG:
 - [AG Befundtext](#teilmodul:-befundtext)
 - [AG Imaging Metadaten](#teilmodul:-imaging-metadaten)
 
+Dieses Begleitdokument dient als Vorschlag zum Vorgehen bezüglich der Implementierung und Datensatzbeschreibung.
+
+Hiermit soll das Dokument für die **1. Feedback-Runde** (_20.12.2023 – 15.01.2024_) freigegeben werden.
+
+---
+
 ## Kurzbeschreibung
 Das Erweiterungsmodul Bildgebung umfasst sowohl ein Teilmodul zum _radiologischen_ **Befund** (z.B. Indikation, Beurteilung, Auffälligkeiten, Aufnahmequalität etc.) als auch ein Teilmodul zu den **Imaging-Metadaten**, welche im DICOM-Header enthalten sind (z.B. technische Parameter, Studiendetails, Modalitäten, Körperregionen und -seiten etc.).
 
