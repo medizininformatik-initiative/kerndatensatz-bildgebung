@@ -1,0 +1,19 @@
+Datensatzbeschreibung: Entwurf  
+
+“Das Modul Bildgebung umfasst sowohl ein Teilmodul zum radiologischen Befund selbst (Indikation, Beurteilung, Auffälligkeiten, Aufnahmequalität etc.) 
+ls auch ein Modul zu den Metadaten, welche im DICOM-Header enthalten sind (technische Parameter, Studiendetails, Modalitäten, Körperregionen und -seiten etc.).  
+
+Die hier vorliegende Spezifikation des Informationsmodells bezieht sich auf die Metadaten. Dafür wurde sich an der FHIR Ressource „ImagingStudy“ aus der FHIR-Kernspezifikation 
+(https://hl7.org/fhir/R4/imagingstudy.html) orientiert und überlegt, welche Elemente für die MII relevant sind und welche zusätzlichen Attribute der DICOM-Header abgebildet werden sollen.  
+
+Zur Modellierung wurde das Teilmodul „Metadaten“ analog zu der Hierarchie im DICOM-Standard und in der Imaging Study in drei Teilmodule strukturiert:  
+
+    Studienebene  
+    Serienebene 
+    Instanzebene 
+
+Zusätzlich gibt es modalitätsspezifische Metadaten, die sich je nach vorliegender Modalität unterscheiden. Im Moment werden die Modalitäten MR, CT, DX, CR, MG, NM und PET betrachtet und es ist geplant, in einem stufenweisen Verfahren, in Zukunft auch weitere modalitätsspezifische Attribute anderer Modalitäten zu spezifizieren.” 
+
+Der Teil zum Befundbericht berücksichtigt zwei Sichtweisen, deren gemeinsames Element die Entität Befundbericht ist. 
+Hochstrukturierte Ergebnisse können über die generische Beobachtung abgebildet werden, (historische) semi-strukturierte Befunde können über die Entitäten semistrukturierter Befundbericht und Befundabschnitt abgebildet werden. 
+Hier ist es zusätzlich möglich, einzelne strukturierte Beobachtungen auch als generische Observations abzubilden.
