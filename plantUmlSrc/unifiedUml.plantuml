@@ -1,5 +1,10 @@
-@startuml
-class ImagingStudy #LightCyan {
+@startuml "Bildgebende Verfahren"
+
+skinparam Linetype ortho
+skinparam Nodesep 170
+skinparam Ranksep 80
+
+class Studie <<ImagingStudy>> #LightCyan {
   + Prozedur: Reference(Procedure) [0..1]
   + Identifier der ImagingStudy: Identifier[0..*]
   + Status: Coding [1..1]
@@ -94,8 +99,7 @@ class ModalitätPET #LightYellow {
   + Halbwertszeit: Quantity[s] [0..1]
 } 
 
-
-ImagingStudy "1..N" -- "0..*" DICOMSerie
+Studie "1..N" -- "0..*" DICOMSerie
 DICOMSerie "1..N" -- "0..*" DICOMInstanz
 DICOMSerie "0..1" -- "1..1" ModalitätMR
 DICOMSerie "0..1" -- "1..1" ModalitätCT
@@ -104,4 +108,108 @@ DICOMSerie "0..1" -- "1..1" ModalitätCR
 DICOMSerie "0..1" -- "1..1" ModalitätMG
 DICOMSerie "0..1" -- "1..1" ModalitätNM
 DICOMSerie "0..1" -- "1..1" ModalitätPET
+
+
+'Studie "1..N" -- "0..*" DICOMSerie
+Studie --> Anforderung : basedOn
+Studie --> Bildgebung : procedureReference
+
+/'class DICOMSerie #LightBlue {
+
+}
+
+DICOMSerie "1..N" -- "0..*" DICOMInstanz
+
+class DICOMInstanz #LightGreen {
+}
+'/
+
+class Vorbefund <<Condition From Diagnose>> #MediumOrchid {
+}
+
+class Anforderung <<ServiceRequest>> {
+}
+
+Anforderung "0..*" --> "0..*" Vorbefund : reasonRef
+Anforderung "0..*" ..> "0..*" Studie : supportingInfo
+Anforderung "0..*" ..> "0..*" Befundbericht : supportingInfo
+
+class Bildgebung <<Procedure derived from Prozedur>> #LightSkyBlue {
+}
+
+Bildgebung "0..*" --> "0..*" Anforderung : basedOn
+
+class Kontrastmittelgabe <<MedicationAdministration derived from Medikation>> {
+}
+
+Kontrastmittelgabe "0..*" --> "1..*" Bildgebung : partOf
+
+class Befundbericht <<DiagnosticReport>>{
++ Freitext (wenn nur ein "Blob")
++ Link auf PDF (presentedForm? hat 0..n)
+}
+
+Befundbericht --> Anforderung : basedOn
+Befundbericht "0..*" --> "0..*" Studie : imagingStudy
+Befundbericht ..> Befundbericht : supportingInfo(R5!)
+
+class GenerischeBeobachtung <<Observation>> {
+ + Körperstelle (bodySite): CodeableConcept
+ + Bildnummer: DICOM Instance UID (Series)
+ + Schichtposition: DICOM Instance UID (SOP Instance)
+}
+
+
+class Körperstruktur <<BodyStructure>> {
+ + genaue Position : SNOMED Code
+}
+
+class Bildauschnitt <<ImagingSelection>> {
+}
+
+class "Patient:in" <<from Person>> #orange {
+}
+
+class Versorgungsstellenkontakt? <<from Fall>> #LightGreen {
+}
+
+GenerischeBeobachtung --> Studie : derivedFrom
+Befundbericht "1..1" --> "0..*" GenerischeBeobachtung: result
+GenerischeBeobachtung --> GenerischeBeobachtung: hasMember
+GenerischeBeobachtung --> Bildauschnitt : betrachteterAuschnitt
+GenerischeBeobachtung --> "0..1" Körperstruktur: bodyStructure/focus(versioned)
+
+Befundbericht "0..*" --> "1..1" "Patient:in" : subject
+Studie "0..*" --> "1..1" "Patient:in" : subject
+
+Befundbericht "0..*" --> "1..1" "Versorgungsstellenkontakt?" : encounter
+Studie "0..*" --> "1..1" "Versorgungsstellenkontakt?" : encounter
+
+class Befundungsprozedur <<from Procedure>>{
+}
+
+Befundbericht --> Befundungsprozedur
+GenerischeBeobachtung --> Befundungsprozedur: partOf
+Anforderung --> "0..*" Befundungsprozedur: basedOn
+
+class SemistrukturiertesBefunddokument <<Composition>>{
+ + Angaben zum Autor
+ + Unterzeichner
+ + Datum der Unterschrift 
+
+}
+
+class Befundabschnitt <<Composition.section>> {
+ + Titel (Fragestellung,Beschreibung, Beurteilung, Empfehlung, ...)
+ + Code
+ + Text
+
+}
+
+SemistrukturiertesBefunddokument --> "0..1" Befundbericht
+SemistrukturiertesBefunddokument --> "0..*" Befundabschnitt
+Befundabschnitt --> Befundabschnitt
+Befundabschnitt --> "0..*" GenerischeBeobachtung : entry
+SemistrukturiertesBefunddokument --> "1..1" "Patient:in"
+
 @enduml

@@ -2,7 +2,12 @@ Profile: MII_PR_BildgebendeVerfahren_DiagnosticReport
 Parent: DiagnosticReport
 Id: mii-pr-bildgebendeverfahren-diagnosticreport
 Title: "MII PR BildgebendeVerfahren DiagnosticReport"
-Description: "TODO"
+Description: "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung."
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/DiagnosticReport"
+* insert Translation(^name, en-US, MII_PR_Bildgebung_DiagnosticReport)
+* insert Translation(^title, en-US, MII PR Bildgebung DiagnosticReport)
+* insert Translation(^description, en-US, The profile describes a diagnostic report for radiological images.)
+* insert PR_CS_VS_Version
 * basedOn 1..* MS
 * basedOn ^slicing.discriminator.type = #profile
 * basedOn ^slicing.discriminator.path = "$this"
@@ -50,3 +55,4 @@ Description: "TODO"
     sct 0..* MS
 * conclusionCode.coding[icd10] ^patternCoding.system = $icd10
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
+
