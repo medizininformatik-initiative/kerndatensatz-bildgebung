@@ -14,6 +14,9 @@ publisher:
   url: https://www.medizininformatik-initiative.de/
 dependencies:
   de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3
+  de.medizininformatikinitiative.kerndatensatz.prozedur: 2.0.0-alpha5
+  de.medizininformatikinitiative.kerndatensatz.medikation: 2.0.0
+
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
