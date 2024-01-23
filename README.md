@@ -27,7 +27,7 @@ Eine detaillierte Version der Modulbeschreibung und Aufbau finden Sie im Sharepo
 ## Teilmodul Befundtext
 Das Teilmodul zum Befund berücksichtigt zwei Sichtweisen, deren gemeinsames Element die Entität Befundbericht ist: 
 1.	bereits hochstrukturierte Reports und deren Ergebnisse können über die generische Beobachtung abgebildet werden, 
-2.	wobei un- bzw. semistrukturierte Befunde (i.e. historische Freitext-Befunde) können über die Entitäten semistrukturierter Befundbericht und Befundabschnitt abgebildet werden. Hier ist es zusätzlich möglich, einzelne strukturierte Beobachtungen auch als generische _Observations_ abzubilden.
+2.	un- bzw. semistrukturierte Befunde (i.e. historische Freitext-Befunde) können über die Entitäten semistrukturierter Befundbericht und Befundabschnitt abgebildet werden. Hier ist es zusätzlich möglich, einzelne strukturierte Beobachtungen auch als generische _Observations_ abzubilden.
 
 Dieses Konzept ermöglicht einerseits der Abbildung und Einschließung der bereits vorliegenden retrospektiven historischen Befunde (i.S.v. „backward compatibility“) der Standorte, andererseits bietet dies die Möglichkeit für die Berücksichtigung der neuen hochstrukturierten Befundtemplates von 
 Tools aus der Industrie (i.S.v. „foward compatibility“).
@@ -42,8 +42,4 @@ Zur Modellierung wurde das Teilmodul „Metadaten“ analog zu der Hierarchie im
 - Serienebene
 - Instanzebene 
 
-Zusätzlich gibt es modalitätsspezifische Metadaten, die sich je nach vorliegender Modalität unterscheiden. Im Moment werden die Modalitäten MR, CT, DX, CR, MG, NM und PET betrachtet und es ist geplant, in einem stufenweisen Verfahren, in Zukunft auch weitere modalitätsspezifische Attribute anderer Modalitäten zu spezifizieren.” 
-
-Der Teil zum Befundbericht berücksichtigt zwei Sichtweisen, deren gemeinsames Element die Entität Befundbericht ist. 
-Hochstrukturierte Ergebnisse können über die generische Beobachtung abgebildet werden, (historische) semi-strukturierte Befunde können über die Entitäten semistrukturierter Befundbericht und Befundabschnitt abgebildet werden. 
-Hier ist es zusätzlich möglich, einzelne strukturierte Beobachtungen auch als generische Observations abzubilden.
+Zusätzlich gibt es modalitätsspezifische Metadaten, die sich je nach vorliegender Modalität unterscheiden. Im Moment werden die Modalitäten MR, CT, DX, CR, MG, NM und PET betrachtet und es ist geplant, in einem stufenweisen Verfahren, in Zukunft auch weitere modalitätsspezifische Attribute anderer Modalitäten zu spezifizieren.
