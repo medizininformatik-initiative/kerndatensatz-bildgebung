@@ -1,5 +1,4 @@
-@startuml "Bildgebende Verfahren"
-
+@startuml
 skinparam Linetype ortho
 skinparam Nodesep 150
 skinparam Ranksep 80
@@ -108,7 +107,7 @@ package "Kontrastmittel" {
   class Bildgebung <<Procedure derived from Prozedur>> #LightSkyBlue {
 }
 
-  class Kontrastmittelgabe <<MedicationAdministration derived from Medikation>> {
+  class Kontrastmittelgabe_Medikationsgabe <<MedicationAdministration derived from Medikation>> {
 }
 }
 
@@ -116,6 +115,9 @@ package "Befund" {
   class Befundbericht <<DiagnosticReport>>{
 + Freitext (wenn nur ein "Blob")
 + Link auf PDF (presentedForm? hat 0..n)
+}
+  class Empfehlung <<CarePlan>> {
+
 }
 
   package "Generisch" {
@@ -174,7 +176,7 @@ DICOMSerie "0..1" -r- "1..1" ModalitätPET
 
 Bildgebung "0..*" --> "0..*" Anforderung : basedOn
 
-Kontrastmittelgabe "0..*" --> "1..*" Bildgebung : partOf
+Kontrastmittelgabe_Medikationsgabe "0..*" --> "1..*" Bildgebung : partOf
 
 Befundbericht --> Anforderung : basedOn
 Befundbericht "0..*" --> "0..*" Studie : imagingStudy
@@ -183,6 +185,8 @@ Befundbericht "0..*" --> "1..1" "Versorgungsstellenkontakt?" : encounter
 Befundbericht --> Befundungsprozedur
 Befundbericht "0..*" --> "1..1" "Patient:in" : subject
 Befundbericht "1..1" --> "0..*" GenerischeBeobachtung: result
+
+Empfehlung --> Befundbericht : supportingInfo 
 
 GenerischeBeobachtung --> Studie : derivedFrom
 GenerischeBeobachtung --> GenerischeBeobachtung: hasMember
@@ -207,5 +211,4 @@ SemistrukturiertesBefunddokument --> "1..1" "Patient:in"
 
 Befundabschnitt --> Befundabschnitt
 Befundabschnitt --> "0..*" GenerischeBeobachtung : entry
-
 @enduml
