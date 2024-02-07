@@ -15,6 +15,8 @@ Hiermit soll das Dokument für die **1. Feedback-Runde** (_20.12.2023 – 15.01.
 ## Updates 
 2024.01.16 - Restrukturierung und Verschönerung des UML Diagramms von Lucas Scherer (UKER).
 
+2024.02.06 - UML-Anpassung an die Guidelines des EU Health Data Space (AG Befundtext).
+
 
 ## Kurzbeschreibung
 Das Erweiterungsmodul Bildgebung umfasst sowohl ein Teilmodul zum _radiologischen_ **Befund** (z.B. Indikation, Beurteilung, Auffälligkeiten, Aufnahmequalität etc.) als auch ein Teilmodul zu den **Imaging-Metadaten**, welche im DICOM-Header enthalten sind (z.B. technische Parameter, Studiendetails, Modalitäten, Körperregionen und -seiten etc.).
