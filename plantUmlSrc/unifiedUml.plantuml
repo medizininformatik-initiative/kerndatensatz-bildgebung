@@ -3,27 +3,28 @@ skinparam Linetype ortho
 skinparam Nodesep 150
 skinparam Ranksep 80
 
+
 class Studie <<ImagingStudy>> #LightCyan {
-  + Prozedur: Reference(Procedure) [0..1]
+  + {field} Prozedur: Reference (Procedure) [0..1]
   + Identifier der ImagingStudy: Identifier[0..*]
   + Status: Coding [1..1]
   + Studien-Beschreibung: string [0..1]
   + Anzahl an enthaltenen SOP Instanzen: unsignedInt [0..1]
   + Anzahl an enhaltenen Serien: unsignedInt [0..1]
   + Beginn: dateTime [0..1]
-  + Indikation: Reference(Condition|Observation) [0..1]
+  + {field} Indikation: Reference(Condition|Observation) [0..1]
   + Modalitäten: Coding[0..*]
-  + Quelle zum PACS Bild: Reference(Endpoint)[0..*]
-  + Anfordernde Maßnahme: Reference(ServiceRequest)[0..*]
-  + Übergeordnete Maßnahme: Reference(Procedure) [0..1]
-  + Bildgebungsgrund: Reference(Condition|Observation)[0..*]
-  + Fall-Referenz: Reference(Encounter) [0..1]
-  + Personen-Identifikation: Reference(Patient) [1..1]
+  + {field} Quelle zum PACS Bild: Reference(Endpoint)[0..*]
+  + {field} Anfordernde Maßnahme: Reference(ServiceRequest)[0..*]
+  + {field} Übergeordnete Maßnahme: Reference(Procedure) [0..1]
+  + {field} Bildgebungsgrund: Reference(Condition|Observation)[0..*]
+  + {field} Fall-Referenz: Reference(Encounter) [0..1]
+  + {field} Personen-Identifikation: Reference(Patient) [1..1]
   + DICOM-Serien: DICOM-Serie[0..*]
 }
 
 package "DICOM-Header" {
-  class DICOMSerie #LightBlue {
+  class DICOMSerie {
   + Serien-UID: id [1..1]
   + Serien-Nummer: unsignedInt [0..1]
   + Modalität: Coding [1..1]
@@ -36,10 +37,10 @@ package "DICOM-Header" {
   + Hersteller: CodeableConcept [0..1]
   + Modell: string [0..1]
   + Kontrastmittelgabe: boolean [0..1]
-  + Kontrastmitteldetails: Reference(MII_PR_Medikation_MedicationStatement) [0..*]
+  + {field} Kontrastmitteldetails: Reference(MII_PR_Medikation_MedicationStatement) [0..*]
 }
 
-  class DICOMInstanz #LightGreen {
+  class DICOMInstanz {
   + SOP-Instanz UID: id [1..1]
   + SOP-Klasse: Coding [1..1]
   + Instanz-Nummer: unsignedInt [0..1]
@@ -103,36 +104,47 @@ package "DICOM-Header" {
 class Anforderung <<ServiceRequest>> {
 }
 
-package "Kontrastmittel" {
-  class Bildgebung <<Procedure derived from Prozedur>> #LightSkyBlue {
-}
-
-  class Kontrastmittelgabe_Medikationsgabe <<MedicationAdministration derived from Medikation>> {
-}
-}
-
 package "Befund" {
-  class Befundbericht <<DiagnosticReport>>{
-+ Freitext (wenn nur ein "Blob")
-+ Link auf PDF (presentedForm? hat 0..n)
+  class Befundbericht <<DiagnosticReport>> #LightCyan {
+  + {field} Basierend auf: Reference(ServiceRequest) [0..*]
+  + Status: Coding [1..1]
+  + {field} Personen-Identifizierung: Reference (Patient) [1..1]
+  + {field} Fall-Referenz: Reference (Encounter) [0..1]
+  + Klinisch relevante Zeit: dateTime [0..1]
+  + Klinisch relevante Periode: period [0..1]
+  + Erstellungszeit: instant [0..1]
+  + {field} Ergebnis: Reference(Observation) [1..1]
+  + {field} Studie: Reference(ImagingStudy) [1..1]
+  + {field} Zusatzinformation: Reference(DiagnosticReport) [0..1]
+  + Ergebisinterpretation: markdown [0..1]
+  + Codierte Ergebnisinterpretation: CodeableConcept [0..1]
+  + {field} Dokument: Attachment [0..*]
 }
+  
   class Empfehlung <<CarePlan>> {
 
 }
 
   package "Generisch" {
   class GenerischeBeobachtung <<Observation>> {
- + Körperstelle (bodySite): CodeableConcept
- + Bildnummer: DICOM Instance UID (Series)
- + Schichtposition: DICOM Instance UID (SOP Instance)
+  + {field} Extension: Bildnummer: DICOM Instance UID (Series)
+  + {field} Extension: Schichtposition: DICOM Instance UID (SOP Instance)
+  + Status: Coding [1..1]
+  + Beobachtungstyp: CodeableConcept [1..1]
+  + Beobachtungszeitpunkt: instant [0..1]
+  + Beschreibung: value[x] [0..1]
+  + {field} Körperstelle (bodySite): CodeableConcept [0..1]
+  + {field} Studienbezug: Reference(ImagingStudy) [0..*]
+  + {field} weitere Beobachtung: Reference(Observation) [0..*]
+  + erweiterte Beschreibung: component [0..*]
 }
 
   class Körperstruktur <<BodyStructure>> {
- + genaue Position : SNOMED Code
+  + Morphologie: CodeableConcept [0..1]
+  + Lokalisation: CodeableConcept [0..1]
+  + nähere Lokalisation: CodeableConcept [0..1]
 }
 
-  class Bildauschnitt <<ImagingSelection>> {
-}
 }
 
   package "Semistruktur"{
@@ -143,24 +155,32 @@ package "Befund" {
 }
 
   class Befundabschnitt <<Composition.section>> {
- + Titel (Fragestellung,Beschreibung, Beurteilung, Empfehlung, ...)
+ + {field} Titel (Fragestellung,Beschreibung, Beurteilung, Empfehlung, ...)
  + Code
  + Text
 }
 }
 
-  class Befundungsprozedur <<from Procedure>>{
-}
 }
 
 package "Basismodule" {
-  class "Patient:in" <<from Person>> #orange {
+  class "Patient:in" <<from Person>> #Lightgreen {
 }
 
-  class Versorgungsstellenkontakt? <<from Fall>> #LightGreen {
+  class Versorgungsstellenkontakt? <<from Fall>> #Lightgreen {
 }
 
-  class Vorbefund <<Condition From Diagnose>> #MediumOrchid {
+  class Vorbefund <<Condition From Diagnose>> #Lightgreen {
+}
+  
+  class Bildgebung <<from Procedure>> #Lightgreen {
+}
+
+  class Kontrastmittelgabe_Medikationsgabe <<MedicationAdministration derived from Medikation>> #Lightgreen {
+}
+
+
+    class Befundungsprozedur <<from Procedure>> #Lightgreen {
 }
 }
 
@@ -175,8 +195,9 @@ DICOMSerie "0..1" -d- "1..1" ModalitätNM
 DICOMSerie "0..1" -r- "1..1" ModalitätPET
 
 Bildgebung "0..*" --> "0..*" Anforderung : basedOn
+Bildgebung -[hidden]u- Befundungsprozedur
 
-Kontrastmittelgabe_Medikationsgabe "0..*" --> "1..*" Bildgebung : partOf
+Kontrastmittelgabe_Medikationsgabe "0..*" -r-> "1..*" Bildgebung : partOf
 
 Befundbericht --> Anforderung : basedOn
 Befundbericht "0..*" --> "0..*" Studie : imagingStudy
@@ -186,11 +207,10 @@ Befundbericht --> Befundungsprozedur
 Befundbericht "0..*" --> "1..1" "Patient:in" : subject
 Befundbericht "1..1" --> "0..*" GenerischeBeobachtung: result
 
-Empfehlung --> Befundbericht : supportingInfo 
+Empfehlung ..> Befundbericht : supportingInfo 
 
 GenerischeBeobachtung --> Studie : derivedFrom
 GenerischeBeobachtung --> GenerischeBeobachtung: hasMember
-GenerischeBeobachtung --> Bildauschnitt : betrachteterAuschnitt
 GenerischeBeobachtung --> "0..1" Körperstruktur: bodyStructure/focus(versioned)
 GenerischeBeobachtung --> Befundungsprozedur: partOf
 
