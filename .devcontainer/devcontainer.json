@@ -1,0 +1,40 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
+{
+    "name": "Sushi + IG Pub",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "java -version",
+    // "postCreateCommand": "sudo apt update && sudo apt install graphviz -y && npm install -g fsh-sushi@3.0.0-beta.1",
+    // Configure tool-specific properties.
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "[typescript]": {
+                    "editor.formatOnSave": true
+                },
+                "livePreview.defaultPreviewPath": "output/",
+                "editor.tabSize": 2
+            },
+            "extensions": [
+                "mhutchie.git-graph",
+                "xyz.local-history",
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "MITRE-Health.vscode-language-fsh",
+                "jebbs.plantuml",
+                "ms-vscode.live-server"
+            ]
+        }
+    },
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "root"
+    "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.fhir,target=/home/vscode/.fhir,type=bind"
+    ]
+}
