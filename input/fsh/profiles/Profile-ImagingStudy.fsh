@@ -9,32 +9,29 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(^description, en-US, The profile describes the metadata of an DICOM imaging study.)
 * insert PR_CS_VS_Version
 
-* identifier 0..* MS 
-* status 1..1 MS
-* status from http://hl7.org/fhir/ValueSet/imagingstudy-status (required)
-* modality 0..* MS 
-* modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html (extensible)
-* started 0..1 MS
-* numberOfSeries 0..1 MS
-* numberOfInstances 0..1 MS
-* procedureCode 0..* MS
-* procedureCode from $radlex (extensible)
-* reasonCode 0..* MS
+* identifier MS 
+* status MS
+* modality 1..* MS
+* modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html (required)
+* started MS
+* numberOfSeries MS
+* numberOfInstances MS
+* procedureCode MS
+* reasonCode MS
 * reasonCode from $reasonCode (preferred)
-* note 0..* MS
-* description 0..1 MS
+* description MS
 
-* series 0..* MS 
-* series.uid 1..1 MS 
-* series.number 0..1 MS
-* series.modality 1..1 MS 
-* series.modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html (extensible)
-* series.description 0..1 MS
-* series.numberOfInstances 0..1 MS
-* series.bodySite 0..1 MS 
-* series.bodySite from $bodySite
-* series.laterality 0..1 MS
-* series.laterality from $laterality
+* series MS 
+* series.uid MS 
+* series.number MS
+* series.modality MS 
+* series.modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html (required)
+* series.description MS
+* series.numberOfInstances MS
+* series.bodySite MS 
+* series.bodySite from $bodySite (required)
+* series.laterality MS
+* series.laterality from $laterality (required)
 * series.started 0..1 MS
 * series.manufacturer 0..1 MS
 * series.manufacturerModelName 0..1 MS
