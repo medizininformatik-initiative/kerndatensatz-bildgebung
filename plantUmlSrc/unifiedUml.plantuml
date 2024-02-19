@@ -156,15 +156,17 @@ package "Befund" {
 
   package "Semistruktur"{
   class SemistrukturiertesBefunddokument <<Composition>>{
- + Angaben zum Autor
- + Unterzeichner
- + Datum/Zeit der Unterschrift 
+  + Datum und Uhrzeit der Bearbeitung: DateTime [1..1]
+  + {field} Autor: Reference(Practitioner) [1..*]
+  + {field} Befundbericht: Reference(DiagnosticReport) [1..1]
 }
 
   class Befundabschnitt <<Composition.section>> {
- + {field} Titel (Fragestellung,Beschreibung, Empfehlung, ...)
- + Code
- + Text
+  + Titel des Abschnitts: String [0..1]
+  + Art des Abschnitts. CodeableConcept [0..1]
+  + Text: Narrative [0..1]
+  + {field} Eintrag: Reference(Observation) [0..1]
+  + {field} Unterabschnitt: Reference(Composition.section) [0..1]
 }
 }
 
@@ -193,13 +195,13 @@ package "Basismodule" {
 
 
 DICOMSerie "1..*" -l- "0..*" DICOMInstanz
-DICOMSerie "0..1" -u- "1..1" ModalitätMR
-DICOMSerie "0..1" -u- "1..1" ModalitätCT
-DICOMSerie "0..1" -u- "1..1" ModalitätDX
-DICOMSerie "0..1" -d- "1..1" ModalitätCR
-DICOMSerie "0..1" -d- "1..1" ModalitätMG
-DICOMSerie "0..1" -d- "1..1" ModalitätNM
-DICOMSerie "0..1" -r- "1..1" ModalitätPT
+DICOMSerie "1..1" -u- "0..1" ModalitätMR
+DICOMSerie "1..1" -u- "0..1" ModalitätCT
+DICOMSerie "1..1" -u- "0..1" ModalitätDX
+DICOMSerie "1..1" -d- "0..1" ModalitätCR
+DICOMSerie "1..1" -d- "0..1" ModalitätMG
+DICOMSerie "1..1" -d- "0..1" ModalitätNM
+DICOMSerie "1..1" -r- "0..1" ModalitätPT
 
 Bildgebung "0..*" --> "0..*" Anforderung : basedOn
 Bildgebung -[hidden]u- Vorbefund
