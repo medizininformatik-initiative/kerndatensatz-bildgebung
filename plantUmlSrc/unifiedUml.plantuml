@@ -203,43 +203,43 @@ DICOMSerie "1..1" -d- "0..1" ModalitätMG
 DICOMSerie "1..1" -d- "0..1" ModalitätNM
 DICOMSerie "1..1" -r- "0..1" ModalitätPT
 
-Bildgebung "0..*" --> "0..*" Anforderung : basedOn
+Bildgebung "0..*" -- "0..*" Anforderung : basedOn
 Bildgebung -[hidden]u- Vorbefund
 
-Befundungsprozedur -[hidden]u-> Vorbefund
-Befundungsprozedur "0..1" --> "0..*" Anforderung: basedOn
+Befundungsprozedur -[hidden]u- Vorbefund
+Befundungsprozedur "0..1" -- "0..*" Anforderung: basedOn
 
-Kontrastmittelgabe_Medikationsgabe "0..*" -r-> "1..*" Bildgebung : partOf
+Kontrastmittelgabe_Medikationsgabe "0..*" -r- "1..*" Bildgebung : partOf
 
-Befundbericht "0..1" --> "0..1" Anforderung : basedOn
-Befundbericht "0..*" -l-> "0..*" Studie : imagingStudy
-Befundbericht "1..1" ..> "0..*" Befundbericht : supportingInfo (R5!)
-Befundbericht "0..*" --> "0..1" Versorgungsstellenkontakt : encounter
-Befundbericht "0..1"..> "1..1" Befundungsprozedur : supportingInfo (R5!)
-Befundbericht "0..*" --> "1..1" "Patient:in" : subject
-Befundbericht "1..1" --> "0..*" GenerischeBeobachtung: result
+Befundbericht "0..1" -- "0..1" Anforderung : basedOn
+Befundbericht "0..*" -l- "0..*" Studie : imagingStudy
+Befundbericht "1..1" .. "0..*" Befundbericht : supportingInfo (R5!)
+Befundbericht "0..*" -- "0..1" Versorgungsstellenkontakt : encounter
+Befundbericht "0..1".. "1..1" Befundungsprozedur : supportingInfo (R5!)
+Befundbericht "0..*" -- "1..1" "Patient:in" : subject
+Befundbericht "1..1" -- "0..*" GenerischeBeobachtung: result
 
-Empfehlung "0..*" ..> "1..*" Befundbericht : supportingInfo 
+Empfehlung "0..*" .. "1..*" Befundbericht : supportingInfo 
 
-GenerischeBeobachtung "0..*" --> "0..*" Studie : derivedFrom
-GenerischeBeobachtung "1..1" --> "0..*" GenerischeBeobachtung: hasMember
-GenerischeBeobachtung "0..*" --> "0..1" Körperstruktur: bodyStructure/focus(versioned)
-GenerischeBeobachtung "0..*" --> "0..1" Befundungsprozedur: partOf
+GenerischeBeobachtung "0..*" -- "0..*" Studie : derivedFrom
+GenerischeBeobachtung "1..1" -- "0..*" GenerischeBeobachtung: hasMember
+GenerischeBeobachtung "0..*" -- "0..1" Körperstruktur: bodyStructure/focus(versioned)
+GenerischeBeobachtung "0..*" -- "0..1" Befundungsprozedur: partOf
 
-Studie "0..*" --> "0..1" Versorgungsstellenkontakt : encounter
-Studie "0..*" --> "1..1" "Patient:in" : subject
-Studie "0..*" -d-> "0..1" Anforderung : basedOn
-Studie "0..*" --> "0..1" Bildgebung : procedureReference
+Studie "0..*" -- "0..1" Versorgungsstellenkontakt : encounter
+Studie "0..*" -- "1..1" "Patient:in" : subject
+Studie "0..*" -d- "0..1" Anforderung : basedOn
+Studie "0..*" -- "0..1" Bildgebung : procedureReference
 Studie "1..*" -- "0..*" DICOMSerie
 
-Anforderung "0..*" --> "0..*" Vorbefund : reasonRef
-Anforderung "0..*" .u.> "0..*" Studie : supportingInfo
-Anforderung "0..1" ..> "0..*" Befundbericht : supportingInfo
+Anforderung "0..*" -- "0..*" Vorbefund : reasonRef
+Anforderung "0..*" .u. "0..*" Studie : supportingInfo
+Anforderung "0..1" .. "0..*" Befundbericht : supportingInfo
 
-SemistrukturiertesBefunddokument "1..1" --> "1..1" Befundbericht
+SemistrukturiertesBefunddokument "1..1" -- "1..1" Befundbericht
 SemistrukturiertesBefunddokument "1..1" -- "0..*" Befundabschnitt
-SemistrukturiertesBefunddokument "0..*" --> "1..1" "Patient:in" : subject
+SemistrukturiertesBefunddokument "0..*" -- "1..1" "Patient:in" : subject
 
-Befundabschnitt "1..1" --> "0..*" Befundabschnitt
-Befundabschnitt "0..1" --> "0..*" GenerischeBeobachtung : entry
+Befundabschnitt "1..1" -- "0..*" Befundabschnitt
+Befundabschnitt "0..1" -- "0..*" GenerischeBeobachtung : entry
 @enduml
