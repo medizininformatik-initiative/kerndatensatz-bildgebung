@@ -108,6 +108,12 @@ class Anforderung <<ServiceRequest>> {
   + {field} Zusatzinformation: Reference(DiagnosticReport) [0..1]
 }
 
+class Körperstruktur <<BodyStructure>> {
+  + Morphologie: CodeableConcept [0..1]
+  + Lokalisation: CodeableConcept [0..1]
+  + nähere Lokalisation: CodeableConcept [0..1]
+}
+
 package "Befund" {
   class Befundbericht <<DiagnosticReport>> #LightCyan {
   + {field} Anfordende Maßnahme: Reference(ServiceRequest) [0..*]
@@ -145,13 +151,6 @@ package "Befund" {
   + {field} weitere Beobachtung: Reference(Observation) [0..*]
   + erweiterte Beschreibung: component [0..*]
 }
-
-  class Körperstruktur <<BodyStructure>> {
-  + Morphologie: CodeableConcept [0..1]
-  + Lokalisation: CodeableConcept [0..1]
-  + nähere Lokalisation: CodeableConcept [0..1]
-}
-
 }
 
   package "Semistruktur"{
