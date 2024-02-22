@@ -212,13 +212,13 @@ Kontrastmittelgabe_Medikationsgabe "0..*" -r- "1..*" Bildgebung : partOf
 
 Befundbericht "0..1" -- "0..1" Anforderung : basedOn
 Befundbericht "0..*" -l- "0..*" Studie : imagingStudy
-Befundbericht "1..1" .. "0..*" Befundbericht : supportingInfo (R5!)
+Befundbericht "1..1" -- "0..*" Befundbericht : supportingInfo (R5!)
 Befundbericht "0..*" -- "0..1" Versorgungsstellenkontakt : encounter
-Befundbericht "0..1".. "1..1" Befundungsprozedur : supportingInfo (R5!)
+Befundbericht "0..1" -- "1..1" Befundungsprozedur : supportingInfo (R5!)
 Befundbericht "0..*" -- "1..1" "Patient:in" : subject
 Befundbericht "1..1" -- "0..*" GenerischeBeobachtung: result
 
-Empfehlung "0..*" .. "1..*" Befundbericht : supportingInfo 
+Empfehlung "0..*" -- "1..*" Befundbericht : supportingInfo 
 
 GenerischeBeobachtung "0..*" -- "0..*" Studie : derivedFrom
 GenerischeBeobachtung "1..1" -- "0..*" GenerischeBeobachtung: hasMember
@@ -232,8 +232,8 @@ Studie "0..*" -- "0..1" Bildgebung : procedureReference
 Studie "1..*" -- "0..*" DICOMSerie
 
 Anforderung "0..*" -- "0..*" Vorbefund : reasonRef
-Anforderung "0..*" .u. "0..*" Studie : supportingInfo
-Anforderung "0..1" .. "0..*" Befundbericht : supportingInfo
+Anforderung "0..*" -u- "0..*" Studie : supportingInfo
+Anforderung "0..1" -- "0..*" Befundbericht : supportingInfo
 
 SemistrukturiertesBefunddokument "1..1" -- "1..1" Befundbericht
 SemistrukturiertesBefunddokument "1..1" -- "0..*" Befundabschnitt
