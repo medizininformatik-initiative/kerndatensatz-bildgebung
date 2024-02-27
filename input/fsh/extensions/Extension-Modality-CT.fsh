@@ -18,7 +18,6 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     xRayTubeCurrent 0..1
 
 * extension[CTDIvol].value[x]  only SimpleQuantity
-* #extension[magneticFieldStrength].valueQuantity.unit="Tesla"  
 * extension[tubeVoltage].value[x] only SimpleQuantity
 * extension[exposureTime].value[x] only SimpleQuantity
 * extension[exposure].value[x] only SimpleQuantity
