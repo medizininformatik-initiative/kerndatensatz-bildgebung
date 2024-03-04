@@ -16,14 +16,13 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     radiopharmaceuticalStopTime 0..1
     rescaleType 0..1
     radionuclideTotalDose 0..1
-    radionuclideHalfLife 0..1
 * extension[radiopharmaceutical].value[x]
+* extension[radiopharmaceuticalStartTime].value[x]
 * extension[radiopharmaceuticalStopTime].value[x]
-* extension[radiopharmaceuticalStopTime].value[x]
-* extension[rescaleType].value[x]
+* extension[rescaleType].value[x] only CodeableConcept
+* extension[rescaleType].valueCodeableConcept from https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.11.html#sect_C.11.1.1.2 (extensible)
 * extension[radionuclideTotalDose].value[x] only SimpleQuantity
 * extension[radionuclideTotalDose].valueQuantity.unit="Becquerel" 
 * extension[radionuclideTotalDose].valueQuantity.system="http://unitsofmeasure.org"
 * extension[radionuclideTotalDose].valueQuantity.code=#Bq
-* extension[radionuclideHalfLife].value[x]
 
