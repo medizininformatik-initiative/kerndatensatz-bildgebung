@@ -18,6 +18,6 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[magneticFieldStrength].valueQuantity.unit="Tesla" 
 * extension[magneticFieldStrength].valueQuantity.system="http://unitsofmeasure.org"
 * extension[magneticFieldStrength].valueQuantity.code=#T
-* extension[ScanningSequence].value[x] only Coding #TODO find valueset URL 
-* extension[ScanningSequenceVariant].value[x] only Coding #TODO find valueset URL 
+* extension[ScanningSequence].value[x] only Coding #TODO eigenes ValueSet
+* extension[ScanningSequenceVariant].value[x] only Coding #TODO eigenes ValueSet
 
