@@ -36,10 +36,6 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.laterality MS
 * series.laterality from $laterality (required)
 * series.started 0..1 MS
-* series.manufacturer 0..1 MS
-* series.manufacturerModelName 0..1 MS
-* series.contrastBolus 1..1 MS
-* series.contrastBolusDetails 0..* #todo: reference kds-medicationstatement
 * series.instance 0..* MS
 * series.instance.uid 1..1 MS
 * series.instance.sopClass 1..1 MS
