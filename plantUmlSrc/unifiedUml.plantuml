@@ -17,7 +17,7 @@ class Studie <<ImagingStudy>> #LightCyan {
   + Modalitäten: Coding [0..*]
   + {field} Quelle zum PACS Bild: Reference(Endpoint) [0..*]
   + {field} Anfordernde Maßnahme: Reference(ServiceRequest) [0..*]
-  + Bildgebungsgrund: string [0..1]
+  + Bildgebungsgrund: string [0..*]
   + {field} Fall-Referenz: Reference(Encounter) [0..1]
   + {field} Personen-Identifikation: Reference(Patient) [1..1]
   + DICOM-Serien: DICOM-Serie[0..*]
