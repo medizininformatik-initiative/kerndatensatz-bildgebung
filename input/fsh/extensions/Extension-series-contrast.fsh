@@ -1,6 +1,6 @@
-Extension: MII_EX_ImagingStudy
+Extension: MII_EX_ImagingContrast
 Id: mii-ex-imagingContrast
-Title: "MII EX ImagingStudy"
+Title: "MII EX ImagingContrast"
 Description: "Die Extension ermöglicht es, die Gabe von Kontrastmitteln auf Serien-Ebene anzugeben."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" #TODO
 * insert Translation(^name, en-US, MII_EX_ImagingStudy)

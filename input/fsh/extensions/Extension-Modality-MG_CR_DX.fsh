@@ -1,5 +1,5 @@
 Extension: MII_EX_Modalitaet_MG_CR_DX
-Id: mii-ex-modalitaet-mg_cr_dx
+Id: mii-ex-modalitaet-mg-cr-dx
 Title: "MII EX Modality MG/CR/DX"
 Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MG, CR & DX Daten zu erweitern."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" #TODO

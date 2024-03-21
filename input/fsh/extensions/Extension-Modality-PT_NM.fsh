@@ -1,5 +1,5 @@
 Extension: MII_EX_Modalitaet_PT_NM
-Id: mii-ex-modalitaet-pt_nm
+Id: mii-ex-modalitaet-pt-nm
 Title: "MII EX Modality PT/NM"
 Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf PT & NM Daten zu erweitern."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" #TODO

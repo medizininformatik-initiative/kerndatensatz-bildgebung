@@ -1,6 +1,6 @@
-Extension: MII_EX_ImagingStudy
+Extension: MII_EX_ImagingReason
 Id: mii-ex-imagingReason
-Title: "MII EX ImagingStudy"
+Title: "MII EX ImagingReason"
 Description: "Die Extension ermöglicht es, den Bildbegungsgrund aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" #TODO
 * insert Translation(^name, en-US, MII_EX_ImagingStudy)

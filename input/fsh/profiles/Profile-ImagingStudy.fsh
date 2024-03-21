@@ -10,7 +10,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert PR_CS_VS_Version
 
 * extension contains
-    mii-ex-imagingReason named bildgebungsgrund 0..1    
+    MII_EX_ImagingReason named bildgebungsgrund 0..1    
 
 * identifier MS
 * status MS
@@ -29,12 +29,12 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 
 * series MS
 * series.extension contains
-  mii-ex-modalitaet-ct named modalitätCT 0..1 and
-  mii-ex-modalitaet-mg_cr_dx named modalitätMR_CR_DX 0..1 and
-  mii-ex-modalitaet-mr named modalitätMR 0..1 and
-  mii-ex-modalitaet-pt_nm named modalitätPT_NM 0..1 and
-  mii-ex-imagingContrast named kontrastmittel 0..1 and
-  mii-ex-imagingDevice named gerät 0..1
+  MII_EX_Modalitaet_CT named modalitätCT 0..1 and
+  MII_EX_Modalitaet_MG_CR_DX named modalitätMR_CR_DX 0..1 and
+  MII_EX_Modalitaet_MR named modalitätMR 0..1 and
+  MII_EX_Modalitaet_PT_NM named modalitätPT_NM 0..1 and
+  MII_EX_ImagingContrast named kontrastmittel 0..1 and
+  MII_EX_ImagingDevice named gerät 0..1
 
 * series.uid MS 
 * series.number MS

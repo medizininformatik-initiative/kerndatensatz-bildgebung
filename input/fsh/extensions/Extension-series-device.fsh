@@ -1,6 +1,6 @@
-Extension: MII_EX_ImagingStudy
+Extension: MII_EX_ImagingDevice
 Id: mii-ex-imagingDevice
-Title: "MII EX ImagingStudy"
+Title: "MII EX ImagingDevice"
 Description: "Die Extension ermöglicht es, Informationen zum verwendeten Gerät und dessen Hersteller auf Serien-Ebene anzugeben."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" #TODO
 * insert Translation(^name, en-US, MII_EX_ImagingStudy)

@@ -12,17 +12,17 @@ Description: "Dieses Profil beschreibt die Ausdehnungs-Resultate radiologischer 
 // status = final?
 
 * category 1.. MS
-    * coding 1.. MS
-    * system 1.. MS
-    * code 1.. MS
+  * coding 1.. MS
+  * system 1.. MS
+  * code 1.. MS
 * category.code = imaging // TODO fixed value
 
 // code to specify that this Observation describes an expansion
 * code MS
-    * coding from TODO (preferred)  // TODO find suitable snomed? observable entity
-    * coding 1.. MS
-        * code 1.. MS
-        * system 1.. MS
+  * coding from TODO (preferred)  // TODO find suitable snomed? observable entity
+  * coding 1.. MS
+    * code 1.. MS
+    * system 1.. MS
 
 * component 1..*
 * component ^slicing.discriminator.type = #value
