@@ -1,5 +1,5 @@
 Extension: MII_EX_ImagingStudy
-Id: mii-ex-imagingstudy
+Id: mii-ex-imagingReason
 Title: "MII EX ImagingStudy"
 Description: "Die Extension ermöglicht es, den Bildbegungsgrund aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" #TODO
