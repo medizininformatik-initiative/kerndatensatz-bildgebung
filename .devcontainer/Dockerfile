@@ -1,4 +1,4 @@
-FROM ghcr.io/miracum/ig-build-tools:2.0.51
+FROM ghcr.io/miracum/ig-build-tools:latest
 
 RUN apk update \
     && apk add graphviz
