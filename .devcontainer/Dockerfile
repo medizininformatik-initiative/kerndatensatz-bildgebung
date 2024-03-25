@@ -9,3 +9,4 @@ RUN wget -P /workspaces https://github.com/plantuml/plantuml/releases/latest/dow
 
 RUN apk add dotnet7-sdk \
     && dotnet tool install -g firely.terminal
+ENV PATH="${PATH}:/root/.dotnet/tools"
