@@ -8,4 +8,4 @@ RUN wget -P /workspaces https://github.com/plantuml/plantuml/releases/latest/dow
     && chmod a+x /workspaces/gen_uml.sh
 
 RUN apk add dotnet6-sdk \
-    && dotnet tool install -g firely.terminal
+    && dotnet tool install --global Firely.Terminal --version 3.2.0-beta-1
