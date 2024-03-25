@@ -22,7 +22,7 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[rescaleType].value[x] only CodeableConcept
 * extension[rescaleType].valueCodeableConcept from https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.11.html#sect_C.11.1.1.2 (extensible)
 * extension[radionuclideTotalDose].value[x] only SimpleQuantity
-* extension[radionuclideTotalDose].valueQuantity.unit="Becquerel" 
+* extension[radionuclideTotalDose].valueQuantity.unit="Megabecquerel" 
 * extension[radionuclideTotalDose].valueQuantity.system="http://unitsofmeasure.org"
-* extension[radionuclideTotalDose].valueQuantity.code=#Bq
+* extension[radionuclideTotalDose].valueQuantity.code=#MBq
 
