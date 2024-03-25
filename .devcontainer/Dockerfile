@@ -7,6 +7,5 @@ RUN wget -P /workspaces https://github.com/plantuml/plantuml/releases/latest/dow
     && printf "#!/bin/bash\njava -jar /workspaces/plantuml.jar -tsvg -o ../images input/images-source" >> /workspaces/gen_uml.sh \
     && chmod a+x /workspaces/gen_uml.sh
 
-RUN apk add dotnet7-sdk \
+RUN apk add dotnet6-sdk \
     && dotnet tool install -g firely.terminal
-ENV PATH="${PATH}:/root/.dotnet/tools"
