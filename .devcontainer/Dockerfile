@@ -1,4 +1,4 @@
-FROM ghcr.io/cybernop/vscode-ig-publisher:sushi-3.0.0-beta.2-alpine
+FROM ghcr.io/cybernop/vscode-ig-publisher:3.5.0-alpine
 
 RUN apk update \
     && apk add graphviz
