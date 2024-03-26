@@ -1,8 +1,7 @@
-FROM ghcr.io/cybernop/vscode-fhir-devcontainer/ig-publisher:3.5.0-alpine
+FROM ghcr.io/miracum/ig-build-tools:v2.0.51
 
-RUN apk update \
-    && apk add graphviz
+RUN apt-get update && apt-get install -y graphviz
 
 RUN wget -P /workspaces https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar \
-    && printf "#!/bin/bash\njava -jar /workspaces/plantuml.jar -tsvg -o ../images input/images-source" >> /workspaces/gen_uml.sh \
-    && chmod a+x /workspaces/gen_uml.sh
+&& printf "#!/bin/bash\njava -jar /workspaces/plantuml.jar -tsvg -o ../images input/images-source" >> /workspaces/gen_uml.sh \
+&& chmod a+x /workspaces/gen_uml.sh
