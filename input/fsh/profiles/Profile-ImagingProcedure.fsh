@@ -1,11 +1,10 @@
-Profile: MII_PR_BildgebendeVerfahren_Procedure
+Profile: MII_PR_BildgebendeVerfahren_ImagingProcedure
 Parent: $miiProcedure
-Id: mii-pr-bildgebendeverfahren-procedure
-Title: "MII PR BildgebendeVerfahren Procedure"
-Description: "TODO"
+Id: mii-pr-bildgebendeverfahren-imagingprocedure
+Title: "MII PR BildgebendeVerfahren Bildgebungsprozedur"
+Description: "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme"
 
 * category 1..1
-// Imaging (procedure)
 * category.coding[sct] ^patternCodeableConcept = $SCT#363679005
 
 * code.coding contains loinc MS 0.1
