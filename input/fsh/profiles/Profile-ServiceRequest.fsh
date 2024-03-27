@@ -36,6 +36,6 @@ Description: "TODO"
 * reasonCode from MII_VS_BildgebendeVerfahren_ServiceRequest_Reason (preferred)
 // fixme MII-Ref
 * reasonReference MS
-* reasonReference only Reference(MII_PR_BildgebendeVerfahren_ReasonObservation)
+* reasonReference only Reference(Condition)
 * supportingInfo MS
 * supportingInfo only Reference(MII_PR_ImagingStudy_ImagingStudy)

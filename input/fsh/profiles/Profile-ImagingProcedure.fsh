@@ -6,8 +6,7 @@ Description: "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme"
 
 * category 1..1
 * category.coding[sct] ^patternCodeableConcept = $SCT#363679005
-
-* code.coding contains loinc MS 0.1
+* code.coding[loinc] 0..1 MS
 * code.coding[loinc].system = $loinc
 
 // fixme MIIRef

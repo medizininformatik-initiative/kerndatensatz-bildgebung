@@ -2,7 +2,7 @@ Extension: MII_EX_ImagingDevice
 Id: mii-ex-imagingDevice
 Title: "MII EX ImagingDevice"
 Description: "Die Extension ermöglicht es, Informationen zum verwendeten Gerät und dessen Hersteller auf Serien-Ebene anzugeben."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" #TODO
+* ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" //TODO
 * insert Translation(^name, en-US, MII_EX_ImagingStudy)
 * insert Translation(^title, en-US, MII_EX_ImagingStudy)
 * insert Translation(^description, en-US, The extension allows specifying information about the device used and its manufacturer at the series level.)
@@ -11,7 +11,7 @@ Description: "Die Extension ermöglicht es, Informationen zum verwendeten Gerät
 * insert Publisher
 * insert ExtensionContext(ImagingStudy.series)
 * extension contains
-    manufacturer 0..1 MS
+    manufacturer 0..1 MS and
     manufacturerModelName 0..1 MS
 
 * extension[manufacturer].value[x]  only string
