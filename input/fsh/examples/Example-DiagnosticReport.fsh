@@ -5,6 +5,7 @@ Usage: #example
 Title: "Example Diagnostic Report"
 * code = $SCT#4231000179109 "Mammography report"
 * status = #final
+* basedOn = Reference(ExampleServiceRequest)
 * category.coding[snomed-ct] = $SCT#4201000179104 "Imaging report"
 * subject = Reference(ExamplePatient)
 * extension.url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo"

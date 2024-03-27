@@ -9,6 +9,8 @@ Description: "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung.
 * insert Translation(^title, en-US, MII PR Bildgebung DiagnosticReport)
 * insert Translation(^description, en-US, The profile describes a diagnostic report for radiological images.)
 * insert PR_CS_VS_Version
+* basedOn 1..* MS
+* basedOn only Reference(MII_PR_BildgebendeVerfahren_ServiceRequest)
 * category 1..* 
 * category.coding 1.. 
 * category.coding ^slicing.discriminator.type = #pattern
@@ -24,14 +26,21 @@ Description: "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung.
 * code.coding 1..* 
 * subject 1..1 
 * subject only Reference(Patient) 
+* encounter 0..1 MS
+* effective[x] MS
 * extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
 //* extension[supportingInfo].extension[reference] only Reference(DiagnosticReport)
 * result 0..* MS 
 * imagingStudy 1..* MS
-* imagingStudy ^slicing.discriminator.type = #profile
-* imagingStudy ^slicing.discriminator.path = "$this"
-* imagingStudy ^slicing.rules = #open
-* imagingStudy contains
-    bildgebendeverfahrenImagingStudy 1..* MS
-// fixme MII Ref
-* imagingStudy[bildgebendeverfahrenImagingStudy] only Reference(MII_PR_ImagingStudy_ImagingStudy)
+* imagingStudy only Reference(MII_PR_ImagingStudy_ImagingStudy)
+* conclusion MS
+* conclusionCode MS
+* conclusionCode.coding 0.. MS
+* conclusionCode.coding ^slicing.discriminator.type = #pattern
+* conclusionCode.coding ^slicing.discriminator.path = "$this"
+* conclusionCode.coding ^slicing.rules = #open
+* conclusionCode.coding contains
+    icd10 0..* MS and
+    sct 0..* MS
+* conclusionCode.coding[icd10] ^patternCoding.system = $icd10
+* conclusionCode.coding[sct] ^patternCoding.system = $SCT
