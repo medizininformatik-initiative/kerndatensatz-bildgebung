@@ -7,12 +7,11 @@ class ImagingStudy #LightCyan {
   + Anzahl an enthaltenen SOP Instanzen: unsignedInt [0..1]
   + Anzahl an enhaltenen Serien: unsignedInt [0..1]
   + Beginn: dateTime [0..1]
-  + Indikation: Reference(Condition|Observation) [0..1]
   + Modalitäten: Coding[0..*]
   + Quelle zum PACS Bild: Reference(Endpoint)[0..*]
   + Anfordernde Maßnahme: Reference(ServiceRequest)[0..*]
-  + Übergeordnete Maßnahme: Reference(Procedure) [0..1]
-  + Bildgebungsgrund: Reference(Condition|Observation)[0..*]
+  + Indikation: Reference(Condition|Observation)[0..*]
+  + Bildgebungsgrund: string [0..1]
   + Fall-Referenz: Reference(Encounter) [0..1]
   + Personen-Identifikation: Reference(Patient) [1..1]
   + DICOM-Serien: DICOM-Serie[0..*]
@@ -82,7 +81,6 @@ class ModalitätNM #LightYellow {
   + Applikationsstopzeit: dateTime [0..1]
   + Reskalierungstyp: String [0..1]
   + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
-  + Halbwertszeit: Quantity[s] [0..1]
 } 
 
 class ModalitätPET #LightYellow {
@@ -90,8 +88,7 @@ class ModalitätPET #LightYellow {
   + Applikationsstartzeit: dateTime [0..1]
   + Applikationsstopzeit: dateTime [0..1]
   + Reskalierungstyp: String [0..1]
-  + Gesamte Radionukliddosis: Quantity[Bq] [0..1]
-  + Halbwertszeit: Quantity[s] [0..1]
+  + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
 } 
 
 

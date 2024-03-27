@@ -5,9 +5,9 @@ applyExtensionMetadataToRoot: false
 id: mii-ig-bildgebung
 name: MII_IG_Bildgebung
 status: active
-version: 2023.0.0
+version: 2024.0.0
 packageId: de.medizininformatikinitiative.kerndatensatz.bildgebung
-copyrightYear: 2023+
+copyrightYear: 2024+
 releaseLabel: ci-build
 publisher:
   name: Medizininformatik Initiative
@@ -17,6 +17,8 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.prozedur: 2.0.0-alpha5
   de.medizininformatikinitiative.kerndatensatz.medikation: 2.0.0
   hl7.fhir.extensions.r5: 4.0.1
+  fhir.dicom: 2024.1.20240120
+
 
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

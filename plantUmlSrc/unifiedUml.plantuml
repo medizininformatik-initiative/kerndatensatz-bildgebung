@@ -1,46 +1,46 @@
-@startuml "Bildgebende Verfahren"
-
+@startuml
 skinparam Linetype ortho
 skinparam Nodesep 150
 skinparam Ranksep 80
 
+
+
 class Studie <<ImagingStudy>> #LightCyan {
-  + Prozedur: Reference(Procedure) [0..1]
+  + {field} Prozedur: Reference (Procedure) [0..1]
   + Identifier der ImagingStudy: Identifier[0..*]
   + Status: Coding [1..1]
   + Studien-Beschreibung: string [0..1]
   + Anzahl an enthaltenen SOP Instanzen: unsignedInt [0..1]
   + Anzahl an enhaltenen Serien: unsignedInt [0..1]
   + Beginn: dateTime [0..1]
-  + Indikation: Reference(Condition|Observation) [0..1]
-  + Modalitäten: Coding[0..*]
-  + Quelle zum PACS Bild: Reference(Endpoint)[0..*]
-  + Anfordernde Maßnahme: Reference(ServiceRequest)[0..*]
-  + Übergeordnete Maßnahme: Reference(Procedure) [0..1]
-  + Bildgebungsgrund: Reference(Condition|Observation)[0..*]
-  + Fall-Referenz: Reference(Encounter) [0..1]
-  + Personen-Identifikation: Reference(Patient) [1..1]
+  + {field} Indikation: Reference(Condition|Observation) [0..1]
+  + Modalitäten: Coding [0..*]
+  + {field} Quelle zum PACS Bild: Reference(Endpoint) [0..*]
+  + {field} Anfordernde Maßnahme: Reference(ServiceRequest) [0..*]
+  + Bildgebungsgrund: string [0..*]
+  + {field} Fall-Referenz: Reference(Encounter) [0..1]
+  + {field} Personen-Identifikation: Reference(Patient) [1..1]
   + DICOM-Serien: DICOM-Serie[0..*]
 }
 
 package "DICOM-Header" {
-  class DICOMSerie #LightBlue {
+  class DICOMSerie {
   + Serien-UID: id [1..1]
   + Serien-Nummer: unsignedInt [0..1]
   + Modalität: Coding [1..1]
   + Serienbeschreibung: string [0..1]
   + Anzahl an in Serie enthaltenen Instanzen: unsignedInt [0..1]
-  + Untersuchte Körperregion: Coding [0..1]
-  + Körperseite: Coding [0..1]
+  + {field} Körperregion(bodySite): Coding [0..1]
+  + Körperstelle: Coding [0..1]
   + Beginn: dateTime [0..1]
   + DICOM-Instanzen: Instance[0..*]
   + Hersteller: CodeableConcept [0..1]
   + Modell: string [0..1]
   + Kontrastmittelgabe: boolean [0..1]
-  + Kontrastmitteldetails: Reference(MII_PR_Medikation_MedicationStatement) [0..*]
+  + {field} Kontrastmitteldetails: Reference(MII_PR_Medikation_MedicationStatement) [0..*]
 }
 
-  class DICOMInstanz #LightGreen {
+  class DICOMInstanz {
   + SOP-Instanz UID: id [1..1]
   + SOP-Klasse: Coding [1..1]
   + Instanz-Nummer: unsignedInt [0..1]
@@ -91,121 +91,153 @@ package "DICOM-Header" {
   + Halbwertszeit: Quantity[s] [0..1]
 } 
 
-  class ModalitätPET #LightYellow {
+  class ModalitätPT #LightYellow {
   + Radiopharmakon: string [0..1]
   + Applikationsstartzeit: dateTime [0..1]
   + Applikationsstopzeit: dateTime [0..1]
   + Reskalierungstyp: String [0..1]
-  + Gesamte Radionukliddosis: Quantity[Bq] [0..1]
+  + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
   + Halbwertszeit: Quantity[s] [0..1]
 }
 }
 
 class Anforderung <<ServiceRequest>> {
+  + Art der Anfrage: CodeableConcept [0..1]
+  + {field} Patientenbezug: Reference(Patient) [1..1]
+  + {field} Zusatzinformation: Reference(DiagnosticReport) [0..1]
 }
 
-package "Kontrastmittel" {
-  class Bildgebung <<Procedure derived from Prozedur>> #LightSkyBlue {
-}
-
-  class Kontrastmittelgabe <<MedicationAdministration derived from Medikation>> {
-}
+class Körperstruktur <<BodyStructure>> {
+  + Morphologie: CodeableConcept [0..1]
+  + Lokalisation: CodeableConcept [0..1]
+  + nähere Lokalisation: CodeableConcept [0..1]
 }
 
 package "Befund" {
-  class Befundbericht <<DiagnosticReport>>{
-+ Freitext (wenn nur ein "Blob")
-+ Link auf PDF (presentedForm? hat 0..n)
+  class Befundbericht <<DiagnosticReport>> #LightCyan {
+  + {field} Anfordende Maßnahme: Reference(ServiceRequest) [0..*]
+  + Status: Coding [1..1]
+  + {field} Personen-Identifikation: Reference(Patient) [1..1]
+  + {field} Fall-Referenz: Reference(Encounter) [0..1]
+  + Klinisch relevante Zeit: dateTime [0..1]
+  + Klinisch relevante Periode: period [0..1]
+  + Zeit der Erstellung: issued [0..1]
+  + {field} Beobachtung: Reference(Observation) [1..1]
+  + {field} Studienbezug: Reference(ImagingStudy) [1..1]
+  + {field} Zusatzinformation: Reference(DiagnosticReport; Procedure) [0..1]
+  + Interpretation der Beobachtung: markdown [0..1]
+  + strukturierte Interpretation: CodeableConcept [0..1]
+  + {field} Dokumentenanhang: Attachment [0..*]
+}
+  
+  class Empfehlung <<CarePlan>> {
+  + Art der Empfehlung: Coding [1..1]
+  + Freitextempfehlung: String [0..1]
 }
 
   package "Generisch" {
   class GenerischeBeobachtung <<Observation>> {
- + Körperstelle (bodySite): CodeableConcept
- + Bildnummer: DICOM Instance UID (Series)
- + Schichtposition: DICOM Instance UID (SOP Instance)
-}
-
-  class Körperstruktur <<BodyStructure>> {
- + genaue Position : SNOMED Code
-}
-
-  class Bildauschnitt <<ImagingSelection>> {
+  + {field} Extension: Bildnummer: DICOM Instance UID (Series)
+  + {field} Extension: Schichtposition: DICOM Instance UID (SOP Instance)
+  + {field} Extension: Erweiterte Körperstruktur: Reference(BodyStructure) [0..1]
+  + {field} Teil einer Befundungsprocedur: Reference(Procedure) [0..*]
+  + Status: Coding [1..1]
+  + Beobachtungstyp: CodeableConcept [1..1]
+  + Beobachtungszeitpunkt: issued [0..1]
+  + Beschreibung: value[x] [0..1]
+  + {field} Körperregion(bodySite): CodeableConcept [0..1]
+  + {field} Studienbezug: Reference(ImagingStudy) [0..*]
+  + {field} weitere Beobachtung: Reference(Observation) [0..*]
+  + erweiterte Beschreibung: component [0..*]
 }
 }
 
   package "Semistruktur"{
   class SemistrukturiertesBefunddokument <<Composition>>{
- + Angaben zum Autor
- + Unterzeichner
- + Datum der Unterschrift 
+  + Datum und Uhrzeit der Bearbeitung: DateTime [1..1]
+  + {field} Autor: Reference(Practitioner) [1..*]
+  + {field} Befundbericht: Reference(DiagnosticReport) [1..1]
 }
 
   class Befundabschnitt <<Composition.section>> {
- + Titel (Fragestellung,Beschreibung, Beurteilung, Empfehlung, ...)
- + Code
- + Text
+  + Titel des Abschnitts: String [0..1]
+  + Art des Abschnitts. CodeableConcept [0..1]
+  + Text: Narrative [0..1]
+  + {field} Eintrag: Reference(Observation) [0..1]
+  + {field} Unterabschnitt: Reference(Composition.section) [0..1]
 }
 }
 
-  class Befundungsprozedur <<from Procedure>>{
-}
 }
 
 package "Basismodule" {
-  class "Patient:in" <<from Person>> #orange {
+  class "Patient:in" <<from Person>> #Lightgreen {
 }
 
-  class Versorgungsstellenkontakt? <<from Fall>> #LightGreen {
+  class Versorgungsstellenkontakt <<from Fall>> #Lightgreen {
 }
 
-  class Vorbefund <<Condition From Diagnose>> #MediumOrchid {
+  class Vorbefund <<Condition From Diagnose>> #Lightgreen {
+}
+  
+  class Bildgebung <<from Procedure>> #Lightgreen {
+}
+
+  class Kontrastmittelgabe_Medikationsgabe <<MedicationAdministration derived from Medikation>> #Lightgreen {
+}
+
+
+  class Befundungsprozedur <<from Procedure>> #Lightgreen {
 }
 }
 
 
-DICOMSerie "1..N" -l- "0..*" DICOMInstanz
-DICOMSerie "0..1" -u- "1..1" ModalitätMR
-DICOMSerie "0..1" -u- "1..1" ModalitätCT
-DICOMSerie "0..1" -u- "1..1" ModalitätDX
-DICOMSerie "0..1" -d- "1..1" ModalitätCR
-DICOMSerie "0..1" -d- "1..1" ModalitätMG
-DICOMSerie "0..1" -d- "1..1" ModalitätNM
-DICOMSerie "0..1" -r- "1..1" ModalitätPET
+DICOMSerie "1..*" -l- "0..*" DICOMInstanz
+DICOMSerie "1..1" -u- "0..1" ModalitätMR
+DICOMSerie "1..1" -u- "0..1" ModalitätCT
+DICOMSerie "1..1" -u- "0..1" ModalitätDX
+DICOMSerie "1..1" -d- "0..1" ModalitätCR
+DICOMSerie "1..1" -d- "0..1" ModalitätMG
+DICOMSerie "1..1" -d- "0..1" ModalitätNM
+DICOMSerie "1..1" -r- "0..1" ModalitätPT
 
-Bildgebung "0..*" --> "0..*" Anforderung : basedOn
+Bildgebung "0..*" -- "0..*" Anforderung : basedOn
+Bildgebung -[hidden]u- Vorbefund
 
-Kontrastmittelgabe "0..*" --> "1..*" Bildgebung : partOf
+Befundungsprozedur -[hidden]u- Vorbefund
+Befundungsprozedur "0..1" -- "0..*" Anforderung: basedOn
 
-Befundbericht --> Anforderung : basedOn
-Befundbericht "0..*" --> "0..*" Studie : imagingStudy
-Befundbericht ..> Befundbericht : supportingInfo(R5!)
-Befundbericht "0..*" --> "1..1" "Versorgungsstellenkontakt?" : encounter
-Befundbericht --> Befundungsprozedur
-Befundbericht "0..*" --> "1..1" "Patient:in" : subject
-Befundbericht "1..1" --> "0..*" GenerischeBeobachtung: result
+Kontrastmittelgabe_Medikationsgabe "0..*" -r- "1..*" Bildgebung : partOf
 
-GenerischeBeobachtung --> Studie : derivedFrom
-GenerischeBeobachtung --> GenerischeBeobachtung: hasMember
-GenerischeBeobachtung --> Bildauschnitt : betrachteterAuschnitt
-GenerischeBeobachtung --> "0..1" Körperstruktur: bodyStructure/focus(versioned)
-GenerischeBeobachtung --> Befundungsprozedur: partOf
+Befundbericht "0..1" -- "0..1" Anforderung : basedOn
+Befundbericht "0..*" -l- "0..*" Studie : imagingStudy
+Befundbericht "1..1" -- "0..*" Befundbericht : supportingInfo (R5!)
+Befundbericht "0..*" -- "0..1" Versorgungsstellenkontakt : encounter
+Befundbericht "0..1" -- "1..1" Befundungsprozedur : supportingInfo (R5!)
+Befundbericht "0..*" -- "1..1" "Patient:in" : subject
+Befundbericht "1..1" -- "0..*" GenerischeBeobachtung: result
 
-Studie "0..*" --> "1..1" "Versorgungsstellenkontakt?" : encounter
-Studie "0..*" --> "1..1" "Patient:in" : subject
-Studie --> Anforderung : basedOn
-Studie -up-> Bildgebung : procedureReference
-Studie "1..N" -l- "0..*" DICOMSerie
+Empfehlung "0..*" -- "1..*" Befundbericht : supportingInfo 
 
-Anforderung "0..*" --> "0..*" Vorbefund : reasonRef
-Anforderung "0..*" ..> "0..*" Studie : supportingInfo
-Anforderung "0..*" ..> "0..*" Befundbericht : supportingInfo
-Anforderung --> "0..*" Befundungsprozedur: basedOn
+GenerischeBeobachtung "0..*" -- "0..*" Studie : derivedFrom
+GenerischeBeobachtung "1..1" -- "0..*" GenerischeBeobachtung: hasMember
+GenerischeBeobachtung "0..*" -- "0..1" Körperstruktur: bodyStructure/focus(versioned)
+GenerischeBeobachtung "0..*" -- "0..1" Befundungsprozedur: partOf
 
-SemistrukturiertesBefunddokument --> "0..1" Befundbericht
-SemistrukturiertesBefunddokument --> "0..*" Befundabschnitt
-SemistrukturiertesBefunddokument --> "1..1" "Patient:in"
+Studie "0..*" -- "0..1" Versorgungsstellenkontakt : encounter
+Studie "0..*" -- "1..1" "Patient:in" : subject
+Studie "0..*" -d- "0..1" Anforderung : basedOn
+Studie "0..*" -- "0..1" Bildgebung : procedureReference
+Studie "1..*" -- "0..*" DICOMSerie
 
-Befundabschnitt --> Befundabschnitt
-Befundabschnitt --> "0..*" GenerischeBeobachtung : entry
+Anforderung "0..*" -- "0..*" Vorbefund : reasonRef
+Anforderung "0..*" -u- "0..*" Studie : supportingInfo
+Anforderung "0..1" -- "0..*" Befundbericht : supportingInfo
 
+SemistrukturiertesBefunddokument "1..1" -- "1..1" Befundbericht
+SemistrukturiertesBefunddokument "1..1" -- "0..*" Befundabschnitt
+SemistrukturiertesBefunddokument "0..*" -- "1..1" "Patient:in" : subject
+
+Befundabschnitt "1..1" -- "0..*" Befundabschnitt
+Befundabschnitt "0..1" -- "0..*" GenerischeBeobachtung : entry
 @enduml
