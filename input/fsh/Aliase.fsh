@@ -10,3 +10,5 @@ Alias: $miiProcedure = https://www.medizininformatik-initiative.de/fhir/core/mod
 Alias: $miiMedicationAdministration = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration
 Alias: $icd10 = http://fhir.de/CodeSystem/bfarm/icd-10-gm
 Alias: $SCT = http://snomed.info/sct
+Alias: $DSS = http://terminology.hl7.org/CodeSystem/v2-0074
+
