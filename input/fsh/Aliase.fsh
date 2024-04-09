@@ -1,6 +1,5 @@
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $loinc = http://loinc.org
-Alias: $radlex = https://radlex.org
 Alias: $reasonCode = http://hl7.org/fhir/ValueSet/procedure-reason
 Alias: $bodySite = http://hl7.org/fhir/ValueSet/body-site
 Alias: $laterality = https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html
