@@ -228,7 +228,10 @@ Studie "0..*" -- "0..1" Versorgungsstellenkontakt : encounter
 Studie "0..*" -- "1..1" "Patient:in" : subject
 Studie "0..*" -d- "0..1" Anforderung : basedOn
 Studie "0..*" -- "0..1" Bildgebung : procedureReference
-Studie "1..*" -- "0..*" DICOMSerie
+Studie "1..*" -r---- "0..*" DICOMSerie
+Studie -[hidden]u--- ModalitätCR
+Studie -[hidden]u--- ModalitätMG
+Studie -[hidden]u--- ModalitätNM
 
 Anforderung "0..*" -- "0..*" Vorbefund : reasonRef
 Anforderung "0..*" -u- "0..*" Studie : supportingInfo
