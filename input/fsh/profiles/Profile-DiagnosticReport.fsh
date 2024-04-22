@@ -1,7 +1,6 @@
-//Profile for a Radiological Diagnostic Report
-Profile: Radiological_Diagnostic_Report
+Profile: MII_PR_Bildgebung_RadiologischerBefund
 Parent: DiagnosticReport
-Id: radiological-diagnostic-report
+Id: mii-pr-bildgebung-radiologischerBefund
 Title: "MII PR BildgebendeVerfahren DiagnosticReport"
 Description: "Der Diagnostic Report für Bildgebende verfahren richtet sich an die Dokumentation von radiologischen Befundungsergebnissen. Unterschiedliche Systeme (RIS Befundungsmodule, AI Integrationen dedizierte Systeme zur strukturieren Befundung) lieferen in unterschiedlichem Detailgrad Informationen. Dieses Profil addressiert diese unterschiedlichen Detailgrade und bietet modulare aufeinander aufbauende Stufen. Jede Stufe fügt weitere Konzepte hinzu und ermöglicht so neue Anwendungsmöglichkeiten von der Routine bis hin zu wissenschaftlichen Auswertungen.
 
@@ -20,6 +19,7 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 * insert PR_CS_VS_Version
 * basedOn 1..* MS
 * basedOn only Reference(MII_PR_BildgebendeVerfahren_ServiceRequest)
+* status MS 
 * category 1..* 
 * category.coding 1.. 
 * category.coding ^slicing.discriminator.type = #pattern
@@ -32,11 +32,14 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 * category.coding[loinc] = $loinc#18748-4 "Diagnostic imaging study"
 * category.coding[diagnostic-service-sections] = $DSS#RAD
 * category.coding[snomed-ct] = $SCT#4201000179104 "Imaging report"
-* code.coding 1..* 
-* subject 1..1 
+* code MS 
+* subject MS
 * subject only Reference(Patient) 
-* encounter 0..1 MS
+* encounter MS
 * effective[x] MS
+* effectiveDateTime MS
+* effectivePeriod MS
+* issued MS
 * extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
 //* extension[supportingInfo].extension[reference] only Reference(DiagnosticReport)
 * result 0..* MS 
@@ -53,3 +56,4 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
     sct 0..* MS
 * conclusionCode.coding[icd10] ^patternCoding.system = $icd10
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
+* presentedForm MS
