@@ -1,6 +1,6 @@
 //Example of a Radiological Diagnostic Report
-Instance: example-diagnostic-report
-InstanceOf: radiological-diagnostic-report
+Instance: example-radiologischerBefund
+InstanceOf: MII_PR_Bildgebung_RadiologischerBefund
 Usage: #example
 Title: "Example Diagnostic Report"
 * code = $SCT#4231000179109 "Mammography report"

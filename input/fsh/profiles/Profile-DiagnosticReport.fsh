@@ -1,8 +1,7 @@
-//Profile for a Radiological Diagnostic Report
-Profile: Radiological_Diagnostic_Report
+Profile: MII_PR_Bildgebung_RadiologischerBefund
 Parent: DiagnosticReport
-Id: radiological-diagnostic-report
-Title: "MII PR BildgebendeVerfahren DiagnosticReport"
+Id: mii-pr-bildgebung-radiologischerBefund
+Title: "MII PR Bildgebung DiagnosticReport"
 Description: "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/DiagnosticReport"
 * insert Translation(^name, en-US, MII_PR_Bildgebung_DiagnosticReport)
@@ -11,6 +10,7 @@ Description: "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung.
 * insert PR_CS_VS_Version
 * basedOn 1..* MS
 * basedOn only Reference(MII_PR_BildgebendeVerfahren_ServiceRequest)
+* status MS 
 * category 1..* 
 * category.coding 1.. 
 * category.coding ^slicing.discriminator.type = #pattern
@@ -23,11 +23,14 @@ Description: "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung.
 * category.coding[loinc] = $loinc#18748-4 "Diagnostic imaging study"
 * category.coding[diagnostic-service-sections] = $DSS#RAD
 * category.coding[snomed-ct] = $SCT#4201000179104 "Imaging report"
-* code.coding 1..* 
-* subject 1..1 
+* code MS 
+* subject MS
 * subject only Reference(Patient) 
-* encounter 0..1 MS
+* encounter MS
 * effective[x] MS
+* effectiveDateTime MS
+* effectivePeriod MS
+* issued MS
 * extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
 //* extension[supportingInfo].extension[reference] only Reference(DiagnosticReport)
 * result 0..* MS 
@@ -44,3 +47,4 @@ Description: "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung.
     sct 0..* MS
 * conclusionCode.coding[icd10] ^patternCoding.system = $icd10
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
+* presentedForm MS
