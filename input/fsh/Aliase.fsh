@@ -10,4 +10,5 @@ Alias: $miiMedicationAdministration = https://www.medizininformatik-initiative.d
 Alias: $icd10 = http://fhir.de/CodeSystem/bfarm/icd-10-gm
 Alias: $SCT = http://snomed.info/sct
 Alias: $DSS = http://terminology.hl7.org/CodeSystem/v2-0074
+Alias: $dicom-c11 = https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.11.html#sect_C.11.1.1.2
 

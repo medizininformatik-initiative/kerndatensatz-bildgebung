@@ -41,7 +41,7 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 * effectivePeriod MS
 * issued MS
 * extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
-//* extension[supportingInfo].extension[reference] only Reference(DiagnosticReport)
+* extension[supportingInfo].extension[reference].valueReference only Reference(DiagnosticReport)
 * result 0..* MS 
 * imagingStudy 1..* MS
 * imagingStudy only Reference(MII_PR_ImagingStudy_ImagingStudy)
