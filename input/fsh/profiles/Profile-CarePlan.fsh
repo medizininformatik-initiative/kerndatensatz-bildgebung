@@ -12,3 +12,8 @@ Description: "Diese Profil beschreibt die Behandlungsempfehlung"
 * meta MS
 * meta.source MS
 * meta.profile MS
+* status MS
+* intent MS
+* description MS
+* supportingInfo MS
+* supportingInfo only Reference(DiagnosticReport)
