@@ -10,6 +10,10 @@ Similarly, the profile can be applied to more routine anatomical structures, lik
 * insert Translation(^title, en-US, MII PR Bildgebung CarePlan)
 * insert Translation(^description, en-US, The profile describes the examined bodystructure.)
 * insert PR_CS_VS_Version
+* id MS
+* meta MS
+* meta.source MS
+* meta.profile MS
 * morphology 1.. MS
 * location 1.. MS
 * locationQualifier MS
