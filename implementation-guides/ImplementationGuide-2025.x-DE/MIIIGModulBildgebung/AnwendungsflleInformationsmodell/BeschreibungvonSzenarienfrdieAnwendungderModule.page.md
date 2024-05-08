@@ -1,5 +1,8 @@
 ## Beschreibung von Szenarien für die Anwendung der Module
 
+<!-- In diesem Abschnitt werden spezifische Anwendungsfälle und Beispiele für das Modul Bildgebung beschrieben.  -->
+
+
 Konkrete Beispiele:
 
 **Angabe und Dokumentation einer Bildgebung zur Diagnosestellung:**
