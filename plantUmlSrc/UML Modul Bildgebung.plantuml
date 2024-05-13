@@ -122,8 +122,8 @@ package "Befund" {
   + Klinisch relevante Zeit: dateTime [0..1]
   + Klinisch relevante Periode: period [0..1]
   + Zeit der Erstellung: issued [0..1]
-  + {field} Beobachtung: Reference(Observation) [1..1]
-  + {field} Studienbezug: Reference(ImagingStudy) [1..1]
+  + {field} Beobachtung: Reference(Observation) [0..*]
+  + {field} Studienbezug: Reference(ImagingStudy) [1..*]
   + {field} Zusatzinformation: Reference(DiagnosticReport; Procedure) [0..1]
   + Interpretation der Beobachtung: markdown [0..1]
   + strukturierte Interpretation: CodeableConcept [0..1]
@@ -163,7 +163,7 @@ package "Befund" {
   + Titel des Abschnitts: String [0..1]
   + Art des Abschnitts. CodeableConcept [0..1]
   + Text: Narrative [0..1]
-  + {field} Eintrag: Reference(Observation) [0..1]
+  + {field} Eintrag: Reference(Observation) [0..*]
   + {field} Unterabschnitt: Reference(Composition.section) [0..1]
 }
 }
