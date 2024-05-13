@@ -15,4 +15,4 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
     sliceThickness 0..1 MS
 
 * extension[pixelSpacing].value[x]  only string
-* extension[sliceThickness].value[x]  only integer
+* extension[sliceThickness].value[x]  only decimal
