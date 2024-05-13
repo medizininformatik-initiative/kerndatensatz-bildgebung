@@ -12,7 +12,9 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
 * insert ExtensionContext(ImagingStudy.series.instance)
 * extension contains
     pixelSpacing 0..1 MS and
-    sliceThickness 0..1 MS
+    sliceThickness 0..1 MS and
+    imageType 0..1 MS
 
 * extension[pixelSpacing].value[x]  only string
 * extension[sliceThickness].value[x]  only decimal
+* extension[imageType].value[x]  only string
