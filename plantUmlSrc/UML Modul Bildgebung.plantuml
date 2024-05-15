@@ -45,6 +45,9 @@ package "DICOM-Header" {
   + SOP-Klasse: Coding [1..1]
   + Instanz-Nummer: unsignedInt [0..1]
   + Beschreibung der SOP Instanz: string [0..1]
+  + Schichtdicke: Quantity[mm] [1..1]
+  + Pixelabstand: Tuple[Quantitiy[mm]] [1..1]
+  + Bildtyp: String [0..1]
 }
 
   class ModalitätMR #LightYellow {
@@ -66,6 +69,7 @@ package "DICOM-Header" {
   + Expositionszeit: Quantity[ms] [0..1]
   + Exposition: Quantity[mAs] [0..1]
   + Röntgenröhrenstrom: Quantity[mA] [0..1]
+  + Bilder pro Sekunde: unsignedInt [0..1]
 } 
 
   class ModalitätCR #LightYellow {
