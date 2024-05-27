@@ -47,7 +47,8 @@ package "DICOM-Header" {
   + Instanz-Nummer: unsignedInt [0..1]
   + Beschreibung der SOP Instanz: string [0..1]
   + Schichtdicke: Quantity[mm] [1..1]
-  + Pixelabstand: Tuple[Quantitiy[mm]] [1..1]
+  + Pixelabstand (x):Quantitiy[mm] [1..1]
+  + Pixelabstand (y):Quantitiy[mm] [1..1]
 }
 
   class ModalitätMR #LightYellow {
