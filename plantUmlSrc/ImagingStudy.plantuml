@@ -84,6 +84,7 @@ class ModalitätNM #LightYellow {
   + Applikationsstopzeit: dateTime [0..1]
   + Reskalierungstyp: String [0..1]
   + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
+  + Halbwertszeit: Quantity[s] [0..1]
 } 
 
 class ModalitätPET #LightYellow {
@@ -92,6 +93,7 @@ class ModalitätPET #LightYellow {
   + Applikationsstopzeit: dateTime [0..1]
   + Reskalierungstyp: String [0..1]
   + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
+  + Halbwertszeit: Quantity[s] [0..1]
 } 
 
 

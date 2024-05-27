@@ -25,4 +25,7 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[radionuclideTotalDose].valueQuantity.unit = "Megabecquerel" 
 * extension[radionuclideTotalDose].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[radionuclideTotalDose].valueQuantity.code = #MBq
-
+* extension[radionuclideHalfLife].value[x] only SimpleQuantity
+* extension[radionuclideHalfLife].valueQuantity.unit = "Seconds" 
+* extension[radionuclideHalfLife].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[radionuclideHalfLife].valueQuantity.code = #s
