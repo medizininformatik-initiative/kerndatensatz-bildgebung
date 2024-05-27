@@ -32,7 +32,7 @@ package "DICOM-Header" {
   + Serienbeschreibung: string [0..1]
   + Anzahl an in Serie enthaltenen Instanzen: unsignedInt [0..1]
   + {field} Körperregion(bodySite): Coding [0..1]
-  + Körperstelle: Coding [0..1]
+  + Köerperseite: Coding [0..1]
   + Beginn: dateTime [0..1]
   + DICOM-Instanzen: Instance[0..*]
   + Hersteller: CodeableConcept [0..1]
