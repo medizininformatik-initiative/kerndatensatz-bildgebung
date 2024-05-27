@@ -40,6 +40,7 @@ class DICOMInstanz #LightGreen {
   + Beschreibung der SOP Instanz: string [0..1]
   + Schichtdicke: Quantity[mm] [1..1]
   + Pixelabstand: Tuple[Quantitiy[mm]] [1..1]
+  + Bildtyp: String [0..1]
 }
 
 class ModalitätMR #LightYellow {
