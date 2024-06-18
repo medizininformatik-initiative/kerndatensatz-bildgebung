@@ -49,11 +49,14 @@ Description: "MII LogicalModel Modul Bildgebung"
     * Körperregion 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Körperregion" "Codierte Körperregion der Beobachtung"
     * Studienbezug 0..* Reference(ImagingStudy) "Studienbezug" "Bezug auf die zugehörige(n) Bildgebungsstudie(n)."
     * WeitereBeobachtung 0..* Reference(Observation) "Weitere Beobachtung(en)" "Weitere Beobachtung(en) als Referenz auf weitere Observation(s)."
-    * ErweiterteBeschreibung Reference(Observation.component) "Erweiterte Beschreibung" "Kann mehrere Beschreibungen strukturiert abbilden."
+    * ErweiterteBeschreibung 0..* Reference(Observation.component) "Erweiterte Beschreibung" "Kann mehrere Beschreibungen strukturiert abbilden."
     * Bildnummer 0..1 http://hl7.org/fhir/StructureDefinition/string "Bildnummer" "DICOM Series UID der zugehörigen Serie."
     * Schichtposition 0..1 http://hl7.org/fhir/StructureDefinition/string "Schichtposition" "DICOM Instance UID der zugehörigen SOP Instance."
     * ErweiterteKörperstruktur 0..1 Reference(BodyStructure) "Erweiterte Körperstruktur" "Backport der R5 Referenz auf das BodyStructure-Profil."
-
+* Anforderung BackboneElement "Anforderung" "Anfoderung der jeweiligen Bildgebungsmaßnahme"
+    * ArtAnfrage 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Art der Anfrage" "Art der Anfrage"
+    * Patientenbezug 1..1 Reference(Patient) "Patientenbezug" "Bezug zu dem Patienten, für den die Anfoderung besteht"
+    * Zusatzinformation 0..1 Reference(DiagnosticReport) "Zusatzinformation" "Zusatzinformation zur jeweiligen Anfoderung"
 
 
 Mapping: Bildgebung-LogicalModel
@@ -68,16 +71,42 @@ Source: MII_LM_Bildgebung
     * Status -> "DiagnosticReport.status"
     * Person -> "DiagnosticReport.subject"
     * Fall -> "DiagnosticReport.encounter"
-    * Zeitpunkt -> "DiagnosticReport.effective.effectiveDateTime"
-    * Periode -> "DiagnosticReport.effective.effectivePeriod"
+    * Zeitpunkt -> "DiagnosticReport.effective.effectiveDateTime" //Stimmt das so?
+    * Periode -> "DiagnosticReport.effective.effectivePeriod" //Stimmt das so?
     * ZeitpunktErstellung -> "DiagnosticReport.issued"
     * Beobachtung -> "DiagnosticReport.result"
     * InterpretationBeobachtung -> "DiagnosticReport.conclusion"
     * StrukturierteInterpretation -> "DiagnosticReport.conclusionCode"
     * Zusatzinformation -> "DiagnosticReport.supportingInfo.reference"
     * Dokumentenanhang -> "DiagnosticReport.presentedForm"
-    * Studienbezug -> "DiagnosticReport.extension(TODO).value"
-
+    * Studienbezug -> "DiagnosticReport.study"
+*SemistrukturiertesBefunddokument -> "Composition"
+    * DatumUhrzeit -> "Composition.date"
+    * Autor -> "Composition.author"
+    * Befundbericht -> "Composition.subject"
+    * Befundabschnitt -> "Composition.section"
+        * Titel -> "Composition.section.title"
+        * Art -> "Composition.section.code"
+        * Text -> "Composition.section.text"
+        * Eintrag -> "Composition.section.entry"
+        * Unterabschnitt -> "Composition.section.section"
+* GenerischeBeobachtung -> "Observation"
+    * TeilEinerBefundungsprozedur -> "Observation.partOf"
+    * Beobachtungstyp -> "Observation.code"
+    * Status -> "Observation.status"
+    * Beobachtungszeitpunkt -> "Observation.effective.effectiveDateTime" //Stimmt das so?
+    * Beschreibung[x] -> "Observation.value[x]"
+    * Körperregion -> "Observation.bodySite"
+    * Studienbezug -> "Obervation.derivedFrom"
+    * WeitereBeobachtung -> "Observation.hasMember"
+    * ErweiterteBeschreibung -> "Observation.TODO" //haben wir als Referenz abgebildet?
+    * Bildnummer -> "Observation.extension(TODO)"
+    * Schichtposition -> "Observation.extension(TODO)"
+    * ErweiterteKörperstruktur -> TODO //Backport?
+* Anfoderung -> "ServiceRequest"
+    * ArtAnfrage -> "ServiceRequest.code"
+    * Patientenbezug -> "ServiceRequest.subject"
+    * Zusatzinformation -> "ServiceRequest.supportingInfo"
 
 // Mapping: Bildgebung-LogicalModel-Profile
 // Id: KDS-Profile
