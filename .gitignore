@@ -199,7 +199,7 @@ fabric.properties
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
-/fsh-generated/*
+# /fsh-generated/* #We currently want this folder since we have nor running CI pipieline that generates them from *.fsh files
 /temp/*
 /input-cache/*
 /node_modules/*
