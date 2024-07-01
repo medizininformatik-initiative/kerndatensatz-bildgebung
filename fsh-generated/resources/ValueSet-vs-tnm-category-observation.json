@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_TNM_Category_Observation",
+  "id": "vs-tnm-category-observation",
+  "title": "Valueset for Categories of a BodyStructure in the context of one TNM procedure",
+  "description": "This Valueset contains the coded for the different categories for BodyStructures in the context of TNM (Tumor|Node|Metastase)",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/TNMCategoryObservation",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "21905-5",
+            "display": "Primary tumor.clinical [Class] Cancer"
+          },
+          {
+            "code": "21906-3",
+            "display": "Regional lymph nodes.clinical [Class] Cancer"
+          },
+          {
+            "code": "21907-1",
+            "display": "Distant metastases.clinical [Class] Cancer"
+          }
+        ]
+      }
+    ]
+  }
+}

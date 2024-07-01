@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "radiological-tnm-read-procedure",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructurDefinition/TNMRadiologicalReadProcedure",
+  "version": "2024.0.0",
+  "name": "TNM_Radiological_Read_Procedure",
+  "title": "Radiological read procedure for clinical TNM",
+  "status": "active",
+  "description": "This radiological procedure profile describes the radiological reading process following TNM criteria. It derives from the Radiological_Read_Procedure and needs to define which entity and in which version the read was performed.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructurDefinition/RadiologicalReadProcedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/TNMRadiologicalReadProcedures"
+        }
+      }
+    ]
+  }
+}

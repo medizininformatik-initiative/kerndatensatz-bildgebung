@@ -1,0 +1,216 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-ex-modalitaet-pt-nm",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation",
+  "version": "2024.0.0",
+  "name": "MII_EX_Modalitaet_PT_NM",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_EX_Modality_PT_NM"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII EX Modality PT/NM",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII EX Modality PT/NM"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf PT & NM Daten zu erweitern.",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "The extension allows to extend the resources and feasibility analysis to PT & NM data."
+          }
+        ]
+      }
+    ]
+  },
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ImagingStudy.Series"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:radiopharmaceutical",
+        "path": "Extension.extension",
+        "sliceName": "radiopharmaceutical",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:radiopharmaceutical.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "radiopharmaceutical"
+      },
+      {
+        "id": "Extension.extension:radiopharmaceuticalStartTime",
+        "path": "Extension.extension",
+        "sliceName": "radiopharmaceuticalStartTime",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:radiopharmaceuticalStartTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "radiopharmaceuticalStartTime"
+      },
+      {
+        "id": "Extension.extension:radiopharmaceuticalStopTime",
+        "path": "Extension.extension",
+        "sliceName": "radiopharmaceuticalStopTime",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:radiopharmaceuticalStopTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "radiopharmaceuticalStopTime"
+      },
+      {
+        "id": "Extension.extension:rescaleType",
+        "path": "Extension.extension",
+        "sliceName": "rescaleType",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:rescaleType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:rescaleType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "rescaleType"
+      },
+      {
+        "id": "Extension.extension:rescaleType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.11.html#sect_C.11.1.1.2"
+        }
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose",
+        "path": "Extension.extension",
+        "sliceName": "radionuclideTotalDose",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "radionuclideTotalDose"
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "Megabecquerel"
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "MBq"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

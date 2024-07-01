@@ -1,0 +1,145 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-lm-bildgebung",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-Bildgebung/StructureDefinition/LogicalModel/Bildgebung",
+  "version": "2024.0.0",
+  "name": "MII_LM_Bildgebung",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_LM_Bildgebung"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII LM Bildgebung",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII LM Bildgebung"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "date": "2024-06-17",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "MII LogicalModel Modul Bildgebung",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII LogicalModel Module Bildgebung"
+          }
+        ]
+      }
+    ]
+  },
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "FHIR",
+      "name": "Bildgebung LogicalModel FHIR Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.medizininformatik-initiative.de/fhir/core/modul-Bildgebung/StructureDefinition/LogicalModel/Bildgebung",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Bildgebung",
+        "path": "Bildgebung",
+        "short": "Das Erweiterungsmodul Bildgebung enthält Datenelemente zur Dokumentation Bildgebungsstudien und radiologischen Befundberichten",
+        "definition": "MII LogicalModel Modul Bildgebung"
+      },
+      {
+        "id": "Bildgebung.Empfehlung",
+        "path": "Bildgebung.Empfehlung",
+        "short": "Empfehlung",
+        "definition": "Empfehlung",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "CarePlan"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.ArtEmpfehlung",
+        "path": "Bildgebung.ArtEmpfehlung",
+        "short": "Art der Empfehlung",
+        "definition": "Beschreibt die Art der Empfehlung.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.FreitextEmpfehlung",
+        "path": "Bildgebung.FreitextEmpfehlung",
+        "short": "Freitextempfehlung",
+        "definition": "Freitextempfehlung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-bildgebung-koerperstruktur",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Koerperstruktur",
+  "version": "2024.0.0",
+  "name": "MII_PR_Bildgebung_Koerperstruktur",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_PR_Bildgebung_CarePlan"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII PR Bidlgebung Körperstruktur",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII PR Bildgebung CarePlan"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "description": "The Anatomical Structure profile is an integral component for interoperability, designed to universally represent and reference various anatomical structures across diverse medical domains and scenarios. This profile is particularly crucial in bridging information across different specialties and use cases, such as radiology, pathology, surgery and others.\nBy employing a standardized format to describe anatomical structures, this profile enables consistent and precise identification and communication of anatomical details. For example, a tumor identified and detailed in a radiology report can be seamlessly referenced with the same specificity in a subsequent pathology report. This ensures continuity and accuracy in patient care, as each medical specialist refers to the same anatomical structure using a common language and reference system.\nSimilarly, the profile can be applied to more routine anatomical structures, like the knee joint in a MSK use case. In such cases, the initial imaging or assessment details can be easily and accurately carried over into subsequent medical interventions or procedures, like surgery. This not only streamlines the patient's journey through different healthcare services but also enhances the quality of care by ensuring all medical professionals are aligned in their understanding of the patient's anatomical structures and related medical history.",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "The profile describes the examined bodystructure."
+          }
+        ]
+      }
+    ]
+  },
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "openehr",
+      "uri": "http://openehr.org",
+      "name": "Open EHR Archetype Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "BodyStructure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "BodyStructure.id",
+        "path": "BodyStructure.id",
+        "mustSupport": true
+      },
+      {
+        "id": "BodyStructure.meta",
+        "path": "BodyStructure.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "BodyStructure.meta.source",
+        "path": "BodyStructure.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "BodyStructure.meta.profile",
+        "path": "BodyStructure.meta.profile",
+        "mustSupport": true
+      },
+      {
+        "id": "BodyStructure.morphology",
+        "path": "BodyStructure.morphology",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "BodyStructure.location",
+        "path": "BodyStructure.location",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "BodyStructure.locationQualifier",
+        "path": "BodyStructure.locationQualifier",
+        "mustSupport": true
+      }
+    ]
+  }
+}

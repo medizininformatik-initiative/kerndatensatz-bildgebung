@@ -1,0 +1,56 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "example-radiologischerBefund",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/DiagnosticReport"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "4201000179104",
+          "system": "http://snomed.info/sct",
+          "display": "Imaging report"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "4231000179109",
+        "system": "http://snomed.info/sct",
+        "display": "Mammography report"
+      }
+    ]
+  },
+  "status": "final",
+  "basedOn": [
+    {
+      "reference": "ExampleServiceRequest"
+    }
+  ],
+  "subject": {
+    "reference": "ExamplePatient"
+  },
+  "extension": [
+    {
+      "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo",
+      "valueReference": {
+        "reference": "Procedure/ExampleProcedure"
+      }
+    }
+  ],
+  "result": [
+    {
+      "reference": "ExampleResultObservation"
+    }
+  ],
+  "imagingStudy": [
+    {
+      "reference": "ExampleStudy"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "outputFile": "DiagnosticReport-example-radiologischerBefund.json",
+    "fshName": "example-radiologischerBefund",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-DiagnosticReport.fsh",
+    "startLine": 2,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Procedure-example-radiological-tnm-read-procedure.json",
+    "fshName": "example-radiological-tnm-read-procedure",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-TNM-ReadProcedure.fsh",
+    "startLine": 2,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-imagingContrast.json",
+    "fshName": "MII_EX_ImagingContrast",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-series-contrast.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-imagingDevice.json",
+    "fshName": "MII_EX_ImagingDevice",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-series-device.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-imagingInstance.json",
+    "fshName": "MII_EX_ImagingInstance",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-series-instance.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-imagingReason.json",
+    "fshName": "MII_EX_ImagingReason",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-Reason.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-modalitaet-ct.json",
+    "fshName": "MII_EX_Modalitaet_CT",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-Modality-CT.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-modalitaet-mg-cr-dx.json",
+    "fshName": "MII_EX_Modalitaet_MG_CR_DX",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-Modality-MG_CR_DX.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-modalitaet-mr.json",
+    "fshName": "MII_EX_Modalitaet_MR",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-Modality-MR.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-modalitaet-pt-nm.json",
+    "fshName": "MII_EX_Modalitaet_PT_NM",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-Modality-PT_NM.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-mii-lm-bildgebung.json",
+    "fshName": "MII_LM_Bildgebung",
+    "fshType": "Logical",
+    "fshFile": "logicals/LogicalModelBildgebung.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-bildgebendeverfahren-servicerequest.json",
+    "fshName": "MII_PR_BildgebendeVerfahren_ServiceRequest",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-ServiceRequest.fsh",
+    "startLine": 1,
+    "endLine": 46
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.json",
+    "fshName": "MII_PR_Bildgebung_Behandlungsempfehlung",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-CarePlan.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",
+    "fshName": "MII_PR_Bildgebung_Koerperstruktur",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-AnatomyStructure.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologischeBeobachtung.json",
+    "fshName": "MII_PR_Bildgebung_RadiologischeBeobachtung",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-Observation.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologischerBefund.json",
+    "fshName": "MII_PR_Bildgebung_RadiologischerBefund",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-DiagnosticReport.fsh",
+    "startLine": 1,
+    "endLine": 64
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-semistrukturierterBefundbericht.json",
+    "fshName": "MII_PR_Bildgebung_SemistrukturierterBefundbericht",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-Composition.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-imagingstudy-imagingstudy.json",
+    "fshName": "MII_PR_ImagingStudy_ImagingStudy",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-ImagingStudy.fsh",
+    "startLine": 1,
+    "endLine": 55
+  },
+  {
+    "outputFile": "StructureDefinition-radiological-read-procedure.json",
+    "fshName": "Radiological_Read_Procedure",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-ReadProcedure.fsh",
+    "startLine": 3,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-radiological-tnm-read-procedure.json",
+    "fshName": "TNM_Radiological_Read_Procedure",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-TNMRadiologicalReadProcedure.fsh",
+    "startLine": 4,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-bildgebendeverfahren-servicerequest-coding.json",
+    "fshName": "MII_VS_BildgebendeVerfahren_ServiceRequest_Coding",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/Valueset-ServiceRequest-Coding.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-bildgebendeverfahren-servicerequest-reason.json",
+    "fshName": "MII_VS_BildgebendeVerfahren_ServiceRequest_Reason",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/Valueset-ServiceRequest-Reason.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "ValueSet-vs-tnm-category-observation.json",
+    "fshName": "VS_TNM_Category_Observation",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/ValueSet-TNMCategoryObservation.fsh",
+    "startLine": 2,
+    "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-vs-tnm-radiological-read-procedure.json",
+    "fshName": "VS_TNM_Radiological_Read_Procedures",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/Valueset-TNMRadiologicalReadProcedures.fsh",
+    "startLine": 2,
+    "endLine": 7
+  }
+]

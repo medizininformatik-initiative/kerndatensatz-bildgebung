@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_BildgebendeVerfahren_ServiceRequest_Reason",
+  "id": "mii-vs-bildgebendeverfahren-servicerequest-reason",
+  "title": "MII VS BildgebendeVerfahren ServiceRequest Reason",
+  "description": "TODO",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebendeverfahren-servicerequest-reason",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "404684003"
+          }
+        ]
+      }
+    ]
+  }
+}

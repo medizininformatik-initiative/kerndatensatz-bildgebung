@@ -1,0 +1,326 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-ex-modalitaet-ct",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation",
+  "version": "2024.0.0",
+  "name": "MII_EX_Modalitaet_CT",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_EX_Modality_CT"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII EX Modality CT",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII EX Modality CT"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf CT Daten zu erweitern.",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "The extension allows to extend the resources and feasibility analysis to CT data."
+          }
+        ]
+      }
+    ]
+  },
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ImagingStudy.Series"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:CTDIvol",
+        "path": "Extension.extension",
+        "sliceName": "CTDIvol",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:CTDIvol.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:CTDIvol.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "CTDIvol"
+      },
+      {
+        "id": "Extension.extension:CTDIvol.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:CTDIvol.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "milligray"
+      },
+      {
+        "id": "Extension.extension:CTDIvol.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:CTDIvol.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "mGy"
+      },
+      {
+        "id": "Extension.extension:tubeVoltage",
+        "path": "Extension.extension",
+        "sliceName": "tubeVoltage",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:tubeVoltage.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:tubeVoltage.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "tubeVoltage"
+      },
+      {
+        "id": "Extension.extension:tubeVoltage.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:tubeVoltage.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "kilovolt"
+      },
+      {
+        "id": "Extension.extension:tubeVoltage.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:tubeVoltage.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "kV"
+      },
+      {
+        "id": "Extension.extension:exposureTime",
+        "path": "Extension.extension",
+        "sliceName": "exposureTime",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:exposureTime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:exposureTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "exposureTime"
+      },
+      {
+        "id": "Extension.extension:exposureTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:exposureTime.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "milliseconds"
+      },
+      {
+        "id": "Extension.extension:exposureTime.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:exposureTime.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "ms"
+      },
+      {
+        "id": "Extension.extension:exposure",
+        "path": "Extension.extension",
+        "sliceName": "exposure",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:exposure.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:exposure.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "exposure"
+      },
+      {
+        "id": "Extension.extension:exposure.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:exposure.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "milliampere-seconds"
+      },
+      {
+        "id": "Extension.extension:exposure.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:exposure.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "mA.s"
+      },
+      {
+        "id": "Extension.extension:xRayTubeCurrent",
+        "path": "Extension.extension",
+        "sliceName": "xRayTubeCurrent",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:xRayTubeCurrent.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:xRayTubeCurrent.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "xRayTubeCurrent"
+      },
+      {
+        "id": "Extension.extension:xRayTubeCurrent.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:xRayTubeCurrent.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "milliampere"
+      },
+      {
+        "id": "Extension.extension:xRayTubeCurrent.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:xRayTubeCurrent.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "mA"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

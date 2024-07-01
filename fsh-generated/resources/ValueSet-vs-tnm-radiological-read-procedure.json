@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_TNM_Radiological_Read_Procedures",
+  "id": "vs-tnm-radiological-read-procedure",
+  "title": "Valueset for TNM Radiological Read Procedures",
+  "description": "This Valueset contains the snomed codes of the different TNM tumor staging systems",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/TNMRadiologicalReadProcedures",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "254293002"
+          }
+        ]
+      }
+    ]
+  }
+}

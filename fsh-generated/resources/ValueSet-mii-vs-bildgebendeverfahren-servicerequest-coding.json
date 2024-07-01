@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_BildgebendeVerfahren_ServiceRequest_Coding",
+  "id": "mii-vs-bildgebendeverfahren-servicerequest-coding",
+  "title": "MII VS BildgebendeVerfahren ServiceRequest Coding",
+  "description": "TODO",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebendeverfahren-servicerequest-coding",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "363679005"
+          }
+        ]
+      }
+    ]
+  }
+}

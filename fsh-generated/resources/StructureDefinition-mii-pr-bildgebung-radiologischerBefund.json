@@ -1,0 +1,380 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-bildgebung-radiologischerBefund",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/DiagnosticReport",
+  "version": "2024.0.0",
+  "name": "MII_PR_Bildgebung_RadiologischerBefund",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_PR_Bildgebung_DiagnosticReport"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII PR BildgebendeVerfahren Radiologischer Befund",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII PR Bildgebung DiagnosticReport"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "description": "Der Diagnostic Report für Bildgebende verfahren richtet sich an die Dokumentation von radiologischen Befundungsergebnissen. Unterschiedliche Systeme (RIS Befundungsmodule, AI Integrationen dedizierte Systeme zur strukturieren Befundung) lieferen in unterschiedlichem Detailgrad Informationen. Dieses Profil addressiert diese unterschiedlichen Detailgrade und bietet modulare aufeinander aufbauende Stufen. Jede Stufe fügt weitere Konzepte hinzu und ermöglicht so neue Anwendungsmöglichkeiten von der Routine bis hin zu wissenschaftlichen Auswertungen.\n\nStufe 1: Freitext in strukturierter Form: Auf der grundlegendsten Ebene ermöglicht die DiagnosticReport-Ressource die Einbindung von radiologischen Befunden als Freitext in einer strukturierten Form. Dies erlaubt eine einfache, jedoch effektive Darstellung von diagnostischen Informationen. Die Freitextbeschreibung bietet die Möglichkeit, ohne komplexen Datenaustausch, essenzielle Befundinformationen zu übermitteln.\n\nStufe 2: Verlinkung von Observation-Ressourcen: Auf der nächsten Stufe werden DiagnosticReport-Ressourcen mit Observation-Ressourcen verknüpft. Dies erlaubt eine detailliertere Erfassung und Darstellung spezifischer Befunde oder Messwerte. Da diese Ressourcen maschinenlesbar und auch kodiert sind ist es möglich nach diesen Inhalten zu suchen sie für Auswertungen zu verwenden oder auch Workflows zu steuern.\n\nStufe 3: Bezugnahme auf anatomische Strukturen: Die Verknüpfung mit BodyStructure-Ressourcen stellt eine Erweiterung dar, die es ermöglicht, Observations präzise anatomischen Strukturen zuzuordnen. Dieser Bezug ist insbesondere für die longitudinale Patientenversorgung von Bedeutung, da er die Verfolgung und Bezugnahme auf spezifische Läsionen oder Anomalien in Folgeuntersuchungen oder in anderen klinischen Kontexten, wie beispielsweise in der Pathologie, ermöglicht. Wichtig dabei ist, dass die BodyStructure Ressource nicht Teil des Diagnostic Reports ist. Somit müssen Observations auf diese Ressource versioniert verweisen.\n\nStufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Ressourcen bietet einen weiteren Detaillierungsgrad, indem sie den Kontext / die Bedingungen beschreibt, unter denen die Observations erhoben wurden. Dies erlaubt eine tiefere Einsicht in die Umstände der Befundung, indem klar definiert wird, nach welchen Kriterien und Voraussetzungen spezifische Informationen und Messwerte erfasst wurden. Die Verknüpfung mit Procedure-Ressourcen erweitert somit den diagnostischen Bericht um wichtige kontextuelle Informationen, die für die Interpretation der Befunde entscheidend sein können.\n",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "The profile describes a diagnostic report for radiological images."
+          }
+        ]
+      }
+    ]
+  },
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.id",
+        "path": "DiagnosticReport.id",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.meta",
+        "path": "DiagnosticReport.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.meta.source",
+        "path": "DiagnosticReport.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.meta.profile",
+        "path": "DiagnosticReport.meta.profile",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.extension",
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DiagnosticReport.extension:supportingInfo",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "supportingInfo",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.extension:supportingInfo.extension:reference",
+        "path": "DiagnosticReport.extension.extension",
+        "sliceName": "reference"
+      },
+      {
+        "id": "DiagnosticReport.extension:supportingInfo.extension:reference.value[x]",
+        "path": "DiagnosticReport.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.basedOn",
+        "path": "DiagnosticReport.basedOn",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ServiceRequest"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.status",
+        "path": "DiagnosticReport.status",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category",
+        "path": "DiagnosticReport.category",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.category.coding",
+        "path": "DiagnosticReport.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.category.coding:loinc",
+        "path": "DiagnosticReport.category.coding",
+        "sliceName": "loinc",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "18748-4",
+          "system": "http://loinc.org",
+          "display": "Diagnostic imaging study"
+        }
+      },
+      {
+        "id": "DiagnosticReport.category.coding:diagnostic-service-sections",
+        "path": "DiagnosticReport.category.coding",
+        "sliceName": "diagnostic-service-sections",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "RAD",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+        }
+      },
+      {
+        "id": "DiagnosticReport.category.coding:snomed-ct",
+        "path": "DiagnosticReport.category.coding",
+        "sliceName": "snomed-ct",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "4201000179104",
+          "system": "http://snomed.info/sct",
+          "display": "Imaging report"
+        }
+      },
+      {
+        "id": "DiagnosticReport.code",
+        "path": "DiagnosticReport.code",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "path": "DiagnosticReport.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.encounter",
+        "path": "DiagnosticReport.encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.effective[x]",
+        "path": "DiagnosticReport.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.effective[x]:effectiveDateTime",
+        "path": "DiagnosticReport.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.effective[x]:effectivePeriod",
+        "path": "DiagnosticReport.effective[x]",
+        "sliceName": "effectivePeriod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.issued",
+        "path": "DiagnosticReport.issued",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result",
+        "path": "DiagnosticReport.result",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Observation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.imagingStudy",
+        "path": "DiagnosticReport.imagingStudy",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingStudy"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.conclusion",
+        "path": "DiagnosticReport.conclusion",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.conclusionCode",
+        "path": "DiagnosticReport.conclusionCode",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.conclusionCode.coding",
+        "path": "DiagnosticReport.conclusionCode.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.conclusionCode.coding:icd10",
+        "path": "DiagnosticReport.conclusionCode.coding",
+        "sliceName": "icd10",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.conclusionCode.coding:sct",
+        "path": "DiagnosticReport.conclusionCode.coding",
+        "sliceName": "sct",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.presentedForm",
+        "path": "DiagnosticReport.presentedForm",
+        "mustSupport": true
+      }
+    ]
+  }
+}

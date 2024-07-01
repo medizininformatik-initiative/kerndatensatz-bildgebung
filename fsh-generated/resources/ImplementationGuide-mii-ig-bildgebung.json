@@ -1,0 +1,260 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "mii-ig-bildgebung",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ImplementationGuide/mii-ig-bildgebung",
+  "version": "2024.0.0",
+  "name": "MII_IG_Bildgebung",
+  "status": "active",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "name": "Medizininformatik Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de/"
+        }
+      ]
+    }
+  ],
+  "packageId": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "1.0.3",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
+      "id": "de_medizininformatikinitiative_kerndatensatz_meta"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.prozedur",
+      "version": "2.0.0-alpha5",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.prozedur/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.prozedur",
+      "id": "de_medizininformatikinitiative_kerndatensatz_prozedur"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
+      "version": "2.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation-v2",
+      "id": "de_medizininformatikinitiative_kerndatensatz_medikation"
+    },
+    {
+      "packageId": "fhir.dicom",
+      "version": "2024.1.20240120",
+      "uri": "http://fhir.org/packages/fhir.dicom",
+      "id": "fhir_dicom"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "DiagnosticReport/example-radiologischerBefund"
+        },
+        "name": "Example Diagnostic Report",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/DiagnosticReport"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/example-radiological-tnm-read-procedure"
+        },
+        "name": "Example of a TNM Radiological Read Procedure",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructurDefinition/TNMRadiologicalReadProcedure"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-bildgebendeverfahren-servicerequest"
+        },
+        "name": "MII Bildgebende Verfahren ServiceRequest",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-imagingContrast"
+        },
+        "name": "MII EX ImagingContrast",
+        "description": "Die Extension ermöglicht es, die Gabe von Kontrastmitteln auf Serien-Ebene anzugeben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-imagingDevice"
+        },
+        "name": "MII EX ImagingDevice",
+        "description": "Die Extension ermöglicht es, Informationen zum verwendeten Gerät und dessen Hersteller auf Serien-Ebene anzugeben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-imagingInstance"
+        },
+        "name": "MII EX ImagingInstance",
+        "description": "Die Extension ermöglicht es, Informationen zur ausgewählten Serie auf Instanz-Ebene anzugeben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-imagingReason"
+        },
+        "name": "MII EX ImagingReason",
+        "description": "Die Extension ermöglicht es, den Bildbegungsgrund aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-modalitaet-ct"
+        },
+        "name": "MII EX Modality CT",
+        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf CT Daten zu erweitern.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-modalitaet-mg-cr-dx"
+        },
+        "name": "MII EX Modality MG/CR/DX",
+        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MG, CR & DX Daten zu erweitern.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-modalitaet-mr"
+        },
+        "name": "MII EX Modality MR",
+        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MR Daten zu erweitern.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-modalitaet-pt-nm"
+        },
+        "name": "MII EX Modality PT/NM",
+        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf PT & NM Daten zu erweitern.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-lm-bildgebung"
+        },
+        "name": "MII LM Bildgebung",
+        "description": "MII LogicalModel Modul Bildgebung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-bildgebung-koerperstruktur"
+        },
+        "name": "MII PR Bidlgebung Körperstruktur",
+        "description": "The Anatomical Structure profile is an integral component for interoperability, designed to universally represent and reference various anatomical structures across diverse medical domains and scenarios. This profile is particularly crucial in bridging information across different specialties and use cases, such as radiology, pathology, surgery and others.\nBy employing a standardized format to describe anatomical structures, this profile enables consistent and precise identification and communication of anatomical details. For example, a tumor identified and detailed in a radiology report can be seamlessly referenced with the same specificity in a subsequent pathology report. This ensures continuity and accuracy in patient care, as each medical specialist refers to the same anatomical structure using a common language and reference system.\nSimilarly, the profile can be applied to more routine anatomical structures, like the knee joint in a MSK use case. In such cases, the initial imaging or assessment details can be easily and accurately carried over into subsequent medical interventions or procedures, like surgery. This not only streamlines the patient's journey through different healthcare services but also enhances the quality of care by ensuring all medical professionals are aligned in their understanding of the patient's anatomical structures and related medical history.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-bildgebung-radiologischeBeobachtung"
+        },
+        "name": "MII PR BildgebendeVerfahren Radiologische Beobachtung",
+        "description": "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-bildgebung-radiologischerBefund"
+        },
+        "name": "MII PR BildgebendeVerfahren Radiologischer Befund",
+        "description": "Der Diagnostic Report für Bildgebende verfahren richtet sich an die Dokumentation von radiologischen Befundungsergebnissen. Unterschiedliche Systeme (RIS Befundungsmodule, AI Integrationen dedizierte Systeme zur strukturieren Befundung) lieferen in unterschiedlichem Detailgrad Informationen. Dieses Profil addressiert diese unterschiedlichen Detailgrade und bietet modulare aufeinander aufbauende Stufen. Jede Stufe fügt weitere Konzepte hinzu und ermöglicht so neue Anwendungsmöglichkeiten von der Routine bis hin zu wissenschaftlichen Auswertungen.\n\nStufe 1: Freitext in strukturierter Form: Auf der grundlegendsten Ebene ermöglicht die DiagnosticReport-Ressource die Einbindung von radiologischen Befunden als Freitext in einer strukturierten Form. Dies erlaubt eine einfache, jedoch effektive Darstellung von diagnostischen Informationen. Die Freitextbeschreibung bietet die Möglichkeit, ohne komplexen Datenaustausch, essenzielle Befundinformationen zu übermitteln.\n\nStufe 2: Verlinkung von Observation-Ressourcen: Auf der nächsten Stufe werden DiagnosticReport-Ressourcen mit Observation-Ressourcen verknüpft. Dies erlaubt eine detailliertere Erfassung und Darstellung spezifischer Befunde oder Messwerte. Da diese Ressourcen maschinenlesbar und auch kodiert sind ist es möglich nach diesen Inhalten zu suchen sie für Auswertungen zu verwenden oder auch Workflows zu steuern.\n\nStufe 3: Bezugnahme auf anatomische Strukturen: Die Verknüpfung mit BodyStructure-Ressourcen stellt eine Erweiterung dar, die es ermöglicht, Observations präzise anatomischen Strukturen zuzuordnen. Dieser Bezug ist insbesondere für die longitudinale Patientenversorgung von Bedeutung, da er die Verfolgung und Bezugnahme auf spezifische Läsionen oder Anomalien in Folgeuntersuchungen oder in anderen klinischen Kontexten, wie beispielsweise in der Pathologie, ermöglicht. Wichtig dabei ist, dass die BodyStructure Ressource nicht Teil des Diagnostic Reports ist. Somit müssen Observations auf diese Ressource versioniert verweisen.\n\nStufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Ressourcen bietet einen weiteren Detaillierungsgrad, indem sie den Kontext / die Bedingungen beschreibt, unter denen die Observations erhoben wurden. Dies erlaubt eine tiefere Einsicht in die Umstände der Befundung, indem klar definiert wird, nach welchen Kriterien und Voraussetzungen spezifische Informationen und Messwerte erfasst wurden. Die Verknüpfung mit Procedure-Ressourcen erweitert somit den diagnostischen Bericht um wichtige kontextuelle Informationen, die für die Interpretation der Befunde entscheidend sein können.\n",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
+        },
+        "name": "MII PR Bildgebung Behandlungsempfehlung",
+        "description": "Diese Profil beschreibt die Behandlungsempfehlung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-bildgebung-semistrukturierterBefundbericht"
+        },
+        "name": "MII PR Bildgebung Semistrukturierter Befungbericht",
+        "description": "Dieses Profil beschreibt den semistrukturierten Befundbericht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-imagingstudy-imagingstudy"
+        },
+        "name": "MII PR ImagingStudy ImagingStudy",
+        "description": "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten auf Studien-, Serien- sowie Instanzen-Ebene der jeweiligen DICOM-Studie.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-bildgebendeverfahren-servicerequest-coding"
+        },
+        "name": "MII VS BildgebendeVerfahren ServiceRequest Coding",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-bildgebendeverfahren-servicerequest-reason"
+        },
+        "name": "MII VS BildgebendeVerfahren ServiceRequest Reason",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/radiological-read-procedure"
+        },
+        "name": "Radiological read procedure",
+        "description": "This FHIR resource profile specifically characterizes the radiological reading process, including both manual interpretations by radiologists and automated processes such as AI algorithms used for tasks like segmentation. It's important to note that this profile does not detail the procedures involved in image acquisition, which are instead described in the ImagingStudy resource's procedureReference.\nThe foremost goal of this resource is to provide structured, contextual information within the Diagnostic Report. This ensures accurate interpretation of various observations. For instance, it clarifies the application of a specific version of the TNM (Tumor, Node, Metastasis) classification and the targeted entity. This feature is particularly useful in TNM observation resources, aiding in precise interpretation and reporting.\nMoreover, this resource can attribute additional properties to BodyStructures identified during a radiological examination. In a TNM-based assessment, a tumor might be categorized as 'Primary', whereas in a RECIST (Response Evaluation Criteria in Solid Tumors) based evaluation, the same lesion (BodyStructure) might be classified as a 'Target' lesion.\nImportantly, this resource is designed for reusability across different Diagnostic Reports. This is essential for ensuring that specific information, which remains constant over time, is modeled accurately. For example, in the context of RECIST evaluations, once a lesion is designated as a 'target' lesion, this classification remains unchanged throughout the patient's treatment course. By reusing the resource for different reports, consistency and accuracy in the modeling of such time-invariant data are maintained.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/radiological-tnm-read-procedure"
+        },
+        "name": "Radiological read procedure for clinical TNM",
+        "description": "This radiological procedure profile describes the radiological reading process following TNM criteria. It derives from the Radiological_Read_Procedure and needs to define which entity and in which version the read was performed.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-category-observation"
+        },
+        "name": "Valueset for Categories of a BodyStructure in the context of one TNM procedure",
+        "description": "This Valueset contains the coded for the different categories for BodyStructures in the context of TNM (Tumor|Node|Metastase)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-radiological-read-procedure"
+        },
+        "name": "Valueset for TNM Radiological Read Procedures",
+        "description": "This Valueset contains the snomed codes of the different TNM tumor staging systems",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": []
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2024+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}
