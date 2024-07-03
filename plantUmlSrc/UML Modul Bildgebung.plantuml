@@ -46,6 +46,7 @@ package "DICOM-Header" {
   + SOP-Klasse: Coding [1..1]
   + Instanz-Nummer: unsignedInt [0..1]
   + Beschreibung der SOP Instanz: string [0..1]
+  + Bildtyp: string [0..1]
   + Schichtdicke: Quantity[mm] [1..1]
   + Pixelabstand (x):Quantitiy[mm] [1..1]
   + Pixelabstand (y):Quantitiy[mm] [1..1]
