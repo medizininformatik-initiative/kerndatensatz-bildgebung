@@ -100,15 +100,15 @@ Id: FHIR
 Title: "Bildgebung LogicalModel FHIR Mapping"
 Source: MII_LM_Bildgebung
 * Empfehlung -> "CarePlan"
-  * ArtEmpfehlung -> "CarePlan.TODO"
+  * ArtEmpfehlung -> "CarePlan.intent"
   * FreitextEmpfehlung-> "CarePlan.description"
 * Befundbericht -> "DiagnosticReport"
     * AnforderndeMaßnahme -> "DiagnosticReport.basedOn"
     * Status -> "DiagnosticReport.status"
     * Person -> "DiagnosticReport.subject"
     * Fall -> "DiagnosticReport.encounter"
-    * Zeitpunkt -> "DiagnosticReport.effective.effectiveDateTime" //Stimmt das so?
-    * Periode -> "DiagnosticReport.effective.effectivePeriod" //Stimmt das so?
+    * Zeitpunkt -> "DiagnosticReport.effective.effectiveDateTime"
+    * Periode -> "DiagnosticReport.effective.effectivePeriod"
     * ZeitpunktErstellung -> "DiagnosticReport.issued"
     * Beobachtung -> "DiagnosticReport.result"
     * InterpretationBeobachtung -> "DiagnosticReport.conclusion"
@@ -130,7 +130,7 @@ Source: MII_LM_Bildgebung
     * TeilEinerBefundungsprozedur -> "Observation.partOf"
     * Beobachtungstyp -> "Observation.code"
     * Status -> "Observation.status"
-    * Beobachtungszeitpunkt -> "Observation.effective.effectiveDateTime" //Stimmt das so?
+    * Beobachtungszeitpunkt -> "Observation.issued"
     * Beschreibung[x] -> "Observation.value[x]"
     * Körperregion -> "Observation.bodySite"
     * Studienbezug -> "Obervation.derivedFrom"
