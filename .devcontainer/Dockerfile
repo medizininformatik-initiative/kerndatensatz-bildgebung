@@ -1,4 +1,4 @@
-FROM ghcr.io/miracum/ig-build-tools:v2.0.51
+FROM ghcr.io/miracum/ig-build-tools:v2.1.3
 
 RUN apt-get update && apt-get install -y graphviz git-all
 
