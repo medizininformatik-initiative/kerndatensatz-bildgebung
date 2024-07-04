@@ -1,5 +1,5 @@
 [example-radiologischerBefund]: DiagnosticReport-example-radiologischerBefund.html
-[example-radiological-tnm-read-procedure]: Procedure-example-radiological-tnm-read-procedure.html
+[example-TNMRadiologischeBefundungsprocedur]: Procedure-example-TNMRadiologischeBefundungsprocedur.html
 [MII_PR_BildgebendeVerfahren_ServiceRequest]: StructureDefinition-mii-pr-bildgebendeverfahren-servicerequest.html
 [MII_EX_ImagingContrast]: StructureDefinition-mii-ex-imagingContrast.html
 [MII_EX_ImagingDevice]: StructureDefinition-mii-ex-imagingDevice.html
@@ -14,11 +14,11 @@
 [MII_PR_Bildgebung_RadiologischerBefund]: StructureDefinition-mii-pr-bildgebung-radiologischerBefund.html
 [MII_PR_Bildgebung_Behandlungsempfehlung]: StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html
 [MII_PR_Bildgebung_Koerperstruktur]: StructureDefinition-mii-pr-bildgebung-koerperstruktur.html
+[MII_PR_Bildgebung_RadiologischeBefundungsprozedur]: StructureDefinition-mii-pr-bildgebung-radiologischeBefundungsprozedur.html
 [MII_PR_Bildgebung_SemistrukturierterBefundbericht]: StructureDefinition-mii-pr-bildgebung-semistrukturierterBefundbericht.html
+[MII_PR_Bildgebung_TNMRadiologischeBefundungsprozedur]: StructureDefinition-mii-pr-bildgebung-TNMRadiologischeBefundungsprozedur.html
 [MII_PR_Bildgebung_ImagingStudy]: StructureDefinition-mii-pr-bildgebung-imagingstudy.html
 [MII_VS_BildgebendeVerfahren_ServiceRequest_Coding]: ValueSet-mii-vs-bildgebendeverfahren-servicerequest-coding.html
 [MII_VS_BildgebendeVerfahren_ServiceRequest_Reason]: ValueSet-mii-vs-bildgebendeverfahren-servicerequest-reason.html
-[Radiological_Read_Procedure]: StructureDefinition-radiological-read-procedure.html
-[TNM_Radiological_Read_Procedure]: StructureDefinition-radiological-tnm-read-procedure.html
 [VS_TNM_Category_Observation]: ValueSet-vs-tnm-category-observation.html
 [VS_TNM_Radiological_Read_Procedures]: ValueSet-vs-tnm-radiological-read-procedure.html

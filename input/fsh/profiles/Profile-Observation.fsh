@@ -9,7 +9,7 @@ Description: "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung.
 * insert Translation(^description, en-US, The profile describes a observation for radiological images.)
 * insert PR_CS_VS_Version
 * partOf MS
-* partOf only Reference (Radiological_Read_Procedure)
+* partOf only Reference (MII_PR_Bildgebung_RadiologischeBefundungsprozedur)
 * status MS
 * category MS
 * code MS

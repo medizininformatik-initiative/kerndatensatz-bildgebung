@@ -1,6 +1,6 @@
 //TNM Example
-Instance: example-radiological-tnm-read-procedure
-InstanceOf: radiological-tnm-read-procedure
+Instance: example-TNMRadiologischeBefundungsprocedur
+InstanceOf: MII_PR_Bildgebung_TNMRadiologischeBefundungsprozedur
 Usage: #example
 Title: "Example of a TNM Radiological Read Procedure"
 * category = $SCT#103693007 "Diagnostic procedure"

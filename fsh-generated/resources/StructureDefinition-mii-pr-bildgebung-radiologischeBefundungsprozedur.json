@@ -1,0 +1,124 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-bildgebung-radiologischeBefundungsprozedur",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/RadiologicalReadProcedure",
+  "version": "2024.0.0",
+  "name": "MII_PR_Bildgebung_RadiologischeBefundungsprozedur",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_PR_Bildgebung_RadiologicalReadProcedure"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII PR Bildgebung RadiologischeBefundungsprozedur",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII PR Bildgebung RadiologicalReadProcedure"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "description": "Diese Profil beschreibt die radiologische Befundungsprozedur",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "This FHIR resource profile specifically characterizes the radiological reading process."
+          }
+        ]
+      }
+    ]
+  },
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.id",
+        "path": "Procedure.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.meta",
+        "path": "Procedure.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.meta.source",
+        "path": "Procedure.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.meta.profile",
+        "path": "Procedure.meta.profile",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "min": 1,
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "103693007",
+              "system": "http://snomed.info/sct",
+              "display": "Diagnostic procedure"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.report",
+        "path": "Procedure.report",
+        "definition": "In cases where follow ups are performed (e.g. RECIST or TNM) this procedure might be used in more than one diagnostic report this way we guarantee that the tumor categories stay the same over time.",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}
