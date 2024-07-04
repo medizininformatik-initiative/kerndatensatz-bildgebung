@@ -449,10 +449,6 @@
           {
             "identity": "FHIR",
             "map": "Composition"
-          },
-          {
-            "identity": "FHIR",
-            "map": "Composition"
           }
         ]
       },
@@ -469,10 +465,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.date"
-          },
           {
             "identity": "FHIR",
             "map": "Composition.date"
@@ -498,10 +490,6 @@
           {
             "identity": "FHIR",
             "map": "Composition.author"
-          },
-          {
-            "identity": "FHIR",
-            "map": "Composition.author"
           }
         ]
       },
@@ -524,10 +512,6 @@
           {
             "identity": "FHIR",
             "map": "Composition.subject"
-          },
-          {
-            "identity": "FHIR",
-            "map": "Composition.subject"
           }
         ]
       },
@@ -544,10 +528,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.section"
-          },
           {
             "identity": "FHIR",
             "map": "Composition.section"
@@ -570,10 +550,6 @@
           {
             "identity": "FHIR",
             "map": "Composition.section.title"
-          },
-          {
-            "identity": "FHIR",
-            "map": "Composition.section.title"
           }
         ]
       },
@@ -593,10 +569,6 @@
           {
             "identity": "FHIR",
             "map": "Composition.section.code"
-          },
-          {
-            "identity": "FHIR",
-            "map": "Composition.section.code"
           }
         ]
       },
@@ -613,10 +585,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.section.text"
-          },
           {
             "identity": "FHIR",
             "map": "Composition.section.text"
@@ -642,10 +610,6 @@
           {
             "identity": "FHIR",
             "map": "Composition.section.entry"
-          },
-          {
-            "identity": "FHIR",
-            "map": "Composition.section.entry"
           }
         ]
       },
@@ -662,10 +626,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.section.section"
-          },
           {
             "identity": "FHIR",
             "map": "Composition.section.section"
@@ -1023,10 +983,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy"
           }
         ]
       },
@@ -1049,10 +1005,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.TODO"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.TODO"
           }
         ]
       },
@@ -1069,10 +1021,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.identifier"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.identifier"
@@ -1095,10 +1043,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.status"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.status"
           }
         ]
       },
@@ -1115,10 +1059,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.description"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.description"
@@ -1141,10 +1081,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.numberOfInstances"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.numberOfInstances"
           }
         ]
       },
@@ -1164,10 +1100,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.numberOfSeries"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.numberOfSeries"
           }
         ]
       },
@@ -1184,10 +1116,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.started"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.started"
@@ -1214,10 +1142,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.reasonReference"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.reasonReference"
           }
         ]
       },
@@ -1234,10 +1158,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.modality"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.modality"
@@ -1263,10 +1183,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.endpoint"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.endpoint"
           }
         ]
       },
@@ -1289,10 +1205,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.basedOn"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.basedOn"
           }
         ]
       },
@@ -1309,10 +1221,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.extension(TODO)"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.extension(TODO)"
@@ -1338,10 +1246,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.encounter"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.encounter"
           }
         ]
       },
@@ -1364,10 +1268,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.subject"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.subject"
           }
         ]
       },
@@ -1384,10 +1284,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series"
@@ -1410,10 +1306,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.uid"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.uid"
           }
         ]
       },
@@ -1430,10 +1322,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.number"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.number"
@@ -1456,10 +1344,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.modality"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.modality"
           }
         ]
       },
@@ -1476,10 +1360,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.description"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.description"
@@ -1502,10 +1382,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.numberOfInstances"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.numberOfInstances"
           }
         ]
       },
@@ -1522,10 +1398,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.bodySite"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.bodySite"
@@ -1548,10 +1420,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.laterality"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.laterality"
           }
         ]
       },
@@ -1568,10 +1436,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.started"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.started"
@@ -1594,10 +1458,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.extension(TODO)"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.extension(TODO)"
           }
         ]
       },
@@ -1614,10 +1474,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.extension(TODO)"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.extension(TODO)"
@@ -1640,10 +1496,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.extension(TODO)"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.extension(TODO)"
           }
         ]
       },
@@ -1660,10 +1512,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.instance"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.instance"
@@ -1686,10 +1534,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.instance.uid"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.uid"
           }
         ]
       },
@@ -1706,10 +1550,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.sopClass"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.instance.sopClass"
@@ -1732,10 +1572,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.instance.number"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.number"
           }
         ]
       },
@@ -1752,10 +1588,6 @@
           }
         ],
         "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.title"
-          },
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.instance.title"
@@ -1778,10 +1610,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.extension(TODO)"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.extension(TODO)"
           }
         ]
       },
@@ -1801,10 +1629,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.extension(TODO)"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.extension(TODO)"
           }
         ]
       },
@@ -1824,19 +1648,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.extension(TODO)"
-          },
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.extension(TODO)"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Studie.Serien.Unterabschnitt",
-        "path": "Bildgebung.Studie.Serien.Unterabschnitt",
-        "type": [
-          {
-            "code": "Reference"
           }
         ]
       }
