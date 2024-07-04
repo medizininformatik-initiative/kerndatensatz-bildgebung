@@ -1,16 +1,16 @@
 - name: Index
   filename: Index.page.md
-- name: DiagnosticReport (Befundbericht)
+- name: DiagnosticReport
   filename: DiagnosticReport(Befundbericht).page.md
-- name: Koerperstrukutur
+- name: BodyStructure
   filename: AnatomyStructure(Körperstelle).page.md
-- name: Composition (SemistrukturierterBefundbericht)
+- name: Composition
   filename: Composition(SemistrukturierterBefundbericht).page.md
-- name: ImagingProcedure (BildgebungsVerfahren)
+- name: ImagingProcedure
   filename: ImagingProcedure(BildgebungsVerfahren).page.md
-- name: Observation (Beobachtung)
+- name: Observation
   filename: Observation(Beobachtung).page.md
-- name: ServiceRequest (Anforderung)
+- name: ServiceRequest
   filename: ServiceRequest(Anforderung).page.md
-- name: ImagingStudy (Bildstudie)
+- name: ImagingStudy
   filename: ImagingStudy(Bildstudie).page.md
