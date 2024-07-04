@@ -18,3 +18,6 @@ Description: "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung.
 * value[x] MS
 * bodySite MS
 * component MS
+// extension BIldnummer
+// extension Instance UID
+// extension Bodystructure
