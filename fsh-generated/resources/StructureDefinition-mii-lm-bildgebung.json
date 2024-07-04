@@ -827,7 +827,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "Observation.TODO"
+            "map": "Observation.component"
           }
         ]
       },
@@ -1457,7 +1457,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.extension(TODO)"
+            "map": "ImagingStudy.series.extension(TODO)"
           }
         ]
       },
@@ -1476,7 +1476,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.extension(TODO)"
+            "map": "ImagingStudy.series.extension(TODO)"
           }
         ]
       },
@@ -1495,7 +1495,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.extension(TODO)"
+            "map": "ImagingStudy.series.extension(TODO)"
           }
         ]
       },
@@ -1595,6 +1595,25 @@
         ]
       },
       {
+        "id": "Bildgebung.Studie.Serien.Instanzen.Bildtyp",
+        "path": "Bildgebung.Studie.Serien.Instanzen.Bildtyp",
+        "short": "Bildtyp",
+        "definition": "Bildtyp der Instanz",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.instance.extension(TODO)"
+          }
+        ]
+      },
+      {
         "id": "Bildgebung.Studie.Serien.Instanzen.Schichtdicke",
         "path": "Bildgebung.Studie.Serien.Instanzen.Schichtdicke",
         "short": "Schichtdicke in mm",
@@ -1609,7 +1628,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.extension(TODO)"
+            "map": "ImagingStudy.series.instance.extension(TODO)"
           }
         ]
       },
@@ -1628,7 +1647,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.extension(TODO)"
+            "map": "ImagingStudy.series.instance.extension(TODO)"
           }
         ]
       },
@@ -1647,7 +1666,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.extension(TODO)"
+            "map": "ImagingStudy.series.instance.extension(TODO)"
           }
         ]
       }

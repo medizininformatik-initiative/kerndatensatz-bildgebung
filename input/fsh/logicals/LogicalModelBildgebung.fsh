@@ -90,6 +90,7 @@ Description: "MII LogicalModel Modul Bildgebung"
       * SOP-Klasse 1..1 http://hl7.org/fhir/StructureDefinition/Coding "SOP-Klasse" "SOP-Klasse der jeweiligen SOP-Instanz"
       * Instanz-Nummer 0..1 http://hl7.org/fhir/StructureDefinition/unsignedInt "Instanz-Nummer" "Nummer der jeweiligen Instanz"
       * Beschreibung 0..1 http://hl7.org/fhir/StructureDefinition/string "Instanz-Beschreibung" "Beschreibung der jeweiligen Instanz"
+      * Bildtyp 0..1 http://hl7.org/fhir/StructureDefinition/string "Bildtyp" "Bildtyp der Instanz"
       * Schichtdicke 1..1 http://hl7.org/fhir/StructureDefinition/unsignedInt "Schichtdicke in mm" "Schichtdicke der SOP-Instanz in mm"
       * PixelabstandX 1..1 http://hl7.org/fhir/StructureDefinition/unsignedInt "Pixelabstand in x-Richtung in mm" "Pixelabstand in x-Richtung in mm"
       * PixelabstandY 1..1 http://hl7.org/fhir/StructureDefinition/unsignedInt "Pixelabstand in y-Richtung in mm" "Pixelabstand in y-Richtung in mm"
@@ -135,7 +136,7 @@ Source: MII_LM_Bildgebung
   * Körperregion -> "Observation.bodySite"
   * Studienbezug -> "Obervation.derivedFrom"
   * WeitereBeobachtung -> "Observation.hasMember"
-  * ErweiterteBeschreibung -> "Observation.TODO" //haben wir als Referenz abgebildet?
+  * ErweiterteBeschreibung -> "Observation.component" //haben wir als Referenz abgebildet?
   * Bildnummer -> "Observation.extension(TODO)"
   * Schichtposition -> "Observation.extension(TODO)"
   //* ErweiterteKörperstruktur -> TODO //Backport?
@@ -167,19 +168,20 @@ Source: MII_LM_Bildgebung
     * Körperregion -> "ImagingStudy.series.bodySite"
     * Körperseite -> "ImagingStudy.series.laterality"
     * Beginn -> "ImagingStudy.series.started"
-    * Hersteller -> "ImagingStudy.extension(TODO)"
-    * Modell -> "ImagingStudy.extension(TODO)"
-    * Kontrastmittelgabe -> "ImagingStudy.extension(TODO)"
-    //* Kontrastmitteldetails -> "ImagingStudy.extension(TODO)"
+    * Hersteller -> "ImagingStudy.series.extension(TODO)"
+    * Modell -> "ImagingStudy.series.extension(TODO)"
+    * Kontrastmittelgabe -> "ImagingStudy.series.extension(TODO)"
+    //* Kontrastmitteldetails -> "ImagingStudy.series.extension(TODO)"
     // TODO: Modalitätsspezifische Attribute
     * Instanzen -> "ImagingStudy.series.instance"
       * SOP-Instanz -> "ImagingStudy.series.instance.uid"
       * SOP-Klasse -> "ImagingStudy.series.instance.sopClass"
       * Beschreibung -> "ImagingStudy.series.instance.title"
       * Instanz-Nummer -> "ImagingStudy.series.instance.number"
-      * Schichtdicke -> "ImagingStudy.extension(TODO)"
-      * PixelabstandX -> "ImagingStudy.extension(TODO)"
-      * PixelabstandY -> "ImagingStudy.extension(TODO)"
+      * Bildtyp -> "ImagingStudy.series.instance.extension(TODO)"
+      * Schichtdicke -> "ImagingStudy.series.instance.extension(TODO)"
+      * PixelabstandX -> "ImagingStudy.series.instance.extension(TODO)"
+      * PixelabstandY -> "ImagingStudy.series.instance.extension(TODO)"
 
 
 // Mapping: Bildgebung-LogicalModel-Profile
