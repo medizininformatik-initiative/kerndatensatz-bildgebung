@@ -12,11 +12,11 @@ StructureDefinition-mii-ex-modalitaet-pt-nm.json                            MII_
 StructureDefinition-mii-lm-bildgebung.json                                  MII_LM_Bildgebung                                  Logical    logicals/LogicalModelBildgebung.fsh                   1 - 96
 StructureDefinition-mii-pr-bildgebendeverfahren-servicerequest.json         MII_PR_BildgebendeVerfahren_ServiceRequest         Profile    profiles/Profile-ServiceRequest.fsh                   1 - 46
 StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.json            MII_PR_Bildgebung_Behandlungsempfehlung            Profile    profiles/Profile-CarePlan.fsh                         1 - 19
+StructureDefinition-mii-pr-bildgebung-imagingstudy.json                     MII_PR_Bildgebung_ImagingStudy                     Profile    profiles/Profile-ImagingStudy.fsh                     1 - 55
 StructureDefinition-mii-pr-bildgebung-koerperstruktur.json                  MII_PR_Bildgebung_Koerperstruktur                  Profile    profiles/Profile-AnatomyStructure.fsh                 1 - 19
 StructureDefinition-mii-pr-bildgebung-radiologischeBeobachtung.json         MII_PR_Bildgebung_RadiologischeBeobachtung         Profile    profiles/Profile-Observation.fsh                      1 - 20
 StructureDefinition-mii-pr-bildgebung-radiologischerBefund.json             MII_PR_Bildgebung_RadiologischerBefund             Profile    profiles/Profile-DiagnosticReport.fsh                 1 - 64
 StructureDefinition-mii-pr-bildgebung-semistrukturierterBefundbericht.json  MII_PR_Bildgebung_SemistrukturierterBefundbericht  Profile    profiles/Profile-Composition.fsh                      1 - 28
-StructureDefinition-mii-pr-imagingstudy-imagingstudy.json                   MII_PR_ImagingStudy_ImagingStudy                   Profile    profiles/Profile-ImagingStudy.fsh                     1 - 55
 StructureDefinition-radiological-read-procedure.json                        Radiological_Read_Procedure                        Profile    profiles/Profile-ReadProcedure.fsh                    3 - 18
 StructureDefinition-radiological-tnm-read-procedure.json                    TNM_Radiological_Read_Procedure                    Profile    profiles/Profile-TNMRadiologicalReadProcedure.fsh     4 - 12
 ValueSet-mii-vs-bildgebendeverfahren-servicerequest-coding.json             MII_VS_BildgebendeVerfahren_ServiceRequest_Coding  ValueSet   valuesets/Valueset-ServiceRequest-Coding.fsh          1 - 5

@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-imagingstudy-imagingstudy",
+  "id": "mii-pr-bildgebung-imagingstudy",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingStudy",
   "version": "2024.0.0",
-  "name": "MII_PR_ImagingStudy_ImagingStudy",
+  "name": "MII_PR_Bildgebung_ImagingStudy",
   "_name": {
     "extension": [
       {

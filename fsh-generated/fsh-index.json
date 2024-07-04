@@ -104,6 +104,14 @@
     "endLine": 19
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-imagingstudy.json",
+    "fshName": "MII_PR_Bildgebung_ImagingStudy",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-ImagingStudy.fsh",
+    "startLine": 1,
+    "endLine": 55
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",
     "fshName": "MII_PR_Bildgebung_Koerperstruktur",
     "fshType": "Profile",
@@ -134,14 +142,6 @@
     "fshFile": "profiles/Profile-Composition.fsh",
     "startLine": 1,
     "endLine": 28
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-imagingstudy-imagingstudy.json",
-    "fshName": "MII_PR_ImagingStudy_ImagingStudy",
-    "fshType": "Profile",
-    "fshFile": "profiles/Profile-ImagingStudy.fsh",
-    "startLine": 1,
-    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-radiological-read-procedure.json",

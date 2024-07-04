@@ -10,12 +10,12 @@
 [MII_EX_Modalitaet_MR]: StructureDefinition-mii-ex-modalitaet-mr.html
 [MII_EX_Modalitaet_PT_NM]: StructureDefinition-mii-ex-modalitaet-pt-nm.html
 [MII_LM_Bildgebung]: StructureDefinition-mii-lm-bildgebung.html
-[MII_PR_Bildgebung_Koerperstruktur]: StructureDefinition-mii-pr-bildgebung-koerperstruktur.html
 [MII_PR_Bildgebung_RadiologischeBeobachtung]: StructureDefinition-mii-pr-bildgebung-radiologischeBeobachtung.html
 [MII_PR_Bildgebung_RadiologischerBefund]: StructureDefinition-mii-pr-bildgebung-radiologischerBefund.html
 [MII_PR_Bildgebung_Behandlungsempfehlung]: StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html
+[MII_PR_Bildgebung_Koerperstruktur]: StructureDefinition-mii-pr-bildgebung-koerperstruktur.html
 [MII_PR_Bildgebung_SemistrukturierterBefundbericht]: StructureDefinition-mii-pr-bildgebung-semistrukturierterBefundbericht.html
-[MII_PR_ImagingStudy_ImagingStudy]: StructureDefinition-mii-pr-imagingstudy-imagingstudy.html
+[MII_PR_Bildgebung_ImagingStudy]: StructureDefinition-mii-pr-bildgebung-imagingstudy.html
 [MII_VS_BildgebendeVerfahren_ServiceRequest_Coding]: ValueSet-mii-vs-bildgebendeverfahren-servicerequest-coding.html
 [MII_VS_BildgebendeVerfahren_ServiceRequest_Reason]: ValueSet-mii-vs-bildgebendeverfahren-servicerequest-reason.html
 [Radiological_Read_Procedure]: StructureDefinition-radiological-read-procedure.html

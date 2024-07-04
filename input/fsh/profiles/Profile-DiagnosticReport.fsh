@@ -49,7 +49,7 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 * result 0..* MS
 * result only Reference(MII_PR_Bildgebung_RadiologischeBeobachtung) 
 * imagingStudy 1..* MS
-* imagingStudy only Reference(MII_PR_ImagingStudy_ImagingStudy)
+* imagingStudy only Reference(MII_PR_Bildgebung_ImagingStudy)
 * conclusion MS
 * conclusionCode MS
 * conclusionCode.coding 0.. MS
