@@ -267,7 +267,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "DiagnosticReport.effective.effectiveDateTime"
+            "map": "DiagnosticReport.effectiveDateTime"
           }
         ]
       },
@@ -286,7 +286,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "DiagnosticReport.effective.effectivePeriod"
+            "map": "DiagnosticReport.effectivePeriod"
           }
         ]
       },
