@@ -15,7 +15,8 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     radiopharmaceuticalStartTime 0..1 and
     radiopharmaceuticalStopTime 0..1 and
     rescaleType 0..1 and
-    radionuclideTotalDose 0..1
+    radionuclideTotalDose 0..1 and
+    radionuclideHalfLife 0..1
 * extension[radiopharmaceutical].value[x]
 * extension[radiopharmaceuticalStartTime].value[x]
 * extension[radiopharmaceuticalStopTime].value[x]
