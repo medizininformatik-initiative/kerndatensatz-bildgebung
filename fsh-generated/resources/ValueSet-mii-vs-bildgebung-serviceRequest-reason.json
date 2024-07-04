@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MII_VS_BildgebendeVerfahren_ServiceRequest_Reason",
-  "id": "mii-vs-bildgebendeverfahren-servicerequest-reason",
-  "title": "MII VS BildgebendeVerfahren ServiceRequest Reason",
+  "name": "MII_VS_Bildgebung_ServiceRequest_Reason",
+  "id": "mii-vs-bildgebung-serviceRequest-reason",
+  "title": "MII VS Bildgebung ServiceRequest Reason",
   "description": "TODO",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebendeverfahren-servicerequest-reason",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-serviceRequest-reason",
   "compose": {
     "include": [
       {

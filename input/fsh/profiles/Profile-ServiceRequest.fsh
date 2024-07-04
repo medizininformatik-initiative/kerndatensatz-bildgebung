@@ -30,7 +30,7 @@ Description: "TODO"
 * code.coding[loinc] ^patternCoding.system = "http://loinc.org"
 * code.coding[radlex] ^patternCoding.system = "https://radlex.org"
 * code.coding[sct] ^patternCoding.system = $SCT
-* code.coding[sct].code from MII_VS_BildgebendeVerfahren_ServiceRequest_Coding
+* code.coding[sct].code from MII_VS_Bildgebung_ServiceRequest_Coding
 * subject ^type.profile = Canonical($miiRef)
 // fixme: only allow a Patient reference
 * subject ^type.targetProfile[+] = Canonical(http://hl7.org/fhir/StructureDefinition/Patient)
@@ -39,7 +39,7 @@ Description: "TODO"
 * authoredOn MS
 * requester MS
 * reasonCode MS
-* reasonCode from MII_VS_BildgebendeVerfahren_ServiceRequest_Reason (preferred)
+* reasonCode from MII_VS_Bildgebung_ServiceRequest_Reason (preferred)
 // fixme MII-Ref
 * reasonReference MS
 * reasonReference only Reference(Condition)

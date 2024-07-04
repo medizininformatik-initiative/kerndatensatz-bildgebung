@@ -172,7 +172,7 @@
           "reference": "StructureDefinition/mii-pr-bildgebung-koerperstruktur"
         },
         "name": "MII PR Bildgebung Körperstruktur",
-        "description": "The Anatomical Structure profile is an integral component for interoperability, designed to universally represent and reference various anatomical structures across diverse medical domains and scenarios. This profile is particularly crucial in bridging information across different specialties and use cases, such as radiology, pathology, surgery and others.\nBy employing a standardized format to describe anatomical structures, this profile enables consistent and precise identification and communication of anatomical details. For example, a tumor identified and detailed in a radiology report can be seamlessly referenced with the same specificity in a subsequent pathology report. This ensures continuity and accuracy in patient care, as each medical specialist refers to the same anatomical structure using a common language and reference system.\nSimilarly, the profile can be applied to more routine anatomical structures, like the knee joint in a MSK use case. In such cases, the initial imaging or assessment details can be easily and accurately carried over into subsequent medical interventions or procedures, like surgery. This not only streamlines the patient's journey through different healthcare services but also enhances the quality of care by ensuring all medical professionals are aligned in their understanding of the patient's anatomical structures and related medical history.",
+        "description": "Dieses Profil beschreibt die Darstellung der Körperstrukturen",
         "exampleBoolean": false
       },
       {
@@ -209,23 +209,23 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-bildgebendeverfahren-servicerequest-coding"
+          "reference": "ValueSet/mii-vs-bildgebung-serviceRequest-coding"
         },
-        "name": "MII VS BildgebendeVerfahren ServiceRequest Coding",
+        "name": "MII VS Bildgebung ServiceRequest Coding",
         "description": "TODO",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-bildgebendeverfahren-servicerequest-reason"
+          "reference": "ValueSet/mii-vs-bildgebung-serviceRequest-reason"
         },
-        "name": "MII VS BildgebendeVerfahren ServiceRequest Reason",
+        "name": "MII VS Bildgebung ServiceRequest Reason",
         "description": "TODO",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-category-observation"
+          "reference": "ValueSet/mii-vs-bildgebung-tnmCategoryObservation"
         },
         "name": "Valueset for Categories of a BodyStructure in the context of one TNM procedure",
         "description": "This Valueset contains the coded for the different categories for BodyStructures in the context of TNM (Tumor|Node|Metastase)",
@@ -233,7 +233,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-radiological-read-procedure"
+          "reference": "ValueSet/mii-vs-bildgebung-tnmRadiologicalReadProcedure"
         },
         "name": "Valueset for TNM Radiological Read Procedures",
         "description": "This Valueset contains the snomed codes of the different TNM tumor staging systems",

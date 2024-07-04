@@ -1,6 +1,3 @@
-//TNM
-//TNM Procedure Profile
-//TODO add version to the profile
 Profile: MII_PR_Bildgebung_TNMRadiologischeBefundungsprozedur
 Parent: MII_PR_Bildgebung_RadiologischeBefundungsprozedur
 Id: mii-pr-bildgebung-TNMRadiologischeBefundungsprozedur
@@ -16,4 +13,4 @@ Description: "Spezifiziert die radiologische Befundungsprozedur nach TNM"
 * meta.source MS
 * meta.profile MS
 * code 1..1
-* code from VS_TNM_Radiological_Read_Procedures (required)
+* code from MII_VS_Bildgebung_TNMRadiologicalReadProcedures (required)

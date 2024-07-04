@@ -18,7 +18,7 @@
 [MII_PR_Bildgebung_SemistrukturierterBefundbericht]: StructureDefinition-mii-pr-bildgebung-semistrukturierterBefundbericht.html
 [MII_PR_Bildgebung_TNMRadiologischeBefundungsprozedur]: StructureDefinition-mii-pr-bildgebung-TNMRadiologischeBefundungsprozedur.html
 [MII_PR_Bildgebung_ImagingStudy]: StructureDefinition-mii-pr-bildgebung-imagingstudy.html
-[MII_VS_BildgebendeVerfahren_ServiceRequest_Coding]: ValueSet-mii-vs-bildgebendeverfahren-servicerequest-coding.html
-[MII_VS_BildgebendeVerfahren_ServiceRequest_Reason]: ValueSet-mii-vs-bildgebendeverfahren-servicerequest-reason.html
-[VS_TNM_Category_Observation]: ValueSet-vs-tnm-category-observation.html
-[VS_TNM_Radiological_Read_Procedures]: ValueSet-vs-tnm-radiological-read-procedure.html
+[MII_VS_Bildgebung_ServiceRequest_Coding]: ValueSet-mii-vs-bildgebung-serviceRequest-coding.html
+[MII_VS_Bildgebung_ServiceRequest_Reason]: ValueSet-mii-vs-bildgebung-serviceRequest-reason.html
+[MII_VS_Bildgebung_TNMCategoryObservation]: ValueSet-mii-vs-bildgebung-tnmCategoryObservation.html
+[MII_VS_Bildgebung_TNMRadiologicalReadProcedures]: ValueSet-mii-vs-bildgebung-tnmRadiologicalReadProcedure.html

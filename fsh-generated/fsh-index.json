@@ -100,8 +100,8 @@
     "fshName": "MII_PR_Bildgebung_TNMRadiologischeBefundungsprozedur",
     "fshType": "Profile",
     "fshFile": "profiles/Profile-TNMRadiologicalReadProcedure.fsh",
-    "startLine": 4,
-    "endLine": 19
+    "startLine": 1,
+    "endLine": 16
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.json",
@@ -125,7 +125,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/Profile-AnatomyStructure.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologischeBefundungsprozedur.json",
@@ -160,32 +160,32 @@
     "endLine": 28
   },
   {
-    "outputFile": "ValueSet-mii-vs-bildgebendeverfahren-servicerequest-coding.json",
-    "fshName": "MII_VS_BildgebendeVerfahren_ServiceRequest_Coding",
+    "outputFile": "ValueSet-mii-vs-bildgebung-serviceRequest-coding.json",
+    "fshName": "MII_VS_Bildgebung_ServiceRequest_Coding",
     "fshType": "ValueSet",
     "fshFile": "valuesets/Valueset-ServiceRequest-Coding.fsh",
     "startLine": 1,
     "endLine": 5
   },
   {
-    "outputFile": "ValueSet-mii-vs-bildgebendeverfahren-servicerequest-reason.json",
-    "fshName": "MII_VS_BildgebendeVerfahren_ServiceRequest_Reason",
+    "outputFile": "ValueSet-mii-vs-bildgebung-serviceRequest-reason.json",
+    "fshName": "MII_VS_Bildgebung_ServiceRequest_Reason",
     "fshType": "ValueSet",
     "fshFile": "valuesets/Valueset-ServiceRequest-Reason.fsh",
     "startLine": 1,
     "endLine": 5
   },
   {
-    "outputFile": "ValueSet-vs-tnm-category-observation.json",
-    "fshName": "VS_TNM_Category_Observation",
+    "outputFile": "ValueSet-mii-vs-bildgebung-tnmCategoryObservation.json",
+    "fshName": "MII_VS_Bildgebung_TNMCategoryObservation",
     "fshType": "ValueSet",
     "fshFile": "valuesets/ValueSet-TNMCategoryObservation.fsh",
     "startLine": 2,
     "endLine": 9
   },
   {
-    "outputFile": "ValueSet-vs-tnm-radiological-read-procedure.json",
-    "fshName": "VS_TNM_Radiological_Read_Procedures",
+    "outputFile": "ValueSet-mii-vs-bildgebung-tnmRadiologicalReadProcedure.json",
+    "fshName": "MII_VS_Bildgebung_TNMRadiologicalReadProcedures",
     "fshType": "ValueSet",
     "fshFile": "valuesets/Valueset-TNMRadiologicalReadProcedures.fsh",
     "startLine": 2,

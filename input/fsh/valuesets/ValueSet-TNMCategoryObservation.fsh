@@ -1,6 +1,6 @@
 // TNM Categories Valueset
-ValueSet: VS_TNM_Category_Observation
-Id: vs-tnm-category-observation
+ValueSet: MII_VS_Bildgebung_TNMCategoryObservation
+Id: mii-vs-bildgebung-tnmCategoryObservation
 Title: "Valueset for Categories of a BodyStructure in the context of one TNM procedure"
 Description: "This Valueset contains the coded for the different categories for BodyStructures in the context of TNM (Tumor|Node|Metastase)"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/TNMCategoryObservation"
