@@ -1,7 +1,7 @@
 Profile: MII_PR_Bildgebung_SemistrukturierterBefundbericht
 Parent: Composition
 Id: mii-pr-bildgebung-semistrukturierterBefundbericht
-Title: "MII PR Bildgebung Semistrukturierter Befungbericht"
+Title: "MII PR Bildgebung Semistrukturierter Befundbericht"
 Description: "Dieses Profil beschreibt den semistrukturierten Befundbericht"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Composition"
 * insert Translation(^name, en-US, MII_PR_Bildgebung_Composition)
