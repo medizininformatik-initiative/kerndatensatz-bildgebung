@@ -1,6 +1,6 @@
-Profile: MII_PR_ImagingStudy_ImagingStudy
+Profile: MII_PR_Bildgebung_ImagingStudy
 Parent: ImagingStudy
-Id: mii-pr-imagingstudy-imagingstudy
+Id: mii-pr-bildgebung-imagingstudy
 Title: "MII PR ImagingStudy ImagingStudy"
 Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten auf Studien-, Serien- sowie Instanzen-Ebene der jeweiligen DICOM-Studie."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingStudy"
