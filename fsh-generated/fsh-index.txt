@@ -10,7 +10,6 @@ StructureDefinition-mii-ex-modalitaet-mg-cr-dx.json                            M
 StructureDefinition-mii-ex-modalitaet-mr.json                                  MII_EX_Modalitaet_MR                                  Extension  extensions/Extension-Modality-MR.fsh                  1 - 22
 StructureDefinition-mii-ex-modalitaet-pt-nm.json                               MII_EX_Modalitaet_PT_NM                               Extension  extensions/Extension-Modality-PT_NM.fsh               1 - 32
 StructureDefinition-mii-lm-bildgebung.json                                     MII_LM_Bildgebung                                     Logical    logicals/LogicalModelBildgebung.fsh                   1 - 96
-StructureDefinition-mii-pr-bildgebendeverfahren-servicerequest.json            MII_PR_BildgebendeVerfahren_ServiceRequest            Profile    profiles/Profile-ServiceRequest.fsh                   1 - 46
 StructureDefinition-mii-pr-bildgebung-TNMRadiologischeBefundungsprozedur.json  MII_PR_Bildgebung_TNMRadiologischeBefundungsprozedur  Profile    profiles/Profile-TNMRadiologicalReadProcedure.fsh     1 - 16
 StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.json               MII_PR_Bildgebung_Behandlungsempfehlung               Profile    profiles/Profile-CarePlan.fsh                         1 - 19
 StructureDefinition-mii-pr-bildgebung-imagingstudy.json                        MII_PR_Bildgebung_ImagingStudy                        Profile    profiles/Profile-ImagingStudy.fsh                     1 - 55
@@ -19,6 +18,7 @@ StructureDefinition-mii-pr-bildgebung-radiologischeBefundungsprozedur.json     M
 StructureDefinition-mii-pr-bildgebung-radiologischeBeobachtung.json            MII_PR_Bildgebung_RadiologischeBeobachtung            Profile    profiles/Profile-Observation.fsh                      1 - 20
 StructureDefinition-mii-pr-bildgebung-radiologischerBefund.json                MII_PR_Bildgebung_RadiologischerBefund                Profile    profiles/Profile-DiagnosticReport.fsh                 1 - 64
 StructureDefinition-mii-pr-bildgebung-semistrukturierterBefundbericht.json     MII_PR_Bildgebung_SemistrukturierterBefundbericht     Profile    profiles/Profile-Composition.fsh                      1 - 28
+StructureDefinition-mii-pr-bildgebung-servicerequest.json                      MII_PR_Bildgebung_ServiceRequest                      Profile    profiles/Profile-ServiceRequest.fsh                   1 - 46
 ValueSet-mii-vs-bildgebung-serviceRequest-coding.json                          MII_VS_Bildgebung_ServiceRequest_Coding               ValueSet   valuesets/Valueset-ServiceRequest-Coding.fsh          1 - 5
 ValueSet-mii-vs-bildgebung-serviceRequest-reason.json                          MII_VS_Bildgebung_ServiceRequest_Reason               ValueSet   valuesets/Valueset-ServiceRequest-Reason.fsh          1 - 5
 ValueSet-mii-vs-bildgebung-tnmCategoryObservation.json                         MII_VS_Bildgebung_TNMCategoryObservation              ValueSet   valuesets/ValueSet-TNMCategoryObservation.fsh         2 - 9

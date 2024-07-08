@@ -1,7 +1,7 @@
-Profile: MII_PR_BildgebendeVerfahren_ImagingProcedure
+Profile: MII_PR_Bildgebung_ImagingProcedure
 Parent: $miiProcedure
-Id: mii-pr-bildgebendeverfahren-imagingprocedure
-Title: "MII PR BildgebendeVerfahren Bildgebungsprozedur"
+Id: mii-pr-bildgebung-imagingprocedure
+Title: "MII PR Bildgebung Bildgebungsprozedur"
 Description: "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingProcedure"
 * insert Translation(^name, en-US, MII_PR_Bildgebung_CarePlan)
@@ -16,7 +16,6 @@ Description: "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme"
 * category.coding[sct] ^patternCodeableConcept = $SCT#363679005
 * code.coding contains loinc 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
-
 // fixme MIIRef
-* basedOn only Reference(MII_PR_BildgebendeVerfahren_ServiceRequest)
+* basedOn only Reference(MII_PR_Bildgebung_ServiceRequest)
 * basedOn 1..* MS

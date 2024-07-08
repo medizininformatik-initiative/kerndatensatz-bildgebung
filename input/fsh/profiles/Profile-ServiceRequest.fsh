@@ -1,6 +1,6 @@
-Profile: MII_PR_BildgebendeVerfahren_ServiceRequest
+Profile: MII_PR_Bildgebung_ServiceRequest
 Parent: ServiceRequest
-Id: mii-pr-bildgebendeverfahren-servicerequest
+Id: mii-pr-bildgebung-servicerequest
 Title: "MII Bildgebende Verfahren ServiceRequest"
 Description: "TODO"
 //TODO Translation Extensions

@@ -1,7 +1,7 @@
 Profile: MII_PR_Bildgebung_RadiologischerBefund
 Parent: DiagnosticReport
 Id: mii-pr-bildgebung-radiologischerBefund
-Title: "MII PR BildgebendeVerfahren Radiologischer Befund"
+Title: "MII PR Bildgebung Radiologischer Befund"
 Description: "Der Diagnostic Report für Bildgebende verfahren richtet sich an die Dokumentation von radiologischen Befundungsergebnissen. Unterschiedliche Systeme (RIS Befundungsmodule, AI Integrationen dedizierte Systeme zur strukturieren Befundung) lieferen in unterschiedlichem Detailgrad Informationen. Dieses Profil addressiert diese unterschiedlichen Detailgrade und bietet modulare aufeinander aufbauende Stufen. Jede Stufe fügt weitere Konzepte hinzu und ermöglicht so neue Anwendungsmöglichkeiten von der Routine bis hin zu wissenschaftlichen Auswertungen.
 
 Stufe 1: Freitext in strukturierter Form: Auf der grundlegendsten Ebene ermöglicht die DiagnosticReport-Ressource die Einbindung von radiologischen Befunden als Freitext in einer strukturierten Form. Dies erlaubt eine einfache, jedoch effektive Darstellung von diagnostischen Informationen. Die Freitextbeschreibung bietet die Möglichkeit, ohne komplexen Datenaustausch, essenzielle Befundinformationen zu übermitteln.
@@ -22,7 +22,7 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 * meta.source MS
 * meta.profile MS
 * basedOn 1..* MS
-* basedOn only Reference(MII_PR_BildgebendeVerfahren_ServiceRequest)
+* basedOn only Reference(MII_PR_Bildgebung_ServiceRequest)
 * status MS 
 * category 1..* 
 * category.coding 1.. 

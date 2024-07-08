@@ -88,14 +88,6 @@
     "endLine": 96
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-bildgebendeverfahren-servicerequest.json",
-    "fshName": "MII_PR_BildgebendeVerfahren_ServiceRequest",
-    "fshType": "Profile",
-    "fshFile": "profiles/Profile-ServiceRequest.fsh",
-    "startLine": 1,
-    "endLine": 46
-  },
-  {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-TNMRadiologischeBefundungsprozedur.json",
     "fshName": "MII_PR_Bildgebung_TNMRadiologischeBefundungsprozedur",
     "fshType": "Profile",
@@ -158,6 +150,14 @@
     "fshFile": "profiles/Profile-Composition.fsh",
     "startLine": 1,
     "endLine": 28
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-servicerequest.json",
+    "fshName": "MII_PR_Bildgebung_ServiceRequest",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-ServiceRequest.fsh",
+    "startLine": 1,
+    "endLine": 46
   },
   {
     "outputFile": "ValueSet-mii-vs-bildgebung-serviceRequest-coding.json",
