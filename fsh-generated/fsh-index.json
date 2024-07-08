@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.json",
+    "fshName": "mii-cps-bildgebung-capabilitystatement-1x",
+    "fshType": "Instance",
+    "fshFile": "capabilitystatements/CapabilityStatement-1x.fsh",
+    "startLine": 33,
+    "endLine": 50
+  },
+  {
     "outputFile": "DiagnosticReport-example-radiologischerBefund.json",
     "fshName": "example-radiologischerBefund",
     "fshType": "Instance",
@@ -14,6 +22,150 @@
     "fshFile": "examples/Example-TNM-ReadProcedure.fsh",
     "startLine": 2,
     "endLine": 10
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-dosequantity.json",
+    "fshName": "mii-sp-bildgebung-dosage-dosequantity",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 193,
+    "endLine": 214
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-doserange-high.json",
+    "fshName": "mii-sp-bildgebung-dosage-doserange-high",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 150,
+    "endLine": 170
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-doserange-low.json",
+    "fshName": "mii-sp-bildgebung-dosage-doserange-low",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 128,
+    "endLine": 148
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-doserange.json",
+    "fshName": "mii-sp-bildgebung-dosage-doserange",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 172,
+    "endLine": 191
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-ratequantity.json",
+    "fshName": "mii-sp-bildgebung-dosage-ratequantity",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 281,
+    "endLine": 302
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-raterange-high.json",
+    "fshName": "mii-sp-bildgebung-dosage-raterange-high",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 238,
+    "endLine": 258
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-raterange-low.json",
+    "fshName": "mii-sp-bildgebung-dosage-raterange-low",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 216,
+    "endLine": 236
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-raterange.json",
+    "fshName": "mii-sp-bildgebung-dosage-raterange",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 260,
+    "endLine": 279
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-rateratio-denominator.json",
+    "fshName": "mii-sp-bildgebung-dosage-rateratio-denominator",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 343,
+    "endLine": 364
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-rateratio-numerator.json",
+    "fshName": "mii-sp-bildgebung-dosage-rateratio-numerator",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 320,
+    "endLine": 341
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-rateratio.json",
+    "fshName": "mii-sp-bildgebung-dosage-rateratio",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 366,
+    "endLine": 386
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-route.json",
+    "fshName": "mii-sp-bildgebung-dosage-route",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 105,
+    "endLine": 126
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-site.json",
+    "fshName": "mii-sp-bildgebung-dosage-site",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 82,
+    "endLine": 103
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-list-mode.json",
+    "fshName": "mii-sp-bildgebung-list-mode",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 304,
+    "endLine": 318
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-medication-ingredient-strength-denominator.json",
+    "fshName": "mii-sp-bildgebung-medication-ingredient-strength-denominator",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 25,
+    "endLine": 44
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-medication-ingredient-strength-numerator.json",
+    "fshName": "mii-sp-bildgebung-medication-ingredient-strength-numerator",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 4,
+    "endLine": 23
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-medication-ingredient-strength.json",
+    "fshName": "mii-sp-bildgebung-medication-ingredient-strength",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 46,
+    "endLine": 60
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-medication-reasonreference.json",
+    "fshName": "mii-sp-bildgebung-medication-reasonreference",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 62,
+    "endLine": 80
   },
   {
     "outputFile": "StructureDefinition-mii-ex-imagingContrast.json",

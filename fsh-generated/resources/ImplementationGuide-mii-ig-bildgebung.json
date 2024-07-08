@@ -73,6 +73,14 @@
       },
       {
         "reference": {
+          "reference": "CapabilityStatement/mii-cps-bildgebung-capabilitystatement-1x"
+        },
+        "name": "MII CPS Bildgebung CapabilityStatement",
+        "description": "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Bildgebung der Medizininformatik Initiative zu implementieren.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-ex-imagingContrast"
         },
         "name": "MII EX ImagingContrast",
@@ -221,6 +229,150 @@
         },
         "name": "MII VS Bildgebung ServiceRequest Reason",
         "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-dosequantity"
+        },
+        "name": "mii-sp-bildgebung-dosage-dosequantity",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-doserange"
+        },
+        "name": "mii-sp-bildgebung-dosage-doserange",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange | MedicationRequest.dosageInstruction.doseAndRate.doseRange",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-doserange-high"
+        },
+        "name": "mii-sp-bildgebung-dosage-doserange-high",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.high | MedicationRequest.dosageInstruction.doseAndRate.doseRange.high",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-doserange-low"
+        },
+        "name": "mii-sp-bildgebung-dosage-doserange-low",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low | MedicationRequest.dosageInstruction.doseAndRate.doseRange.low",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-ratequantity"
+        },
+        "name": "mii-sp-bildgebung-dosage-ratequantity",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateQuantity | MedicationAdministration.dosage.rateQuantity | MedicationRequest.dosageInstruction.doseAndRate.rateQuantity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-raterange"
+        },
+        "name": "mii-sp-bildgebung-dosage-raterange",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange | MedicationRequest.dosageInstruction.doseAndRate.rateRange",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-raterange-high"
+        },
+        "name": "mii-sp-bildgebung-dosage-raterange-high",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.high | MedicationRequest.dosageInstruction.doseAndRate.rateRange.high",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-raterange-low"
+        },
+        "name": "mii-sp-bildgebung-dosage-raterange-low",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-rateratio"
+        },
+        "name": "mii-sp-bildgebung-dosage-rateratio",
+        "description": "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-rateratio-denominator"
+        },
+        "name": "mii-sp-bildgebung-dosage-rateratio-denominator",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-rateratio-numerator"
+        },
+        "name": "mii-sp-bildgebung-dosage-rateratio-numerator",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-route"
+        },
+        "name": "mii-sp-bildgebung-dosage-route",
+        "description": "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.route | MedicationRequest.dosageInstruction.route",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-dosage-site"
+        },
+        "name": "mii-sp-bildgebung-dosage-site",
+        "description": "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.site | MedicationRequest.dosageInstruction.site",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-list-mode"
+        },
+        "name": "mii-sp-bildgebung-list-mode",
+        "description": "Suchparameter für List.mode",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-medication-ingredient-strength"
+        },
+        "name": "mii-sp-bildgebung-medication-ingredient-strength",
+        "description": "Suchparameter für Medication.ingredient.strength",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-medication-ingredient-strength-denominator"
+        },
+        "name": "mii-sp-bildgebung-medication-ingredient-strength-denominator",
+        "description": "Suchparameter für Medication.ingredient.strength.denominator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-medication-ingredient-strength-numerator"
+        },
+        "name": "mii-sp-bildgebung-medication-ingredient-strength-numerator",
+        "description": "Suchparameter für Medication.ingredient.strength.numerator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-medication-reasonreference"
+        },
+        "name": "mii-sp-bildgebung-medication-reasonreference",
+        "description": "Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference",
         "exampleBoolean": false
       },
       {
