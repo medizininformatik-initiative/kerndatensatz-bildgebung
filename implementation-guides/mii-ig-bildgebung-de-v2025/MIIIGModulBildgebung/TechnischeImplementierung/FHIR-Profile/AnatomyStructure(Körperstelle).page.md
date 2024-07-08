@@ -1,7 +1,7 @@
 ---
 parent:
 topic: Koerperstruktur
-subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Koerperstruktur
+subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/BodyStructure
 ---
 
 ## Koerperstruktur
@@ -12,7 +12,7 @@ Diese Koerperstruktur-Ressource wird verwendet, um Befundberichte bildgebender V
 from
     StructureDefinition
 where
-    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Koerperstruktur'
+    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/BodyStructure'
 select
     Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 ```
@@ -26,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Koerperstruktur'
+	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/BodyStructure'
         select
 	        Beschreibung: description
         with
@@ -36,7 +36,7 @@ select
         from
             StructureDefinition
         where
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Koerperstruktur'
+            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/BodyStructure'
         for
             differential.element
             where
@@ -54,7 +54,7 @@ select
 @```
 from StructureDefinition
 where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/ErweiterungsmodulBildgebung'
-    for differential.element where id.contains('ErweiterungsmodulBildgebung.Koerperstruktur')
+    for differential.element where id.contains('ErweiterungsmodulBildgebung.BodyStructure')
     select
         FHIR: mapping[0].map,
         Datensatz: path,
