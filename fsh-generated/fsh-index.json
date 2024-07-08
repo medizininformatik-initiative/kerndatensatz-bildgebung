@@ -1,11 +1,35 @@
 [
   {
+    "outputFile": "BodyStructure-mii-exa-bildgebung-bodyStructure.json",
+    "fshName": "mii-exa-bildgebung-bodyStructure",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-AnatomyStructure.fsh",
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
     "outputFile": "CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.json",
     "fshName": "mii-cps-bildgebung-capabilitystatement-1x",
     "fshType": "Instance",
     "fshFile": "capabilitystatements/CapabilityStatement-1x.fsh",
     "startLine": 33,
     "endLine": 50
+  },
+  {
+    "outputFile": "CarePlan-mii-exa-bildgebung-carePlan.json",
+    "fshName": "mii-exa-bildgebung-carePlan",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-CarePlan.fsh",
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
+    "outputFile": "Composition-mii-exa-bildgebung-composition.json",
+    "fshName": "mii-exa-bildgebung-composition",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-Composition.fsh",
+    "startLine": 2,
+    "endLine": 5
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-bildgebung-radiologischerBefund.json",
@@ -24,12 +48,28 @@
     "endLine": 5
   },
   {
+    "outputFile": "Observation-mii-exa-bildgebung-observation.json",
+    "fshName": "mii-exa-bildgebung-observation",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-Observation.fsh",
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
     "outputFile": "Procedure-mii-exa-bildgebung-TNMRadiologicalReadProcedure.json",
     "fshName": "mii-exa-bildgebung-TNMRadiologicalReadProcedure",
     "fshType": "Instance",
     "fshFile": "examples/Example-TNMRadiologicalReadProcedure.fsh",
     "startLine": 2,
     "endLine": 10
+  },
+  {
+    "outputFile": "Procedure-mii-exa-bildgebung-radiologicalReadProcedure.json",
+    "fshName": "mii-exa-bildgebung-radiologicalReadProcedure",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-ReadProcedure.fsh",
+    "startLine": 2,
+    "endLine": 5
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-dosequantity.json",

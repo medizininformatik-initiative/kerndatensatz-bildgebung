@@ -138,6 +138,27 @@
       },
       {
         "reference": {
+          "reference": "BodyStructure/mii-exa-bildgebung-bodyStructure"
+        },
+        "name": "MII Example Bildgebung BodyStructure",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/BodyStructure"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mii-exa-bildgebung-carePlan"
+        },
+        "name": "MII Example Bildgebung Care Plan",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/CarePlan"
+      },
+      {
+        "reference": {
+          "reference": "Composition/mii-exa-bildgebung-composition"
+        },
+        "name": "MII Example Bildgebung Composition",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Composition"
+      },
+      {
+        "reference": {
           "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischerBefund"
         },
         "name": "MII Example Bildgebung Diagnostic Report",
@@ -149,6 +170,20 @@
         },
         "name": "MII Example Bildgebung Imaging Study",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingStudy"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-bildgebung-observation"
+        },
+        "name": "MII Example Bildgebung Observation",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Observation"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-bildgebung-radiologicalReadProcedure"
+        },
+        "name": "MII Example Bildgebung ReadProcedure",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/RadiologicalReadProcedure"
       },
       {
         "reference": {

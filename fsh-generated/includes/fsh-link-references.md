@@ -9,8 +9,13 @@
 [MII_EX_Modalitaet_MG_CR_DX]: StructureDefinition-mii-ex-modalitaet-mg-cr-dx.html
 [MII_EX_Modalitaet_MR]: StructureDefinition-mii-ex-modalitaet-mr.html
 [MII_EX_Modalitaet_PT_NM]: StructureDefinition-mii-ex-modalitaet-pt-nm.html
+[mii-exa-bildgebung-bodyStructure]: BodyStructure-mii-exa-bildgebung-bodyStructure.html
+[mii-exa-bildgebung-carePlan]: CarePlan-mii-exa-bildgebung-carePlan.html
+[mii-exa-bildgebung-composition]: Composition-mii-exa-bildgebung-composition.html
 [mii-exa-bildgebung-radiologischerBefund]: DiagnosticReport-mii-exa-bildgebung-radiologischerBefund.html
 [mii-exa-bildgebung-imagingStudy]: ImagingStudy-mii-exa-bildgebung-imagingStudy.html
+[mii-exa-bildgebung-observation]: Observation-mii-exa-bildgebung-observation.html
+[mii-exa-bildgebung-radiologicalReadProcedure]: Procedure-mii-exa-bildgebung-radiologicalReadProcedure.html
 [mii-exa-bildgebung-serviceRequest]: ServiceRequest-mii-exa-bildgebung-serviceRequest.html
 [MII_LM_Bildgebung]: StructureDefinition-mii-lm-bildgebung.html
 [MII_PR_Bildgebung_RadiologischeBeobachtung]: StructureDefinition-mii-pr-bildgebung-radiologischeBeobachtung.html

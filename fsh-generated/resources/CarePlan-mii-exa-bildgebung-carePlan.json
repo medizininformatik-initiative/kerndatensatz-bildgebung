@@ -1,0 +1,9 @@
+{
+  "resourceType": "CarePlan",
+  "id": "mii-exa-bildgebung-carePlan",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/CarePlan"
+    ]
+  }
+}
