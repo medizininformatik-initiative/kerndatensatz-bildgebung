@@ -137,6 +137,14 @@
         "id": "DiagnosticReport.basedOn",
         "path": "DiagnosticReport.basedOn",
         "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ServiceRequest"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
