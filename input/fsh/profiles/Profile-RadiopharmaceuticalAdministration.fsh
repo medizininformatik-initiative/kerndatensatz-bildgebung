@@ -1,7 +1,7 @@
-Profile: MII_PR_MedicationAdministration_GabeRadiopharmakon
+Profile: MII_PR_Bildgebung_MedicationAdministration_GabeRadiopharmakon
 Parent: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration
-Id: mii-pr-medicationadministration-gaberadiopharmakon
-Title: "MII PR MedicationAdministration GabeRadiopharmakon"
+Id: mii-pr-bildgebung-medicationadministration-gaberadiopharmakon
+Title: "MII PR Bildgebung MedicationAdministration GabeRadiopharmakon"
 Description: "Dieses Profil beschreibt die Gabe eines Radiopharmakons zur medizinischen Bildgebung."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/GabeRadiopharmakon"
 * insert Translation(^name, en-US, MII_PR_MedicationAdministration RadiopharmaceuticalAdministration)

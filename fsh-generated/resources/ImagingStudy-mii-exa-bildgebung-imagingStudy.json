@@ -1,0 +1,9 @@
+{
+  "resourceType": "ImagingStudy",
+  "id": "mii-exa-bildgebung-imagingStudy",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingStudy"
+    ]
+  }
+}

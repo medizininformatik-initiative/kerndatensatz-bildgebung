@@ -51,14 +51,7 @@
     "resource": [
       {
         "reference": {
-          "reference": "DiagnosticReport/example-radiologischerBefund"
-        },
-        "name": "Example Diagnostic Report",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/DiagnosticReport"
-      },
-      {
-        "reference": {
-          "reference": "Procedure/example-TNMRadiologischeBefundungsprocedur"
+          "reference": "Procedure/mii-exa-bildgebung-TNMRadiologicalReadProcedure"
         },
         "name": "Example of a TNM Radiological Read Procedure",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructurDefinition/TNMRadiologicalReadProcedure"
@@ -142,6 +135,27 @@
         "name": "MII EX Modality PT/NM",
         "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf PT & NM Daten zu erweitern.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischerBefund"
+        },
+        "name": "MII Example Bildgebung Diagnostic Report",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/DiagnosticReport"
+      },
+      {
+        "reference": {
+          "reference": "ImagingStudy/mii-exa-bildgebung-imagingStudy"
+        },
+        "name": "MII Example Bildgebung Imaging Study",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingStudy"
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-bildgebung-serviceRequest"
+        },
+        "name": "MII Example Bildgebung Service Request",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ServiceRequest"
       },
       {
         "reference": {

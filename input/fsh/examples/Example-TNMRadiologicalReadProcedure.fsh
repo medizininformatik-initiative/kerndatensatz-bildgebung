@@ -1,5 +1,5 @@
 //TNM Example
-Instance: example-TNMRadiologischeBefundungsprocedur
+Instance: mii-exa-bildgebung-TNMRadiologicalReadProcedure
 InstanceOf: MII_PR_Bildgebung_TNMRadiologischeBefundungsprozedur
 Usage: #example
 Title: "Example of a TNM Radiological Read Procedure"

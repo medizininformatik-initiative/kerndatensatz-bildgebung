@@ -1,0 +1,19 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "mii-exa-bildgebung-serviceRequest",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ServiceRequest"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "363679005",
+          "system": "http://snomed.info/sct"
+        }
+      ]
+    }
+  ]
+}

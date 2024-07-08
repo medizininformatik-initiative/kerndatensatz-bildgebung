@@ -8,18 +8,26 @@
     "endLine": 50
   },
   {
-    "outputFile": "DiagnosticReport-example-radiologischerBefund.json",
-    "fshName": "example-radiologischerBefund",
+    "outputFile": "DiagnosticReport-mii-exa-bildgebung-radiologischerBefund.json",
+    "fshName": "mii-exa-bildgebung-radiologischerBefund",
     "fshType": "Instance",
     "fshFile": "examples/Example-DiagnosticReport.fsh",
     "startLine": 2,
     "endLine": 16
   },
   {
-    "outputFile": "Procedure-example-TNMRadiologischeBefundungsprocedur.json",
-    "fshName": "example-TNMRadiologischeBefundungsprocedur",
+    "outputFile": "ImagingStudy-mii-exa-bildgebung-imagingStudy.json",
+    "fshName": "mii-exa-bildgebung-imagingStudy",
     "fshType": "Instance",
-    "fshFile": "examples/Example-TNM-ReadProcedure.fsh",
+    "fshFile": "examples/Example-ImagingStudy.fsh",
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
+    "outputFile": "Procedure-mii-exa-bildgebung-TNMRadiologicalReadProcedure.json",
+    "fshName": "mii-exa-bildgebung-TNMRadiologicalReadProcedure",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-TNMRadiologicalReadProcedure.fsh",
     "startLine": 2,
     "endLine": 10
   },
@@ -166,6 +174,14 @@
     "fshFile": "searchparameters/SearchParameter.fsh",
     "startLine": 62,
     "endLine": 80
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-bildgebung-serviceRequest.json",
+    "fshName": "mii-exa-bildgebung-serviceRequest",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-ServiceRequest.fsh",
+    "startLine": 2,
+    "endLine": 5
   },
   {
     "outputFile": "StructureDefinition-mii-ex-imagingContrast.json",
