@@ -1,22 +1,24 @@
 - name: Index
   filename: Index.page.md
 - name: DiagnosticReport
-  filename: DiagnosticReport(Befundbericht).page.md
+  filename: DiagnosticReport.page.md
 - name: BodyStructure
-  filename: AnatomyStructure(Körperstelle).page.md
+  filename: AnatomyStructure.page.md
 - name: Composition
-  filename: Composition(SemistrukturierterBefundbericht).page.md
+  filename: Composition.page.md
 - name: ImagingProcedure
-  filename: ImagingProcedure(BildgebungsVerfahren).page.md
+  filename: ImagingProcedure.page.md
 - name: Observation
-  filename: Observation(Beobachtung).page.md
+  filename: Observation.page.md
 - name: ServiceRequest
-  filename: ServiceRequest(Anforderung).page.md
+  filename: ServiceRequest.page.md
 - name: ImagingStudy
-  filename: ImagingStudy(Bildstudie).page.md
+  filename: ImagingStudy.page.md
 - name: CarePlan
-  filename: CarePlan(Empfehlung).page.md
+  filename: CarePlan.page.md
 - name: RadiopharmaceuticalAdministration
   filename: RadiopharmaceuticalAdministration.page.md
 - name: ReadProcedure
   filename: ReadProcedure.page.md
+- name: TNMRadiologicalReadProcedure
+  filename: TNMRadiologicalReadProcedure.page.md

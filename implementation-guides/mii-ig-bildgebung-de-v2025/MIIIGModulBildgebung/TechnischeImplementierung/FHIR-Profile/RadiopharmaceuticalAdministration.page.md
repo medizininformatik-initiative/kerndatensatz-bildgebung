@@ -1,10 +1,10 @@
 ---
 parent:
-topic: Koerperstruktur
+topic: RadiopharmaceuticalAdministration
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/GabeRadiopharmakon
 ---
 
-## Koerperstruktur
+## RadiopharmaceuticalAdministration
 
 Diese Koerperstruktur-Ressource wird verwendet, um Befundberichte bildgebender Verfahren zu erfassen.
 

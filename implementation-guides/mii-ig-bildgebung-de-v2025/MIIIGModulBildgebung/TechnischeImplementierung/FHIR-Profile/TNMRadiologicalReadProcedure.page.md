@@ -1,18 +1,18 @@
 ---
 parent:
-topic: ReadProcedure
-subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/RadiologicalReadProcedure
+topic: TNMRadiologicalReadProcedure
+subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/TNMRadiologicalReadProcedure
 ---
 
-## ReadProcedure
+## TNMRadiologicalReadProcedure
 
-Diese Koerperstruktur-Ressource wird verwendet, um Befundberichte bildgebender Verfahren zu erfassen.
+Diese ServiceRequest-Ressource wird verwendet, um Befundberichte bildgebender Verfahren zu erfassen.
 
 @```
 from
     StructureDefinition
 where
-    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/RadiologicalReadProcedure'
+    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/TNMRadiologicalReadProcedure'
 select
     Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 ```
@@ -26,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/RadiologicalReadProcedure'
+	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/TNMRadiologicalReadProcedure'
         select
 	        Beschreibung: description
         with
@@ -36,7 +36,7 @@ select
         from
             StructureDefinition
         where
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/RadiologicalReadProcedure'
+            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/TNMRadiologicalReadProcedure'
         for
             differential.element
             where
@@ -54,7 +54,7 @@ select
 @```
 from StructureDefinition
 where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/ErweiterungsmodulBildgebung'
-    for differential.element where id.contains('ErweiterungsmodulBildgebung.ReadProcedure')
+    for differential.element where id.contains('ErweiterungsmodulBildgebung.TNMRadiologicalReadProcedure')
     select
         FHIR: mapping[0].map,
         Datensatz: path,

@@ -1,10 +1,10 @@
 ---
 parent:
-topic: Koerperstruktur
+topic: CarePlan
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/CarePlan
 ---
 
-## Koerperstruktur
+## CarePlan
 
 Diese Koerperstruktur-Ressource wird verwendet, um Befundberichte bildgebender Verfahren zu erfassen.
 
