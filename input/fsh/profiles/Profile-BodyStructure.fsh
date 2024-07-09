@@ -16,6 +16,6 @@ Description: "Dieses Profil beschreibt die dargestellte Körperstrukturen nach M
 * meta.source MS
 * meta.profile MS
 //Profile
-* morphology 1.. MS
-* location 1.. MS
+* morphology MS
+* location MS
 * locationQualifier MS
