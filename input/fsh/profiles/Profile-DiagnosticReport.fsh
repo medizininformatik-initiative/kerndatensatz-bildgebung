@@ -1,3 +1,4 @@
+//Head
 Profile: MII_PR_Bildgebung_Radiologischer_Befund
 Parent: DiagnosticReport
 Id: mii-pr-bildgebung-radiologischer-befund
@@ -12,20 +13,23 @@ Stufe 3: Bezugnahme auf anatomische Strukturen: Die Verknüpfung mit BodyStructu
 
 Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Ressourcen bietet einen weiteren Detaillierungsgrad, indem sie den Kontext / die Bedingungen beschreibt, unter denen die Observations erhoben wurden. Dies erlaubt eine tiefere Einsicht in die Umstände der Befundung, indem klar definiert wird, nach welchen Kriterien und Voraussetzungen spezifische Informationen und Messwerte erfasst wurden. Die Verknüpfung mit Procedure-Ressourcen erweitert somit den diagnostischen Bericht um wichtige kontextuelle Informationen, die für die Interpretation der Befunde entscheidend sein können.
 "
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/DiagnosticReport"
-* insert Translation(^name, en-US, MII_PR_Bildgebung_DiagnosticReport)
-* insert Translation(^title, en-US, MII PR Bildgebung DiagnosticReport)
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
+//Translation
+* insert Translation(^name, en-US, MII_PR_Imaging_Diagnostic_Report)
+* insert Translation(^title, en-US, MII PR Imaging DiagnosticReport)
 * insert Translation(^description, en-US, The profile describes a diagnostic report for radiological images.)
 * insert PR_CS_VS_Version
+//Meta
 * id MS
 * meta MS
 * meta.source MS
 * meta.profile MS
-* basedOn 1..* MS
+//Profile
+* basedOn MS
 * basedOn only Reference(MII_PR_Bildgebung_ServiceRequest)
 * status MS 
-* category 1..* 
-* category.coding 1.. 
+* category 1.. MS 
+* category.coding 1.. MS 
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
@@ -44,15 +48,15 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 * effectiveDateTime MS
 * effectivePeriod MS
 * issued MS
-* extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
+* extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS //TODO Erklärung Extension, vll externe Extension
 * extension[supportingInfo].extension[reference].valueReference only Reference(DiagnosticReport)
-* result 0..* MS
-* result only Reference(MII_PR_Bildgebung_RadiologischeBeobachtung) 
-* imagingStudy 1..* MS
-* imagingStudy only Reference(MII_PR_Bildgebung_ImagingStudy)
+* result MS
+* result only Reference(MII_PR_Bildgebung_Radiologische_Beobachtung) 
+* imagingStudy 1.. MS
+* imagingStudy only Reference(MII_PR_Bildgebung_Imaging_Study)
 * conclusion MS
 * conclusionCode MS
-* conclusionCode.coding 0.. MS
+* conclusionCode.coding MS
 * conclusionCode.coding ^slicing.discriminator.type = #pattern
 * conclusionCode.coding ^slicing.discriminator.path = "$this"
 * conclusionCode.coding ^slicing.rules = #open
