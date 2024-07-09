@@ -53,7 +53,8 @@ select
 
 @```
 from StructureDefinition
-where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung'
+where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-Bildgebung/StructureDefinition/LogicalModel/Bildgebung'
+    for differential.element where id.contains('Bildgebung.Studie')
     select
         FHIR: mapping[0].map,
         Datensatz: path,
