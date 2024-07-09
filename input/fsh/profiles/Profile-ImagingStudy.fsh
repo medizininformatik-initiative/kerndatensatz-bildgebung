@@ -1,20 +1,22 @@
-Profile: MII_PR_Bildgebung_ImagingStudy
+//Head
+Profile: MII_PR_Bildgebung_Bildgebungsstudie
 Parent: ImagingStudy
-Id: mii-pr-bildgebung-imagingstudy
-Title: "MII PR ImagingStudy ImagingStudy"
+Id: mii-pr-bildgebung-bildgebungsstudie
+Title: "MII PR Bildgebung Bildgebungsstudie"
 Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten auf Studien-, Serien- sowie Instanzen-Ebene der jeweiligen DICOM-Studie."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingStudy"
-* insert Translation(^name, en-US, MII_PR_Bildgebung_ImagingStudy)
-* insert Translation(^title, en-US, MII PR Bildgebung ImagingStudy)
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+//Translation
+* insert Translation(^name, en-US, MII_PR_Imaging_ImagingStudy)
+* insert Translation(^title, en-US, MII PR Imaging ImagingStudy)
 * insert Translation(^description, en-US, The profile describes the metadata of an DICOM imaging study.)
 * insert PR_CS_VS_Version
-
+//Profile
 * extension contains
-    MII_EX_ImagingReason named bildgebungsgrund 0..1    
-
+    MII_EX_ImagingReason named bildgebungsgrund 0..1
+    
 * identifier MS
 * status MS
-* modality 0..* MS
+* modality MS
 * modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html (required)
 * started MS
 * basedOn MS
@@ -46,11 +48,12 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.bodySite from $bodySite (required)
 * series.laterality MS
 * series.laterality from $laterality (required)
-* series.started 0..1 MS
-* series.instance 0..* MS
-* series.instance.uid 1..1 MS
-* series.instance.sopClass 1..1 MS
+* series.started MS
+
+* series.instance MS
+* series.instance.uid MS
+* series.instance.sopClass MS
 * series.instance.sopClass from https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html (required)
-* series.instance.number 0..1 MS
+* series.instance.number MS
 * series.instance.extension contains
   MII_EX_ImagingInstance named imagingInstance 0..1
