@@ -1,5 +1,5 @@
 //Head
-Profile: MII_PR_Bildgebung_Koerpstruktur
+Profile: MII_PR_Bildgebung_Koerperstruktur
 Parent: BodyStructure
 Id: mii-pr-bildgebung-koerperstruktur
 Title: "MII PR Bildgebung Körperstruktur"
