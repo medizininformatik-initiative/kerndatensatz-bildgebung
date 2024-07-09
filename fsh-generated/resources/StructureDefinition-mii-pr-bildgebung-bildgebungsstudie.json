@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-bildgebung-imagingstudy",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingStudy",
+  "id": "mii-pr-bildgebung-bildgebungsstudie",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie",
   "version": "2025.0.0",
-  "name": "MII_PR_Bildgebung_ImagingStudy",
+  "name": "MII_PR_Bildgebung_Bildgebungsstudie",
   "_name": {
     "extension": [
       {
@@ -15,13 +15,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Bildgebung_ImagingStudy"
+            "valueString": "MII_PR_Imaging_ImagingStudy"
           }
         ]
       }
     ]
   },
-  "title": "MII PR ImagingStudy ImagingStudy",
+  "title": "MII PR Bildgebung Bildgebungsstudie",
   "_title": {
     "extension": [
       {
@@ -33,7 +33,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Bildgebung ImagingStudy"
+            "valueString": "MII PR Imaging ImagingStudy"
           }
         ]
       }

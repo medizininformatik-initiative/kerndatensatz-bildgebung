@@ -24,14 +24,6 @@
     "endLine": 5
   },
   {
-    "outputFile": "ImagingStudy-mii-exa-bildgebung-imagingStudy.json",
-    "fshName": "mii-exa-bildgebung-imagingStudy",
-    "fshType": "Instance",
-    "fshFile": "examples/Example-ImagingStudy.fsh",
-    "startLine": 2,
-    "endLine": 5
-  },
-  {
     "outputFile": "Observation-mii-exa-bildgebung-observation.json",
     "fshName": "mii-exa-bildgebung-observation",
     "fshType": "Instance",
@@ -296,12 +288,12 @@
     "endLine": 23
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-bildgebung-imagingstudy.json",
-    "fshName": "MII_PR_Bildgebung_ImagingStudy",
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.json",
+    "fshName": "MII_PR_Bildgebung_Bildgebungsstudie",
     "fshType": "Profile",
     "fshFile": "profiles/Profile-ImagingStudy.fsh",
-    "startLine": 1,
-    "endLine": 56
+    "startLine": 2,
+    "endLine": 59
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",
@@ -332,8 +324,8 @@
     "fshName": "MII_PR_Bildgebung_Radiologischer_Befund",
     "fshType": "Profile",
     "fshFile": "profiles/Profile-DiagnosticReport.fsh",
-    "startLine": 1,
-    "endLine": 64
+    "startLine": 2,
+    "endLine": 68
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.json",

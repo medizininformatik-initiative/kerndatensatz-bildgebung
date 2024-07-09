@@ -152,13 +152,6 @@
       },
       {
         "reference": {
-          "reference": "ImagingStudy/mii-exa-bildgebung-imagingStudy"
-        },
-        "name": "MII Example Bildgebung Imaging Study",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingStudy"
-      },
-      {
-        "reference": {
           "reference": "Observation/mii-exa-bildgebung-observation"
         },
         "name": "MII Example Bildgebung Observation",
@@ -204,6 +197,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+        },
+        "name": "MII PR Bildgebung Bildgebungsstudie",
+        "description": "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten auf Studien-, Serien- sowie Instanzen-Ebene der jeweiligen DICOM-Studie.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-bildgebung-koerperstruktur"
         },
         "name": "MII PR Bildgebung Körperstruktur",
@@ -240,14 +241,6 @@
         },
         "name": "MII PR Bildgebung TNMRadiologischeBefundungsprozedur",
         "description": "Spezifiziert die radiologische Befundungsprozedur nach TNM",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-bildgebung-imagingstudy"
-        },
-        "name": "MII PR ImagingStudy ImagingStudy",
-        "description": "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten auf Studien-, Serien- sowie Instanzen-Ebene der jeweiligen DICOM-Studie.",
         "exampleBoolean": false
       },
       {
