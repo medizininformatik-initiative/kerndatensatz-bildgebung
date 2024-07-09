@@ -20,4 +20,4 @@ Description: "Diese Profil beschreibt die Behandlungsempfehlung"
 * intent MS
 * description MS
 * supportingInfo MS
-* supportingInfo only Reference(MII_PR_Bildgebung_Radiologischer_Befund) (required)
+* supportingInfo only Reference(MII_PR_Bildgebung_Radiologischer_Befund)
