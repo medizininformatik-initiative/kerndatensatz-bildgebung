@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-lm-bildgebung",
-  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-Bildgebung/StructureDefinition/LogicalModel/Bildgebung",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-Bildgebung/StructureDefinition/LogicalModel/Bildgebung",
   "version": "2025.0.0",
   "name": "MII_LM_Bildgebung",
   "_name": {
@@ -80,7 +80,7 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "https://www.medizininformatik-initiative.de/fhir/core/modul-Bildgebung/StructureDefinition/LogicalModel/Bildgebung",
+  "type": "https://www.medizininformatik-initiative.de/fhir/ext/modul-Bildgebung/StructureDefinition/LogicalModel/Bildgebung",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "differential": {
@@ -1004,7 +1004,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.TODO"
+            "map": "ImagingStudy.procedureReference"
           }
         ]
       },
@@ -1490,6 +1490,299 @@
         "type": [
           {
             "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.Kontrastmitteldetails",
+        "path": "Bildgebung.Studie.Serien.Kontrastmitteldetails",
+        "short": "Kontrastmitteldetails",
+        "definition": "Details zur Kontrastmittelgabe über das MedicationStatement",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicationStatement"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.MaximaleRöntgenröhrenspannung",
+        "path": "Bildgebung.Studie.Serien.MaximaleRöntgenröhrenspannung",
+        "short": "Maximale Röntgenröhrenspannung",
+        "definition": "Maximale Röntgenröhrenspannung in kV",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.Expositionszeit",
+        "path": "Bildgebung.Studie.Serien.Expositionszeit",
+        "short": "Expositionszeit",
+        "definition": "Expositionszeit in ms",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.Exposition",
+        "path": "Bildgebung.Studie.Serien.Exposition",
+        "short": "Exposition",
+        "definition": "Exposition in MAs",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.Röntgenröhrenstrom",
+        "path": "Bildgebung.Studie.Serien.Röntgenröhrenstrom",
+        "short": "Röntgenröhrenstrom",
+        "definition": "Röntgenröhrenstrom in mA",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.CTDIVolume",
+        "path": "Bildgebung.Studie.Serien.CTDIVolume",
+        "short": "CTDIvolume",
+        "definition": "CTDIvolume in mGy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ScanningSequenz",
+        "path": "Bildgebung.Studie.Serien.ScanningSequenz",
+        "short": "Scanning Sequenz",
+        "definition": "Code der aktuellen Scanning Sequenz",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ScanningSequenzUntervariante",
+        "path": "Bildgebung.Studie.Serien.ScanningSequenzUntervariante",
+        "short": "Scanning Sequenz Untervariante",
+        "definition": "Code der aktuellen Scanning Sequenz Untervariante",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.MagnetischeFeldstärke",
+        "path": "Bildgebung.Studie.Serien.MagnetischeFeldstärke",
+        "short": "Magnetische Feldstärke",
+        "definition": "Magnetische Feldstärke des Kernspins in T",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.Radiopharmakon",
+        "path": "Bildgebung.Studie.Serien.Radiopharmakon",
+        "short": "Radiopharmakon",
+        "definition": "Genutztes Radiopharmakon",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.Applikationsstartzeit",
+        "path": "Bildgebung.Studie.Serien.Applikationsstartzeit",
+        "short": "Applikationsstartzeit",
+        "definition": "Zeit des Beginn der Applikation des Radiopharmakons",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.Reskaliserungstyp",
+        "path": "Bildgebung.Studie.Serien.Reskaliserungstyp",
+        "short": "Reskalierungstyp",
+        "definition": "Abkürzung des Reskalierungstypen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.GesamteRadionukliddosis",
+        "path": "Bildgebung.Studie.Serien.GesamteRadionukliddosis",
+        "short": "Gesamte Radionukliddosis",
+        "definition": "Gesamte verabreichte Radionukliddosis in MBq",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(TODO)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.Halbwertszeit",
+        "path": "Bildgebung.Studie.Serien.Halbwertszeit",
+        "short": "Halbwertszeit",
+        "definition": "Halbwertszeit des Radionuklids in s",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
           }
         ],
         "mapping": [

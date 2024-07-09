@@ -109,18 +109,6 @@
         "fixedUri": "radiopharmaceuticalStartTime"
       },
       {
-        "id": "Extension.extension:radiopharmaceuticalStopTime",
-        "path": "Extension.extension",
-        "sliceName": "radiopharmaceuticalStopTime",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.extension:radiopharmaceuticalStopTime.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "radiopharmaceuticalStopTime"
-      },
-      {
         "id": "Extension.extension:rescaleType",
         "path": "Extension.extension",
         "sliceName": "rescaleType",

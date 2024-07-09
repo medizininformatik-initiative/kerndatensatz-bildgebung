@@ -93,23 +93,9 @@
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:pixelSpacing.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
         "id": "Extension.extension:pixelSpacing.url",
         "path": "Extension.extension.url",
         "fixedUri": "pixelSpacing"
-      },
-      {
-        "id": "Extension.extension:pixelSpacing.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
       },
       {
         "id": "Extension.extension:sliceThickness",

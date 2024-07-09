@@ -1,13 +1,5 @@
 [
   {
-    "outputFile": "BodyStructure-mii-exa-bildgebung-bodyStructure.json",
-    "fshName": "mii-exa-bildgebung-bodyStructure",
-    "fshType": "Instance",
-    "fshFile": "examples/Example-AnatomyStructure.fsh",
-    "startLine": 2,
-    "endLine": 5
-  },
-  {
     "outputFile": "CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.json",
     "fshName": "mii-cps-bildgebung-capabilitystatement-1x",
     "fshType": "Instance",
@@ -245,7 +237,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/Extension-series-instance.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-mii-ex-imagingReason.json",
@@ -285,7 +277,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/Extension-Modality-PT_NM.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-mii-lm-bildgebung.json",
@@ -293,7 +285,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/LogicalModelBildgebung.fsh",
     "startLine": 1,
-    "endLine": 96
+    "endLine": 109
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-TNMRadiologischeBefundungsprozedur.json",
@@ -308,8 +300,8 @@
     "fshName": "MII_PR_Bildgebung_Behandlungsempfehlung",
     "fshType": "Profile",
     "fshFile": "profiles/Profile-CarePlan.fsh",
-    "startLine": 1,
-    "endLine": 19
+    "startLine": 2,
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-imagingstudy.json",
@@ -317,15 +309,15 @@
     "fshType": "Profile",
     "fshFile": "profiles/Profile-ImagingStudy.fsh",
     "startLine": 1,
-    "endLine": 55
+    "endLine": 56
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",
-    "fshName": "MII_PR_Bildgebung_Koerperstruktur",
+    "fshName": "MII_PR_Bildgebung_Koerpstruktur",
     "fshType": "Profile",
-    "fshFile": "profiles/Profile-AnatomyStructure.fsh",
-    "startLine": 1,
-    "endLine": 17
+    "fshFile": "profiles/Profile-BodyStructure.fsh",
+    "startLine": 2,
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologischeBefundungsprozedur.json",

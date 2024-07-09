@@ -138,17 +138,10 @@
       },
       {
         "reference": {
-          "reference": "BodyStructure/mii-exa-bildgebung-bodyStructure"
-        },
-        "name": "MII Example Bildgebung BodyStructure",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/BodyStructure"
-      },
-      {
-        "reference": {
           "reference": "CarePlan/mii-exa-bildgebung-carePlan"
         },
         "name": "MII Example Bildgebung Care Plan",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/CarePlan"
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
       },
       {
         "reference": {
@@ -221,7 +214,7 @@
           "reference": "StructureDefinition/mii-pr-bildgebung-koerperstruktur"
         },
         "name": "MII PR Bildgebung Körperstruktur",
-        "description": "Dieses Profil beschreibt die Darstellung der Körperstrukturen",
+        "description": "Dieses Profil beschreibt die dargestellte Körperstrukturen nach Morphologie und Lokalisation.",
         "exampleBoolean": false
       },
       {

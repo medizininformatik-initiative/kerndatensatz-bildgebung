@@ -331,6 +331,35 @@
         "mustSupport": true
       },
       {
+        "id": "ImagingStudy.series.instance.extension",
+        "path": "ImagingStudy.series.instance.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ImagingStudy.series.instance.extension:imagingInstance",
+        "path": "ImagingStudy.series.instance.extension",
+        "sliceName": "imagingInstance",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+            ]
+          }
+        ]
+      },
+      {
         "id": "ImagingStudy.series.instance.uid",
         "path": "ImagingStudy.series.instance.uid",
         "mustSupport": true
@@ -347,11 +376,6 @@
       {
         "id": "ImagingStudy.series.instance.number",
         "path": "ImagingStudy.series.instance.number",
-        "mustSupport": true
-      },
-      {
-        "id": "ImagingStudy.series.instance.title",
-        "path": "ImagingStudy.series.instance.title",
         "mustSupport": true
       }
     ]
