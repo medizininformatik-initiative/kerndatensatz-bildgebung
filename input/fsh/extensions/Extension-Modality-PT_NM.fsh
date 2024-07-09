@@ -13,13 +13,11 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension contains
     radiopharmaceutical 0..1 and
     radiopharmaceuticalStartTime 0..1 and
-    radiopharmaceuticalStopTime 0..1 and
     rescaleType 0..1 and
     radionuclideTotalDose 0..1 and
     radionuclideHalfLife 0..1
 * extension[radiopharmaceutical].value[x]
 * extension[radiopharmaceuticalStartTime].value[x]
-* extension[radiopharmaceuticalStopTime].value[x]
 * extension[rescaleType].value[x] only CodeableConcept
 * extension[rescaleType].valueCodeableConcept from $dicom-c11 (extensible) //TODO Evtl als ALIAS?
 * extension[radionuclideTotalDose].value[x] only SimpleQuantity
