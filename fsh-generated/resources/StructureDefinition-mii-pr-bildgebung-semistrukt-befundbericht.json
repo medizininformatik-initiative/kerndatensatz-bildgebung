@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-bildgebung-semistrukturierterBefundbericht",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Composition",
+  "id": "mii-pr-bildgebung-semistrukt-befundbericht",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht",
   "version": "2025.0.0",
-  "name": "MII_PR_Bildgebung_SemistrukturierterBefundbericht",
+  "name": "MII_PR_Bildgebung_Semistrukt_Befundbericht",
   "_name": {
     "extension": [
       {
@@ -15,7 +15,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Bildgebung_Composition"
+            "valueString": "MII_PR_Imaging_Composition"
           }
         ]
       }
@@ -33,7 +33,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Bildgebung Composition"
+            "valueString": "MII PR Imaging Composition"
           }
         ]
       }
@@ -135,6 +135,44 @@
       {
         "id": "Composition.section",
         "path": "Composition.section",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.title",
+        "path": "Composition.section.title",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.author",
+        "path": "Composition.section.author",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.text",
+        "path": "Composition.section.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.section",
+        "path": "Composition.section.section",
         "mustSupport": true
       }
     ]

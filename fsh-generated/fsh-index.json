@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "BodyStructure-mii-exa-bildgebung-bodyStructure.json",
+    "fshName": "mii-exa-bildgebung-bodyStructure",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-AnatomyStructure.fsh",
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
     "outputFile": "CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.json",
     "fshName": "mii-cps-bildgebung-capabilitystatement-1x",
     "fshType": "Instance",
@@ -14,22 +22,6 @@
     "fshFile": "examples/Example-CarePlan.fsh",
     "startLine": 2,
     "endLine": 5
-  },
-  {
-    "outputFile": "Composition-mii-exa-bildgebung-composition.json",
-    "fshName": "mii-exa-bildgebung-composition",
-    "fshType": "Instance",
-    "fshFile": "examples/Example-Composition.fsh",
-    "startLine": 2,
-    "endLine": 5
-  },
-  {
-    "outputFile": "DiagnosticReport-mii-exa-bildgebung-radiologischerBefund.json",
-    "fshName": "mii-exa-bildgebung-radiologischerBefund",
-    "fshType": "Instance",
-    "fshFile": "examples/Example-DiagnosticReport.fsh",
-    "startLine": 2,
-    "endLine": 16
   },
   {
     "outputFile": "ImagingStudy-mii-exa-bildgebung-imagingStudy.json",
@@ -313,7 +305,7 @@
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",
-    "fshName": "MII_PR_Bildgebung_Koerpstruktur",
+    "fshName": "MII_PR_Bildgebung_Koerperstruktur",
     "fshType": "Profile",
     "fshFile": "profiles/Profile-BodyStructure.fsh",
     "startLine": 2,
@@ -336,20 +328,20 @@
     "endLine": 20
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologischerBefund.json",
-    "fshName": "MII_PR_Bildgebung_RadiologischerBefund",
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.json",
+    "fshName": "MII_PR_Bildgebung_Radiologischer_Befund",
     "fshType": "Profile",
     "fshFile": "profiles/Profile-DiagnosticReport.fsh",
     "startLine": 1,
     "endLine": 64
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-bildgebung-semistrukturierterBefundbericht.json",
-    "fshName": "MII_PR_Bildgebung_SemistrukturierterBefundbericht",
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.json",
+    "fshName": "MII_PR_Bildgebung_Semistrukt_Befundbericht",
     "fshType": "Profile",
     "fshFile": "profiles/Profile-Composition.fsh",
-    "startLine": 1,
-    "endLine": 28
+    "startLine": 2,
+    "endLine": 34
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-servicerequest.json",

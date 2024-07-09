@@ -138,24 +138,17 @@
       },
       {
         "reference": {
+          "reference": "BodyStructure/mii-exa-bildgebung-bodyStructure"
+        },
+        "name": "MII Example Bildgebung BodyStructure",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
+      },
+      {
+        "reference": {
           "reference": "CarePlan/mii-exa-bildgebung-carePlan"
         },
         "name": "MII Example Bildgebung Care Plan",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
-      },
-      {
-        "reference": {
-          "reference": "Composition/mii-exa-bildgebung-composition"
-        },
-        "name": "MII Example Bildgebung Composition",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Composition"
-      },
-      {
-        "reference": {
-          "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischerBefund"
-        },
-        "name": "MII Example Bildgebung Diagnostic Report",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/DiagnosticReport"
       },
       {
         "reference": {
@@ -227,7 +220,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-bildgebung-radiologischerBefund"
+          "reference": "StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
         },
         "name": "MII PR Bildgebung Radiologischer Befund",
         "description": "Der Diagnostic Report für Bildgebende verfahren richtet sich an die Dokumentation von radiologischen Befundungsergebnissen. Unterschiedliche Systeme (RIS Befundungsmodule, AI Integrationen dedizierte Systeme zur strukturieren Befundung) lieferen in unterschiedlichem Detailgrad Informationen. Dieses Profil addressiert diese unterschiedlichen Detailgrade und bietet modulare aufeinander aufbauende Stufen. Jede Stufe fügt weitere Konzepte hinzu und ermöglicht so neue Anwendungsmöglichkeiten von der Routine bis hin zu wissenschaftlichen Auswertungen.\n\nStufe 1: Freitext in strukturierter Form: Auf der grundlegendsten Ebene ermöglicht die DiagnosticReport-Ressource die Einbindung von radiologischen Befunden als Freitext in einer strukturierten Form. Dies erlaubt eine einfache, jedoch effektive Darstellung von diagnostischen Informationen. Die Freitextbeschreibung bietet die Möglichkeit, ohne komplexen Datenaustausch, essenzielle Befundinformationen zu übermitteln.\n\nStufe 2: Verlinkung von Observation-Ressourcen: Auf der nächsten Stufe werden DiagnosticReport-Ressourcen mit Observation-Ressourcen verknüpft. Dies erlaubt eine detailliertere Erfassung und Darstellung spezifischer Befunde oder Messwerte. Da diese Ressourcen maschinenlesbar und auch kodiert sind ist es möglich nach diesen Inhalten zu suchen sie für Auswertungen zu verwenden oder auch Workflows zu steuern.\n\nStufe 3: Bezugnahme auf anatomische Strukturen: Die Verknüpfung mit BodyStructure-Ressourcen stellt eine Erweiterung dar, die es ermöglicht, Observations präzise anatomischen Strukturen zuzuordnen. Dieser Bezug ist insbesondere für die longitudinale Patientenversorgung von Bedeutung, da er die Verfolgung und Bezugnahme auf spezifische Läsionen oder Anomalien in Folgeuntersuchungen oder in anderen klinischen Kontexten, wie beispielsweise in der Pathologie, ermöglicht. Wichtig dabei ist, dass die BodyStructure Ressource nicht Teil des Diagnostic Reports ist. Somit müssen Observations auf diese Ressource versioniert verweisen.\n\nStufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Ressourcen bietet einen weiteren Detaillierungsgrad, indem sie den Kontext / die Bedingungen beschreibt, unter denen die Observations erhoben wurden. Dies erlaubt eine tiefere Einsicht in die Umstände der Befundung, indem klar definiert wird, nach welchen Kriterien und Voraussetzungen spezifische Informationen und Messwerte erfasst wurden. Die Verknüpfung mit Procedure-Ressourcen erweitert somit den diagnostischen Bericht um wichtige kontextuelle Informationen, die für die Interpretation der Befunde entscheidend sein können.\n",
@@ -235,7 +228,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-bildgebung-semistrukturierterBefundbericht"
+          "reference": "StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"
         },
         "name": "MII PR Bildgebung Semistrukturierter Befundbericht",
         "description": "Dieses Profil beschreibt den semistrukturierten Befundbericht",

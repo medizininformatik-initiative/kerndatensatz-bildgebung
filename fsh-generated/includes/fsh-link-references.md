@@ -9,9 +9,8 @@
 [MII_EX_Modalitaet_MG_CR_DX]: StructureDefinition-mii-ex-modalitaet-mg-cr-dx.html
 [MII_EX_Modalitaet_MR]: StructureDefinition-mii-ex-modalitaet-mr.html
 [MII_EX_Modalitaet_PT_NM]: StructureDefinition-mii-ex-modalitaet-pt-nm.html
+[mii-exa-bildgebung-bodyStructure]: BodyStructure-mii-exa-bildgebung-bodyStructure.html
 [mii-exa-bildgebung-carePlan]: CarePlan-mii-exa-bildgebung-carePlan.html
-[mii-exa-bildgebung-composition]: Composition-mii-exa-bildgebung-composition.html
-[mii-exa-bildgebung-radiologischerBefund]: DiagnosticReport-mii-exa-bildgebung-radiologischerBefund.html
 [mii-exa-bildgebung-imagingStudy]: ImagingStudy-mii-exa-bildgebung-imagingStudy.html
 [mii-exa-bildgebung-observation]: Observation-mii-exa-bildgebung-observation.html
 [mii-exa-bildgebung-radiologicalReadProcedure]: Procedure-mii-exa-bildgebung-radiologicalReadProcedure.html
@@ -19,10 +18,10 @@
 [MII_LM_Bildgebung]: StructureDefinition-mii-lm-bildgebung.html
 [MII_PR_Bildgebung_RadiologischeBeobachtung]: StructureDefinition-mii-pr-bildgebung-radiologischeBeobachtung.html
 [MII_PR_Bildgebung_Behandlungsempfehlung]: StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html
-[MII_PR_Bildgebung_Koerpstruktur]: StructureDefinition-mii-pr-bildgebung-koerperstruktur.html
+[MII_PR_Bildgebung_Koerperstruktur]: StructureDefinition-mii-pr-bildgebung-koerperstruktur.html
 [MII_PR_Bildgebung_RadiologischeBefundungsprozedur]: StructureDefinition-mii-pr-bildgebung-radiologischeBefundungsprozedur.html
-[MII_PR_Bildgebung_RadiologischerBefund]: StructureDefinition-mii-pr-bildgebung-radiologischerBefund.html
-[MII_PR_Bildgebung_SemistrukturierterBefundbericht]: StructureDefinition-mii-pr-bildgebung-semistrukturierterBefundbericht.html
+[MII_PR_Bildgebung_Radiologischer_Befund]: StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html
+[MII_PR_Bildgebung_Semistrukt_Befundbericht]: StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html
 [MII_PR_Bildgebung_TNMRadiologischeBefundungsprozedur]: StructureDefinition-mii-pr-bildgebung-TNMRadiologischeBefundungsprozedur.html
 [MII_PR_Bildgebung_ImagingStudy]: StructureDefinition-mii-pr-bildgebung-imagingstudy.html
 [MII_VS_Bildgebung_ServiceRequest_Coding]: ValueSet-mii-vs-bildgebung-serviceRequest-coding.html
