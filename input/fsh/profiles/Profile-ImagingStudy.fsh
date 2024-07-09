@@ -50,7 +50,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.instance 0..* MS
 * series.instance.uid 1..1 MS
 * series.instance.sopClass 1..1 MS
-* series.instance.sopClass from https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html
+* series.instance.sopClass from https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html (required)
 * series.instance.number 0..1 MS
 * series.instance.extension contains
   MII_EX_ImagingInstance named imagingInstance
