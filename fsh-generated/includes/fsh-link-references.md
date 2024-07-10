@@ -1,6 +1,7 @@
 [mii-exa-bildgebung-TNMRadiologicalReadProcedure]: Procedure-mii-exa-bildgebung-TNMRadiologicalReadProcedure.html
 [MII_PR_Bildgebung_ServiceRequest]: StructureDefinition-mii-pr-bildgebung-servicerequest.html
 [mii-cps-bildgebung-capabilitystatement-1x]: CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.html
+[MII_EX_Bildgebung_Observation_Imaging]: StructureDefinition-mii-ex-bildgebung-observation-imaging.html
 [MII_EX_ImagingContrast]: StructureDefinition-mii-ex-imagingContrast.html
 [MII_EX_ImagingDevice]: StructureDefinition-mii-ex-imagingDevice.html
 [MII_EX_ImagingInstance]: StructureDefinition-mii-ex-imagingInstance.html
@@ -11,11 +12,10 @@
 [MII_EX_Modalitaet_PT_NM]: StructureDefinition-mii-ex-modalitaet-pt-nm.html
 [mii-exa-bildgebung-bodyStructure]: BodyStructure-mii-exa-bildgebung-bodyStructure.html
 [mii-exa-bildgebung-carePlan]: CarePlan-mii-exa-bildgebung-carePlan.html
-[mii-exa-bildgebung-observation]: Observation-mii-exa-bildgebung-observation.html
 [mii-exa-bildgebung-radiologicalReadProcedure]: Procedure-mii-exa-bildgebung-radiologicalReadProcedure.html
 [mii-exa-bildgebung-serviceRequest]: ServiceRequest-mii-exa-bildgebung-serviceRequest.html
 [MII_LM_Bildgebung]: StructureDefinition-mii-lm-bildgebung.html
-[MII_PR_Bildgebung_RadiologischeBeobachtung]: StructureDefinition-mii-pr-bildgebung-radiologischeBeobachtung.html
+[MII_PR_Bildgebung_Radiologische_Beobachtung]: StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html
 [MII_PR_Bildgebung_Behandlungsempfehlung]: StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html
 [MII_PR_Bildgebung_Bildgebungsstudie]: StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html
 [MII_PR_Bildgebung_Koerperstruktur]: StructureDefinition-mii-pr-bildgebung-koerperstruktur.html

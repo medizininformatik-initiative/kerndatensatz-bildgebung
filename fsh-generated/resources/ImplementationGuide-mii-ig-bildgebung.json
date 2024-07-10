@@ -74,6 +74,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-ex-bildgebung-observation-imaging"
+        },
+        "name": "MII EX Bildgebung Observation Imaging",
+        "description": "Die Extension ermöglicht es, einer Beobachtung die Bildnummer hinzuzufügen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-ex-imagingContrast"
         },
         "name": "MII EX ImagingContrast",
@@ -152,13 +160,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-bildgebung-observation"
-        },
-        "name": "MII Example Bildgebung Observation",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Observation"
-      },
-      {
-        "reference": {
           "reference": "Procedure/mii-exa-bildgebung-radiologicalReadProcedure"
         },
         "name": "MII Example Bildgebung ReadProcedure",
@@ -181,10 +182,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-bildgebung-radiologischeBeobachtung"
+          "reference": "StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
         },
         "name": "MII PR BildgebendeVerfahren Radiologische Beobachtung",
-        "description": "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung.",
+        "description": "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiologischer Bildgebung.",
         "exampleBoolean": false
       },
       {

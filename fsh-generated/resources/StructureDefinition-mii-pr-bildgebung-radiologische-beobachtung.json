@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-bildgebung-radiologischeBeobachtung",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Observation",
+  "id": "mii-pr-bildgebung-radiologische-beobachtung",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung",
   "version": "2025.0.0",
-  "name": "MII_PR_Bildgebung_RadiologischeBeobachtung",
+  "name": "MII_PR_Bildgebung_Radiologische_Beobachtung",
   "_name": {
     "extension": [
       {
@@ -15,7 +15,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Bildgebung_Observation"
+            "valueString": "MII_PR_Imaging_Observation"
           }
         ]
       }
@@ -33,14 +33,14 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Bildgebung Observation"
+            "valueString": "MII PR Imaging Observation"
           }
         ]
       }
     ]
   },
   "status": "active",
-  "description": "Dieses Profil beschreibt den Befund ... radiologischer Bildgebung.",
+  "description": "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiologischer Bildgebung.",
   "_description": {
     "extension": [
       {
@@ -67,16 +67,38 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.partOf",
-        "path": "Observation.partOf",
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.extension:observationImaging",
+        "path": "Observation.extension",
+        "sliceName": "observationImaging",
+        "min": 0,
+        "max": "1",
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/RadiologicalReadProcedure"
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-observation-imaging"
             ]
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.partOf",
+        "path": "Observation.partOf",
         "mustSupport": true
       },
       {
