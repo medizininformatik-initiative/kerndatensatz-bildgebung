@@ -10,6 +10,11 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * insert Translation(^title, en-US, MII PR Imaging Observation)
 * insert Translation(^description, en-US, The profile describes a observation for radiological images.)
 * insert PR_CS_VS_Version
+//Meta
+* id MS
+* meta MS
+* meta.source MS
+* meta.profile MS
 //Profile
 * extension contains
   MII_EX_Bildgebung_Observation_Imaging named observationImaging 0..1 MS 
@@ -23,6 +28,3 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * value[x] MS
 * bodySite MS
 * component MS
-// extension Bildnummer
-// extension Instance UID
-// extension Bodystructure

@@ -1,17 +1,21 @@
-Profile: MII_PR_Bildgebung_RadiologischeBefundungsprozedur
+//Head
+Profile: MII_PR_Bildgebung_Radiologische_Befundungsprozedur
 Parent: Procedure
-Id: mii-pr-bildgebung-radiologischeBefundungsprozedur
-Title: "MII PR Bildgebung RadiologischeBefundungsprozedur"
+Id: mii-pr-bildgebung-radiologische-befundungsprozedur
+Title: "MII PR Bildgebung Radiologische Befundungsprozedur"
 Description: "Diese Profil beschreibt die radiologische Befundungsprozedur"
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/RadiologicalReadProcedure"
-* insert Translation(^name, en-US, MII_PR_Bildgebung_RadiologicalReadProcedure)
-* insert Translation(^title, en-US, MII PR Bildgebung RadiologicalReadProcedure)
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
+//Translation
+* insert Translation(^name, en-US, MII_PR_Imaging_Radiological_Readprocedure)
+* insert Translation(^title, en-US, MII PR Imaging Radiological Readprocedure)
 * insert Translation(^description, en-US, This FHIR resource profile specifically characterizes the radiological reading process.)
 * insert PR_CS_VS_Version
+//Meta
 * id MS
 * meta MS
 * meta.source MS
 * meta.profile MS
+//Profile
 * category 1..1
 * category = $SCT#103693007 "Diagnostic procedure" (exactly)
 * subject only Reference(Patient)

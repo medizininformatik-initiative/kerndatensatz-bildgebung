@@ -1,5 +1,3 @@
-[mii-exa-bildgebung-TNMRadiologicalReadProcedure]: Procedure-mii-exa-bildgebung-TNMRadiologicalReadProcedure.html
-[MII_PR_Bildgebung_ServiceRequest]: StructureDefinition-mii-pr-bildgebung-servicerequest.html
 [mii-cps-bildgebung-capabilitystatement-1x]: CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.html
 [MII_EX_Bildgebung_Observation_Imaging]: StructureDefinition-mii-ex-bildgebung-observation-imaging.html
 [MII_EX_ImagingContrast]: StructureDefinition-mii-ex-imagingContrast.html
@@ -12,17 +10,16 @@
 [MII_EX_Modalitaet_PT_NM]: StructureDefinition-mii-ex-modalitaet-pt-nm.html
 [mii-exa-bildgebung-bodyStructure]: BodyStructure-mii-exa-bildgebung-bodyStructure.html
 [mii-exa-bildgebung-carePlan]: CarePlan-mii-exa-bildgebung-carePlan.html
-[mii-exa-bildgebung-radiologicalReadProcedure]: Procedure-mii-exa-bildgebung-radiologicalReadProcedure.html
-[mii-exa-bildgebung-serviceRequest]: ServiceRequest-mii-exa-bildgebung-serviceRequest.html
 [MII_LM_Bildgebung]: StructureDefinition-mii-lm-bildgebung.html
 [MII_PR_Bildgebung_Radiologische_Beobachtung]: StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html
+[MII_PR_Bildgebung_Anforderung_Bildgebung]: StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html
 [MII_PR_Bildgebung_Behandlungsempfehlung]: StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html
 [MII_PR_Bildgebung_Bildgebungsstudie]: StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html
 [MII_PR_Bildgebung_Koerperstruktur]: StructureDefinition-mii-pr-bildgebung-koerperstruktur.html
-[MII_PR_Bildgebung_RadiologischeBefundungsprozedur]: StructureDefinition-mii-pr-bildgebung-radiologischeBefundungsprozedur.html
+[MII_PR_Bildgebung_Radiologische_Befundungsprozedur]: StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html
 [MII_PR_Bildgebung_Radiologischer_Befund]: StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html
 [MII_PR_Bildgebung_Semistrukt_Befundbericht]: StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html
-[MII_PR_Bildgebung_TNMRadiologischeBefundungsprozedur]: StructureDefinition-mii-pr-bildgebung-TNMRadiologischeBefundungsprozedur.html
+[MII_PR_Bildgebung_TNM_Radiologische_Befundungsprozedur]: StructureDefinition-mii-pr-bildgebung-TNM-radiologische-befundungsprozedur.html
 [MII_VS_Bildgebung_ServiceRequest_Coding]: ValueSet-mii-vs-bildgebung-serviceRequest-coding.html
 [MII_VS_Bildgebung_ServiceRequest_Reason]: ValueSet-mii-vs-bildgebung-serviceRequest-reason.html
 [mii-sp-bildgebung-dosage-dosequantity]: SearchParameter-mii-sp-bildgebung-dosage-dosequantity.html

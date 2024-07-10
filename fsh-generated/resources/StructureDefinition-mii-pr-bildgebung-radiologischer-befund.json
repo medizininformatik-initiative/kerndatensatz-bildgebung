@@ -140,7 +140,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ServiceRequest"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
             ]
           }
         ],
@@ -293,6 +293,14 @@
         "id": "DiagnosticReport.imagingStudy",
         "path": "DiagnosticReport.imagingStudy",
         "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

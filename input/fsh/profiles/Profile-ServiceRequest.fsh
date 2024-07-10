@@ -1,18 +1,21 @@
-Profile: MII_PR_Bildgebung_ServiceRequest
+//Head
+Profile: MII_PR_Bildgebung_Anforderung_Bildgebung
 Parent: ServiceRequest
-Id: mii-pr-bildgebung-servicerequest
-Title: "MII Bildgebende Verfahren ServiceRequest"
-Description: "TODO"
-//TODO Translation Extensions
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ServiceRequest"
-* insert Translation(^name, en-US, MII_PR_Bildgebung_ServiceRequest)
-* insert Translation(^title, en-US, MII PR Bildgebung ServiceRequest)
+Id: mii-pr-bildgebung-anforderung-bildgebung
+Title: "MII PR Bildgebung Anforderung Bildgebung"
+Description: "Profil zur Anforderung einer Bildgebung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
+//Translation
+* insert Translation(^name, en-US, MII_PR_Imaging_Service_Request)
+* insert Translation(^title, en-US, MII PR Imaging Service Request)
 * insert Translation(^description, en-US, The profile describes a service request.)
 * insert PR_CS_VS_Version
+//Meta
 * id MS
 * meta MS
 * meta.source MS
 * meta.profile MS
+//Profile
 * identifier MS
 * status MS
 * intent MS

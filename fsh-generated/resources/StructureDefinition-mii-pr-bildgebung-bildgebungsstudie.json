@@ -67,6 +67,26 @@
   "differential": {
     "element": [
       {
+        "id": "ImagingStudy.id",
+        "path": "ImagingStudy.id",
+        "mustSupport": true
+      },
+      {
+        "id": "ImagingStudy.meta",
+        "path": "ImagingStudy.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "ImagingStudy.meta.source",
+        "path": "ImagingStudy.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "ImagingStudy.meta.profile",
+        "path": "ImagingStudy.meta.profile",
+        "mustSupport": true
+      },
+      {
         "id": "ImagingStudy.extension",
         "path": "ImagingStudy.extension",
         "slicing": {

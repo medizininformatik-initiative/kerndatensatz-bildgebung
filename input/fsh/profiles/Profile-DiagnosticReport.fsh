@@ -26,7 +26,7 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 * meta.profile MS
 //Profile
 * basedOn MS
-* basedOn only Reference(MII_PR_Bildgebung_ServiceRequest)
+* basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung)
 * status MS 
 * category 1.. MS 
 * category.coding 1.. MS 
@@ -53,7 +53,7 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 * result MS
 * result only Reference(MII_PR_Bildgebung_Radiologische_Beobachtung) 
 * imagingStudy 1.. MS
-* imagingStudy only Reference(MII_PR_Bildgebung_Imaging_Study)
+* imagingStudy only Reference(MII_PR_Bildgebung_Bildgebungsstudie)
 * conclusion MS
 * conclusionCode MS
 * conclusionCode.coding MS

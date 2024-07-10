@@ -24,22 +24,6 @@
     "endLine": 5
   },
   {
-    "outputFile": "Procedure-mii-exa-bildgebung-TNMRadiologicalReadProcedure.json",
-    "fshName": "mii-exa-bildgebung-TNMRadiologicalReadProcedure",
-    "fshType": "Instance",
-    "fshFile": "examples/Example-TNMRadiologicalReadProcedure.fsh",
-    "startLine": 2,
-    "endLine": 10
-  },
-  {
-    "outputFile": "Procedure-mii-exa-bildgebung-radiologicalReadProcedure.json",
-    "fshName": "mii-exa-bildgebung-radiologicalReadProcedure",
-    "fshType": "Instance",
-    "fshFile": "examples/Example-ReadProcedure.fsh",
-    "startLine": 2,
-    "endLine": 5
-  },
-  {
     "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-dosequantity.json",
     "fshName": "mii-sp-bildgebung-dosage-dosequantity",
     "fshType": "Instance",
@@ -184,14 +168,6 @@
     "endLine": 80
   },
   {
-    "outputFile": "ServiceRequest-mii-exa-bildgebung-serviceRequest.json",
-    "fshName": "mii-exa-bildgebung-serviceRequest",
-    "fshType": "Instance",
-    "fshFile": "examples/Example-ServiceRequest.fsh",
-    "startLine": 2,
-    "endLine": 5
-  },
-  {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-observation-imaging.json",
     "fshName": "MII_EX_Bildgebung_Observation_Imaging",
     "fshType": "Extension",
@@ -272,12 +248,20 @@
     "endLine": 109
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-bildgebung-TNMRadiologischeBefundungsprozedur.json",
-    "fshName": "MII_PR_Bildgebung_TNMRadiologischeBefundungsprozedur",
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-TNM-radiologische-befundungsprozedur.json",
+    "fshName": "MII_PR_Bildgebung_TNM_Radiologische_Befundungsprozedur",
     "fshType": "Profile",
     "fshFile": "profiles/Profile-TNMRadiologicalReadProcedure.fsh",
-    "startLine": 1,
-    "endLine": 16
+    "startLine": 2,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.json",
+    "fshName": "MII_PR_Bildgebung_Anforderung_Bildgebung",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-ServiceRequest.fsh",
+    "startLine": 2,
+    "endLine": 49
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.json",
@@ -293,7 +277,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/Profile-ImagingStudy.fsh",
     "startLine": 2,
-    "endLine": 59
+    "endLine": 64
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",
@@ -304,20 +288,20 @@
     "endLine": 21
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.json",
+    "fshName": "MII_PR_Bildgebung_Radiologische_Befundungsprozedur",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-ReadProcedure.fsh",
+    "startLine": 2,
+    "endLine": 23
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.json",
     "fshName": "MII_PR_Bildgebung_Radiologische_Beobachtung",
     "fshType": "Profile",
     "fshFile": "profiles/Profile-Observation.fsh",
     "startLine": 2,
-    "endLine": 25
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologischeBefundungsprozedur.json",
-    "fshName": "MII_PR_Bildgebung_RadiologischeBefundungsprozedur",
-    "fshType": "Profile",
-    "fshFile": "profiles/Profile-ReadProcedure.fsh",
-    "startLine": 1,
-    "endLine": 19
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.json",
@@ -334,14 +318,6 @@
     "fshFile": "profiles/Profile-Composition.fsh",
     "startLine": 2,
     "endLine": 34
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-bildgebung-servicerequest.json",
-    "fshName": "MII_PR_Bildgebung_ServiceRequest",
-    "fshType": "Profile",
-    "fshFile": "profiles/Profile-ServiceRequest.fsh",
-    "startLine": 1,
-    "endLine": 46
   },
   {
     "outputFile": "ValueSet-mii-vs-bildgebung-serviceRequest-coding.json",

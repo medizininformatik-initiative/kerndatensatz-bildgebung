@@ -10,6 +10,11 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(^title, en-US, MII PR Imaging ImagingStudy)
 * insert Translation(^description, en-US, The profile describes the metadata of an DICOM imaging study.)
 * insert PR_CS_VS_Version
+//Meta
+* id MS
+* meta MS
+* meta.source MS
+* meta.profile MS
 //Profile
 * extension contains
   MII_EX_ImagingReason named bildgebungsgrund 0..1

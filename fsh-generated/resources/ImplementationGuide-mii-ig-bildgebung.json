@@ -51,21 +51,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "Procedure/mii-exa-bildgebung-TNMRadiologicalReadProcedure"
-        },
-        "name": "Example of a TNM Radiological Read Procedure",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructurDefinition/TNMRadiologicalReadProcedure"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-bildgebung-servicerequest"
-        },
-        "name": "MII Bildgebende Verfahren ServiceRequest",
-        "description": "TODO",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CapabilityStatement/mii-cps-bildgebung-capabilitystatement-1x"
         },
         "name": "MII CPS Bildgebung CapabilityStatement",
@@ -160,20 +145,6 @@
       },
       {
         "reference": {
-          "reference": "Procedure/mii-exa-bildgebung-radiologicalReadProcedure"
-        },
-        "name": "MII Example Bildgebung ReadProcedure",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/RadiologicalReadProcedure"
-      },
-      {
-        "reference": {
-          "reference": "ServiceRequest/mii-exa-bildgebung-serviceRequest"
-        },
-        "name": "MII Example Bildgebung Service Request",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ServiceRequest"
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-lm-bildgebung"
         },
         "name": "MII LM Bildgebung",
@@ -186,6 +157,14 @@
         },
         "name": "MII PR BildgebendeVerfahren Radiologische Beobachtung",
         "description": "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiologischer Bildgebung.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
+        },
+        "name": "MII PR Bildgebung Anforderung Bildgebung",
+        "description": "Profil zur Anforderung einer Bildgebung",
         "exampleBoolean": false
       },
       {
@@ -214,9 +193,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-bildgebung-radiologischeBefundungsprozedur"
+          "reference": "StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
         },
-        "name": "MII PR Bildgebung RadiologischeBefundungsprozedur",
+        "name": "MII PR Bildgebung Radiologische Befundungsprozedur",
         "description": "Diese Profil beschreibt die radiologische Befundungsprozedur",
         "exampleBoolean": false
       },
@@ -238,9 +217,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-bildgebung-TNMRadiologischeBefundungsprozedur"
+          "reference": "StructureDefinition/mii-pr-bildgebung-TNM-radiologische-befundungsprozedur"
         },
-        "name": "MII PR Bildgebung TNMRadiologischeBefundungsprozedur",
+        "name": "MII PR Bildgebung TNM Radiologische Befundungsprozedur",
         "description": "Spezifiziert die radiologische Befundungsprozedur nach TNM",
         "exampleBoolean": false
       },

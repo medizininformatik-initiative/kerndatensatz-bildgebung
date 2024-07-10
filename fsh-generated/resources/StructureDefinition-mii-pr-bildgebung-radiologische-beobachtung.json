@@ -67,6 +67,26 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.id",
+        "path": "Observation.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.meta",
+        "path": "Observation.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.meta.source",
+        "path": "Observation.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.meta.profile",
+        "path": "Observation.meta.profile",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.extension",
         "path": "Observation.extension",
         "slicing": {
@@ -99,6 +119,14 @@
       {
         "id": "Observation.partOf",
         "path": "Observation.partOf",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
