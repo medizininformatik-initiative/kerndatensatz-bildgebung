@@ -12,7 +12,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert PR_CS_VS_Version
 //Profile
 * extension contains
-    MII_EX_ImagingReason named bildgebungsgrund 0..1
+  MII_EX_ImagingReason named bildgebungsgrund 0..1
     
 * identifier MS
 * status MS
