@@ -11,6 +11,8 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * insert Translation(^description, en-US, The profile describes a observation for radiological images.)
 * insert PR_CS_VS_Version
 //Profile
+* extension contains
+  MII_EX_Bildgebung_Observation_Imaging named observationImaging 0..1 MS 
 * partOf MS
 * partOf only Reference (MII_PR_Bildgebung_Radiologische_Befundungsprozedur)
 * status MS
