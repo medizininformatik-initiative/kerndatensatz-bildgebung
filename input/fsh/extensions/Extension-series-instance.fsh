@@ -11,7 +11,8 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
 * insert Publisher
 * insert ExtensionContext(ImagingStudy.series.instance)
 * extension contains
-    pixelSpacing 0..1 MS and
+    pixelSpacing(x) 0..1 MS and
+    pixelSpacing(y) 0..1 MS and
     sliceThickness 0..1 MS and
     imageType 0..1 MS
 
