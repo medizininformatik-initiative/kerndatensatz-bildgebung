@@ -1,0 +1,9 @@
+{
+  "resourceType": "Composition",
+  "id": "mii-exa-bildgebung-composition",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"
+    ]
+  }
+}

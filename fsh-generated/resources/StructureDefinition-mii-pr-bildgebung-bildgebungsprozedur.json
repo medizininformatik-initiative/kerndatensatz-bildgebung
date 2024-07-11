@@ -1,0 +1,102 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-bildgebung-bildgebungsprozedur",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur",
+  "version": "2025.0.0",
+  "name": "MII_PR_Bildgebung_Bildgebungsprozedur",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_PR_Imaging_Imaging_Procedure"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII PR Bildgebung Bildgebungsprozedur",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII PR Imaging Imaging Procedure"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "description": "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "The profile describes a advisory for medical care."
+          }
+        ]
+      }
+    ]
+  },
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.id",
+        "path": "Procedure.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.meta",
+        "path": "Procedure.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.meta.source",
+        "path": "Procedure.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.meta.profile",
+        "path": "Procedure.meta.profile",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.basedOn",
+        "path": "Procedure.basedOn",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "min": 1
+      }
+    ]
+  }
+}

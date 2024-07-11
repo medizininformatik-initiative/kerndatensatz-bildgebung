@@ -1,0 +1,36 @@
+{
+  "resourceType": "Procedure",
+  "id": "mii-exa-bildgebung-TNMRadiologicalReadProcedure",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "code": "103693007",
+        "system": "http://snomed.info/sct",
+        "display": "Diagnostic procedure"
+      }
+    ]
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/examplePatient"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "254317004",
+        "system": "http://snomed.info/sct",
+        "display": "TNM Lung and pleural tumor staging"
+      }
+    ]
+  },
+  "report": [
+    {
+      "reference": "DiagnosticReport/exampleDiagnosticReport"
+    }
+  ]
+}

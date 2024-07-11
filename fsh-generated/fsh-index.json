@@ -24,6 +24,62 @@
     "endLine": 5
   },
   {
+    "outputFile": "Composition-mii-exa-bildgebung-composition.json",
+    "fshName": "mii-exa-bildgebung-composition",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-Composition.fsh",
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-bildgebung-radiologischerBefund.json",
+    "fshName": "mii-exa-bildgebung-radiologischerBefund",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-DiagnosticReport.fsh",
+    "startLine": 2,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie.json",
+    "fshName": "mii-exa-bildgebung-bildgebungsstudie",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-ImagingStudy.fsh",
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
+    "outputFile": "Observation-mii-exa-bildgebung-observation.json",
+    "fshName": "mii-exa-bildgebung-observation",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-Observation.fsh",
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
+    "outputFile": "Procedure-mii-exa-bildgebung-TNMRadiologicalReadProcedure.json",
+    "fshName": "mii-exa-bildgebung-TNMRadiologicalReadProcedure",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-TNMRadiologicalReadProcedure.fsh",
+    "startLine": 2,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Procedure-mii-exa-bildgebung-imagingProcedure.json",
+    "fshName": "mii-exa-bildgebung-imagingProcedure",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-ImagingProcedure.fsh",
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
+    "outputFile": "Procedure-mii-exa-bildgebung-radiologicalReadProcedure.json",
+    "fshName": "mii-exa-bildgebung-radiologicalReadProcedure",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-ReadProcedure.fsh",
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
     "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-dosequantity.json",
     "fshName": "mii-sp-bildgebung-dosage-dosequantity",
     "fshType": "Instance",
@@ -168,6 +224,14 @@
     "endLine": 80
   },
   {
+    "outputFile": "ServiceRequest-mii-exa-bildgebung-serviceRequest.json",
+    "fshName": "mii-exa-bildgebung-serviceRequest",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-ServiceRequest.fsh",
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-observation-imaging.json",
     "fshName": "MII_EX_Bildgebung_Observation_Imaging",
     "fshType": "Extension",
@@ -197,7 +261,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/Extension-series-instance.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-mii-ex-imagingReason.json",
@@ -270,6 +334,14 @@
     "fshFile": "profiles/Profile-CarePlan.fsh",
     "startLine": 2,
     "endLine": 23
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.json",
+    "fshName": "MII_PR_Bildgebung_Bildgebungsprozedur",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-ImagingProcedure.fsh",
+    "startLine": 2,
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.json",

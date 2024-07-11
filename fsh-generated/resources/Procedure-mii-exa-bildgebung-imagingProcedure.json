@@ -1,0 +1,9 @@
+{
+  "resourceType": "Procedure",
+  "id": "mii-exa-bildgebung-imagingProcedure",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur"
+    ]
+  }
+}
