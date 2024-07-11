@@ -1,6 +1,6 @@
 //Head
 Profile: MII_PR_Bildgebung_Bildgebungsprozedur
-Parent: $miiProcedure
+Parent: Procedure
 Id: mii-pr-bildgebung-bildgebungsprozedur
 Title: "MII PR Bildgebung Bildgebungsprozedur"
 Description: "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme"
@@ -20,5 +20,5 @@ Description: "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme"
 * category.coding[sct] ^patternCodeableConcept = $SCT#363679005
 * code.coding contains loinc 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
-* basedOn only Reference(MII_PR_Bildgebung_ServiceRequest)
+* basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung)
 * basedOn 1..* MS
