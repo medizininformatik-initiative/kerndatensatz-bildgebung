@@ -1,6 +1,6 @@
 //TNM Example
 Instance: mii-exa-bildgebung-TNMRadiologicalReadProcedure
-InstanceOf: MII_PR_Bildgebung_TNMRadiologischeBefundungsprozedur
+InstanceOf: MII_PR_Bildgebung_Radiologische_Befundungsprozedur
 Usage: #example
 Title: "Example of a TNM Radiological Read Procedure"
 * category = $SCT#103693007 "Diagnostic procedure"

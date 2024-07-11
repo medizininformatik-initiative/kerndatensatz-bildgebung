@@ -1,6 +1,6 @@
 //Example of a Radiological Diagnostic Report
 Instance: mii-exa-bildgebung-radiologischerBefund
-InstanceOf: MII_PR_Bildgebung_RadiologischerBefund
+InstanceOf: MII_PR_Bildgebung_Radiologischer_Befund
 Usage: #example
 Title: "MII Example Bildgebung Diagnostic Report"
 * code = $SCT#4231000179109 "Mammography report"
