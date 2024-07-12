@@ -173,20 +173,6 @@
       {
         "id": "ServiceRequest.subject",
         "path": "ServiceRequest.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://hl7.org/fhir/StructureDefinition/Location",
-              "http://hl7.org/fhir/StructureDefinition/Device"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {

@@ -137,6 +137,14 @@
       {
         "id": "ImagingStudy.subject",
         "path": "ImagingStudy.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
