@@ -1,18 +1,18 @@
 ---
 parent:
 topic: Composition
-subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Composition
+subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht
 ---
 
 ## Composition
 
-Diese Composition-Ressource wird verwendet, um Befundberichte bildgebender Verfahren zu erfassen.
+Diese Composition-Ressource wird verwendet, um semistrukturierte Befundberichte bildgebender Verfahren zu erfassen.
 
 @```
 from
     StructureDefinition
 where
-    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Composition'
+    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht'
 select
     Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 ```
@@ -26,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Composition'
+	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht'
         select
 	        Beschreibung: description
         with
@@ -36,7 +36,7 @@ select
         from
             StructureDefinition
         where
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/Composition'
+            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht'
         for
             differential.element
             where
@@ -53,8 +53,8 @@ select
 
 @```
 from StructureDefinition
-where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/ErweiterungsmodulBildgebung'
-    for differential.element where id.contains('ErweiterungsmodulBildgebung.Composition')
+where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung'
+    for differential.element where id.contains('Bildgebung.SemistrukturiertesBefunddokument')
     select
         FHIR: mapping[0].map,
         Datensatz: path,
@@ -77,6 +77,6 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 Beispiel einer DiagnosticReport-Ressource mit Angaben zum Applikationsweg und der Dosierung
 
-{{json:fsh-generated/resources/mii-exa-bildgebung-composition.json}}
+{{json:fsh-generated/resources/mii-exa-bildgebung-semistrukt-befundbericht.json}}
 
 ---

@@ -1,18 +1,18 @@
 ---
 parent:
 topic: CarePlan
-subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/CarePlan
+subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung
 ---
 
 ## CarePlan
 
-Diese Koerperstruktur-Ressource wird verwendet, um Befundberichte bildgebender Verfahren zu erfassen.
+Diese CarePlan-Ressource wird verwendet, um Behandlungsempfehlungen zu erfassen.
 
 @```
 from
     StructureDefinition
 where
-    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/CarePlan'
+    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung'
 select
     Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 ```
@@ -26,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/CarePlan'
+	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung'
         select
 	        Beschreibung: description
         with
@@ -36,7 +36,7 @@ select
         from
             StructureDefinition
         where
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/CarePlan'
+            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung'
         for
             differential.element
             where
@@ -53,8 +53,8 @@ select
 
 @```
 from StructureDefinition
-where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/ErweiterungsmodulBildgebung'
-    for differential.element where id.contains('ErweiterungsmodulBildgebung.CarePlan')
+where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung'
+    for differential.element where id.contains('Bildgebung.Empfehlung')
     select
         FHIR: mapping[0].map,
         Datensatz: path,
@@ -77,6 +77,6 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 Beispiel einer DiagnosticReport-Ressource mit Angaben zum Applikationsweg und der Dosierung
 
-{{json:fsh-generated/resources/mii-exa-bildgebung-care-plan.json}}
+{{json:fsh-generated/resources/mii-exa-bildgebung-behandlungsempfehlung.json}}
 
 ---

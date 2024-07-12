@@ -1,18 +1,18 @@
 ---
 parent:
 topic: ImagingProcedure
-subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingProcedure
+subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur
 ---
 
 ## ImagingProcedure
 
-Diese ImagingProcedure-Ressource wird verwendet, um Befundberichte bildgebender Verfahren zu erfassen.
+Diese ImagingProcedure-Ressource wird verwendet, um die Befundungsprozedur zu erfassen.
 
 @```
 from
     StructureDefinition
 where
-    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingProcedure'
+    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur'
 select
     Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 ```
@@ -26,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingProcedure'
+	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur'
         select
 	        Beschreibung: description
         with
@@ -36,7 +36,7 @@ select
         from
             StructureDefinition
         where
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/ImagingProcedure'
+            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur'
         for
             differential.element
             where
@@ -53,8 +53,8 @@ select
 
 @```
 from StructureDefinition
-where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/ErweiterungsmodulBildgebung'
-    for differential.element where id.contains('ErweiterungsmodulBildgebung.ImagingProcedure')
+where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung'
+    for differential.element where id.contains('Bildgebung.Bildgebungsprozedur')
     select
         FHIR: mapping[0].map,
         Datensatz: path,
@@ -77,6 +77,6 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 Beispiel einer DiagnosticReport-Ressource mit Angaben zum Applikationsweg und der Dosierung
 
-{{json:fsh-generated/resources/mii-exa-bildgebung-imaging-procedure.json}}
+{{json:fsh-generated/resources/mii-exa-bildgebung-bildgebungsprozedur.json}}
 
 ---

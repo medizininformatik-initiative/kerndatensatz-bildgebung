@@ -1,18 +1,18 @@
 ---
 parent:
 topic: TNMRadiologicalReadProcedure
-subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/TNMRadiologicalReadProcedure
+subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructurDefinition/mii-pr-bildgebung-TNM-radiologische-befundungsprozedur
 ---
 
 ## TNMRadiologicalReadProcedure
 
-Diese ServiceRequest-Ressource wird verwendet, um Befundberichte bildgebender Verfahren zu erfassen.
+Diese Procedure-Ressource wird verwendet, um eine Befundungsprozedur nach TNM-Skala zu erfassen.
 
 @```
 from
     StructureDefinition
 where
-    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/TNMRadiologicalReadProcedure'
+    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructurDefinition/mii-pr-bildgebung-TNM-radiologische-befundungsprozedur'
 select
     Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 ```
@@ -26,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/TNMRadiologicalReadProcedure'
+	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructurDefinition/mii-pr-bildgebung-TNM-radiologische-befundungsprozedur'
         select
 	        Beschreibung: description
         with
@@ -36,7 +36,7 @@ select
         from
             StructureDefinition
         where
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/TNMRadiologicalReadProcedure'
+            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructurDefinition/mii-pr-bildgebung-TNM-radiologische-befundungsprozedur'
         for
             differential.element
             where
@@ -53,8 +53,8 @@ select
 
 @```
 from StructureDefinition
-where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/ErweiterungsmodulBildgebung'
-    for differential.element where id.contains('ErweiterungsmodulBildgebung.TNMRadiologicalReadProcedure')
+where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung'
+    for differential.element where id.contains('Bildgebung.TNMBefundung')
     select
         FHIR: mapping[0].map,
         Datensatz: path,
@@ -77,6 +77,6 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 Beispiel einer DiagnosticReport-Ressource mit Angaben zum Applikationsweg und der Dosierung
 
-{{json:fsh-generated/resources/mii-exa-bildgebung-tnmradiologicalReadProcedure.json}}
+{{json:fsh-generated/resources/mii-exa-bildgebung-tnm-radiologische-befundungsprozedur.json}}
 
 ---
