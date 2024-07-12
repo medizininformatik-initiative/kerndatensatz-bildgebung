@@ -48,6 +48,14 @@
     "endLine": 5
   },
   {
+    "outputFile": "MedicationAdministration-mii-exa-bildgebung-gabe-Radiopharmakon.json",
+    "fshName": "mii-exa-bildgebung-gabe-Radiopharmakon",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-RadiopharmaceuticalAdministration.fsh",
+    "startLine": 2,
+    "endLine": 5
+  },
+  {
     "outputFile": "Observation-mii-exa-bildgebung-observation.json",
     "fshName": "mii-exa-bildgebung-observation",
     "fshType": "Instance",
@@ -232,6 +240,14 @@
     "endLine": 5
   },
   {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-diagnostic-report.json",
+    "fshName": "MII_EX_Bildgebung_DiagnosticReport",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-DiagnosticReport.fsh",
+    "startLine": 2,
+    "endLine": 18
+  },
+  {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-observation-imaging.json",
     "fshName": "MII_EX_Bildgebung_Observation_Imaging",
     "fshType": "Extension",
@@ -352,6 +368,14 @@
     "endLine": 64
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-gabe-radiopharmakon.json",
+    "fshName": "MII_PR_Bildgebung_Gabe_Radiopharmakon",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-RadiopharmaceuticalAdministration.fsh",
+    "startLine": 2,
+    "endLine": 22
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",
     "fshName": "MII_PR_Bildgebung_Koerperstruktur",
     "fshType": "Profile",
@@ -373,7 +397,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/Profile-Observation.fsh",
     "startLine": 2,
-    "endLine": 30
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.json",
@@ -381,7 +405,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/Profile-DiagnosticReport.fsh",
     "startLine": 2,
-    "endLine": 68
+    "endLine": 70
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.json",

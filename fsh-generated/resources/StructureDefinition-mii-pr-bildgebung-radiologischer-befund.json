@@ -33,7 +33,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Imaging DiagnosticReport"
+            "valueString": "MII PR Imaging Diagnostic Report"
           }
         ]
       }
@@ -101,37 +101,20 @@
         }
       },
       {
-        "id": "DiagnosticReport.extension:supportingInfo",
+        "id": "DiagnosticReport.extension:diagRep_imaging",
         "path": "DiagnosticReport.extension",
-        "sliceName": "supportingInfo",
+        "sliceName": "diagRep_imaging",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-diagnostic-report"
             ]
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.extension:supportingInfo.extension:reference",
-        "path": "DiagnosticReport.extension.extension",
-        "sliceName": "reference"
-      },
-      {
-        "id": "DiagnosticReport.extension:supportingInfo.extension:reference.value[x]",
-        "path": "DiagnosticReport.extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
-            ]
-          }
-        ]
       },
       {
         "id": "DiagnosticReport.basedOn",

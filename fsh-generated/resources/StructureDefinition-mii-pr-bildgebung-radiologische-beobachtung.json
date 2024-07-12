@@ -15,13 +15,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Imaging_Observation"
+            "valueString": "MII_PR_Imaging_Radiological_Observation"
           }
         ]
       }
     ]
   },
-  "title": "MII PR BildgebendeVerfahren Radiologische Beobachtung",
+  "title": "MII PR Bildgebung Radiologische Beobachtung",
   "_title": {
     "extension": [
       {
@@ -33,7 +33,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Imaging Observation"
+            "valueString": "MII PR Imaging Radiological Observation"
           }
         ]
       }
@@ -147,6 +147,14 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -162,6 +170,32 @@
       {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

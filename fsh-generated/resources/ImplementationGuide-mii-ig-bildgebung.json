@@ -66,6 +66,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-ex-bildgebung-diagnostic-report"
+        },
+        "name": "MII EX Bildgebung Diagnostic Report",
+        "description": "Die Extension ermöglicht es, einer Beobachtung die Bildnummer hinzuzufügen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-ex-bildgebung-observation-imaging"
         },
         "name": "MII EX Bildgebung Observation Imaging",
@@ -166,6 +174,13 @@
       },
       {
         "reference": {
+          "reference": "MedicationAdministration/mii-exa-bildgebung-gabe-Radiopharmakon"
+        },
+        "name": "MII Example Bildgebung GabePharmakon",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon"
+      },
+      {
+        "reference": {
           "reference": "Procedure/mii-exa-bildgebung-imagingProcedure"
         },
         "name": "MII Example Bildgebung Imaging Procedure",
@@ -209,14 +224,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
-        },
-        "name": "MII PR BildgebendeVerfahren Radiologische Beobachtung",
-        "description": "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiologischer Bildgebung.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
         },
         "name": "MII PR Bildgebung Anforderung Bildgebung",
@@ -249,6 +256,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon"
+        },
+        "name": "MII PR Bildgebung GabeRadiopharmakon",
+        "description": "Dieses Profil beschreibt die Gabe eines Radiopharmakons zur medizinischen Bildgebung.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-bildgebung-koerperstruktur"
         },
         "name": "MII PR Bildgebung Körperstruktur",
@@ -261,6 +276,14 @@
         },
         "name": "MII PR Bildgebung Radiologische Befundungsprozedur",
         "description": "Diese Profil beschreibt die radiologische Befundungsprozedur",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
+        },
+        "name": "MII PR Bildgebung Radiologische Beobachtung",
+        "description": "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiologischer Bildgebung.",
         "exampleBoolean": false
       },
       {

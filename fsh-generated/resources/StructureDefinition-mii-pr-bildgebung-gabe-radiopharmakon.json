@@ -1,0 +1,115 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-bildgebung-gabe-radiopharmakon",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon",
+  "version": "2025.0.0",
+  "name": "MII_PR_Bildgebung_Gabe_Radiopharmakon",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_PR_Imaging_RadiopharmaceuticalAdministration"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII PR Bildgebung GabeRadiopharmakon",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII PR Imaging RadiopharmaceuticalAdministration"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "description": "Dieses Profil beschreibt die Gabe eines Radiopharmakons zur medizinischen Bildgebung.",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "The profile describes the metadata of an DICOM imaging study."
+          }
+        ]
+      }
+    ]
+  },
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationAdministration",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationAdministration.id",
+        "path": "MedicationAdministration.id",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.meta",
+        "path": "MedicationAdministration.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.meta.source",
+        "path": "MedicationAdministration.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.meta.profile",
+        "path": "MedicationAdministration.meta.profile",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.effective[x]",
+        "path": "MedicationAdministration.effective[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose",
+        "path": "MedicationAdministration.dosage.dose",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose.unit",
+        "path": "MedicationAdministration.dosage.dose.unit",
+        "patternString": "Megabecquerel"
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose.code",
+        "path": "MedicationAdministration.dosage.dose.code",
+        "patternCode": "MBq"
+      }
+    ]
+  }
+}
