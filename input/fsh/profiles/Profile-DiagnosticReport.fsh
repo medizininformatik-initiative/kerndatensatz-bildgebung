@@ -25,8 +25,6 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 * meta.source MS
 * meta.profile MS
 //Profile
-//* extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS //TODO Erklärung Extension, vll externe Extension
-//* extension[supportingInfo].extension[reference].valueReference only Reference(DiagnosticReport or Procedure)
 * extension contains
   MII_EX_Bildgebung_DiagnosticReport named diagRep_imaging 0..1 MS
 * basedOn MS

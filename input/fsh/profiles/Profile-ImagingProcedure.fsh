@@ -16,9 +16,21 @@ Description: "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme"
 * meta.source MS
 * meta.profile MS
 //Profile
-* category 1..1
+* category 1.. MS 
+* category.coding 1.. MS 
+* category.coding ^slicing.discriminator.type = #pattern
+* category.coding ^slicing.discriminator.path = "$this"
+* category.coding ^slicing.rules = #open
+* category.coding contains
+    sct 1..1
 * category.coding[sct] ^patternCodeableConcept = $SCT#363679005
-* code.coding contains loinc 0..1 MS
+* code MS
+* code.coding MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+  loinc 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung)
 * basedOn 1..* MS
