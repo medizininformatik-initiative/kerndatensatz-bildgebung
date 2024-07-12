@@ -1,15 +1,15 @@
 [mii-exa-bildgebung-tnm-radiologische-befundungsprozedur]: Procedure-mii-exa-bildgebung-tnm-radiologische-befundungsprozedur.html
 [mii-cps-bildgebung-capabilitystatement-1x]: CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.html
 [MII_EX_Bildgebung_Bildgebungsgrund]: StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.html
-[MII_EX_Bildgebung_DiagnosticReport]: StructureDefinition-mii-ex-bildgebung-diagnostic-report.html
+[MII_EX_Bildgebung_Bildnummer]: StructureDefinition-mii-ex-bildgebung-bildnummer.html
 [MII_EX_Bildgebung_Geraete_Hersteller]: StructureDefinition-mii-ex-bildgebung-geraet-hersteller.html
 [MII_EX_Bildgebung_Kontrastmittel]: StructureDefinition-mii-ex-bildgebung-kontrastmittel.html
 [MII_EX_Bildgebung_Modalitaet_CT]: StructureDefinition-mii-ex-bildgebung-modalitaet-ct.html
 [MII_EX_Bildgebung_Modalitaet_MG_CR_DX]: StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx.html
 [MII_EX_Bildgebung_Modalitaet_MR]: StructureDefinition-mii-ex-bildgebung-modalitaet-mr.html
 [MII_EX_Bildgebung_Modalitaet_PT_NM]: StructureDefinition-mii-ex-bildgebung-modalitaet-pt-nm.html
-[MII_EX_Bildgebung_Observation_Imaging]: StructureDefinition-mii-ex-bildgebung-observation-imaging.html
 [MII_EX_Bildgebung_Instanz_Serie]: StructureDefinition-mii-ex-bildgebung-instanz-serie.html
+[MII_EX_Bildgebung_SOPInstanz]: StructureDefinition-mii-ex-bildgebung-SOPInstanz.html
 [mii-exa-bildgebung-koerperstruktur]: BodyStructure-mii-exa-bildgebung-koerperstruktur.html
 [mii-exa-bildgebung-behandlungsempfehlung]: CarePlan-mii-exa-bildgebung-behandlungsempfehlung.html
 [mii-exa-bildgebung-semistrukt-befundbericht]: Composition-mii-exa-bildgebung-semistrukt-befundbericht.html

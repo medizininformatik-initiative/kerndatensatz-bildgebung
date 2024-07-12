@@ -101,20 +101,62 @@
         }
       },
       {
-        "id": "Observation.extension:observationImaging",
+        "id": "Observation.extension:bildnummer",
         "path": "Observation.extension",
-        "sliceName": "observationImaging",
+        "sliceName": "bildnummer",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-observation-imaging"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildnummer"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.extension:SOPInstanz",
+        "path": "Observation.extension",
+        "sliceName": "SOPInstanz",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.extension:bodyStructure",
+        "path": "Observation.extension",
+        "sliceName": "bodyStructure",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure"
             ]
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.extension:bodyStructure.value[x]",
+        "path": "Observation.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.partOf",

@@ -101,20 +101,38 @@
         }
       },
       {
-        "id": "DiagnosticReport.extension:diagRep_imaging",
+        "id": "DiagnosticReport.extension:supportingInfo",
         "path": "DiagnosticReport.extension",
-        "sliceName": "diagRep_imaging",
+        "sliceName": "supportingInfo",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-diagnostic-report"
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo"
             ]
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.extension:supportingInfo.extension:reference",
+        "path": "DiagnosticReport.extension.extension",
+        "sliceName": "reference"
+      },
+      {
+        "id": "DiagnosticReport.extension:supportingInfo.extension:reference.value[x]",
+        "path": "DiagnosticReport.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund",
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
+            ]
+          }
+        ]
       },
       {
         "id": "DiagnosticReport.basedOn",

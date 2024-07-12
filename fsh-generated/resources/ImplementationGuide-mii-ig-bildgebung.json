@@ -74,10 +74,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-ex-bildgebung-diagnostic-report"
+          "reference": "StructureDefinition/mii-ex-bildgebung-bildnummer"
         },
-        "name": "MII EX Bildgebung Diagnostic Report",
-        "description": "Die Extension ermöglicht es, einer Beobachtung die Bildnummer hinzuzufügen",
+        "name": "MII EX Bildgebung Bildnummer",
+        "description": "Die Extension ermöglicht es, den Bildnummer aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.",
         "exampleBoolean": false
       },
       {
@@ -130,18 +130,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-ex-bildgebung-observation-imaging"
-        },
-        "name": "MII EX Bildgebung Observation Imaging",
-        "description": "Die Extension ermöglicht es, einer Beobachtung die Bildnummer hinzuzufügen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-ex-bildgebung-instanz-serie"
         },
         "name": "MII EX Bildgebung Serie zur Instanz",
         "description": "Die Extension ermöglicht es, Informationen zur ausgewählten Serie auf Instanz-Ebene anzugeben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-bildgebung-SOPInstanz"
+        },
+        "name": "MII EX Bildgebung SOPInstanz",
+        "description": "Die Extension ermöglicht es, den SOPInstanz aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.",
         "exampleBoolean": false
       },
       {

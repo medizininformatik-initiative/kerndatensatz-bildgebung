@@ -240,6 +240,14 @@
     "endLine": 5
   },
   {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-SOPInstanz.json",
+    "fshName": "MII_EX_Bildgebung_SOPInstanz",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-SOPInstance.fsh",
+    "startLine": 2,
+    "endLine": 17
+  },
+  {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.json",
     "fshName": "MII_EX_Bildgebung_Bildgebungsgrund",
     "fshType": "Extension",
@@ -248,12 +256,12 @@
     "endLine": 17
   },
   {
-    "outputFile": "StructureDefinition-mii-ex-bildgebung-diagnostic-report.json",
-    "fshName": "MII_EX_Bildgebung_DiagnosticReport",
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-bildnummer.json",
+    "fshName": "MII_EX_Bildgebung_Bildnummer",
     "fshType": "Extension",
-    "fshFile": "extensions/Extension-DiagnosticReport.fsh",
+    "fshFile": "extensions/Extension-NumberImage.fsh",
     "startLine": 2,
-    "endLine": 19
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-geraet-hersteller.json",
@@ -310,14 +318,6 @@
     "fshFile": "extensions/Extension-Modality-PT_NM.fsh",
     "startLine": 2,
     "endLine": 34
-  },
-  {
-    "outputFile": "StructureDefinition-mii-ex-bildgebung-observation-imaging.json",
-    "fshName": "MII_EX_Bildgebung_Observation_Imaging",
-    "fshType": "Extension",
-    "fshFile": "extensions/Extension-Observation.fsh",
-    "startLine": 2,
-    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-mii-lm-bildgebung.json",
@@ -397,7 +397,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/Profile-Observation.fsh",
     "startLine": 2,
-    "endLine": 35
+    "endLine": 38
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.json",
@@ -405,7 +405,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/Profile-DiagnosticReport.fsh",
     "startLine": 2,
-    "endLine": 68
+    "endLine": 69
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.json",
