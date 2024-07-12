@@ -17,7 +17,12 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * meta.profile MS
 //Profile
 * extension contains
-  MII_EX_Bildgebung_Observation_Imaging named observationImaging 0..1 MS 
+  numberOfImage 0..1 and
+  SOPInstanceUID 0..1 and
+  http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure named bodyStructure 0..* MS
+* extension[bodyStructure].valueReference only Reference(MII_PR_Bildgebung_Koerperstruktur)
+* extension[numberOfImage].id
+* extension[SOPInstanceUID].id 
 * partOf MS
 * partOf only Reference (MII_PR_Bildgebung_Radiologische_Befundungsprozedur)
 * status MS
