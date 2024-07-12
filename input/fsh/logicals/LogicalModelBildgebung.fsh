@@ -260,7 +260,6 @@ Source: MII_LM_Bildgebung
       * PixelabstandX -> "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie)"
       * PixelabstandY -> "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie)"
 
-
 // Mapping: Bildgebung-LogicalModel-Profile
 // Id: KDS-Profile
 // Title: "Bildgebung LogicalModel KDS-Profile Mapping"
