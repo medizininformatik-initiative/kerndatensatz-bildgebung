@@ -110,7 +110,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund"
             ]
           }
         ]
@@ -213,7 +213,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct"
             ]
           }
         ]
@@ -228,7 +228,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx"
             ]
           }
         ]
@@ -243,7 +243,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"
             ]
           }
         ]
@@ -258,7 +258,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm"
             ]
           }
         ]
@@ -273,7 +273,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
             ]
           }
         ]
@@ -288,7 +288,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
             ]
           }
         ]
@@ -374,7 +374,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie"
             ]
           }
         ]

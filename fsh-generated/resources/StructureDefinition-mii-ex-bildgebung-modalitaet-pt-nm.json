@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-ex-modalitaet-pt-nm",
-  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation",
+  "id": "mii-ex-bildgebung-modalitaet-pt-nm",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm",
   "version": "2025.0.0",
-  "name": "MII_EX_Modalitaet_PT_NM",
+  "name": "MII_EX_Bildgebung_Modalitaet_PT_NM",
   "_name": {
     "extension": [
       {
@@ -15,13 +15,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_EX_Modality_PT_NM"
+            "valueString": "MII_EX_Imaging_Modality_PT_NM"
           }
         ]
       }
     ]
   },
-  "title": "MII EX Modality PT/NM",
+  "title": "MII EX Bildgebung Modalität PT/NM",
   "_title": {
     "extension": [
       {
@@ -33,7 +33,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII EX Modality PT/NM"
+            "valueString": "MII EX Imaging Modality PT/NM"
           }
         ]
       }
@@ -229,7 +229,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm"
       },
       {
         "id": "Extension.value[x]",

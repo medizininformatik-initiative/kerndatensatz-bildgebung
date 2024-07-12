@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-ex-imagingInstance",
-  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation",
+  "id": "mii-ex-bildgebung-modalitaet-mr",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr",
   "version": "2025.0.0",
-  "name": "MII_EX_ImagingInstance",
+  "name": "MII_EX_Bildgebung_Modalitaet_MR",
   "_name": {
     "extension": [
       {
@@ -15,13 +15,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_EX_ImagingStudy"
+            "valueString": "MII_EX_Imaging_Modality_MR"
           }
         ]
       }
     ]
   },
-  "title": "MII EX ImagingInstance",
+  "title": "MII EX Bildgebung Modalität MR",
   "_title": {
     "extension": [
       {
@@ -33,7 +33,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII_EX_ImagingStudy"
+            "valueString": "MII EX Imaging Modality MR"
           }
         ]
       }
@@ -52,7 +52,7 @@
       ]
     }
   ],
-  "description": "Die Extension ermöglicht es, Informationen zur ausgewählten Serie auf Instanz-Ebene anzugeben.",
+  "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MR Daten zu erweitern.",
   "_description": {
     "extension": [
       {
@@ -64,7 +64,7 @@
           },
           {
             "url": "content",
-            "valueString": "The extension allows specifying information about the selected series at the instance level."
+            "valueString": "The extension allows to extend the resources and feasibility analysis to MR data."
           }
         ]
       }
@@ -76,7 +76,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "ImagingStudy.series.instance"
+      "expression": "ImagingStudy.Series"
     }
   ],
   "type": "Extension",
@@ -85,117 +85,110 @@
   "differential": {
     "element": [
       {
-        "id": "Extension.extension:pixelSpacing(x)",
+        "id": "Extension.extension",
         "path": "Extension.extension",
-        "sliceName": "pixelSpacing(x)",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
+        "min": 3
       },
       {
-        "id": "Extension.extension:pixelSpacing(x).extension",
+        "id": "Extension.extension:magneticFieldStrength",
+        "path": "Extension.extension",
+        "sliceName": "magneticFieldStrength",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:magneticFieldStrength.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:pixelSpacing(x).url",
+        "id": "Extension.extension:magneticFieldStrength.url",
         "path": "Extension.extension.url",
-        "fixedUri": "pixelSpacing(x)"
+        "fixedUri": "magneticFieldStrength"
       },
       {
-        "id": "Extension.extension:pixelSpacing(x).value[x]",
+        "id": "Extension.extension:magneticFieldStrength.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
           }
         ]
       },
       {
-        "id": "Extension.extension:pixelSpacing(y)",
-        "path": "Extension.extension",
-        "sliceName": "pixelSpacing(y)",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
+        "id": "Extension.extension:magneticFieldStrength.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "Tesla"
       },
       {
-        "id": "Extension.extension:pixelSpacing(y).extension",
+        "id": "Extension.extension:magneticFieldStrength.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:magneticFieldStrength.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "T"
+      },
+      {
+        "id": "Extension.extension:scanningSequence",
+        "path": "Extension.extension",
+        "sliceName": "scanningSequence",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:scanningSequence.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:pixelSpacing(y).url",
+        "id": "Extension.extension:scanningSequence.url",
         "path": "Extension.extension.url",
-        "fixedUri": "pixelSpacing(y)"
+        "fixedUri": "scanningSequence"
       },
       {
-        "id": "Extension.extension:pixelSpacing(y).value[x]",
+        "id": "Extension.extension:scanningSequence.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "Coding"
           }
         ]
       },
       {
-        "id": "Extension.extension:sliceThickness",
+        "id": "Extension.extension:scanningSequenceVariant",
         "path": "Extension.extension",
-        "sliceName": "sliceThickness",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
+        "sliceName": "scanningSequenceVariant",
+        "min": 1,
+        "max": "1"
       },
       {
-        "id": "Extension.extension:sliceThickness.extension",
+        "id": "Extension.extension:scanningSequenceVariant.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:sliceThickness.url",
+        "id": "Extension.extension:scanningSequenceVariant.url",
         "path": "Extension.extension.url",
-        "fixedUri": "sliceThickness"
+        "fixedUri": "scanningSequenceVariant"
       },
       {
-        "id": "Extension.extension:sliceThickness.value[x]",
+        "id": "Extension.extension:scanningSequenceVariant.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "decimal"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:imageType",
-        "path": "Extension.extension",
-        "sliceName": "imageType",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Extension.extension:imageType.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:imageType.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "imageType"
-      },
-      {
-        "id": "Extension.extension:imageType.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "string"
+            "code": "Coding"
           }
         ]
       },
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"
       },
       {
         "id": "Extension.value[x]",

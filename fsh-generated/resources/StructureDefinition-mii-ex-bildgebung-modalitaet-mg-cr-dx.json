@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-ex-modalitaet-mr",
-  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation",
+  "id": "mii-ex-bildgebung-modalitaet-mg-cr-dx",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx",
   "version": "2025.0.0",
-  "name": "MII_EX_Modalitaet_MR",
+  "name": "MII_EX_Bildgebung_Modalitaet_MG_CR_DX",
   "_name": {
     "extension": [
       {
@@ -15,13 +15,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_EX_Modality_MR"
+            "valueString": "MII_EX_Imaging_Modality_MG_CR_DX"
           }
         ]
       }
     ]
   },
-  "title": "MII EX Modality MR",
+  "title": "MII EX Bildgebung Modalität MG/CR/DX",
   "_title": {
     "extension": [
       {
@@ -33,7 +33,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII EX Modality MR"
+            "valueString": "MII EX Imaging Modality MG_CR_DX"
           }
         ]
       }
@@ -52,7 +52,7 @@
       ]
     }
   ],
-  "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MR Daten zu erweitern.",
+  "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MG, CR & DX Daten zu erweitern.",
   "_description": {
     "extension": [
       {
@@ -64,7 +64,7 @@
           },
           {
             "url": "content",
-            "valueString": "The extension allows to extend the resources and feasibility analysis to MR data."
+            "valueString": "The extension allows to extend the resources and feasibility analysis to MG, CR & DX data."
           }
         ]
       }
@@ -85,29 +85,36 @@
   "differential": {
     "element": [
       {
-        "id": "Extension.extension",
+        "id": "Extension.extension:KVP",
         "path": "Extension.extension",
-        "min": 3
-      },
-      {
-        "id": "Extension.extension:magneticFieldStrength",
-        "path": "Extension.extension",
-        "sliceName": "magneticFieldStrength",
-        "min": 1,
+        "sliceName": "KVP",
+        "min": 0,
         "max": "1"
       },
       {
-        "id": "Extension.extension:magneticFieldStrength.extension",
+        "id": "Extension.extension:KVP.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "KVP"
+      },
+      {
+        "id": "Extension.extension:exposureTime",
+        "path": "Extension.extension",
+        "sliceName": "exposureTime",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:exposureTime.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:magneticFieldStrength.url",
+        "id": "Extension.extension:exposureTime.url",
         "path": "Extension.extension.url",
-        "fixedUri": "magneticFieldStrength"
+        "fixedUri": "exposureTime"
       },
       {
-        "id": "Extension.extension:magneticFieldStrength.value[x]",
+        "id": "Extension.extension:exposureTime.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
@@ -119,76 +126,67 @@
         ]
       },
       {
-        "id": "Extension.extension:magneticFieldStrength.value[x].unit",
-        "path": "Extension.extension.value[x].unit",
-        "patternString": "Tesla"
-      },
-      {
-        "id": "Extension.extension:magneticFieldStrength.value[x].system",
-        "path": "Extension.extension.value[x].system",
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Extension.extension:magneticFieldStrength.value[x].code",
-        "path": "Extension.extension.value[x].code",
-        "patternCode": "T"
-      },
-      {
-        "id": "Extension.extension:scanningSequence",
+        "id": "Extension.extension:exposure",
         "path": "Extension.extension",
-        "sliceName": "scanningSequence",
-        "min": 1,
+        "sliceName": "exposure",
+        "min": 0,
         "max": "1"
       },
       {
-        "id": "Extension.extension:scanningSequence.extension",
+        "id": "Extension.extension:exposure.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:scanningSequence.url",
+        "id": "Extension.extension:exposure.url",
         "path": "Extension.extension.url",
-        "fixedUri": "scanningSequence"
+        "fixedUri": "exposure"
       },
       {
-        "id": "Extension.extension:scanningSequence.value[x]",
+        "id": "Extension.extension:exposure.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "Coding"
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
           }
         ]
       },
       {
-        "id": "Extension.extension:scanningSequenceVariant",
+        "id": "Extension.extension:xRayTubeCurrent",
         "path": "Extension.extension",
-        "sliceName": "scanningSequenceVariant",
-        "min": 1,
+        "sliceName": "xRayTubeCurrent",
+        "min": 0,
         "max": "1"
       },
       {
-        "id": "Extension.extension:scanningSequenceVariant.extension",
+        "id": "Extension.extension:xRayTubeCurrent.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:scanningSequenceVariant.url",
+        "id": "Extension.extension:xRayTubeCurrent.url",
         "path": "Extension.extension.url",
-        "fixedUri": "scanningSequenceVariant"
+        "fixedUri": "xRayTubeCurrent"
       },
       {
-        "id": "Extension.extension:scanningSequenceVariant.value[x]",
+        "id": "Extension.extension:xRayTubeCurrent.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "Coding"
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
           }
         ]
       },
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx"
       },
       {
         "id": "Extension.value[x]",

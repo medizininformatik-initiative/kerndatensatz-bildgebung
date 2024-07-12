@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-ex-imagingReason",
-  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation",
+  "id": "mii-ex-bildgebung-bildgebungsgrund",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund",
   "version": "2025.0.0",
-  "name": "MII_EX_ImagingReason",
+  "name": "MII_EX_Bildgebung_Bildgebungsgrund",
   "_name": {
     "extension": [
       {
@@ -15,13 +15,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_EX_ImagingStudy"
+            "valueString": "MII_EX_Imaging_Imaging_Reason"
           }
         ]
       }
     ]
   },
-  "title": "MII EX ImagingReason",
+  "title": "MII EX Bildgebung Bildgebungsgrund",
   "_title": {
     "extension": [
       {
@@ -33,7 +33,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII_EX_ImagingStudy"
+            "valueString": "MII EX Imaging Imaging Reason"
           }
         ]
       }
@@ -52,7 +52,7 @@
       ]
     }
   ],
-  "description": "Die Extension ermöglicht es, den Bildbegungsgrund aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.",
+  "description": "Die Extension ermöglicht es, den Bildgebungsgrund aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.",
   "_description": {
     "extension": [
       {
@@ -92,7 +92,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund"
       },
       {
         "id": "Extension.value[x]",

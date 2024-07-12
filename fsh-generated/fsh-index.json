@@ -240,12 +240,76 @@
     "endLine": 5
   },
   {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.json",
+    "fshName": "MII_EX_Bildgebung_Bildgebungsgrund",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-ImagingReason.fsh",
+    "startLine": 2,
+    "endLine": 17
+  },
+  {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-diagnostic-report.json",
     "fshName": "MII_EX_Bildgebung_DiagnosticReport",
     "fshType": "Extension",
     "fshFile": "extensions/Extension-DiagnosticReport.fsh",
     "startLine": 2,
-    "endLine": 18
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-geraet-hersteller.json",
+    "fshName": "MII_EX_Bildgebung_Geraete_Hersteller",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-series-device.fsh",
+    "startLine": 2,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-instanz-serie.json",
+    "fshName": "MII_EX_Bildgebung_Instanz_Serie",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-series-instance.fsh",
+    "startLine": 2,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-kontrastmittel.json",
+    "fshName": "MII_EX_Bildgebung_Kontrastmittel",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-series-contrast.fsh",
+    "startLine": 2,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-modalitaet-ct.json",
+    "fshName": "MII_EX_Bildgebung_Modalitaet_CT",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-Modality-CT.fsh",
+    "startLine": 2,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx.json",
+    "fshName": "MII_EX_Bildgebung_Modalitaet_MG_CR_DX",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-Modality-MG_CR_DX.fsh",
+    "startLine": 2,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-modalitaet-mr.json",
+    "fshName": "MII_EX_Bildgebung_Modalitaet_MR",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-Modality-MR.fsh",
+    "startLine": 2,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-modalitaet-pt-nm.json",
+    "fshName": "MII_EX_Bildgebung_Modalitaet_PT_NM",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-Modality-PT_NM.fsh",
+    "startLine": 2,
+    "endLine": 34
   },
   {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-observation-imaging.json",
@@ -256,76 +320,12 @@
     "endLine": 23
   },
   {
-    "outputFile": "StructureDefinition-mii-ex-imagingContrast.json",
-    "fshName": "MII_EX_ImagingContrast",
-    "fshType": "Extension",
-    "fshFile": "extensions/Extension-series-contrast.fsh",
-    "startLine": 1,
-    "endLine": 18
-  },
-  {
-    "outputFile": "StructureDefinition-mii-ex-imagingDevice.json",
-    "fshName": "MII_EX_ImagingDevice",
-    "fshType": "Extension",
-    "fshFile": "extensions/Extension-series-device.fsh",
-    "startLine": 1,
-    "endLine": 18
-  },
-  {
-    "outputFile": "StructureDefinition-mii-ex-imagingInstance.json",
-    "fshName": "MII_EX_ImagingInstance",
-    "fshType": "Extension",
-    "fshFile": "extensions/Extension-series-instance.fsh",
-    "startLine": 1,
-    "endLine": 22
-  },
-  {
-    "outputFile": "StructureDefinition-mii-ex-imagingReason.json",
-    "fshName": "MII_EX_ImagingReason",
-    "fshType": "Extension",
-    "fshFile": "extensions/Extension-Reason.fsh",
-    "startLine": 1,
-    "endLine": 14
-  },
-  {
-    "outputFile": "StructureDefinition-mii-ex-modalitaet-ct.json",
-    "fshName": "MII_EX_Modalitaet_CT",
-    "fshType": "Extension",
-    "fshFile": "extensions/Extension-Modality-CT.fsh",
-    "startLine": 1,
-    "endLine": 39
-  },
-  {
-    "outputFile": "StructureDefinition-mii-ex-modalitaet-mg-cr-dx.json",
-    "fshName": "MII_EX_Modalitaet_MG_CR_DX",
-    "fshType": "Extension",
-    "fshFile": "extensions/Extension-Modality-MG_CR_DX.fsh",
-    "startLine": 1,
-    "endLine": 21
-  },
-  {
-    "outputFile": "StructureDefinition-mii-ex-modalitaet-mr.json",
-    "fshName": "MII_EX_Modalitaet_MR",
-    "fshType": "Extension",
-    "fshFile": "extensions/Extension-Modality-MR.fsh",
-    "startLine": 1,
-    "endLine": 22
-  },
-  {
-    "outputFile": "StructureDefinition-mii-ex-modalitaet-pt-nm.json",
-    "fshName": "MII_EX_Modalitaet_PT_NM",
-    "fshType": "Extension",
-    "fshFile": "extensions/Extension-Modality-PT_NM.fsh",
-    "startLine": 1,
-    "endLine": 30
-  },
-  {
     "outputFile": "StructureDefinition-mii-lm-bildgebung.json",
     "fshName": "MII_LM_Bildgebung",
     "fshType": "Logical",
     "fshFile": "logicals/LogicalModelBildgebung.fsh",
     "startLine": 1,
-    "endLine": 109
+    "endLine": 113
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-TNM-radiologische-befundungsprozedur.json",

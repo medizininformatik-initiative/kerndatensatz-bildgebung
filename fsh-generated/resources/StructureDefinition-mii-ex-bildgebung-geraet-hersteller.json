@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-ex-imagingContrast",
-  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation",
+  "id": "mii-ex-bildgebung-geraet-hersteller",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller",
   "version": "2025.0.0",
-  "name": "MII_EX_ImagingContrast",
+  "name": "MII_EX_Bildgebung_Geraete_Hersteller",
   "_name": {
     "extension": [
       {
@@ -15,13 +15,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_EX_ImagingStudy"
+            "valueString": "MII_EX_Imaging_Device_Manufacturer"
           }
         ]
       }
     ]
   },
-  "title": "MII EX ImagingContrast",
+  "title": "MII EX Bildgebung Gerät und Hersteller",
   "_title": {
     "extension": [
       {
@@ -33,7 +33,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII_EX_ImagingStudy"
+            "valueString": "MII EX Imaging Device and Manufacturer"
           }
         ]
       }
@@ -52,7 +52,7 @@
       ]
     }
   ],
-  "description": "Die Extension ermöglicht es, die Gabe von Kontrastmitteln auf Serien-Ebene anzugeben.",
+  "description": "Die Extension ermöglicht es, Informationen zum verwendeten Gerät und dessen Hersteller auf Serien-Ebene anzugeben.",
   "_description": {
     "extension": [
       {
@@ -64,7 +64,7 @@
           },
           {
             "url": "content",
-            "valueString": "The extension allows specifying the administration of contrast agents at the series level."
+            "valueString": "The extension allows specifying information about the device used and its manufacturer at the series level."
           }
         ]
       }
@@ -85,70 +85,63 @@
   "differential": {
     "element": [
       {
-        "id": "Extension.extension",
+        "id": "Extension.extension:manufacturer",
         "path": "Extension.extension",
-        "min": 1
-      },
-      {
-        "id": "Extension.extension:contrastBolus",
-        "path": "Extension.extension",
-        "sliceName": "contrastBolus",
-        "min": 1,
+        "sliceName": "manufacturer",
+        "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:contrastBolus.extension",
+        "id": "Extension.extension:manufacturer.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:contrastBolus.url",
+        "id": "Extension.extension:manufacturer.url",
         "path": "Extension.extension.url",
-        "fixedUri": "contrastBolus"
+        "fixedUri": "manufacturer"
       },
       {
-        "id": "Extension.extension:contrastBolus.value[x]",
+        "id": "Extension.extension:manufacturer.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "boolean"
+            "code": "string"
           }
         ]
       },
       {
-        "id": "Extension.extension:contrastBolusDetails",
+        "id": "Extension.extension:manufacturerModelName",
         "path": "Extension.extension",
-        "sliceName": "contrastBolusDetails",
+        "sliceName": "manufacturerModelName",
         "min": 0,
-        "max": "*"
+        "max": "1",
+        "mustSupport": true
       },
       {
-        "id": "Extension.extension:contrastBolusDetails.extension",
+        "id": "Extension.extension:manufacturerModelName.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:contrastBolusDetails.url",
+        "id": "Extension.extension:manufacturerModelName.url",
         "path": "Extension.extension.url",
-        "fixedUri": "contrastBolusDetails"
+        "fixedUri": "manufacturerModelName"
       },
       {
-        "id": "Extension.extension:contrastBolusDetails.value[x]",
+        "id": "Extension.extension:manufacturerModelName.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/MedicationStatement"
-            ]
+            "code": "string"
           }
         ]
       },
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
       },
       {
         "id": "Extension.value[x]",

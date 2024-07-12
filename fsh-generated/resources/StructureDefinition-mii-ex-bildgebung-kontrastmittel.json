@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-ex-imagingDevice",
-  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation",
+  "id": "mii-ex-bildgebung-kontrastmittel",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel",
   "version": "2025.0.0",
-  "name": "MII_EX_ImagingDevice",
+  "name": "MII_EX_Bildgebung_Kontrastmittel",
   "_name": {
     "extension": [
       {
@@ -21,7 +21,7 @@
       }
     ]
   },
-  "title": "MII EX ImagingDevice",
+  "title": "MII EX Bildgebung Kontrastmittel",
   "_title": {
     "extension": [
       {
@@ -52,7 +52,7 @@
       ]
     }
   ],
-  "description": "Die Extension ermöglicht es, Informationen zum verwendeten Gerät und dessen Hersteller auf Serien-Ebene anzugeben.",
+  "description": "Die Extension ermöglicht es, die Gabe von Kontrastmitteln auf Serien-Ebene anzugeben.",
   "_description": {
     "extension": [
       {
@@ -64,7 +64,7 @@
           },
           {
             "url": "content",
-            "valueString": "The extension allows specifying information about the device used and its manufacturer at the series level."
+            "valueString": "The extension allows specifying the administration of contrast agents at the series level."
           }
         ]
       }
@@ -85,63 +85,70 @@
   "differential": {
     "element": [
       {
-        "id": "Extension.extension:manufacturer",
+        "id": "Extension.extension",
         "path": "Extension.extension",
-        "sliceName": "manufacturer",
-        "min": 0,
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:contrastBolus",
+        "path": "Extension.extension",
+        "sliceName": "contrastBolus",
+        "min": 1,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:manufacturer.extension",
+        "id": "Extension.extension:contrastBolus.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:manufacturer.url",
+        "id": "Extension.extension:contrastBolus.url",
         "path": "Extension.extension.url",
-        "fixedUri": "manufacturer"
+        "fixedUri": "contrastBolus"
       },
       {
-        "id": "Extension.extension:manufacturer.value[x]",
+        "id": "Extension.extension:contrastBolus.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "boolean"
           }
         ]
       },
       {
-        "id": "Extension.extension:manufacturerModelName",
+        "id": "Extension.extension:contrastBolusDetails",
         "path": "Extension.extension",
-        "sliceName": "manufacturerModelName",
+        "sliceName": "contrastBolusDetails",
         "min": 0,
-        "max": "1",
-        "mustSupport": true
+        "max": "*"
       },
       {
-        "id": "Extension.extension:manufacturerModelName.extension",
+        "id": "Extension.extension:contrastBolusDetails.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:manufacturerModelName.url",
+        "id": "Extension.extension:contrastBolusDetails.url",
         "path": "Extension.extension.url",
-        "fixedUri": "manufacturerModelName"
+        "fixedUri": "contrastBolusDetails"
       },
       {
-        "id": "Extension.extension:manufacturerModelName.value[x]",
+        "id": "Extension.extension:contrastBolusDetails.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicationStatement"
+            ]
           }
         ]
       },
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
       },
       {
         "id": "Extension.value[x]",

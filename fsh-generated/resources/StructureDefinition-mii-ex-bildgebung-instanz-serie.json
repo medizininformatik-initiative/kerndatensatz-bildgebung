@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-ex-modalitaet-mg-cr-dx",
-  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation",
+  "id": "mii-ex-bildgebung-instanz-serie",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie",
   "version": "2025.0.0",
-  "name": "MII_EX_Modalitaet_MG_CR_DX",
+  "name": "MII_EX_Bildgebung_Instanz_Serie",
   "_name": {
     "extension": [
       {
@@ -15,13 +15,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_EX_Modality_MG_CR_DX"
+            "valueString": "MII_EX_ImagingStudy"
           }
         ]
       }
     ]
   },
-  "title": "MII EX Modality MG/CR/DX",
+  "title": "MII EX Bildgebung Serie zur Instanz",
   "_title": {
     "extension": [
       {
@@ -33,7 +33,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII EX Modality MG_CR_DX"
+            "valueString": "MII_EX_ImagingStudy"
           }
         ]
       }
@@ -52,7 +52,7 @@
       ]
     }
   ],
-  "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MG, CR & DX Daten zu erweitern.",
+  "description": "Die Extension ermöglicht es, Informationen zur ausgewählten Serie auf Instanz-Ebene anzugeben.",
   "_description": {
     "extension": [
       {
@@ -64,7 +64,7 @@
           },
           {
             "url": "content",
-            "valueString": "The extension allows to extend the resources and feasibility analysis to MG, CR & DX data."
+            "valueString": "The extension allows specifying information about the selected series at the instance level."
           }
         ]
       }
@@ -76,7 +76,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "ImagingStudy.Series"
+      "expression": "ImagingStudy.series.instance"
     }
   ],
   "type": "Extension",
@@ -85,108 +85,117 @@
   "differential": {
     "element": [
       {
-        "id": "Extension.extension:KVP",
+        "id": "Extension.extension:pixelSpacing(x)",
         "path": "Extension.extension",
-        "sliceName": "KVP",
+        "sliceName": "pixelSpacing(x)",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
-        "id": "Extension.extension:KVP.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "KVP"
-      },
-      {
-        "id": "Extension.extension:exposureTime",
-        "path": "Extension.extension",
-        "sliceName": "exposureTime",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.extension:exposureTime.extension",
+        "id": "Extension.extension:pixelSpacing(x).extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:exposureTime.url",
+        "id": "Extension.extension:pixelSpacing(x).url",
         "path": "Extension.extension.url",
-        "fixedUri": "exposureTime"
+        "fixedUri": "pixelSpacing(x)"
       },
       {
-        "id": "Extension.extension:exposureTime.value[x]",
+        "id": "Extension.extension:pixelSpacing(x).value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "Quantity",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
-            ]
+            "code": "string"
           }
         ]
       },
       {
-        "id": "Extension.extension:exposure",
+        "id": "Extension.extension:pixelSpacing(y)",
         "path": "Extension.extension",
-        "sliceName": "exposure",
+        "sliceName": "pixelSpacing(y)",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
-        "id": "Extension.extension:exposure.extension",
+        "id": "Extension.extension:pixelSpacing(y).extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:exposure.url",
+        "id": "Extension.extension:pixelSpacing(y).url",
         "path": "Extension.extension.url",
-        "fixedUri": "exposure"
+        "fixedUri": "pixelSpacing(y)"
       },
       {
-        "id": "Extension.extension:exposure.value[x]",
+        "id": "Extension.extension:pixelSpacing(y).value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "Quantity",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
-            ]
+            "code": "string"
           }
         ]
       },
       {
-        "id": "Extension.extension:xRayTubeCurrent",
+        "id": "Extension.extension:sliceThickness",
         "path": "Extension.extension",
-        "sliceName": "xRayTubeCurrent",
+        "sliceName": "sliceThickness",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
-        "id": "Extension.extension:xRayTubeCurrent.extension",
+        "id": "Extension.extension:sliceThickness.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:xRayTubeCurrent.url",
+        "id": "Extension.extension:sliceThickness.url",
         "path": "Extension.extension.url",
-        "fixedUri": "xRayTubeCurrent"
+        "fixedUri": "sliceThickness"
       },
       {
-        "id": "Extension.extension:xRayTubeCurrent.value[x]",
+        "id": "Extension.extension:sliceThickness.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "Quantity",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
-            ]
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:imageType",
+        "path": "Extension.extension",
+        "sliceName": "imageType",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:imageType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:imageType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "imageType"
+      },
+      {
+        "id": "Extension.extension:imageType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
           }
         ]
       },
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie"
       },
       {
         "id": "Extension.value[x]",

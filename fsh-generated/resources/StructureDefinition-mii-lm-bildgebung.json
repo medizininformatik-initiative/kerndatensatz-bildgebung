@@ -886,6 +886,58 @@
         ]
       },
       {
+        "id": "Bildgebung.BodyStructure",
+        "path": "Bildgebung.BodyStructure",
+        "short": "Körperstruktur",
+        "definition": "Körperstruktur",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.BodyStructure.Morphologie",
+        "path": "Bildgebung.BodyStructure.Morphologie",
+        "short": "Morphologie",
+        "definition": "Morphologie",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.BodyStructure.Lokalisation",
+        "path": "Bildgebung.BodyStructure.Lokalisation",
+        "short": "Lokalisation",
+        "definition": "Lokalisation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.BodyStructure.nähereLokalisation",
+        "path": "Bildgebung.BodyStructure.nähereLokalisation",
+        "short": "mähere Lokalisation",
+        "definition": "nähere Lokalisation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
         "id": "Bildgebung.Anforderung",
         "path": "Bildgebung.Anforderung",
         "short": "Anforderung",

@@ -66,10 +66,66 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-ex-bildgebung-bildgebungsgrund"
+        },
+        "name": "MII EX Bildgebung Bildgebungsgrund",
+        "description": "Die Extension ermöglicht es, den Bildgebungsgrund aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-ex-bildgebung-diagnostic-report"
         },
         "name": "MII EX Bildgebung Diagnostic Report",
         "description": "Die Extension ermöglicht es, einer Beobachtung die Bildnummer hinzuzufügen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
+        },
+        "name": "MII EX Bildgebung Gerät und Hersteller",
+        "description": "Die Extension ermöglicht es, Informationen zum verwendeten Gerät und dessen Hersteller auf Serien-Ebene anzugeben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-bildgebung-kontrastmittel"
+        },
+        "name": "MII EX Bildgebung Kontrastmittel",
+        "description": "Die Extension ermöglicht es, die Gabe von Kontrastmitteln auf Serien-Ebene anzugeben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-bildgebung-modalitaet-ct"
+        },
+        "name": "MII EX Bildgebung Modalität CT",
+        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf CT Daten zu erweitern.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx"
+        },
+        "name": "MII EX Bildgebung Modalität MG/CR/DX",
+        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MG, CR & DX Daten zu erweitern.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-bildgebung-modalitaet-mr"
+        },
+        "name": "MII EX Bildgebung Modalität MR",
+        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MR Daten zu erweitern.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm"
+        },
+        "name": "MII EX Bildgebung Modalität PT/NM",
+        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf PT & NM Daten zu erweitern.",
         "exampleBoolean": false
       },
       {
@@ -82,66 +138,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-ex-imagingContrast"
+          "reference": "StructureDefinition/mii-ex-bildgebung-instanz-serie"
         },
-        "name": "MII EX ImagingContrast",
-        "description": "Die Extension ermöglicht es, die Gabe von Kontrastmitteln auf Serien-Ebene anzugeben.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-ex-imagingDevice"
-        },
-        "name": "MII EX ImagingDevice",
-        "description": "Die Extension ermöglicht es, Informationen zum verwendeten Gerät und dessen Hersteller auf Serien-Ebene anzugeben.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-ex-imagingInstance"
-        },
-        "name": "MII EX ImagingInstance",
+        "name": "MII EX Bildgebung Serie zur Instanz",
         "description": "Die Extension ermöglicht es, Informationen zur ausgewählten Serie auf Instanz-Ebene anzugeben.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-ex-imagingReason"
-        },
-        "name": "MII EX ImagingReason",
-        "description": "Die Extension ermöglicht es, den Bildbegungsgrund aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-ex-modalitaet-ct"
-        },
-        "name": "MII EX Modality CT",
-        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf CT Daten zu erweitern.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-ex-modalitaet-mg-cr-dx"
-        },
-        "name": "MII EX Modality MG/CR/DX",
-        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MG, CR & DX Daten zu erweitern.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-ex-modalitaet-mr"
-        },
-        "name": "MII EX Modality MR",
-        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MR Daten zu erweitern.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-ex-modalitaet-pt-nm"
-        },
-        "name": "MII EX Modality PT/NM",
-        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf PT & NM Daten zu erweitern.",
         "exampleBoolean": false
       },
       {
