@@ -53,6 +53,10 @@ Description: "MII LogicalModel Modul Bildgebung"
   * Bildnummer 0..1 http://hl7.org/fhir/StructureDefinition/string "Bildnummer" "DICOM Series UID der zugehörigen Serie."
   * Schichtposition 0..1 http://hl7.org/fhir/StructureDefinition/string "Schichtposition" "DICOM Instance UID der zugehörigen SOP Instance."
   * ErweiterteKörperstruktur 0..1 Reference(BodyStructure) "Erweiterte Körperstruktur" "Backport der R5 Referenz auf das BodyStructure-Profil."
+* BodyStructure 0..1 BackboneElement "Körperstruktur" "Körperstruktur"
+  * Morphologie 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Morphologie" "Morphologie"
+  * Lokalisation 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Lokalisation" "Lokalisation"
+  * nähereLokalisation 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "mähere Lokalisation" "nähere Lokalisation"
 * Anforderung 0..1 BackboneElement "Anforderung" "Anfoderung der jeweiligen Bildgebungsmaßnahme"
   * ArtAnfrage 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Art der Anfrage" "Art der Anfrage"
   * Patientenbezug 1..1 Reference(Patient) "Patientenbezug" "Bezug zu dem Patienten, für den die Anfoderung besteht"
@@ -152,7 +156,7 @@ Source: MII_LM_Bildgebung
   * ErweiterteBeschreibung -> "Observation.component" //haben wir als Referenz abgebildet?
   * Bildnummer -> "Observation.extension(TODO)"
   * Schichtposition -> "Observation.extension(TODO)"
-  //* ErweiterteKörperstruktur -> TODO //Backport?
+  //* ErweiterteKörperstruktur -> "Observation.TODO" //Backport???
 * Anforderung -> "ServiceRequest"
   * ArtAnfrage -> "ServiceRequest.code"
   * Patientenbezug -> "ServiceRequest.subject"
