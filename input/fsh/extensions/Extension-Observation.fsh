@@ -18,6 +18,6 @@ Description: "Die Extension ermöglicht es, einer Beobachtung die Bildnummer hin
   SOPInstanceUID 0..1 and
   http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure named bodyStructure 0..* MS //TODO Erklärung Extension, vll externe Extension
 
-* extension[bodyStructure].extension[reference].valueReference only Reference(Observation)
+* extension[bodyStructure].valueReference only Reference(MII_PR_Bildgebung_Koerperstruktur)
 * extension[numberOfImage].id
 * extension[SOPInstanceUID].id
