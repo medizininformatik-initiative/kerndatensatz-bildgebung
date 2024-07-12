@@ -28,6 +28,7 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 * extension contains
   http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
 * extension[supportingInfo].extension[reference].valueReference only Reference(MII_PR_Bildgebung_Radiologischer_Befund or MII_PR_Bildgebung_Radiologische_Befundungsprozedur)
+* extension[supportingInfo].extension[reference] 1..1
 * basedOn MS
 * basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung)
 * status MS 
