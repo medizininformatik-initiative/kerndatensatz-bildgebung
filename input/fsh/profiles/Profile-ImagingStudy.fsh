@@ -32,6 +32,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * reasonReference MS
 * description MS
 * subject MS
+* subject only Reference(Patient)
 * encounter MS
 
 * series MS

@@ -31,7 +31,7 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 * extension[supportingInfo].extension[type] 1..1 MS
 * extension[supportingInfo].extension[reference].valueReference only Reference(MII_PR_Bildgebung_Radiologischer_Befund or MII_PR_Bildgebung_Radiologische_Befundungsprozedur)
 * basedOn MS
-* basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung)
+* basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung or CarePlan)
 * status MS 
 * category 1.. MS 
 * category.coding 1.. MS 
