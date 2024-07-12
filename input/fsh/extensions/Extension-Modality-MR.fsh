@@ -1,15 +1,19 @@
-Extension: MII_EX_Modalitaet_MR
-Id: mii-ex-modalitaet-mr
-Title: "MII EX Modality MR"
+//Head
+Extension: MII_EX_Bildgebung_Modalitaet_MR
+Id: mii-ex-bildgebung-modalitaet-mr
+Title: "MII EX Bildgebung Modalität MR"
 Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MR Daten zu erweitern."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" //TODO
-* insert Translation(^name, en-US, MII_EX_Modality_MR)
-* insert Translation(^title, en-US, MII EX Modality MR)
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"
+//Translation
+* insert Translation(^name, en-US, MII_EX_Imaging_Modality_MR)
+* insert Translation(^title, en-US, MII EX Imaging Modality MR)
 * insert Translation(^description, en-US, The extension allows to extend the resources and feasibility analysis to MR data.)
+//Meta
 * insert PR_CS_VS_Version
 * ^experimental = false
 * insert Publisher
 * insert ExtensionContext(ImagingStudy.Series)
+//Extension
 * extension contains
     magneticFieldStrength 1..1 and
     scanningSequence 1..1 and

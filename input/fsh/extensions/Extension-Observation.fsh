@@ -8,16 +8,16 @@ Description: "Die Extension ermöglicht es, einer Beobachtung die Bildnummer hin
 * insert Translation(^name, en-US, MII_EX_Imaging_Observation_Imaging)
 * insert Translation(^title, en-US, MII EX Imaging Observation Imaging)
 * insert Translation(^description, en-US, The extension allows an observation to Reference to Imagenumbers)
+//Meta
 * insert PR_CS_VS_Version
 * ^experimental = false
 * insert Publisher
 * insert ExtensionContext(Observation)
-//Profile
+//Extension
 * extension contains
   numberOfImage 0..1 and
   SOPInstanceUID 0..1 and
-  http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure named bodyStructure 0..* MS //TODO Erklärung Extension, vll externe Extension
-
+  http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure named bodyStructure 0..* MS
 * extension[bodyStructure].valueReference only Reference(MII_PR_Bildgebung_Koerperstruktur)
 * extension[numberOfImage].id
 * extension[SOPInstanceUID].id

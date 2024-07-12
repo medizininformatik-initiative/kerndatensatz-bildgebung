@@ -8,11 +8,12 @@ Description: "Die Extension ermöglicht es, einer Beobachtung die Bildnummer hin
 * insert Translation(^name, en-US, MII_EX_Imaging_Diagnostic_Report)
 * insert Translation(^title, en-US, MII EX Imaging Diagnostic Report)
 * insert Translation(^description, en-US, The extension allows an observation to Reference to Imagenumbers)
+//Meta
 * insert PR_CS_VS_Version
 * ^experimental = false
 * insert Publisher
-* insert ExtensionContext(Observation)
-//Profile
+* insert ExtensionContext(DiagnosticReport)
+//Extension
 * extension contains
   http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
 * extension[supportingInfo].extension[reference].valueReference only Reference(MII_PR_Bildgebung_Radiologischer_Befund or MII_PR_Bildgebung_Radiologische_Befundungsprozedur)
