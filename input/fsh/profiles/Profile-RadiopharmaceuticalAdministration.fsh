@@ -1,13 +1,13 @@
 //Head
-Profile: MII_PR_Bildgebung_MedicationAdministration_Gabe_Radiopharmakon
+Profile: MII_PR_Bildgebung_Medication_Administration_Gabe_Radiopharmakon
 Parent: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration
-Id: mii-pr-bildgebung-medicationadministration-gabe-radiopharmakon
+Id: mii-pr-bildgebung-medication-administration-gabe-radiopharmakon
 Title: "MII PR Bildgebung MedicationAdministration GabeRadiopharmakon"
 Description: "Dieses Profil beschreibt die Gabe eines Radiopharmakons zur medizinischen Bildgebung."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-medicationadministration-gabe-radiopharmakon"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-medication-administration-gabe-radiopharmakon"
 //Translation
-* insert Translation(^name, en-US, MII_PR_Imaging_MedicationAdministration_RadiopharmaceuticalAdministration)
-* insert Translation(^title, en-US, MII PR Imaging MedicationAdministration RadiopharmaceuticalAdministration)
+* insert Translation(^name, en-US, MII_PR_Imaging_Medication_Administration_RadiopharmaceuticalAdministration)
+* insert Translation(^title, en-US, MII PR Imaging Medication Administration RadiopharmaceuticalAdministration)
 * insert Translation(^description, en-US, The profile describes the metadata of an DICOM imaging study.)
 * insert PR_CS_VS_Version
 //Meta
