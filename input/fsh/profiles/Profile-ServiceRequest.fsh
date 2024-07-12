@@ -20,7 +20,6 @@ Description: "Profil zur Anforderung einer Bildgebung"
 * status MS
 * intent MS
 * category 1..* MS
-// Imaging (procedure)
 * category ^patternCodeableConcept = $SCT#363679005
 * code.coding 0.. MS
 * code.coding ^slicing.discriminator.type = #pattern
@@ -47,3 +46,4 @@ Description: "Profil zur Anforderung einer Bildgebung"
 * reasonReference MS
 * reasonReference only Reference(Condition)
 * supportingInfo MS
+* supportingInfo only Reference(MII_PR_Bildgebung_Radiologischer_Befund)
