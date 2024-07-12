@@ -51,7 +51,7 @@
     "resource": [
       {
         "reference": {
-          "reference": "Procedure/mii-exa-bildgebung-TNMRadiologicalReadProcedure"
+          "reference": "Procedure/mii-exa-bildgebung-tnm-radiologische-befundungsprozedur"
         },
         "name": "Example of a TNM Radiological Read Procedure",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
@@ -146,42 +146,42 @@
       },
       {
         "reference": {
-          "reference": "BodyStructure/mii-exa-bildgebung-bodyStructure"
+          "reference": "BodyStructure/mii-exa-bildgebung-koerperstruktur"
         },
         "name": "MII Example Bildgebung BodyStructure",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
       },
       {
         "reference": {
-          "reference": "CarePlan/mii-exa-bildgebung-carePlan"
+          "reference": "CarePlan/mii-exa-bildgebung-behandlungsempfehlung"
         },
         "name": "MII Example Bildgebung Care Plan",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
       },
       {
         "reference": {
-          "reference": "Composition/mii-exa-bildgebung-composition"
+          "reference": "Composition/mii-exa-bildgebung-semistrukt-befundbericht"
         },
         "name": "MII Example Bildgebung Composition",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"
       },
       {
         "reference": {
-          "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischerBefund"
+          "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
         },
         "name": "MII Example Bildgebung Diagnostic Report",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
       },
       {
         "reference": {
-          "reference": "MedicationAdministration/mii-exa-bildgebung-gabe-Radiopharmakon"
+          "reference": "MedicationAdministration/mii-exa-bildgebung-gabe-radiopharmakon"
         },
         "name": "MII Example Bildgebung GabePharmakon",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon"
       },
       {
         "reference": {
-          "reference": "Procedure/mii-exa-bildgebung-imagingProcedure"
+          "reference": "Procedure/mii-exa-bildgebung-bildgebungsprozedur"
         },
         "name": "MII Example Bildgebung Imaging Procedure",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur"
@@ -202,14 +202,14 @@
       },
       {
         "reference": {
-          "reference": "Procedure/mii-exa-bildgebung-radiologicalReadProcedure"
+          "reference": "Procedure/mii-exa-bildgebung-radiologische-befundungsprozedur"
         },
         "name": "MII Example Bildgebung ReadProcedure",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
       },
       {
         "reference": {
-          "reference": "ServiceRequest/mii-exa-bildgebung-serviceRequest"
+          "reference": "ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"
         },
         "name": "MII Example Bildgebung Service Request",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"

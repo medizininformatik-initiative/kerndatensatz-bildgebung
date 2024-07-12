@@ -1,9 +1,9 @@
 [
   {
-    "outputFile": "BodyStructure-mii-exa-bildgebung-bodyStructure.json",
-    "fshName": "mii-exa-bildgebung-bodyStructure",
+    "outputFile": "BodyStructure-mii-exa-bildgebung-koerperstruktur.json",
+    "fshName": "mii-exa-bildgebung-koerperstruktur",
     "fshType": "Instance",
-    "fshFile": "examples/Example-AnatomyStructure.fsh",
+    "fshFile": "examples/Example-BodyStructure.fsh",
     "startLine": 2,
     "endLine": 5
   },
@@ -16,24 +16,24 @@
     "endLine": 50
   },
   {
-    "outputFile": "CarePlan-mii-exa-bildgebung-carePlan.json",
-    "fshName": "mii-exa-bildgebung-carePlan",
+    "outputFile": "CarePlan-mii-exa-bildgebung-behandlungsempfehlung.json",
+    "fshName": "mii-exa-bildgebung-behandlungsempfehlung",
     "fshType": "Instance",
     "fshFile": "examples/Example-CarePlan.fsh",
     "startLine": 2,
     "endLine": 5
   },
   {
-    "outputFile": "Composition-mii-exa-bildgebung-composition.json",
-    "fshName": "mii-exa-bildgebung-composition",
+    "outputFile": "Composition-mii-exa-bildgebung-semistrukt-befundbericht.json",
+    "fshName": "mii-exa-bildgebung-semistrukt-befundbericht",
     "fshType": "Instance",
     "fshFile": "examples/Example-Composition.fsh",
     "startLine": 2,
     "endLine": 5
   },
   {
-    "outputFile": "DiagnosticReport-mii-exa-bildgebung-radiologischerBefund.json",
-    "fshName": "mii-exa-bildgebung-radiologischerBefund",
+    "outputFile": "DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json",
+    "fshName": "mii-exa-bildgebung-radiologischer-Befund",
     "fshType": "Instance",
     "fshFile": "examples/Example-DiagnosticReport.fsh",
     "startLine": 2,
@@ -48,8 +48,8 @@
     "endLine": 5
   },
   {
-    "outputFile": "MedicationAdministration-mii-exa-bildgebung-gabe-Radiopharmakon.json",
-    "fshName": "mii-exa-bildgebung-gabe-Radiopharmakon",
+    "outputFile": "MedicationAdministration-mii-exa-bildgebung-gabe-radiopharmakon.json",
+    "fshName": "mii-exa-bildgebung-gabe-radiopharmakon",
     "fshType": "Instance",
     "fshFile": "examples/Example-RadiopharmaceuticalAdministration.fsh",
     "startLine": 2,
@@ -64,28 +64,28 @@
     "endLine": 5
   },
   {
-    "outputFile": "Procedure-mii-exa-bildgebung-TNMRadiologicalReadProcedure.json",
-    "fshName": "mii-exa-bildgebung-TNMRadiologicalReadProcedure",
-    "fshType": "Instance",
-    "fshFile": "examples/Example-TNMRadiologicalReadProcedure.fsh",
-    "startLine": 2,
-    "endLine": 10
-  },
-  {
-    "outputFile": "Procedure-mii-exa-bildgebung-imagingProcedure.json",
-    "fshName": "mii-exa-bildgebung-imagingProcedure",
+    "outputFile": "Procedure-mii-exa-bildgebung-bildgebungsprozedur.json",
+    "fshName": "mii-exa-bildgebung-bildgebungsprozedur",
     "fshType": "Instance",
     "fshFile": "examples/Example-ImagingProcedure.fsh",
     "startLine": 2,
     "endLine": 5
   },
   {
-    "outputFile": "Procedure-mii-exa-bildgebung-radiologicalReadProcedure.json",
-    "fshName": "mii-exa-bildgebung-radiologicalReadProcedure",
+    "outputFile": "Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.json",
+    "fshName": "mii-exa-bildgebung-radiologische-befundungsprozedur",
     "fshType": "Instance",
     "fshFile": "examples/Example-ReadProcedure.fsh",
     "startLine": 2,
     "endLine": 5
+  },
+  {
+    "outputFile": "Procedure-mii-exa-bildgebung-tnm-radiologische-befundungsprozedur.json",
+    "fshName": "mii-exa-bildgebung-tnm-radiologische-befundungsprozedur",
+    "fshType": "Instance",
+    "fshFile": "examples/Example-TNMRadiologicalReadProcedure.fsh",
+    "startLine": 2,
+    "endLine": 10
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-dosequantity.json",
@@ -232,8 +232,8 @@
     "endLine": 80
   },
   {
-    "outputFile": "ServiceRequest-mii-exa-bildgebung-serviceRequest.json",
-    "fshName": "mii-exa-bildgebung-serviceRequest",
+    "outputFile": "ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.json",
+    "fshName": "mii-exa-bildgebung-anforderung-bildgebung",
     "fshType": "Instance",
     "fshFile": "examples/Example-ServiceRequest.fsh",
     "startLine": 2,
