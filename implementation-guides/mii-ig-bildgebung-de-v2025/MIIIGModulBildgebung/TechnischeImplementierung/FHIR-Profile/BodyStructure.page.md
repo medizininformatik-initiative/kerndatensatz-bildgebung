@@ -2,6 +2,7 @@
 parent:
 topic: Koerperstruktur
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur
+---
 
 ## Koerperstruktur
 
