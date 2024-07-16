@@ -152,7 +152,7 @@
         "id": "Bildgebung.Empfehlung.FreitextEmpfehlung",
         "path": "Bildgebung.Empfehlung.FreitextEmpfehlung",
         "short": "Freitextempfehlung",
-        "definition": "Freitextempfehlung",
+        "definition": "Behandlungsempfehlung in Freitextform",
         "min": 0,
         "max": "1",
         "type": [
@@ -193,7 +193,7 @@
         "id": "Bildgebung.Befundbericht",
         "path": "Bildgebung.Befundbericht",
         "short": "Befundbericht",
-        "definition": "Befundbericht",
+        "definition": "Bericht einer radiologischen Befundung",
         "min": 1,
         "max": "1",
         "type": [
