@@ -40,7 +40,7 @@
     ]
   },
   "status": "active",
-  "date": "2024-07-03",
+  "date": "2024-07-16",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -90,6 +90,58 @@
         "path": "Bildgebung",
         "short": "Das Erweiterungsmodul Bildgebung enthält Datenelemente zur Dokumentation Bildgebungsstudien und radiologischen Befundberichten",
         "definition": "MII LogicalModel Modul Bildgebung"
+      },
+      {
+        "id": "Bildgebung.Koerperstruktur",
+        "path": "Bildgebung.Koerperstruktur",
+        "short": "Körperstruktur",
+        "definition": "untersuchte Körperstruktur",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Koerperstruktur.Morphologie",
+        "path": "Bildgebung.Koerperstruktur.Morphologie",
+        "short": "Morphologie",
+        "definition": "Morphologie der Körperstruktur",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Koerperstruktur.Lokalisation",
+        "path": "Bildgebung.Koerperstruktur.Lokalisation",
+        "short": "Lokalisation",
+        "definition": "Lokalisation der Körperstruktur im Bild",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Koerperstruktur.nähereLokalisation",
+        "path": "Bildgebung.Koerperstruktur.nähereLokalisation",
+        "short": "nähere Lokalisation",
+        "definition": "explizite Beschreibung der Lokalisation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
       },
       {
         "id": "Bildgebung.Empfehlung",
@@ -186,6 +238,260 @@
           {
             "identity": "FHIR",
             "map": "CarePlan.supportingInfo"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument",
+        "short": "Semistrukturiertes Befunddokument",
+        "definition": "Abbildung des Befunds über generische Composition.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.Status",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.Status",
+        "short": "Status",
+        "definition": "Status des semistrukturierten Befundberichts.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.Typ",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.Typ",
+        "short": "Typ",
+        "definition": "bestimmte Dokumentenart in LOINC codiert",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.Person",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.Person",
+        "short": "Person",
+        "definition": "Person auf die sich das Dokument bezieht",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.DatumUhrzeit",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.DatumUhrzeit",
+        "short": "Datum und Uhrzeit der Bearbeitung",
+        "definition": "Datum und Uhrzeit der Bearbeitung",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.date"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.Autor",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.Autor",
+        "short": "Autor",
+        "definition": "Referenz auf den Autor der Beschreibung.",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.author"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundbericht",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundbericht",
+        "short": "Befundbericht",
+        "definition": "Referenz auf den zugeordneten Befundbericht.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.subject"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.Titel",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.Titel",
+        "short": "Titel",
+        "definition": "Titel des Befunddokuments",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt",
+        "short": "Befundabschnitt",
+        "definition": "Befundabschnitt des semistrukturierten Befunddokuments.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.section"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Titel",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Titel",
+        "short": "Titel",
+        "definition": "Titel des Befundabschnitts.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.section.title"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Art",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Art",
+        "short": "Art",
+        "definition": "Art des Befundabschnitts.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.section.code"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Text",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Text",
+        "short": "Text",
+        "definition": "Textueller Inhalt des Befundabschnitts.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Narrative"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.section.text"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Eintrag",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Eintrag",
+        "short": "Eintrag",
+        "definition": "Referenz auf eine Observation, die zum Eintrag des Befundabschnitts gehört.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.section.entry"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Unterabschnitt",
+        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Unterabschnitt",
+        "short": "Unterabschnitt",
+        "definition": "Referenz auf einen weiteren Unterabschnitt.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.section.section"
           }
         ]
       },
@@ -475,205 +781,6 @@
         ]
       },
       {
-        "id": "Bildgebung.SemistrukturiertesBefunddokument",
-        "path": "Bildgebung.SemistrukturiertesBefunddokument",
-        "short": "Semistrukturiertes Befunddokument",
-        "definition": "Abbildung des Befunds über generische Composition.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.SemistrukturiertesBefunddokument.DatumUhrzeit",
-        "path": "Bildgebung.SemistrukturiertesBefunddokument.DatumUhrzeit",
-        "short": "Datum und Uhrzeit der Bearbeitung",
-        "definition": "Datum und Uhrzeit der Bearbeitung",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.date"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.SemistrukturiertesBefunddokument.Autor",
-        "path": "Bildgebung.SemistrukturiertesBefunddokument.Autor",
-        "short": "Autor",
-        "definition": "Referenz auf den Autor der Beschreibung.",
-        "min": 1,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.author"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundbericht",
-        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundbericht",
-        "short": "Befundbericht",
-        "definition": "Referenz auf den zugeordneten Befundbericht.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.subject"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt",
-        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt",
-        "short": "Befundabschnitt",
-        "definition": "Befundabschnitt des semistrukturierten Befunddokuments.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.section"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Titel",
-        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Titel",
-        "short": "Titel",
-        "definition": "Titel des Befundabschnitts.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.section.title"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Art",
-        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Art",
-        "short": "Art",
-        "definition": "Art des Befundabschnitts.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.section.code"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Text",
-        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Text",
-        "short": "Text",
-        "definition": "Textueller Inhalt des Befundabschnitts.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Narrative"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.section.text"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Eintrag",
-        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Eintrag",
-        "short": "Eintrag",
-        "definition": "Referenz auf eine Observation, die zum Eintrag des Befundabschnitts gehört.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.section.entry"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Unterabschnitt",
-        "path": "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Unterabschnitt",
-        "short": "Unterabschnitt",
-        "definition": "Referenz auf einen weiteren Unterabschnitt.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Composition.section.section"
-          }
-        ]
-      },
-      {
         "id": "Bildgebung.GenerischeBeobachtung",
         "path": "Bildgebung.GenerischeBeobachtung",
         "short": "Befundabschnitt",
@@ -929,58 +1036,6 @@
           {
             "identity": "FHIR",
             "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-observation-imaging)"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.BodyStructure",
-        "path": "Bildgebung.BodyStructure",
-        "short": "Körperstruktur",
-        "definition": "Körperstruktur",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.BodyStructure.Morphologie",
-        "path": "Bildgebung.BodyStructure.Morphologie",
-        "short": "Morphologie",
-        "definition": "Morphologie",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.BodyStructure.Lokalisation",
-        "path": "Bildgebung.BodyStructure.Lokalisation",
-        "short": "Lokalisation",
-        "definition": "Lokalisation",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.BodyStructure.nähereLokalisation",
-        "path": "Bildgebung.BodyStructure.nähereLokalisation",
-        "short": "mähere Lokalisation",
-        "definition": "nähere Lokalisation",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
           }
         ]
       },

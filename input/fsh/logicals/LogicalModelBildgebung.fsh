@@ -1,23 +1,44 @@
+//Head
 Logical: MII_LM_Bildgebung
 Parent: Element
 Id: mii-lm-bildgebung
 Title: "MII LM Bildgebung"
 Description: "MII LogicalModel Modul Bildgebung"
+//Translation
 * insert Translation(^name, en-US, MII_LM_Bildgebung)
 * insert Translation(^title, en-US, MII LM Bildgebung)
 * insert Translation(^description, en-US, MII LogicalModel Module Bildgebung)
+//Meta
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert KDS_Copyright
-* ^date = "2024-07-03"
+* ^date = "2024-07-16"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung"
 * . ^short = "Das Erweiterungsmodul Bildgebung enthält Datenelemente zur Dokumentation Bildgebungsstudien und radiologischen Befundberichten"
 
+* Koerperstruktur 0..1 BackboneElement "Körperstruktur" "untersuchte Körperstruktur"
+  * Morphologie 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Morphologie" "Morphologie der Körperstruktur"
+  * Lokalisation 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Lokalisation" "Lokalisation der Körperstruktur im Bild"
+  * nähereLokalisation 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "nähere Lokalisation" "explizite Beschreibung der Lokalisation"
 * Empfehlung 0..* BackboneElement "Empfehlung" "Therapieempfehlungen aus vorherigen Behandlungen"
   * Status 1..1 http://hl7.org/fhir/StructureDefinition/Coding "Status" "Status der Behandlungsempfehlung"
   * ArtEmpfehlung 1..1 http://hl7.org/fhir/StructureDefinition/Coding "Art der Empfehlung" "Beschreibt die Art der Empfehlung."
   * FreitextEmpfehlung 0..1 http://hl7.org/fhir/StructureDefinition/string "Freitextempfehlung" "Behandlungsempfehlung in Freitextform"
   * Zusatzinformation 0..1 Reference(DiagnosticReport) "Zusatzinformation" "Zusatzinformation für einen Befundbericht"
+* SemistrukturiertesBefunddokument 1..1 BackboneElement "Semistrukturiertes Befunddokument" "Abbildung des Befunds über generische Composition."
+  * Status 1..1 http://hl7.org/fhir/StructureDefinition/Coding "Status" "Status des semistrukturierten Befundberichts."
+  * Typ 1..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Typ" "bestimmte Dokumentenart in LOINC codiert"
+  * Person 1..1 Reference(Patient) "Person" "Person auf die sich das Dokument bezieht"
+  * DatumUhrzeit 1..1 http://hl7.org/fhir/StructureDefinition/dateTime "Datum und Uhrzeit der Bearbeitung" ""
+  * Autor 1..* Reference(Practitioner) "Autor" "Referenz auf den Autor der Beschreibung."
+  * Befundbericht 1..1 Reference(DiagnosticReport) "Befundbericht" "Referenz auf den zugeordneten Befundbericht."
+  * Titel 1..1 http://hl7.org/fhir/StructureDefinition/string "Titel" "Titel des Befunddokuments"
+  * Befundabschnitt 0..* BackboneElement "Befundabschnitt" "Befundabschnitt des semistrukturierten Befunddokuments."
+    * Titel 0..1 http://hl7.org/fhir/StructureDefinition/string "Titel" "Titel des Befundabschnitts."
+    * Art 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Art" "Art des Befundabschnitts."
+    * Text 0..1 http://hl7.org/fhir/StructureDefinition/Narrative "Text" "Textueller Inhalt des Befundabschnitts."
+    * Eintrag 0..* Reference(Observation) "Eintrag" "Referenz auf eine Observation, die zum Eintrag des Befundabschnitts gehört."
+    * Unterabschnitt 0..1 BackboneElement "Unterabschnitt" "Referenz auf einen weiteren Unterabschnitt."
 * Befundbericht 1..1 BackboneElement "Befundbericht" "Bericht einer radiologischen Befundung"
   * AnforderndeMaßnahme 0..* Reference(ServiceRequest) "Anfordernde Maßnahme" "Basiert auf einer ServiceRequest-Anfrage."
   * Status 1..1 http://hl7.org/fhir/StructureDefinition/Coding "Status" "Status des Befundberichts."
@@ -32,16 +53,6 @@ Description: "MII LogicalModel Modul Bildgebung"
   * StrukturierteInterpretation 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Strukturierte Interpretation" "Strukturierte Interpretation der Beobachtung."
   * Zusatzinformation 0..1 Reference(DiagnosticReport or Procedure) "Zusatzinformation" "Referenz auf weitere Befundberichte zum Patienten."
   * Dokumentenanhang 0..* http://hl7.org/fhir/StructureDefinition/Attachment "Dokumentenanhang" "Anhang der Dokumente und Bilder."
-* SemistrukturiertesBefunddokument 1..1 BackboneElement "Semistrukturiertes Befunddokument" "Abbildung des Befunds über generische Composition."
-  * DatumUhrzeit 1..1 http://hl7.org/fhir/StructureDefinition/dateTime "Datum und Uhrzeit der Bearbeitung" ""
-  * Autor 1..* Reference(Practitioner) "Autor" "Referenz auf den Autor der Beschreibung."
-  * Befundbericht 1..1 Reference(DiagnosticReport) "Befundbericht" "Referenz auf den zugeordneten Befundbericht."
-  * Befundabschnitt 0..* BackboneElement "Befundabschnitt" "Befundabschnitt des semistrukturierten Befunddokuments."
-    * Titel 0..1 http://hl7.org/fhir/StructureDefinition/string "Titel" "Titel des Befundabschnitts."
-    * Art 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Art" "Art des Befundabschnitts."
-    * Text 0..1 http://hl7.org/fhir/StructureDefinition/Narrative "Text" "Textueller Inhalt des Befundabschnitts."
-    * Eintrag 0..* Reference(Observation) "Eintrag" "Referenz auf eine Observation, die zum Eintrag des Befundabschnitts gehört."
-    * Unterabschnitt 0..1 BackboneElement "Unterabschnitt" "Referenz auf einen weiteren Unterabschnitt."
 * GenerischeBeobachtung 0..* BackboneElement "Befundabschnitt" "Befundabschnitt des semistrukturierten Befunddokuments."
   * TeilEinerBefundungsprozedur 0..* Reference(Procedure) "Teil einer Befundungsprozedur" ""
   * Beobachtungstyp 1..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Beobachtungstyp" "Typ der Beobachtung."
@@ -55,10 +66,6 @@ Description: "MII LogicalModel Modul Bildgebung"
   * Bildnummer 0..1 http://hl7.org/fhir/StructureDefinition/string "Bildnummer" "DICOM Series UID der zugehörigen Serie."
   * Schichtposition 0..1 http://hl7.org/fhir/StructureDefinition/string "Schichtposition" "DICOM Instance UID der zugehörigen SOP Instance."
   * ErweiterteKörperstruktur 0..1 Reference(BodyStructure) "Erweiterte Körperstruktur" "Backport der R5 Referenz auf das BodyStructure-Profil."
-* BodyStructure 0..1 BackboneElement "Körperstruktur" "Körperstruktur"
-  * Morphologie 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Morphologie" "Morphologie"
-  * Lokalisation 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Lokalisation" "Lokalisation"
-  * nähereLokalisation 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "mähere Lokalisation" "nähere Lokalisation"
 * Anforderung 0..1 BackboneElement "Anforderung" "Anfoderung der jeweiligen Bildgebungsmaßnahme"
   * ArtAnfrage 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Art der Anfrage" "Art der Anfrage"
   * Patientenbezug 1..1 Reference(Patient) "Patientenbezug" "Bezug zu dem Patienten, für den die Anfoderung besteht"
