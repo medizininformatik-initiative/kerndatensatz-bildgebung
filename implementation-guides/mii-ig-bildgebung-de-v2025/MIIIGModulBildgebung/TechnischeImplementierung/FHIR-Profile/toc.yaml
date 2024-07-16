@@ -1,22 +1,22 @@
 - name: Index
   filename: Index.page.md
-- name: DiagnosticReport
-  filename: DiagnosticReport.page.md
 - name: BodyStructure
   filename: BodyStructure.page.md
-- name: Composition
-  filename: Composition.page.md
-- name: ImagingProcedure
-  filename: ImagingProcedure.page.md
-- name: Observation
-  filename: Observation.page.md
-- name: ServiceRequest
-  filename: ServiceRequest.page.md
-- name: ImagingStudy
-  filename: ImagingStudy.page.md
 - name: CarePlan
   filename: CarePlan.page.md
+- name: Composition
+  filename: Composition.page.md
+- name: DiagnosticReport
+  filename: DiagnosticReport.page.md
+- name: ImagingProcedure
+  filename: ImagingProcedure.page.md
+- name: ImagingStudy
+  filename: ImagingStudy.page.md
+- name: Observation
+  filename: Observation.page.md
 - name: RadiopharmaceuticalAdministration
   filename: RadiopharmaceuticalAdministration.page.md
 - name: ReadProcedure
   filename: ReadProcedure.page.md
+- name: ServiceRequest
+  filename: ServiceRequest.page.md
