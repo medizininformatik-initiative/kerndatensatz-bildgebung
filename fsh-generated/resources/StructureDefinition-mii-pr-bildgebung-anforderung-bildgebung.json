@@ -87,11 +87,6 @@
         "mustSupport": true
       },
       {
-        "id": "ServiceRequest.identifier",
-        "path": "ServiceRequest.identifier",
-        "mustSupport": true
-      },
-      {
         "id": "ServiceRequest.status",
         "path": "ServiceRequest.status",
         "mustSupport": true
@@ -173,6 +168,14 @@
       {
         "id": "ServiceRequest.subject",
         "path": "ServiceRequest.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

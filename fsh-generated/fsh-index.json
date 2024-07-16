@@ -325,7 +325,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/LogicalModelBildgebung.fsh",
     "startLine": 1,
-    "endLine": 113
+    "endLine": 137
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-TNM-radiologische-befundungsprozedur.json",
@@ -341,7 +341,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/Profile-ServiceRequest.fsh",
     "startLine": 2,
-    "endLine": 49
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.json",
@@ -365,7 +365,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/Profile-ImagingStudy.fsh",
     "startLine": 2,
-    "endLine": 65
+    "endLine": 64
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-gabe-radiopharmakon.json",

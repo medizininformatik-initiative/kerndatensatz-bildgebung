@@ -846,7 +846,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "Observation.extension(TODO)"
+            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildnummer)"
           }
         ]
       },
@@ -865,7 +865,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "Observation.extension(TODO)"
+            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz)"
           }
         ]
       },
@@ -882,6 +882,12 @@
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/BodyStructure"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-observation-imaging)"
           }
         ]
       },
@@ -1275,7 +1281,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.extension(TODO)"
+            "map": "ImagingStudy.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund)"
           }
         ]
       },
@@ -1509,7 +1515,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller)"
           }
         ]
       },
@@ -1528,7 +1534,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller)"
           }
         ]
       },
@@ -1547,7 +1553,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel)"
           }
         ]
       },
@@ -1569,13 +1575,32 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.MaximaleRöntgenröhrenspannung",
-        "path": "Bildgebung.Studie.Serien.MaximaleRöntgenröhrenspannung",
+        "id": "Bildgebung.Studie.Serien.ModalitätDX",
+        "path": "Bildgebung.Studie.Serien.ModalitätDX",
+        "short": "Modalität DX",
+        "definition": "Modalität klassisches Röntgen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätDX.MaximaleRöntgenröhrenspannung",
+        "path": "Bildgebung.Studie.Serien.ModalitätDX.MaximaleRöntgenröhrenspannung",
         "short": "Maximale Röntgenröhrenspannung",
         "definition": "Maximale Röntgenröhrenspannung in kV",
         "min": 0,
@@ -1591,13 +1616,13 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Expositionszeit",
-        "path": "Bildgebung.Studie.Serien.Expositionszeit",
+        "id": "Bildgebung.Studie.Serien.ModalitätDX.Expositionszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitätDX.Expositionszeit",
         "short": "Expositionszeit",
         "definition": "Expositionszeit in ms",
         "min": 0,
@@ -1613,13 +1638,13 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Exposition",
-        "path": "Bildgebung.Studie.Serien.Exposition",
+        "id": "Bildgebung.Studie.Serien.ModalitätDX.Exposition",
+        "path": "Bildgebung.Studie.Serien.ModalitätDX.Exposition",
         "short": "Exposition",
         "definition": "Exposition in MAs",
         "min": 0,
@@ -1635,13 +1660,13 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Röntgenröhrenstrom",
-        "path": "Bildgebung.Studie.Serien.Röntgenröhrenstrom",
+        "id": "Bildgebung.Studie.Serien.ModalitätDX.Röntgenröhrenstrom",
+        "path": "Bildgebung.Studie.Serien.ModalitätDX.Röntgenröhrenstrom",
         "short": "Röntgenröhrenstrom",
         "definition": "Röntgenröhrenstrom in mA",
         "min": 0,
@@ -1657,13 +1682,246 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.CTDIVolume",
-        "path": "Bildgebung.Studie.Serien.CTDIVolume",
+        "id": "Bildgebung.Studie.Serien.ModalitätCR",
+        "path": "Bildgebung.Studie.Serien.ModalitätCR",
+        "short": "Modalität CR",
+        "definition": "Modalität klassisches Röntgen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätCR.MaximaleRöntgenröhrenspannung",
+        "path": "Bildgebung.Studie.Serien.ModalitätCR.MaximaleRöntgenröhrenspannung",
+        "short": "Maximale Röntgenröhrenspannung",
+        "definition": "Maximale Röntgenröhrenspannung in kV",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätCR.Expositionszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitätCR.Expositionszeit",
+        "short": "Expositionszeit",
+        "definition": "Expositionszeit in ms",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätCR.Exposition",
+        "path": "Bildgebung.Studie.Serien.ModalitätCR.Exposition",
+        "short": "Exposition",
+        "definition": "Exposition in MAs",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätCR.Röntgenröhrenstrom",
+        "path": "Bildgebung.Studie.Serien.ModalitätCR.Röntgenröhrenstrom",
+        "short": "Röntgenröhrenstrom",
+        "definition": "Röntgenröhrenstrom in mA",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätMG",
+        "path": "Bildgebung.Studie.Serien.ModalitätMG",
+        "short": "Modalität MG",
+        "definition": "Modalität Mammographie",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätMG.MaximaleRöntgenröhrenspannung",
+        "path": "Bildgebung.Studie.Serien.ModalitätMG.MaximaleRöntgenröhrenspannung",
+        "short": "Maximale Röntgenröhrenspannung",
+        "definition": "Maximale Röntgenröhrenspannung in kV",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätMG.Expositionszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitätMG.Expositionszeit",
+        "short": "Expositionszeit",
+        "definition": "Expositionszeit in ms",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätMG.Exposition",
+        "path": "Bildgebung.Studie.Serien.ModalitätMG.Exposition",
+        "short": "Exposition",
+        "definition": "Exposition in MAs",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätMG.Röntgenröhrenstrom",
+        "path": "Bildgebung.Studie.Serien.ModalitätMG.Röntgenröhrenstrom",
+        "short": "Röntgenröhrenstrom",
+        "definition": "Röntgenröhrenstrom in mA",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätCT",
+        "path": "Bildgebung.Studie.Serien.ModalitätCT",
+        "short": "Modalität CT",
+        "definition": "Modalität Computertomographie",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätCT.CTDIVolume",
+        "path": "Bildgebung.Studie.Serien.ModalitätCT.CTDIVolume",
         "short": "CTDIvolume",
         "definition": "CTDIvolume in mGy",
         "min": 0,
@@ -1679,13 +1937,120 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ScanningSequenz",
-        "path": "Bildgebung.Studie.Serien.ScanningSequenz",
+        "id": "Bildgebung.Studie.Serien.ModalitätCT.MaximaleRöntgenröhrenspannung",
+        "path": "Bildgebung.Studie.Serien.ModalitätCT.MaximaleRöntgenröhrenspannung",
+        "short": "Maximale Röntgenröhrenspannung",
+        "definition": "Maximale Röntgenröhrenspannung in kV",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätCT.Expositionszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitätCT.Expositionszeit",
+        "short": "Expositionszeit",
+        "definition": "Expositionszeit in ms",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätCT.Exposition",
+        "path": "Bildgebung.Studie.Serien.ModalitätCT.Exposition",
+        "short": "Exposition",
+        "definition": "Exposition in MAs",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätCT.Röntgenröhrenstrom",
+        "path": "Bildgebung.Studie.Serien.ModalitätCT.Röntgenröhrenstrom",
+        "short": "Röntgenröhrenstrom",
+        "definition": "Röntgenröhrenstrom in mA",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätMR",
+        "path": "Bildgebung.Studie.Serien.ModalitätMR",
+        "short": "Modalität MR",
+        "definition": "Modalität Kernspintomographie",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätMR.ScanningSequenz",
+        "path": "Bildgebung.Studie.Serien.ModalitätMR.ScanningSequenz",
         "short": "Scanning Sequenz",
         "definition": "Code der aktuellen Scanning Sequenz",
         "min": 1,
@@ -1698,13 +2063,13 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ScanningSequenzUntervariante",
-        "path": "Bildgebung.Studie.Serien.ScanningSequenzUntervariante",
+        "id": "Bildgebung.Studie.Serien.ModalitätMR.ScanningSequenzUntervariante",
+        "path": "Bildgebung.Studie.Serien.ModalitätMR.ScanningSequenzUntervariante",
         "short": "Scanning Sequenz Untervariante",
         "definition": "Code der aktuellen Scanning Sequenz Untervariante",
         "min": 1,
@@ -1717,13 +2082,13 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.MagnetischeFeldstärke",
-        "path": "Bildgebung.Studie.Serien.MagnetischeFeldstärke",
+        "id": "Bildgebung.Studie.Serien.ModalitätMR.MagnetischeFeldstärke",
+        "path": "Bildgebung.Studie.Serien.ModalitätMR.MagnetischeFeldstärke",
         "short": "Magnetische Feldstärke",
         "definition": "Magnetische Feldstärke des Kernspins in T",
         "min": 1,
@@ -1739,13 +2104,32 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Radiopharmakon",
-        "path": "Bildgebung.Studie.Serien.Radiopharmakon",
+        "id": "Bildgebung.Studie.Serien.ModalitätPT",
+        "path": "Bildgebung.Studie.Serien.ModalitätPT",
+        "short": "Modalität PT",
+        "definition": "Modalität PET-Scan",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätPT.Radiopharmakon",
+        "path": "Bildgebung.Studie.Serien.ModalitätPT.Radiopharmakon",
         "short": "Radiopharmakon",
         "definition": "Genutztes Radiopharmakon",
         "min": 0,
@@ -1758,13 +2142,13 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Applikationsstartzeit",
-        "path": "Bildgebung.Studie.Serien.Applikationsstartzeit",
+        "id": "Bildgebung.Studie.Serien.ModalitätPT.Applikationsstartzeit",
+        "path": "Bildgebung.Studie.Serien.ModalitätPT.Applikationsstartzeit",
         "short": "Applikationsstartzeit",
         "definition": "Zeit des Beginn der Applikation des Radiopharmakons",
         "min": 0,
@@ -1777,13 +2161,13 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Reskaliserungstyp",
-        "path": "Bildgebung.Studie.Serien.Reskaliserungstyp",
+        "id": "Bildgebung.Studie.Serien.ModalitätPT.Reskaliserungstyp",
+        "path": "Bildgebung.Studie.Serien.ModalitätPT.Reskaliserungstyp",
         "short": "Reskalierungstyp",
         "definition": "Abkürzung des Reskalierungstypen",
         "min": 0,
@@ -1796,13 +2180,13 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.GesamteRadionukliddosis",
-        "path": "Bildgebung.Studie.Serien.GesamteRadionukliddosis",
+        "id": "Bildgebung.Studie.Serien.ModalitätPT.GesamteRadionukliddosis",
+        "path": "Bildgebung.Studie.Serien.ModalitätPT.GesamteRadionukliddosis",
         "short": "Gesamte Radionukliddosis",
         "definition": "Gesamte verabreichte Radionukliddosis in MBq",
         "min": 0,
@@ -1818,13 +2202,13 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Halbwertszeit",
-        "path": "Bildgebung.Studie.Serien.Halbwertszeit",
+        "id": "Bildgebung.Studie.Serien.ModalitätPT.Halbwertszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitätPT.Halbwertszeit",
         "short": "Halbwertszeit",
         "definition": "Halbwertszeit des Radionuklids in s",
         "min": 0,
@@ -1840,7 +2224,127 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(TODO)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätNM",
+        "path": "Bildgebung.Studie.Serien.ModalitätNM",
+        "short": "Modalität NM",
+        "definition": "Modalität Nuklearmedizin",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätNM.Radiopharmakon",
+        "path": "Bildgebung.Studie.Serien.ModalitätNM.Radiopharmakon",
+        "short": "Radiopharmakon",
+        "definition": "Genutztes Radiopharmakon",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätNM.Applikationsstartzeit",
+        "path": "Bildgebung.Studie.Serien.ModalitätNM.Applikationsstartzeit",
+        "short": "Applikationsstartzeit",
+        "definition": "Zeit des Beginn der Applikation des Radiopharmakons",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätNM.Reskaliserungstyp",
+        "path": "Bildgebung.Studie.Serien.ModalitätNM.Reskaliserungstyp",
+        "short": "Reskalierungstyp",
+        "definition": "Abkürzung des Reskalierungstypen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätNM.GesamteRadionukliddosis",
+        "path": "Bildgebung.Studie.Serien.ModalitätNM.GesamteRadionukliddosis",
+        "short": "Gesamte Radionukliddosis",
+        "definition": "Gesamte verabreichte Radionukliddosis in MBq",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitätNM.Halbwertszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitätNM.Halbwertszeit",
+        "short": "Halbwertszeit",
+        "definition": "Halbwertszeit des Radionuklids in s",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
           }
         ]
       },
@@ -1954,7 +2458,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.extension(TODO)"
+            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie)"
           }
         ]
       },
@@ -1973,7 +2477,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.extension(TODO)"
+            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie)"
           }
         ]
       },
@@ -1992,7 +2496,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.extension(TODO)"
+            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie)"
           }
         ]
       },
@@ -2011,7 +2515,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.extension(TODO)"
+            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie)"
           }
         ]
       }
