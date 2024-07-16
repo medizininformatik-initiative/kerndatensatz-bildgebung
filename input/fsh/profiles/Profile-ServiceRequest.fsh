@@ -16,7 +16,6 @@ Description: "Profil zur Anforderung einer Bildgebung"
 * meta.source MS
 * meta.profile MS
 //Profile
-* identifier MS
 * status MS
 * intent MS
 * category 1..* MS
@@ -33,16 +32,13 @@ Description: "Profil zur Anforderung einer Bildgebung"
 * code.coding[radlex] ^patternCoding.system = "https://radlex.org"
 * code.coding[sct] ^patternCoding.system = $SCT
 * code.coding[sct].code from MII_VS_Bildgebung_ServiceRequest_Coding
-* subject ^type.profile = Canonical($miiRef)
-// fixme: only allow a Patient reference
-* subject ^type.targetProfile[+] = Canonical(http://hl7.org/fhir/StructureDefinition/Patient)
-* subject 1..1 MS
+* subject MS
+* subject only Reference(Patient)
 * encounter MS
 * authoredOn MS
 * requester MS
 * reasonCode MS
 * reasonCode from MII_VS_Bildgebung_ServiceRequest_Reason (preferred)
-// fixme MII-Ref
 * reasonReference MS
 * reasonReference only Reference(Condition)
 * supportingInfo MS

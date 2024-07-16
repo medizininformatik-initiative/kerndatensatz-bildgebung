@@ -19,7 +19,6 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * extension contains
   MII_EX_Bildgebung_Bildgebungsgrund named bildgebungsgrund 0..1
     
-* identifier MS
 * status MS
 * modality MS
 * modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html (required)
