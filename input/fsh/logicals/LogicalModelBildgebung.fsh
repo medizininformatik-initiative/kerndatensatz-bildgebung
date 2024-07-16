@@ -10,7 +10,7 @@ Description: "MII LogicalModel Modul Bildgebung"
 * insert PR_CS_VS_Version
 * insert KDS_Copyright
 * ^date = "2024-07-03"
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-Bildgebung/StructureDefinition/LogicalModel/Bildgebung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung"
 * . ^short = "Das Erweiterungsmodul Bildgebung enthält Datenelemente zur Dokumentation Bildgebungsstudien und radiologischen Befundberichten"
 
 * Empfehlung 0..* BackboneElement "Empfehlung" "Therapieempfehlungen aus vorherigen Behandlungen"

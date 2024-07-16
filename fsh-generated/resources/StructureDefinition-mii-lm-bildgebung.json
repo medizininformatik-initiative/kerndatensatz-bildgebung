@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-lm-bildgebung",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-Bildgebung/StructureDefinition/LogicalModel/Bildgebung",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung",
   "version": "2025.0.0",
   "name": "MII_LM_Bildgebung",
   "_name": {
@@ -80,7 +80,7 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "https://www.medizininformatik-initiative.de/fhir/ext/modul-Bildgebung/StructureDefinition/LogicalModel/Bildgebung",
+  "type": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "differential": {
