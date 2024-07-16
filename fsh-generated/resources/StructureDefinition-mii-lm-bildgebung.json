@@ -1045,47 +1045,6 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Prozedur",
-        "path": "Bildgebung.Studie.Prozedur",
-        "short": "Prozedur",
-        "definition": "Referenz auf die dazugehörige medizinische Prozedur der Studie.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Procedure"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.procedureReference"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Studie.Identifier",
-        "path": "Bildgebung.Studie.Identifier",
-        "short": "Identifier",
-        "definition": "Identifier der Bildgebungsstudie.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Identifier"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.identifier"
-          }
-        ]
-      },
-      {
         "id": "Bildgebung.Studie.Status",
         "path": "Bildgebung.Studie.Status",
         "short": "Status",
@@ -1105,40 +1064,128 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Studien-Beschreibung",
-        "path": "Bildgebung.Studie.Studien-Beschreibung",
-        "short": "Studien-Beschreibung",
-        "definition": "Beschreibung der Bildgebungsstudie",
+        "id": "Bildgebung.Studie.Modalitäten",
+        "path": "Bildgebung.Studie.Modalitäten",
+        "short": "Modalitäten",
+        "definition": "Set/Liste aller verschiedenen Modalitäten, die in dieser DICOM-Studie enthalten sind.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
-            "code": "string"
+            "code": "Coding"
           }
         ],
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.description"
+            "map": "ImagingStudy.modality"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.AnzahlInstanzen",
-        "path": "Bildgebung.Studie.AnzahlInstanzen",
-        "short": "Anzhal der SOP Instanzen",
-        "definition": "Anzahl der in der Bildgebungsstudie enthaltenen SOP Instanzen, z.B. 127",
-        "min": 0,
+        "id": "Bildgebung.Studie.Person",
+        "path": "Bildgebung.Studie.Person",
+        "short": "Person",
+        "definition": "Person, auf die sich die Bildgebungsstudie bezieht",
+        "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "unsignedInt"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
           }
         ],
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.numberOfInstances"
+            "map": "ImagingStudy.subject"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Fall",
+        "path": "Bildgebung.Studie.Fall",
+        "short": "Fall-Referenz",
+        "definition": "Referenz zum dazugehörigen Fall der Bildgebungsstudie.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.encounter"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Beginn",
+        "path": "Bildgebung.Studie.Beginn",
+        "short": "Beginn",
+        "definition": "Datum und Zeitpunkt, an dem die Studie gestartet wurde (z.B. Zeitpunkt des Beginns der CT-Untersuchung).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.started"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.AnforderndeMaßnahme",
+        "path": "Bildgebung.Studie.AnforderndeMaßnahme",
+        "short": "Anfordernde Maßnahme",
+        "definition": "Referenz auf die anfordernde Maßnahme dieser Bildgebungsstudie",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.basedOn"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.QuellePACS",
+        "path": "Bildgebung.Studie.QuellePACS",
+        "short": "Quelle zum PACS-Bild",
+        "definition": "Referenz auf den Speicherort der Bildgebungsstudie im PACS",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Endpoint"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.endpoint"
           }
         ]
       },
@@ -1162,21 +1209,62 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Beginn",
-        "path": "Bildgebung.Studie.Beginn",
-        "short": "Beginn",
-        "definition": "Datum und Zeitpunkt, an dem die Studie gestartet wurde (z.B. Zeitpunkt des Beginns der CT-Untersuchung).",
+        "id": "Bildgebung.Studie.AnzahlInstanzen",
+        "path": "Bildgebung.Studie.AnzahlInstanzen",
+        "short": "Anzahl der SOP Instanzen",
+        "definition": "Anzahl der in der Bildgebungsstudie enthaltenen SOP Instanzen, z.B. 127",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "dateTime"
+            "code": "unsignedInt"
           }
         ],
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.started"
+            "map": "ImagingStudy.numberOfInstances"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Prozedur",
+        "path": "Bildgebung.Studie.Prozedur",
+        "short": "Prozedur",
+        "definition": "Referenz auf die dazugehörige medizinische Prozedur der Studie.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.procedureReference"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Bildgebungsgrund",
+        "path": "Bildgebung.Studie.Bildgebungsgrund",
+        "short": "Bildgebungsgrund",
+        "definition": "Grund, aus dem die Prozedur angefordert wurde",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund)"
           }
         ]
       },
@@ -1204,75 +1292,12 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Modalitäten",
-        "path": "Bildgebung.Studie.Modalitäten",
-        "short": "Modalitäten",
-        "definition": "Set/Liste aller verschiedenen Modalitäten, die in dieser DICOM-Studie enthalten sind.",
+        "id": "Bildgebung.Studie.Studien-Beschreibung",
+        "path": "Bildgebung.Studie.Studien-Beschreibung",
+        "short": "Studien-Beschreibung",
+        "definition": "Beschreibung der Bildgebungsstudie",
         "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.modality"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Studie.QuellePACS",
-        "path": "Bildgebung.Studie.QuellePACS",
-        "short": "Quelle zum PACS-Bild",
-        "definition": "Referenz auf den Speicherort der Bildgebungsstudie im PACS",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Endpoint"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.endpoint"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Studie.AnforderndeMaßnahme",
-        "path": "Bildgebung.Studie.AnforderndeMaßnahme",
-        "short": "Anfordernde Maßnahme",
-        "definition": "Referenz auf die anfordernde Maßnahme dieser Bildgebungsstudie",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.basedOn"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Studie.Bildgebungsgrund",
-        "path": "Bildgebung.Studie.Bildgebungsgrund",
-        "short": "Bildgebungsgrund",
-        "definition": "Grund, aus dem die Prozedur angefordert wurde",
-        "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -1281,51 +1306,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund)"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Studie.Fall",
-        "path": "Bildgebung.Studie.Fall",
-        "short": "Fall-Referenz",
-        "definition": "Referenz zum dazugehörigen Fall der Bildgebungsstudie.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.encounter"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Studie.Person",
-        "path": "Bildgebung.Studie.Person",
-        "short": "Person",
-        "definition": "Person, auf die sich die Bildgebungsstudie bezieht",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.subject"
+            "map": "ImagingStudy.description"
           }
         ]
       },
@@ -2421,25 +2402,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.instance.number"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Studie.Serien.Instanzen.Beschreibung",
-        "path": "Bildgebung.Studie.Serien.Instanzen.Beschreibung",
-        "short": "Instanz-Beschreibung",
-        "definition": "Beschreibung der jeweiligen Instanz",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.title"
           }
         ]
       },
