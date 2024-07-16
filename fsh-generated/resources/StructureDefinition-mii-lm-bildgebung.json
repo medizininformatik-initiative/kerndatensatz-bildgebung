@@ -121,7 +121,7 @@
         "id": "Bildgebung.Koerperstruktur.Lokalisation",
         "path": "Bildgebung.Koerperstruktur.Lokalisation",
         "short": "Lokalisation",
-        "definition": "Lokalisation der Körperstruktur im Bild",
+        "definition": "Lokalisation der Körperstruktur im Bild.",
         "min": 0,
         "max": "1",
         "type": [
@@ -134,7 +134,7 @@
         "id": "Bildgebung.Koerperstruktur.nähereLokalisation",
         "path": "Bildgebung.Koerperstruktur.nähereLokalisation",
         "short": "nähere Lokalisation",
-        "definition": "explizite Beschreibung der Lokalisation",
+        "definition": "explizite Beschreibung der Lokalisation.",
         "min": 0,
         "max": "1",
         "type": [
@@ -204,7 +204,7 @@
         "id": "Bildgebung.Empfehlung.FreitextEmpfehlung",
         "path": "Bildgebung.Empfehlung.FreitextEmpfehlung",
         "short": "Freitextempfehlung",
-        "definition": "Behandlungsempfehlung in Freitextform",
+        "definition": "Behandlungsempfehlung in Freitextform.",
         "min": 0,
         "max": "1",
         "type": [
@@ -223,7 +223,7 @@
         "id": "Bildgebung.Empfehlung.Zusatzinformation",
         "path": "Bildgebung.Empfehlung.Zusatzinformation",
         "short": "Zusatzinformation",
-        "definition": "Zusatzinformation für einen Befundbericht",
+        "definition": "Zusatzinformation für einen Befundbericht.",
         "min": 0,
         "max": "1",
         "type": [
@@ -277,7 +277,7 @@
         "id": "Bildgebung.SemistrukturiertesBefunddokument.Typ",
         "path": "Bildgebung.SemistrukturiertesBefunddokument.Typ",
         "short": "Typ",
-        "definition": "bestimmte Dokumentenart in LOINC codiert",
+        "definition": "bestimmte Dokumentenart in LOINC codiert.",
         "min": 1,
         "max": "1",
         "type": [
@@ -290,7 +290,7 @@
         "id": "Bildgebung.SemistrukturiertesBefunddokument.Person",
         "path": "Bildgebung.SemistrukturiertesBefunddokument.Person",
         "short": "Person",
-        "definition": "Person auf die sich das Dokument bezieht",
+        "definition": "Person, auf die sich das Dokument bezieht. Hier sollte das MII Basisprofil Person referenziert werden.",
         "min": 1,
         "max": "1",
         "type": [
@@ -556,10 +556,36 @@
         ]
       },
       {
+        "id": "Bildgebung.Befundbericht.Kategorie",
+        "path": "Bildgebung.Befundbericht.Kategorie",
+        "short": "Kategorie",
+        "definition": "Kategorisiert die Untersuchungsart",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Befundbericht.Code",
+        "path": "Bildgebung.Befundbericht.Code",
+        "short": "Code",
+        "definition": "Festgelegter Code des Befundberichts. Hier Radiologischer Befund",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
         "id": "Bildgebung.Befundbericht.Person",
         "path": "Bildgebung.Befundbericht.Person",
         "short": "Personen-Identifikation",
-        "definition": "Die Person, für die der Befundbericht erstellt wurde.",
+        "definition": "Die Person, für die der Befundbericht erstellt wurde. Hier sollte das MII Basisprofil Person referenziert werden",
         "min": 0,
         "max": "1",
         "type": [
@@ -581,7 +607,7 @@
         "id": "Bildgebung.Befundbericht.Fall",
         "path": "Bildgebung.Befundbericht.Fall",
         "short": "Fall-Referenz",
-        "definition": "Referenz über Fall auf den Versorgungsstellenkontakt.",
+        "definition": "Referenz über Fall auf den Versorgungsstellenkontakt. Hier soll das MII Basisprofil Fall in Stufe 3 referenziert werden",
         "min": 1,
         "max": "1",
         "type": [
@@ -781,343 +807,54 @@
         ]
       },
       {
-        "id": "Bildgebung.GenerischeBeobachtung",
-        "path": "Bildgebung.GenerischeBeobachtung",
-        "short": "Befundabschnitt",
-        "definition": "Befundabschnitt des semistrukturierten Befunddokuments.",
+        "id": "Bildgebung.Bildgebungsprozedur",
+        "path": "Bildgebung.Bildgebungsprozedur",
+        "short": "Bildgebungsprozedur",
+        "definition": "Beschreibt eine Bildgebungsprozedur.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "BackboneElement"
           }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Observation"
-          }
         ]
       },
       {
-        "id": "Bildgebung.GenerischeBeobachtung.TeilEinerBefundungsprozedur",
-        "path": "Bildgebung.GenerischeBeobachtung.TeilEinerBefundungsprozedur",
-        "short": "Teil einer Befundungsprozedur",
-        "definition": "Teil einer Befundungsprozedur",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Procedure"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Observation.partOf"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.GenerischeBeobachtung.Beobachtungstyp",
-        "path": "Bildgebung.GenerischeBeobachtung.Beobachtungstyp",
-        "short": "Beobachtungstyp",
-        "definition": "Typ der Beobachtung.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Observation.code"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.GenerischeBeobachtung.Status",
-        "path": "Bildgebung.GenerischeBeobachtung.Status",
+        "id": "Bildgebung.Bildgebungsprozedur.Status",
+        "path": "Bildgebung.Bildgebungsprozedur.Status",
         "short": "Status",
-        "definition": "Status der Beobachtung.",
+        "definition": "Status der Befundungsprozedur",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Coding"
           }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Observation.status"
-          }
         ]
       },
       {
-        "id": "Bildgebung.GenerischeBeobachtung.Beobachtungszeitpunkt",
-        "path": "Bildgebung.GenerischeBeobachtung.Beobachtungszeitpunkt",
-        "short": "Beobachtungszeitpunkt",
-        "definition": "Zeitpunkt an dem die Beobachtung gemacht wird.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Observation.issued"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.GenerischeBeobachtung.Beschreibung",
-        "path": "Bildgebung.GenerischeBeobachtung.Beschreibung",
-        "short": "Beschreibung",
-        "definition": "Detaillierte Beschreibung der Beobachtung mit value[x].",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Observation.value[x]"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.GenerischeBeobachtung.Körperregion",
-        "path": "Bildgebung.GenerischeBeobachtung.Körperregion",
-        "short": "Körperregion",
-        "definition": "Codierte Körperregion der Beobachtung",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Observation.bodySite"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.GenerischeBeobachtung.Studienbezug",
-        "path": "Bildgebung.GenerischeBeobachtung.Studienbezug",
-        "short": "Studienbezug",
-        "definition": "Bezug auf die zugehörige(n) Bildgebungsstudie(n).",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/ImagingStudy"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Obervation.derivedFrom"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.GenerischeBeobachtung.WeitereBeobachtung",
-        "path": "Bildgebung.GenerischeBeobachtung.WeitereBeobachtung",
-        "short": "Weitere Beobachtung(en)",
-        "definition": "Weitere Beobachtung(en) als Referenz auf weitere Observation(s).",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Observation.hasMember"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.GenerischeBeobachtung.ErweiterteBeschreibung",
-        "path": "Bildgebung.GenerischeBeobachtung.ErweiterteBeschreibung",
-        "short": "Erweiterte Beschreibung",
-        "definition": "Kann mehrere Beschreibungen strukturiert abbilden.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Observation.component"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.GenerischeBeobachtung.Bildnummer",
-        "path": "Bildgebung.GenerischeBeobachtung.Bildnummer",
-        "short": "Bildnummer",
-        "definition": "DICOM Series UID der zugehörigen Serie.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildnummer)"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.GenerischeBeobachtung.Schichtposition",
-        "path": "Bildgebung.GenerischeBeobachtung.Schichtposition",
-        "short": "Schichtposition",
-        "definition": "DICOM Instance UID der zugehörigen SOP Instance.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz)"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.GenerischeBeobachtung.ErweiterteKörperstruktur",
-        "path": "Bildgebung.GenerischeBeobachtung.ErweiterteKörperstruktur",
-        "short": "Erweiterte Körperstruktur",
-        "definition": "Backport der R5 Referenz auf das BodyStructure-Profil.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/BodyStructure"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-observation-imaging)"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Anforderung",
-        "path": "Bildgebung.Anforderung",
-        "short": "Anforderung",
-        "definition": "Anfoderung der jeweiligen Bildgebungsmaßnahme",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ServiceRequest"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Anforderung.ArtAnfrage",
-        "path": "Bildgebung.Anforderung.ArtAnfrage",
-        "short": "Art der Anfrage",
-        "definition": "Art der Anfrage",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ServiceRequest.code"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Anforderung.Patientenbezug",
-        "path": "Bildgebung.Anforderung.Patientenbezug",
-        "short": "Patientenbezug",
-        "definition": "Bezug zu dem Patienten, für den die Anfoderung besteht",
+        "id": "Bildgebung.Bildgebungsprozedur.Kategorie",
+        "path": "Bildgebung.Bildgebungsprozedur.Kategorie",
+        "short": "Kategorie",
+        "definition": "Kategorisiert die Prozedur",
         "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ServiceRequest.subject"
+            "code": "CodeableConcept"
           }
         ]
       },
       {
-        "id": "Bildgebung.Anforderung.Zusatzinformation",
-        "path": "Bildgebung.Anforderung.Zusatzinformation",
-        "short": "Zusatzinformation",
-        "definition": "Zusatzinformation zur jeweiligen Anfoderung",
-        "min": 0,
+        "id": "Bildgebung.Bildgebungsprozedur.Code",
+        "path": "Bildgebung.Bildgebungsprozedur.Code",
+        "short": "Code",
+        "definition": "Definiert einen spezifischen Code für die Prozedur nach LOINC",
+        "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ServiceRequest.supportingInfo"
+            "code": "Coding"
           }
         ]
       },
@@ -1182,7 +919,7 @@
         "id": "Bildgebung.Studie.Person",
         "path": "Bildgebung.Studie.Person",
         "short": "Person",
-        "definition": "Person, auf die sich die Bildgebungsstudie bezieht",
+        "definition": "Person, auf die sich die Bildgebungsstudie bezieht. Hier soll das MII Basismodul Person referenziert werden.",
         "min": 1,
         "max": "1",
         "type": [
@@ -1204,7 +941,7 @@
         "id": "Bildgebung.Studie.Fall",
         "path": "Bildgebung.Studie.Fall",
         "short": "Fall-Referenz",
-        "definition": "Referenz zum dazugehörigen Fall der Bildgebungsstudie.",
+        "definition": "Referenz zum dazugehörigen Fall der Bildgebungsstudie. Hier soll das MII Basismodul Fall in Stufe 3 referenziert werden.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1327,7 +1064,7 @@
         "id": "Bildgebung.Studie.Prozedur",
         "path": "Bildgebung.Studie.Prozedur",
         "short": "Prozedur",
-        "definition": "Referenz auf die dazugehörige medizinische Prozedur der Studie.",
+        "definition": "Referenz auf die dazugehörige medizinische Prozedur der Studie. Hier soll auf das MII Basisprofil Prozedur referenziert werden.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1638,7 +1375,7 @@
         "id": "Bildgebung.Studie.Serien.Kontrastmitteldetails",
         "path": "Bildgebung.Studie.Serien.Kontrastmitteldetails",
         "short": "Kontrastmitteldetails",
-        "definition": "Details zur Kontrastmittelgabe über das MedicationStatement",
+        "definition": "Details zur Kontrastmittelgabe über das MedicationStatement. Hier soll auf das MII Basismodul Medikation referenziert werden",
         "min": 0,
         "max": "*",
         "type": [
@@ -2574,6 +2311,373 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung",
+        "path": "Bildgebung.GenerischeBeobachtung",
+        "short": "Befundabschnitt",
+        "definition": "Befundabschnitt des semistrukturierten Befunddokuments.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung.TeilEinerBefundungsprozedur",
+        "path": "Bildgebung.GenerischeBeobachtung.TeilEinerBefundungsprozedur",
+        "short": "Teil einer Befundungsprozedur",
+        "definition": "Hier soll auf das MII Basisprofil Prozedur referenziert werden",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.partOf"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung.Beobachtungstyp",
+        "path": "Bildgebung.GenerischeBeobachtung.Beobachtungstyp",
+        "short": "Beobachtungstyp",
+        "definition": "Typ der Beobachtung.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.code"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung.Status",
+        "path": "Bildgebung.GenerischeBeobachtung.Status",
+        "short": "Status",
+        "definition": "Status der Beobachtung.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.status"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung.Beobachtungszeitpunkt",
+        "path": "Bildgebung.GenerischeBeobachtung.Beobachtungszeitpunkt",
+        "short": "Beobachtungszeitpunkt",
+        "definition": "Zeitpunkt an dem die Beobachtung gemacht wird.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.issued"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung.Beschreibung",
+        "path": "Bildgebung.GenerischeBeobachtung.Beschreibung",
+        "short": "Beschreibung",
+        "definition": "Detaillierte Beschreibung der Beobachtung mit value[x].",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.value[x]"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung.Körperregion",
+        "path": "Bildgebung.GenerischeBeobachtung.Körperregion",
+        "short": "Körperregion",
+        "definition": "Codierte Körperregion der Beobachtung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.bodySite"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung.Studienbezug",
+        "path": "Bildgebung.GenerischeBeobachtung.Studienbezug",
+        "short": "Studienbezug",
+        "definition": "Bezug auf die zugehörige(n) Bildgebungsstudie(n).",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ImagingStudy"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Obervation.derivedFrom"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung.WeitereBeobachtung",
+        "path": "Bildgebung.GenerischeBeobachtung.WeitereBeobachtung",
+        "short": "Weitere Beobachtung(en)",
+        "definition": "Weitere Beobachtung(en) als Referenz auf weitere Observation(s).",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.hasMember"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung.ErweiterteBeschreibung",
+        "path": "Bildgebung.GenerischeBeobachtung.ErweiterteBeschreibung",
+        "short": "Erweiterte Beschreibung",
+        "definition": "Kann mehrere Beschreibungen strukturiert abbilden.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.component"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung.Bildnummer",
+        "path": "Bildgebung.GenerischeBeobachtung.Bildnummer",
+        "short": "Bildnummer",
+        "definition": "DICOM Series UID der zugehörigen Serie.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildnummer)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung.Schichtposition",
+        "path": "Bildgebung.GenerischeBeobachtung.Schichtposition",
+        "short": "Schichtposition",
+        "definition": "DICOM Instance UID der zugehörigen SOP Instance.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GenerischeBeobachtung.ErweiterteKörperstruktur",
+        "path": "Bildgebung.GenerischeBeobachtung.ErweiterteKörperstruktur",
+        "short": "Erweiterte Körperstruktur",
+        "definition": "Backport der R5 Referenz auf das BodyStructure-Profil.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/BodyStructure"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-observation-imaging)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.GabeRadiopharmakon",
+        "path": "Bildgebung.GabeRadiopharmakon",
+        "short": "Gabe Radiopharmakon",
+        "definition": "Gabe Radiopharmakon",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Befundungsprozedur",
+        "path": "Bildgebung.Befundungsprozedur",
+        "short": "Befundungsprozedur",
+        "definition": "Befundungsprozedur",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Anforderung",
+        "path": "Bildgebung.Anforderung",
+        "short": "Anforderung",
+        "definition": "Anfoderung der jeweiligen Bildgebungsmaßnahme",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Anforderung.ArtAnfrage",
+        "path": "Bildgebung.Anforderung.ArtAnfrage",
+        "short": "Art der Anfrage",
+        "definition": "Art der Anfrage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.code"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Anforderung.Patientenbezug",
+        "path": "Bildgebung.Anforderung.Patientenbezug",
+        "short": "Patientenbezug",
+        "definition": "Bezug zu dem Patienten, für den die Anfoderung besteht. Hier soll auf das MII Basisprofil Person referenziert werden.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.subject"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Anforderung.Zusatzinformation",
+        "path": "Bildgebung.Anforderung.Zusatzinformation",
+        "short": "Zusatzinformation",
+        "definition": "Zusatzinformation zur jeweiligen Anfoderung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.supportingInfo"
           }
         ]
       }
