@@ -111,6 +111,25 @@
         ]
       },
       {
+        "id": "Bildgebung.Empfehlung.Status",
+        "path": "Bildgebung.Empfehlung.Status",
+        "short": "Status",
+        "definition": "Status der Behandlungsempfehlung",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "CarePlan.status"
+          }
+        ]
+      },
+      {
         "id": "Bildgebung.Empfehlung.ArtEmpfehlung",
         "path": "Bildgebung.Empfehlung.ArtEmpfehlung",
         "short": "Art der Empfehlung",
@@ -145,6 +164,28 @@
           {
             "identity": "FHIR",
             "map": "CarePlan.description"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Empfehlung.Zusatzinformation",
+        "path": "Bildgebung.Empfehlung.Zusatzinformation",
+        "short": "Zusatzinformation",
+        "definition": "Zusatzinformation für einen Befundbericht",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "CarePlan.supportingInfo"
           }
         ]
       },
