@@ -12,12 +12,12 @@ Um einen Gesamtüberblick über die vorliegende Datenlage zu bekommen, ist die N
 
 ### Teilmodul "Metadaten"
 
-Zur Modellierung wurde die ImagingStudy analog wie in der FHIR Kernspizifikation in drei Teilmodule strukturiert:
+Zur Modellierung wurde die ImagingStudy analog in drei Teilmodule strukturiert:
 1. Studienebene
 2. Serienebene
 3. Serienebene
 
-Dafür wurde sich am internationalen FHIR Profil "ImagingStudy" (https://hl7.org/fhir/R4/imagingstudy.html) orientiert und überlegt, welche Elemente für die Mediziniformatik-Initaitve relevant sind. Es wurde außerdem diskutiert, welche weiteren DICOM-Metadaten von Interesse sind, die im Profil abgebildet werden sollen.
+Dafür wurde sich am internationalen FHIR-Profil "ImagingStudy" (https://hl7.org/fhir/R4/imagingstudy.html) orientiert und überlegt, welche Elemente für die Mediziniformatik-Initaitve relevant sind. Es wurde außerdem diskutiert, welche weiteren DICOM-Metadaten von Interesse sind, die im Profil abgebildet werden sollen.
 Die Referenzen "Endpoint" und "Specimen" wurden weggelassen. Alle anderen Elemente des Profils "Imaging Study" wurden übernommen. Ergänzt wurden vorrangig modalitätsspezifische Attribute auf Serien-Ebene.
 Die Originalnamen der Elemente aus dem FHIR Profil wurden ins Deutsche übersetzt und ggf. zur besseren Lesbarkeit angepasst. Die Instanzebene sowie auch die Serienebene sind komplett optional, sodass auch nur die Attribute auf Studienebene befüllt werden können. Allerdings wird empfohlen, wenn mögich, auch die beiden unteren Ebenen zu befüllen, um ein umfassendes Bild der abgebildeten Bildgebungsstudien zu erhalten.
 
