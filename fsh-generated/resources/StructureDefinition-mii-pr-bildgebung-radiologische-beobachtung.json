@@ -230,14 +230,6 @@
       {
         "id": "Observation.derivedFrom",
         "path": "Observation.derivedFrom",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {

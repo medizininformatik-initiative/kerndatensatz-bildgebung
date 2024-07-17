@@ -101,6 +101,11 @@
         "mustSupport": true
       },
       {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "mustSupport": true
+      },
+      {
         "id": "Procedure.category",
         "path": "Procedure.category",
         "min": 1,
@@ -164,6 +169,19 @@
         "patternCoding": {
           "system": "http://loinc.org"
         },
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

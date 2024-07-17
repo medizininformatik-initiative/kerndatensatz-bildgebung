@@ -100,6 +100,11 @@
         "id": "BodyStructure.locationQualifier",
         "path": "BodyStructure.locationQualifier",
         "mustSupport": true
+      },
+      {
+        "id": "BodyStructure.patient",
+        "path": "BodyStructure.patient",
+        "mustSupport": true
       }
     ]
   }

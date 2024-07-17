@@ -87,6 +87,24 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationAdministration.status",
+        "path": "MedicationAdministration.status",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.subject",
+        "path": "MedicationAdministration.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "MedicationAdministration.effective[x]",
         "path": "MedicationAdministration.effective[x]",
         "type": [

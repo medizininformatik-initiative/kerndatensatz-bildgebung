@@ -102,6 +102,19 @@
         "mustSupport": true
       },
       {
+        "id": "CarePlan.subject",
+        "path": "CarePlan.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "CarePlan.supportingInfo",
         "path": "CarePlan.supportingInfo",
         "type": [
