@@ -20,7 +20,7 @@ Description: "Profil zur Anforderung einer Bildgebung"
 * intent MS
 * category 1..* MS
 * category ^patternCodeableConcept = $SCT#363679005
-* code.coding 0.. MS
+* code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
