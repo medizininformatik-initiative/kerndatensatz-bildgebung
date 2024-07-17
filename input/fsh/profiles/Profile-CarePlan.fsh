@@ -19,5 +19,7 @@ Description: "Diese Profil beschreibt die Behandlungsempfehlung"
 * status MS
 * intent MS
 * description MS
+* subject MS
+* subject only Reference(Patient)
 * supportingInfo MS
 * supportingInfo only Reference(MII_PR_Bildgebung_Radiologischer_Befund)
