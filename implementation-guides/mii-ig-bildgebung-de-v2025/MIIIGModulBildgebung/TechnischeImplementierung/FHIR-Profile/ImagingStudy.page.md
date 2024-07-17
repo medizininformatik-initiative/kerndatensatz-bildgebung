@@ -53,7 +53,7 @@ select
 
 ### Empfohlenes Mapping der DICOM-Tags
 
-| **Datenelement im Informationsmodell**| **DICOM Tag **		|
+| **Datenelement im Informationsmodell**| **DICOM Tag**			|
 |---------------------------------------|-------------------------------|
 | Identifier				| (0008,0050) / (0020,000D)	|
 | Studien-Beschreibung			| (0008,1030)			|
@@ -65,7 +65,6 @@ select
 | Prozedur 				| (0008,1032) 			|
 | Bildgebungsgrund 			| (0040,1002) 			|
 | Anfordernde Maßnahme 			| (0032,1064) 			|
-|---------------------------------------|-------------------------------|
 | Serie --> Modalität 			| (0008,0060) 			|
 | Serie --> Hersteller 			| (0008, 0070) 			|
 | Serie --> Modell 			| (0008,1090) 			|
@@ -89,17 +88,12 @@ select
 | Serie --> Reskalierungstyp 		| (0028,1054) 			|
 | Serie --> Gesamte Radionukliddosis 	| (0018,1044) 			|
 | Serie --> Halbwertszeit 		| (0018,1075) 			|
-|---------------------------------------|-------------------------------|
 | Instanz --> SOP-Instanz 		| (0008,0018) 			|
 | Instanz --> SOP-Klasse 		| (0008,0016) 			|
 | Instanz --> Instanz-Nummer 		| (0020,0013) 			|
 | Instanz --> Schichtdicke 		| (0018,0050) 			|
 | Instanz --> Bildtyp 			| (0008,0008) 			|
 | Instanz --> Pixelabstand 		| (0028,0030) 			|
-|---------------------------------------|-------------------------------|
-
-
-
 
 
 @```
