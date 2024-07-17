@@ -22,6 +22,9 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * status MS
 * modality MS
 * modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html (required)
+* subject MS
+* subject only Reference(Patient)
+* encounter MS
 * started MS
 * basedOn MS
 * endpoint MS
@@ -30,9 +33,6 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * procedureReference MS
 * reasonReference MS
 * description MS
-* subject MS
-* subject only Reference(Patient)
-* encounter MS
 
 * series MS
 * series.extension contains
