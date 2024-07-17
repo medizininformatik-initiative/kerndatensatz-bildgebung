@@ -1,6 +1,6 @@
 //Head
 Profile: MII_PR_Bildgebung_Bildgebungsprozedur
-Parent: Procedure
+Parent: Procedure //MII Prozedur
 Id: mii-pr-bildgebung-bildgebungsprozedur
 Title: "MII PR Bildgebung Bildgebungsprozedur"
 Description: "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme"
@@ -16,6 +16,9 @@ Description: "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme"
 * meta.source MS
 * meta.profile MS
 //Profile
+* basedOn 1..* MS
+* basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung)
+* status MS
 * category 1.. MS 
 * category.coding 1.. MS 
 * category.coding ^slicing.discriminator.type = #pattern
@@ -32,5 +35,6 @@ Description: "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme"
 * code.coding contains
   loinc 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
-* basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung)
-* basedOn 1..* MS
+* subject MS
+* subject only Reference(Patient)
+
