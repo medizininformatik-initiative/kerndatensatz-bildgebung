@@ -16,6 +16,10 @@ Description: "Dieses Profil beschreibt die Gabe eines Radiopharmakons zur medizi
 * meta.source MS
 * meta.profile MS
 //Profile
+* status MS
+* medication[x]
+* subject MS
+* subject only Reference(Patient)
 * effective[x] only Period
 * dosage.dose 1..1
 * dosage.dose.unit = "Megabecquerel"
