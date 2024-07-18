@@ -1,8 +1,7 @@
 ## Referenzen
 
 Der Kerndatensatz Bildgebung orientiert sich an den gängigen technischen Standards medizinischer Bildgebung.
-Primär betrifft dies den [DICOM Standard](https://www.dicomstandard.org/) zwecks FHIR Profilierung relevanter
-technischer und medizinischer Fragestellungen.
+Primär betrifft dies den [DICOM Standard](https://www.dicomstandard.org/) zwecks FHIR-Profilierung relevanter technischer und medizinischer Fragestellungen.
 
 Die verwendeten Codesysteme, Terminologien und Referenzen für Prozeduren, Diagnosen und verwandter medizinischer Fragestellungen sind:
 * [SNOMED CT](https://www.snomed.org/)
