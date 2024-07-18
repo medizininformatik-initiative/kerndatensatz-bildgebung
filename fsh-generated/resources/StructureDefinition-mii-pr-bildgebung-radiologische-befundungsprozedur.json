@@ -87,6 +87,11 @@
         "mustSupport": true
       },
       {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "mustSupport": true
+      },
+      {
         "id": "Procedure.category",
         "path": "Procedure.category",
         "min": 1,
@@ -111,6 +116,11 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Procedure.performed[x]",
+        "path": "Procedure.performed[x]",
+        "mustSupport": true
       },
       {
         "id": "Procedure.report",
