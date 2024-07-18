@@ -102,6 +102,12 @@
           {
             "code": "BackboneElement"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "BodyStructure"
+          }
         ]
       },
       {
@@ -114,6 +120,12 @@
         "type": [
           {
             "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "BodyStructure.morphology"
           }
         ]
       },
@@ -128,6 +140,12 @@
           {
             "code": "CodeableConcept"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "BodyStructure.location"
+          }
         ]
       },
       {
@@ -140,6 +158,34 @@
         "type": [
           {
             "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "BodyStructure.locationQualifier"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Koerperstruktur.Person",
+        "path": "Bildgebung.Koerperstruktur.Person",
+        "short": "Person",
+        "definition": "Person, an der sich die untersuchte Körperstruktur befindet.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "BodyStructure.patient"
           }
         ]
       },
@@ -216,6 +262,28 @@
           {
             "identity": "FHIR",
             "map": "CarePlan.description"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Empfehlung.Person",
+        "path": "Bildgebung.Empfehlung.Person",
+        "short": "Person",
+        "definition": "Person, auf die sich die Empfehlung bezieht",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "CarePlan.subject"
           }
         ]
       },
