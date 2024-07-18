@@ -17,7 +17,7 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 //Translation
 * insert Translation(^name, en-US, MII_PR_Imaging_Diagnostic_Report)
 * insert Translation(^title, en-US, MII PR Imaging Diagnostic Report)
-* insert Translation(^description, en-US, The profile describes a diagnostic report for radiological images.)
+* insert Translation(^description, en-US, The profile describes a diagnostic report for a radiological image.)
 * insert PR_CS_VS_Version
 //Meta
 * id MS
