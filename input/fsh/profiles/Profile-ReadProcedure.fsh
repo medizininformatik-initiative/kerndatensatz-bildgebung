@@ -16,8 +16,10 @@ Description: "Diese Profil beschreibt die radiologische Befundungsprozedur"
 * meta.source MS
 * meta.profile MS
 //Profile
+* status MS 
 * category 1..1
 * category = $SCT#103693007 "Diagnostic procedure" (exactly)
 * subject only Reference(Patient)
+* performed[x] MS
 * report 1..* MS 
 * report ^definition = "In cases where follow ups are performed (e.g. RECIST or TNM) this procedure might be used in more than one diagnostic report this way we guarantee that the tumor categories stay the same over time."

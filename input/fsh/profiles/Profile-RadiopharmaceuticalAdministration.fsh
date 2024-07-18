@@ -8,7 +8,7 @@ Description: "Dieses Profil beschreibt die Gabe eines Radiopharmakons zur medizi
 //Translation
 * insert Translation(^name, en-US, MII_PR_Imaging_RadiopharmaceuticalAdministration)
 * insert Translation(^title, en-US, MII PR Imaging RadiopharmaceuticalAdministration)
-* insert Translation(^description, en-US, The profile describes the metadata of an DICOM imaging study.)
+* insert Translation(^description, en-US, The profile describes RadiopharmaceuticalAdministration.)
 * insert PR_CS_VS_Version
 //Meta
 * id MS
