@@ -200,6 +200,7 @@ Source: MII_LM_Bildgebung
   * DatumUhrzeit -> "Composition.date"
   * Autor -> "Composition.author"
   * Befundbericht -> "Composition.subject"
+  * Titel -> "Composition.title"
   * Befundabschnitt -> "Composition.section"
     * Titel -> "Composition.section.title"
     * Art -> "Composition.section.code"

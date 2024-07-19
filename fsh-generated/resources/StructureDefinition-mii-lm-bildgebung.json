@@ -478,6 +478,12 @@
           {
             "code": "string"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.title"
+          }
         ]
       },
       {
