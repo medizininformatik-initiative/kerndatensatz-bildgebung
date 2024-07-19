@@ -38,7 +38,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.extension contains
   //Extension Serienebene
   MII_EX_Bildgebung_Modalitaet_CT named modalitätCT 0..1 and
-  MII_EX_Bildgebung_Modalitaet_MG_CR_DX named modalitätMR_CR_DX 0..1 and
+  MII_EX_Bildgebung_Modalitaet_MG_CR_DX named modalitätMG_CR_DX 0..1 and
   MII_EX_Bildgebung_Modalitaet_MR named modalitätMR 0..1 and
   MII_EX_Bildgebung_Modalitaet_PT_NM named modalitätPT_NM 0..1 and
   MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1 and
@@ -55,10 +55,10 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.laterality from $laterality (required)
 * series.started MS
 //Instanzebene
+* series.instance MS
 * series.instance.extension contains
   //Extension Instanzebene
   MII_EX_Bildgebung_Instanz_Serie named imagingInstance 0..1
-* series.instance MS
 * series.instance.uid MS
 * series.instance.sopClass MS
 * series.instance.sopClass from https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html (required)
