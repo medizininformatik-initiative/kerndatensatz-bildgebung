@@ -1,0 +1,31 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-bildgebung-observation-body-structure",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-structure",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "name": "MII_SP_Bildgebung_Observation_Body_Structure",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-19",
+  "description": "Suchparameter für Observation.bodyStructure",
+  "code": "bodyStructure",
+  "base": [
+    "Observation"
+  ],
+  "type": "reference",
+  "expression": "Observation.bodyStructure",
+  "target": [
+    "BodyStructure"
+  ]
+}

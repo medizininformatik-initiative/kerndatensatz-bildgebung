@@ -88,6 +88,78 @@
     "endLine": 9
   },
   {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-care-plan-description.json",
+    "fshName": "mii-sp-bildgebung-care-plan-description",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SP-CarePlan.fsh",
+    "startLine": 23,
+    "endLine": 43
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-care-plan-intent.json",
+    "fshName": "mii-sp-bildgebung-care-plan-intent",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SP-CarePlan.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-care-plan-supporting-info.json",
+    "fshName": "mii-sp-bildgebung-care-plan-supporting-info",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SP-CarePlan.fsh",
+    "startLine": 45,
+    "endLine": 60
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-composition-section-author.json",
+    "fshName": "mii-sp-bildgebung-composition-section-author",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SP-Composition.fsh",
+    "startLine": 23,
+    "endLine": 38
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-composition-section-text.json",
+    "fshName": "mii-sp-bildgebung-composition-section-text",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SP-Composition.fsh",
+    "startLine": 40,
+    "endLine": 60
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-composition-section-title.json",
+    "fshName": "mii-sp-bildgebung-composition-section-title",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SP-Composition.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-diagnostic-report-conclusion-code.json",
+    "fshName": "mii-sp-bildgebung-diagnostic-report-conclusion-code",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SP-DiagnosticReport.fsh",
+    "startLine": 39,
+    "endLine": 59
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-diagnostic-report-imaging-study.json",
+    "fshName": "mii-sp-bildgebung-diagnostic-report-imaging-study",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SP-DiagnosticReport.fsh",
+    "startLine": 22,
+    "endLine": 37
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-diagnostic-report-supporting-info.json",
+    "fshName": "mii-sp-bildgebung-diagnostic-report-supporting-info",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SP-DiagnosticReport.fsh",
+    "startLine": 5,
+    "endLine": 20
+  },
+  {
     "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-dosequantity.json",
     "fshName": "mii-sp-bildgebung-dosage-dosequantity",
     "fshType": "Instance",
@@ -192,6 +264,14 @@
     "endLine": 103
   },
   {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-koerperstruktur-location-qualfier.json",
+    "fshName": "mii-sp-bildgebung-koerperstruktur-location-qualfier",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SP-BodyStructure.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
     "outputFile": "SearchParameter-mii-sp-bildgebung-list-mode.json",
     "fshName": "mii-sp-bildgebung-list-mode",
     "fshType": "Instance",
@@ -230,6 +310,14 @@
     "fshFile": "searchparameters/SearchParameter.fsh",
     "startLine": 62,
     "endLine": 80
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-observation-body-structure.json",
+    "fshName": "mii-sp-bildgebung-observation-body-structure",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SP-Observation.fsh",
+    "startLine": 8,
+    "endLine": 23
   },
   {
     "outputFile": "ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.json",

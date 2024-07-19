@@ -328,6 +328,78 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-care-plan-description"
+        },
+        "name": "mii-sp-bildgebung-care-plan-description",
+        "description": "Suchparameter für CarePlan.description",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-care-plan-intent"
+        },
+        "name": "mii-sp-bildgebung-care-plan-intent",
+        "description": "Suchparameter für CarePlan.intent",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-care-plan-supporting-info"
+        },
+        "name": "mii-sp-bildgebung-care-plan-supporting-info",
+        "description": "Suchparameter für CarePlan.supportingInfo",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-composition-section-author"
+        },
+        "name": "mii-sp-bildgebung-composition-section-author",
+        "description": "Suchparameter für Composition.section.author",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-composition-section-text"
+        },
+        "name": "mii-sp-bildgebung-composition-section-text",
+        "description": "Suchparameter für Composition.section.text",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-composition-section-title"
+        },
+        "name": "mii-sp-bildgebung-composition-section-title",
+        "description": "Suchparameter für Composition.section.title",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion-code"
+        },
+        "name": "mii-sp-bildgebung-diagnostic-report-conclusion-code",
+        "description": "Suchparameter für DiagnosticReport.conclusionCode",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-diagnostic-report-imaging-study"
+        },
+        "name": "mii-sp-bildgebung-diagnostic-report-imaging-study",
+        "description": "Suchparameter für DiagnosticReport.imagingStudy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-diagnostic-report-supporting-info"
+        },
+        "name": "mii-sp-bildgebung-diagnostic-report-supporting-info",
+        "description": "Suchparameter für DiagnosticReport.supportingInfo",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-dosage-dosequantity"
         },
         "name": "mii-sp-bildgebung-dosage-dosequantity",
@@ -432,6 +504,14 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-koerperstruktur-location-qualfier"
+        },
+        "name": "mii-sp-bildgebung-koerperstruktur-location-qualfier",
+        "description": "Suchparameter für Koeperstruktur.locationQualifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-list-mode"
         },
         "name": "mii-sp-bildgebung-list-mode",
@@ -468,6 +548,14 @@
         },
         "name": "mii-sp-bildgebung-medication-reasonreference",
         "description": "Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-observation-body-structure"
+        },
+        "name": "mii-sp-bildgebung-observation-body-structure",
+        "description": "Suchparameter für Observation.bodyStructure",
         "exampleBoolean": false
       },
       {
