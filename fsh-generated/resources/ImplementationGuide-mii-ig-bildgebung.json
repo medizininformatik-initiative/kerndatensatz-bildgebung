@@ -227,7 +227,7 @@
           "reference": "StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
         },
         "name": "MII PR Bildgebung Anforderung Bildgebung",
-        "description": "Profil zur Anforderung einer Bildgebung",
+        "description": "Profil zur Anforderung einer Bildgebung.",
         "exampleBoolean": false
       },
       {
@@ -235,7 +235,7 @@
           "reference": "StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
         },
         "name": "MII PR Bildgebung Behandlungsempfehlung",
-        "description": "Diese Profil beschreibt die Behandlungsempfehlung",
+        "description": "Diese Profil beschreibt die ärztliche Behandlungsempfehlung einer Person. Sie unterstützt den radiologischen Befund mit Zusatzinformation",
         "exampleBoolean": false
       },
       {
@@ -243,7 +243,7 @@
           "reference": "StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur"
         },
         "name": "MII PR Bildgebung Bildgebungsprozedur",
-        "description": "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme",
+        "description": "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.",
         "exampleBoolean": false
       },
       {
@@ -259,7 +259,7 @@
           "reference": "StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon"
         },
         "name": "MII PR Bildgebung GabeRadiopharmakon",
-        "description": "Dieses Profil beschreibt die Gabe eines Radiopharmakons zur medizinischen Bildgebung.",
+        "description": "Dieses Profil beschreibt die Gabe eines Radiopharmakons zur medizinischen Bildgebung. Es bietet die Möglichkeit die Kontrastmittelgabe aus dem RIS zu erfassen und ist somit die Alternative zu der Erfassung der Kontrastmittelgabe aus den DICOM-Metadaten.",
         "exampleBoolean": false
       },
       {
@@ -275,7 +275,7 @@
           "reference": "StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
         },
         "name": "MII PR Bildgebung Radiologische Befundungsprozedur",
-        "description": "Diese Profil beschreibt die radiologische Befundungsprozedur",
+        "description": "Diese Profil beschreibt die radiologische Befundungsprozedur. Es legt fest, dass es sich hierbei um eine reine diagnostische Prozedur handelt",
         "exampleBoolean": false
       },
       {
@@ -283,7 +283,7 @@
           "reference": "StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
         },
         "name": "MII PR Bildgebung Radiologische Beobachtung",
-        "description": "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiologischer Bildgebung.",
+        "description": "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiologischer Bildgebung. Es bietet die Möglichkeit strukturiert Beobachtungen abzubilden und den Befundbericht zu ergänzen.",
         "exampleBoolean": false
       },
       {
@@ -299,7 +299,7 @@
           "reference": "StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"
         },
         "name": "MII PR Bildgebung Semistrukturierter Befundbericht",
-        "description": "Dieses Profil beschreibt den semistrukturierten Befundbericht",
+        "description": "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer semi-strukturierten Weise abzubilden. Es dient damit als Ergänzung zum eigentlichen Befundbericht",
         "exampleBoolean": false
       },
       {

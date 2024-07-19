@@ -3,14 +3,14 @@ Profile: MII_PR_Bildgebung_Radiologische_Beobachtung
 Parent: Observation
 Id: mii-pr-bildgebung-radiologische-beobachtung
 Title: "MII PR Bildgebung Radiologische Beobachtung"
-Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiologischer Bildgebung."
+Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiologischer Bildgebung. Es bietet die Möglichkeit strukturiert Beobachtungen abzubilden und den Befundbericht zu ergänzen."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
 //Translation
 * insert Translation(^name, en-US, MII_PR_Imaging_Radiological_Observation)
 * insert Translation(^title, en-US, MII PR Imaging Radiological Observation)
 * insert Translation(^description, en-US, The profile describes a observation for radiological images.)
-* insert PR_CS_VS_Version
 //Meta
+* insert PR_CS_VS_Version
 * id MS
 * meta MS
 * meta.source MS

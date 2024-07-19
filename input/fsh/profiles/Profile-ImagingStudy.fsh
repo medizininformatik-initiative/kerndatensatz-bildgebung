@@ -9,16 +9,16 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(^name, en-US, MII_PR_Imaging_Imaging_Study)
 * insert Translation(^title, en-US, MII PR Imaging Imaging Study)
 * insert Translation(^description, en-US, The profile describes the metadata of an DICOM imaging study.)
-* insert PR_CS_VS_Version
 //Meta
+* insert PR_CS_VS_Version
 * id MS
 * meta MS
 * meta.source MS
 * meta.profile MS
-//Profile
+//Studienebene
 * extension contains
-  MII_EX_Bildgebung_Bildgebungsgrund named bildgebungsgrund 0..1
-    
+  //Extension Studienebene
+  MII_EX_Bildgebung_Bildgebungsgrund named bildgebungsgrund 0..1 
 * status MS
 * modality MS
 * modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html (required)
@@ -33,16 +33,16 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * procedureReference MS
 * reasonReference MS
 * description MS
-
+//Serieebene
 * series MS
 * series.extension contains
+  //Extension Serienebene
   MII_EX_Bildgebung_Modalitaet_CT named modalitätCT 0..1 and
   MII_EX_Bildgebung_Modalitaet_MG_CR_DX named modalitätMR_CR_DX 0..1 and
   MII_EX_Bildgebung_Modalitaet_MR named modalitätMR 0..1 and
   MII_EX_Bildgebung_Modalitaet_PT_NM named modalitätPT_NM 0..1 and
   MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1 and
   MII_EX_Bildgebung_Geraete_Hersteller named gerät 0..1
-
 * series.uid MS 
 * series.number MS
 * series.modality MS 
@@ -54,11 +54,12 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.laterality MS
 * series.laterality from $laterality (required)
 * series.started MS
-
+//Instanzebene
+* series.instance.extension contains
+  //Extension Instanzebene
+  MII_EX_Bildgebung_Instanz_Serie named imagingInstance 0..1
 * series.instance MS
 * series.instance.uid MS
 * series.instance.sopClass MS
 * series.instance.sopClass from https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html (required)
 * series.instance.number MS
-* series.instance.extension contains
-  MII_EX_Bildgebung_Instanz_Serie named imagingInstance 0..1

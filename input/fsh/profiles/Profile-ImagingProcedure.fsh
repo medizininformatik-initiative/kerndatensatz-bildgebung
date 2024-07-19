@@ -3,14 +3,14 @@ Profile: MII_PR_Bildgebung_Bildgebungsprozedur
 Parent: Procedure //MII Prozedur
 Id: mii-pr-bildgebung-bildgebungsprozedur
 Title: "MII PR Bildgebung Bildgebungsprozedur"
-Description: "Beschreibt die Tätigkeiten und Parameter zu einer Aufnahme"
+Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur"
 //Translation
 * insert Translation(^name, en-US, MII_PR_Imaging_Imaging_Procedure)
 * insert Translation(^title, en-US, MII PR Imaging Imaging Procedure)
 * insert Translation(^description, en-US, The profile describes a advisory for medical care.)
-* insert PR_CS_VS_Version
 //Meta
+* insert PR_CS_VS_Version
 * id MS
 * meta MS
 * meta.source MS

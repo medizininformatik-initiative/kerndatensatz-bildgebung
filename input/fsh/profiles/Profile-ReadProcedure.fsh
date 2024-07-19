@@ -3,14 +3,14 @@ Profile: MII_PR_Bildgebung_Radiologische_Befundungsprozedur
 Parent: Procedure
 Id: mii-pr-bildgebung-radiologische-befundungsprozedur
 Title: "MII PR Bildgebung Radiologische Befundungsprozedur"
-Description: "Diese Profil beschreibt die radiologische Befundungsprozedur"
+Description: "Diese Profil beschreibt die radiologische Befundungsprozedur. Es legt fest, dass es sich hierbei um eine reine diagnostische Prozedur handelt"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
 //Translation
 * insert Translation(^name, en-US, MII_PR_Imaging_Radiological_Readprocedure)
 * insert Translation(^title, en-US, MII PR Imaging Radiological Readprocedure)
 * insert Translation(^description, en-US, This FHIR resource profile specifically characterizes the radiological reading process.)
-* insert PR_CS_VS_Version
 //Meta
+* insert PR_CS_VS_Version
 * id MS
 * meta MS
 * meta.source MS

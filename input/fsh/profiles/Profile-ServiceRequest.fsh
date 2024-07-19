@@ -3,14 +3,14 @@ Profile: MII_PR_Bildgebung_Anforderung_Bildgebung
 Parent: ServiceRequest
 Id: mii-pr-bildgebung-anforderung-bildgebung
 Title: "MII PR Bildgebung Anforderung Bildgebung"
-Description: "Profil zur Anforderung einer Bildgebung"
+Description: "Profil zur Anforderung einer Bildgebung."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
 //Translation
 * insert Translation(^name, en-US, MII_PR_Imaging_Service_Request)
 * insert Translation(^title, en-US, MII PR Imaging Service Request)
 * insert Translation(^description, en-US, The profile describes a service request.)
-* insert PR_CS_VS_Version
 //Meta
+* insert PR_CS_VS_Version
 * id MS
 * meta MS
 * meta.source MS

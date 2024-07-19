@@ -40,7 +40,7 @@
     ]
   },
   "status": "active",
-  "description": "Dieses Profil beschreibt die Gabe eines Radiopharmakons zur medizinischen Bildgebung.",
+  "description": "Dieses Profil beschreibt die Gabe eines Radiopharmakons zur medizinischen Bildgebung. Es bietet die Möglichkeit die Kontrastmittelgabe aus dem RIS zu erfassen und ist somit die Alternative zu der Erfassung der Kontrastmittelgabe aus den DICOM-Metadaten.",
   "_description": {
     "extension": [
       {

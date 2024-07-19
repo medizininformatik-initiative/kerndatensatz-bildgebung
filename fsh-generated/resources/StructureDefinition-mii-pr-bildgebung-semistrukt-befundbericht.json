@@ -40,7 +40,7 @@
     ]
   },
   "status": "active",
-  "description": "Dieses Profil beschreibt den semistrukturierten Befundbericht",
+  "description": "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer semi-strukturierten Weise abzubilden. Es dient damit als Ergänzung zum eigentlichen Befundbericht",
   "_description": {
     "extension": [
       {
@@ -52,7 +52,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes a semistructured report."
+            "valueString": "The profile describes a semistructured report. It is an addition for the main medical report."
           }
         ]
       }
