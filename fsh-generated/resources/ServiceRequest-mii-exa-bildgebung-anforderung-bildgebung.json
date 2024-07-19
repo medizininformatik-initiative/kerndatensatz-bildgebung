@@ -15,5 +15,10 @@
         }
       ]
     }
-  ]
+  ],
+  "status": "active",
+  "intent": "order",
+  "subject": {
+    "reference": "Patient/example"
+  }
 }

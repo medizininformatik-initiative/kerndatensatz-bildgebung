@@ -14,5 +14,14 @@
         "display": "Diagnostic procedure"
       }
     ]
-  }
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "report": [
+    {
+      "reference": "DiagnosticReport/example"
+    }
+  ]
 }

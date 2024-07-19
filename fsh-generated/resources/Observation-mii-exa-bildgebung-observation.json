@@ -5,5 +5,15 @@
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
     ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "10207-9",
+        "system": "http://loinc.org",
+        "display": "Physical Findings of Thorax and Lungs Narrrative"
+      }
+    ]
   }
 }

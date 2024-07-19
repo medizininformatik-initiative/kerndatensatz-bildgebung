@@ -17,5 +17,14 @@
         ]
       }
     ]
+  },
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/example"
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/example"
   }
 }

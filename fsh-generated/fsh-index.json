@@ -3,9 +3,9 @@
     "outputFile": "BodyStructure-mii-exa-bildgebung-koerperstruktur.json",
     "fshName": "mii-exa-bildgebung-koerperstruktur",
     "fshType": "Instance",
-    "fshFile": "examples/Example-BodyStructure.fsh",
-    "startLine": 2,
-    "endLine": 5
+    "fshFile": "instances/Example-BodyStructure.fsh",
+    "startLine": 1,
+    "endLine": 6
   },
   {
     "outputFile": "CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.json",
@@ -19,23 +19,23 @@
     "outputFile": "CarePlan-mii-exa-bildgebung-behandlungsempfehlung.json",
     "fshName": "mii-exa-bildgebung-behandlungsempfehlung",
     "fshType": "Instance",
-    "fshFile": "examples/Example-CarePlan.fsh",
+    "fshFile": "instances/Example-CarePlan.fsh",
     "startLine": 2,
-    "endLine": 5
+    "endLine": 9
   },
   {
     "outputFile": "Composition-mii-exa-bildgebung-semistrukt-befundbericht.json",
     "fshName": "mii-exa-bildgebung-semistrukt-befundbericht",
     "fshType": "Instance",
-    "fshFile": "examples/Example-Composition.fsh",
+    "fshFile": "instances/Example-Composition.fsh",
     "startLine": 2,
-    "endLine": 5
+    "endLine": 11
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json",
     "fshName": "mii-exa-bildgebung-radiologischer-Befund",
     "fshType": "Instance",
-    "fshFile": "examples/Example-DiagnosticReport.fsh",
+    "fshFile": "instances/Example-DiagnosticReport.fsh",
     "startLine": 2,
     "endLine": 16
   },
@@ -43,47 +43,47 @@
     "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie.json",
     "fshName": "mii-exa-bildgebung-bildgebungsstudie",
     "fshType": "Instance",
-    "fshFile": "examples/Example-ImagingStudy.fsh",
+    "fshFile": "instances/Example-ImagingStudy.fsh",
     "startLine": 2,
-    "endLine": 5
+    "endLine": 8
   },
   {
     "outputFile": "MedicationAdministration-mii-exa-bildgebung-gabe-radiopharmakon.json",
     "fshName": "mii-exa-bildgebung-gabe-radiopharmakon",
     "fshType": "Instance",
-    "fshFile": "examples/Example-RadiopharmaceuticalAdministration.fsh",
+    "fshFile": "instances/Example-RadiopharmaceuticalAdministration.fsh",
     "startLine": 2,
-    "endLine": 5
+    "endLine": 11
   },
   {
     "outputFile": "Observation-mii-exa-bildgebung-observation.json",
     "fshName": "mii-exa-bildgebung-observation",
     "fshType": "Instance",
-    "fshFile": "examples/Example-Observation.fsh",
+    "fshFile": "instances/Example-Observation.fsh",
     "startLine": 2,
-    "endLine": 5
+    "endLine": 8
   },
   {
     "outputFile": "Procedure-mii-exa-bildgebung-bildgebungsprozedur.json",
     "fshName": "mii-exa-bildgebung-bildgebungsprozedur",
     "fshType": "Instance",
-    "fshFile": "examples/Example-ImagingProcedure.fsh",
+    "fshFile": "instances/Example-ImagingProcedure.fsh",
     "startLine": 2,
-    "endLine": 5
+    "endLine": 9
   },
   {
     "outputFile": "Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.json",
     "fshName": "mii-exa-bildgebung-radiologische-befundungsprozedur",
     "fshType": "Instance",
-    "fshFile": "examples/Example-ReadProcedure.fsh",
+    "fshFile": "instances/Example-ReadProcedure.fsh",
     "startLine": 2,
-    "endLine": 5
+    "endLine": 9
   },
   {
     "outputFile": "Procedure-mii-exa-bildgebung-tnm-radiologische-befundungsprozedur.json",
     "fshName": "mii-exa-bildgebung-tnm-radiologische-befundungsprozedur",
     "fshType": "Instance",
-    "fshFile": "examples/Example-TNMRadiologicalReadProcedure.fsh",
+    "fshFile": "instances/Example-TNMRadiologicalReadProcedure.fsh",
     "startLine": 2,
     "endLine": 10
   },
@@ -235,9 +235,9 @@
     "outputFile": "ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.json",
     "fshName": "mii-exa-bildgebung-anforderung-bildgebung",
     "fshType": "Instance",
-    "fshFile": "examples/Example-ServiceRequest.fsh",
+    "fshFile": "instances/Example-ServiceRequest.fsh",
     "startLine": 2,
-    "endLine": 5
+    "endLine": 9
   },
   {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-SOPInstanz.json",

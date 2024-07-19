@@ -5,5 +5,10 @@
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
     ]
+  },
+  "status": "active",
+  "intent": "proposal",
+  "subject": {
+    "reference": "Patient/example"
   }
 }
