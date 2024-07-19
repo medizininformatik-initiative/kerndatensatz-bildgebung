@@ -1,3 +1,5 @@
+//section.section
+
 Instance: mii-sp-bildgebung-composition-section-title
 InstanceOf: SearchParameter
 Usage: #definition
