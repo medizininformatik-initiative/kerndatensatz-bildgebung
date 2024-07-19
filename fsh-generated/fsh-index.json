@@ -20,72 +20,72 @@
     "fshName": "mii-exa-bildgebung-behandlungsempfehlung",
     "fshType": "Instance",
     "fshFile": "instances/Example-CarePlan.fsh",
-    "startLine": 2,
-    "endLine": 9
+    "startLine": 1,
+    "endLine": 8
   },
   {
     "outputFile": "Composition-mii-exa-bildgebung-semistrukt-befundbericht.json",
     "fshName": "mii-exa-bildgebung-semistrukt-befundbericht",
     "fshType": "Instance",
     "fshFile": "instances/Example-Composition.fsh",
-    "startLine": 2,
-    "endLine": 11
+    "startLine": 1,
+    "endLine": 10
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json",
     "fshName": "mii-exa-bildgebung-radiologischer-Befund",
     "fshType": "Instance",
     "fshFile": "instances/Example-DiagnosticReport.fsh",
-    "startLine": 2,
-    "endLine": 16
+    "startLine": 1,
+    "endLine": 15
   },
   {
     "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie.json",
     "fshName": "mii-exa-bildgebung-bildgebungsstudie",
     "fshType": "Instance",
     "fshFile": "instances/Example-ImagingStudy.fsh",
-    "startLine": 2,
-    "endLine": 8
+    "startLine": 1,
+    "endLine": 7
   },
   {
     "outputFile": "MedicationAdministration-mii-exa-bildgebung-gabe-radiopharmakon.json",
     "fshName": "mii-exa-bildgebung-gabe-radiopharmakon",
     "fshType": "Instance",
     "fshFile": "instances/Example-RadiopharmaceuticalAdministration.fsh",
-    "startLine": 2,
-    "endLine": 11
+    "startLine": 1,
+    "endLine": 10
   },
   {
-    "outputFile": "Observation-mii-exa-bildgebung-observation.json",
-    "fshName": "mii-exa-bildgebung-observation",
+    "outputFile": "Observation-mii-exa-bildgebung-radiologische-beobachtung.json",
+    "fshName": "mii-exa-bildgebung-radiologische-beobachtung",
     "fshType": "Instance",
     "fshFile": "instances/Example-Observation.fsh",
-    "startLine": 2,
-    "endLine": 8
+    "startLine": 1,
+    "endLine": 7
   },
   {
     "outputFile": "Procedure-mii-exa-bildgebung-bildgebungsprozedur.json",
     "fshName": "mii-exa-bildgebung-bildgebungsprozedur",
     "fshType": "Instance",
     "fshFile": "instances/Example-ImagingProcedure.fsh",
-    "startLine": 2,
-    "endLine": 9
+    "startLine": 1,
+    "endLine": 8
   },
   {
     "outputFile": "Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.json",
     "fshName": "mii-exa-bildgebung-radiologische-befundungsprozedur",
     "fshType": "Instance",
     "fshFile": "instances/Example-ReadProcedure.fsh",
-    "startLine": 2,
-    "endLine": 9
+    "startLine": 1,
+    "endLine": 8
   },
   {
     "outputFile": "Procedure-mii-exa-bildgebung-tnm-radiologische-befundungsprozedur.json",
     "fshName": "mii-exa-bildgebung-tnm-radiologische-befundungsprozedur",
     "fshType": "Instance",
     "fshFile": "instances/Example-TNMRadiologicalReadProcedure.fsh",
-    "startLine": 2,
-    "endLine": 10
+    "startLine": 1,
+    "endLine": 9
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-dosage-dosequantity.json",
@@ -236,8 +236,8 @@
     "fshName": "mii-exa-bildgebung-anforderung-bildgebung",
     "fshType": "Instance",
     "fshFile": "instances/Example-ServiceRequest.fsh",
-    "startLine": 2,
-    "endLine": 9
+    "startLine": 1,
+    "endLine": 8
   },
   {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-SOPInstanz.json",

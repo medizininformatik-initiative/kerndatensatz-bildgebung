@@ -17,7 +17,7 @@
 [mii-exa-bildgebung-gabe-radiopharmakon]: MedicationAdministration-mii-exa-bildgebung-gabe-radiopharmakon.html
 [mii-exa-bildgebung-bildgebungsprozedur]: Procedure-mii-exa-bildgebung-bildgebungsprozedur.html
 [mii-exa-bildgebung-bildgebungsstudie]: ImagingStudy-mii-exa-bildgebung-bildgebungsstudie.html
-[mii-exa-bildgebung-observation]: Observation-mii-exa-bildgebung-observation.html
+[mii-exa-bildgebung-radiologische-beobachtung]: Observation-mii-exa-bildgebung-radiologische-beobachtung.html
 [mii-exa-bildgebung-radiologische-befundungsprozedur]: Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.html
 [mii-exa-bildgebung-anforderung-bildgebung]: ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.html
 [MII_LM_Bildgebung]: StructureDefinition-mii-lm-bildgebung.html

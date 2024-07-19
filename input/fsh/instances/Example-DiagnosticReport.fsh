@@ -1,4 +1,3 @@
-//Example of a Radiological Diagnostic Report
 Instance: mii-exa-bildgebung-radiologischer-Befund
 InstanceOf: MII_PR_Bildgebung_Radiologischer_Befund
 Usage: #example

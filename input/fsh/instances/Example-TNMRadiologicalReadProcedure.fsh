@@ -1,4 +1,3 @@
-//TNM Example
 Instance: mii-exa-bildgebung-tnm-radiologische-befundungsprozedur
 InstanceOf: MII_PR_Bildgebung_Radiologische_Befundungsprozedur
 Usage: #example

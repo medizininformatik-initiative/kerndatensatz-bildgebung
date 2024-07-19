@@ -122,6 +122,6 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 Beispiel einer DiagnosticReport-Ressource mit Angaben zum Applikationsweg und der Dosierung
 
-{{json:fsh-generated/resources/mii-exa-bildgebung-bildgebungsstudie.json}}
+{{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie.json}}
 
 ---
