@@ -76,6 +76,10 @@
     {
       "identity": "FHIR",
       "name": "Bildgebung LogicalModel FHIR Mapping"
+    },
+    {
+      "identity": "KDS-Profile",
+      "name": "Bildgebung LogicalModel KDS-Profile Mapping"
     }
   ],
   "kind": "logical",
@@ -107,6 +111,10 @@
           {
             "identity": "FHIR",
             "map": "BodyStructure"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
           }
         ]
       },
@@ -205,6 +213,10 @@
           {
             "identity": "FHIR",
             "map": "CarePlan"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
           }
         ]
       },
@@ -325,6 +337,10 @@
           {
             "identity": "FHIR",
             "map": "Composition"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"
           }
         ]
       },
@@ -339,6 +355,12 @@
           {
             "code": "Coding"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.status"
+          }
         ]
       },
       {
@@ -351,6 +373,12 @@
         "type": [
           {
             "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.type"
           }
         ]
       },
@@ -367,6 +395,12 @@
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Composition.subject"
           }
         ]
       },
@@ -579,6 +613,10 @@
           {
             "identity": "FHIR",
             "map": "DiagnosticReport"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
           }
         ]
       },
@@ -634,6 +672,12 @@
           {
             "code": "CodeableConcept"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.category"
+          }
         ]
       },
       {
@@ -646,6 +690,12 @@
         "type": [
           {
             "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "DiagnosticReport.code"
           }
         ]
       },
@@ -885,6 +935,16 @@
           {
             "code": "BackboneElement"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur"
+          }
         ]
       },
       {
@@ -901,6 +961,12 @@
               "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.basedOn"
+          }
         ]
       },
       {
@@ -913,6 +979,12 @@
         "type": [
           {
             "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.status"
           }
         ]
       },
@@ -927,6 +999,12 @@
           {
             "code": "CodeableConcept"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.category"
+          }
         ]
       },
       {
@@ -939,6 +1017,12 @@
         "type": [
           {
             "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.code"
           }
         ]
       },
@@ -955,6 +1039,12 @@
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.subject"
           }
         ]
       },
@@ -974,6 +1064,10 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
           }
         ]
       },
@@ -2430,6 +2524,10 @@
           {
             "identity": "FHIR",
             "map": "Observation"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
           }
         ]
       },
@@ -2530,7 +2628,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "Observation.status"
+            "map": "Observation.staus"
           }
         ]
       },
@@ -2544,6 +2642,12 @@
         "type": [
           {
             "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.category"
           }
         ]
       },
@@ -2579,6 +2683,12 @@
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.subject"
           }
         ]
       },
@@ -2713,6 +2823,16 @@
           {
             "code": "BackboneElement"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "MedicationAdministration"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon"
+          }
         ]
       },
       {
@@ -2726,6 +2846,12 @@
           {
             "code": "Coding"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "MedicationAdministration.status"
+          }
         ]
       },
       {
@@ -2738,6 +2864,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "MedicationAdministration.medication[x]"
           }
         ]
       },
@@ -2755,6 +2887,12 @@
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "MedicationAdministration.subject"
+          }
         ]
       },
       {
@@ -2767,6 +2905,12 @@
         "type": [
           {
             "code": "Period"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "MedicationAdministration.effective[x]"
           }
         ]
       },
@@ -2781,6 +2925,12 @@
           {
             "code": "BackboneElement"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "MedicationAdministration.dosage"
+          }
         ]
       },
       {
@@ -2793,6 +2943,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "MedicatinAdministration.dosage.dose"
           }
         ]
       },
@@ -2807,6 +2963,16 @@
           {
             "code": "BackboneElement"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
+          }
         ]
       },
       {
@@ -2820,6 +2986,12 @@
           {
             "code": "Coding"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.status"
+          }
         ]
       },
       {
@@ -2832,6 +3004,12 @@
         "type": [
           {
             "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.category"
           }
         ]
       },
@@ -2849,6 +3027,12 @@
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.subject"
+          }
         ]
       },
       {
@@ -2862,31 +3046,11 @@
           {
             "code": "BackboneElement"
           }
-        ]
-      },
-      {
-        "id": "Bildgebung.Befundungsprozedur.Befundungszeit.Zeitpunkt",
-        "path": "Bildgebung.Befundungsprozedur.Befundungszeit.Zeitpunkt",
-        "short": "Zeitpunkt",
-        "definition": "Zeitpunkt der Befundungsprozedur",
-        "min": 0,
-        "max": "1",
-        "type": [
+        ],
+        "mapping": [
           {
-            "code": "dateTime"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Befundungsprozedur.Befundungszeit.Zeitspanne",
-        "path": "Bildgebung.Befundungsprozedur.Befundungszeit.Zeitspanne",
-        "short": "Zeitspanne",
-        "definition": "Zeitspanne der Befundungsprozedur",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Period"
+            "identity": "FHIR",
+            "map": "Procedure.peformed[x]"
           }
         ]
       },
@@ -2906,6 +3070,12 @@
               "http://hl7.org/fhir/StructureDefinition/DocumentReference"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.report"
+          }
         ]
       },
       {
@@ -2924,6 +3094,10 @@
           {
             "identity": "FHIR",
             "map": "ServiceRequest"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
           }
         ]
       },
@@ -2938,6 +3112,12 @@
           {
             "code": "Coding"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.status"
+          }
         ]
       },
       {
@@ -2951,6 +3131,12 @@
           {
             "code": "Coding"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.intent"
+          }
         ]
       },
       {
@@ -2963,6 +3149,12 @@
         "type": [
           {
             "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.category"
           }
         ]
       },
@@ -2986,10 +3178,10 @@
         ]
       },
       {
-        "id": "Bildgebung.Anforderung.Patientenbezug",
-        "path": "Bildgebung.Anforderung.Patientenbezug",
-        "short": "Patientenbezug",
-        "definition": "Bezug zu dem Patienten, für den die Anfoderung besteht. Hier soll auf das MII Basisprofil Person referenziert werden.",
+        "id": "Bildgebung.Anforderung.Person",
+        "path": "Bildgebung.Anforderung.Person",
+        "short": "Person",
+        "definition": "Bezug zur Person, für den die Anfoderung besteht. Hier soll auf das MII Basisprofil Person referenziert werden.",
         "min": 1,
         "max": "1",
         "type": [
@@ -3021,6 +3213,12 @@
               "http://hl7.org/fhir/StructureDefinition/Encounter"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.encounter"
+          }
         ]
       },
       {
@@ -3033,6 +3231,12 @@
         "type": [
           {
             "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.authoredOn"
           }
         ]
       },
@@ -3050,6 +3254,12 @@
               "http://hl7.org/fhir/StructureDefinition/Practitioner"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.requester"
+          }
         ]
       },
       {
@@ -3062,6 +3272,12 @@
         "type": [
           {
             "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.reasonCode"
           }
         ]
       },
@@ -3078,6 +3294,12 @@
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Condition"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ServiceRequest.reasonReference"
           }
         ]
       },
