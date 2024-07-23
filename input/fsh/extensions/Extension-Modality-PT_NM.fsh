@@ -23,7 +23,7 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[radiopharmaceutical].value[x]
 * extension[radiopharmaceuticalStartTime].value[x]
 * extension[rescaleType].value[x] only CodeableConcept
-* extension[rescaleType].valueCodeableConcept from $dicom-c11 (extensible) //TODO Evtl als ALIAS?
+* extension[rescaleType].valueCodeableConcept from $dicom-c11 (extensible)
 * extension[radionuclideTotalDose].value[x] only SimpleQuantity
 * extension[radionuclideTotalDose].valueQuantity.unit = "Megabecquerel" 
 * extension[radionuclideTotalDose].valueQuantity.system = "http://unitsofmeasure.org"

@@ -42,28 +42,6 @@ Usage: #definition
 * modifier[+] = #not-in
 
 //CarePlan
-Instance: mii-sp-bildgebung-care-plan-intent
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-care-plan-intent"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Care_Plan_Intent"
-* status = #active
-* experimental = false
-* date = "2024-07-19"
-* description = "Suchparameter für CarePlan.intent"
-* code = #intent
-* base = #CarePlan
-* type = #token
-* expression = "CarePlan.intent"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
-
 Instance: mii-sp-bildgebung-care-plan-description
 InstanceOf: SearchParameter
 Usage: #definition
@@ -101,14 +79,8 @@ Usage: #definition
 * description = "Suchparameter für Composition.section.title"
 * code = #section.title
 * base = #Composition
-* type = #token
+* type = #string
 * expression = "Composition.section.title"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
 
 Instance: mii-sp-bildgebung-composition-section-author
 InstanceOf: SearchParameter
@@ -140,19 +112,12 @@ Usage: #definition
 * description = "Suchparameter für Composition.section.text"
 * code = #section.text
 * base = #Composition
-* type = #token
+* type = #text
 * expression = "Composition.section.text"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
 
 //DiagnosticReport
 //effDateTime
 //effPeriod
-//TODO: presentedForm
 Instance: mii-sp-bildgebung-diagnostic-report-imaging-study
 InstanceOf: SearchParameter
 Usage: #definition
@@ -170,27 +135,21 @@ Usage: #definition
 * expression = "DiagnosticReport.imagingStudy"
 * target = #ImagingStudy
 
-Instance: mii-sp-bildgebung-diagnostic-report-conclusion-code
+Instance: mii-sp-bildgebung-diagnostic-report-conclusion
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion-code"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Diagnostic_Report_Conclusion_Code"
+* name = "MII_SP_Bildgebung_Diagnostic_Report_Conclusion"
 * status = #active
 * experimental = false
 * date = "2024-07-19"
-* description = "Suchparameter für DiagnosticReport.conclusionCode"
-* code = #conclusionCode
+* description = "Suchparameter für DiagnosticReport.conclusion"
+* code = #conclusion
 * base = #DiagnosticReport
-* type = #token
-* expression = "DiagnosticReport.conclusionCode"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
+* type = #string
+* expression = "DiagnosticReport.conclusion"
 
 //ImagingProcedure
 

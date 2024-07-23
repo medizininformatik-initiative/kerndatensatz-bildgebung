@@ -336,14 +336,6 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-care-plan-intent"
-        },
-        "name": "mii-sp-bildgebung-care-plan-intent",
-        "description": "Suchparameter für CarePlan.intent",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-composition-section-author"
         },
         "name": "mii-sp-bildgebung-composition-section-author",
@@ -368,10 +360,10 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion-code"
+          "reference": "SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion"
         },
-        "name": "mii-sp-bildgebung-diagnostic-report-conclusion-code",
-        "description": "Suchparameter für DiagnosticReport.conclusionCode",
+        "name": "mii-sp-bildgebung-diagnostic-report-conclusion",
+        "description": "Suchparameter für DiagnosticReport.conclusion",
         "exampleBoolean": false
       },
       {

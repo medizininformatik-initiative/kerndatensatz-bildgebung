@@ -35,11 +35,10 @@
 [MII_VS_Bildgebung_ServiceRequest_Coding]: ValueSet-mii-vs-bildgebung-serviceRequest-coding.html
 [MII_VS_Bildgebung_ServiceRequest_Reason]: ValueSet-mii-vs-bildgebung-serviceRequest-reason.html
 [mii-sp-bildgebung-care-plan-description]: SearchParameter-mii-sp-bildgebung-care-plan-description.html
-[mii-sp-bildgebung-care-plan-intent]: SearchParameter-mii-sp-bildgebung-care-plan-intent.html
 [mii-sp-bildgebung-composition-section-author]: SearchParameter-mii-sp-bildgebung-composition-section-author.html
 [mii-sp-bildgebung-composition-section-text]: SearchParameter-mii-sp-bildgebung-composition-section-text.html
 [mii-sp-bildgebung-composition-section-title]: SearchParameter-mii-sp-bildgebung-composition-section-title.html
-[mii-sp-bildgebung-diagnostic-report-conclusion-code]: SearchParameter-mii-sp-bildgebung-diagnostic-report-conclusion-code.html
+[mii-sp-bildgebung-diagnostic-report-conclusion]: SearchParameter-mii-sp-bildgebung-diagnostic-report-conclusion.html
 [mii-sp-bildgebung-diagnostic-report-imaging-study]: SearchParameter-mii-sp-bildgebung-diagnostic-report-imaging-study.html
 [mii-sp-bildgebung-koerperstruktur-location-qualfier]: SearchParameter-mii-sp-bildgebung-koerperstruktur-location-qualfier.html
 [mii-sp-bildgebung-observation-body-structure]: SearchParameter-mii-sp-bildgebung-observation-body-structure.html
