@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "capabilitystatements/CapabilityStatement-1x.fsh",
     "startLine": 33,
-    "endLine": 127
+    "endLine": 143
   },
   {
     "outputFile": "CarePlan-mii-exa-bildgebung-behandlungsempfehlung.json",
@@ -124,16 +124,16 @@
     "fshName": "mii-sp-bildgebung-diagnostic-report-conclusion",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 138,
-    "endLine": 152
+    "startLine": 136,
+    "endLine": 150
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-diagnostic-report-imaging-study.json",
     "fshName": "mii-sp-bildgebung-diagnostic-report-imaging-study",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 121,
-    "endLine": 136
+    "startLine": 119,
+    "endLine": 134
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-koerperstruktur-location-qualfier.json",
@@ -148,8 +148,8 @@
     "fshName": "mii-sp-bildgebung-observation-body-structure",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 185,
-    "endLine": 200
+    "startLine": 181,
+    "endLine": 196
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-supporting-info.json",

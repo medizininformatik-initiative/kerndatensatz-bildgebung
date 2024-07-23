@@ -311,8 +311,8 @@
               ]
             },
             {
-              "name": "subject",
-              "definition": "http://hl7.org/fhir/SearchParameter/CarePlan-subject",
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
               "type": "reference",
               "extension": [
                 {
@@ -442,7 +442,7 @@
             },
             {
               "name": "type",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-type",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-type",
               "type": "token",
               "extension": [
                 {
@@ -463,8 +463,8 @@
               ]
             },
             {
-              "name": "subject",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-subject",
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
               "type": "reference",
               "extension": [
                 {
@@ -475,7 +475,7 @@
             },
             {
               "name": "date",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-date",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-date",
               "type": "date",
               "extension": [
                 {
@@ -519,8 +519,8 @@
             },
             {
               "name": "section.code",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-section-code",
-              "type": "string",
+              "definition": "http://hl7.org/fhir/SearchParameter/Composition-section",
+              "type": "token",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -659,8 +659,30 @@
               ]
             },
             {
+              "name": "supportingInfo",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-supporting-info",
+              "type": "reference",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "based-on",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-based-on",
+              "type": "reference",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
               "name": "status",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-status",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-status",
               "type": "token",
               "extension": [
                 {
@@ -670,8 +692,8 @@
               ]
             },
             {
-              "name": "type",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-type",
+              "name": "category",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-category",
               "type": "token",
               "extension": [
                 {
@@ -681,8 +703,8 @@
               ]
             },
             {
-              "name": "description",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-care-plan-description",
+              "name": "code",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
               "type": "token",
               "extension": [
                 {
@@ -692,8 +714,8 @@
               ]
             },
             {
-              "name": "subject",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-subject",
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
               "type": "reference",
               "extension": [
                 {
@@ -704,7 +726,7 @@
             },
             {
               "name": "date",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-date",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-date",
               "type": "date",
               "extension": [
                 {
@@ -714,8 +736,19 @@
               ]
             },
             {
-              "name": "author",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-author",
+              "name": "issued",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-issued",
+              "type": "date",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "result",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-result",
               "type": "reference",
               "extension": [
                 {
@@ -725,41 +758,8 @@
               ]
             },
             {
-              "name": "title",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-title",
-              "type": "string",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "section.title",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-title",
-              "type": "string",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "section.code",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-section-code",
-              "type": "string",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "section.author",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-author",
+              "name": "imagingStudy",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-imaging-study",
               "type": "reference",
               "extension": [
                 {
@@ -769,9 +769,9 @@
               ]
             },
             {
-              "name": "section.text",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-text",
-              "type": "text",
+              "name": "conclusion-text",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion",
+              "type": "string",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -780,8 +780,160 @@
               ]
             },
             {
-              "name": "section.entry",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-section-entry",
+              "name": "conclusion",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-conclusion",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Procedure",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "profile": "http://hl7.org/fhir/StructureDefinition/Procedure",
+          "_profile": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode": "SHALL"
+              }
+            ]
+          },
+          "supportedProfile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur|1.0.0"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/Resource-id",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+              "type": "date",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "_profile",
+              "definition": "http://hl7.org/fhir/SearchParameter/Resource-profile",
+              "type": "uri",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "_source",
+              "definition": "http://hl7.org/fhir/SearchParameter/Resource-source",
+              "type": "uri",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "based-on",
+              "definition": "http://hl7.org/fhir/SearchParameter/Procedure-based-on",
+              "type": "reference",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/Procedure-status",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "category",
+              "definition": "http://hl7.org/fhir/SearchParameter/Procedure-category",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "code",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
               "type": "reference",
               "extension": [
                 {

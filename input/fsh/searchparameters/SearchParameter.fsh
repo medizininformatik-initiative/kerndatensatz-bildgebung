@@ -116,8 +116,6 @@ Usage: #definition
 * expression = "Composition.section.text"
 
 //DiagnosticReport
-//effDateTime
-//effPeriod
 Instance: mii-sp-bildgebung-diagnostic-report-imaging-study
 InstanceOf: SearchParameter
 Usage: #definition
@@ -146,12 +144,10 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-19"
 * description = "Suchparameter für DiagnosticReport.conclusion"
-* code = #conclusion
+* code = #conclusion-text
 * base = #DiagnosticReport
 * type = #string
 * expression = "DiagnosticReport.conclusion"
-
-//ImagingProcedure
 
 //ImagingStudy
 //bildgebungsgrund

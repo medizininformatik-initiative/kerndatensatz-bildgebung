@@ -115,7 +115,7 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata' for rest.resource.where(type='ImagingStudy').searchParam select Name: name, Definition: definition, Type: type, Expectation: extension.where(url='http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value.ofType(code)
 
-
+```
 ---
 
 **Beispiele**
