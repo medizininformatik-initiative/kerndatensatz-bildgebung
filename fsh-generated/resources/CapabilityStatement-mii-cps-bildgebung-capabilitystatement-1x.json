@@ -793,7 +793,7 @@
           ]
         },
         {
-          "type": "Procedure",
+          "type": "ImagingProcedure",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",

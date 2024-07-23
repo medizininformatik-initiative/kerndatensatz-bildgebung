@@ -127,7 +127,7 @@ Usage: #definition
 * insert SupportSearchParam(conclusion, http://hl7.org/fhir/SearchParameter/DiagnosticReport-conclusion, #token, #SHALL)
 
 //ImagingProcedure
-* insert SupportResource(Procedure, #SHALL)
+* insert SupportResource(ImagingProcedure, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/Procedure, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur|1.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
