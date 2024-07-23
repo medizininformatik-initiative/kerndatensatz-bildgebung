@@ -159,7 +159,7 @@
               ]
             },
             {
-              "name": "locationQualifier",
+              "name": "location-qualifier",
               "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-koerperstruktur-location-qualfier",
               "type": "token",
               "extension": [
