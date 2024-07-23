@@ -33,7 +33,7 @@ RuleSet: SupportSearchParam (name, canonical, type, expectation)
 Instance: mii-cps-bildgebung-capabilitystatement-1x
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/CapabilityStatement/metadata"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata"
 * insert Version
 * name = "MII_CPS_Bildgebung_CapabilityStatement_1x"
 * title = "MII CPS Bildgebung CapabilityStatement"
