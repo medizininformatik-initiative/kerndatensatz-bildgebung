@@ -1,386 +1,252 @@
-// TODO for all Profiles
-
-
-Instance: mii-sp-bildgebung-medication-ingredient-strength-numerator
+//All Profiles
+Instance: mii-sp-bildgebung-supporting-info
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Medication-IngredientStrengthNumerator"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-supporting-info"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Medication_Ingredient_Strength_Numerator"
+* name = "MII_SP_Bildgebung_SupportingInfo"
 * status = #active
 * experimental = false
-* date = "2022-06-28"
-* description = "Suchparameter für Medication.ingredient.strength.numerator"
-* code = #ingredient-strength-numerator
-* base = #Medication
-* type = #quantity
-* expression = "Medication.ingredient.strength.numerator"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le 
-
-Instance: mii-sp-bildgebung-medication-ingredient-strength-denominator
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Medication-IngredientStrengthDenominator"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Medication_Ingredient_Strength_Denominator"
-* status = #active
-* experimental = false
-* date = "2022-06-28"
-* description = "Suchparameter für Medication.ingredient.strength.denominator"
-* code = #ingredient-strength-denominator
-* base = #Medication
-* type = #quantity
-* expression = "Medication.ingredient.strength.denominator"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le 
-
-Instance: mii-sp-bildgebung-medication-ingredient-strength
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Medication-IngredientStrength"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Medication_Ingredient_Strength"
-* status = #active
-* experimental = false
-* date = "2022-09-22"
-* description = "Suchparameter für Medication.ingredient.strength"
-* code = #ingredient-strength
-* base = #Medication
-* type = #composite
-* expression = "Medication.ingredient.strength"
-
-Instance: mii-sp-bildgebung-medication-reasonreference
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Medication-ReasonReference"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Medication_ReasonReference"
-* status = #active
-* experimental = false
-* date = "2022-06-28"
-* description = "Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference"
-* code = #reason-reference
-* base[+] = #MedicationStatement
-* base[+] = #MedicationAdministration 
+* date = "2024-07-19"
+* description = "Suchparameter für SupportingInfo"
+* code = #supporting-info
+* base[+] = #CarePlan
+* base[+] = #DiagnosticReport
+* base[+] = #ServiceRequest
 * type = #reference
-* expression = "MedicationAdministration.reasonReference | MedicationStatement.reasonReference"
-* target[+] = #Condition
-* target[+] = #Observation
+* expression = "CarePlan.supportingInfo | DiagnosticReport.supportingInfo | ServiceRequest.supportingInfo"
 * target[+] = #DiagnosticReport
 
-Instance: mii-sp-bildgebung-dosage-site
+// BodyStructure
+Instance: mii-sp-bildgebung-koerperstruktur-location-qualfier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Dosage-Site"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-koerperstruktur-location-qualfier"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Dosage_Site"
+* name = "MII_SP_Bildgebung_Koerperstruktur_Location_Qualfier"
 * status = #active
 * experimental = false
-* date = "2024-06-28"
-* description = "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.site | MedicationRequest.dosageInstruction.site"
-* code = #dosage-site
-* base[0] = #MedicationStatement
-* base[+] = #MedicationAdministration
-* base[+] = #MedicationRequest
+* date = "2024-07-19"
+* description = "Suchparameter für Koerperstruktur.locationQualifier"
+* code = #location-qualfier
+* base = #BodyStructure
 * type = #token
-* expression = "MedicationAdministration.dosage.site | MedicationStatement.dosage.site | MedicationRequest.dosageInstruction.site"
+* expression = "BodyStructure.locationQualifier"
 * modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
-* modifier[+] = #below
-* modifier[+] = #above
 
-Instance: mii-sp-bildgebung-dosage-route
+//CarePlan
+Instance: mii-sp-bildgebung-care-plan-intent
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Dosage-Route"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-care-plan-intent"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Dosage_Route"
+* name = "MII_SP_Bildgebung_Care_Plan_Intent"
 * status = #active
 * experimental = false
-* date = "2024-06-28"
-* description = "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.route | MedicationRequest.dosageInstruction.route"
-* code = #dosage-route
-* base[0] = #MedicationStatement
-* base[+] = #MedicationAdministration
-* base[+] = #MedicationRequest
+* date = "2024-07-19"
+* description = "Suchparameter für CarePlan.intent"
+* code = #intent
+* base = #CarePlan
 * type = #token
-* expression = "MedicationAdministration.dosage.route | MedicationStatement.dosage.route | MedicationRequest.dosageInstruction.route"
+* expression = "CarePlan.intent"
 * modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
-* modifier[+] = #below
-* modifier[+] = #above
 
-Instance: mii-sp-bildgebung-dosage-doserange-low
+Instance: mii-sp-bildgebung-care-plan-description
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Dosage-DoseRangeLow"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-care-plan-description"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Dosage_DoseRangeLow"
+* name = "MII_SP_Bildgebung_Care_Plan_Description"
 * status = #active
 * experimental = false
-* date = "2024-06-28"
-* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low | MedicationRequest.dosageInstruction.doseAndRate.doseRange.low"
-* code = #doserange-low
-* base[0] = #MedicationStatement
-* base[+] = #MedicationRequest
-* type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.dose.ofType(Range).low | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Range).low"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le 
-
-Instance: mii-sp-bildgebung-dosage-doserange-high
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Dosage-DoseRangeHigh"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Dosage_DoseRangeHigh"
-* status = #active
-* experimental = false
-* date = "2024-06-28"
-* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.high | MedicationRequest.dosageInstruction.doseAndRate.doseRange.high"
-* code = #doserange-high
-* base[0] = #MedicationStatement
-* base[+] = #MedicationRequest
-* type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.dose.ofType(Range).high | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Range).high"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le 
-
-Instance: mii-sp-bildgebung-dosage-doserange
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Dosage-DoseRange"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Dosage_DoseRange"
-* status = #active
-* experimental = false
-* date = "2024-06-28"
-* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange | MedicationRequest.dosageInstruction.doseAndRate.doseRange"
-* code = #doserange
-* base[0] = #MedicationStatement
-* base[+] = #MedicationRequest
-* type = #composite
-* expression = "MedicationStatement.dosage.doseAndRate.dose.ofType(Range) | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Range)"
-* component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRangeLow"
-* component[=].expression = "low"
-* component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRangeHigh"
-* component[=].expression = "high"
-
-Instance: mii-sp-bildgebung-dosage-dosequantity
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Dosage-DoseQuantity"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Dosage_DoseQuantity"
-* status = #active
-* experimental = false
-* date = "2024-06-28"
-* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose"
-* code = #dose-quantity
-* base[0] = #MedicationStatement
-* base[+] = #MedicationRequest
-* base[+] = #MedicationAdministration
-* type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.dose.ofType(Quantity) | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Quantity) | MedicationAdministration.dosage.dose"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le 
-
-Instance: mii-sp-bildgebung-dosage-raterange-low
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Dosage-RateRangeLow"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Dosage_RateRangeLow"
-* status = #active
-* experimental = false
-* date = "2024-06-28"
-* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low"
-* code = #raterange-low
-* base[0] = #MedicationStatement
-* base[+] = #MedicationRequest
-* type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Range).low | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range).low"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le 
-
-Instance: mii-sp-bildgebung-dosage-raterange-high
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Dosage-RateRangeHigh"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Dosage_RateRangeHigh"
-* status = #active
-* experimental = false
-* date = "2024-06-28"
-* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.high | MedicationRequest.dosageInstruction.doseAndRate.rateRange.high"
-* code = #raterange-high
-* base[0] = #MedicationStatement
-* base[+] = #MedicationRequest
-* type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Range).high | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range).high"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le 
-
-Instance: mii-sp-bildgebung-dosage-raterange
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/MedicationStatement-RateRange"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Dosage_RateRange"
-* status = #active
-* experimental = false
-* date = "2024-06-28"
-* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange | MedicationRequest.dosageInstruction.doseAndRate.rateRange"
-* code = #raterange
-* base[0] = #MedicationStatement
-* base[+] = #MedicationRequest
-* type = #composite
-* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Range) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range)"
-* component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRangeLow"
-* component[=].expression = "low"
-* component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRangeHigh"
-* component[=].expression = "high"
-
-Instance: mii-sp-bildgebung-dosage-ratequantity
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Dosage-RateQuantity"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Dosage_RateQuantity"
-* status = #active
-* experimental = false
-* date = "2024-06-28"
-* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateQuantity | MedicationAdministration.dosage.rateQuantity | MedicationRequest.dosageInstruction.doseAndRate.rateQuantity"
-* code = #ratequantity
-* base[0] = #MedicationStatement
-* base[+] = #MedicationAdministration
-* base[+] = #MedicationRequest
-* type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Quantity) | MedicationAdministration.dosage.rate.ofType(Quantity) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Quantity)"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le 
-
-Instance: mii-sp-bildgebung-list-mode
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/List-Mode"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_List_Mode"
-* status = #active
-* experimental = false
-* date = "2022-06-28"
-* description = "Suchparameter für List.mode"
-* code = #mode
-* base = #List 
+* date = "2024-07-19"
+* description = "Suchparameter für CarePlan.description"
+* code = #description
+* base = #CarePlan
 * type = #token
-* expression = "List.mode"
+* expression = "CarePlan.description"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
 
-Instance: mii-sp-bildgebung-dosage-rateratio-numerator
+//Composition
+//section.section
+Instance: mii-sp-bildgebung-composition-section-title
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Dosage-RateRatioNumerator"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-title"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Dosage_RateRatioNumerator"
+* name = "MII_SP_Bildgebung_Composition_Section_Title"
 * status = #active
 * experimental = false
-* date = "2024-06-27"
-* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator"
-* code = #rateratio-numerator
-* base[0] = #MedicationStatement
-* base[+] = #MedicationAdministration
-* base[+] = #MedicationRequest
-* type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio).numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le 
+* date = "2024-07-19"
+* description = "Suchparameter für Composition.section.title"
+* code = #section.title
+* base = #Composition
+* type = #token
+* expression = "Composition.section.title"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
 
-Instance: mii-sp-bildgebung-dosage-rateratio-denominator
+Instance: mii-sp-bildgebung-composition-section-author
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Dosage-RateRatioDenominator"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-author"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Dosage_RateRatioDenominator"
+* name = "MII_SP_Bildgebung_Composition_Section_Author"
 * status = #active
 * experimental = false
-* date = "2024-06-27"
-* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator"
-* code = #rateratio-denominator
-* base[0] = #MedicationStatement
-* base[+] = #MedicationAdministration
-* base[+] = #MedicationRequest
-* type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio).denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le 
+* date = "2024-07-19"
+* description = "Suchparameter für Composition.section.author"
+* code = #section.author
+* base = #Composition
+* type = #reference
+* expression = "Composition.section.author"
+* target = #Practitioner
 
-Instance: mii-sp-bildgebung-dosage-rateratio
+Instance: mii-sp-bildgebung-composition-section-text
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-bildgebung/SearchParameter/Dosage-RateRatio"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-text"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Dosage_RateRatio"
+* name = "MII_SP_Bildgebung_Composition_Section_Text"
 * status = #active
 * experimental = false
-* date = "2024-06-27"
-* description = "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)"
-* code = #rateratio
-* base[0] = #MedicationStatement
-* base[+] = #MedicationAdministration
-* base[+] = #MedicationRequest
-* type = #composite
-* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)"
-* component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioNumerator"
-* component[=].expression = "numerator"
-* component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioDenominator"
-* component[=].expression = "denominator"
+* date = "2024-07-19"
+* description = "Suchparameter für Composition.section.text"
+* code = #section.text
+* base = #Composition
+* type = #token
+* expression = "Composition.section.text"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
+//DiagnosticReport
+//effDateTime
+//effPeriod
+//TODO: presentedForm
+Instance: mii-sp-bildgebung-diagnostic-report-imaging-study
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-imaging-study"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Diagnostic_Report_Imaging_Study"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für DiagnosticReport.imagingStudy"
+* code = #imagingStudy
+* base = #DiagnosticReport
+* type = #reference
+* expression = "DiagnosticReport.imagingStudy"
+* target = #ImagingStudy
+
+Instance: mii-sp-bildgebung-diagnostic-report-conclusion-code
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion-code"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Diagnostic_Report_Conclusion_Code"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für DiagnosticReport.conclusionCode"
+* code = #conclusionCode
+* base = #DiagnosticReport
+* type = #token
+* expression = "DiagnosticReport.conclusionCode"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
+//ImagingProcedure
+
+//ImagingStudy
+//bildgebungsgrund
+//modality
+//numberOfSeries
+//numberOfInstances
+//ProcRef
+//reasRef
+//description
+//series.modalityCT
+//series.modalityMG_CR
+//series.modalityMR
+//series.modalityPT
+//series.kontrastmittel
+//series.gerät
+//series.number
+//series.description
+//series.numInstance
+//series.laterality
+//series.started
+//instance.imagingInstance
+//instance.number
+
+//Observation
+//bildnummer
+//SOPInstanz
+//issued
+//value[x]
+//bodySite
+//component
+Instance: mii-sp-bildgebung-observation-body-structure
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-structure"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Observation_Body_Structure"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für Observation.bodyStructure"
+* code = #bodyStructure
+* base = #Observation
+* type = #reference
+* expression = "Observation.bodyStructure"
+* target = #BodyStructure
+
+//RadiopharmaceuticalAdministration
+//dosage.dose
+
+//ReadProcedure
+//report
+
+//ServiceRequest
+//reasonCode
+//reasRef
+//supportingInfo
