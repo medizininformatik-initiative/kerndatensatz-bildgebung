@@ -1,0 +1,31 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-bildgebung-imaging-study-procedure-reference",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-procedure-reference",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Procedure_Reference",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-19",
+  "description": "Suchparameter für ImagingStudy.procedureReference",
+  "code": "procedure-reference",
+  "base": [
+    "ImagingStudy"
+  ],
+  "type": "reference",
+  "expression": "ImagingStudy.procedureReference",
+  "target": [
+    "Procedure"
+  ]
+}

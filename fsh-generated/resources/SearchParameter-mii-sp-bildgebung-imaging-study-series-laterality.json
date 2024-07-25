@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-bildgebung-diagnostic-report-conclusion",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion",
+  "id": "mii-sp-bildgebung-imaging-study-series-laterality",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-laterality",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -14,17 +14,17 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Bildgebung_Diagnostic_Report_Conclusion",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Series_Laterality",
   "status": "active",
   "experimental": false,
   "date": "2024-07-19",
-  "description": "Suchparameter für DiagnosticReport.conclusion",
-  "code": "conclusion-text",
+  "description": "Suchparameter für ImagingStudy.series.laterality",
+  "code": "laterality",
   "base": [
-    "DiagnosticReport"
+    "ImagingStudy.series"
   ],
-  "type": "string",
-  "expression": "DiagnosticReport.conclusion",
+  "type": "token",
+  "expression": "ImagingStudy.series.laterality",
   "modifier": [
     "text",
     "not",

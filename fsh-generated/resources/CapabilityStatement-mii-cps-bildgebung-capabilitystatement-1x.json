@@ -1072,7 +1072,7 @@
             },
             {
               "name": "bildgebungsgrund",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-bildgebungsgrund",
               "type": "string",
               "extension": [
                 {
@@ -1082,8 +1082,8 @@
               ]
             },
             {
-              "name": "modality",
-              "definition": "",
+              "name": "study-modality",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-modality",
               "type": "token",
               "extension": [
                 {
@@ -1094,7 +1094,7 @@
             },
             {
               "name": "patient",
-              "definition": "http://hl7.org/fhir/SearchParameter/ImagingStudy-modality",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
               "type": "reference",
               "extension": [
                 {
@@ -1149,7 +1149,7 @@
             },
             {
               "name": "number-series",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-number-series",
               "type": "number",
               "extension": [
                 {
@@ -1159,8 +1159,8 @@
               ]
             },
             {
-              "name": "number-instance",
-              "definition": "",
+              "name": "number-instances",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-number-instances",
               "type": "number",
               "extension": [
                 {
@@ -1171,7 +1171,7 @@
             },
             {
               "name": "procedure-reference",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-procedure-reference",
               "type": "reference",
               "extension": [
                 {
@@ -1446,7 +1446,7 @@
             },
             {
               "name": "series-number",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-number",
               "type": "number",
               "extension": [
                 {
@@ -1478,8 +1478,8 @@
               ]
             },
             {
-              "name": "series-number-instance",
-              "definition": "",
+              "name": "number-instances",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-number-instances",
               "type": "number",
               "extension": [
                 {
@@ -1501,7 +1501,7 @@
             },
             {
               "name": "series-laterality",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-laterality",
               "type": "token",
               "extension": [
                 {
@@ -1512,7 +1512,7 @@
             },
             {
               "name": "series-started",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-started",
               "type": "date",
               "extension": [
                 {
@@ -1589,7 +1589,7 @@
             },
             {
               "name": "instance-number",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-number",
               "type": "number",
               "extension": [
                 {

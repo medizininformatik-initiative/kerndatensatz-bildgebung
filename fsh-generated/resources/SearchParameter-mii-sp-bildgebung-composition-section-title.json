@@ -24,5 +24,13 @@
     "Composition"
   ],
   "type": "string",
-  "expression": "Composition.section.title"
+  "expression": "Composition.section.title",
+  "modifier": [
+    "text",
+    "not",
+    "above",
+    "below",
+    "in",
+    "not-in"
+  ]
 }

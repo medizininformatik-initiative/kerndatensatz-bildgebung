@@ -1,4 +1,4 @@
-//All Profiles
+//More Profiles
 Instance: mii-sp-bildgebung-supporting-info
 InstanceOf: SearchParameter
 Usage: #definition
@@ -38,30 +38,6 @@ Usage: #definition
 * target[+] = #DiagnosticReport
 * target[+] = #DocumentReference
 
-// BodyStructure
-Instance: mii-sp-bildgebung-koerperstruktur-location-qualfier
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-koerperstruktur-location-qualfier"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Koerperstruktur_Location_Qualfier"
-* status = #active
-* experimental = false
-* date = "2024-07-19"
-* description = "Suchparameter für Koerperstruktur.locationQualifier"
-* code = #location-qualfier
-* base = #BodyStructure
-* type = #token
-* expression = "BodyStructure.locationQualifier"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
-
-//CarePlan
 Instance: mii-sp-bildgebung-description
 InstanceOf: SearchParameter
 Usage: #definition
@@ -86,6 +62,29 @@ Usage: #definition
 * modifier[+] = #in
 * modifier[+] = #not-in
 
+// BodyStructure
+Instance: mii-sp-bildgebung-koerperstruktur-location-qualfier
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-koerperstruktur-location-qualfier"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Koerperstruktur_Location_Qualfier"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für Koerperstruktur.locationQualifier"
+* code = #location-qualfier
+* base = #BodyStructure
+* type = #token
+* expression = "BodyStructure.locationQualifier"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
 //Composition
 Instance: mii-sp-bildgebung-composition-section-title
 InstanceOf: SearchParameter
@@ -102,6 +101,12 @@ Usage: #definition
 * base = #Composition
 * type = #string
 * expression = "Composition.section.title"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
 
 Instance: mii-sp-bildgebung-composition-section-author
 InstanceOf: SearchParameter
@@ -187,27 +192,36 @@ Usage: #definition
 * base = #DiagnosticReport
 * type = #string
 * expression = "DiagnosticReport.conclusion"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
 
 //ImagingStudy
-//bildgebungsgrund
-//modality
-//numberOfSeries
-//numberOfInstances
-//ProcRef
-//description
-//series.modalityCT
-//series.modalityMG_CR
-//series.modalityMR
-//series.modalityPT
-//series.kontrastmittel
-//series.gerät
-//series.number
-//series.description
-//series.numInstance
-//series.laterality
-//series.started
-//instance.imagingInstance
-//instance.number
+Instance: mii-sp-bildgebung-imaging-study-bildgebungsgrund
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-bildgebungsgrund"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.Extension.Bildgebungsgrund"
+* code = #bildgebungsgrund
+* base = #ImagingStudy
+* type = #string
+* expression = "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
 Instance: mii-sp-bildgebung-imaging-study-modality
 InstanceOf: SearchParameter
 Usage: #definition
@@ -229,6 +243,146 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
+
+Instance: mii-sp-bildgebung-imaging-study-number-series
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-number-series"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Number_Series"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.numberOfSeries"
+* code = #number-series
+* base = #ImagingStudy
+* type = #number
+* expression = "ImagingStudy.numberOfSeries"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
+Instance: mii-sp-bildgebung-imaging-study-number-instances
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-number-instances"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Number_Instances"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.numberOfSeries"
+* code = #number-instances
+* base[+] = #ImagingStudy
+* base[+] = #ImagingStudy.series
+* type = #number
+* expression = "ImagingStudy.numberOfInstances | ImagingStudy.series.numberOfInstances"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
+Instance: mii-sp-bildgebung-imaging-study-procedure-reference
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-procedure-reference"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Procedure_Reference"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.procedureReference"
+* code = #procedure-reference
+* base = #ImagingStudy
+* type = #reference
+* expression = "ImagingStudy.procedureReference"
+* target = #Procedure
+
+Instance: mii-sp-bildgebung-imaging-study-series-number
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-number"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Number"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.number"
+* code = #series-number
+* base = #ImagingStudy.series
+* type = #number
+* expression = "ImagingStudy.series.number"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
+Instance: mii-sp-bildgebung-imaging-study-series-laterality
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-laterality"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Laterality"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.laterality"
+* code = #laterality
+* base = #ImagingStudy.series
+* type = #token
+* expression = "ImagingStudy.series.laterality"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
+Instance: mii-sp-bildgebung-imaging-study-series-started
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-started"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Started"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.started"
+* code = #started
+* base = #ImagingStudy.series
+* type = #date
+* expression = "ImagingStudy.series.started"
+
+Instance: mii-sp-bildgebung-imaging-study-instance-number
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-number"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Instance_Number"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.instance.number"
+* code = #instance-number
+* base = #ImagingStudy.series.instance
+* type = #number
+* expression = "ImagingStudy.series.instance.number"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
 
 //Observation
 Instance: mii-sp-bildgebung-observation-bildnummer

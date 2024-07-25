@@ -384,10 +384,74 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-bildgebungsgrund"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-bildgebungsgrund",
+        "description": "Suchparameter für ImagingStudy.Extension.Bildgebungsgrund",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-instance-number"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-instance-number",
+        "description": "Suchparameter für ImagingStudy.series.instance.number",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-modality"
         },
         "name": "mii-sp-bildgebung-imaging-study-modality",
         "description": "Suchparameter für ImagingStudy.modality",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-number-instances"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-number-instances",
+        "description": "Suchparameter für ImagingStudy.numberOfSeries",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-number-series"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-number-series",
+        "description": "Suchparameter für ImagingStudy.numberOfSeries",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-procedure-reference"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-procedure-reference",
+        "description": "Suchparameter für ImagingStudy.procedureReference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-laterality"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-laterality",
+        "description": "Suchparameter für ImagingStudy.series.laterality",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-number"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-number",
+        "description": "Suchparameter für ImagingStudy.series.number",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-started"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-started",
+        "description": "Suchparameter für ImagingStudy.series.started",
         "exampleBoolean": false
       },
       {
