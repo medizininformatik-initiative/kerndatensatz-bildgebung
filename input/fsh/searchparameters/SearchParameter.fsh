@@ -14,7 +14,7 @@ Usage: #definition
 * base[+] = #CarePlan
 * base[+] = #ServiceRequest
 * type = #reference
-* expression = "CarePlan.supportingInfo | ServiceRequest.supportingInfo"
+* expression = "CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').value"
 * target[+] = #DiagnosticReport
 
 Instance: mii-sp-bildgebung-reason-reference
@@ -142,7 +142,7 @@ Usage: #definition
 * expression = "Composition.section.text"
 
 //DiagnosticReport
-Instance: mii-sp-bildgebung-diagnostic-report-supporting-info
+/*Instance: mii-sp-bildgebung-diagnostic-report-supporting-info
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-supporting-info"
@@ -158,7 +158,7 @@ Usage: #definition
 * type = #reference
 * expression = "DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').value"
 * target[+] = #DiagnosticReport
-* target[+] = #Procedure
+* target[+] = #Procedure*/
 
 Instance: mii-sp-bildgebung-diagnostic-report-imaging-study
 InstanceOf: SearchParameter
@@ -362,6 +362,50 @@ Usage: #definition
 * base = #ImagingStudy.series
 * type = #date
 * expression = "ImagingStudy.series.started"
+
+Instance: mii-sp-bildgebung-imaging-study-instance-pixel-x
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-x"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_X"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(X)"
+* code = #instance-pixel-spacing-x
+* base = #ImagingStudy.series.instance
+* type = #string
+* expression = "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension(pixelSpacing(x)).value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
+Instance: mii-sp-bildgebung-imaging-study-instance-pixel-y
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-y"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_Y"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(Y)"
+* code = #instance-pixel-spacing-y
+* base = #ImagingStudy.series.instance
+* type = #string
+* expression = "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension(pixelSpacing(y)).value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
 
 Instance: mii-sp-bildgebung-imaging-study-instance-number
 InstanceOf: SearchParameter

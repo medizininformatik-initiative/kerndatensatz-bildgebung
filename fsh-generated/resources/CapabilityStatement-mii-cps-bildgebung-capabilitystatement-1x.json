@@ -1523,7 +1523,7 @@
             },
             {
               "name": "instance-pixel-spacing-x",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-x",
               "type": "string",
               "extension": [
                 {
@@ -1534,7 +1534,7 @@
             },
             {
               "name": "instance-pixel-spacing-y",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-y",
               "type": "string",
               "extension": [
                 {

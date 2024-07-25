@@ -1,0 +1,36 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-bildgebung-imaging-study-instance-pixel-x",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-x",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_X",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-19",
+  "description": "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(X)",
+  "code": "instance-pixel-spacing-x",
+  "base": [
+    "ImagingStudy.series.instance"
+  ],
+  "type": "string",
+  "expression": "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension(pixelSpacing(x)).value",
+  "modifier": [
+    "text",
+    "not",
+    "above",
+    "below",
+    "in",
+    "not-in"
+  ]
+}

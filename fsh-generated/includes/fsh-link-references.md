@@ -40,9 +40,10 @@
 [mii-sp-bildgebung-description]: SearchParameter-mii-sp-bildgebung-description.html
 [mii-sp-bildgebung-diagnostic-report-conclusion]: SearchParameter-mii-sp-bildgebung-diagnostic-report-conclusion.html
 [mii-sp-bildgebung-diagnostic-report-imaging-study]: SearchParameter-mii-sp-bildgebung-diagnostic-report-imaging-study.html
-[mii-sp-bildgebung-diagnostic-report-supporting-info]: SearchParameter-mii-sp-bildgebung-diagnostic-report-supporting-info.html
 [mii-sp-bildgebung-imaging-study-bildgebungsgrund]: SearchParameter-mii-sp-bildgebung-imaging-study-bildgebungsgrund.html
 [mii-sp-bildgebung-imaging-study-instance-number]: SearchParameter-mii-sp-bildgebung-imaging-study-instance-number.html
+[mii-sp-bildgebung-imaging-study-instance-pixel-x]: SearchParameter-mii-sp-bildgebung-imaging-study-instance-pixel-x.html
+[mii-sp-bildgebung-imaging-study-instance-pixel-y]: SearchParameter-mii-sp-bildgebung-imaging-study-instance-pixel-y.html
 [mii-sp-bildgebung-imaging-study-modality]: SearchParameter-mii-sp-bildgebung-imaging-study-modality.html
 [mii-sp-bildgebung-imaging-study-number-instances]: SearchParameter-mii-sp-bildgebung-imaging-study-number-instances.html
 [mii-sp-bildgebung-imaging-study-number-series]: SearchParameter-mii-sp-bildgebung-imaging-study-number-series.html

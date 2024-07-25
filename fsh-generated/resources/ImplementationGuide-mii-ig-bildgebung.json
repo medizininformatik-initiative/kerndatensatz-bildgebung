@@ -376,14 +376,6 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-diagnostic-report-supporting-info"
-        },
-        "name": "mii-sp-bildgebung-diagnostic-report-supporting-info",
-        "description": "Suchparameter für Extension DiagnosticReport.SupportingInfo",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-bildgebungsgrund"
         },
         "name": "mii-sp-bildgebung-imaging-study-bildgebungsgrund",
@@ -396,6 +388,22 @@
         },
         "name": "mii-sp-bildgebung-imaging-study-instance-number",
         "description": "Suchparameter für ImagingStudy.series.instance.number",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-x"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-instance-pixel-x",
+        "description": "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(X)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-y"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-instance-pixel-y",
+        "description": "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(Y)",
         "exampleBoolean": false
       },
       {

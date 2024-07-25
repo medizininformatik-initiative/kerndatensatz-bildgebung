@@ -136,14 +136,6 @@
     "endLine": 178
   },
   {
-    "outputFile": "SearchParameter-mii-sp-bildgebung-diagnostic-report-supporting-info.json",
-    "fshName": "mii-sp-bildgebung-diagnostic-report-supporting-info",
-    "fshType": "Instance",
-    "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 145,
-    "endLine": 161
-  },
-  {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-bildgebungsgrund.json",
     "fshName": "mii-sp-bildgebung-imaging-study-bildgebungsgrund",
     "fshType": "Instance",
@@ -156,8 +148,24 @@
     "fshName": "mii-sp-bildgebung-imaging-study-instance-number",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 410,
+    "endLine": 429
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-instance-pixel-x.json",
+    "fshName": "mii-sp-bildgebung-imaging-study-instance-pixel-x",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
     "startLine": 366,
-    "endLine": 385
+    "endLine": 386
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-instance-pixel-y.json",
+    "fshName": "mii-sp-bildgebung-imaging-study-instance-pixel-y",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 388,
+    "endLine": 408
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-modality.json",
@@ -228,56 +236,56 @@
     "fshName": "mii-sp-bildgebung-medications-dose",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 487,
-    "endLine": 506
+    "startLine": 531,
+    "endLine": 550
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-bildnummer.json",
     "fshName": "mii-sp-bildgebung-observation-bildnummer",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 388,
-    "endLine": 407
+    "startLine": 432,
+    "endLine": 451
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-body-site.json",
     "fshName": "mii-sp-bildgebung-observation-body-site",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 464,
-    "endLine": 484
+    "startLine": 508,
+    "endLine": 528
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-body-structure.json",
     "fshName": "mii-sp-bildgebung-observation-body-structure",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 431,
-    "endLine": 446
+    "startLine": 475,
+    "endLine": 490
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-issued.json",
     "fshName": "mii-sp-bildgebung-observation-issued",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 448,
-    "endLine": 462
+    "startLine": 492,
+    "endLine": 506
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-sop-instance.json",
     "fshName": "mii-sp-bildgebung-observation-sop-instance",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 409,
-    "endLine": 429
+    "startLine": 453,
+    "endLine": 473
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-read-proc-report.json",
     "fshName": "mii-sp-bildgebung-read-proc-report",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 509,
-    "endLine": 526
+    "startLine": 553,
+    "endLine": 570
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-reason-reference.json",
@@ -292,8 +300,8 @@
     "fshName": "mii-sp-bildgebung-service-request-reason-code",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 529,
-    "endLine": 549
+    "startLine": 573,
+    "endLine": 593
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-supporting-info.json",
