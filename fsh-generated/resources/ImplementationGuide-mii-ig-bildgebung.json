@@ -384,10 +384,42 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-medications-dose"
+        },
+        "name": "mii-sp-bildgebung-medications-dose",
+        "description": "Suchparameter für MedicationAdministration.dosage.dose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-observation-body-structure"
         },
         "name": "mii-sp-bildgebung-observation-body-structure",
         "description": "Suchparameter für Observation.bodyStructure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-read-proc-report"
+        },
+        "name": "mii-sp-bildgebung-read-proc-report",
+        "description": "Suchparameter für ReadProcedure.report",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-reason-reference"
+        },
+        "name": "mii-sp-bildgebung-reason-reference",
+        "description": "Suchparameter für ReasonReference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-service-request-reason-code"
+        },
+        "name": "mii-sp-bildgebung-service-request-reason-code",
+        "description": "Suchparameter für ServiceRequest.reasonCode",
         "exampleBoolean": false
       },
       {

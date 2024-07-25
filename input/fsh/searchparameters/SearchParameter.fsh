@@ -18,6 +18,27 @@ Usage: #definition
 * expression = "CarePlan.supportingInfo | DiagnosticReport.supportingInfo | ServiceRequest.supportingInfo"
 * target[+] = #DiagnosticReport
 
+Instance: mii-sp-bildgebung-reason-reference
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-reason-reference"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Reason_Reference"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ReasonReference"
+* code = #reason-reference
+* base[+] = #ImagingStudy
+* base[+] = #ServiceRequest
+* type = #reference
+* expression = "ImagingStudy-reasonReference | ServiceRequest.reasonReference"
+* target[+] = #Condition
+* target[+] = #Observation
+* target[+] = #DiagnosticReport
+* target[+] = #DocumentReference
+
 // BodyStructure
 Instance: mii-sp-bildgebung-koerperstruktur-location-qualfier
 InstanceOf: SearchParameter
@@ -65,7 +86,6 @@ Usage: #definition
 * modifier[+] = #not-in
 
 //Composition
-//section.section
 Instance: mii-sp-bildgebung-composition-section-title
 InstanceOf: SearchParameter
 Usage: #definition
@@ -155,7 +175,6 @@ Usage: #definition
 //numberOfSeries
 //numberOfInstances
 //ProcRef
-//reasRef
 //description
 //series.modalityCT
 //series.modalityMG_CR
@@ -196,12 +215,66 @@ Usage: #definition
 * target = #BodyStructure
 
 //RadiopharmaceuticalAdministration
-//dosage.dose
+Instance: mii-sp-bildgebung-medications-dose
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-medications-dose"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Medications_Dose"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für MedicationAdministration.dosage.dose"
+* code = #dosage-dose
+* base = #MedicationAdministration
+* type = #quantity
+* expression = "MedicationAdministration.dosage.dose"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le 
 
 //ReadProcedure
-//report
+Instance: mii-sp-bildgebung-read-proc-report
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-read-proc-report"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Read_Procedure_Report"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ReadProcedure.report"
+* code = #report
+* base = #ReadProcedure
+* type = #reference
+* expression = "ReadProcedure.report"
+* target[+] = #DiagnosticReport
+* target[+] = #Composition
+* target[+] = #DocumentReference
 
 //ServiceRequest
-//reasonCode
-//reasRef
-//supportingInfo
+Instance: mii-sp-bildgebung-service-request-reason-code
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-service-request-reason-code"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Service_Request_Reason_Code"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ServiceRequest.reasonCode"
+* code = #reason-code
+* base = #ServiceRequest
+* type = #token
+* expression = "ServiceRequest.reasonCode"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in

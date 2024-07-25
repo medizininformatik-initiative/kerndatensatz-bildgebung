@@ -1,0 +1,35 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-bildgebung-reason-reference",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-reason-reference",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "name": "MII_SP_Bildgebung_Reason_Reference",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-19",
+  "description": "Suchparameter für ReasonReference",
+  "code": "reason-reference",
+  "base": [
+    "ImagingStudy",
+    "ServiceRequest"
+  ],
+  "type": "reference",
+  "expression": "ImagingStudy-reasonReference | ServiceRequest.reasonReference",
+  "target": [
+    "Condition",
+    "Observation",
+    "DiagnosticReport",
+    "DocumentReference"
+  ]
+}

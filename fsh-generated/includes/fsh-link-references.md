@@ -41,7 +41,11 @@
 [mii-sp-bildgebung-diagnostic-report-conclusion]: SearchParameter-mii-sp-bildgebung-diagnostic-report-conclusion.html
 [mii-sp-bildgebung-diagnostic-report-imaging-study]: SearchParameter-mii-sp-bildgebung-diagnostic-report-imaging-study.html
 [mii-sp-bildgebung-koerperstruktur-location-qualfier]: SearchParameter-mii-sp-bildgebung-koerperstruktur-location-qualfier.html
+[mii-sp-bildgebung-medications-dose]: SearchParameter-mii-sp-bildgebung-medications-dose.html
 [mii-sp-bildgebung-observation-body-structure]: SearchParameter-mii-sp-bildgebung-observation-body-structure.html
+[mii-sp-bildgebung-read-proc-report]: SearchParameter-mii-sp-bildgebung-read-proc-report.html
+[mii-sp-bildgebung-reason-reference]: SearchParameter-mii-sp-bildgebung-reason-reference.html
+[mii-sp-bildgebung-service-request-reason-code]: SearchParameter-mii-sp-bildgebung-service-request-reason-code.html
 [mii-sp-bildgebung-supporting-info]: SearchParameter-mii-sp-bildgebung-supporting-info.html
 [MII_VS_Bildgebung_TNMCategoryObservation]: ValueSet-mii-vs-bildgebung-tnmCategoryObservation.html
 [MII_VS_Bildgebung_TNMRadiologicalReadProcedures]: ValueSet-mii-vs-bildgebung-tnmRadiologicalReadProcedure.html
