@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-bildgebung-care-plan-description",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-care-plan-description",
+  "id": "mii-sp-bildgebung-observation-body-site",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-site",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -14,17 +14,17 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Bildgebung_Care_Plan_Description",
+  "name": "MII_SP_Bildgebung_Observation_Body_Site",
   "status": "active",
   "experimental": false,
   "date": "2024-07-19",
-  "description": "Suchparameter für CarePlan.description",
-  "code": "description",
+  "description": "Suchparameter für Observation.bodySite",
+  "code": "body-site",
   "base": [
-    "CarePlan"
+    "Observation"
   ],
   "type": "token",
-  "expression": "CarePlan.description",
+  "expression": "Observation.bodySite",
   "modifier": [
     "text",
     "not",

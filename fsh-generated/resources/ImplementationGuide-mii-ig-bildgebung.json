@@ -328,14 +328,6 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-care-plan-description"
-        },
-        "name": "mii-sp-bildgebung-care-plan-description",
-        "description": "Suchparameter für CarePlan.description",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-composition-section-author"
         },
         "name": "mii-sp-bildgebung-composition-section-author",
@@ -360,6 +352,14 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-description"
+        },
+        "name": "mii-sp-bildgebung-description",
+        "description": "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion"
         },
         "name": "mii-sp-bildgebung-diagnostic-report-conclusion",
@@ -372,6 +372,22 @@
         },
         "name": "mii-sp-bildgebung-diagnostic-report-imaging-study",
         "description": "Suchparameter für DiagnosticReport.imagingStudy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-diagnostic-report-supporting-info"
+        },
+        "name": "mii-sp-bildgebung-diagnostic-report-supporting-info",
+        "description": "Suchparameter für Extension DiagnosticReport.SupportingInfo",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-modality"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-modality",
+        "description": "Suchparameter für ImagingStudy.modality",
         "exampleBoolean": false
       },
       {
@@ -392,10 +408,42 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-observation-bildnummer"
+        },
+        "name": "mii-sp-bildgebung-observation-bildnummer",
+        "description": "Suchparameter für Observation.bildnummer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-observation-body-site"
+        },
+        "name": "mii-sp-bildgebung-observation-body-site",
+        "description": "Suchparameter für Observation.bodySite",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-observation-body-structure"
         },
         "name": "mii-sp-bildgebung-observation-body-structure",
         "description": "Suchparameter für Observation.bodyStructure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-observation-issued"
+        },
+        "name": "mii-sp-bildgebung-observation-issued",
+        "description": "Suchparameter für Observation.issued",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-observation-sop-instance"
+        },
+        "name": "mii-sp-bildgebung-observation-sop-instance",
+        "description": "Suchparameter für Observation.sopInstance",
         "exampleBoolean": false
       },
       {

@@ -22,11 +22,10 @@
   "code": "supporting-info",
   "base": [
     "CarePlan",
-    "DiagnosticReport",
     "ServiceRequest"
   ],
   "type": "reference",
-  "expression": "CarePlan.supportingInfo | DiagnosticReport.supportingInfo | ServiceRequest.supportingInfo",
+  "expression": "CarePlan.supportingInfo | ServiceRequest.supportingInfo",
   "target": [
     "DiagnosticReport"
   ]

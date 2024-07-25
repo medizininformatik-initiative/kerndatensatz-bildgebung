@@ -12,10 +12,9 @@ Usage: #definition
 * description = "Suchparameter für SupportingInfo"
 * code = #supporting-info
 * base[+] = #CarePlan
-* base[+] = #DiagnosticReport
 * base[+] = #ServiceRequest
 * type = #reference
-* expression = "CarePlan.supportingInfo | DiagnosticReport.supportingInfo | ServiceRequest.supportingInfo"
+* expression = "CarePlan.supportingInfo | ServiceRequest.supportingInfo"
 * target[+] = #DiagnosticReport
 
 Instance: mii-sp-bildgebung-reason-reference
@@ -63,21 +62,23 @@ Usage: #definition
 * modifier[+] = #not-in
 
 //CarePlan
-Instance: mii-sp-bildgebung-care-plan-description
+Instance: mii-sp-bildgebung-description
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-care-plan-description"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-description"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Care_Plan_Description"
+* name = "MII_SP_Bildgebung_Description"
 * status = #active
 * experimental = false
 * date = "2024-07-19"
-* description = "Suchparameter für CarePlan.description"
+* description = "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description"
 * code = #description
-* base = #CarePlan
-* type = #token
-* expression = "CarePlan.description"
+* base[+] = #CarePlan
+* base[+] = #ImagingStudy
+* base[+] = #ImagingStudy.series
+* type = #string
+* expression = "CarePlan.description | ImagingStudy.description | ImagingStudy.series.description"
 * modifier[+] = #text
 * modifier[+] = #not
 * modifier[+] = #above
@@ -97,7 +98,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-19"
 * description = "Suchparameter für Composition.section.title"
-* code = #section.title
+* code = #section-title
 * base = #Composition
 * type = #string
 * expression = "Composition.section.title"
@@ -113,7 +114,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-19"
 * description = "Suchparameter für Composition.section.author"
-* code = #section.author
+* code = #section-author
 * base = #Composition
 * type = #reference
 * expression = "Composition.section.author"
@@ -130,12 +131,30 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-19"
 * description = "Suchparameter für Composition.section.text"
-* code = #section.text
+* code = #section-text
 * base = #Composition
 * type = #text
 * expression = "Composition.section.text"
 
 //DiagnosticReport
+Instance: mii-sp-bildgebung-diagnostic-report-supporting-info
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-supporting-info"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Diagnostic_Report_Supporting_Info"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für Extension DiagnosticReport.SupportingInfo"
+* code = #supporting-info
+* base[+] = #DiagnosticReport
+* type = #reference
+* expression = "DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').value"
+* target[+] = #DiagnosticReport
+* target[+] = #Procedure
+
 Instance: mii-sp-bildgebung-diagnostic-report-imaging-study
 InstanceOf: SearchParameter
 Usage: #definition
@@ -147,7 +166,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-19"
 * description = "Suchparameter für DiagnosticReport.imagingStudy"
-* code = #imagingStudy
+* code = #imaging-study
 * base = #DiagnosticReport
 * type = #reference
 * expression = "DiagnosticReport.imagingStudy"
@@ -189,14 +208,72 @@ Usage: #definition
 //series.started
 //instance.imagingInstance
 //instance.number
+Instance: mii-sp-bildgebung-imaging-study-modality
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-modality"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Modality"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.modality"
+* code = #study-modality
+* base = #ImagingStudy
+* type = #token
+* expression = "ImagingStudy.modality"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
 
 //Observation
-//bildnummer
-//SOPInstanz
-//issued
-//value[x]
-//bodySite
-//component
+Instance: mii-sp-bildgebung-observation-bildnummer
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-bildnummer"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Observation_Bildnummer"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für Observation.bildnummer"
+* code = #bildnummer
+* base = #Observation
+* type = #number
+* expression = "Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildnummer').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
+Instance: mii-sp-bildgebung-observation-sop-instance
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-sop-instance"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Observation_SOP-Instance"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für Observation.sopInstance"
+* code = #sop-instance
+* base = #Observation
+* type = #token
+* expression = "Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
 Instance: mii-sp-bildgebung-observation-body-structure
 InstanceOf: SearchParameter
 Usage: #definition
@@ -211,8 +288,46 @@ Usage: #definition
 * code = #bodyStructure
 * base = #Observation
 * type = #reference
-* expression = "Observation.bodyStructure"
+* expression = "Observation.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure').value"
 * target = #BodyStructure
+
+Instance: mii-sp-bildgebung-observation-issued
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-issued"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Observation_Issued"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für Observation.issued"
+* code = #issued
+* base = #Observation
+* type = #date
+* expression = "Observation.issued"
+
+Instance: mii-sp-bildgebung-observation-body-site
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-site"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Observation_Body_Site"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für Observation.bodySite"
+* code = #body-site
+* base = #Observation
+* type = #token
+* expression = "Observation.bodySite"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
 
 //RadiopharmaceuticalAdministration
 Instance: mii-sp-bildgebung-medications-dose

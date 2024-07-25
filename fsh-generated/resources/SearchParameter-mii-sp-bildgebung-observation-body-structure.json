@@ -24,7 +24,7 @@
     "Observation"
   ],
   "type": "reference",
-  "expression": "Observation.bodyStructure",
+  "expression": "Observation.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure').value",
   "target": [
     "BodyStructure"
   ]
