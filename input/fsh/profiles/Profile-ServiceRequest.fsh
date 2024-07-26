@@ -40,6 +40,5 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * reasonCode MS
 * reasonCode from MII_VS_Bildgebung_ServiceRequest_Reason (preferred)
 * reasonReference MS
-* reasonReference only Reference(Condition)
 * supportingInfo MS
 * supportingInfo only Reference(MII_PR_Bildgebung_Radiologischer_Befund)

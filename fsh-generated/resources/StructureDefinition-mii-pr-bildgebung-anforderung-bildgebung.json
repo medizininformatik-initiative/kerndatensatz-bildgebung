@@ -205,14 +205,6 @@
       {
         "id": "ServiceRequest.reasonReference",
         "path": "ServiceRequest.reasonReference",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Condition"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {

@@ -160,14 +160,6 @@
       {
         "id": "Composition.section.entry",
         "path": "Composition.section.entry",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {

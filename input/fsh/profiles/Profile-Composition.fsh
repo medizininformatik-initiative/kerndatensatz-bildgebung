@@ -30,5 +30,4 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * section.author MS
 * section.text MS
 * section.entry MS
-* section.entry only Reference(Observation)
 * section.section MS

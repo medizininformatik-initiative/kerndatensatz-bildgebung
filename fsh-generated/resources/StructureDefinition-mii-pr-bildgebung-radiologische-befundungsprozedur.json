@@ -103,7 +103,8 @@
               "display": "Diagnostic procedure"
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Procedure.subject",
@@ -115,7 +116,8 @@
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Procedure.performed[x]",
