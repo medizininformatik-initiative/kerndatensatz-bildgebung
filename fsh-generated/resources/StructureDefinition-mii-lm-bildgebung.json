@@ -179,7 +179,7 @@
         "id": "Bildgebung.Koerperstruktur.Person",
         "path": "Bildgebung.Koerperstruktur.Person",
         "short": "Person",
-        "definition": "Person, an der sich die untersuchte Körperstruktur befindet.",
+        "definition": "Person, an der sich die untersuchte Körperstruktur befindet. Hier soll das MII KDS-Modul Person verwendet werden.",
         "min": 0,
         "max": "1",
         "type": [
@@ -281,7 +281,7 @@
         "id": "Bildgebung.Empfehlung.Person",
         "path": "Bildgebung.Empfehlung.Person",
         "short": "Person",
-        "definition": "Person, auf die sich die Empfehlung bezieht",
+        "definition": "Person, auf die sich die Empfehlung bezieht. Hier soll das MII KDS-Modul Person verwendet werden.",
         "min": 1,
         "max": "1",
         "type": [
@@ -386,7 +386,7 @@
         "id": "Bildgebung.SemistrukturiertesBefunddokument.Person",
         "path": "Bildgebung.SemistrukturiertesBefunddokument.Person",
         "short": "Person",
-        "definition": "Person, auf die sich das Dokument bezieht. Hier sollte das MII Basisprofil Person referenziert werden.",
+        "definition": "Person, auf die sich das Dokument bezieht. Hier sollte das MII KDS-Profil Person referenziert werden.",
         "min": 1,
         "max": "1",
         "type": [
@@ -709,7 +709,7 @@
         "id": "Bildgebung.Befundbericht.Person",
         "path": "Bildgebung.Befundbericht.Person",
         "short": "Personen-Identifikation",
-        "definition": "Die Person, für die der Befundbericht erstellt wurde. Hier sollte das MII Basisprofil Person referenziert werden",
+        "definition": "Die Person, für die der Befundbericht erstellt wurde. Hier sollte das MII KDS-Modul Person referenziert werden",
         "min": 0,
         "max": "1",
         "type": [
@@ -731,7 +731,7 @@
         "id": "Bildgebung.Befundbericht.Fall",
         "path": "Bildgebung.Befundbericht.Fall",
         "short": "Fall-Referenz",
-        "definition": "Referenz über Fall auf den Versorgungsstellenkontakt. Hier soll das MII Basisprofil Fall in Stufe 3 referenziert werden",
+        "definition": "Referenz über Fall auf den Versorgungsstellenkontakt. Hier soll das MII KDS-Modul Fall in Stufe 3 referenziert werden",
         "min": 1,
         "max": "1",
         "type": [
@@ -1036,7 +1036,7 @@
         "id": "Bildgebung.Bildgebungsprozedur.Person",
         "path": "Bildgebung.Bildgebungsprozedur.Person",
         "short": "Person",
-        "definition": "Zu untersuchende Person",
+        "definition": "Zu untersuchende Person. Hier soll das MII KDS-Profil Person verwendet werden.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1119,7 +1119,7 @@
         "id": "Bildgebung.Studie.Person",
         "path": "Bildgebung.Studie.Person",
         "short": "Person",
-        "definition": "Person, auf die sich die Bildgebungsstudie bezieht. Hier soll das MII Basismodul Person referenziert werden.",
+        "definition": "Person, auf die sich die Bildgebungsstudie bezieht. Hier soll das MII KDS-Modul Person referenziert werden.",
         "min": 1,
         "max": "1",
         "type": [
@@ -1141,7 +1141,7 @@
         "id": "Bildgebung.Studie.Fall",
         "path": "Bildgebung.Studie.Fall",
         "short": "Fall-Referenz",
-        "definition": "Referenz zum dazugehörigen Fall der Bildgebungsstudie. Hier soll das MII Basismodul Fall in Stufe 3 referenziert werden.",
+        "definition": "Referenz zum dazugehörigen Fall der Bildgebungsstudie. Hier soll das MII KDS-Modul Fall in Stufe 3 referenziert werden.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1264,7 +1264,7 @@
         "id": "Bildgebung.Studie.Prozedur",
         "path": "Bildgebung.Studie.Prozedur",
         "short": "Prozedur",
-        "definition": "Referenz auf die dazugehörige medizinische Prozedur der Studie. Hier soll auf das MII Basisprofil Prozedur referenziert werden.",
+        "definition": "Referenz auf die dazugehörige medizinische Prozedur der Studie. Hier soll auf das MII KDS-Modul Prozedur referenziert werden.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1575,7 +1575,7 @@
         "id": "Bildgebung.Studie.Serien.Kontrastmitteldetails",
         "path": "Bildgebung.Studie.Serien.Kontrastmitteldetails",
         "short": "Kontrastmitteldetails",
-        "definition": "Details zur Kontrastmittelgabe über das MedicationStatement. Hier soll auf das MII Basismodul Medikation referenziert werden",
+        "definition": "Details zur Kontrastmittelgabe über das MedicationStatement. Hier soll auf das MII KDS-Modul Medikation referenziert werden",
         "min": 0,
         "max": "*",
         "type": [
@@ -2601,7 +2601,7 @@
         "id": "Bildgebung.GenerischeBeobachtung.TeilEinerBefundungsprozedur",
         "path": "Bildgebung.GenerischeBeobachtung.TeilEinerBefundungsprozedur",
         "short": "Teil einer Befundungsprozedur",
-        "definition": "Hier soll auf das MII Basisprofil Prozedur referenziert werden",
+        "definition": "Hier soll auf das MII KDS-Modul Prozedur referenziert werden",
         "min": 0,
         "max": "*",
         "type": [
@@ -2680,7 +2680,7 @@
         "id": "Bildgebung.GenerischeBeobachtung.Person",
         "path": "Bildgebung.GenerischeBeobachtung.Person",
         "short": "Person",
-        "definition": "Person, auf die sich die Beobachtung bezieht.",
+        "definition": "Person, auf die sich die Beobachtung bezieht. Hier soll das MII KDS-Modul Person verwendet werden.",
         "min": 1,
         "max": "1",
         "type": [
@@ -2883,7 +2883,7 @@
         "id": "Bildgebung.GabeRadiopharmakon.Person",
         "path": "Bildgebung.GabeRadiopharmakon.Person",
         "short": "Person",
-        "definition": "Person der das Medikament verabreicht wird.",
+        "definition": "Person der das Medikament verabreicht wird. Hier soll das MII KDS-Modul Person verwendet werden.",
         "min": 1,
         "max": "1",
         "type": [
@@ -3023,7 +3023,7 @@
         "id": "Bildgebung.Befundungsprozedur.Person",
         "path": "Bildgebung.Befundungsprozedur.Person",
         "short": "Person",
-        "definition": "Person, auf die sich die Befundungsprozedur bezieht.",
+        "definition": "Person, auf die sich die Befundungsprozedur bezieht. Hier soll das MII KDS-Profil Person verwendet werden.",
         "min": 1,
         "max": "1",
         "type": [
@@ -3187,7 +3187,7 @@
         "id": "Bildgebung.Anforderung.Person",
         "path": "Bildgebung.Anforderung.Person",
         "short": "Person",
-        "definition": "Bezug zur Person, für den die Anfoderung besteht. Hier soll auf das MII Basisprofil Person referenziert werden.",
+        "definition": "Bezug zur Person, für den die Anfoderung besteht. Hier soll auf das MII KDS-Modul Person referenziert werden.",
         "min": 1,
         "max": "1",
         "type": [
@@ -3209,7 +3209,7 @@
         "id": "Bildgebung.Anforderung.Versorgungsstellenkontakt",
         "path": "Bildgebung.Anforderung.Versorgungsstellenkontakt",
         "short": "Versorgungsstellenkontakt",
-        "definition": "Kontakt einer Versorgungsstelle",
+        "definition": "Kontakt einer Versorgungsstelle. Hier soll das MII KDS-Modul Fall verwendet werden",
         "min": 0,
         "max": "1",
         "type": [
