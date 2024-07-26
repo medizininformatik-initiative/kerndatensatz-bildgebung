@@ -304,6 +304,377 @@ Usage: #definition
 * expression = "ImagingStudy.procedureReference"
 * target = #Procedure
 
+Instance: mii-sp-bildgebung-imaging-study-series-CTDI-volume
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-CTDI-volume"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_CTDI_Volume"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.CTDIvolume"
+* code = #CTDI-volume
+* base = #ImagingStudy.series
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('CTDIvol').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le 
+
+Instance: mii-sp-bildgebung-imaging-study-series-tube-voltage
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-tube-voltage"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Tube_Voltage"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.tubeVoltage"
+* code = #tube-voltage
+* base = #ImagingStudy.series
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('tubeVoltage').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le 
+
+Instance: mii-sp-bildgebung-imaging-study-series-exposure-time
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure-time"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.exposureTime"
+* code = #exposure-time
+* base = #ImagingStudy.series
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('exposureTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('exposureTime').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le 
+
+Instance: mii-sp-bildgebung-imaging-study-series-exposure
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Exposure"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.exposure"
+* code = #exposure
+* base = #ImagingStudy.series
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('exposure').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('exposure').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le 
+
+Instance: mii-sp-bildgebung-imaging-study-series-xray-tube-current
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_xRay_Tube_Current"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent"
+* code = #xRay-tube-current
+* base = #ImagingStudy.series
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('xRayTubeCurrent').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('xRayTubeCurrent').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le 
+
+Instance: mii-sp-bildgebung-imaging-study-series-kvp
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-kvp"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_KVP"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.KVP"
+* code = #KVP
+* base = #ImagingStudy.series
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('KVP').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le 
+
+Instance: mii-sp-bildgebung-imaging-study-series-magnetic-field-strength
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-magnetic-field-strength"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Magnetic_Field_Strength"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.magneticFieldStrength"
+* code = #magnetic-field-stregth
+* base = #ImagingStudy.series
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('magneticFieldStrength').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
+Instance: mii-sp-bildgebung-imaging-study-series-scanning-sequence
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.scanningSequence"
+* code = #scanning-sequence
+* base = #ImagingStudy.series
+* type = #token
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('scanningSequence').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
+Instance: mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence_Variant"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant"
+* code = #scanning-sequence-variant
+* base = #ImagingStudy.series
+* type = #token
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('scanningSequenceVariant').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
+Instance: mii-sp-bildgebung-imaging-study-series-radiopharmaceutical
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Radiopharmaceutical"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.radiopharmaceutical"
+* code = #radiopharmaceutical
+* base = #ImagingStudy
+* type = #reference
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radiopharmaceutical').value"
+* target = #Medication
+
+Instance: mii-sp-bildgebung-imaging-study-series-radiopharma-start-time
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical-start-time"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Radiopharmaceutical_Start_Time"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.radiopharmaceuticalStartTime"
+* code = #started
+* base = #ImagingStudy.series
+* type = #date
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radiopharmaceuticalStartTime').value"
+
+Instance: mii-sp-bildgebung-imaging-study-series-rescale-type
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-rescale-type"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Rescale_Type"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.rescaleType"
+* code = #rescale-type
+* base = #ImagingStudy.series
+* type = #token
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('rescaleType').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
+Instance: mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Total_Dose"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.radionuclideTotalDose"
+* code = #radionuclide-total-dose
+* base = #ImagingStudy.series
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radionuclideTotalDose').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
+Instance: mii-sp-bildgebung-imaging-study-series-radionuclide-half-life
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-half-life"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Half_Life"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife"
+* code = #radionuclide-half-life
+* base = #ImagingStudy.series
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radionuclideHalfLife').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
+Instance: mii-sp-bildgebung-imaging-study-series-contrast-bolus
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Contrast_Bolus"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.contrastBolus"
+* code = #contrast-bolus
+* base = #ImagingStudy.series
+* type = #token
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolus').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
+Instance: mii-sp-bildgebung-imaging-study-series-contrast-bolus-details
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus-details"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.extension.contrastBolusDetails"
+* code = #contrast-bolus-details
+* base = #ImagingStudy.series
+* type = #reference
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolusDetails').value"
+* target = #MedicationStatement
+
+Instance: mii-sp-bildgebung-imaging-study-manufacturer
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Manufacturer"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "ImagingStudy.series.extension.manufacturer"
+* code = #manufacturer
+* base = #ImagingStudy.series
+* type = #string
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturer').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
+Instance: mii-sp-bildgebung-imaging-study-manufacturer-model-name
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer-model-name"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Manufacturer_Model_Name"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "ImagingStudy.series.extension.manufacturerModelName"
+* code = #manufacturer-model-name
+* base = #ImagingStudy.series
+* type = #string
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturerModelName').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
 Instance: mii-sp-bildgebung-imaging-study-series-number
 InstanceOf: SearchParameter
 Usage: #definition
@@ -399,7 +770,50 @@ Usage: #definition
 * code = #instance-pixel-spacing-y
 * base = #ImagingStudy.series.instance
 * type = #string
-* expression = "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension(pixelSpacing(y)).value"
+* expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension(pixelSpacing(y)).value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
+Instance: mii-sp-bildgebung-imaging-study-slice-thickness
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-slice-thickness"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Slice_Thickness"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.instance.Extension.sliceThickness"
+* code = #instance-slice-thickness
+* base = #ImagingStudy.series.instance
+* type = #number
+* expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension('sliceThickness').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
+Instance: mii-sp-bildgebung-imaging-study-instance-image-type
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-image-type"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type"
+* status = #active
+* experimental = false
+* date = "2024-07-19"
+* description = "Suchparameter für ImagingStudy.series.instance.Extension.imageType"
+* code = #instance-image-type
+* base = #ImagingStudy.series.instance
+* type = #string
+* expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension(imageType).value"
 * modifier[+] = #text
 * modifier[+] = #not
 * modifier[+] = #above

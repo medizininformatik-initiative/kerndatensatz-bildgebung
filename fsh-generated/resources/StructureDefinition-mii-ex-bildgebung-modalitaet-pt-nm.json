@@ -92,9 +92,23 @@
         "max": "1"
       },
       {
+        "id": "Extension.extension:radiopharmaceutical.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
         "id": "Extension.extension:radiopharmaceutical.url",
         "path": "Extension.extension.url",
         "fixedUri": "radiopharmaceutical"
+      },
+      {
+        "id": "Extension.extension:radiopharmaceutical.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
       },
       {
         "id": "Extension.extension:radiopharmaceuticalStartTime",
@@ -104,9 +118,23 @@
         "max": "1"
       },
       {
+        "id": "Extension.extension:radiopharmaceuticalStartTime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
         "id": "Extension.extension:radiopharmaceuticalStartTime.url",
         "path": "Extension.extension.url",
         "fixedUri": "radiopharmaceuticalStartTime"
+      },
+      {
+        "id": "Extension.extension:radiopharmaceuticalStartTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
       },
       {
         "id": "Extension.extension:rescaleType",

@@ -1,0 +1,36 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-bildgebung-imaging-study-series-rescale-type",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-rescale-type",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Series_Rescale_Type",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-19",
+  "description": "Suchparameter für ImagingStudy.series.extension.rescaleType",
+  "code": "rescale-type",
+  "base": [
+    "ImagingStudy.series"
+  ],
+  "type": "token",
+  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('rescaleType').value",
+  "modifier": [
+    "text",
+    "not",
+    "above",
+    "below",
+    "in",
+    "not-in"
+  ]
+}

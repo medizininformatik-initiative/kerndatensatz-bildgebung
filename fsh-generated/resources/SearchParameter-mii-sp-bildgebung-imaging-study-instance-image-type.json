@@ -1,0 +1,36 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-bildgebung-imaging-study-instance-image-type",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-image-type",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-19",
+  "description": "Suchparameter für ImagingStudy.series.instance.Extension.imageType",
+  "code": "instance-image-type",
+  "base": [
+    "ImagingStudy.series.instance"
+  ],
+  "type": "string",
+  "expression": "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension(imageType).value",
+  "modifier": [
+    "text",
+    "not",
+    "above",
+    "below",
+    "in",
+    "not-in"
+  ]
+}

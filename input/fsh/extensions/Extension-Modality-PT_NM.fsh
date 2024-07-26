@@ -20,8 +20,8 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     rescaleType 0..1 and
     radionuclideTotalDose 0..1 and
     radionuclideHalfLife 0..1
-* extension[radiopharmaceutical].value[x]
-* extension[radiopharmaceuticalStartTime].value[x]
+* extension[radiopharmaceutical].value[x] only Reference
+* extension[radiopharmaceuticalStartTime].value[x] only dateTime
 * extension[rescaleType].value[x] only CodeableConcept
 * extension[rescaleType].valueCodeableConcept from $dicom-c11 (extensible)
 * extension[radionuclideTotalDose].value[x] only SimpleQuantity

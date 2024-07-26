@@ -1,0 +1,28 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-bildgebung-imaging-study-series-radiopharma-start-time",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical-start-time",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Series_Radiopharmaceutical_Start_Time",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-19",
+  "description": "Suchparameter für ImagingStudy.series.radiopharmaceuticalStartTime",
+  "code": "started",
+  "base": [
+    "ImagingStudy.series"
+  ],
+  "type": "date",
+  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radiopharmaceuticalStartTime').value"
+}
