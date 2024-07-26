@@ -14,15 +14,16 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Bildgebung_SupportingInfo",
+  "name": "MII_SP_Bildgebung_Supporting_Info",
   "status": "active",
   "experimental": false,
   "date": "2024-07-19",
-  "description": "Suchparameter für SupportingInfo",
+  "description": "Suchparameter für CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension.supportingInfo",
   "code": "supporting-info",
   "base": [
     "CarePlan",
-    "ServiceRequest"
+    "ServiceRequest",
+    "DiagnosticReport"
   ],
   "type": "reference",
   "expression": "CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').value",

@@ -34,6 +34,7 @@
 [MII_PR_Bildgebung_TNM_Radiologische_Befundungsprozedur]: StructureDefinition-mii-pr-bildgebung-TNM-radiologische-befundungsprozedur.html
 [MII_VS_Bildgebung_ServiceRequest_Coding]: ValueSet-mii-vs-bildgebung-serviceRequest-coding.html
 [MII_VS_Bildgebung_ServiceRequest_Reason]: ValueSet-mii-vs-bildgebung-serviceRequest-reason.html
+[mii-sp-bildgebung-body-structure-location-qualfier]: SearchParameter-mii-sp-bildgebung-body-structure-location-qualfier.html
 [mii-sp-bildgebung-composition-section-author]: SearchParameter-mii-sp-bildgebung-composition-section-author.html
 [mii-sp-bildgebung-composition-section-text]: SearchParameter-mii-sp-bildgebung-composition-section-text.html
 [mii-sp-bildgebung-composition-section-title]: SearchParameter-mii-sp-bildgebung-composition-section-title.html
@@ -71,7 +72,6 @@
 [mii-sp-bildgebung-imaging-study-series-tube-voltage]: SearchParameter-mii-sp-bildgebung-imaging-study-series-tube-voltage.html
 [mii-sp-bildgebung-imaging-study-series-xray-tube-current]: SearchParameter-mii-sp-bildgebung-imaging-study-series-xray-tube-current.html
 [mii-sp-bildgebung-imaging-study-slice-thickness]: SearchParameter-mii-sp-bildgebung-imaging-study-slice-thickness.html
-[mii-sp-bildgebung-koerperstruktur-location-qualfier]: SearchParameter-mii-sp-bildgebung-koerperstruktur-location-qualfier.html
 [mii-sp-bildgebung-medications-dose]: SearchParameter-mii-sp-bildgebung-medications-dose.html
 [mii-sp-bildgebung-observation-bildnummer]: SearchParameter-mii-sp-bildgebung-observation-bildnummer.html
 [mii-sp-bildgebung-observation-body-site]: SearchParameter-mii-sp-bildgebung-observation-body-site.html

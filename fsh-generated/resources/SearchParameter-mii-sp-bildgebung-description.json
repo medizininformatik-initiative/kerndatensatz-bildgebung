@@ -18,15 +18,16 @@
   "status": "active",
   "experimental": false,
   "date": "2024-07-19",
-  "description": "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description",
+  "description": "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description | Composition.description",
   "code": "description",
   "base": [
     "CarePlan",
     "ImagingStudy",
-    "ImagingStudy.series"
+    "ImagingStudy.series",
+    "Composition"
   ],
   "type": "string",
-  "expression": "CarePlan.description | ImagingStudy.description | ImagingStudy.series.description",
+  "expression": "CarePlan.description | ImagingStudy.description | ImagingStudy.series.description | Composition.description",
   "modifier": [
     "text",
     "not",

@@ -18,7 +18,7 @@
   "status": "active",
   "experimental": false,
   "date": "2024-07-19",
-  "description": "Suchparameter für ReasonReference",
+  "description": "Suchparameter für ImagingStudy.reasonReference | ServiceRequest.reasonReference",
   "code": "reason-reference",
   "base": [
     "ImagingStudy",

@@ -5,14 +5,15 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-supporting-info"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_SupportingInfo"
+* name = "MII_SP_Bildgebung_Supporting_Info"
 * status = #active
 * experimental = false
 * date = "2024-07-19"
-* description = "Suchparameter für SupportingInfo"
+* description = "Suchparameter für CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension.supportingInfo"
 * code = #supporting-info
 * base[+] = #CarePlan
 * base[+] = #ServiceRequest
+* base[+] = #DiagnosticReport
 * type = #reference
 * expression = "CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').value"
 * target[+] = #DiagnosticReport
@@ -27,7 +28,7 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2024-07-19"
-* description = "Suchparameter für ReasonReference"
+* description = "Suchparameter für ImagingStudy.reasonReference | ServiceRequest.reasonReference"
 * code = #reason-reference
 * base[+] = #ImagingStudy
 * base[+] = #ServiceRequest
@@ -48,13 +49,14 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2024-07-19"
-* description = "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description"
+* description = "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description | Composition.description"
 * code = #description
 * base[+] = #CarePlan
 * base[+] = #ImagingStudy
 * base[+] = #ImagingStudy.series
+* base[+] = #Composition
 * type = #string
-* expression = "CarePlan.description | ImagingStudy.description | ImagingStudy.series.description"
+* expression = "CarePlan.description | ImagingStudy.description | ImagingStudy.series.description | Composition.description"
 * modifier[+] = #text
 * modifier[+] = #not
 * modifier[+] = #above
@@ -63,17 +65,17 @@ Usage: #definition
 * modifier[+] = #not-in
 
 // BodyStructure
-Instance: mii-sp-bildgebung-koerperstruktur-location-qualfier
+Instance: mii-sp-bildgebung-body-structure-location-qualfier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-koerperstruktur-location-qualfier"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-body-structure-location-qualfier"
 * insert SP_Publisher
 * insert Version
 * name = "MII_SP_Bildgebung_Koerperstruktur_Location_Qualfier"
 * status = #active
 * experimental = false
 * date = "2024-07-19"
-* description = "Suchparameter für Koerperstruktur.locationQualifier"
+* description = "Suchparameter für BodyStructure.locationQualifier"
 * code = #location-qualfier
 * base = #BodyStructure
 * type = #token
