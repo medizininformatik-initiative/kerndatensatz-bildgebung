@@ -7,7 +7,7 @@
   "title": "MII CPS Bildgebung CapabilityStatement",
   "status": "active",
   "experimental": false,
-  "date": "2024-07-08",
+  "date": "2024-07-30",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -1040,17 +1040,6 @@
               ]
             },
             {
-              "name": "based-on",
-              "definition": "http://hl7.org/fhir/SearchParameter/Procedure-based-on",
-              "type": "reference",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
               "name": "status",
               "definition": "http://hl7.org/fhir/SearchParameter/Procedure-status",
               "type": "token",
@@ -1064,17 +1053,6 @@
             {
               "name": "category",
               "definition": "http://hl7.org/fhir/SearchParameter/Procedure-category",
-              "type": "token",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "code",
-              "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
               "type": "token",
               "extension": [
                 {
