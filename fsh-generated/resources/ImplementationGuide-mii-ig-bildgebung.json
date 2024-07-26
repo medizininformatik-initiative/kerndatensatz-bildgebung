@@ -384,6 +384,14 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-instance-image-type"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-instance-image-type",
+        "description": "Suchparameter für ImagingStudy.series.instance.Extension.imageType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-instance-number"
         },
         "name": "mii-sp-bildgebung-imaging-study-instance-number",
@@ -404,6 +412,22 @@
         },
         "name": "mii-sp-bildgebung-imaging-study-instance-pixel-y",
         "description": "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(Y)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-manufacturer",
+        "description": "ImagingStudy.series.extension.manufacturer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer-model-name"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-manufacturer-model-name",
+        "description": "ImagingStudy.series.extension.manufacturerModelName",
         "exampleBoolean": false
       },
       {
@@ -440,10 +464,66 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-contrast-bolus",
+        "description": "Suchparameter für ImagingStudy.series.extension.contrastBolus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus-details"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-contrast-bolus-details",
+        "description": "Suchparameter für ImagingStudy.series.extension.contrastBolusDetails",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-CTDI-volume"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-CTDI-volume",
+        "description": "Suchparameter für ImagingStudy.series.extension.CTDIvolume",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-exposure",
+        "description": "Suchparameter für ImagingStudy.series.extension.exposure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure-time"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-exposure-time",
+        "description": "Suchparameter für ImagingStudy.series.extension.exposureTime",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-kvp"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-kvp",
+        "description": "Suchparameter für ImagingStudy.series.extension.KVP",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-laterality"
         },
         "name": "mii-sp-bildgebung-imaging-study-series-laterality",
         "description": "Suchparameter für ImagingStudy.series.laterality",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-magnetic-field-strength"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-magnetic-field-strength",
+        "description": "Suchparameter für ImagingStudy.series.extension.magneticFieldStrength",
         "exampleBoolean": false
       },
       {
@@ -456,10 +536,90 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-half-life"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-radionuclide-half-life",
+        "description": "Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose",
+        "description": "Suchparameter für ImagingStudy.series.extension.radionuclideTotalDose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharma-start-time"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-radiopharma-start-time",
+        "description": "Suchparameter für ImagingStudy.series.radiopharmaceuticalStartTime",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-radiopharmaceutical",
+        "description": "Suchparameter für ImagingStudy.series.extension.radiopharmaceutical",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-rescale-type"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-rescale-type",
+        "description": "Suchparameter für ImagingStudy.series.extension.rescaleType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-scanning-sequence",
+        "description": "Suchparameter für ImagingStudy.series.extension.scanningSequence",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant",
+        "description": "Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-started"
         },
         "name": "mii-sp-bildgebung-imaging-study-series-started",
         "description": "Suchparameter für ImagingStudy.series.started",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-tube-voltage"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-tube-voltage",
+        "description": "Suchparameter für ImagingStudy.series.extension.tubeVoltage",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-xray-tube-current",
+        "description": "Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-slice-thickness"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-slice-thickness",
+        "description": "Suchparameter für ImagingStudy.series.instance.Extension.sliceThickness",
         "exampleBoolean": false
       },
       {

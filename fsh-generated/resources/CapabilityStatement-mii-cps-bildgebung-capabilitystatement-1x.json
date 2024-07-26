@@ -1204,7 +1204,7 @@
             },
             {
               "name": "CTDI-volume",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-CTDI-volume",
               "type": "quantity",
               "extension": [
                 {
@@ -1215,7 +1215,7 @@
             },
             {
               "name": "tubeVoltage",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-tube-voltage",
               "type": "quantity",
               "extension": [
                 {
@@ -1225,8 +1225,8 @@
               ]
             },
             {
-              "name": "exposure-time-ct",
-              "definition": "",
+              "name": "exposure-time",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure-time",
               "type": "quantity",
               "extension": [
                 {
@@ -1236,8 +1236,8 @@
               ]
             },
             {
-              "name": "exposure-ct",
-              "definition": "",
+              "name": "exposure",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure",
               "type": "quantity",
               "extension": [
                 {
@@ -1247,8 +1247,8 @@
               ]
             },
             {
-              "name": "x-ray-tube-current-ct",
-              "definition": "",
+              "name": "x-ray-tube-current",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current",
               "type": "quantity",
               "extension": [
                 {
@@ -1259,40 +1259,7 @@
             },
             {
               "name": "kvp",
-              "definition": "",
-              "type": "quantity",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "exposure-time-mmg",
-              "definition": "",
-              "type": "quantity",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "exposure-mg",
-              "definition": "",
-              "type": "quantity",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "x-ray-tube-current-mg",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-kvp",
               "type": "quantity",
               "extension": [
                 {
@@ -1303,7 +1270,7 @@
             },
             {
               "name": "mag-field-strength",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-magnetic-field-strength",
               "type": "quantity",
               "extension": [
                 {
@@ -1314,7 +1281,7 @@
             },
             {
               "name": "scanning-seq",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence",
               "type": "token",
               "extension": [
                 {
@@ -1325,7 +1292,7 @@
             },
             {
               "name": "scanning-seq-variant",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant",
               "type": "token",
               "extension": [
                 {
@@ -1335,8 +1302,8 @@
               ]
             },
             {
-              "name": "radiopharmakon",
-              "definition": "",
+              "name": "radiopharmaceutical",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical",
               "type": "token",
               "extension": [
                 {
@@ -1346,8 +1313,8 @@
               ]
             },
             {
-              "name": "start-time",
-              "definition": "",
+              "name": "radiopharmaceutical-start-time",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical-start-time",
               "type": "date",
               "extension": [
                 {
@@ -1358,7 +1325,7 @@
             },
             {
               "name": "rescale-type",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-rescale-type",
               "type": "token",
               "extension": [
                 {
@@ -1368,8 +1335,8 @@
               ]
             },
             {
-              "name": "total-dose",
-              "definition": "",
+              "name": "radionuclide-total-dose",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose",
               "type": "quantity",
               "extension": [
                 {
@@ -1379,8 +1346,8 @@
               ]
             },
             {
-              "name": "halflife",
-              "definition": "",
+              "name": "radionuclide-half-life",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-half-life",
               "type": "quantity",
               "extension": [
                 {
@@ -1391,7 +1358,7 @@
             },
             {
               "name": "contrast-bolus",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus",
               "type": "token",
               "extension": [
                 {
@@ -1402,7 +1369,7 @@
             },
             {
               "name": "contrast-bolus-details",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus-details",
               "type": "reference",
               "extension": [
                 {
@@ -1413,7 +1380,7 @@
             },
             {
               "name": "manufacturer",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer",
               "type": "string",
               "extension": [
                 {
@@ -1424,7 +1391,7 @@
             },
             {
               "name": "modelname",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer-model-name",
               "type": "string",
               "extension": [
                 {
@@ -1545,7 +1512,7 @@
             },
             {
               "name": "instance-slice-thickness",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-slice-thickness",
               "type": "number",
               "extension": [
                 {
@@ -1556,7 +1523,7 @@
             },
             {
               "name": "instance-image-type",
-              "definition": "",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-image-type",
               "type": "string",
               "extension": [
                 {
