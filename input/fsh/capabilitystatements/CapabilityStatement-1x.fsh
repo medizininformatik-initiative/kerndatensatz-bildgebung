@@ -145,7 +145,6 @@ Usage: #definition
 * insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
 * insert SupportSearchParam(report, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-read-proc-report, #reference, #SHALL)
 
-
 //ImagingStudy
 * insert SupportResource(ImagingStudy, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/ImagingStudy, #SHALL)
