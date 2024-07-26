@@ -8,7 +8,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Supporting_Info"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension.supportingInfo"
 * code = #supporting-info
 * base[+] = #CarePlan
@@ -27,7 +27,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Reason_Reference"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.reasonReference | ServiceRequest.reasonReference"
 * code = #reason-reference
 * base[+] = #ImagingStudy
@@ -48,7 +48,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Description"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description | Composition.description"
 * code = #description
 * base[+] = #CarePlan
@@ -74,7 +74,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Koerperstruktur_Location_Qualfier"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für BodyStructure.locationQualifier"
 * code = #location-qualfier
 * base = #BodyStructure
@@ -97,7 +97,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Composition_Section_Title"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für Composition.section.title"
 * code = #section-title
 * base = #Composition
@@ -119,7 +119,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Composition_Section_Author"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für Composition.section.author"
 * code = #section-author
 * base = #Composition
@@ -136,31 +136,12 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Composition_Section_Text"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für Composition.section.text"
 * code = #section-text
 * base = #Composition
 * type = #text
 * expression = "Composition.section.text"
-
-//DiagnosticReport
-/*Instance: mii-sp-bildgebung-diagnostic-report-supporting-info
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-supporting-info"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Diagnostic_Report_Supporting_Info"
-* status = #active
-* experimental = false
-* date = "2024-07-19"
-* description = "Suchparameter für Extension DiagnosticReport.SupportingInfo"
-* code = #supporting-info
-* base[+] = #DiagnosticReport
-* type = #reference
-* expression = "DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').value"
-* target[+] = #DiagnosticReport
-* target[+] = #Procedure*/
 
 Instance: mii-sp-bildgebung-diagnostic-report-imaging-study
 InstanceOf: SearchParameter
@@ -171,7 +152,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Diagnostic_Report_Imaging_Study"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für DiagnosticReport.imagingStudy"
 * code = #imaging-study
 * base = #DiagnosticReport
@@ -188,7 +169,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Diagnostic_Report_Conclusion"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für DiagnosticReport.conclusion"
 * code = #conclusion-text
 * base = #DiagnosticReport
@@ -211,7 +192,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.Extension.Bildgebungsgrund"
 * code = #bildgebungsgrund
 * base = #ImagingStudy
@@ -233,7 +214,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Modality"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.modality"
 * code = #study-modality
 * base = #ImagingStudy
@@ -255,7 +236,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Number_Series"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.numberOfSeries"
 * code = #number-series
 * base = #ImagingStudy
@@ -276,7 +257,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Number_Instances"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.numberOfSeries"
 * code = #number-instances
 * base[+] = #ImagingStudy
@@ -298,7 +279,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Procedure_Reference"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.procedureReference"
 * code = #procedure-reference
 * base = #ImagingStudy
@@ -315,7 +296,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_CTDI_Volume"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.CTDIvolume"
 * code = #CTDI-volume
 * base = #ImagingStudy.series
@@ -336,7 +317,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Tube_Voltage"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.tubeVoltage"
 * code = #tube-voltage
 * base = #ImagingStudy.series
@@ -357,7 +338,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.exposureTime"
 * code = #exposure-time
 * base = #ImagingStudy.series
@@ -378,7 +359,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Exposure"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.exposure"
 * code = #exposure
 * base = #ImagingStudy.series
@@ -399,7 +380,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_xRay_Tube_Current"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent"
 * code = #xRay-tube-current
 * base = #ImagingStudy.series
@@ -420,7 +401,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_KVP"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.KVP"
 * code = #KVP
 * base = #ImagingStudy.series
@@ -441,7 +422,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Magnetic_Field_Strength"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.magneticFieldStrength"
 * code = #magnetic-field-stregth
 * base = #ImagingStudy.series
@@ -462,7 +443,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.scanningSequence"
 * code = #scanning-sequence
 * base = #ImagingStudy.series
@@ -484,7 +465,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence_Variant"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant"
 * code = #scanning-sequence-variant
 * base = #ImagingStudy.series
@@ -506,7 +487,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Radiopharmaceutical"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.radiopharmaceutical"
 * code = #radiopharmaceutical
 * base = #ImagingStudy
@@ -523,7 +504,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Radiopharmaceutical_Start_Time"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.radiopharmaceuticalStartTime"
 * code = #started
 * base = #ImagingStudy.series
@@ -539,7 +520,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Rescale_Type"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.rescaleType"
 * code = #rescale-type
 * base = #ImagingStudy.series
@@ -561,7 +542,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Total_Dose"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.radionuclideTotalDose"
 * code = #radionuclide-total-dose
 * base = #ImagingStudy.series
@@ -582,7 +563,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Half_Life"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife"
 * code = #radionuclide-half-life
 * base = #ImagingStudy.series
@@ -603,7 +584,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Contrast_Bolus"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.contrastBolus"
 * code = #contrast-bolus
 * base = #ImagingStudy.series
@@ -625,7 +606,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.contrastBolusDetails"
 * code = #contrast-bolus-details
 * base = #ImagingStudy.series
@@ -642,7 +623,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Manufacturer"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "ImagingStudy.series.extension.manufacturer"
 * code = #manufacturer
 * base = #ImagingStudy.series
@@ -664,7 +645,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Manufacturer_Model_Name"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "ImagingStudy.series.extension.manufacturerModelName"
 * code = #manufacturer-model-name
 * base = #ImagingStudy.series
@@ -686,7 +667,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Number"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.number"
 * code = #series-number
 * base = #ImagingStudy.series
@@ -707,7 +688,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Laterality"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.laterality"
 * code = #laterality
 * base = #ImagingStudy.series
@@ -729,7 +710,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Started"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.started"
 * code = #started
 * base = #ImagingStudy.series
@@ -745,7 +726,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_X"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(X)"
 * code = #instance-pixel-spacing-x
 * base = #ImagingStudy.series.instance
@@ -767,7 +748,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_Y"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(Y)"
 * code = #instance-pixel-spacing-y
 * base = #ImagingStudy.series.instance
@@ -789,7 +770,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Slice_Thickness"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.instance.Extension.sliceThickness"
 * code = #instance-slice-thickness
 * base = #ImagingStudy.series.instance
@@ -810,7 +791,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.instance.Extension.imageType"
 * code = #instance-image-type
 * base = #ImagingStudy.series.instance
@@ -832,7 +813,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Imaging_Study_Instance_Number"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.instance.number"
 * code = #instance-number
 * base = #ImagingStudy.series.instance
@@ -854,7 +835,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Observation_Bildnummer"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für Observation.bildnummer"
 * code = #bildnummer
 * base = #Observation
@@ -875,7 +856,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Observation_SOP-Instance"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für Observation.sopInstance"
 * code = #sop-instance
 * base = #Observation
@@ -897,7 +878,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Observation_Body_Structure"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für Observation.bodyStructure"
 * code = #bodyStructure
 * base = #Observation
@@ -914,7 +895,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Observation_Issued"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für Observation.issued"
 * code = #issued
 * base = #Observation
@@ -930,7 +911,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Observation_Body_Site"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für Observation.bodySite"
 * code = #body-site
 * base = #Observation
@@ -953,7 +934,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Medications_Dose"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für MedicationAdministration.dosage.dose"
 * code = #dosage-dose
 * base = #MedicationAdministration
@@ -975,7 +956,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Read_Procedure_Report"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ReadProcedure.report"
 * code = #report
 * base = #ReadProcedure
@@ -995,7 +976,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Service_Request_Reason_Code"
 * status = #active
 * experimental = false
-* date = "2024-07-19"
+* date = "2024-07-30"
 * description = "Suchparameter für ServiceRequest.reasonCode"
 * code = #reason-code
 * base = #ServiceRequest
