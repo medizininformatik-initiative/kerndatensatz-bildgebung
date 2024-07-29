@@ -19,7 +19,19 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     exposureTime 0..1 and 
     exposure 0..1 and
     xRayTubeCurrent 0..1 
-* extension[KVP].value[x]
+* extension[KVP].value[x] only SimpleQuantity
+* extension[KVP].valueQuantity.unit = "kilovolt" 
+* extension[KVP].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[KVP].valueQuantity.code = #kV
 * extension[exposureTime].value[x] only SimpleQuantity
+* extension[exposureTime].valueQuantity.unit = "millisecond" 
+* extension[exposureTime].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[exposureTime].valueQuantity.code = #ms
 * extension[exposure].value[x] only SimpleQuantity
+* extension[exposure].valueQuantity.unit = "milliampere second" 
+* extension[exposure].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[exposure].valueQuantity.code = #mA.s
 * extension[xRayTubeCurrent].value[x] only SimpleQuantity
+* extension[xRayTubeCurrent].valueQuantity.unit = "milliampere" 
+* extension[xRayTubeCurrent].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[xRayTubeCurrent].valueQuantity.code = #mA

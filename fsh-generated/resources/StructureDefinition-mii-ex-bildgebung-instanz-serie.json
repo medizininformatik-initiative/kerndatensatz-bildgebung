@@ -107,9 +107,27 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
           }
         ]
+      },
+      {
+        "id": "Extension.extension:pixelSpacing(x).value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "millimeter"
+      },
+      {
+        "id": "Extension.extension:pixelSpacing(x).value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:pixelSpacing(x).value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "mm"
       },
       {
         "id": "Extension.extension:pixelSpacing(y)",
@@ -134,9 +152,27 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
           }
         ]
+      },
+      {
+        "id": "Extension.extension:pixelSpacing(y).value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "millimeter"
+      },
+      {
+        "id": "Extension.extension:pixelSpacing(y).value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:pixelSpacing(y).value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "mm"
       },
       {
         "id": "Extension.extension:sliceThickness",
@@ -161,9 +197,27 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "decimal"
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
           }
         ]
+      },
+      {
+        "id": "Extension.extension:sliceThickness.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "millimeter"
+      },
+      {
+        "id": "Extension.extension:sliceThickness.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:sliceThickness.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "mm"
       },
       {
         "id": "Extension.extension:imageType",

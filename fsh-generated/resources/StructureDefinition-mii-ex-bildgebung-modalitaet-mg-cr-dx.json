@@ -92,9 +92,41 @@
         "max": "1"
       },
       {
+        "id": "Extension.extension:KVP.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
         "id": "Extension.extension:KVP.url",
         "path": "Extension.extension.url",
         "fixedUri": "KVP"
+      },
+      {
+        "id": "Extension.extension:KVP.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:KVP.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "kilovolt"
+      },
+      {
+        "id": "Extension.extension:KVP.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:KVP.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "kV"
       },
       {
         "id": "Extension.extension:exposureTime",
@@ -126,6 +158,21 @@
         ]
       },
       {
+        "id": "Extension.extension:exposureTime.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "millisecond"
+      },
+      {
+        "id": "Extension.extension:exposureTime.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:exposureTime.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "ms"
+      },
+      {
         "id": "Extension.extension:exposure",
         "path": "Extension.extension",
         "sliceName": "exposure",
@@ -155,6 +202,21 @@
         ]
       },
       {
+        "id": "Extension.extension:exposure.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "milliampere second"
+      },
+      {
+        "id": "Extension.extension:exposure.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:exposure.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "mA.s"
+      },
+      {
         "id": "Extension.extension:xRayTubeCurrent",
         "path": "Extension.extension",
         "sliceName": "xRayTubeCurrent",
@@ -182,6 +244,21 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Extension.extension:xRayTubeCurrent.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "milliampere"
+      },
+      {
+        "id": "Extension.extension:xRayTubeCurrent.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:xRayTubeCurrent.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "mA"
       },
       {
         "id": "Extension.url",

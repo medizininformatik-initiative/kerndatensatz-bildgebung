@@ -89,7 +89,8 @@
         "path": "Extension.extension",
         "sliceName": "radiopharmaceutical",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Extension.extension:radiopharmaceutical.extension",
@@ -106,16 +107,26 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "Reference"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html"
+        }
+      },
+      {
+        "id": "Extension.extension:radiopharmaceutical.value[x].text",
+        "path": "Extension.extension.value[x].text",
+        "mustSupport": true
       },
       {
         "id": "Extension.extension:radiopharmaceuticalStartTime",
         "path": "Extension.extension",
         "sliceName": "radiopharmaceuticalStartTime",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Extension.extension:radiopharmaceuticalStartTime.extension",
@@ -141,7 +152,8 @@
         "path": "Extension.extension",
         "sliceName": "rescaleType",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Extension.extension:rescaleType.extension",
@@ -171,7 +183,8 @@
         "path": "Extension.extension",
         "sliceName": "radionuclideTotalDose",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Extension.extension:radionuclideTotalDose.extension",
@@ -215,7 +228,8 @@
         "path": "Extension.extension",
         "sliceName": "radionuclideHalfLife",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Extension.extension:radionuclideHalfLife.extension",

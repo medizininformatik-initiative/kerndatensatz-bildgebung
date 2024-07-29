@@ -19,7 +19,7 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     scanningSequence 1..1 and
     scanningSequenceVariant 1..1
 * extension[magneticFieldStrength].value[x]  only SimpleQuantity
-* extension[magneticFieldStrength].valueQuantity.unit = "Tesla" 
+* extension[magneticFieldStrength].valueQuantity.unit = "tesla" 
 * extension[magneticFieldStrength].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[magneticFieldStrength].valueQuantity.code = #T
 * extension[scanningSequence].value[x] only Coding //TODO eigenes ValueSet

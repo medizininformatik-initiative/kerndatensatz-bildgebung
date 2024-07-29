@@ -19,7 +19,16 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
     pixelSpacing(y) 0..1 MS and
     sliceThickness 0..1 MS and
     imageType 0..1 MS
-* extension[pixelSpacing(x)].value[x]  only string
-* extension[pixelSpacing(y)].value[x]  only string
-* extension[sliceThickness].value[x]  only decimal
+* extension[pixelSpacing(x)].value[x]  only SimpleQuantity
+* extension[pixelSpacing(x)].valueQuantity.unit = "millimeter" 
+* extension[pixelSpacing(x)].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[pixelSpacing(x)].valueQuantity.code = #mm
+* extension[pixelSpacing(y)].value[x]  only SimpleQuantity
+* extension[pixelSpacing(y)].valueQuantity.unit = "millimeter" 
+* extension[pixelSpacing(y)].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[pixelSpacing(y)].valueQuantity.code = #mm
+* extension[sliceThickness].value[x]  only SimpleQuantity
+* extension[sliceThickness].valueQuantity.unit = "millimeter" 
+* extension[sliceThickness].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[sliceThickness].valueQuantity.code = #mm
 * extension[imageType].value[x]  only string

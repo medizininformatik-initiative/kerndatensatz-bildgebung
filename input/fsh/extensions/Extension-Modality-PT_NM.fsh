@@ -15,12 +15,14 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * insert ExtensionContext(ImagingStudy.Series)
 //Extension
 * extension contains
-    radiopharmaceutical 0..1 and
-    radiopharmaceuticalStartTime 0..1 and
-    rescaleType 0..1 and
-    radionuclideTotalDose 0..1 and
-    radionuclideHalfLife 0..1
-* extension[radiopharmaceutical].value[x] only Reference
+    radiopharmaceutical 0..1 MS and
+    radiopharmaceuticalStartTime 0..1 MS and
+    rescaleType 0..1 MS and
+    radionuclideTotalDose 0..1 MS and
+    radionuclideHalfLife 0..1 MS
+* extension[radiopharmaceutical].value[x] only CodeableConcept
+* extension[radiopharmaceutical].valueCodeableConcept from $dicom-cid25 (extensible)
+* extension[radiopharmaceutical].valueCodeableConcept.text MS
 * extension[radiopharmaceuticalStartTime].value[x] only dateTime
 * extension[rescaleType].value[x] only CodeableConcept
 * extension[rescaleType].valueCodeableConcept from $dicom-c11 (extensible)

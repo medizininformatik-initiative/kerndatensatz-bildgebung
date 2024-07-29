@@ -5,17 +5,16 @@ Bildgebende Modalitäten sind von essentieller Bedeutung für die medizinische D
 
 ### Beziehung zum Modul Person
 
-Die Zuordnung von Bildgebungsstudien zu einem Patienten oder einer Patientin erfolgt über Referenzen von der Ressource ImagingStudy zum Modul [PERSON](https://simplifier.net/medizininformatikinitiative-modulperson).
+Die Zuordnung von Bildgebungsstudien zu einem Patienten oder einer Patientin erfolgt über Referenzen von der Ressource **Studie** (ImagingStudy) zum Modul [PERSON](https://simplifier.net/mii-basismodul-person-2024). Ebenso wird im **Befundbericht** (DiagnosticReport) und in der **Anforderung** (ServiceRequest) das Modul [PERSON](https://simplifier.net/mii-basismodul-person-2024) referenziert.
 
 ### Beziehung zum Modul Fall
 
-Die Zuordnung von Bildgebungsstudien zu einem Behandlungsfall erfolgt über Referenzen von der Ressource ImagingStudy zum Modul [FALL](https://simplifier.net/medizininformatikinitiative-modulfall). Es sollte stets eine Referenz auf den jeweiligen Behandlungsfall mitgeführt werden, um den Bezug der Bildgebungsstudie zu diesem Fall herzustellen.
+Die Zuordnung von Bildgebungsstudien zu einem Behandlungsfall erfolgt über Referenzen von der Ressource **Studie** (ImagingStudy) bzw. **Befundbericht** (DiagnosticReport) zum Modul [FALL](https://simplifier.net/medizininformatikinitiative-modulfall). Es sollte stets eine Referenz auf den jeweiligen Behandlungsfall mitgeführt werden, um den Bezug der Bildgebungsstudie zu diesem Fall herzustellen.
 
 ### Beziehung zum Modul Prozedur
 
-Im Zusammenhang mit bildgebenden Modalitäten kann es zu Beziehungen zu durchgeführten Prozeduren kommen, beispielsweise einer MRT-Untersuchung vor einer Operation. Die Ressource ImagingStudy spezifiziert in diesem Kontext die Art der Bildgebung und relevante Parameter. Für Angaben zur durchgeführten Prozedur wird das Modul [PROZEDUR](https://simplifier.net/medizininformatikinitiative-modulprozeduren) verwendet. Die Strukturen dieses Moduls ermöglichen es, die Beziehung zwischen Bildgebungsstudie und Prozedur über Referenzen der ImagingStudy zu "Prozedur" auszudrücken.
-
+Im Zusammenhang mit bildgebenden Modalitäten kann es zu Beziehungen zu durchgeführten Prozeduren kommen, beispielsweise einer MRT-Untersuchung vor einer Operation. Für Angaben zur durchgeführten Prozedur wird das Modul [PROZEDUR](https://simplifier.net/mii-basismodul-prozedur-2024) in den Ressourcen **Studie** (ImagingStudy), **Befundbericht** (DiagnosticReport) sowie in der verknüpften Ressource **GenerischeBeobachtung** (Observation) verwendet. 
 
 ### Beziehung zum Modul Diagnose
 
-Die Ressource ImagingStudy enthält Verknüpfungen zum Modul [DIAGNOSE](https://simplifier.net/medizininformatikinitiative-moduldiagnosen), die es ermöglichen, die bildgebende Untersuchung als diagnostisches Werkzeug zur Unterstützung der Diagnose zu erfassen. Dies ist besonders relevant für die Interpretation der Bildgebungsstudien und die Einordnung der Ergebnisse im diagnostischen Kontext.
+Die Ressource **Vorbefund** (Condition) enthält Verknüpfungen zum Modul [DIAGNOSE](https://simplifier.net/mii-basismodul-diagnose-2024), die es ermöglichen, die bildgebende Untersuchung als diagnostisches Werkzeug zur Unterstützung der Diagnose zu erfassen. Diese werden über eine Referenz in der Ressource **Anforderung** (ServiceRequest) abgebildet, welche wiederum im **Befundbericht** (DiagnosticReport) referenziert wird.

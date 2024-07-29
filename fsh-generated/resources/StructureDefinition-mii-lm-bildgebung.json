@@ -157,8 +157,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Koerperstruktur.nähereLokalisation",
-        "path": "Bildgebung.Koerperstruktur.nähereLokalisation",
+        "id": "Bildgebung.Koerperstruktur.naehereLokalisation",
+        "path": "Bildgebung.Koerperstruktur.naehereLokalisation",
         "short": "nähere Lokalisation",
         "definition": "explizite Beschreibung der Lokalisation.",
         "min": 0,
@@ -627,8 +627,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Befundbericht.AnforderndeMaßnahme",
-        "path": "Bildgebung.Befundbericht.AnforderndeMaßnahme",
+        "id": "Bildgebung.Befundbericht.AnforderndeMassnahme",
+        "path": "Bildgebung.Befundbericht.AnforderndeMassnahme",
         "short": "Anfordernde Maßnahme",
         "definition": "Basiert auf einer ServiceRequest-Anfrage.",
         "min": 0,
@@ -954,8 +954,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Bildgebungsprozedur.AnforderndeMaßnahme",
-        "path": "Bildgebung.Bildgebungsprozedur.AnforderndeMaßnahme",
+        "id": "Bildgebung.Bildgebungsprozedur.AnforderndeMassnahme",
+        "path": "Bildgebung.Bildgebungsprozedur.AnforderndeMassnahme",
         "short": "Anfordernde Maßnahme",
         "definition": "Anforderung einer Bildgebungsprozedur",
         "min": 1,
@@ -1097,10 +1097,10 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Modalitäten",
-        "path": "Bildgebung.Studie.Modalitäten",
-        "short": "Modalitäten",
-        "definition": "Set/Liste aller verschiedenen Modalitäten, die in dieser DICOM-Studie enthalten sind.",
+        "id": "Bildgebung.Studie.Modalitaeten",
+        "path": "Bildgebung.Studie.Modalitaeten",
+        "short": "Modalitaeten",
+        "definition": "Set/Liste aller verschiedenen Modalitaeten, die in dieser DICOM-Studie enthalten sind.",
         "min": 0,
         "max": "*",
         "type": [
@@ -1179,8 +1179,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.AnforderndeMaßnahme",
-        "path": "Bildgebung.Studie.AnforderndeMaßnahme",
+        "id": "Bildgebung.Studie.AnforderndeMassnahme",
+        "path": "Bildgebung.Studie.AnforderndeMassnahme",
         "short": "Anfordernde Maßnahme",
         "definition": "Referenz auf die anfordernde Maßnahme dieser Bildgebungsstudie",
         "min": 0,
@@ -1325,8 +1325,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Studien-Beschreibung",
-        "path": "Bildgebung.Studie.Studien-Beschreibung",
+        "id": "Bildgebung.Studie.StudienBeschreibung",
+        "path": "Bildgebung.Studie.StudienBeschreibung",
         "short": "Studien-Beschreibung",
         "definition": "Beschreibung der Bildgebungsstudie",
         "min": 0,
@@ -1363,8 +1363,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Serien-UID",
-        "path": "Bildgebung.Studie.Serien.Serien-UID",
+        "id": "Bildgebung.Studie.Serien.SerienUID",
+        "path": "Bildgebung.Studie.Serien.SerienUID",
         "short": "Serien-UID",
         "definition": "UID der DICOM-Serie",
         "min": 1,
@@ -1382,8 +1382,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Serien-Nummer",
-        "path": "Bildgebung.Studie.Serien.Serien-Nummer",
+        "id": "Bildgebung.Studie.Serien.SerienNummer",
+        "path": "Bildgebung.Studie.Serien.SerienNummer",
         "short": "Serien-Nummer",
         "definition": "Nummer der jeweiligen DICOM-Serie",
         "min": 0,
@@ -1401,10 +1401,10 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Modalität",
-        "path": "Bildgebung.Studie.Serien.Modalität",
-        "short": "Modalität",
-        "definition": "Modalität der DICOM-Serie, z.B. 'MR' oder 'CR'",
+        "id": "Bildgebung.Studie.Serien.Modalitaet",
+        "path": "Bildgebung.Studie.Serien.Modalitaet",
+        "short": "Modalitaet",
+        "definition": "Modalitaet der DICOM-Serie, z.B. 'MR' oder 'CR'",
         "min": 1,
         "max": "1",
         "type": [
@@ -1420,8 +1420,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Serien-Beschreibung",
-        "path": "Bildgebung.Studie.Serien.Serien-Beschreibung",
+        "id": "Bildgebung.Studie.Serien.SerienBeschreibung",
+        "path": "Bildgebung.Studie.Serien.SerienBeschreibung",
         "short": "Serien-Beschreibung",
         "definition": "Beschreibung der jeweiligen Serie",
         "min": 0,
@@ -1458,8 +1458,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Körperregion",
-        "path": "Bildgebung.Studie.Serien.Körperregion",
+        "id": "Bildgebung.Studie.Serien.Koerperregion",
+        "path": "Bildgebung.Studie.Serien.Koerperregion",
         "short": "Körperregion",
         "definition": "Codierte Information über die untersuchte Körperregion der Serie",
         "min": 0,
@@ -1477,8 +1477,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Körperseite",
-        "path": "Bildgebung.Studie.Serien.Körperseite",
+        "id": "Bildgebung.Studie.Serien.Koerperseite",
+        "path": "Bildgebung.Studie.Serien.Koerperseite",
         "short": "Körperseite/Lateralität",
         "definition": "Information über die Körperseite der untersuchten Körperregion, z.B. linksseitig",
         "min": 0,
@@ -1518,7 +1518,7 @@
         "id": "Bildgebung.Studie.Serien.Hersteller",
         "path": "Bildgebung.Studie.Serien.Hersteller",
         "short": "Hersteller",
-        "definition": "Hersteller der genutzten bildgebenden Modalität. ",
+        "definition": "Hersteller der genutzten bildgebenden Modalitaet. ",
         "min": 0,
         "max": "1",
         "type": [
@@ -1537,7 +1537,7 @@
         "id": "Bildgebung.Studie.Serien.Modell",
         "path": "Bildgebung.Studie.Serien.Modell",
         "short": "Modell",
-        "definition": "Das genutzte Modell des Herstellers der bildgebenden Modalität.",
+        "definition": "Das genutzte Modell des Herstellers der bildgebenden Modalitaet.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1594,10 +1594,10 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätDX",
-        "path": "Bildgebung.Studie.Serien.ModalitätDX",
-        "short": "Modalität DX",
-        "definition": "Modalität klassisches Röntgen",
+        "id": "Bildgebung.Studie.Serien.ModalitaetDX",
+        "path": "Bildgebung.Studie.Serien.ModalitaetDX",
+        "short": "Modalitaet DX",
+        "definition": "Modalitaet klassisches Röntgen",
         "min": 0,
         "max": "1",
         "type": [
@@ -1613,8 +1613,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätDX.MaximaleRöntgenröhrenspannung",
-        "path": "Bildgebung.Studie.Serien.ModalitätDX.MaximaleRöntgenröhrenspannung",
+        "id": "Bildgebung.Studie.Serien.ModalitaetDX.MaximaleRoentgenroehrenspannung",
+        "path": "Bildgebung.Studie.Serien.ModalitaetDX.MaximaleRoentgenroehrenspannung",
         "short": "Maximale Röntgenröhrenspannung",
         "definition": "Maximale Röntgenröhrenspannung in kV",
         "min": 0,
@@ -1635,8 +1635,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätDX.Expositionszeit",
-        "path": "Bildgebung.Studie.Serien.ModalitätDX.Expositionszeit",
+        "id": "Bildgebung.Studie.Serien.ModalitaetDX.Expositionszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitaetDX.Expositionszeit",
         "short": "Expositionszeit",
         "definition": "Expositionszeit in ms",
         "min": 0,
@@ -1657,8 +1657,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätDX.Exposition",
-        "path": "Bildgebung.Studie.Serien.ModalitätDX.Exposition",
+        "id": "Bildgebung.Studie.Serien.ModalitaetDX.Exposition",
+        "path": "Bildgebung.Studie.Serien.ModalitaetDX.Exposition",
         "short": "Exposition",
         "definition": "Exposition in MAs",
         "min": 0,
@@ -1679,8 +1679,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätDX.Röntgenröhrenstrom",
-        "path": "Bildgebung.Studie.Serien.ModalitätDX.Röntgenröhrenstrom",
+        "id": "Bildgebung.Studie.Serien.ModalitaetDX.Roentgenroehrenstrom",
+        "path": "Bildgebung.Studie.Serien.ModalitaetDX.Roentgenroehrenstrom",
         "short": "Röntgenröhrenstrom",
         "definition": "Röntgenröhrenstrom in mA",
         "min": 0,
@@ -1701,10 +1701,10 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätCR",
-        "path": "Bildgebung.Studie.Serien.ModalitätCR",
-        "short": "Modalität CR",
-        "definition": "Modalität klassisches Röntgen",
+        "id": "Bildgebung.Studie.Serien.ModalitaetCR",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCR",
+        "short": "Modalitaet CR",
+        "definition": "Modalitaet klassisches Röntgen",
         "min": 0,
         "max": "1",
         "type": [
@@ -1720,8 +1720,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätCR.MaximaleRöntgenröhrenspannung",
-        "path": "Bildgebung.Studie.Serien.ModalitätCR.MaximaleRöntgenröhrenspannung",
+        "id": "Bildgebung.Studie.Serien.ModalitaetCR.MaximaleRoentgenroehrenspannung",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCR.MaximaleRoentgenroehrenspannung",
         "short": "Maximale Röntgenröhrenspannung",
         "definition": "Maximale Röntgenröhrenspannung in kV",
         "min": 0,
@@ -1742,8 +1742,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätCR.Expositionszeit",
-        "path": "Bildgebung.Studie.Serien.ModalitätCR.Expositionszeit",
+        "id": "Bildgebung.Studie.Serien.ModalitaetCR.Expositionszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCR.Expositionszeit",
         "short": "Expositionszeit",
         "definition": "Expositionszeit in ms",
         "min": 0,
@@ -1764,8 +1764,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätCR.Exposition",
-        "path": "Bildgebung.Studie.Serien.ModalitätCR.Exposition",
+        "id": "Bildgebung.Studie.Serien.ModalitaetCR.Exposition",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCR.Exposition",
         "short": "Exposition",
         "definition": "Exposition in MAs",
         "min": 0,
@@ -1786,8 +1786,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätCR.Röntgenröhrenstrom",
-        "path": "Bildgebung.Studie.Serien.ModalitätCR.Röntgenröhrenstrom",
+        "id": "Bildgebung.Studie.Serien.ModalitaetCR.Roentgenroehrenstrom",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCR.Roentgenroehrenstrom",
         "short": "Röntgenröhrenstrom",
         "definition": "Röntgenröhrenstrom in mA",
         "min": 0,
@@ -1808,10 +1808,10 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätMG",
-        "path": "Bildgebung.Studie.Serien.ModalitätMG",
-        "short": "Modalität MG",
-        "definition": "Modalität Mammographie",
+        "id": "Bildgebung.Studie.Serien.ModalitaetMG",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMG",
+        "short": "Modalitaet MG",
+        "definition": "Modalitaet Mammographie",
         "min": 0,
         "max": "1",
         "type": [
@@ -1827,8 +1827,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätMG.MaximaleRöntgenröhrenspannung",
-        "path": "Bildgebung.Studie.Serien.ModalitätMG.MaximaleRöntgenröhrenspannung",
+        "id": "Bildgebung.Studie.Serien.ModalitaetMG.MaximaleRoentgenroehrenspannung",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMG.MaximaleRoentgenroehrenspannung",
         "short": "Maximale Röntgenröhrenspannung",
         "definition": "Maximale Röntgenröhrenspannung in kV",
         "min": 0,
@@ -1849,8 +1849,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätMG.Expositionszeit",
-        "path": "Bildgebung.Studie.Serien.ModalitätMG.Expositionszeit",
+        "id": "Bildgebung.Studie.Serien.ModalitaetMG.Expositionszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMG.Expositionszeit",
         "short": "Expositionszeit",
         "definition": "Expositionszeit in ms",
         "min": 0,
@@ -1871,8 +1871,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätMG.Exposition",
-        "path": "Bildgebung.Studie.Serien.ModalitätMG.Exposition",
+        "id": "Bildgebung.Studie.Serien.ModalitaetMG.Exposition",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMG.Exposition",
         "short": "Exposition",
         "definition": "Exposition in MAs",
         "min": 0,
@@ -1893,8 +1893,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätMG.Röntgenröhrenstrom",
-        "path": "Bildgebung.Studie.Serien.ModalitätMG.Röntgenröhrenstrom",
+        "id": "Bildgebung.Studie.Serien.ModalitaetMG.Roentgenroehrenstrom",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMG.Roentgenroehrenstrom",
         "short": "Röntgenröhrenstrom",
         "definition": "Röntgenröhrenstrom in mA",
         "min": 0,
@@ -1915,10 +1915,10 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätCT",
-        "path": "Bildgebung.Studie.Serien.ModalitätCT",
-        "short": "Modalität CT",
-        "definition": "Modalität Computertomographie",
+        "id": "Bildgebung.Studie.Serien.ModalitaetCT",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCT",
+        "short": "Modalitaet CT",
+        "definition": "Modalitaet Computertomographie",
         "min": 0,
         "max": "1",
         "type": [
@@ -1934,8 +1934,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätCT.CTDIVolume",
-        "path": "Bildgebung.Studie.Serien.ModalitätCT.CTDIVolume",
+        "id": "Bildgebung.Studie.Serien.ModalitaetCT.CTDIVolume",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCT.CTDIVolume",
         "short": "CTDIvolume",
         "definition": "CTDIvolume in mGy",
         "min": 0,
@@ -1956,8 +1956,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätCT.MaximaleRöntgenröhrenspannung",
-        "path": "Bildgebung.Studie.Serien.ModalitätCT.MaximaleRöntgenröhrenspannung",
+        "id": "Bildgebung.Studie.Serien.ModalitaetCT.MaximaleRoentgenroehrenspannung",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCT.MaximaleRoentgenroehrenspannung",
         "short": "Maximale Röntgenröhrenspannung",
         "definition": "Maximale Röntgenröhrenspannung in kV",
         "min": 0,
@@ -1978,8 +1978,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätCT.Expositionszeit",
-        "path": "Bildgebung.Studie.Serien.ModalitätCT.Expositionszeit",
+        "id": "Bildgebung.Studie.Serien.ModalitaetCT.Expositionszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCT.Expositionszeit",
         "short": "Expositionszeit",
         "definition": "Expositionszeit in ms",
         "min": 0,
@@ -2000,8 +2000,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätCT.Exposition",
-        "path": "Bildgebung.Studie.Serien.ModalitätCT.Exposition",
+        "id": "Bildgebung.Studie.Serien.ModalitaetCT.Exposition",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCT.Exposition",
         "short": "Exposition",
         "definition": "Exposition in MAs",
         "min": 0,
@@ -2022,8 +2022,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätCT.Röntgenröhrenstrom",
-        "path": "Bildgebung.Studie.Serien.ModalitätCT.Röntgenröhrenstrom",
+        "id": "Bildgebung.Studie.Serien.ModalitaetCT.Roentgenroehrenstrom",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCT.Roentgenroehrenstrom",
         "short": "Röntgenröhrenstrom",
         "definition": "Röntgenröhrenstrom in mA",
         "min": 0,
@@ -2044,10 +2044,10 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätMR",
-        "path": "Bildgebung.Studie.Serien.ModalitätMR",
-        "short": "Modalität MR",
-        "definition": "Modalität Kernspintomographie",
+        "id": "Bildgebung.Studie.Serien.ModalitaetMR",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMR",
+        "short": "Modalitaet MR",
+        "definition": "Modalitaet Kernspintomographie",
         "min": 0,
         "max": "1",
         "type": [
@@ -2063,8 +2063,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätMR.ScanningSequenz",
-        "path": "Bildgebung.Studie.Serien.ModalitätMR.ScanningSequenz",
+        "id": "Bildgebung.Studie.Serien.ModalitaetMR.ScanningSequenz",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMR.ScanningSequenz",
         "short": "Scanning Sequenz",
         "definition": "Code der aktuellen Scanning Sequenz",
         "min": 1,
@@ -2082,8 +2082,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätMR.ScanningSequenzUntervariante",
-        "path": "Bildgebung.Studie.Serien.ModalitätMR.ScanningSequenzUntervariante",
+        "id": "Bildgebung.Studie.Serien.ModalitaetMR.ScanningSequenzUntervariante",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMR.ScanningSequenzUntervariante",
         "short": "Scanning Sequenz Untervariante",
         "definition": "Code der aktuellen Scanning Sequenz Untervariante",
         "min": 1,
@@ -2101,8 +2101,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätMR.MagnetischeFeldstärke",
-        "path": "Bildgebung.Studie.Serien.ModalitätMR.MagnetischeFeldstärke",
+        "id": "Bildgebung.Studie.Serien.ModalitaetMR.MagnetischeFeldstaerke",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMR.MagnetischeFeldstaerke",
         "short": "Magnetische Feldstärke",
         "definition": "Magnetische Feldstärke des Kernspins in T",
         "min": 1,
@@ -2123,10 +2123,10 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätPT",
-        "path": "Bildgebung.Studie.Serien.ModalitätPT",
-        "short": "Modalität PT",
-        "definition": "Modalität PET-Scan",
+        "id": "Bildgebung.Studie.Serien.ModalitaetPT",
+        "path": "Bildgebung.Studie.Serien.ModalitaetPT",
+        "short": "Modalitaet PT",
+        "definition": "Modalitaet PET-Scan",
         "min": 0,
         "max": "1",
         "type": [
@@ -2142,8 +2142,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätPT.Radiopharmakon",
-        "path": "Bildgebung.Studie.Serien.ModalitätPT.Radiopharmakon",
+        "id": "Bildgebung.Studie.Serien.ModalitaetPT.Radiopharmakon",
+        "path": "Bildgebung.Studie.Serien.ModalitaetPT.Radiopharmakon",
         "short": "Radiopharmakon",
         "definition": "Genutztes Radiopharmakon",
         "min": 0,
@@ -2161,8 +2161,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätPT.Applikationsstartzeit",
-        "path": "Bildgebung.Studie.Serien.ModalitätPT.Applikationsstartzeit",
+        "id": "Bildgebung.Studie.Serien.ModalitaetPT.Applikationsstartzeit",
+        "path": "Bildgebung.Studie.Serien.ModalitaetPT.Applikationsstartzeit",
         "short": "Applikationsstartzeit",
         "definition": "Zeit des Beginn der Applikation des Radiopharmakons",
         "min": 0,
@@ -2180,8 +2180,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätPT.Reskaliserungstyp",
-        "path": "Bildgebung.Studie.Serien.ModalitätPT.Reskaliserungstyp",
+        "id": "Bildgebung.Studie.Serien.ModalitaetPT.Reskaliserungstyp",
+        "path": "Bildgebung.Studie.Serien.ModalitaetPT.Reskaliserungstyp",
         "short": "Reskalierungstyp",
         "definition": "Abkürzung des Reskalierungstypen",
         "min": 0,
@@ -2199,8 +2199,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätPT.GesamteRadionukliddosis",
-        "path": "Bildgebung.Studie.Serien.ModalitätPT.GesamteRadionukliddosis",
+        "id": "Bildgebung.Studie.Serien.ModalitaetPT.GesamteRadionukliddosis",
+        "path": "Bildgebung.Studie.Serien.ModalitaetPT.GesamteRadionukliddosis",
         "short": "Gesamte Radionukliddosis",
         "definition": "Gesamte verabreichte Radionukliddosis in MBq",
         "min": 0,
@@ -2221,8 +2221,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätPT.Halbwertszeit",
-        "path": "Bildgebung.Studie.Serien.ModalitätPT.Halbwertszeit",
+        "id": "Bildgebung.Studie.Serien.ModalitaetPT.Halbwertszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitaetPT.Halbwertszeit",
         "short": "Halbwertszeit",
         "definition": "Halbwertszeit des Radionuklids in s",
         "min": 0,
@@ -2243,10 +2243,10 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätNM",
-        "path": "Bildgebung.Studie.Serien.ModalitätNM",
-        "short": "Modalität NM",
-        "definition": "Modalität Nuklearmedizin",
+        "id": "Bildgebung.Studie.Serien.ModalitaetNM",
+        "path": "Bildgebung.Studie.Serien.ModalitaetNM",
+        "short": "Modalitaet NM",
+        "definition": "Modalitaet Nuklearmedizin",
         "min": 0,
         "max": "1",
         "type": [
@@ -2262,8 +2262,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätNM.Radiopharmakon",
-        "path": "Bildgebung.Studie.Serien.ModalitätNM.Radiopharmakon",
+        "id": "Bildgebung.Studie.Serien.ModalitaetNM.Radiopharmakon",
+        "path": "Bildgebung.Studie.Serien.ModalitaetNM.Radiopharmakon",
         "short": "Radiopharmakon",
         "definition": "Genutztes Radiopharmakon",
         "min": 0,
@@ -2281,8 +2281,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätNM.Applikationsstartzeit",
-        "path": "Bildgebung.Studie.Serien.ModalitätNM.Applikationsstartzeit",
+        "id": "Bildgebung.Studie.Serien.ModalitaetNM.Applikationsstartzeit",
+        "path": "Bildgebung.Studie.Serien.ModalitaetNM.Applikationsstartzeit",
         "short": "Applikationsstartzeit",
         "definition": "Zeit des Beginn der Applikation des Radiopharmakons",
         "min": 0,
@@ -2300,8 +2300,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätNM.Reskaliserungstyp",
-        "path": "Bildgebung.Studie.Serien.ModalitätNM.Reskaliserungstyp",
+        "id": "Bildgebung.Studie.Serien.ModalitaetNM.Reskaliserungstyp",
+        "path": "Bildgebung.Studie.Serien.ModalitaetNM.Reskaliserungstyp",
         "short": "Reskalierungstyp",
         "definition": "Abkürzung des Reskalierungstypen",
         "min": 0,
@@ -2319,8 +2319,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätNM.GesamteRadionukliddosis",
-        "path": "Bildgebung.Studie.Serien.ModalitätNM.GesamteRadionukliddosis",
+        "id": "Bildgebung.Studie.Serien.ModalitaetNM.GesamteRadionukliddosis",
+        "path": "Bildgebung.Studie.Serien.ModalitaetNM.GesamteRadionukliddosis",
         "short": "Gesamte Radionukliddosis",
         "definition": "Gesamte verabreichte Radionukliddosis in MBq",
         "min": 0,
@@ -2341,8 +2341,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitätNM.Halbwertszeit",
-        "path": "Bildgebung.Studie.Serien.ModalitätNM.Halbwertszeit",
+        "id": "Bildgebung.Studie.Serien.ModalitaetNM.Halbwertszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitaetNM.Halbwertszeit",
         "short": "Halbwertszeit",
         "definition": "Halbwertszeit des Radionuklids in s",
         "min": 0,
@@ -2382,8 +2382,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Instanzen.SOP-Instanz",
-        "path": "Bildgebung.Studie.Serien.Instanzen.SOP-Instanz",
+        "id": "Bildgebung.Studie.Serien.Instanzen.SOPInstanz",
+        "path": "Bildgebung.Studie.Serien.Instanzen.SOPInstanz",
         "short": "SOP-Instanz UID",
         "definition": "UID der jeweiligen SOP-Instanz",
         "min": 1,
@@ -2401,8 +2401,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Instanzen.SOP-Klasse",
-        "path": "Bildgebung.Studie.Serien.Instanzen.SOP-Klasse",
+        "id": "Bildgebung.Studie.Serien.Instanzen.SOPKlasse",
+        "path": "Bildgebung.Studie.Serien.Instanzen.SOPKlasse",
         "short": "SOP-Klasse",
         "definition": "SOP-Klasse der jeweiligen SOP-Instanz",
         "min": 1,
@@ -2420,8 +2420,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Instanzen.Instanz-Nummer",
-        "path": "Bildgebung.Studie.Serien.Instanzen.Instanz-Nummer",
+        "id": "Bildgebung.Studie.Serien.Instanzen.InstanzNummer",
+        "path": "Bildgebung.Studie.Serien.Instanzen.InstanzNummer",
         "short": "Instanz-Nummer",
         "definition": "Nummer der jeweiligen Instanz",
         "min": 0,
@@ -2576,8 +2576,8 @@
         ]
       },
       {
-        "id": "Bildgebung.GenerischeBeobachtung.ErweiterteKörperstruktur",
-        "path": "Bildgebung.GenerischeBeobachtung.ErweiterteKörperstruktur",
+        "id": "Bildgebung.GenerischeBeobachtung.ErweiterteKoerperstruktur",
+        "path": "Bildgebung.GenerischeBeobachtung.ErweiterteKoerperstruktur",
         "short": "Erweiterte Körperstruktur",
         "definition": "Backport der R5 Referenz auf das BodyStructure-Profil.",
         "min": 0,
@@ -2737,8 +2737,8 @@
         ]
       },
       {
-        "id": "Bildgebung.GenerischeBeobachtung.Körperregion",
-        "path": "Bildgebung.GenerischeBeobachtung.Körperregion",
+        "id": "Bildgebung.GenerischeBeobachtung.Koerperregion",
+        "path": "Bildgebung.GenerischeBeobachtung.Koerperregion",
         "short": "Körperregion",
         "definition": "Codierte Körperregion der Beobachtung",
         "min": 0,

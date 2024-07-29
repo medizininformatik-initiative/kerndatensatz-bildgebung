@@ -33,7 +33,7 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[exposureTime].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[exposureTime].valueQuantity.code = #ms
 * extension[exposure].value[x] only SimpleQuantity
-* extension[exposure].valueQuantity.unit = "milliampere-seconds" 
+* extension[exposure].valueQuantity.unit = "milliampere second" 
 * extension[exposure].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[exposure].valueQuantity.code = #mA.s
 * extension[xRayTubeCurrent].value[x] only SimpleQuantity
