@@ -87,7 +87,7 @@ package "DICOM-Header" {
 } 
 
   class ModalitätNM #LightYellow {
-  + Radiopharmakon: string [0..1]
+  + Radiopharmakon: CodeableConcept [0..1]
   + Applikationsstartzeit: dateTime [0..1]
   + Applikationsstopzeit: dateTime [0..1]
   + Reskalierungstyp: String [0..1]
@@ -96,7 +96,7 @@ package "DICOM-Header" {
 } 
 
   class ModalitätPT #LightYellow {
-  + Radiopharmakon: string [0..1]
+  + Radiopharmakon: CodeableConcept [0..1]
   + Applikationsstartzeit: dateTime [0..1]
   + Applikationsstopzeit: dateTime [0..1]
   + Reskalierungstyp: String [0..1]
