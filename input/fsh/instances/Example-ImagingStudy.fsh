@@ -15,6 +15,8 @@ Title: "MII Example Bildgebung Imaging Study"
 * numberOfSeries = 1
 * numberOfInstances = 1
 * description = "Thorax"
+* extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[rescaleType].valueCodeableConcept.coding = http://dicom.nema.org/resources/ontology/DCM#HU "Hounsfield Units (CT)"
+* series.modality = http://dicom.nema.org/resources/ontology/DCM#CT "Computed Tomography"
 * series.uid = "series-uid"
 * series.number = 1
 * series.modality = $DCM#DX
