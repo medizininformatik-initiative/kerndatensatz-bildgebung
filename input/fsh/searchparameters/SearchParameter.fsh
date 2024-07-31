@@ -491,9 +491,14 @@ Usage: #definition
 * description = "Suchparameter für ImagingStudy.series.extension.radiopharmaceutical"
 * code = #radiopharmaceutical
 * base = #ImagingStudy
-* type = #reference
+* type = #token
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radiopharmaceutical').value"
-* target = #Medication
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
 
 Instance: mii-sp-bildgebung-imaging-study-series-radiopharma-start-time
 InstanceOf: SearchParameter

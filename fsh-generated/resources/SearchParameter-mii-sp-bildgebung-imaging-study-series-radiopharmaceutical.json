@@ -23,9 +23,14 @@
   "base": [
     "ImagingStudy"
   ],
-  "type": "reference",
+  "type": "token",
   "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radiopharmaceutical').value",
-  "target": [
-    "Medication"
+  "modifier": [
+    "text",
+    "not",
+    "above",
+    "below",
+    "in",
+    "not-in"
   ]
 }
