@@ -6,25 +6,6 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
     ]
   },
-  "extension": [
-    {
-      "extension": [
-        {
-          "url": "rescaleType",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "HU",
-                "system": "http://dicom.nema.org/resources/ontology/DCM",
-                "display": "Hounsfield Units (CT)"
-              }
-            ]
-          }
-        }
-      ],
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm"
-    }
-  ],
   "status": "available",
   "subject": {
     "reference": "Patient/example",
@@ -46,12 +27,12 @@
   "description": "Thorax",
   "series": [
     {
+      "uid": "series-uid",
+      "number": 1,
       "modality": {
         "code": "DX",
         "system": "http://dicom.nema.org/resources/ontology/DCM"
       },
-      "uid": "series-uid",
-      "number": 1,
       "description": "AP BETT (normal) Detektor",
       "numberOfInstances": 1,
       "bodySite": {

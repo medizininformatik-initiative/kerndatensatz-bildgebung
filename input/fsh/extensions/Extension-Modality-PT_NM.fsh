@@ -21,11 +21,11 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     radionuclideTotalDose 0..1 MS and
     radionuclideHalfLife 0..1 MS
 * extension[radiopharmaceutical].value[x] only CodeableConcept
-* extension[radiopharmaceutical].valueCodeableConcept from $dicom-cid25 (extensible)
+* extension[radiopharmaceutical].valueCodeableConcept from $radiopharmaceutical (extensible)
 * extension[radiopharmaceutical].valueCodeableConcept.text MS
 * extension[radiopharmaceuticalStartTime].value[x] only dateTime
 * extension[rescaleType].value[x] only CodeableConcept
-* extension[rescaleType].valueCodeableConcept from $dicom-c11 (extensible)
+* extension[rescaleType].valueCodeableConcept from $rescaleType (extensible)
 * extension[radionuclideTotalDose].value[x] only SimpleQuantity
 * extension[radionuclideTotalDose].valueQuantity.unit = "Megabecquerel" 
 * extension[radionuclideTotalDose].valueQuantity.system = "http://unitsofmeasure.org"

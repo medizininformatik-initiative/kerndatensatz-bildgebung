@@ -21,7 +21,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
   MII_EX_Bildgebung_Bildgebungsgrund named bildgebungsgrund 0..1 
 * status MS
 * modality MS
-* modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html (required)
+* modality from $modality (required)
 * subject MS
 * subject only Reference(Patient)
 * encounter MS
@@ -46,7 +46,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.uid MS 
 * series.number MS
 * series.modality MS 
-* series.modality from https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html (required)
+* series.modality from $modality (required)
 * series.description MS
 * series.numberOfInstances MS
 * series.bodySite MS 
@@ -61,5 +61,5 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
   MII_EX_Bildgebung_Instanz_Serie named imagingInstance 0..1
 * series.instance.uid MS
 * series.instance.sopClass MS
-* series.instance.sopClass from https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html (required)
+* series.instance.sopClass from $sop-class (required)
 * series.instance.number MS
