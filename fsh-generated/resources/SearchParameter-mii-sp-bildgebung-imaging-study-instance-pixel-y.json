@@ -23,14 +23,13 @@
   "base": [
     "ImagingStudy.series.instance"
   ],
-  "type": "string",
+  "type": "quantity",
   "expression": "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension(pixelSpacing(y)).value",
-  "modifier": [
-    "text",
-    "not",
-    "above",
-    "below",
-    "in",
-    "not-in"
+  "comparator": [
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le"
   ]
 }

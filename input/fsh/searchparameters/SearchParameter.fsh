@@ -735,14 +735,13 @@ Usage: #definition
 * description = "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(X)"
 * code = #instance-pixel-spacing-x
 * base = #ImagingStudy.series.instance
-* type = #string
+* type = #quantity
 * expression = "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension(pixelSpacing(x)).value"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
 
 Instance: mii-sp-bildgebung-imaging-study-instance-pixel-y
 InstanceOf: SearchParameter
@@ -757,14 +756,13 @@ Usage: #definition
 * description = "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(Y)"
 * code = #instance-pixel-spacing-y
 * base = #ImagingStudy.series.instance
-* type = #string
+* type = #quantity
 * expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension(pixelSpacing(y)).value"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
 
 Instance: mii-sp-bildgebung-imaging-study-slice-thickness
 InstanceOf: SearchParameter
@@ -779,7 +777,7 @@ Usage: #definition
 * description = "Suchparameter für ImagingStudy.series.instance.Extension.sliceThickness"
 * code = #instance-slice-thickness
 * base = #ImagingStudy.series.instance
-* type = #number
+* type = #quantity
 * expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension('sliceThickness').value"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
