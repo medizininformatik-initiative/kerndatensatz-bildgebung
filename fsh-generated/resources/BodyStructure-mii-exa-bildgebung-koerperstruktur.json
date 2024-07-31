@@ -8,5 +8,14 @@
   },
   "patient": {
     "reference": "Patient/example"
-  }
+  },
+  "location": {
+    "coding": [
+      {
+        "code": "43799004",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "description": "Exampletext"
 }
