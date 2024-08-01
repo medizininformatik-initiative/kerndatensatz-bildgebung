@@ -31,7 +31,7 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * code.coding[loinc] ^patternCoding.system = "http://loinc.org"
 * code.coding[radlex] ^patternCoding.system = "https://radlex.org"
 * code.coding[sct] ^patternCoding.system = $SCT
-* code.coding[sct].code from MII_VS_Bildgebung_ServiceRequest_Coding
+* code.coding[sct].code from MII_VS_Bildgebung_ServiceRequest_Coding (preferred)
 * subject MS
 * subject only Reference(Patient)
 * encounter MS

@@ -337,9 +337,9 @@
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.conclusionCode.coding:icd10",
+        "id": "DiagnosticReport.conclusionCode.coding:icd10-gm",
         "path": "DiagnosticReport.conclusionCode.coding",
-        "sliceName": "icd10",
+        "sliceName": "icd10-gm",
         "min": 0,
         "max": "*",
         "patternCoding": {

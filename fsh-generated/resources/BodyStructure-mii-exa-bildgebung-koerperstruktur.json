@@ -6,8 +6,13 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
     ]
   },
-  "patient": {
-    "reference": "Patient/example"
+  "morphology": {
+    "coding": [
+      {
+        "code": "31593006",
+        "system": "http://snomed.info/sct"
+      }
+    ]
   },
   "location": {
     "coding": [
@@ -17,5 +22,17 @@
       }
     ]
   },
-  "description": "Exampletext"
+  "locationQualifier": [
+    {
+      "coding": [
+        {
+          "code": "255561001",
+          "system": "http://snomed.info/sct"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "reference": "Patient/example"
+  }
 }

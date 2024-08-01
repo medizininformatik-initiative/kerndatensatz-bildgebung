@@ -161,7 +161,7 @@
         "id": "ServiceRequest.code.coding:sct.code",
         "path": "ServiceRequest.code.coding.code",
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-serviceRequest-coding"
         }
       },

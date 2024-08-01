@@ -64,8 +64,8 @@ Stufe 4: Einführung von Befundungs Prozeduren: Die Integration von Procedure-Re
 * conclusionCode.coding ^slicing.discriminator.path = "$this"
 * conclusionCode.coding ^slicing.rules = #open
 * conclusionCode.coding contains
-    icd10 0..* MS and
+    icd10-gm 0..* MS and
     sct 0..* MS
-* conclusionCode.coding[icd10] ^patternCoding.system = $icd10
+* conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd10-gm
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
 * presentedForm MS
