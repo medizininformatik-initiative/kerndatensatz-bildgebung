@@ -10,15 +10,17 @@
     "coding": [
       {
         "code": "31593006",
-        "system": "http://snomed.info/sct"
+        "system": "http://snomed.info/sct",
+        "display": "Minimal lesion (morphologic abnormality)"
       }
     ]
   },
   "location": {
     "coding": [
       {
-        "code": "43799004",
-        "system": "http://snomed.info/sct"
+        "code": "485005",
+        "system": "http://snomed.info/sct",
+        "display": "Transverse colon structure (body structure)"
       }
     ]
   },
@@ -27,7 +29,8 @@
       "coding": [
         {
           "code": "255561001",
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct",
+          "display": "Medial (qualifier value)"
         }
       ]
     }
