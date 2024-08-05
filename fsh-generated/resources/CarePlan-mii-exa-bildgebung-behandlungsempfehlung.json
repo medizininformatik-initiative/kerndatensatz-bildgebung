@@ -8,7 +8,13 @@
   },
   "status": "active",
   "intent": "proposal",
+  "description": "The patient must receive a MRI procedure, after a sportaccident",
   "subject": {
     "reference": "Patient/example"
-  }
+  },
+  "supportingInfo": [
+    {
+      "reference": "DiagnosticReport/example"
+    }
+  ]
 }

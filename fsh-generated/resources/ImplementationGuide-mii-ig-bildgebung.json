@@ -156,6 +156,7 @@
           "reference": "CarePlan/mii-exa-bildgebung-behandlungsempfehlung"
         },
         "name": "MII Example Bildgebung Care Plan",
+        "description": "The patient must receive a MRI procedure, after a sportaccident",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
       },
       {
