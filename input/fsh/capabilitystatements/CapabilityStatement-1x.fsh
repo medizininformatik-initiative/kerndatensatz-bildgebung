@@ -1,5 +1,3 @@
-Alias: $exp = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation
-
 RuleSet: SupportResource (resource, expectation)
 * rest.resource[+].type = #{resource}
 * rest.resource[=].extension[0].url = $exp
@@ -62,7 +60,7 @@ Usage: #definition
 * insert SupportSearchParam(morphology, http://hl7.org/fhir/SearchParameter/BodyStructure-morphology, #token, #SHALL)
 * insert SupportSearchParam(location, http://hl7.org/fhir/SearchParameter/BodyStructure-location, #token, #SHALL)
 * insert SupportSearchParam(location-qualifier, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-body-structure-location-qualfier, #token, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/BodyStructur-patient, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/BodyStructure-patient, #reference, #SHALL)
 
 //CarePlan
 * insert SupportResource(CarePlan, #SHALL)

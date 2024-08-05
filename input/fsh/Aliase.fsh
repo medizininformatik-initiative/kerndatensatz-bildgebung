@@ -1,3 +1,4 @@
+Alias: $exp = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation
 //HL7 VS
 Alias: $reasonCode = http://hl7.org/fhir/ValueSet/procedure-reason
 Alias: $bodySite = http://hl7.org/fhir/ValueSet/body-site

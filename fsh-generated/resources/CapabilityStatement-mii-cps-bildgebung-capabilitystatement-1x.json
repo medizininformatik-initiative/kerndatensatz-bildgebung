@@ -171,7 +171,7 @@
             },
             {
               "name": "patient",
-              "definition": "http://hl7.org/fhir/SearchParameter/BodyStructur-patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/BodyStructure-patient",
               "type": "reference",
               "extension": [
                 {
