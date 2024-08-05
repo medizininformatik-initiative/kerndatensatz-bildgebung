@@ -20,5 +20,40 @@
   "intent": "order",
   "subject": {
     "reference": "Patient/example"
-  }
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "6007000",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "encounter": {
+    "reference": "Encounter/example"
+  },
+  "authoredOn": "2024-07-19T12:03:30+02:00",
+  "requester": {
+    "reference": "Practitioner/example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "3514002",
+          "system": "http://snomed.info/sct"
+        }
+      ]
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/example"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "DiagnosticReport/example"
+    }
+  ]
 }

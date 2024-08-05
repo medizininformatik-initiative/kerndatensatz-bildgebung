@@ -53,7 +53,7 @@
     "fshType": "Instance",
     "fshFile": "instances/Example-RadiopharmaceuticalAdministration.fsh",
     "startLine": 1,
-    "endLine": 10
+    "endLine": 11
   },
   {
     "outputFile": "Observation-mii-exa-bildgebung-radiologische-beobachtung.json",
@@ -61,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "instances/Example-Observation.fsh",
     "startLine": 1,
-    "endLine": 7
+    "endLine": 20
   },
   {
     "outputFile": "Procedure-mii-exa-bildgebung-bildgebungsprozedur.json",
@@ -69,7 +69,7 @@
     "fshType": "Instance",
     "fshFile": "instances/Example-ImagingProcedure.fsh",
     "startLine": 1,
-    "endLine": 9
+    "endLine": 10
   },
   {
     "outputFile": "Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.json",
@@ -77,7 +77,7 @@
     "fshType": "Instance",
     "fshFile": "instances/Example-ReadProcedure.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 9
   },
   {
     "outputFile": "Procedure-mii-exa-bildgebung-tnm-radiologische-befundungsprozedur.json",
@@ -477,7 +477,7 @@
     "fshType": "Instance",
     "fshFile": "instances/Example-ServiceRequest.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 16
   },
   {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-SOPInstanz.json",

@@ -15,7 +15,7 @@ Description: "MII LogicalModel Modul Bildgebung"
 * ^date = "2024-07-16"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung"
 * . ^short = "Das Erweiterungsmodul Bildgebung enthält Datenelemente zur Dokumentation Bildgebungsstudien und radiologischen Befundberichten"
-
+//LM
 * Koerperstruktur 0..1 BackboneElement "Körperstruktur" "untersuchte Körperstruktur"
   * Morphologie 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Morphologie" "Morphologie der Körperstruktur"
   * Lokalisation 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "Lokalisation" "Lokalisation der Körperstruktur im Bild."
@@ -176,8 +176,7 @@ Description: "MII LogicalModel Modul Bildgebung"
   * Anforderungsbezug 0..* Reference(Condition) "Anforderungsbezug" "Anforderungsbezug"
   * Zusatzinformation 0..1 Reference(DiagnosticReport) "Zusatzinformation" "Zusatzinformation zur jeweiligen Anfoderung"
 
-
-
+//Mapping Profiles
 Mapping: Bildgebung-LogicalModel
 Id: FHIR
 Title: "Bildgebung LogicalModel FHIR Mapping"
@@ -342,6 +341,7 @@ Source: MII_LM_Bildgebung
   * Anforderungsbezug -> "ServiceRequest.reasonReference"
   * Zusatzinformation -> "ServiceRequest.supportingInfo"
 
+//Mapping KDS
 Mapping: Bildgebung-LogicalModel-Profile
 Id: KDS-Profile
 Title: "Bildgebung LogicalModel KDS-Profile Mapping"

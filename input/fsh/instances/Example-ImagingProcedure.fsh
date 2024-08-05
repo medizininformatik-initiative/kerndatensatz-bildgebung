@@ -6,4 +6,6 @@ Title: "MII Example Bildgebung Imaging Procedure"
 * basedOn = Reference(ServiceRequest/example)
 * status = #completed
 * category = $SCT#363679005 "Imaging (procedure)"
+//* code = $loinc# ""
 * subject = Reference(Patient/example)
+
