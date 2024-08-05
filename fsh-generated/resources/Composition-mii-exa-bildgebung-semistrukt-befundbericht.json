@@ -16,11 +16,38 @@
       }
     ]
   },
+  "subject": {
+    "reference": "Patient/example"
+  },
   "date": "2024-07-19T12:03:30+02:00",
   "author": [
     {
       "reference": "Practitioner/example"
     }
   ],
-  "title": "Example Composition"
+  "title": "Example Composition",
+  "section": [
+    {
+      "title": "Example Composition.section",
+      "code": {
+        "coding": [
+          {
+            "code": "8716-3",
+            "system": "http://loinc.org",
+            "display": "Vital signs"
+          }
+        ]
+      },
+      "author": [
+        {
+          "reference": "Practitioner/example"
+        }
+      ],
+      "entry": [
+        {
+          "reference": "Observation/example"
+        }
+      ]
+    }
+  ]
 }
