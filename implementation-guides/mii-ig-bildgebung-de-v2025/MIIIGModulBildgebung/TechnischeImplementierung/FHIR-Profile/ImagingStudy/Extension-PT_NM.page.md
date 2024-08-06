@@ -1,10 +1,10 @@
 ---
 parent:
-topic: ImagingStudyExtensionCT
+topic: ImagingStudyExtensionPTNM
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm
 ---
 
-## Extension Modalität CT
+## Extension Modalität PET und Nuklearmedizin
 
 Das ImagingStudy-Profil wird verwendet, um Bildgebungsstudien strukturiert zu erfassen und dazugehörige DICOM-Headerdaten abzubilden.
 

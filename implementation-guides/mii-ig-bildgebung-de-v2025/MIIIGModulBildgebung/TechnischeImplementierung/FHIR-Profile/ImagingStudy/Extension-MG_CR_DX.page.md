@@ -1,10 +1,10 @@
 ---
 parent:
-topic: ImagingStudyExtensionCT
+topic: ImagingStudyExtensionMGCRDX
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx
 ---
 
-## Extension Modalität CT
+## Extension Modalität Mammografie, Röntgen, Digitales Röntgen
 
 Das ImagingStudy-Profil wird verwendet, um Bildgebungsstudien strukturiert zu erfassen und dazugehörige DICOM-Headerdaten abzubilden.
 
