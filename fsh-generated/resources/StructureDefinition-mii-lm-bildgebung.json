@@ -2067,7 +2067,7 @@
         "path": "Bildgebung.Studie.Serien.ModalitaetMR.ScanningSequenz",
         "short": "Scanning Sequenz",
         "definition": "Code der aktuellen Scanning Sequenz",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "type": [
           {
@@ -2086,7 +2086,7 @@
         "path": "Bildgebung.Studie.Serien.ModalitaetMR.ScanningSequenzUntervariante",
         "short": "Scanning Sequenz Untervariante",
         "definition": "Code der aktuellen Scanning Sequenz Untervariante",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -2105,7 +2105,7 @@
         "path": "Bildgebung.Studie.Serien.ModalitaetMR.MagnetischeFeldstaerke",
         "short": "Magnetische Feldstärke",
         "definition": "Magnetische Feldstärke des Kernspins in T",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {

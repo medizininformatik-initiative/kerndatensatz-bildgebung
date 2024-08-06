@@ -15,9 +15,9 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * insert ExtensionContext(ImagingStudy.Series)
 //Extension
 * extension contains
-    magneticFieldStrength 1..1 and
-    scanningSequence 1..1 and
-    scanningSequenceVariant 1..1
+    magneticFieldStrength 0..1 and
+    scanningSequence 0..1 and
+    scanningSequenceVariant 0..1
 * extension[magneticFieldStrength].value[x]  only SimpleQuantity
 * extension[magneticFieldStrength].valueQuantity.unit = "tesla" 
 * extension[magneticFieldStrength].valueQuantity.system = "http://unitsofmeasure.org"
