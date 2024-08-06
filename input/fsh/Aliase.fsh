@@ -22,5 +22,3 @@ Alias: $radiopharmaceutical = https://dicom.nema.org/medical/dicom/current/outpu
 Alias: $modality = https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html
 Alias: $laterality = https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html
 Alias: $sop-class = https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html
-
-
