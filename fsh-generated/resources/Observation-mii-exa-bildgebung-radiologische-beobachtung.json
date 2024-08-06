@@ -13,7 +13,13 @@
     },
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz",
-      "valueId": "1.2.840.10008.5.1.4.1.1.1.1"
+      "valueId": "1234"
+    },
+    {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure",
+      "valueReference": {
+        "reference": "BodyStructure/example"
+      }
     }
   ],
   "partOf": [

@@ -4,8 +4,8 @@ Usage: #example
 Title: "MII Example Bildgebung Radiologische Beobachtung"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
 * extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildnummer].valueUnsignedInt = 12345
-* extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz].valueId = "1.2.840.10008.5.1.4.1.1.1.1"
-//* extension.bodyStructure = Reference(BodyStructure/example)
+* extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz].valueId = "1234"
+* extension[http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure].valueReference = Reference(BodyStructure/example)
 * partOf = Reference(Procedure/Readexample)
 * status = #final
 * category = $observation-category#imaging

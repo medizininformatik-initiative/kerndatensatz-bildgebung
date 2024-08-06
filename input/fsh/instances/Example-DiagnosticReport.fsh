@@ -14,4 +14,5 @@ Title: "MII Example Bildgebung Diagnostic Report"
 * imagingStudy = Reference (ImagingStudy/example)
 * conclusion = "There is no problematic observation"
 * conclusionCode = $SCT#1230003 "No diagnosis on Axis 1"
-//* extension[supportingInfo].value[Observation/example]
+* extension[http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo].extension[type].valueCodeableConcept = $v2-0936#SCI "Supporting Clinical Information"
+* extension[http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo].extension[reference].valueReference = Reference(DiagnosticReport/example)

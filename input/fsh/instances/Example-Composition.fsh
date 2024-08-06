@@ -12,5 +12,4 @@ Title: "MII Example Bildgebung Composition"
 * section.title = "Example Composition.section"
 * section.code = $loinc#8716-3 "Vital signs"
 * section.author = Reference(Practitioner/example)
-//* section.text = {This section bescribes the vital signs for Patient X}
 * section.entry = Reference(Observation/example)
