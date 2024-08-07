@@ -83,11 +83,11 @@ select
 | Serie --> Scanning Sequenz 		| (0018,0020) 			|
 | Serie --> Scanning Sequenz Untervariante | (0018,0021) 		|
 | Serie --> Magnetische Feldstärke 	| (0018,0087) 			|
-| Serie --> Radiopharmakon 		| (0018,0031) 			|
-| Serie --> Applikationsstartzeit 	| (0018,1042) 			|
+| Serie --> Radiopharmakon 		| (0054,0016)->(0018,0031) 			|
+| Serie --> Applikationsstartzeit 	| (0054,0016)->(0018,1042) 			|
 | Serie --> Reskalierungstyp 		| (0028,1054) 			|
-| Serie --> Gesamte Radionukliddosis 	| (0018,1044) 			|
-| Serie --> Halbwertszeit 		| (0018,1075) 			|
+| Serie --> Gesamte Radionukliddosis 	| (0054,0016)->(0018,1044) 			|
+| Serie --> Halbwertszeit 		| (0054,0016)->(0018,1075) 			|
 | Instanz --> SOP-Instanz 		| (0008,0018) 			|
 | Instanz --> SOP-Klasse 		| (0008,0016) 			|
 | Instanz --> Instanz-Nummer 		| (0020,0013) 			|
