@@ -14,7 +14,7 @@ Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v2-0936 = http://terminology.hl7.org/CodeSystem/v2-0936	
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $loinc = http://loinc.org
-
+Alias: $radlex = https://radlex.org
 //Dicom Alias
 Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 Alias: $rescaleType = https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.11.html#sect_C.11.1.1.2

@@ -28,8 +28,8 @@ Description: "Profil zur Anforderung einer Bildgebung."
     loinc 0..* MS and
     radlex 0..* MS and
     sct 0..* MS
-* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
-* code.coding[radlex] ^patternCoding.system = "https://radlex.org"
+* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[radlex] ^patternCoding.system = $radlex
 * code.coding[sct] ^patternCoding.system = $SCT
 * code.coding[sct].code from MII_VS_Bildgebung_ServiceRequest_Coding (preferred)
 * subject MS
