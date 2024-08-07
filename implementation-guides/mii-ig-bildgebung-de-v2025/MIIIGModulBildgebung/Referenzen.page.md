@@ -8,7 +8,7 @@ Die verwendeten Codesysteme, Terminologien und Referenzen für Prozeduren, Diagn
 * [OPS - Operationen- und Prozedurenschlüssel](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/OPS-ICHI/OPS/_node.html)
 * [RadLex](https://www.rsna.org/practice-tools/data-tools-and-standards/radlex-radiology-lexicon)
 * [LOINC - Logical Observation Identifiers Names and Codes](https://loinc.org/)
-* [ICD - International Statistical Classification of Diseases and Related Health Problems](https://www.dimdi.de/static/de/klassifikationen/icd/icd-10-gm/kode-suche/htmlgm2020/)
+* [ICD - International Statistical Classification of Diseases and Related Health Problems](https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/index.htm)
 * [IDMP - Identification of Medicinal Products](https://www.ema.europa.eu/en/human-regulatory/overview/data-medicines-iso-idmp-standards-overview)
 
 Befundungsspezifische Erweiterungsmodule und Profile zur Befundung, die auf diese Implentierung referenzieren, sollen sich inhaltlich an den gängigen Befundungsrichtlinien
