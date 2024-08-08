@@ -46,7 +46,7 @@ Usage: #definition
 * format[0] = #xml
 * format[+] = #json
 * rest.mode = #server
-/*
+
 //BodyStrucuture
 * insert SupportResource(BodyStructure, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/BodyStructure, #SHALL)
@@ -61,7 +61,7 @@ Usage: #definition
 * insert SupportSearchParam(location, http://hl7.org/fhir/SearchParameter/BodyStructure-location, #token, #SHALL)
 * insert SupportSearchParam(location-qualifier, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-body-structure-location-qualfier, #token, #SHALL)
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/BodyStructure-patient, #reference, #SHALL)
-*//*
+/*
 //CarePlan
 * insert SupportResource(CarePlan, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/CarePlan, #SHALL)
