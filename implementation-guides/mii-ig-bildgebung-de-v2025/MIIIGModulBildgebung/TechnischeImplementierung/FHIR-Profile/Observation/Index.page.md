@@ -76,7 +76,7 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 **Beispiele**
 
-Beispiel einer DiagnosticReport-Ressource mit Angaben zum Applikationsweg und der Dosierung
+Beispiel einer Observation-Ressource zur strukturierten Darstellung eine radiologischen Beobachtung:
 
 {{json:fsh-generated/resources/Observation-mii-exa-bildgebung-radiologische-beobachtung.json}}
 

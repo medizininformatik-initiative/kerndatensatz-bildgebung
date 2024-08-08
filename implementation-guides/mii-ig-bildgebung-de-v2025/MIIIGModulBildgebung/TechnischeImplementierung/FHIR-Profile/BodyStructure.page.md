@@ -75,7 +75,7 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 **Beispiele**
 
-Beispiel einer DiagnosticReport-Ressource mit Angaben zum Applikationsweg und der Dosierung
+Beispiel einer BodyStructure-Ressource mit detailierten Angaben zur untersuchten Körperregion:
 
 {{json:fsh-generated/resources/BodyStructure-mii-exa-bildgebung-koerperstruktur.json}}
 

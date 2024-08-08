@@ -75,7 +75,7 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 **Beispiele**
 
-Beispiel einer DiagnosticReport-Ressource mit Angaben zum Applikationsweg und der Dosierung
+Beispiel einer MedicationAdministration-Ressource mit der Applikation eines Radiopharmakon
 
 {{json:fsh-generated/resources/MedicationAdministration-mii-exa-bildgebung-gabe-radiopharmakon.json}}
 

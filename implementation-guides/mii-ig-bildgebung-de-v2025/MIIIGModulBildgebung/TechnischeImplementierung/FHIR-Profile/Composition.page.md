@@ -75,7 +75,7 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 **Beispiele**
 
-Beispiel einer DiagnosticReport-Ressource mit Angaben zum Applikationsweg und der Dosierung
+Beispiel einer Composition-Ressource zur Darstellung des Befunds in verschiedenen Abschnitten:
 
 {{json:fsh-generated/resources/Composition-mii-exa-bildgebung-semistrukt-befundbericht.json}}
 

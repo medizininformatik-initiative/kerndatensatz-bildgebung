@@ -75,7 +75,7 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 **Beispiele**
 
-Beispiel einer DiagnosticReport-Ressource mit Angaben zum Applikationsweg und der Dosierung
+Beispiel einer CarePlan-Ressource mit Angaben zur passenden radiologischen behandlungsempfehlung:
 
 {{json:fsh-generated/resources/CarePlan-mii-exa-bildgebung-behandlungsempfehlung.json}}
 

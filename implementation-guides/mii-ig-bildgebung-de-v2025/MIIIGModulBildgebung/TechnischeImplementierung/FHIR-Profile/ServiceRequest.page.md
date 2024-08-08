@@ -75,7 +75,7 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 **Beispiele**
 
-Beispiel einer DiagnosticReport-Ressource mit Angaben zum Applikationsweg und der Dosierung
+Beispiel einer ServiceRequest-Ressource
 
 {{json:fsh-generated/resources/ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.json}}
 
