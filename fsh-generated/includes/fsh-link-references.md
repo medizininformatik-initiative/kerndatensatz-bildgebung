@@ -36,7 +36,6 @@
 [MII_VS_Bildgebung_ServiceRequest_Reason]: ValueSet-mii-vs-bildgebung-serviceRequest-reason.html
 [mii-sp-bildgebung-body-structure-location-qualfier]: SearchParameter-mii-sp-bildgebung-body-structure-location-qualfier.html
 [mii-sp-bildgebung-composition-section-author]: SearchParameter-mii-sp-bildgebung-composition-section-author.html
-[mii-sp-bildgebung-composition-section-text]: SearchParameter-mii-sp-bildgebung-composition-section-text.html
 [mii-sp-bildgebung-composition-section-title]: SearchParameter-mii-sp-bildgebung-composition-section-title.html
 [mii-sp-bildgebung-description]: SearchParameter-mii-sp-bildgebung-description.html
 [mii-sp-bildgebung-diagnostic-report-conclusion]: SearchParameter-mii-sp-bildgebung-diagnostic-report-conclusion.html

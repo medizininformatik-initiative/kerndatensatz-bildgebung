@@ -127,22 +127,6 @@ Usage: #definition
 * expression = "Composition.section.author"
 * target = #Practitioner
 
-Instance: mii-sp-bildgebung-composition-section-text
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-text"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Composition_Section_Text"
-* status = #active
-* experimental = false
-* date = "2024-07-30"
-* description = "Suchparameter für Composition.section.text"
-* code = #section-text
-* base = #Composition
-* type = #text
-* expression = "Composition.section.text"
-
 Instance: mii-sp-bildgebung-diagnostic-report-imaging-study
 InstanceOf: SearchParameter
 Usage: #definition
