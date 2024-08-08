@@ -123,7 +123,7 @@ Usage: #definition
 * insert SupportSearchParam(imaging-study, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-imaging-study, #reference, #SHALL)
 * insert SupportSearchParam(conclusion-text, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion, #string, #SHALL)
 * insert SupportSearchParam(conclusion, http://hl7.org/fhir/SearchParameter/DiagnosticReport-conclusion, #token, #SHALL)
-/*
+
 //ImagingProcedure
 * insert SupportResource(ImagingProcedure, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/Procedure, #SHALL)
@@ -139,7 +139,7 @@ Usage: #definition
 * insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Procedure-category, #token, #SHALL)
 * insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-*//*
+/*
 //ReadProcedure
 * insert SupportResource(ReadProcedure, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/Procedure, #SHALL)
