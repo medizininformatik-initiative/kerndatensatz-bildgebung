@@ -77,7 +77,7 @@ Usage: #definition
 * insert SupportSearchParam(description, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-description, #string, #SHALL)
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
 * insert SupportSearchParam(supporting-info, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-supporting-info, #reference, #SHALL)
-/*
+
 //Composition
 * insert SupportResource(Composition, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/Composition, #SHALL)
@@ -100,7 +100,7 @@ Usage: #definition
 * insert SupportSearchParam(section-author, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-author, #reference, #SHALL)
 * insert SupportSearchParam(section-text, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-text, #text, #SHALL)
 * insert SupportSearchParam(entry, http://hl7.org/fhir/SearchParameter/Composition-entry, #reference, #SHALL)
-*//*
+/*
 //DiagnosticReport
 * insert SupportResource(DiagnosticReport, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/DiagnosticReport, #SHALL)
