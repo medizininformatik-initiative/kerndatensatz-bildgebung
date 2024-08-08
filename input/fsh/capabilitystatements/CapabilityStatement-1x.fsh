@@ -46,7 +46,7 @@ Usage: #definition
 * format[0] = #xml
 * format[+] = #json
 * rest.mode = #server
-
+/*
 //BodyStrucuture
 * insert SupportResource(BodyStructure, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/BodyStructure, #SHALL)
@@ -61,7 +61,7 @@ Usage: #definition
 * insert SupportSearchParam(location, http://hl7.org/fhir/SearchParameter/BodyStructure-location, #token, #SHALL)
 * insert SupportSearchParam(location-qualifier, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-body-structure-location-qualfier, #token, #SHALL)
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/BodyStructure-patient, #reference, #SHALL)
-
+*//*
 //CarePlan
 * insert SupportResource(CarePlan, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/CarePlan, #SHALL)
@@ -77,7 +77,7 @@ Usage: #definition
 * insert SupportSearchParam(description, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-description, #string, #SHALL)
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
 * insert SupportSearchParam(supporting-info, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-supporting-info, #reference, #SHALL)
-
+*//*
 //Composition
 * insert SupportResource(Composition, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/Composition, #SHALL)
@@ -100,7 +100,7 @@ Usage: #definition
 * insert SupportSearchParam(section-author, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-author, #reference, #SHALL)
 * insert SupportSearchParam(section-text, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-text, #text, #SHALL)
 * insert SupportSearchParam(entry, http://hl7.org/fhir/SearchParameter/Composition-entry, #reference, #SHALL)
-
+*//*
 //DiagnosticReport
 * insert SupportResource(DiagnosticReport, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/DiagnosticReport, #SHALL)
@@ -123,7 +123,7 @@ Usage: #definition
 * insert SupportSearchParam(imaging-study, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-imaging-study, #reference, #SHALL)
 * insert SupportSearchParam(conclusion-text, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion, #string, #SHALL)
 * insert SupportSearchParam(conclusion, http://hl7.org/fhir/SearchParameter/DiagnosticReport-conclusion, #token, #SHALL)
-
+*//*
 //ImagingProcedure
 * insert SupportResource(ImagingProcedure, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/Procedure, #SHALL)
@@ -139,7 +139,7 @@ Usage: #definition
 * insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Procedure-category, #token, #SHALL)
 * insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-
+*//*
 //ReadProcedure
 * insert SupportResource(ReadProcedure, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/Procedure, #SHALL)
@@ -155,7 +155,7 @@ Usage: #definition
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
 * insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
 * insert SupportSearchParam(report, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-read-proc-report, #reference, #SHALL)
-
+*//*
 //ImagingStudy
 * insert SupportResource(ImagingStudy, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/ImagingStudy, #SHALL)
@@ -211,7 +211,7 @@ Usage: #definition
 * insert SupportSearchParam(instance, http://hl7.org/fhir/SearchParameter/ImagingStudy-instance, #token, #SHALL)
 * insert SupportSearchParam(dicom-class, http://hl7.org/fhir/SearchParameter/ImagingStudy-dicom-class, #token, #SHALL)
 * insert SupportSearchParam(instance-number, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-number, #number, #SHALL)
-
+*//*
 //Observation
 * insert SupportResource(Observation, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/Observation, #SHALL)
@@ -252,7 +252,7 @@ Usage: #definition
 * insert SupportSearchParam(component-code-value-quantity, http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity, #composite, #SHALL)
 * insert SupportSearchParam(component-value-concept, http://hl7.org/fhir/SearchParameter/Observation-component-value-concept, #token, #SHALL)
 * insert SupportSearchParam(component-value-quantity, http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept, #quantity, #SHALL)
-
+*//*
 //RadiopharmaceuticalAdministration
 * insert SupportResource(MedicationAdministration, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationAdministration, #SHALL)
@@ -269,7 +269,7 @@ Usage: #definition
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
 * insert SupportSearchParam(effective-time, http://hl7.org/fhir/SearchParameter/MedicationAdministration-effective-time, #date, #SHALL)
 * insert SupportSearchParam(dosage-dose, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-medications-dose, #quantity, #SHALL)
-
+*//*
 //ServiceRequest
 * insert SupportResource(ServiceRequest, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/ServiceRequest, #SHALL)
@@ -291,3 +291,4 @@ Usage: #definition
 * insert SupportSearchParam(reason-code, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-service-request-reason-code, #token, #SHALL)
 * insert SupportSearchParam(reason-reference, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-reason-reference, #reference, #SHALL)
 * insert SupportSearchParam(supporting-info, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-supporting-info, #reference, #SHALL)
+*/
