@@ -1,7 +1,7 @@
 [mii-exa-bildgebung-tnm-radiologische-befundungsprozedur]: Procedure-mii-exa-bildgebung-tnm-radiologische-befundungsprozedur.html
 [mii-cps-bildgebung-capabilitystatement-1x]: CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.html
 [MII_EX_Bildgebung_Bildgebungsgrund]: StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.html
-[MII_EX_Bildgebung_Bildnummer]: StructureDefinition-mii-ex-bildgebung-bildnummer.html
+[MII_EX_Bildgebung_Serie_UID]: StructureDefinition-mii-ex-bildgebung-serie-uid.html
 [MII_EX_Bildgebung_Geraete_Hersteller]: StructureDefinition-mii-ex-bildgebung-geraet-hersteller.html
 [MII_EX_Bildgebung_Kontrastmittel]: StructureDefinition-mii-ex-bildgebung-kontrastmittel.html
 [MII_EX_Bildgebung_Modalitaet_CT]: StructureDefinition-mii-ex-bildgebung-modalitaet-ct.html
@@ -9,7 +9,7 @@
 [MII_EX_Bildgebung_Modalitaet_MR]: StructureDefinition-mii-ex-bildgebung-modalitaet-mr.html
 [MII_EX_Bildgebung_Modalitaet_PT_NM]: StructureDefinition-mii-ex-bildgebung-modalitaet-pt-nm.html
 [MII_EX_Bildgebung_Instanz_Serie]: StructureDefinition-mii-ex-bildgebung-instanz-serie.html
-[MII_EX_Bildgebung_SOPInstanz]: StructureDefinition-mii-ex-bildgebung-SOPInstanz.html
+[MII_EX_Bildgebung_SOP_Instanz_UID]: StructureDefinition-mii-ex-bildgebung-sop-instanz-uid.html
 [mii-exa-bildgebung-koerperstruktur]: BodyStructure-mii-exa-bildgebung-koerperstruktur.html
 [mii-exa-bildgebung-behandlungsempfehlung]: CarePlan-mii-exa-bildgebung-behandlungsempfehlung.html
 [mii-exa-bildgebung-semistrukt-befundbericht]: Composition-mii-exa-bildgebung-semistrukt-befundbericht.html
@@ -73,11 +73,11 @@
 [mii-sp-bildgebung-imaging-study-series-xray-tube-current]: SearchParameter-mii-sp-bildgebung-imaging-study-series-xray-tube-current.html
 [mii-sp-bildgebung-imaging-study-slice-thickness]: SearchParameter-mii-sp-bildgebung-imaging-study-slice-thickness.html
 [mii-sp-bildgebung-medications-dose]: SearchParameter-mii-sp-bildgebung-medications-dose.html
-[mii-sp-bildgebung-observation-bildnummer]: SearchParameter-mii-sp-bildgebung-observation-bildnummer.html
 [mii-sp-bildgebung-observation-body-site]: SearchParameter-mii-sp-bildgebung-observation-body-site.html
 [mii-sp-bildgebung-observation-body-structure]: SearchParameter-mii-sp-bildgebung-observation-body-structure.html
 [mii-sp-bildgebung-observation-issued]: SearchParameter-mii-sp-bildgebung-observation-issued.html
-[mii-sp-bildgebung-observation-sop-instance]: SearchParameter-mii-sp-bildgebung-observation-sop-instance.html
+[mii-sp-bildgebung-observation-serie-uid]: SearchParameter-mii-sp-bildgebung-observation-serie-uid.html
+[mii-sp-bildgebung-observation-sop-instance-uid]: SearchParameter-mii-sp-bildgebung-observation-sop-instance-uid.html
 [mii-sp-bildgebung-read-proc-report]: SearchParameter-mii-sp-bildgebung-read-proc-report.html
 [mii-sp-bildgebung-reason-reference]: SearchParameter-mii-sp-bildgebung-reason-reference.html
 [mii-sp-bildgebung-service-request-reason-code]: SearchParameter-mii-sp-bildgebung-service-request-reason-code.html

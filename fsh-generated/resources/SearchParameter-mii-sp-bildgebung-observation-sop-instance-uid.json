@@ -1,0 +1,36 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-bildgebung-observation-sop-instance-uid",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-sop-instance-uid",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "name": "MII_SP_Bildgebung_Observation_SOP_Instance_UID",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-30",
+  "description": "Suchparameter für Observation.sopInstanceUID",
+  "code": "sop-instance-uid",
+  "base": [
+    "Observation"
+  ],
+  "type": "token",
+  "expression": "Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid').value",
+  "modifier": [
+    "text",
+    "not",
+    "above",
+    "below",
+    "in",
+    "not-in"
+  ]
+}

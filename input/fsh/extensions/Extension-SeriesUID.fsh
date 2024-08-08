@@ -1,9 +1,9 @@
 //Head
-Extension: MII_EX_Bildgebung_Bildnummer
-Id: mii-ex-bildgebung-bildnummer
+Extension: MII_EX_Bildgebung_Serie_UID
+Id: mii-ex-bildgebung-serie-uid
 Title: "MII EX Bildgebung Bildnummer"
 Description: "Die Extension ermöglicht es, den Bildnummer aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildnummer"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid"
 //Translation
 * insert Translation(^name, en-US, MII_EX_Imaging_Imagenumber)
 * insert Translation(^title, en-US, MII EX Imaging Imagenumber)
@@ -14,4 +14,4 @@ Description: "Die Extension ermöglicht es, den Bildnummer aus dem entsprechende
 * insert Publisher
 * insert ExtensionContext(Observation)
 //Extension
-* value[x]  only unsignedInt
+* value[x]  only id

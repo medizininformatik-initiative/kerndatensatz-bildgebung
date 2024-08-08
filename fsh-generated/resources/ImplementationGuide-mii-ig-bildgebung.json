@@ -74,7 +74,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-ex-bildgebung-bildnummer"
+          "reference": "StructureDefinition/mii-ex-bildgebung-serie-uid"
         },
         "name": "MII EX Bildgebung Bildnummer",
         "description": "Die Extension ermöglicht es, den Bildnummer aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.",
@@ -138,7 +138,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-ex-bildgebung-SOPInstanz"
+          "reference": "StructureDefinition/mii-ex-bildgebung-sop-instanz-uid"
         },
         "name": "MII EX Bildgebung SOPInstanz",
         "description": "Die Extension ermöglicht es, den SOPInstanz aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.",
@@ -642,14 +642,6 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-observation-bildnummer"
-        },
-        "name": "mii-sp-bildgebung-observation-bildnummer",
-        "description": "Suchparameter für Observation.bildnummer",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-observation-body-site"
         },
         "name": "mii-sp-bildgebung-observation-body-site",
@@ -674,10 +666,18 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-observation-sop-instance"
+          "reference": "SearchParameter/mii-sp-bildgebung-observation-serie-uid"
         },
-        "name": "mii-sp-bildgebung-observation-sop-instance",
-        "description": "Suchparameter für Observation.sopInstance",
+        "name": "mii-sp-bildgebung-observation-serie-uid",
+        "description": "Suchparameter für Observation.extension.seriesUID",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-observation-sop-instance-uid"
+        },
+        "name": "mii-sp-bildgebung-observation-sop-instance-uid",
+        "description": "Suchparameter für Observation.sopInstanceUID",
         "exampleBoolean": false
       },
       {

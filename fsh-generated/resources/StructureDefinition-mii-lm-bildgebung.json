@@ -2552,7 +2552,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildnummer)"
+            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid)"
           }
         ]
       },
@@ -2571,7 +2571,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz)"
+            "map": "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid)"
           }
         ]
       },

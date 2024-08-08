@@ -1784,9 +1784,9 @@
               ]
             },
             {
-              "name": "bildnummer",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-bildnummer",
-              "type": "number",
+              "name": "serie-uid",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-serie-uid",
+              "type": "token",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -1795,8 +1795,8 @@
               ]
             },
             {
-              "name": "sop-instance",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-sop-instance",
+              "name": "sop-instance-uid",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-sop-instance-uid",
               "type": "token",
               "extension": [
                 {

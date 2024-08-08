@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-ex-bildgebung-SOPInstanz",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz",
+  "id": "mii-ex-bildgebung-sop-instanz-uid",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid",
   "version": "2025.0.0",
-  "name": "MII_EX_Bildgebung_SOPInstanz",
+  "name": "MII_EX_Bildgebung_SOP_Instanz_UID",
   "_name": {
     "extension": [
       {
@@ -92,7 +92,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz"
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid"
       },
       {
         "id": "Extension.value[x]",

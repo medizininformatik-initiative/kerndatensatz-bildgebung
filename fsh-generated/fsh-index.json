@@ -396,56 +396,56 @@
     "fshName": "mii-sp-bildgebung-medications-dose",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 931,
-    "endLine": 950
-  },
-  {
-    "outputFile": "SearchParameter-mii-sp-bildgebung-observation-bildnummer.json",
-    "fshName": "mii-sp-bildgebung-observation-bildnummer",
-    "fshType": "Instance",
-    "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 832,
-    "endLine": 851
+    "startLine": 932,
+    "endLine": 951
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-body-site.json",
     "fshName": "mii-sp-bildgebung-observation-body-site",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 908,
-    "endLine": 928
+    "startLine": 909,
+    "endLine": 929
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-body-structure.json",
     "fshName": "mii-sp-bildgebung-observation-body-structure",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 875,
-    "endLine": 890
+    "startLine": 876,
+    "endLine": 891
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-issued.json",
     "fshName": "mii-sp-bildgebung-observation-issued",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 892,
-    "endLine": 906
+    "startLine": 893,
+    "endLine": 907
   },
   {
-    "outputFile": "SearchParameter-mii-sp-bildgebung-observation-sop-instance.json",
-    "fshName": "mii-sp-bildgebung-observation-sop-instance",
+    "outputFile": "SearchParameter-mii-sp-bildgebung-observation-serie-uid.json",
+    "fshName": "mii-sp-bildgebung-observation-serie-uid",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 853,
-    "endLine": 873
+    "startLine": 832,
+    "endLine": 852
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-observation-sop-instance-uid.json",
+    "fshName": "mii-sp-bildgebung-observation-sop-instance-uid",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/SearchParameter.fsh",
+    "startLine": 854,
+    "endLine": 874
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-read-proc-report.json",
     "fshName": "mii-sp-bildgebung-read-proc-report",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 953,
-    "endLine": 970
+    "startLine": 954,
+    "endLine": 971
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-reason-reference.json",
@@ -460,8 +460,8 @@
     "fshName": "mii-sp-bildgebung-service-request-reason-code",
     "fshType": "Instance",
     "fshFile": "searchparameters/SearchParameter.fsh",
-    "startLine": 973,
-    "endLine": 993
+    "startLine": 974,
+    "endLine": 994
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-supporting-info.json",
@@ -480,26 +480,10 @@
     "endLine": 16
   },
   {
-    "outputFile": "StructureDefinition-mii-ex-bildgebung-SOPInstanz.json",
-    "fshName": "MII_EX_Bildgebung_SOPInstanz",
-    "fshType": "Extension",
-    "fshFile": "extensions/Extension-SOPInstance.fsh",
-    "startLine": 2,
-    "endLine": 17
-  },
-  {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.json",
     "fshName": "MII_EX_Bildgebung_Bildgebungsgrund",
     "fshType": "Extension",
     "fshFile": "extensions/Extension-ImagingReason.fsh",
-    "startLine": 2,
-    "endLine": 17
-  },
-  {
-    "outputFile": "StructureDefinition-mii-ex-bildgebung-bildnummer.json",
-    "fshName": "MII_EX_Bildgebung_Bildnummer",
-    "fshType": "Extension",
-    "fshFile": "extensions/Extension-NumberImage.fsh",
     "startLine": 2,
     "endLine": 17
   },
@@ -558,6 +542,22 @@
     "fshFile": "extensions/Extension-Modality-PT_NM.fsh",
     "startLine": 2,
     "endLine": 36
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-serie-uid.json",
+    "fshName": "MII_EX_Bildgebung_Serie_UID",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-SeriesUID.fsh",
+    "startLine": 2,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-sop-instanz-uid.json",
+    "fshName": "MII_EX_Bildgebung_SOP_Instanz_UID",
+    "fshType": "Extension",
+    "fshFile": "extensions/Extension-SOPInstanceUID.fsh",
+    "startLine": 2,
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-mii-lm-bildgebung.json",

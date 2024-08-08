@@ -829,42 +829,43 @@ Usage: #definition
 * comparator[+] = #le
 
 //Observation
-Instance: mii-sp-bildgebung-observation-bildnummer
+Instance: mii-sp-bildgebung-observation-serie-uid
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-bildnummer"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-serie-uid"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Observation_Bildnummer"
+* name = "MII_SP_Bildgebung_Observation_Serie_UID"
 * status = #active
 * experimental = false
 * date = "2024-07-30"
-* description = "Suchparameter für Observation.bildnummer"
-* code = #bildnummer
-* base = #Observation
-* type = #number
-* expression = "Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildnummer').value"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le
-
-Instance: mii-sp-bildgebung-observation-sop-instance
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-sop-instance"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Observation_SOP-Instance"
-* status = #active
-* experimental = false
-* date = "2024-07-30"
-* description = "Suchparameter für Observation.sopInstance"
-* code = #sop-instance
+* description = "Suchparameter für Observation.extension.seriesUID"
+* code = #serie-uid
 * base = #Observation
 * type = #token
-* expression = "Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz').value"
+* expression = "Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+
+Instance: mii-sp-bildgebung-observation-sop-instance-uid
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-sop-instance-uid"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Observation_SOP_Instance_UID"
+* status = #active
+* experimental = false
+* date = "2024-07-30"
+* description = "Suchparameter für Observation.sopInstanceUID"
+* code = #sop-instance-uid
+* base = #Observation
+* type = #token
+* expression = "Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid').value"
 * modifier[+] = #text
 * modifier[+] = #not
 * modifier[+] = #above

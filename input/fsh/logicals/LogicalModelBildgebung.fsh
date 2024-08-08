@@ -301,8 +301,8 @@ Source: MII_LM_Bildgebung
       * PixelabstandX -> "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie)"
       * PixelabstandY -> "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie)"
 * GenerischeBeobachtung -> "Observation"
-  * Bildnummer -> "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildnummer)"
-  * Schichtposition -> "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-SOPInstanz)"
+  * Bildnummer -> "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid)"
+  * Schichtposition -> "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid)"
   * ErweiterteKoerperstruktur -> "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-observation-imaging)" //Backport
   * TeilEinerBefundungsprozedur -> "Observation.partOf"
   * Status -> "Observation.staus"
