@@ -11,7 +11,8 @@
       "coding": [
         {
           "code": "363679005",
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct",
+          "display": "Imaging (procedure)"
         }
       ]
     }
@@ -25,7 +26,8 @@
     "coding": [
       {
         "code": "6007000",
-        "system": "http://snomed.info/sct"
+        "system": "http://snomed.info/sct",
+        "display": "Magnetic resonance imaging of chest (procedure)"
       }
     ]
   },
@@ -41,7 +43,8 @@
       "coding": [
         {
           "code": "3514002",
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct",
+          "display": "Peribronchial fibrosis of lung (disorder)"
         }
       ]
     }
