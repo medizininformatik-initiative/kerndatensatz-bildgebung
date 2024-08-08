@@ -335,14 +335,14 @@
           ]
         },
         {
-          "type": "Composition",
+          "type": "DiagnosticReport",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
               "valueCode": "SHALL"
             }
           ],
-          "profile": "http://hl7.org/fhir/StructureDefinition/Composition",
+          "profile": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
           "_profile": {
             "extension": [
               {
@@ -352,7 +352,7 @@
             ]
           },
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht|1.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|1.0.0"
           ],
           "_supportedProfile": [
             {
@@ -430,8 +430,30 @@
               ]
             },
             {
+              "name": "supporting-info",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-supporting-info",
+              "type": "reference",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "based-on",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-based-on",
+              "type": "reference",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
               "name": "status",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-status",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-status",
               "type": "token",
               "extension": [
                 {
@@ -441,8 +463,8 @@
               ]
             },
             {
-              "name": "type",
-              "definition": "http://hl7.org/fhir/SearchParameter/clinical-type",
+              "name": "category",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-category",
               "type": "token",
               "extension": [
                 {
@@ -452,8 +474,8 @@
               ]
             },
             {
-              "name": "description",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-description",
+              "name": "code",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
               "type": "token",
               "extension": [
                 {
@@ -485,8 +507,19 @@
               ]
             },
             {
-              "name": "author",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-author",
+              "name": "issued",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-issued",
+              "type": "date",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "result",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-result",
               "type": "reference",
               "extension": [
                 {
@@ -496,8 +529,19 @@
               ]
             },
             {
-              "name": "title",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-title",
+              "name": "imaging-study",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-imaging-study",
+              "type": "reference",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "conclusion-text",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion",
               "type": "string",
               "extension": [
                 {
@@ -507,53 +551,9 @@
               ]
             },
             {
-              "name": "section-title",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-title",
-              "type": "string",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "section",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-section",
+              "name": "conclusion",
+              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-conclusion",
               "type": "token",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "section-author",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-author",
-              "type": "reference",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "section-text",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-text",
-              "type": "text",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "entry",
-              "definition": "http://hl7.org/fhir/SearchParameter/Composition-entry",
-              "type": "reference",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
