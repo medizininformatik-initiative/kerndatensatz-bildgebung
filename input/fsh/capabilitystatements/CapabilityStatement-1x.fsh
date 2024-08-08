@@ -211,7 +211,7 @@ Usage: #definition
 * insert SupportSearchParam(instance, http://hl7.org/fhir/SearchParameter/ImagingStudy-instance, #token, #SHALL)
 * insert SupportSearchParam(dicom-class, http://hl7.org/fhir/SearchParameter/ImagingStudy-dicom-class, #token, #SHALL)
 * insert SupportSearchParam(instance-number, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-number, #number, #SHALL)
-*//*
+*/
 //Observation
 * insert SupportResource(Observation, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/Observation, #SHALL)
@@ -252,7 +252,7 @@ Usage: #definition
 * insert SupportSearchParam(component-code-value-quantity, http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity, #composite, #SHALL)
 * insert SupportSearchParam(component-value-concept, http://hl7.org/fhir/SearchParameter/Observation-component-value-concept, #token, #SHALL)
 * insert SupportSearchParam(component-value-quantity, http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept, #quantity, #SHALL)
-*//*
+/*
 //RadiopharmaceuticalAdministration
 * insert SupportResource(MedicationAdministration, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationAdministration, #SHALL)

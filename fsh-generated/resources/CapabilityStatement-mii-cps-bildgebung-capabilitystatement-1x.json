@@ -866,6 +866,433 @@
               ]
             }
           ]
+        },
+        {
+          "type": "Observation",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "profile": "http://hl7.org/fhir/StructureDefinition/Observation",
+          "_profile": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                "valueCode": "SHALL"
+              }
+            ]
+          },
+          "supportedProfile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|1.0.0"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/Resource-id",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+              "type": "date",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "_profile",
+              "definition": "http://hl7.org/fhir/SearchParameter/Resource-profile",
+              "type": "uri",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "_source",
+              "definition": "http://hl7.org/fhir/SearchParameter/Resource-source",
+              "type": "uri",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "serie-uid",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-serie-uid",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "sop-instance-uid",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-sop-instance-uid",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "body-structure",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-structure",
+              "type": "reference",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "part-of",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-part-of",
+              "type": "reference",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-status",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "category",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-category",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "code",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+              "type": "reference",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "issued",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-issued",
+              "type": "date",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "value-concept",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-concept",
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "value-date",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-date",
+              "type": "date",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "value-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-quantity",
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "value-string",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-string",
+              "type": "string",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "body-site",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-site",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "has-member",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-has-member",
+              "type": "reference",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "derived-from",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-derived-from",
+              "type": "reference",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "code-value-concept",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-code-value-concept",
+              "type": "composite",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "code-value-date",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-code-value-date",
+              "type": "composite",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "code-value-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-code-value-quantity",
+              "type": "composite",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "code-value-string",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-code-value-string",
+              "type": "composite",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "combo-code",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-code",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "combo-code-value-concept",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-concept",
+              "type": "composite",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "combo-code-value-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-quantity",
+              "type": "composite",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "combo-value-concept",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "combo-value-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-quantity",
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "component-code",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "component-code-value-concept",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept",
+              "type": "composite",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "component-code-value-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity",
+              "type": "composite",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "component-value-concept",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-value-concept",
+              "type": "token",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "name": "component-value-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept",
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
