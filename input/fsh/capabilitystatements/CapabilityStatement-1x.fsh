@@ -61,7 +61,7 @@ Usage: #definition
 * insert SupportSearchParam(location, http://hl7.org/fhir/SearchParameter/BodyStructure-location, #token, #SHALL)
 * insert SupportSearchParam(location-qualifier, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-body-structure-location-qualfier, #token, #SHALL)
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/BodyStructure-patient, #reference, #SHALL)
-/*
+
 //CarePlan
 * insert SupportResource(CarePlan, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/CarePlan, #SHALL)
@@ -77,7 +77,7 @@ Usage: #definition
 * insert SupportSearchParam(description, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-description, #string, #SHALL)
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
 * insert SupportSearchParam(supporting-info, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-supporting-info, #reference, #SHALL)
-*//*
+/*
 //Composition
 * insert SupportResource(Composition, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/Composition, #SHALL)
