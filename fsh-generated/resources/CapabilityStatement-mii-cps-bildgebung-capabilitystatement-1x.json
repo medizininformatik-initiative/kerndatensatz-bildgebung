@@ -507,9 +507,9 @@
               ]
             },
             {
-              "name": "section-text",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-text",
-              "type": "text",
+              "name": "section-author",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-author",
+              "type": "reference",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
