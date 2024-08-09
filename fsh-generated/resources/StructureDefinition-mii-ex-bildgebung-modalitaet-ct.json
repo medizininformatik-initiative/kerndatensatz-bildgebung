@@ -129,24 +129,24 @@
         "patternCode": "mGy"
       },
       {
-        "id": "Extension.extension:tubeVoltage",
+        "id": "Extension.extension:KVP",
         "path": "Extension.extension",
-        "sliceName": "tubeVoltage",
+        "sliceName": "KVP",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "Extension.extension:tubeVoltage.extension",
+        "id": "Extension.extension:KVP.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:tubeVoltage.url",
+        "id": "Extension.extension:KVP.url",
         "path": "Extension.extension.url",
-        "fixedUri": "tubeVoltage"
+        "fixedUri": "KVP"
       },
       {
-        "id": "Extension.extension:tubeVoltage.value[x]",
+        "id": "Extension.extension:KVP.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
@@ -158,17 +158,17 @@
         ]
       },
       {
-        "id": "Extension.extension:tubeVoltage.value[x].unit",
+        "id": "Extension.extension:KVP.value[x].unit",
         "path": "Extension.extension.value[x].unit",
         "patternString": "kilovolt"
       },
       {
-        "id": "Extension.extension:tubeVoltage.value[x].system",
+        "id": "Extension.extension:KVP.value[x].system",
         "path": "Extension.extension.value[x].system",
         "patternUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Extension.extension:tubeVoltage.value[x].code",
+        "id": "Extension.extension:KVP.value[x].code",
         "path": "Extension.extension.value[x].code",
         "patternCode": "kV"
       },

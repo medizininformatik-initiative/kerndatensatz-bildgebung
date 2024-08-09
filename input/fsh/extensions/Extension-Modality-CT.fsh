@@ -16,7 +16,7 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 //Extension
 * extension contains
     CTDIvol 0..1 and
-    tubeVoltage 0..1 and
+    KVP 0..1 and
     exposureTime 0..1 and
     exposure 0..1 and
     xRayTubeCurrent 0..1
@@ -24,10 +24,10 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[CTDIvol].valueQuantity.unit = "milligray" 
 * extension[CTDIvol].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[CTDIvol].valueQuantity.code = #mGy
-* extension[tubeVoltage].value[x] only SimpleQuantity
-* extension[tubeVoltage].valueQuantity.unit = "kilovolt" 
-* extension[tubeVoltage].valueQuantity.system = "http://unitsofmeasure.org"
-* extension[tubeVoltage].valueQuantity.code = #kV
+* extension[KVP].value[x] only SimpleQuantity
+* extension[KVP].valueQuantity.unit = "kilovolt" 
+* extension[KVP].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[KVP].valueQuantity.code = #kV
 * extension[exposureTime].value[x] only SimpleQuantity
 * extension[exposureTime].valueQuantity.unit = "milliseconds" 
 * extension[exposureTime].valueQuantity.system = "http://unitsofmeasure.org"

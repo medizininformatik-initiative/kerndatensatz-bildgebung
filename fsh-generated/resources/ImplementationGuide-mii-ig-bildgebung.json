@@ -197,6 +197,22 @@
       },
       {
         "reference": {
+          "reference": "ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct"
+        },
+        "name": "MII Example Bildgebung Imaging Study CT",
+        "description": "whole body aquisition",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+      },
+      {
+        "reference": {
+          "reference": "ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-pt"
+        },
+        "name": "MII Example Bildgebung Imaging Study PT",
+        "description": "whole body aquisition",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-bildgebung-radiologische-beobachtung"
         },
         "name": "MII Example Bildgebung Radiologische Beobachtung",

@@ -40,6 +40,22 @@
     "endLine": 18
   },
   {
+    "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.json",
+    "fshName": "mii-exa-bildgebung-bildgebungsstudie-ct",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-ImagingStudy-CT.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
+    "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json",
+    "fshName": "mii-exa-bildgebung-bildgebungsstudie-pt",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-ImagingStudy-PET.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
     "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie.json",
     "fshName": "mii-exa-bildgebung-bildgebungsstudie",
     "fshType": "Instance",
