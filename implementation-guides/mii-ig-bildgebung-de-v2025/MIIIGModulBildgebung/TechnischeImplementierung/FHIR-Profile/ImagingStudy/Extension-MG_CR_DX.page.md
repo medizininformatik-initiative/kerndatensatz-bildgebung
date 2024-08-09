@@ -6,7 +6,14 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## Extension Modalität Mammografie, Röntgen, Digitales Röntgen
 
-Das ImagingStudy-Profil wird verwendet, um Bildgebungsstudien strukturiert zu erfassen und dazugehörige DICOM-Headerdaten abzubilden.
+Die Extension für die Modalitäten MG (Mammographie), CR (Computed Radiography) und DX (Digital Radiography) ermöglicht das Erfassen relevanter DICOM-Tags, um Rückschlüsse über die Bildgewinnung ziehen zu können. Diese Modalitäten nutzen Röntgenstrahlen zur Erstellung von Bildern des Körpers, wobei die Strahlungserzeugung, Strahlenbelastung und spezifischen technischen Parameter der Bildgebung in den entsprechenden DICOM-Tags festgehalten werden.
+
+Relevante DICOM-Tags:
+
+    Röntgenröhrenspannung [(0018, 0060) KVP] in Kilovolt [kV]
+    Expositionszeit [(0018, 1150) exposureTime] in Millisekunden [ms]
+    Exposition [(0018, 1152) exposure] in Milliampere-Sekunden [mAs]
+    Röntgenröhrenstrom [(0018, 1151) xRayTubeCurrent] in Milliampere [mA]
 
 @```
 from

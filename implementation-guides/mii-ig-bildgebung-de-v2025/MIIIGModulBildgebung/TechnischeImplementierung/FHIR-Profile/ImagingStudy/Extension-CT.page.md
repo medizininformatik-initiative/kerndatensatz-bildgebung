@@ -6,7 +6,17 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## Extension Modalität CT
 
-Das ImagingStudy-Profil wird verwendet, um Bildgebungsstudien strukturiert zu erfassen und dazugehörige DICOM-Headerdaten abzubilden.
+Die Extension CT (Computertomographie) ermöglicht das Erfassen relevanter DICOM-Tags, um Rückschlüsse über die Bildgewinnung ziehen zu können.
+Eine Besonderheit der Computertomographie ist die Verwendung von Röntgenstrahlen zur Erzeugung detaillierter Querschnittsbilder des Körpers. 
+Diese Informationen über die Strahlungserzeugung, Strahlenbelastung und die technischen Parameter der Bildgebung liegen in den entsprechenden DICOM-Tags vor.
+
+Relevante DICOM-Tags:
+
+    CTDIvol [(0018, 0060) CTDIVolume] in Milligray [mGy]
+    Röntgenröhrenspannung [(0018, 1150) tubeVoltage] in Kilovolt [kV]
+    Expositionszeit [(0018, 1150) exposureTime] in Millisekunden [ms]
+    Exposition [(0018, 1152) exposure] in Milliampere-Sekunden [mAs]
+    Röntgenröhrenstrom [(0018, 1151) xRayTubeCurrent] in Milliampere [mA]
 
 @```
 from

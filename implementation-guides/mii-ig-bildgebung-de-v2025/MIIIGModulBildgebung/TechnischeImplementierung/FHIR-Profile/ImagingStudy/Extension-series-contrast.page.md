@@ -6,8 +6,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## Extension Kontrastmittelgabe auf Serienebene
 
-Das ImagingStudy-Profil wird verwendet, um Bildgebungsstudien strukturiert zu erfassen und dazugehörige DICOM-Headerdaten abzubilden.
-
+Diese Extension Kontrastmitelgabe ermöglicht es, die Verwendung von Kontrastmitteln in der BildSerie anzugeben und gleichzeitig mit einer Referenz auf das KDS-Modul Medikation(MedicationStatement) Details anzulegen.
 @```
 from
     StructureDefinition

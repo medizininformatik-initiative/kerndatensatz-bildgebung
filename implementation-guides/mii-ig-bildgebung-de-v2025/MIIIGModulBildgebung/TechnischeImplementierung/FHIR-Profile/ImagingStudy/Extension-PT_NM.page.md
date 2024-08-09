@@ -6,7 +6,21 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## Extension Modalität PET und Nuklearmedizin
 
-Das ImagingStudy-Profil wird verwendet, um Bildgebungsstudien strukturiert zu erfassen und dazugehörige DICOM-Headerdaten abzubilden.
+Die Extension PT & NM (PET und Nuklearmedizinische Bildgebung) ermöglicht das Erfassen relevanter DICOM-Tags, um Rückschlüsse über die Bildgewinnung ziehen zu können.
+Eine Besonderheit der Nuklearmedizin ist die Verwendung eines Radiopharmakons, das aus einem Tracer und einem Radioisotop besteht und somit Stoffwechselbildgebung ermöglicht.
+Diese Informationen über das Radiopharmakon liegen verschachtelt in dem DICOM-Tag RadiopharmaceuticalInformationSequence (0054,0016) vor, sogenannte nested DICOM-Tags.
+
+Diese nested DICOM-Tags sind:
+Radiopharmakon [(0018, 0031) Radiopharmaceutical]
+Applikationsstartzeit [(0018, 1072) RadiopharmaceuticalStartTime]
+Gesamte Radionukliddosis [(0018, 1074) RadionuclideTotalDose] in Megabecquerel [MBq]
+Halbwertszeit [(0018, 1075) RadionuclideHalfLife] in Sekunden [s]
+
+Nicht nested DICOM-Tags:
+ReskalierungsTyp [(0028,1054) RescaleType]
+
+Beispiel des Zugriffs auf ein nested DICOM-Tag mit Python aus einer DICOM-Schicht(Instanz):
+    RadiopharmaceuticalStartTime = layer['RadiopharmaceuticalInformationSequence'][0]['RadiopharmaceuticalStartTime'].value
 
 @```
 from

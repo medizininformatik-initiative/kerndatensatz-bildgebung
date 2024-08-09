@@ -6,8 +6,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## Extension Gerätehersteller auf Serienebene
 
-Das ImagingStudy-Profil wird verwendet, um Bildgebungsstudien strukturiert zu erfassen und dazugehörige DICOM-Headerdaten abzubilden.
-
+Diese Erweiterung ermöglicht das Anlegen des Modelnamens und des Herstellers des Bilderzeugendes Gerätes.
 @```
 from
     StructureDefinition

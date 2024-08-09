@@ -6,7 +6,41 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## ImagingStudy
 
-Das ImagingStudy-Profil wird verwendet, um Bildgebungsstudien strukturiert zu erfassen und dazugehörige DICOM-Headerdaten abzubilden.
+Das ImagingStudy-Profil wird verwendet, um Bildgebungsstudien strukturiert zu erfassen und die zugehörigen DICOM-Headerdaten abzubilden. 
+Dieses Profil ermöglicht das Anlegen einer Studie, die aus mehreren DICOM-Serien besteht, die wiederum aus mehreren Instanzen (Bildschichten) bestehen. 
+vgBeim Anlegen einer Serie können Erweiterungen (Extensions) ausgewählt werden, die die zugrunde liegende Modalität der Serie genauer beschreiben.
+
+Relevante DICOM-Tags für die Studien- und Serien-Ebene:
+
+Studien-Ebene:
+
+    Identifier: [(0008, 0050) StudyInstanceUID / (0020, 000D) StudyInstanceUID]
+    Studien-Beschreibung: [(0008, 1030) StudyDescription]
+    Anzahl an enthaltenen SOP-Instanzen: [(0020, 1208) NumberOfStudyRelatedInstances]
+    Anzahl an enthaltenen Serien: [(0020, 1206) NumberOfStudyRelatedSeries]
+    Beginn: [(0008, 0020) StudyDate] + [(0008, 0030) StudyTime]
+    Personen-Identifikation: [(0010, 0020) PatientID]
+    Modalitäten: [(0008, 0061) ModalitiesInStudy]
+    Prozedur: [(0008, 1032) ProcedureCodeSequence]
+    Bildgebungsgrund: [(0040, 1002) ReasonForStudy]
+    Anfordernde Maßnahme: [(0032, 1064) RequestingService]
+
+Serien-Ebene:
+
+    Modalität: [(0008, 0060) Modality]
+    Hersteller: [(0008, 0070) Manufacturer]
+    Modell: [(0008, 1090) DeviceSerialNumber]
+    Körperregion: [(0018, 0015) BodyPartExamined]
+    Beginn: [(0008, 0021) SeriesDate] + [(0008, 0031) SeriesTime]
+    Körperseite: [(0020, 0060) Laterality]
+    Serien-Nummer: [(0020, 0011) SeriesNumber]
+    Anzahl an in Serie enthaltenen Instanzen: [(0020, 1209) NumberOfSeriesRelatedInstances]
+    Serien-Beschreibung: [(0008, 103E) SeriesDescription]
+    Serien-UID: [(0020, 000E) SeriesInstanceUID]
+    +
+    Extension für modalität
+    +
+    Extension für imagingInstance
 
 @```
 from

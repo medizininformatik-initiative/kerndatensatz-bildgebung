@@ -6,8 +6,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## Extension Bildgebungsgrund
 
-Das ImagingStudy-Profil wird verwendet, um Bildgebungsstudien strukturiert zu erfassen und dazugehörige DICOM-Headerdaten abzubilden.
-
+Diese Extension dient zum Anlegen des Grundes für die Bildgebung.
 @```
 from
     StructureDefinition
