@@ -2,7 +2,7 @@ Instance: mii-exa-bildgebung-bildgebungsstudie-pt
 InstanceOf: MII_PR_Bildgebung_Bildgebungsstudie
 Usage: #example
 Title: "MII Example Bildgebung Imaging Study PT"
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie-pt"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
 * extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund].valueString = "Verdacht auf Karzinom"
 * status = #available
 * subject = Reference(Patient/example)
