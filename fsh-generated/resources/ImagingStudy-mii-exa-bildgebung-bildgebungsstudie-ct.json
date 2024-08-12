@@ -18,10 +18,11 @@
         {
           "extension": [
             {
-              "url": "CTDIvol",
               "valueQuantity": {
+                "code": "mGy",
                 "value": 4.04
-              }
+              },
+              "url": "CTDIvol"
             },
             {
               "url": "KVP",

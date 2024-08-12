@@ -17,6 +17,7 @@ Title: "MII Example Bildgebung Imaging Study CT"
 //* reasonReference = Reference()
 * description = "whole body aquisition"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[CTDIvol].valueQuantity.value = 4.04
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[CTDIvol].valueQuantity.code = #mGy
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[KVP].valueQuantity.value = 110
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[exposure].valueQuantity.value = 38
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[exposureTime].valueQuantity.value = 600
