@@ -13,9 +13,6 @@ Beispielsweise kann die Homogenität der Pixelabstände oder Schichtdicken über
 
 Relevante DICOM-Tags:
 
-    SOP-Instanz [(0008, 0018) SOPInstanceUID]
-    SOP-Klasse [(0008, 0016) SOPClassUID]
-    Instanz-Nummer [(0020, 0013) InstanceNumber]
     Schichtdicke [(0018, 0050) SliceThickness] in [mm]
     Bildtyp [(0008, 0008) ImageType]
     Pixelabstand (x) [(0028, 0030) PixelSpacing] in [mm]
