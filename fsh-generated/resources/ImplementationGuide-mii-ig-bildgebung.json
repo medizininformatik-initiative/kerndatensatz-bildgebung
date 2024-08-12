@@ -189,10 +189,10 @@
       },
       {
         "reference": {
-          "reference": "ImagingStudy/mii-exa-bildgebung-bildgebungsstudie"
+          "reference": "ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-cr"
         },
-        "name": "MII Example Bildgebung Imaging Study",
-        "description": "Thorax",
+        "name": "MII Example Bildgebung Imaging Study CR",
+        "description": "whole body aquisition",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
       },
       {
@@ -200,6 +200,14 @@
           "reference": "ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct"
         },
         "name": "MII Example Bildgebung Imaging Study CT",
+        "description": "whole body aquisition",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+      },
+      {
+        "reference": {
+          "reference": "ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-mr"
+        },
+        "name": "MII Example Bildgebung Imaging Study MR",
         "description": "whole body aquisition",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
       },

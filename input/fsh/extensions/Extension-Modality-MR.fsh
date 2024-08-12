@@ -22,6 +22,6 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[magneticFieldStrength].valueQuantity.unit = "tesla" 
 * extension[magneticFieldStrength].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[magneticFieldStrength].valueQuantity.code = #T
-* extension[scanningSequence].value[x] only Coding //TODO eigenes ValueSet
-* extension[scanningSequenceVariant].value[x] only Coding //TODO eigenes ValueSet
+* extension[scanningSequence].value[x] only string //erstmal String bis Lösung für DICOM URLS gelöst
+* extension[scanningSequenceVariant].value[x] only string //erstmal String bis Lösung für DICOM URLS gelöst
 

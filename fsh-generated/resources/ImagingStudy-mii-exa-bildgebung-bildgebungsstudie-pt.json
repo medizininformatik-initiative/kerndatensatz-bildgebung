@@ -34,29 +34,37 @@
             },
             {
               "url": "rescaleType",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "BQML",
-                    "system": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.11.html#sect_C.11.1.1.2"
-                  }
-                ]
-              }
+              "valueString": "BQML"
             },
             {
-              "url": "radionuclideTotalDose",
               "valueQuantity": {
+                "unit": "Megabecquerel",
                 "value": 196000000
-              }
+              },
+              "url": "radionuclideTotalDose"
             },
             {
-              "url": "radionuclideHalfLife",
               "valueQuantity": {
+                "unit": "Seconds",
                 "value": 6586.2
-              }
+              },
+              "url": "radionuclideHalfLife"
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm"
+        },
+        {
+          "extension": [
+            {
+              "url": "manufacturer",
+              "valueString": "Beispielhersteller"
+            },
+            {
+              "url": "manufacturerModelName",
+              "valueString": "Beispielmodell"
+            }
+          ],
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
         }
       ],
       "instance": [
@@ -65,22 +73,25 @@
             {
               "extension": [
                 {
-                  "url": "pixelSpacing(x)",
                   "valueQuantity": {
+                    "unit": "millimeter",
                     "value": 2.89
-                  }
+                  },
+                  "url": "pixelSpacing(x)"
                 },
                 {
-                  "url": "pixelSpacing(y)",
                   "valueQuantity": {
+                    "unit": "millimeter",
                     "value": 2.89
-                  }
+                  },
+                  "url": "pixelSpacing(y)"
                 },
                 {
-                  "url": "sliceThickness",
                   "valueQuantity": {
+                    "unit": "millimeter",
                     "value": 4
-                  }
+                  },
+                  "url": "sliceThickness"
                 },
                 {
                   "url": "imageType",
@@ -103,7 +114,7 @@
       "modality": {
         "code": "PT",
         "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Computed Tomography"
+        "display": "Positron emission tomography"
       },
       "description": "PET WB",
       "numberOfInstances": 195,

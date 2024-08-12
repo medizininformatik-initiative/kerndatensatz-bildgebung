@@ -40,12 +40,28 @@
     "endLine": 18
   },
   {
+    "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.json",
+    "fshName": "mii-exa-bildgebung-bildgebungsstudie-cr",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-ImagingStudy-CR.fsh",
+    "startLine": 1,
+    "endLine": 46
+  },
+  {
     "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.json",
     "fshName": "mii-exa-bildgebung-bildgebungsstudie-ct",
     "fshType": "Instance",
     "fshFile": "instances/Example-ImagingStudy-CT.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 48
+  },
+  {
+    "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.json",
+    "fshName": "mii-exa-bildgebung-bildgebungsstudie-mr",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-ImagingStudy-MR.fsh",
+    "startLine": 1,
+    "endLine": 42
   },
   {
     "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json",
@@ -53,15 +69,7 @@
     "fshType": "Instance",
     "fshFile": "instances/Example-ImagingStudy-PET.fsh",
     "startLine": 1,
-    "endLine": 38
-  },
-  {
-    "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie.json",
-    "fshName": "mii-exa-bildgebung-bildgebungsstudie",
-    "fshType": "Instance",
-    "fshFile": "instances/Example-ImagingStudy.fsh",
-    "startLine": 1,
-    "endLine": 25
+    "endLine": 45
   },
   {
     "outputFile": "MedicationAdministration-mii-exa-bildgebung-gabe-radiopharmakon.json",

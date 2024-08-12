@@ -1,6 +1,6 @@
 {
   "resourceType": "ImagingStudy",
-  "id": "mii-exa-bildgebung-bildgebungsstudie-ct",
+  "id": "mii-exa-bildgebung-bildgebungsstudie-cr",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
@@ -17,13 +17,6 @@
       "extension": [
         {
           "extension": [
-            {
-              "valueQuantity": {
-                "unit": "milligray",
-                "value": 4.04
-              },
-              "url": "CTDIvol"
-            },
             {
               "valueQuantity": {
                 "unit": "kilovolt",
@@ -53,17 +46,17 @@
               "url": "xRayTubeCurrent"
             }
           ],
-          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct"
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx"
         },
         {
           "extension": [
             {
               "url": "manufacturer",
-              "valueString": "Beispielhersteller"
+              "valueString": ""
             },
             {
               "url": "manufacturerModelName",
-              "valueString": "Beispielmodell"
+              "valueString": ""
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
@@ -114,9 +107,9 @@
       "uid": "series-example-uid",
       "number": 1,
       "modality": {
-        "code": "CT",
+        "code": "CR",
         "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Computed Tomography"
+        "display": "Computed Radiography"
       },
       "description": "AC LD CT Whole Body 4.0 HD Field of View",
       "numberOfInstances": 195,

@@ -170,13 +170,9 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "string"
           }
-        ],
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.11.html#sect_C.11.1.1.2"
-        }
+        ]
       },
       {
         "id": "Extension.extension:radionuclideTotalDose",

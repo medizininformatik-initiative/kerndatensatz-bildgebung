@@ -1,6 +1,6 @@
 {
   "resourceType": "ImagingStudy",
-  "id": "mii-exa-bildgebung-bildgebungsstudie-ct",
+  "id": "mii-exa-bildgebung-bildgebungsstudie-mr",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
@@ -19,51 +19,31 @@
           "extension": [
             {
               "valueQuantity": {
-                "unit": "milligray",
+                "unit": "tesla",
                 "value": 4.04
               },
-              "url": "CTDIvol"
+              "url": "magneticFieldStrength"
             },
             {
-              "valueQuantity": {
-                "unit": "kilovolt",
-                "value": 110
-              },
-              "url": "KVP"
+              "url": "scanningSequence",
+              "valueString": ""
             },
             {
-              "valueQuantity": {
-                "unit": "milliampere second",
-                "value": 38
-              },
-              "url": "exposure"
-            },
-            {
-              "valueQuantity": {
-                "unit": "milliseconds",
-                "value": 600
-              },
-              "url": "exposureTime"
-            },
-            {
-              "valueQuantity": {
-                "unit": "milliampere",
-                "value": 96
-              },
-              "url": "xRayTubeCurrent"
+              "url": "scanningSequenceVariant",
+              "valueString": ""
             }
           ],
-          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct"
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"
         },
         {
           "extension": [
             {
               "url": "manufacturer",
-              "valueString": "Beispielhersteller"
+              "valueString": ""
             },
             {
               "url": "manufacturerModelName",
-              "valueString": "Beispielmodell"
+              "valueString": ""
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
@@ -114,9 +94,9 @@
       "uid": "series-example-uid",
       "number": 1,
       "modality": {
-        "code": "CT",
+        "code": "MR",
         "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Computed Tomography"
+        "display": "Magnetic Resonance"
       },
       "description": "AC LD CT Whole Body 4.0 HD Field of View",
       "numberOfInstances": 195,

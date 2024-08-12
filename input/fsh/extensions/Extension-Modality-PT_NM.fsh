@@ -24,8 +24,8 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[radiopharmaceutical].valueCodeableConcept from $radiopharmaceutical (extensible)
 * extension[radiopharmaceutical].valueCodeableConcept.text MS
 * extension[radiopharmaceuticalStartTime].value[x] only dateTime
-* extension[rescaleType].value[x] only CodeableConcept
-* extension[rescaleType].valueCodeableConcept from $rescaleType (extensible)
+* extension[rescaleType].value[x] only string //erstmal String bis Lösung für DICOM URLS gelöst| Evaluation ob benötigt ausstehend
+//* extension[rescaleType].valueCodeableConcept from $rescaleType (extensible)
 * extension[radionuclideTotalDose].value[x] only SimpleQuantity
 * extension[radionuclideTotalDose].valueQuantity.unit = "Megabecquerel" 
 * extension[radionuclideTotalDose].valueQuantity.system = "http://unitsofmeasure.org"
