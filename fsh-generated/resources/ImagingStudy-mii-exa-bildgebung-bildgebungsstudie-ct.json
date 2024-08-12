@@ -19,34 +19,38 @@
           "extension": [
             {
               "valueQuantity": {
-                "code": "mGy",
+                "unit": "milligray",
                 "value": 4.04
               },
               "url": "CTDIvol"
             },
             {
-              "url": "KVP",
               "valueQuantity": {
+                "unit": "kilovolt",
                 "value": 110
-              }
+              },
+              "url": "KVP"
             },
             {
-              "url": "exposure",
               "valueQuantity": {
+                "unit": "milliampere second",
                 "value": 38
-              }
+              },
+              "url": "exposure"
             },
             {
-              "url": "exposureTime",
               "valueQuantity": {
+                "unit": "milliseconds",
                 "value": 600
-              }
+              },
+              "url": "exposureTime"
             },
             {
-              "url": "xRayTubeCurrent",
               "valueQuantity": {
+                "unit": "milliampere",
                 "value": 96
-              }
+              },
+              "url": "xRayTubeCurrent"
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct"
@@ -58,22 +62,25 @@
             {
               "extension": [
                 {
-                  "url": "pixelSpacing(x)",
                   "valueQuantity": {
+                    "unit": "millimeter",
                     "value": 1.36
-                  }
+                  },
+                  "url": "pixelSpacing(x)"
                 },
                 {
-                  "url": "pixelSpacing(y)",
                   "valueQuantity": {
+                    "unit": "millimeter",
                     "value": 1.36
-                  }
+                  },
+                  "url": "pixelSpacing(y)"
                 },
                 {
-                  "url": "sliceThickness",
                   "valueQuantity": {
+                    "unit": "millimeter",
                     "value": 4
-                  }
+                  },
+                  "url": "sliceThickness"
                 },
                 {
                   "url": "imageType",
