@@ -6,7 +6,7 @@ Title: "MII Example Bildgebung Imaging Study CT"
 * extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund].valueString = "Verdacht auf Karzinom"
 * status = #available
 * subject = Reference(Patient/example)
-* subject.identifier.type = $v2-0203#MR
+* subject.identifier.type = $v2-0203#MR "Medical record number"
 * subject.identifier.system = "https://system-url"
 * subject.identifier.value = "study-uid"
 * encounter = Reference(Encouter/example)
