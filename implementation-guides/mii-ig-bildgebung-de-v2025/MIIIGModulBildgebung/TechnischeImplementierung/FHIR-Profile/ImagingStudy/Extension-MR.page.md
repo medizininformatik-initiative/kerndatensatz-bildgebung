@@ -64,6 +64,6 @@ select
 
 Beispiel einer ImagingStudy-Ressource:
 
-{{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie.json}}
+{{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.json}}
 
 ---
