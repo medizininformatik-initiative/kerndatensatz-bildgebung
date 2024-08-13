@@ -9,7 +9,7 @@ Die verwendeten Codesysteme, Terminologien und Referenzen für Prozeduren, Diagn
 * [RadLex](https://www.rsna.org/practice-tools/data-tools-and-standards/radlex-radiology-lexicon)
 * [LOINC - Logical Observation Identifiers Names and Codes](https://loinc.org/)
 * [ICD - International Statistical Classification of Diseases and Related Health Problems](https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/index.htm)
-* [GOLD - German Oncological Data Standard] (https://vision-zero-oncology.github.io/GOLD/profiles.html)
+* [GOLD - German Oncological Data Standard](https://vision-zero-oncology.github.io/GOLD/profiles.html)
 
 Befundungsspezifische Erweiterungsmodule und Profile zur Befundung, die auf diese Implentierung referenzieren, sollen sich inhaltlich an den gängigen Befundungsrichtlinien
 und -kriterien orientieren. Z.B.:
