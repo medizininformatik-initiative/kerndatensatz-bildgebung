@@ -912,7 +912,7 @@ Usage: #definition
 * modifier[+] = #in
 * modifier[+] = #not-in
 
-//RadiopharmaceuticalAdministration
+//ContrastAdministration
 Instance: mii-sp-bildgebung-medications-dose
 InstanceOf: SearchParameter
 Usage: #definition

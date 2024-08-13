@@ -175,13 +175,6 @@
       },
       {
         "reference": {
-          "reference": "MedicationAdministration/mii-exa-bildgebung-gabe-radiopharmakon"
-        },
-        "name": "MII Example Bildgebung GabePharmakon",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon"
-      },
-      {
-        "reference": {
           "reference": "Procedure/mii-exa-bildgebung-bildgebungsprozedur"
         },
         "name": "MII Example Bildgebung Imaging Procedure",
@@ -218,6 +211,13 @@
         "name": "MII Example Bildgebung Imaging Study PT",
         "description": "whole body aquisition",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-bildgebung-kontrastmittelgabe"
+        },
+        "name": "MII Example Bildgebung Kontrastmittelgabe",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"
       },
       {
         "reference": {
@@ -282,10 +282,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon"
+          "reference": "StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"
         },
-        "name": "MII PR Bildgebung GabeRadiopharmakon",
-        "description": "Dieses Profil beschreibt die Gabe eines Radiopharmakons zur medizinischen Bildgebung. Es bietet die Möglichkeit die Kontrastmittelgabe aus dem RIS zu erfassen und ist somit die Alternative zu der Erfassung der Kontrastmittelgabe aus den DICOM-Metadaten.",
+        "name": "MII PR Bildgebung Konstrastmittelgabe",
+        "description": "Dieses Profil bietet die Möglichkeit die Kontrastmittelgabe aus dem RIS zu erfassen und ist somit die Alternative zu der Erfassung der Kontrastmittelgabe aus den DICOM-Metadaten.",
         "exampleBoolean": false
       },
       {

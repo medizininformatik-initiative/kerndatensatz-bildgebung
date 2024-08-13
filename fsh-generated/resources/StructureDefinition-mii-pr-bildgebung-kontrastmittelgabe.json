@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-bildgebung-gabe-radiopharmakon",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon",
+  "id": "mii-pr-bildgebung-kontrastmittelgabe",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe",
   "version": "2025.0.0",
-  "name": "MII_PR_Bildgebung_Gabe_Radiopharmakon",
+  "name": "MII_PR_Bildgebung_Kontrastmittelgabe",
   "_name": {
     "extension": [
       {
@@ -15,13 +15,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Imaging_RadiopharmaceuticalAdministration"
+            "valueString": "MII_PR_Imaging_Contrast_Medication_Administration"
           }
         ]
       }
     ]
   },
-  "title": "MII PR Bildgebung GabeRadiopharmakon",
+  "title": "MII PR Bildgebung Konstrastmittelgabe",
   "_title": {
     "extension": [
       {
@@ -33,14 +33,14 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Imaging RadiopharmaceuticalAdministration"
+            "valueString": "MII PR Imaging Contrast Medication Administration"
           }
         ]
       }
     ]
   },
   "status": "active",
-  "description": "Dieses Profil beschreibt die Gabe eines Radiopharmakons zur medizinischen Bildgebung. Es bietet die Möglichkeit die Kontrastmittelgabe aus dem RIS zu erfassen und ist somit die Alternative zu der Erfassung der Kontrastmittelgabe aus den DICOM-Metadaten.",
+  "description": "Dieses Profil bietet die Möglichkeit die Kontrastmittelgabe aus dem RIS zu erfassen und ist somit die Alternative zu der Erfassung der Kontrastmittelgabe aus den DICOM-Metadaten.",
   "_description": {
     "extension": [
       {
@@ -52,7 +52,7 @@
           },
           {
             "url": "content",
-            "valueString": "The profile describes RadiopharmaceuticalAdministration."
+            "valueString": "The profile describes medication administration for contrastmedication."
           }
         ]
       }
@@ -117,16 +117,6 @@
         "id": "MedicationAdministration.dosage.dose",
         "path": "MedicationAdministration.dosage.dose",
         "min": 1
-      },
-      {
-        "id": "MedicationAdministration.dosage.dose.unit",
-        "path": "MedicationAdministration.dosage.dose.unit",
-        "patternString": "Megabecquerel"
-      },
-      {
-        "id": "MedicationAdministration.dosage.dose.code",
-        "path": "MedicationAdministration.dosage.dose.code",
-        "patternCode": "MBq"
       }
     ]
   }

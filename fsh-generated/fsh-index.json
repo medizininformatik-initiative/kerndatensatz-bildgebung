@@ -72,12 +72,12 @@
     "endLine": 45
   },
   {
-    "outputFile": "MedicationAdministration-mii-exa-bildgebung-gabe-radiopharmakon.json",
-    "fshName": "mii-exa-bildgebung-gabe-radiopharmakon",
+    "outputFile": "MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.json",
+    "fshName": "mii-exa-bildgebung-kontrastmittelgabe",
     "fshType": "Instance",
-    "fshFile": "instances/Example-RadiopharmaceuticalAdministration.fsh",
+    "fshFile": "instances/Example-ContrastAdministration.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 12
   },
   {
     "outputFile": "Observation-mii-exa-bildgebung-radiologische-beobachtung.json",
@@ -624,20 +624,20 @@
     "endLine": 65
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-bildgebung-gabe-radiopharmakon.json",
-    "fshName": "MII_PR_Bildgebung_Gabe_Radiopharmakon",
-    "fshType": "Profile",
-    "fshFile": "profiles/Profile-RadiopharmaceuticalAdministration.fsh",
-    "startLine": 2,
-    "endLine": 26
-  },
-  {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",
     "fshName": "MII_PR_Bildgebung_Koerperstruktur",
     "fshType": "Profile",
     "fshFile": "profiles/Profile-BodyStructure.fsh",
     "startLine": 2,
     "endLine": 23
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.json",
+    "fshName": "MII_PR_Bildgebung_Kontrastmittelgabe",
+    "fshType": "Profile",
+    "fshFile": "profiles/Profile-ConstrastAdministration.fsh",
+    "startLine": 2,
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.json",

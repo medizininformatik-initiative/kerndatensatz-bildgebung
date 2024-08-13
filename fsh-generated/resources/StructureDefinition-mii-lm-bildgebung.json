@@ -2819,10 +2819,10 @@
         ]
       },
       {
-        "id": "Bildgebung.GabeRadiopharmakon",
-        "path": "Bildgebung.GabeRadiopharmakon",
-        "short": "Gabe Radiopharmakon",
-        "definition": "Gabe Radiopharmakon",
+        "id": "Bildgebung.Kontrastmittelgabe",
+        "path": "Bildgebung.Kontrastmittelgabe",
+        "short": "Kontrastmittelgabe",
+        "definition": "Erfassung der Kontrastmittelgabe aus dem RIS",
         "min": 0,
         "max": "1",
         "type": [
@@ -2837,13 +2837,13 @@
           },
           {
             "identity": "KDS-Profile",
-            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon"
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"
           }
         ]
       },
       {
-        "id": "Bildgebung.GabeRadiopharmakon.Status",
-        "path": "Bildgebung.GabeRadiopharmakon.Status",
+        "id": "Bildgebung.Kontrastmittelgabe.Status",
+        "path": "Bildgebung.Kontrastmittelgabe.Status",
         "short": "Status",
         "definition": "Status der Radiopharmakon Gabe",
         "min": 1,
@@ -2861,8 +2861,8 @@
         ]
       },
       {
-        "id": "Bildgebung.GabeRadiopharmakon.Medikament",
-        "path": "Bildgebung.GabeRadiopharmakon.Medikament",
+        "id": "Bildgebung.Kontrastmittelgabe.Medikament",
+        "path": "Bildgebung.Kontrastmittelgabe.Medikament",
         "short": "Medikament",
         "definition": "Beschreibung des verwendeten Medikament",
         "min": 1,
@@ -2880,8 +2880,8 @@
         ]
       },
       {
-        "id": "Bildgebung.GabeRadiopharmakon.Person",
-        "path": "Bildgebung.GabeRadiopharmakon.Person",
+        "id": "Bildgebung.Kontrastmittelgabe.Person",
+        "path": "Bildgebung.Kontrastmittelgabe.Person",
         "short": "Person",
         "definition": "Person der das Medikament verabreicht wird. Hier soll das MII KDS-Modul Person verwendet werden.",
         "min": 1,
@@ -2902,8 +2902,8 @@
         ]
       },
       {
-        "id": "Bildgebung.GabeRadiopharmakon.Medikationsdauer",
-        "path": "Bildgebung.GabeRadiopharmakon.Medikationsdauer",
+        "id": "Bildgebung.Kontrastmittelgabe.Medikationsdauer",
+        "path": "Bildgebung.Kontrastmittelgabe.Medikationsdauer",
         "short": "Medikationsdauer",
         "definition": "Dauer über die das Medikament verabreicht worden ist.",
         "min": 1,
@@ -2921,10 +2921,10 @@
         ]
       },
       {
-        "id": "Bildgebung.GabeRadiopharmakon.Dosierung",
-        "path": "Bildgebung.GabeRadiopharmakon.Dosierung",
+        "id": "Bildgebung.Kontrastmittelgabe.Dosierung",
+        "path": "Bildgebung.Kontrastmittelgabe.Dosierung",
         "short": "Dosierung",
-        "definition": "DOsierung der Medikation",
+        "definition": "Dosierung der Medikation",
         "min": 0,
         "max": "1",
         "type": [
@@ -2940,10 +2940,10 @@
         ]
       },
       {
-        "id": "Bildgebung.GabeRadiopharmakon.Dosierung.Dosis",
-        "path": "Bildgebung.GabeRadiopharmakon.Dosierung.Dosis",
+        "id": "Bildgebung.Kontrastmittelgabe.Dosierung.Dosis",
+        "path": "Bildgebung.Kontrastmittelgabe.Dosierung.Dosis",
         "short": "Dosis",
-        "definition": "Dosis des Medikaments in Megabecquerel.",
+        "definition": "Dosis des Medikaments",
         "min": 0,
         "max": "1",
         "type": [

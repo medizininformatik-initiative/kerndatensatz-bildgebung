@@ -252,10 +252,10 @@ Usage: #definition
 * insert SupportSearchParam(component-value-concept, http://hl7.org/fhir/SearchParameter/Observation-component-value-concept, #token, #SHALL)
 * insert SupportSearchParam(component-value-quantity, http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept, #quantity, #SHALL)
 
-//RadiopharmaceuticalAdministration
+//ContrastAdministration
 * insert SupportResource(MedicationAdministration, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationAdministration, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon|1.0.0, #SHALL)
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe|1.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(_id, http://hl7.org/fhir/SearchParameter/Resource-id, #token, #SHALL)

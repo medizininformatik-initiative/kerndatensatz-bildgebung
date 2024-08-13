@@ -14,12 +14,12 @@
 [mii-exa-bildgebung-behandlungsempfehlung]: CarePlan-mii-exa-bildgebung-behandlungsempfehlung.html
 [mii-exa-bildgebung-semistrukt-befundbericht]: Composition-mii-exa-bildgebung-semistrukt-befundbericht.html
 [mii-exa-bildgebung-radiologischer-Befund]: DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.html
-[mii-exa-bildgebung-gabe-radiopharmakon]: MedicationAdministration-mii-exa-bildgebung-gabe-radiopharmakon.html
 [mii-exa-bildgebung-bildgebungsprozedur]: Procedure-mii-exa-bildgebung-bildgebungsprozedur.html
 [mii-exa-bildgebung-bildgebungsstudie-cr]: ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.html
 [mii-exa-bildgebung-bildgebungsstudie-ct]: ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.html
 [mii-exa-bildgebung-bildgebungsstudie-mr]: ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.html
 [mii-exa-bildgebung-bildgebungsstudie-pt]: ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.html
+[mii-exa-bildgebung-kontrastmittelgabe]: MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.html
 [mii-exa-bildgebung-radiologische-beobachtung]: Observation-mii-exa-bildgebung-radiologische-beobachtung.html
 [mii-exa-bildgebung-radiologische-befundungsprozedur]: Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.html
 [mii-exa-bildgebung-anforderung-bildgebung]: ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.html
@@ -28,7 +28,7 @@
 [MII_PR_Bildgebung_Behandlungsempfehlung]: StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html
 [MII_PR_Bildgebung_Bildgebungsprozedur]: StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html
 [MII_PR_Bildgebung_Bildgebungsstudie]: StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html
-[MII_PR_Bildgebung_Gabe_Radiopharmakon]: StructureDefinition-mii-pr-bildgebung-gabe-radiopharmakon.html
+[MII_PR_Bildgebung_Kontrastmittelgabe]: StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html
 [MII_PR_Bildgebung_Koerperstruktur]: StructureDefinition-mii-pr-bildgebung-koerperstruktur.html
 [MII_PR_Bildgebung_Radiologische_Befundungsprozedur]: StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html
 [MII_PR_Bildgebung_Radiologische_Beobachtung]: StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html

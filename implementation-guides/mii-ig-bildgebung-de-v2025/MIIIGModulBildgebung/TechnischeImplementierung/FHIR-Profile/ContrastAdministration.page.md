@@ -1,18 +1,18 @@
 ---
 parent:
-topic: RadiopharmaceuticalAdministration
-subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon
+topic: ContrastAdministration
+subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe
 ---
 
-## RadiopharmaceuticalAdministration
+## Kontrastmittelgabe
 
-Diese MedicationAdministration-Ressource wird verwendet, um die Gabe eines Radiopharmakons zu erfassen.
+Diese MedicationAdministration-Ressource wird verwendet, um die Gabe von Kontrastmittel aus dem RIS zu erfassen.
 
 @```
 from
     StructureDefinition
 where
-    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon'
+    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe'
 select
     Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 ```
@@ -26,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon'
+	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe'
         select
 	        Beschreibung: description
         with
@@ -36,7 +36,7 @@ select
         from
             StructureDefinition
         where
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon'
+            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe'
         for
             differential.element
             where
@@ -54,7 +54,7 @@ select
 @```
 from StructureDefinition
 where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung'
-    for differential.element where id.contains('Bildgebung.GabeRadiopharmakon')
+    for differential.element where id.contains('Bildgebung.Kontrastmittelgabe')
     select
         FHIR: mapping[0].map,
         Datensatz: path,
@@ -77,6 +77,6 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 Beispiel einer MedicationAdministration-Ressource mit der Applikation eines Radiopharmakon
 
-{{json:fsh-generated/resources/MedicationAdministration-mii-exa-bildgebung-gabe-radiopharmakon.json}}
+{{json:fsh-generated/resources/MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.json}}
 
 ---
