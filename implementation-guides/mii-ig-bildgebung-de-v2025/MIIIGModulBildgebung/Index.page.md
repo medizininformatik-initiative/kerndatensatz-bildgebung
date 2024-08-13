@@ -1,12 +1,12 @@
-# Kerndatensatz Modul Bildgebung
+# Kerndatensatz Erweiterungsmodul Befunde bildgebender Verfahren
 
-Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Bildgebung' der Medizinformatik-Initative.
+Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls 'Befunde bildgebender Verfahren' der Medizinformatik-Initative.
 Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
 | Veröffentlichung   |   |
 |---------|---|
 | Datum   | XXXXXX |
-| Version | 0.0.0 |
+| Version | 0.0.9 |
 | Status  | wip      |
 | Realm   | DE          | 
 
@@ -18,11 +18,10 @@ Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Prof
 Dieser Leitfaden ist im Rahmen der Medizininformatik-Initative erstellt worden und unterliegt per Governance-Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..
 
 ## Ansprechpartner
-* Martin Boeker, Klinikum rechts der Isar, Technische Universität München
-* Julian Saß, Berlin Institute of Health at Charité (BIH)
-* Karoline Buckow, TMF – Technologie- und Methodenplattform
-für die vernetzte medizinische Forschung e.V.
-* Sylvia Thun, Charité – Universitätsmedizin Berlin
+* Maté Maros, Universitätsmedizin Mannheim (UMM)
+* Alexa Iancu, Universitätsklinikum Erlangen (UKER)
+* Karoline Buckow, TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V.
+* Franziska Klepka, TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V.
 
 Fragen zu der vorliegenden Publikation können jederzeit unter [chat.fhir.org](chat.fhir.org) im Stream 'german/mi-initiative' gestellt werden.
 
@@ -31,9 +30,21 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 
 ## Autoren (in alphabetischer Reihenfolge)
 
-* A
-* B
-* C
+* Alexa Iancu (Universitätsklinikum Erlangen)
+* Daniel Pinto dos Santos (Universitätsklinikum Köln)
+* Daniel Schmitz (Universitätsmedizin Mainz)
+* David Männle (Universitätsmedizin Mannheim)
+* Fiederike Schneider (mintmedical GmbH)
+* Johannes Kast (mintmedical GmbH)
+* Lucas Scherer (Universitätsklinikum Erlangen)
+* Maté Maros (Universitätsmedizin Mannheim)
+* Matthias May (Univeristätsklinikum Erlangen)
+* Noemi Deppenwiese (Universitätsklinikum Erlangen)
+* Sebastian Arndt (Universitätsklinikum Erlangen)
+* Steven Böhner (Universitätsklinikum Regensburg)
+* Teresa Graetz (Univeristätsklinikum Erlangen)
+* Tobias Pogarell (Univeristätsklinikum Erlangen)
+* Viola Braunmüller (Universitätsklinikum Tübingen)
 
 ## Copyright-Hinweis, Nutzungshinweise
 Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin
