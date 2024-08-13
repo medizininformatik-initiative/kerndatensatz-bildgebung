@@ -1,12 +1,12 @@
 //Head
-Extension: MII_EX_Bildgebung_Instanz_Serie
-Id: mii-ex-bildgebung-instanz-serie
-Title: "MII EX Bildgebung Serie zur Instanz"
+Extension: MII_EX_Bildgebung_Instanz_Details
+Id: mii-ex-bildgebung-instanz-details
+Title: "MII EX Bildgebung Instanzdetails"
 Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Serie auf Instanz-Ebene anzugeben."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
 //Translation
-* insert Translation(^name, en-US, MII_EX_ImagingStudy)
-* insert Translation(^title, en-US, MII_EX_ImagingStudy)
+* insert Translation(^name, en-US, MII_EX_Instance_Details)
+* insert Translation(^title, en-US, MII EX Instance Details)
 * insert Translation(^description, en-US, The extension allows specifying information about the selected series at the instance level.)
 //Meta
 * insert PR_CS_VS_Version

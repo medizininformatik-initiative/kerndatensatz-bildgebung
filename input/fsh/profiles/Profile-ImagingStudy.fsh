@@ -58,7 +58,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.instance MS
 * series.instance.extension contains
   //Extension Instanzebene
-  MII_EX_Bildgebung_Instanz_Serie named imagingInstance 0..1
+  MII_EX_Bildgebung_Instanz_Details named InstanceDetails 0..1
 * series.instance.uid MS
 * series.instance.sopClass MS
 * series.instance.sopClass from $sop-class (required)

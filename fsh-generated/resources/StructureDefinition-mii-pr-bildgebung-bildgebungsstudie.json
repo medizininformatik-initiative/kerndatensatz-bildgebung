@@ -368,16 +368,16 @@
         }
       },
       {
-        "id": "ImagingStudy.series.instance.extension:imagingInstance",
+        "id": "ImagingStudy.series.instance.extension:InstanceDetails",
         "path": "ImagingStudy.series.instance.extension",
-        "sliceName": "imagingInstance",
+        "sliceName": "InstanceDetails",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
             ]
           }
         ]

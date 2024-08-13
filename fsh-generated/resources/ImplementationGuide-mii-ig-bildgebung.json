@@ -90,6 +90,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-ex-bildgebung-instanz-details"
+        },
+        "name": "MII EX Bildgebung Instanzdetails",
+        "description": "Die Extension ermöglicht es, Informationen zur ausgewählten Serie auf Instanz-Ebene anzugeben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-ex-bildgebung-kontrastmittel"
         },
         "name": "MII EX Bildgebung Kontrastmittel",
@@ -126,14 +134,6 @@
         },
         "name": "MII EX Bildgebung Modalität PT/NM",
         "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf PT & NM Daten zu erweitern.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-ex-bildgebung-instanz-serie"
-        },
-        "name": "MII EX Bildgebung Serie zur Instanz",
-        "description": "Die Extension ermöglicht es, Informationen zur ausgewählten Serie auf Instanz-Ebene anzugeben.",
         "exampleBoolean": false
       },
       {

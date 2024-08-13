@@ -512,10 +512,10 @@
     "endLine": 21
   },
   {
-    "outputFile": "StructureDefinition-mii-ex-bildgebung-instanz-serie.json",
-    "fshName": "MII_EX_Bildgebung_Instanz_Serie",
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-instanz-details.json",
+    "fshName": "MII_EX_Bildgebung_Instanz_Details",
     "fshType": "Extension",
-    "fshFile": "extensions/Extension-series-instance.fsh",
+    "fshFile": "extensions/Extension-Instance-Details.fsh",
     "startLine": 2,
     "endLine": 34
   },
