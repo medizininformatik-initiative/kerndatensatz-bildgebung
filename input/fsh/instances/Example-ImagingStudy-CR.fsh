@@ -33,7 +33,7 @@ Title: "MII Example Bildgebung Imaging Study CR"
 * series.description = "X Thorax a.p. liegend"
 * series.numberOfInstances = 1
 * series.bodySite = $SCT#43799004 "Thoracic structure (body structure)"
-//* series.laterality =
+* series.laterality = $SCT#66459002 "Unilateral"
 * series.started = "2024-07-19T12:03:30+02:00"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie].extension[imageType].valueString = "[ORIGINAL,PRIMARY,RAD]"
 * series.instance.uid = "instance-example-uid"

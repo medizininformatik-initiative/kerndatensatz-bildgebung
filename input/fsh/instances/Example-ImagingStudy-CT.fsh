@@ -35,7 +35,7 @@ Title: "MII Example Bildgebung Imaging Study CT"
 * series.description = "AC LD CT Whole Body 4.0 HD Field of View"
 * series.numberOfInstances = 195
 * series.bodySite = $SCT#51185008 "Thoracic structure (body structure)"
-//* series.laterality =
+* series.laterality = $SCT#7771000 "Left"
 * series.started = "2024-07-19T12:03:30+02:00"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie].extension[pixelSpacing(x)].valueQuantity.value = 1.36
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie].extension[pixelSpacing(x)].valueQuantity.unit = "millimeter"

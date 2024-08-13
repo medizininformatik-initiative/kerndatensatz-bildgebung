@@ -16,7 +16,7 @@ Title: "MII Example Bildgebung Imaging Study PT"
 * procedureReference = Reference(ImagingProcedure/example)
 //* reasonReference = Reference()
 * description = "whole body aquisition"
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radiopharmaceutical].valueCodeableConcept.coding = $radiopharmaceutical#35321007 
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radiopharmaceutical].valueCodeableConcept.coding = $SCT#35321007 
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radiopharmaceuticalStartTime].valueDateTime = "2024-07-19T12:03:30+02:00"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[rescaleType].valueString = "BQML"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radionuclideTotalDose].valueQuantity.value = 196000000
@@ -31,7 +31,7 @@ Title: "MII Example Bildgebung Imaging Study PT"
 * series.description = "PET WB"
 * series.numberOfInstances = 195
 * series.bodySite = $SCT#51185008 "Thoracic structure (body structure)"
-//* series.laterality =
+* series.laterality = $SCT#66459002 "Unilateral"
 * series.started = "2024-07-19T12:03:30+02:00"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie].extension[pixelSpacing(x)].valueQuantity.value = 2.89
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie].extension[pixelSpacing(x)].valueQuantity.unit = "millimeter"

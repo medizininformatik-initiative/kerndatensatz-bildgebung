@@ -23,7 +23,7 @@
                 "coding": [
                   {
                     "code": "35321007",
-                    "system": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html"
+                    "system": "http://snomed.info/sct"
                   }
                 ]
               }
@@ -122,6 +122,11 @@
         "code": "51185008",
         "system": "http://snomed.info/sct",
         "display": "Thoracic structure (body structure)"
+      },
+      "laterality": {
+        "code": "66459002",
+        "system": "http://snomed.info/sct",
+        "display": "Unilateral"
       },
       "started": "2024-07-19T12:03:30+02:00"
     }

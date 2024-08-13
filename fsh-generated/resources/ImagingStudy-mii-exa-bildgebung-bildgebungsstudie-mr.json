@@ -30,7 +30,7 @@
             },
             {
               "url": "scanningSequenceVariant",
-              "valueString": "SP,SK"
+              "valueString": "SP, SK"
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"
@@ -86,7 +86,7 @@
                 },
                 {
                   "url": "imageType",
-                  "valueString": "[ORIGINAL,PRIMARY]"
+                  "valueString": "[ORIGINAL, PRIMARY]"
                 }
               ],
               "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie"
@@ -115,8 +115,9 @@
         "display": "Knee region structure (body structure)"
       },
       "laterality": {
-        "code": "R",
-        "system": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html"
+        "code": "24028007",
+        "system": "http://snomed.info/sct",
+        "display": "Right"
       },
       "started": "2024-07-19T12:03:30+02:00"
     }

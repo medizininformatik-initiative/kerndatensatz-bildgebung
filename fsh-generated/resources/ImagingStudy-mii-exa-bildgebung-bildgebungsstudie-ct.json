@@ -134,6 +134,11 @@
         "system": "http://snomed.info/sct",
         "display": "Thoracic structure (body structure)"
       },
+      "laterality": {
+        "code": "7771000",
+        "system": "http://snomed.info/sct",
+        "display": "Left"
+      },
       "started": "2024-07-19T12:03:30+02:00"
     }
   ],
