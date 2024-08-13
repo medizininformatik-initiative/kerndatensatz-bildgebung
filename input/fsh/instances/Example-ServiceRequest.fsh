@@ -7,10 +7,10 @@ Title: "MII Example Bildgebung Service Request"
 * intent = #order
 * category = $SCT#363679005 "Imaging (procedure)"
 * subject = Reference(Patient/example)
-* code = $SCT#6007000 "Magnetic resonance imaging of chest (procedure)"
+* code = $SCT#71651007 "Mammography (procedure)"
 * encounter = Reference(Encounter/example)
 * authoredOn = "2024-07-19T12:03:30+02:00"
 * requester = Reference(Practitioner/example)
-* reasonCode = $SCT#3514002 "Peribronchial fibrosis of lung (disorder)"
+* reasonCode = $SCT#268547008 "Screening for malignant neoplasm of breast (procedure)"
 * reasonReference = Reference(Condition/example)
 * supportingInfo = Reference(DiagnosticReport/example)

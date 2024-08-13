@@ -27,6 +27,15 @@
     }
   ],
   "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "24606-6",
+        "system": "http://loinc.org",
+        "display": "MG Breast Screening"
+      }
+    ]
+  },
   "subject": {
     "reference": "Patient/example"
   }

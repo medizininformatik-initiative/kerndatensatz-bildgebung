@@ -9,18 +9,18 @@
   "morphology": {
     "coding": [
       {
-        "code": "31593006",
+        "code": "12747003",
         "system": "http://snomed.info/sct",
-        "display": "Minimal lesion (morphologic abnormality)"
+        "display": "Microcalcification, calcified structure (morphologic abnormality)"
       }
     ]
   },
   "location": {
     "coding": [
       {
-        "code": "485005",
+        "code": "76752008",
         "system": "http://snomed.info/sct",
-        "display": "Transverse colon structure (body structure)"
+        "display": "Breast structure (body structure)"
       }
     ]
   },
@@ -28,9 +28,9 @@
     {
       "coding": [
         {
-          "code": "255561001",
+          "code": "7771000",
           "system": "http://snomed.info/sct",
-          "display": "Medial (qualifier value)"
+          "display": "Left (qualifier value)"
         }
       ]
     }

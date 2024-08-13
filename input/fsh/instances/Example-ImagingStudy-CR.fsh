@@ -37,5 +37,5 @@ Title: "MII Example Bildgebung Imaging Study CR"
 * series.started = "2024-07-19T12:03:30+02:00"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie].extension[imageType].valueString = "[ORIGINAL,PRIMARY,RAD]"
 * series.instance.uid = "instance-example-uid"
-* series.instance.sopClass = urn:ietf:rfc:3986#urn:oid:1.2.840.10008.5.1.4.1.1.2
+* series.instance.sopClass = urn:ietf:rfc:3986#urn:oid:1.2.840.10008.5.1.4.1.1.1
 * series.instance.number = 1

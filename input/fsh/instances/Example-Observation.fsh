@@ -9,12 +9,12 @@ Title: "MII Example Bildgebung Radiologische Beobachtung"
 * partOf = Reference(Procedure/Readexample)
 * status = #final
 * category = $observation-category#imaging
-* code = $loinc#10207-9 "Physical Findings of Thorax and Lungs Narrrative"
+* code = $loinc#32422-8 "Physical findings of Breast"
 * subject = Reference(Patient/example)
 * issued = "2024-07-19T12:03:30+02:00"
-* valueString = "Obstructive Finding in the right lower lobe of the lung"
-* bodySite = $SCT#266005 "Right lower lobe of lung"
+* valueString = "microcalcifications in the upper outer quadrant in the left breast"
+* bodySite = $SCT#76752008 "Breast structure (body structure)"
 * hasMember = Reference(Observation/example)
 * derivedFrom = Reference(ImagingStudy/example)
-* component.code = $loinc#10177-4 "History of Respiratory system disorders Narrative"
+* component.code = $loinc#10157-6 "History of family member diseases Narrative"
 * component.valueBoolean = true

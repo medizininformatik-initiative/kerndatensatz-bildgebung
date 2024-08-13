@@ -5,6 +5,6 @@ Title: "MII Example Bildgebung Care Plan"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
 * status = #active
 * intent = #proposal
-* description = "The patient must receive a MRI procedure, after an accident in sports"
+* description = "The patient must receive vacuum biopsy"
 * subject = Reference(Patient/example)
 * supportingInfo = Reference(DiagnosticReport/example)
