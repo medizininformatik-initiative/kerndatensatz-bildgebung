@@ -18,7 +18,7 @@ Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Prof
 Dieser Leitfaden ist im Rahmen der Medizininformatik-Initative erstellt worden und unterliegt per Governance-Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..
 
 ## Ansprechpartner
-* Maté Maros, Universitätsmedizin Mannheim (UMM)
+* Máté Maros, Universitätsmedizin Mannheim (UMM)
 * Alexa Iancu, Universitätsklinikum Erlangen (UKER)
 * Karoline Buckow, TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V.
 * Franziska Klepka, TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V.
@@ -30,21 +30,22 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 
 ## Autoren (in alphabetischer Reihenfolge)
 
-* Alexa Iancu (Universitätsklinikum Erlangen)
-* Daniel Pinto dos Santos (Universitätsklinikum Köln)
-* Daniel Schmitz (Universitätsmedizin Mainz)
-* David Männle (Universitätsmedizin Mannheim)
-* Friederike Schneider (mintmedical GmbH)
-* Johannes Kast (mintmedical GmbH)
-* Lucas Scherer (Universitätsklinikum Erlangen)
-* Maté Maros (Universitätsmedizin Mannheim)
-* Matthias May (Univeristätsklinikum Erlangen)
-* Noemi Deppenwiese (Universitätsklinikum Erlangen)
 * Sebastian Arndt (Universitätsklinikum Erlangen)
 * Steven Böhner (Universitätsklinikum Regensburg)
-* Teresa Graetz (Univeristätsklinikum Erlangen)
-* Tobias Pogarell (Univeristätsklinikum Erlangen)
 * Viola Braunmüller (Universitätsklinikum Tübingen)
+* Noemi Deppenwiese (Universitätsklinikum Erlangen)
+* Teresa Graetz (Univeristätsklinikum Erlangen)
+* Alexa Iancu (Universitätsklinikum Erlangen)
+* Johannes Kast (Mint Medical GmbH)
+* David Männle (Universitätsmedizin Mannheim)
+* Máté Maros (Universitätsmedizin Mannheim)
+* Matthias May (Univeristätsklinikum Erlangen)
+* Daniel Pinto dos Santos (Universitätsklinikum Köln)
+* Tobias Pogarell (Univeristätsklinikum Erlangen)
+* Lucas Scherer (Universitätsklinikum Erlangen)
+* Daniel Schmitz (Universitätsmedizin Mainz)
+* Friederike Schneider (Mint Medical GmbH)
+
 
 ## Copyright-Hinweis, Nutzungshinweise
 Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin
