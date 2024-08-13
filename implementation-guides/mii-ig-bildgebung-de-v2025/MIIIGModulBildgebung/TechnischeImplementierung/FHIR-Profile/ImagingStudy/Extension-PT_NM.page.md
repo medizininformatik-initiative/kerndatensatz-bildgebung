@@ -22,6 +22,7 @@ Nicht nested DICOM-Tags:
     ReskalierungsTyp [(0028,1054) RescaleType]
 
 Beispiel des Zugriffs auf ein nested DICOM-Tag mit Python aus einer DICOM-Schicht(Instanz):
+    
     RadiopharmaceuticalStartTime = layer['RadiopharmaceuticalInformationSequence'][0]['RadiopharmaceuticalStartTime'].value
 
 @```
