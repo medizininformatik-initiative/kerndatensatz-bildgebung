@@ -76,10 +76,10 @@ Beispiele von ImagingStudy-Ressourcen mit der Extension für Intanzdetails:
 Beispiel eines CTs:
 {{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.json}}
 
-Beispiel eines MRTs
+Beispiel eines MRTs:
 {{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.json}}
 
-Beispiel eine Röntgenbilds
+Beispiel eine Röntgenbilds:
 {{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.json}}
 
 Beispiel eines PET-Scans:
