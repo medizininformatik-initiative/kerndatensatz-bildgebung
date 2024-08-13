@@ -18,7 +18,7 @@ und -kriterien orientieren. Z.B.:
 * Prostata - [PI-RADS](https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems/PI-RADS)
 * Leber - [LI-RADS](https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems/LI-RADS)
 * COVID-19 - [CO-RADS](https://radiologyassistant.nl/chest/covid-19/corads-classification) 
-* DRG Befundvorlagen - [DRG-Templates][https://www.befundung.drg.de/de-DE/3199/befundvorlagen/]
+* DRG Befundvorlagen - [DRG-Templates](https://www.befundung.drg.de/de-DE/3199/befundvorlagen/)
 
 
 
