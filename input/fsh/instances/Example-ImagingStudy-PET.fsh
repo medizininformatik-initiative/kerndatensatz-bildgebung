@@ -14,7 +14,7 @@ Title: "MII Example Bildgebung Imaging Study PT"
 * numberOfSeries = 2
 * numberOfInstances = 390
 * procedureReference = Reference(ImagingProcedure/example)
-//* reasonReference = Reference()
+* reasonReference = Reference(ImagingReason/example)
 * description = "whole body aquisition"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radiopharmaceutical].valueCodeableConcept.coding = $SCT#35321007 
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radiopharmaceuticalStartTime].valueDateTime = "2024-07-19T12:03:30+02:00"
