@@ -34,7 +34,7 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 * Daniel Pinto dos Santos (Universitätsklinikum Köln)
 * Daniel Schmitz (Universitätsmedizin Mainz)
 * David Männle (Universitätsmedizin Mannheim)
-* Fiederike Schneider (mintmedical GmbH)
+* Friederike Schneider (mintmedical GmbH)
 * Johannes Kast (mintmedical GmbH)
 * Lucas Scherer (Universitätsklinikum Erlangen)
 * Maté Maros (Universitätsmedizin Mannheim)
