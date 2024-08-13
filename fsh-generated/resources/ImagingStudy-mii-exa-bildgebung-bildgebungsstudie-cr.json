@@ -52,14 +52,23 @@
           "extension": [
             {
               "url": "manufacturer",
-              "valueString": ""
+              "valueString": "SIEMENS"
             },
             {
               "url": "manufacturerModelName",
-              "valueString": ""
+              "valueString": "Fluorospot Compact FD"
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
+        },
+        {
+          "extension": [
+            {
+              "url": "contrastBolus",
+              "valueBoolean": false
+            }
+          ],
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
         }
       ],
       "instance": [
@@ -68,29 +77,8 @@
             {
               "extension": [
                 {
-                  "valueQuantity": {
-                    "unit": "millimeter",
-                    "value": 1.36
-                  },
-                  "url": "pixelSpacing(x)"
-                },
-                {
-                  "valueQuantity": {
-                    "unit": "millimeter",
-                    "value": 1.36
-                  },
-                  "url": "pixelSpacing(y)"
-                },
-                {
-                  "valueQuantity": {
-                    "unit": "millimeter",
-                    "value": 4
-                  },
-                  "url": "sliceThickness"
-                },
-                {
                   "url": "imageType",
-                  "valueString": "['DERIVED', 'PRIMARY', 'AXIAL', 'CT_SOM5 SPI']"
+                  "valueString": "[ORIGINAL,PRIMARY,RAD]"
                 }
               ],
               "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie"
@@ -101,7 +89,7 @@
             "code": "urn:oid:1.2.840.10008.5.1.4.1.1.2",
             "system": "urn:ietf:rfc:3986"
           },
-          "number": 31
+          "number": 1
         }
       ],
       "uid": "series-example-uid",
@@ -111,10 +99,10 @@
         "system": "http://dicom.nema.org/resources/ontology/DCM",
         "display": "Computed Radiography"
       },
-      "description": "AC LD CT Whole Body 4.0 HD Field of View",
-      "numberOfInstances": 195,
+      "description": "X Thorax a.p. liegend",
+      "numberOfInstances": 1,
       "bodySite": {
-        "code": "51185008",
+        "code": "43799004",
         "system": "http://snomed.info/sct",
         "display": "Thoracic structure (body structure)"
       },
@@ -146,10 +134,15 @@
       "reference": "CarePlan/example"
     }
   ],
-  "numberOfSeries": 2,
-  "numberOfInstances": 390,
+  "numberOfSeries": 1,
+  "numberOfInstances": 1,
   "procedureReference": {
     "reference": "ImagingProcedure/example"
   },
-  "description": "whole body aquisition"
+  "reasonReference": [
+    {
+      "reference": "ImagingReason/example"
+    }
+  ],
+  "description": "Thorax auf Station;"
 }

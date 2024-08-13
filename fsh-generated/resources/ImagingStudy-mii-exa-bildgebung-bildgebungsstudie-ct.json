@@ -67,6 +67,15 @@
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
+        },
+        {
+          "extension": [
+            {
+              "url": "contrastBolus",
+              "valueBoolean": true
+            }
+          ],
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
         }
       ],
       "instance": [
@@ -158,5 +167,10 @@
   "procedureReference": {
     "reference": "ImagingProcedure/example"
   },
+  "reasonReference": [
+    {
+      "reference": "ImagingReason/example"
+    }
+  ],
   "description": "whole body aquisition"
 }
