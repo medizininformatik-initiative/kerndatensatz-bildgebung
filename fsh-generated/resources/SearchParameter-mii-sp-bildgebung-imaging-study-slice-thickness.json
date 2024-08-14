@@ -24,7 +24,7 @@
     "ImagingStudy.series.instance"
   ],
   "type": "quantity",
-  "expression": "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension('sliceThickness').value",
+  "expression": "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('sliceThickness').value",
   "comparator": [
     "eq",
     "gt",

@@ -17,7 +17,7 @@ Alias: $loinc = http://loinc.org
 Alias: $radlex = https://radlex.org
 //Dicom Alias
 Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
-Alias: $rescaleType = https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.11.html#sect_C.11.1.1.2
+//Alias: $rescaleType = https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.11.html#sect_C.11.1.1.2
 Alias: $radiopharmaceutical = https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html
 Alias: $modality = https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html
 Alias: $laterality = https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html

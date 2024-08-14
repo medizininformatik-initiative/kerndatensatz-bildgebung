@@ -9,7 +9,7 @@
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund",
-      "valueString": "Verdacht auf Karzinom"
+      "valueString": "Verdacht auf Kreuzbandruptur"
     }
   ],
   "series": [
@@ -20,17 +20,17 @@
             {
               "valueQuantity": {
                 "unit": "tesla",
-                "value": 4.04
+                "value": 3
               },
               "url": "magneticFieldStrength"
             },
             {
               "url": "scanningSequence",
-              "valueString": ""
+              "valueString": "SE"
             },
             {
               "url": "scanningSequenceVariant",
-              "valueString": ""
+              "valueString": "SP, SK"
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"
@@ -39,14 +39,23 @@
           "extension": [
             {
               "url": "manufacturer",
-              "valueString": ""
+              "valueString": "Siemens Healthineers"
             },
             {
               "url": "manufacturerModelName",
-              "valueString": ""
+              "valueString": "MAGNETOM Vida"
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
+        },
+        {
+          "extension": [
+            {
+              "url": "contrastBolus",
+              "valueBoolean": false
+            }
+          ],
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
         }
       ],
       "instance": [
@@ -57,53 +66,58 @@
                 {
                   "valueQuantity": {
                     "unit": "millimeter",
-                    "value": 1.36
+                    "value": 0.260417
                   },
                   "url": "pixelSpacing(x)"
                 },
                 {
                   "valueQuantity": {
                     "unit": "millimeter",
-                    "value": 1.36
+                    "value": 0.260417
                   },
                   "url": "pixelSpacing(y)"
                 },
                 {
                   "valueQuantity": {
                     "unit": "millimeter",
-                    "value": 4
+                    "value": 3
                   },
                   "url": "sliceThickness"
                 },
                 {
                   "url": "imageType",
-                  "valueString": "['DERIVED', 'PRIMARY', 'AXIAL', 'CT_SOM5 SPI']"
+                  "valueString": "[ORIGINAL, PRIMARY]"
                 }
               ],
-              "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie"
+              "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
             }
           ],
           "uid": "instance-example-uid",
           "sopClass": {
-            "code": "urn:oid:1.2.840.10008.5.1.4.1.1.2",
+            "code": "urn:oid:1.2.840.10008.5.1.4.1.1.4",
             "system": "urn:ietf:rfc:3986"
           },
-          "number": 31
+          "number": 28
         }
       ],
       "uid": "series-example-uid",
-      "number": 1,
+      "number": 9,
       "modality": {
         "code": "MR",
         "system": "http://dicom.nema.org/resources/ontology/DCM",
         "display": "Magnetic Resonance"
       },
-      "description": "AC LD CT Whole Body 4.0 HD Field of View",
-      "numberOfInstances": 195,
+      "description": "pd_tse_sag",
+      "numberOfInstances": 28,
       "bodySite": {
-        "code": "51185008",
+        "code": "72696002",
         "system": "http://snomed.info/sct",
-        "display": "Thoracic structure (body structure)"
+        "display": "Knee region structure (body structure)"
+      },
+      "laterality": {
+        "code": "24028007",
+        "system": "http://snomed.info/sct",
+        "display": "Right"
       },
       "started": "2024-07-19T12:03:30+02:00"
     }
@@ -133,10 +147,15 @@
       "reference": "CarePlan/example"
     }
   ],
-  "numberOfSeries": 2,
-  "numberOfInstances": 390,
+  "numberOfSeries": 11,
+  "numberOfInstances": 294,
   "procedureReference": {
     "reference": "ImagingProcedure/example"
   },
-  "description": "whole body aquisition"
+  "reasonReference": [
+    {
+      "reference": "ImagingReason/example"
+    }
+  ],
+  "description": "Knie DOT"
 }

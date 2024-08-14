@@ -1,12 +1,12 @@
 ---
 parent:
-topic: Koerperstruktur
+topic: Körperstruktur
 subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur
 ---
 
-## Koerperstruktur
+## Körperstruktur
 
-Diese Koerperstruktur-Ressource wird verwendet, um Befundberichte bildgebender Verfahren zu erfassen.
+Diese BodyStructure-Ressource wird verwendet, um die Körperstruktur, die in einer Observation-Ressource befundet wird, codiert abzubilden. Dazu wird hier unterteilt in die Morphologie, die Lokalisation und die Lage im Körper. Das hinterlegte CodeSystem von locationQualifier in R4 ist allerdings noch nicht ausreichend granular, um hier eine exakte Angabe darzustellen. 
 
 @```
 from

@@ -75,14 +75,14 @@
       "reference": "ImagingStudy/example"
     }
   ],
-  "conclusion": "There is no problematic observation",
+  "conclusion": "There are suspicious microcalcifications in the upper outer quadrant in the left breast",
   "conclusionCode": [
     {
       "coding": [
         {
-          "code": "1230003",
+          "code": "12747003",
           "system": "http://snomed.info/sct",
-          "display": "No diagnosis on Axis 1"
+          "display": "Microcalcification, calcified structure (morphologic abnormality)"
         }
       ]
     }

@@ -10,9 +10,9 @@
   "type": {
     "coding": [
       {
-        "code": "24674-4",
+        "code": "24604-1",
         "system": "http://loinc.org",
-        "display": "MR Elbow"
+        "display": "MG Breast Diagnostics Limited View"
       }
     ]
   },
@@ -25,16 +25,16 @@
       "reference": "Practitioner/example"
     }
   ],
-  "title": "Example Composition",
+  "title": "Mammographic Report",
   "section": [
     {
-      "title": "Example Composition.section",
+      "title": "Left Breast",
       "code": {
         "coding": [
           {
-            "code": "8716-3",
+            "code": "66110-8",
             "system": "http://loinc.org",
-            "display": "Vital signs"
+            "display": "Breast Pathology biopsy report"
           }
         ]
       },

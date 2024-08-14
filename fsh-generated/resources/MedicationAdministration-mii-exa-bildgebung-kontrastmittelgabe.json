@@ -1,9 +1,9 @@
 {
   "resourceType": "MedicationAdministration",
-  "id": "mii-exa-bildgebung-gabe-radiopharmakon",
+  "id": "mii-exa-bildgebung-kontrastmittelgabe",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-gabe-radiopharmakon"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"
     ]
   },
   "status": "completed",
@@ -19,7 +19,8 @@
   },
   "dosage": {
     "dose": {
-      "value": 0.111
+      "value": 111,
+      "unit": "milliliter"
     }
   }
 }

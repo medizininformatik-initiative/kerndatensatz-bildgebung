@@ -11,15 +11,18 @@ Eine Besonderheit der Nuklearmedizin ist die Verwendung eines Radiopharmakons, d
 Diese Informationen über das Radiopharmakon liegen verschachtelt in dem DICOM-Tag RadiopharmaceuticalInformationSequence (0054,0016) vor, sogenannte nested DICOM-Tags.
 
 Diese nested DICOM-Tags sind:
-Radiopharmakon [(0018, 0031) Radiopharmaceutical]
-Applikationsstartzeit [(0018, 1072) RadiopharmaceuticalStartTime]
-Gesamte Radionukliddosis [(0018, 1074) RadionuclideTotalDose] in Megabecquerel [MBq]
-Halbwertszeit [(0018, 1075) RadionuclideHalfLife] in Sekunden [s]
+    
+    Radiopharmakon [(0018, 0031) Radiopharmaceutical]
+    Applikationsstartzeit [(0018, 1072) RadiopharmaceuticalStartTime]
+    Gesamte Radionukliddosis [(0018, 1074) RadionuclideTotalDose] in Megabecquerel [MBq]
+    Halbwertszeit [(0018, 1075) RadionuclideHalfLife] in Sekunden [s]
 
 Nicht nested DICOM-Tags:
-ReskalierungsTyp [(0028,1054) RescaleType]
+    
+    ReskalierungsTyp [(0028,1054) RescaleType]
 
 Beispiel des Zugriffs auf ein nested DICOM-Tag mit Python aus einer DICOM-Schicht(Instanz):
+    
     RadiopharmaceuticalStartTime = layer['RadiopharmaceuticalInformationSequence'][0]['RadiopharmaceuticalStartTime'].value
 
 @```
@@ -68,12 +71,11 @@ select
 --- 
 **Beispiele**
 
-Beispiel einer ImagingStudy-Ressource:
-
 | Hinweis |  |
 |---------|---------------------|
 | {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Aus Gründen der Übersichtlichkeit wurde in diesem Beispiel darauf verzichtet, alle dazugehörigen Serien bzw. Instanzen mit einzubinden. Natürlich ist es bei der Implkementierung vorgesehen, dass alle zur jeweiligen Studie gehörenden Serien und Instanzen auch in der resultierenden FHIR-Ressource enthalten sind - dafür wird dann einfach die Sequenz "series" bzw "instance" für jede Serie bzw. Instanz wiederholt und mit den entsprechenden Werten befüllt.|
 
-{{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json}}
+Beispiel einer ImagingStudy-Ressource mit der Extension für PET Metadaten inkl. der modalitätsunabhängigen Extensions für Kontrastmittel, Instanzdetails und Gerätehersteller:
 
+{{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json}}
 ---

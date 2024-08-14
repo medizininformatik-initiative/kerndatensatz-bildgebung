@@ -24,7 +24,7 @@
     "ImagingStudy.series.instance"
   ],
   "type": "quantity",
-  "expression": "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-serie').extension(pixelSpacing(x)).value",
+  "expression": "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension(pixelSpacing(x)).value",
   "comparator": [
     "eq",
     "gt",
