@@ -6,7 +6,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## ImagingProcedure
 
-Diese ImagingProcedure-Ressource wird verwendet, um die Befundungsprozedur zu erfassen.
+Diese Procedure-Ressource wird verwendet, um die Bildgebungsprozedur zu erfassen. Diese bietet die Möglichkeit die Kontrastmittelgabe sowohl mit dem Befund als auch mit den DICOM-Metadaten zu verwenden.
 
 @```
 from

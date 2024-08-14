@@ -75,7 +75,7 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 **Beispiele**
 
-Beispiel einer Composition-Ressource zur Darstellung des Befunds in verschiedenen Abschnitten:
+Beispiel einer Composition-Ressource zur Darstellung des Befunds in verschiedenen Abschnitten. Dies bietet die Möglichkeit den Befund nicht nur als Freitext- oder strukturierter Form, sondern auch in semi-strukturierter Form kapitelweise darzustellen.
 
 {{json:fsh-generated/resources/Composition-mii-exa-bildgebung-semistrukt-befundbericht.json}}
 
