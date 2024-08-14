@@ -6,7 +6,13 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## Extension Gerätehersteller auf Serienebene
 
-Diese Erweiterung ermöglicht das Anlegen des Modelnamens und des Herstellers des Bilderzeugendes Gerätes.
+Diese Erweiterung ermöglicht das Anlegen des Modelnamens und des Herstellers des Bilderzeugendes Gerätes auf Serienebene.
+
+Relevante DICOM-Tags:
+
+    Hersteller [(0008,0070) Manufacturer]
+    Manufacturer's Model Name [(0008,1090) manufacturerModelName]
+
 @```
 from
     StructureDefinition
