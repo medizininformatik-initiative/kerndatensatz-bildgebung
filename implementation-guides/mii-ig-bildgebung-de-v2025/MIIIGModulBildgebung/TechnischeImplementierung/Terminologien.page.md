@@ -16,10 +16,10 @@ Der DICOM-Standard definiert zum Teil für bestimmte Tags eigene Value Sets, wel
 
 Für folgenden Tags muss noch eine Lösung für die Darstellung der Enumerated Values als CodeableConcept gefunden werden:
 
-  (0018,0020) Scanning Sequence -> ImagingStudy-Extension MR scanningSequence
-  (0018,0021) Sequence Variant -> ImagingStudy-Extension MR scanningSequenceVariant
-  (0008,0008) Image Type -> ImagingStudy-Extension Instanzdetails imageType
-  (0028,1054) Rescale Type Attribute -> ImagingStudy-Extension PT NM rescaleType
+    (0018,0020) Scanning Sequence -> ImagingStudy-Extension MR scanningSequence
+    (0018,0021) Sequence Variant -> ImagingStudy-Extension MR scanningSequenceVariant
+    (0008,0008) Image Type -> ImagingStudy-Extension Instanzdetails imageType
+    (0028,1054) Rescale Type Attribute -> ImagingStudy-Extension PT NM rescaleType
 
 **SNOMED CT**
 
