@@ -84,4 +84,5 @@ Beispiel eine Röntgenbilds:
 
 Beispiel eines PET-Scans:
 {{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json}}
+
 ---

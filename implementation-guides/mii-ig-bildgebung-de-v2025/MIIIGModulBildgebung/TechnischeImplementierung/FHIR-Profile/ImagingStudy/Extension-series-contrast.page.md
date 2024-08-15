@@ -72,4 +72,5 @@ Beispiel eines MRTs:
 
 Beispiel eine Röntgenbilds:
 {{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.json}}
+
 ---

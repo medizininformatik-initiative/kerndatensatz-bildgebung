@@ -78,4 +78,5 @@ select
 Beispiel einer ImagingStudy-Ressource mit der Extension für PET Metadaten inkl. der modalitätsunabhängigen Extensions für Kontrastmittel, Instanzdetails und Gerätehersteller:
 
 {{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json}}
+
 ---

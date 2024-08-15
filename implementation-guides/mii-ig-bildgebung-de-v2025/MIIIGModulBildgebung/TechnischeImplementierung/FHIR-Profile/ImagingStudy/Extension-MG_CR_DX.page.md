@@ -68,4 +68,5 @@ select
 Beispiel einer ImagingStudy-Ressource mit der Extension für Röntgen Metadaten inkl. der modalitätsunabhängigen Extensions für Kontrastmittel, Instanzdetails und Gerätehersteller:
 
 {{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.json}}
+
 ---

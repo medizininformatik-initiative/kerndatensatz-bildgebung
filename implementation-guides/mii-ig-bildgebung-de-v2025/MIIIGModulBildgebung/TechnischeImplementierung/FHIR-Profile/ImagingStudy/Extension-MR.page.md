@@ -69,4 +69,5 @@ select
 Beispiel einer ImagingStudy-Ressource mit der Extension für MR Metadaten inkl. der modalitätsunabhängigen Extensions für Kontrastmittel, Instanzdetails und Gerätehersteller:
 
 {{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.json}}
+
 ---
