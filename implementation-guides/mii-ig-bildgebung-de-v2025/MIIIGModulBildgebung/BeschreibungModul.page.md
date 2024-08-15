@@ -1,12 +1,12 @@
 # Beschreibung Modul 
 
-Das Modul BILDGEBENDE VERFAHREN enthält Datenelemenete zur Dokumentation radiologischer Bildgebung und Befundung aller gängigen Modalitäten. Es ist Bestandteil der Erweiterungsmodule des Kerndatensatzes (KDS) der Medizininformatik-Initiative (MII).
+Das Modul BEFUNDE BILDGEBENDER VERFAHREN enthält Datenelemenete zur Dokumentation radiologischer Bildgebung und Befundung aller gängigen Modalitäten. Es ist Bestandteil der Erweiterungsmodule des Kerndatensatzes (KDS) der Medizininformatik-Initiative (MII).
 
 Die medizinische Bildgebung spielt eine zentrale Rolle in der klinischen Praxis bei der Diagnose, Therapie und Dokumentation verschiedener Krankheiten und wird voraussichtlich noch wichtiger werden. Es existiert ein stetig wachsendes Volumen an klinischen Bilddaten in den Krankenhäusern. Diese Daten sind entscheidend für eine patientenzentrierte und individualisierte Gesundheitsversorgung und fördern die Entwicklung neuer Auswertungsmethoden zur Optimierung des Behandlungsstandards. Die sekundäre Nutzung dieser Daten bietet massive Potentiale, die durch dieses Erweiterungsmoduls des KDS in der MII zukünftig abgebildet werden können. 
 
 ## Teilmodule
 
-Grob lässt sich das gesamte Modul BILDGEBENDE VERFAHREN in zwei Teilmodule aufteilen: die ImagingStudy mit Informationen auf dem DICOM-Header und die Abbildung des radiologischen Befundberichts über den DiagnosticReport.
+Grob lässt sich das gesamte Modul BEFUNDE BILDGEBENDER VERFAHREN in zwei Teilmodule aufteilen: die ImagingStudy mit Informationen aus dem DICOM-Header und die Abbildung des radiologischen Befundberichts über den DiagnosticReport.
 Beide Teilmodule ergänzen sich in der Abbildung ihrer Datenelemente und wurden kongruent aufeinander abgestimmt.
 Um einen Gesamtüberblick über die vorliegende Datenlage zu bekommen, ist die Nutzung beider Teilmodule erforderlich. Theoretisch ist es aber auch möglich, die Teilmodule getrennt voneinander zu implementieren, falls am gegegebenen Standort bisher nur eine Datenquelle (z.B. RIS) erschlossen wurde.
 
@@ -24,8 +24,7 @@ Ergänzt wurden vorrangig modalitätsspezifische Attribute auf Serien-Ebene. Die
 Röntgenröhrenspannung und des Röntgenröhrenstroms abgebildet sowie die Werte der
 Exposition und der Expositionszeit.
 • Die nuklearmedizinischen Modalitäten (NM und PET) beinhalten Dosis und weitere Informationen zum applizierten Radiopharmakon sowie dem Reskalierungstypen.
-• Bei der Modalität MR werden die Scanning Sequence und Variance sowie die genutzte
-magnetische Feldstärke abgebildet.
+• Bei der Modalität MR werden die Scanning Sequence und Variant sowie die genutzte magnetische Feldstärke abgebildet.
 
 Im Moment werden diese sieben Modalitäten (MR, CT, DX, CR, MG, NM und PET) im Teilmodul betrachtet und es ist geplant, in einem stufenweisen Verfahren, in Zukunft auch weitere modalitätsspezifische Attribute anderer Modalitäten zu spezifizieren.
 
