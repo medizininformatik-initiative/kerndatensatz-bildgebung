@@ -1,10 +1,10 @@
 ## Terminologien
 
+**DICOM**
+
 | Hinweis |  |
 |---------|---------------------|
-| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | evtl. Hinweis auf DICOM Enums?|
-
-**DICOM**
+| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Das DICOM FHIR Package definiert ValueSets nach den vorgeschriebenen Inhalten bestimmter TAGs. Dabei werden die Strings der Enumerated Values nicht als Mapping aufgeführt und benötigen eine andere Lösung zur Darstellung als CodeableConcept. Hier wir weiterhin nach einer annehmbaren und praktikablen Lösung gesucht.|
 
 DICOM ist das führende Standardprotokoll für die Verwaltung und Übertragung medizinischer Bilddaten. Es wird zur Identifizierung und Übertragung von Bildstudien verwendet und bildet die Grundlage für die Daten, die in **ImagingStudy**-Profilen referenziert werden. 
 Der DICOM-Standard definiert zum Teil für bestimmte Tags eigene Value Sets, welche auch in diesen Profilen genutzt werden sollen. Diese sind:
