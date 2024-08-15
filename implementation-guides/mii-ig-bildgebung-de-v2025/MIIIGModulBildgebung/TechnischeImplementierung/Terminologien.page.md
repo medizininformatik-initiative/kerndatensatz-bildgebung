@@ -13,9 +13,13 @@ Der DICOM-Standard definiert zum Teil für bestimmte Tags eigene Value Sets, wel
 * Körperseite: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html
 * SOP-Klasse: https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html
 * Radiopharmakon: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html
-* Reskalierungstyp: https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.11.html#sect_C.11.1.1.2
 
-TODO: Lösung für Enums (Scanning Sequence, Scanning Variant + ImageType)
+Für folgenden Tags muss noch eine Lösung für die Darstellung der Enumerated Values als CodeableConcept gefunden werden:
+
+  (0018,0020) Scanning Sequence -> ImagingStudy-Extension MR scanningSequence
+  (0018,0021) Sequence Variant -> ImagingStudy-Extension MR scanningSequenceVariant
+  (0008,0008) Image Type -> ImagingStudy-Extension Instanzdetails imageType
+  (0028,1054) Rescale Type Attribute -> ImagingStudy-Extension PT NM rescaleType
 
 **SNOMED CT**
 
