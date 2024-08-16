@@ -12,8 +12,8 @@ Diese Informationen über die Strahlungserzeugung, Strahlenbelastung und die tec
 
 Relevante DICOM-Tags:
 
-    CTDIvol [(0018, 0060) CTDIVolume] in Milligray [mGy]
-    Röntgenröhrenspannung [(0018, 1150) tubeVoltage] in Kilovolt [kV]
+    CTDIvol [(0018, 9345) CTDIVolume] in Milligray [mGy]
+    Röntgenröhrenspannung [(0018, 0060) KVP] in Kilovolt [kV]
     Expositionszeit [(0018, 1150) exposureTime] in Millisekunden [ms]
     Exposition [(0018, 1152) exposure] in Milliampere-Sekunden [mAs]
     Röntgenröhrenstrom [(0018, 1151) xRayTubeCurrent] in Milliampere [mA]
