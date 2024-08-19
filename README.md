@@ -1,14 +1,13 @@
 # 5.10 Erweiterungsmodul Bildgebung 
 _zuvor: Erweiterungsmodul Diagnostik: Befunde bildgebender Verfahren_
 
-Datensatzbeschreibung: Entwurf von 19.12.2023. 
 Subtask AG: 
 - [AG Befundtext](#teilmodul:-befundtext)
 - [AG Imaging Metadaten](#teilmodul:-imaging-metadaten)
 
 Dieses Begleitdokument dient als Vorschlag zum Vorgehen bezüglich der Implementierung und Datensatzbeschreibung.
 
-Hiermit soll das Dokument für die **1. Feedback-Runde** (_20.12.2023 – 15.01.2024_) freigegeben werden.
+Hiermit soll das Dokument für die **1. Ballotierungsphase** (_23.08.2024 – 04.10.2024_) freigegeben werden.
 
 ---
 
@@ -17,7 +16,9 @@ Hiermit soll das Dokument für die **1. Feedback-Runde** (_20.12.2023 – 15.01.
 
 2024.02.06 - UML-Anpassung an die Guidelines des EU Health Data Space (AG Befundtext).
 
-2024.04.19 - Finale Überarbeitung UML für Beschlussvorlage
+2024.04.19 - Finale Überarbeitung UML für NSG-Beschlussvorlage
+
+2024.08.23 - Finale Überarbeitung der FHIR-Implementierung und des Implementation Guides für die 1. Ballotierungsphase
 
 
 ## Kurzbeschreibung
