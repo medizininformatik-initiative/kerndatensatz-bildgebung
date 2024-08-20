@@ -9,12 +9,12 @@ Title: "MII Example Bildgebung Imaging Study CR"
 * subject.identifier.type = $v2-0203#MR "Medical record number"
 * subject.identifier.system = "https://system-url"
 * subject.identifier.value = "study-uid"
-* encounter = Reference(Encouter/example)
-* basedOn = Reference(CarePlan/example)
+* encounter = Reference(Encounter/example)
+* basedOn = Reference(mii-exa-bildgebung-behandlungsempfehlung)
 * numberOfSeries = 1
 * numberOfInstances = 1
-* procedureReference = Reference(ImagingProcedure/example)
-* reasonReference = Reference(ImagingReason/example)
+* procedureReference = Reference(mii-exa-bildgebung-bildgebungsprozedur)
+* reasonReference = Reference(Condition/example)
 * description = "Thorax auf Station;"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[KVP].valueQuantity.value = 110
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[KVP].valueQuantity.unit = "kilovolt"

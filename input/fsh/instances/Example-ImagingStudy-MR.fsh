@@ -9,12 +9,12 @@ Title: "MII Example Bildgebung Imaging Study MR"
 * subject.identifier.type = $v2-0203#MR "Medical record number"
 * subject.identifier.system = "https://system-url"
 * subject.identifier.value = "study-uid"
-* encounter = Reference(Encouter/example)
+* encounter = Reference(Encounter/example)
 * basedOn = Reference(CarePlan/example)
 * numberOfSeries = 11
 * numberOfInstances = 294
-* procedureReference = Reference(ImagingProcedure/example)
-* reasonReference = Reference(ImagingReason/example)
+* procedureReference = Reference(mii-exa-bildgebung-bildgebungsprozedur)
+* reasonReference = Reference(Condition/example)
 * description = "Knie DOT"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr].extension[magneticFieldStrength].valueQuantity.value = 3
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr].extension[magneticFieldStrength].valueQuantity.unit = "tesla"
