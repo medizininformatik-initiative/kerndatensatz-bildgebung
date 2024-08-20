@@ -62,47 +62,24 @@
   "kind": "resource",
   "abstract": false,
   "type": "MedicationAdministration",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration",
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "MedicationAdministration.id",
-        "path": "MedicationAdministration.id",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationAdministration.meta",
-        "path": "MedicationAdministration.meta",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationAdministration.meta.source",
-        "path": "MedicationAdministration.meta.source",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationAdministration.meta.profile",
-        "path": "MedicationAdministration.meta.profile",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationAdministration.status",
-        "path": "MedicationAdministration.status",
-        "mustSupport": true
-      },
       {
         "id": "MedicationAdministration.subject",
         "path": "MedicationAdministration.subject",
         "type": [
           {
             "code": "Reference",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
+            ],
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "MedicationAdministration.effective[x]",

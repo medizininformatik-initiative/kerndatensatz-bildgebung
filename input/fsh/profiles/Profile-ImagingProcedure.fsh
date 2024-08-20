@@ -1,6 +1,6 @@
 //Head
 Profile: MII_PR_Bildgebung_Bildgebungsprozedur
-Parent: Procedure //MII Prozedur
+Parent: $miiProcedure
 Id: mii-pr-bildgebung-bildgebungsprozedur
 Title: "MII PR Bildgebung Bildgebungsprozedur"
 Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird."
@@ -21,11 +21,11 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * status MS
 * category 1.. MS 
 * category.coding 1.. MS 
-* category.coding ^slicing.discriminator.type = #pattern
+/** category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
 * category.coding contains
-    sct 1..1
+    sct 1..1 */
 * category.coding[sct] ^patternCodeableConcept = $SCT#363679005
 * code MS
 * code.coding MS
@@ -37,4 +37,5 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * code.coding[loinc] ^patternCoding.system = $loinc
 * subject MS
 * subject only Reference(Patient)
+* performed[x] MS
 

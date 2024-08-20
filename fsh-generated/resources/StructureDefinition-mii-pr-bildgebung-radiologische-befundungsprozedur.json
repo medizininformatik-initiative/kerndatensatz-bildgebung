@@ -62,35 +62,10 @@
   "kind": "resource",
   "abstract": false,
   "type": "Procedure",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Procedure.id",
-        "path": "Procedure.id",
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.meta",
-        "path": "Procedure.meta",
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.meta.source",
-        "path": "Procedure.meta.source",
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.meta.profile",
-        "path": "Procedure.meta.profile",
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.status",
-        "path": "Procedure.status",
-        "mustSupport": true
-      },
       {
         "id": "Procedure.category",
         "path": "Procedure.category",
@@ -98,13 +73,12 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "code": "103693007",
+              "code": "165197003",
               "system": "http://snomed.info/sct",
-              "display": "Diagnostic procedure"
+              "display": "Diagnostic assessment"
             }
           ]
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "Procedure.subject",
@@ -116,13 +90,7 @@
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.performed[x]",
-        "path": "Procedure.performed[x]",
-        "mustSupport": true
+        ]
       },
       {
         "id": "Procedure.report",

@@ -10,3 +10,4 @@ Title: "MII Example Bildgebung Kontrastmittelgabe"
 * effectivePeriod.start = "2024-07-19T12:21:45+02:00"
 * dosage.dose.value = 111
 * dosage.dose.unit = "milliliter"
+* dosage.dose.code = #mm

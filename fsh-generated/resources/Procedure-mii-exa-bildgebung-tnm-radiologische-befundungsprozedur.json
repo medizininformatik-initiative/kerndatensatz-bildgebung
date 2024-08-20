@@ -9,9 +9,9 @@
   "category": {
     "coding": [
       {
-        "code": "103693007",
+        "code": "165197003",
         "system": "http://snomed.info/sct",
-        "display": "Diagnostic procedure"
+        "display": "Diagnostic assessment"
       }
     ]
   },
@@ -28,6 +28,7 @@
       }
     ]
   },
+  "performedDateTime": "2024-07-19T12:03:30+02:00",
   "report": [
     {
       "reference": "DiagnosticReport/exampleDiagnosticReport"

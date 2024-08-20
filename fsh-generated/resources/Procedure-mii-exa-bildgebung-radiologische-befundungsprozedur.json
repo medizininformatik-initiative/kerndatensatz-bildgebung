@@ -9,13 +9,22 @@
   "category": {
     "coding": [
       {
-        "code": "103693007",
+        "code": "165197003",
         "system": "http://snomed.info/sct",
-        "display": "Diagnostic procedure"
+        "display": "Diagnostic assessment"
       }
     ]
   },
   "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "4261000179100",
+        "system": "http://snomed.info/sct",
+        "display": "Computed tomography imaging report (record artifact)"
+      }
+    ]
+  },
   "subject": {
     "reference": "Patient/example"
   },

@@ -6,27 +6,21 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur"
     ]
   },
-  "category": {
-    "coding": [
-      {
-        "coding": [
-          {
-            "code": "363679005",
-            "system": "http://snomed.info/sct"
-          }
-        ],
-        "code": "363679005",
-        "system": "http://snomed.info/sct",
-        "display": "Imaging (procedure)"
-      }
-    ]
-  },
   "basedOn": [
     {
       "reference": "ServiceRequest/example"
     }
   ],
   "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "363679005",
+        "system": "http://snomed.info/sct",
+        "display": "Imaging (procedure)"
+      }
+    ]
+  },
   "code": {
     "coding": [
       {
@@ -38,5 +32,6 @@
   },
   "subject": {
     "reference": "Patient/example"
-  }
+  },
+  "performedDateTime": "2024-07-19T12:03:30+02:00"
 }

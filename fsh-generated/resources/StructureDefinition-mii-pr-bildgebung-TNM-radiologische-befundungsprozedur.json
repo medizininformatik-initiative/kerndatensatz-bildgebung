@@ -69,7 +69,6 @@
       {
         "id": "Procedure.code",
         "path": "Procedure.code",
-        "min": 1,
         "binding": {
           "strength": "required",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/TNMRadiologicalReadProcedures"

@@ -8,4 +8,4 @@ Title: "MII Example Bildgebung Imaging Procedure"
 * category = $SCT#363679005 "Imaging (procedure)"
 * code = $loinc#24606-6 "MG Breast Screening"
 * subject = Reference(Patient/example)
-
+* performedDateTime = "2024-07-19T12:03:30+02:00"

@@ -1,6 +1,6 @@
 //Head
 Profile: MII_PR_Bildgebung_Radiologische_Befundungsprozedur
-Parent: Procedure
+Parent: $miiProcedure
 Id: mii-pr-bildgebung-radiologische-befundungsprozedur
 Title: "MII PR Bildgebung Radiologische Befundungsprozedur"
 Description: "Diese Profil beschreibt die radiologische Befundungsprozedur. Es legt fest, dass es sich hierbei um eine reine diagnostische Prozedur handelt"
@@ -19,6 +19,7 @@ Description: "Diese Profil beschreibt die radiologische Befundungsprozedur. Es l
 * status MS 
 * category 1..1 MS
 * category = $SCT#165197003 "Diagnostic assessment" (exactly)
+* code MS
 * subject MS
 * subject only Reference(Patient)
 * performed[x] MS
