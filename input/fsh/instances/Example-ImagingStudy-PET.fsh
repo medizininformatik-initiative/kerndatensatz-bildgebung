@@ -19,7 +19,7 @@ Title: "MII Example Bildgebung Imaging Study PT"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radiopharmaceutical].valueCodeableConcept.coding = $SCT#35321007 
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radiopharmaceuticalStartTime].valueDateTime = "2024-07-19T12:03:30+02:00"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[rescaleType].valueString = "BQML"
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radionuclideTotalDose].valueQuantity.value = 196000000
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radionuclideTotalDose].valueQuantity.value = 196
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radionuclideTotalDose].valueQuantity.unit = "Megabecquerel"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radionuclideHalfLife].valueQuantity.value = 6586.2
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radionuclideHalfLife].valueQuantity.unit = "Seconds"

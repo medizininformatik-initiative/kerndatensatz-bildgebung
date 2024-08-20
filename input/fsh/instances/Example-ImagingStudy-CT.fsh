@@ -9,12 +9,12 @@ Title: "MII Example Bildgebung Imaging Study CT"
 * subject.identifier.type = $v2-0203#MR "Medical record number"
 * subject.identifier.system = "https://system-url"
 * subject.identifier.value = "study-uid"
-* encounter = Reference(Encouter/example)
+* encounter = Reference(Encounter/example)
 * basedOn = Reference(CarePlan/example)
 * numberOfSeries = 2
 * numberOfInstances = 390
-* procedureReference = Reference(ImagingProcedure/example)
-* reasonReference = Reference(ImagingReason/example)
+* procedureReference = Reference(Procedure/example)
+* reasonReference = Reference(Condition/example)
 * description = "whole body aquisition"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[CTDIvol].valueQuantity.value = 4.04
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[CTDIvol].valueQuantity.unit = "milligray"

@@ -12,7 +12,7 @@ Diese Informationen über das Radiopharmakon liegen verschachtelt in dem DICOM-T
 
 Diese nested DICOM-Tags sind:
     
-    Radiopharmakon [(0018, 0031) Radiopharmaceutical]
+    Radiopharmakon [(0054, 0304) RadiopharmaceuticalCodeSequence]
     Applikationsstartzeit [(0018, 1072) RadiopharmaceuticalStartTime]
     Gesamte Radionukliddosis [(0018, 1074) RadionuclideTotalDose] in Megabecquerel [MBq]
     Halbwertszeit [(0018, 1075) RadionuclideHalfLife] in Sekunden [s]

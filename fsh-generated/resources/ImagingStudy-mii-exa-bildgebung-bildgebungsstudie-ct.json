@@ -160,7 +160,7 @@
     }
   },
   "encounter": {
-    "reference": "Encouter/example"
+    "reference": "Encounter/example"
   },
   "basedOn": [
     {
@@ -170,11 +170,11 @@
   "numberOfSeries": 2,
   "numberOfInstances": 390,
   "procedureReference": {
-    "reference": "ImagingProcedure/example"
+    "reference": "Procedure/example"
   },
   "reasonReference": [
     {
-      "reference": "ImagingReason/example"
+      "reference": "Condition/example"
     }
   ],
   "description": "whole body aquisition"
