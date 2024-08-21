@@ -21,7 +21,7 @@
   "description": "Suchparameter für ImagingStudy.series.instance.number",
   "code": "instance-number",
   "base": [
-    "ImagingStudy.series.instance"
+    "ImagingStudy"
   ],
   "type": "number",
   "expression": "ImagingStudy.series.instance.number",

@@ -21,7 +21,7 @@
   "description": "Suchparameter für ImagingStudy.series.laterality",
   "code": "laterality",
   "base": [
-    "ImagingStudy.series"
+    "ImagingStudy"
   ],
   "type": "token",
   "expression": "ImagingStudy.series.laterality",

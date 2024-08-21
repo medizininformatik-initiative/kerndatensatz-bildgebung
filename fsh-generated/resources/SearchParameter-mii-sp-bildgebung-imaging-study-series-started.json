@@ -21,7 +21,7 @@
   "description": "Suchparameter für ImagingStudy.series.started",
   "code": "started",
   "base": [
-    "ImagingStudy.series"
+    "ImagingStudy"
   ],
   "type": "date",
   "expression": "ImagingStudy.series.started"

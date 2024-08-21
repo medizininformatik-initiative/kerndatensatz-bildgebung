@@ -53,7 +53,6 @@ Usage: #definition
 * code = #description
 * base[+] = #CarePlan
 * base[+] = #ImagingStudy
-* base[+] = #ImagingStudy.series
 * base[+] = #Composition
 * type = #string
 * expression = "CarePlan.description | ImagingStudy.description | ImagingStudy.series.description | Composition.description"
@@ -244,8 +243,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.numberOfSeries"
 * code = #number-instances
-* base[+] = #ImagingStudy
-* base[+] = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #number
 * expression = "ImagingStudy.numberOfInstances | ImagingStudy.series.numberOfInstances"
 * comparator[+] = #eq 
@@ -283,7 +281,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.CTDIvolume"
 * code = #CTDI-volume
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('CTDIvol').value"
 * comparator[+] = #eq 
@@ -304,7 +302,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.tubeVoltage"
 * code = #tube-voltage
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('tubeVoltage').value"
 * comparator[+] = #eq 
@@ -325,7 +323,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.exposureTime"
 * code = #exposure-time
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('exposureTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('exposureTime').value"
 * comparator[+] = #eq 
@@ -346,7 +344,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.exposure"
 * code = #exposure
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('exposure').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('exposure').value"
 * comparator[+] = #eq 
@@ -367,7 +365,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent"
 * code = #xRay-tube-current
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('xRayTubeCurrent').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('xRayTubeCurrent').value"
 * comparator[+] = #eq 
@@ -388,7 +386,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.KVP"
 * code = #KVP
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('KVP').value"
 * comparator[+] = #eq 
@@ -409,7 +407,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.magneticFieldStrength"
 * code = #magnetic-field-stregth
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('magneticFieldStrength').value"
 * comparator[+] = #eq 
@@ -430,7 +428,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.scanningSequence"
 * code = #scanning-sequence
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #token
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('scanningSequence').value"
 * modifier[+] = #text
@@ -452,7 +450,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant"
 * code = #scanning-sequence-variant
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #token
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('scanningSequenceVariant').value"
 * modifier[+] = #text
@@ -496,7 +494,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.radiopharmaceuticalStartTime"
 * code = #started
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #date
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radiopharmaceuticalStartTime').value"
 
@@ -512,7 +510,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.rescaleType"
 * code = #rescale-type
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #token
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('rescaleType').value"
 * modifier[+] = #text
@@ -534,7 +532,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.radionuclideTotalDose"
 * code = #radionuclide-total-dose
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radionuclideTotalDose').value"
 * comparator[+] = #eq 
@@ -555,7 +553,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife"
 * code = #radionuclide-half-life
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radionuclideHalfLife').value"
 * comparator[+] = #eq 
@@ -576,7 +574,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.contrastBolus"
 * code = #contrast-bolus
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #token
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolus').value"
 * modifier[+] = #text
@@ -598,7 +596,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.contrastBolusDetails"
 * code = #contrast-bolus-details
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #reference
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolusDetails').value"
 * target = #MedicationStatement
@@ -615,7 +613,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "ImagingStudy.series.extension.manufacturer"
 * code = #manufacturer
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #string
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturer').value"
 * modifier[+] = #text
@@ -637,7 +635,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "ImagingStudy.series.extension.manufacturerModelName"
 * code = #manufacturer-model-name
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #string
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturerModelName').value"
 * modifier[+] = #text
@@ -659,7 +657,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.number"
 * code = #series-number
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #number
 * expression = "ImagingStudy.series.number"
 * comparator[+] = #eq 
@@ -680,7 +678,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.laterality"
 * code = #laterality
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #token
 * expression = "ImagingStudy.series.laterality"
 * modifier[+] = #text
@@ -702,7 +700,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.started"
 * code = #started
-* base = #ImagingStudy.series
+* base = #ImagingStudy
 * type = #date
 * expression = "ImagingStudy.series.started"
 
@@ -718,7 +716,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(X)"
 * code = #instance-pixel-spacing-x
-* base = #ImagingStudy.series.instance
+* base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension(pixelSpacing(x)).value"
 * comparator[+] = #eq 
@@ -739,7 +737,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(Y)"
 * code = #instance-pixel-spacing-y
-* base = #ImagingStudy.series.instance
+* base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension(pixelSpacing(y)).value"
 * comparator[+] = #eq 
@@ -760,7 +758,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.instance.Extension.sliceThickness"
 * code = #instance-slice-thickness
-* base = #ImagingStudy.series.instance
+* base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('sliceThickness').value"
 * comparator[+] = #eq 
@@ -781,7 +779,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.instance.Extension.imageType"
 * code = #instance-image-type
-* base = #ImagingStudy.series.instance
+* base = #ImagingStudy
 * type = #string
 * expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension(imageType).value"
 * modifier[+] = #text
@@ -803,7 +801,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.instance.number"
 * code = #instance-number
-* base = #ImagingStudy.series.instance
+* base = #ImagingStudy
 * type = #number
 * expression = "ImagingStudy.series.instance.number"
 * comparator[+] = #eq 
@@ -947,7 +945,7 @@ Usage: #definition
 * date = "2024-07-30"
 * description = "Suchparameter für ReadProcedure.report"
 * code = #report
-* base = #ReadProcedure
+* base = #Procedure
 * type = #reference
 * expression = "ReadProcedure.report"
 * target[+] = #DiagnosticReport

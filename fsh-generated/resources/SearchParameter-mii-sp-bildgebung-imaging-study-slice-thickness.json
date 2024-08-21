@@ -21,7 +21,7 @@
   "description": "Suchparameter für ImagingStudy.series.instance.Extension.sliceThickness",
   "code": "instance-slice-thickness",
   "base": [
-    "ImagingStudy.series.instance"
+    "ImagingStudy"
   ],
   "type": "quantity",
   "expression": "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('sliceThickness').value",

@@ -21,7 +21,7 @@
   "description": "Suchparameter für ImagingStudy.series.extension.contrastBolusDetails",
   "code": "contrast-bolus-details",
   "base": [
-    "ImagingStudy.series"
+    "ImagingStudy"
   ],
   "type": "reference",
   "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolusDetails').value",

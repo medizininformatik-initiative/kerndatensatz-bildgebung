@@ -21,7 +21,7 @@
   "description": "Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife",
   "code": "radionuclide-half-life",
   "base": [
-    "ImagingStudy.series"
+    "ImagingStudy"
   ],
   "type": "quantity",
   "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radionuclideHalfLife').value",

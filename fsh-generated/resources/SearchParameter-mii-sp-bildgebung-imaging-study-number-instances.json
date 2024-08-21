@@ -21,8 +21,7 @@
   "description": "Suchparameter für ImagingStudy.numberOfSeries",
   "code": "number-instances",
   "base": [
-    "ImagingStudy",
-    "ImagingStudy.series"
+    "ImagingStudy"
   ],
   "type": "number",
   "expression": "ImagingStudy.numberOfInstances | ImagingStudy.series.numberOfInstances",

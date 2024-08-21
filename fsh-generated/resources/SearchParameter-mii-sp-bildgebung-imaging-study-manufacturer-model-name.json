@@ -21,7 +21,7 @@
   "description": "ImagingStudy.series.extension.manufacturerModelName",
   "code": "manufacturer-model-name",
   "base": [
-    "ImagingStudy.series"
+    "ImagingStudy"
   ],
   "type": "string",
   "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturerModelName').value",

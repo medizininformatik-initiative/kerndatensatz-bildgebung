@@ -23,7 +23,6 @@
   "base": [
     "CarePlan",
     "ImagingStudy",
-    "ImagingStudy.series",
     "Composition"
   ],
   "type": "string",

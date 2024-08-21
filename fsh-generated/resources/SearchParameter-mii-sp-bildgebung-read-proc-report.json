@@ -21,7 +21,7 @@
   "description": "Suchparameter für ReadProcedure.report",
   "code": "report",
   "base": [
-    "ReadProcedure"
+    "Procedure"
   ],
   "type": "reference",
   "expression": "ReadProcedure.report",
