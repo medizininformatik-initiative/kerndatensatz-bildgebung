@@ -6,7 +6,7 @@ Title: "MII Example Bildgebung Radiologische Beobachtung"
 * extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid].valueId = "example-serie-uid"
 * extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid].valueId = "example-instanz-uid"
 * extension[http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure].valueReference = Reference(BodyStructure/example)
-* partOf = Reference(Procedure/Readexample)
+* partOf = Reference(mii-exa-bildgebung-radiologische-befundungsprozedur)
 * status = #final
 * category = $observation-category#imaging
 * code = $loinc#32422-8 "Physical findings of Breast"
@@ -15,6 +15,6 @@ Title: "MII Example Bildgebung Radiologische Beobachtung"
 * valueString = "microcalcifications in the upper outer quadrant in the left breast"
 * bodySite = $SCT#76752008 "Breast structure (body structure)"
 * hasMember = Reference(Observation/example)
-* derivedFrom = Reference(ImagingStudy/example)
+* derivedFrom = Reference(mii-exa-bildgebung-bildgebungsstudie-ct)
 * component.code = $loinc#10157-6 "History of family member diseases Narrative"
 * component.valueBoolean = true

@@ -7,4 +7,4 @@ Title: "MII Example Bildgebung Care Plan"
 * intent = #proposal
 * description = "The patient must receive vacuum biopsy"
 * subject = Reference(Patient/example)
-* supportingInfo = Reference(DiagnosticReport/example)
+* supportingInfo = Reference(mii-exa-bildgebung-radiologischer-Befund)

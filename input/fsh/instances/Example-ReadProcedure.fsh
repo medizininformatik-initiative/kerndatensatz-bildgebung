@@ -7,4 +7,4 @@ Title: "MII Example Bildgebung ReadProcedure"
 * code = $SCT#4261000179100 "Computed tomography imaging report (record artifact)"
 * subject = Reference(Patient/example)
 * performedDateTime = "2024-07-19T12:03:30+02:00"
-* report = Reference(DiagnosticReport/example)
+* report = Reference(mii-exa-bildgebung-radiologischer-Befund)

@@ -13,4 +13,4 @@ Title: "MII Example Bildgebung Service Request"
 * requester = Reference(Practitioner/example)
 * reasonCode = $SCT#268547008 "Screening for malignant neoplasm of breast (procedure)"
 * reasonReference = Reference(Condition/example)
-* supportingInfo = Reference(DiagnosticReport/example)
+* supportingInfo = Reference(mii-exa-bildgebung-radiologischer-Befund)

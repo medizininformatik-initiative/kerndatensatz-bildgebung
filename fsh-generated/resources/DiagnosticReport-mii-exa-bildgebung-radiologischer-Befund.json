@@ -44,7 +44,7 @@
   ],
   "basedOn": [
     {
-      "reference": "ServiceRequest/example"
+      "reference": "ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"
     }
   ],
   "status": "final",
@@ -67,7 +67,7 @@
   "issued": "2024-07-19T12:03:30+02:00",
   "result": [
     {
-      "reference": "Observation/example"
+      "reference": "Observation/mii-exa-bildgebung-radiologische-beobachtung"
     }
   ],
   "imagingStudy": [

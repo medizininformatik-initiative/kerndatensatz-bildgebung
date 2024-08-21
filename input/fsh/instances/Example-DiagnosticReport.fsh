@@ -2,7 +2,7 @@ Instance: mii-exa-bildgebung-radiologischer-Befund
 InstanceOf: MII_PR_Bildgebung_Radiologischer_Befund
 Usage: #example
 Title: "MII Example Bildgebung Diagnostic Report"
-* basedOn = Reference(ServiceRequest/example)
+* basedOn = Reference(mii-exa-bildgebung-anforderung-bildgebung)
 * status = #final
 * category.coding[snomed-ct] = $SCT#4201000179104 "Imaging report"
 * code = $SCT#4231000179109 "Mammography report"
@@ -10,7 +10,7 @@ Title: "MII Example Bildgebung Diagnostic Report"
 * encounter = Reference(Encounter/example)
 * effectiveDateTime = "2024-07-19T12:03:30+02:00"
 * issued = "2024-07-19T12:03:30+02:00"
-* result = Reference (Observation/example)
+* result = Reference (mii-exa-bildgebung-radiologische-beobachtung)
 * imagingStudy = Reference (mii-exa-bildgebung-bildgebungsstudie-ct)
 * conclusion = "There are suspicious microcalcifications in the upper outer quadrant in the left breast"
 * conclusionCode = $SCT#12747003 "Microcalcification, calcified structure (morphologic abnormality)"
