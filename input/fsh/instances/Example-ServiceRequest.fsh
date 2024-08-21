@@ -3,7 +3,7 @@ InstanceOf: MII_PR_Bildgebung_Anforderung_Bildgebung
 Usage: #example
 Title: "MII Example Bildgebung Service Request"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
-* status = #active
+* status = #completed
 * intent = #order
 * category = $SCT#363679005 "Imaging (procedure)"
 * subject = Reference(Patient/example)
