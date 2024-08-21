@@ -13,7 +13,7 @@ Title: "MII Example Bildgebung Imaging Study CT"
 * basedOn = Reference(CarePlan/example)
 * numberOfSeries = 2
 * numberOfInstances = 390
-* procedureReference = Reference(Procedure/example)
+* procedureReference = Reference(mii-exa-bildgebung-bildgebungsprozedur)
 * reasonReference = Reference(Condition/example)
 * description = "whole body aquisition"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[CTDIvol].valueQuantity.value = 4.04
