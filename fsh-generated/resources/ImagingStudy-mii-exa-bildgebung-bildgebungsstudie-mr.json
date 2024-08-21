@@ -140,7 +140,7 @@
     }
   },
   "encounter": {
-    "reference": "Encouter/example"
+    "reference": "Encounter/example"
   },
   "basedOn": [
     {
@@ -150,11 +150,11 @@
   "numberOfSeries": 11,
   "numberOfInstances": 294,
   "procedureReference": {
-    "reference": "ImagingProcedure/example"
+    "reference": "Procedure/mii-exa-bildgebung-bildgebungsprozedur"
   },
   "reasonReference": [
     {
-      "reference": "ImagingReason/example"
+      "reference": "Condition/example"
     }
   ],
   "description": "Knie DOT"
