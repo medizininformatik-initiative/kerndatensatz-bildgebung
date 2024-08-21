@@ -341,7 +341,7 @@
           "reference": "ValueSet/mii-vs-bildgebung-serviceRequest-coding"
         },
         "name": "MII VS Bildgebung ServiceRequest Coding",
-        "description": "TODO",
+        "description": "Import the ValueSet for Imaging Procedures",
         "exampleBoolean": false
       },
       {
@@ -349,7 +349,7 @@
           "reference": "ValueSet/mii-vs-bildgebung-serviceRequest-reason"
         },
         "name": "MII VS Bildgebung ServiceRequest Reason",
-        "description": "TODO",
+        "description": "Imports the ValueSet for clinical findings",
         "exampleBoolean": false
       },
       {

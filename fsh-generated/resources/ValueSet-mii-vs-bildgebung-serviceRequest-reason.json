@@ -4,7 +4,7 @@
   "name": "MII_VS_Bildgebung_ServiceRequest_Reason",
   "id": "mii-vs-bildgebung-serviceRequest-reason",
   "title": "MII VS Bildgebung ServiceRequest Reason",
-  "description": "TODO",
+  "description": "Imports the ValueSet for clinical findings",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-serviceRequest-reason",
   "compose": {
     "include": [
