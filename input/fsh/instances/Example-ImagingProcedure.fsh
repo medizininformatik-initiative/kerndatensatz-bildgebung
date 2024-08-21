@@ -6,6 +6,6 @@ Title: "MII Example Bildgebung Imaging Procedure"
 * basedOn = Reference(ServiceRequest/example)
 * status = #completed
 * category = $SCT#363679005 "Imaging (procedure)"
-* code = $loinc#24606-6 "MG Breast Screening"
+* code = $SCT#384151000119104 "Screening mammography of bilateral breasts (procedure)"
 * subject = Reference(Patient/example)
 * performedDateTime = "2024-07-19T12:03:30+02:00"
