@@ -18,7 +18,7 @@
     {
       "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure",
       "valueReference": {
-        "reference": "BodyStructure/example"
+        "reference": "BodyStructure/mii-exa-bildgebung-koerperstruktur"
       }
     }
   ],
@@ -48,7 +48,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/PatExample"
   },
   "issued": "2024-07-19T12:03:30+02:00",
   "valueString": "microcalcifications in the upper outer quadrant in the left breast",
@@ -63,7 +63,7 @@
   },
   "hasMember": [
     {
-      "reference": "Observation/example"
+      "reference": "Observation/ObsExample"
     }
   ],
   "derivedFrom": [

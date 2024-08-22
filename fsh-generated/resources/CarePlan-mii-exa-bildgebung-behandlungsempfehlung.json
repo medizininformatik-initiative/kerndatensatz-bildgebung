@@ -10,7 +10,7 @@
   "intent": "proposal",
   "description": "The patient must receive vacuum biopsy",
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/PatExample"
   },
   "supportingInfo": [
     {

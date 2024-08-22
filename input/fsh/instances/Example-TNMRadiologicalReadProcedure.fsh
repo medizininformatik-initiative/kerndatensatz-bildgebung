@@ -4,7 +4,7 @@ Usage: #example
 Title: "Example of a TNM Radiological Read Procedure"
 //* category = $SCT#103693007 "Diagnostic procedure"
 * status = #completed
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/PatExample)
 * code = $SCT#254317004 "TNM Lung and pleural tumor staging"
 * performedDateTime = "2024-07-19T12:03:30+02:00"
-* report = Reference(mii-exa-bildgebung-radiologischer-Befund)
+* report = Reference(DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund)

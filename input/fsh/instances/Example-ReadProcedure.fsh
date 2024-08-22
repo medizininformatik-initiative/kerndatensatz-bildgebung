@@ -5,6 +5,6 @@ Title: "MII Example Bildgebung ReadProcedure"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
 * status = #completed
 * code = $SCT#4261000179100 "Computed tomography imaging report (record artifact)"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/PatExample)
 * performedDateTime = "2024-07-19T12:03:30+02:00"
-* report = Reference(mii-exa-bildgebung-radiologischer-Befund)
+* report = Reference(DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund)

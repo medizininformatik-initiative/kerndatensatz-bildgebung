@@ -133,7 +133,7 @@
   ],
   "status": "available",
   "subject": {
-    "reference": "Patient/example",
+    "reference": "Patient/PatExample",
     "identifier": {
       "type": {
         "coding": [
@@ -149,7 +149,7 @@
     }
   },
   "encounter": {
-    "reference": "Encounter/example"
+    "reference": "Encounter/EncExample"
   },
   "basedOn": [
     {
@@ -163,7 +163,7 @@
   },
   "reasonReference": [
     {
-      "reference": "Condition/example"
+      "reference": "Condition/CondExample"
     }
   ],
   "description": "whole body aquisition"

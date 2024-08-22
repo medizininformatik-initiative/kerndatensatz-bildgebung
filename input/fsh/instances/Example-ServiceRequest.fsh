@@ -6,11 +6,11 @@ Title: "MII Example Bildgebung Service Request"
 * status = #completed
 * intent = #order
 * category = $SCT#363679005 "Imaging (procedure)"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/PatExample)
 * code = $SCT#71651007 "Mammography (procedure)"
-* encounter = Reference(Encounter/example)
+* encounter = Reference(Encounter/EncExample)
 * authoredOn = "2024-07-19T12:03:30+02:00"
-* requester = Reference(Practitioner/example)
+* requester = Reference(Practitioner/PracExample)
 * reasonCode = $SCT#268547008 "Screening for malignant neoplasm of breast (procedure)"
-* reasonReference = Reference(Condition/example)
-* supportingInfo = Reference(mii-exa-bildgebung-radiologischer-Befund)
+* reasonReference = Reference(Condition/CondExample)
+* supportingInfo = Reference(DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund)

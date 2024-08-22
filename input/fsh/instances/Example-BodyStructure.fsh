@@ -6,4 +6,4 @@ Title: "MII Example Bildgebung BodyStructure"
 * morphology = $SCT#12747003 "Microcalcification, calcified structure (morphologic abnormality)"
 * location = $SCT#76752008 "Breast structure (body structure)"
 * locationQualifier = $SCT#7771000 "Left (qualifier value)"
-* patient = Reference(Patient/example)
+* patient = Reference(Patient/PatExample)

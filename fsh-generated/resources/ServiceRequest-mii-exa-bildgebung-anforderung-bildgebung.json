@@ -20,7 +20,7 @@
   "status": "completed",
   "intent": "order",
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/PatExample"
   },
   "code": {
     "coding": [
@@ -32,11 +32,11 @@
     ]
   },
   "encounter": {
-    "reference": "Encounter/example"
+    "reference": "Encounter/EncExample"
   },
   "authoredOn": "2024-07-19T12:03:30+02:00",
   "requester": {
-    "reference": "Practitioner/example"
+    "reference": "Practitioner/PracExample"
   },
   "reasonCode": [
     {
@@ -51,7 +51,7 @@
   ],
   "reasonReference": [
     {
-      "reference": "Condition/example"
+      "reference": "Condition/CondExample"
     }
   ],
   "supportingInfo": [

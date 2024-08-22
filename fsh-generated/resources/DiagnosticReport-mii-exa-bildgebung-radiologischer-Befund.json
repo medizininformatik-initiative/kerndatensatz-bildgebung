@@ -35,7 +35,7 @@
         {
           "url": "reference",
           "valueReference": {
-            "reference": "DiagnosticReport/example"
+            "reference": "DiagnosticReport/DiagRepExample"
           }
         }
       ],
@@ -58,10 +58,10 @@
     ]
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/PatExample"
   },
   "encounter": {
-    "reference": "Encounter/example"
+    "reference": "Encounter/EncExample"
   },
   "effectiveDateTime": "2024-07-19T12:03:30+02:00",
   "issued": "2024-07-19T12:03:30+02:00",

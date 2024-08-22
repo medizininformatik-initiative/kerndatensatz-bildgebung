@@ -16,10 +16,10 @@
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/PatExample"
   },
   "medicationReference": {
-    "reference": "Medication/example"
+    "reference": "Medication/MedExample"
   },
   "effectivePeriod": {
     "end": "2024-07-19T12:22:45+02:00",
