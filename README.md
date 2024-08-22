@@ -1,5 +1,5 @@
-# 5.10 Erweiterungsmodul Bildgebung 
-_zuvor: Erweiterungsmodul Diagnostik: Befunde bildgebender Verfahren_
+# Erweiterungsmodul Bildgebung 
+_Erweiterungsmodul Diagnostik: Befunde bildgebender Verfahren_
 
 Subtask AG: 
 - [AG Befundtext](#teilmodul:-befundtext)
