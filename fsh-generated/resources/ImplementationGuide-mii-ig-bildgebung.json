@@ -674,9 +674,9 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-observation-serie-uid"
+          "reference": "SearchParameter/mii-sp-bildgebung-observation-series-uid"
         },
-        "name": "mii-sp-bildgebung-observation-serie-uid",
+        "name": "mii-sp-bildgebung-observation-series-uid",
         "description": "Suchparameter für Observation.extension.seriesUID",
         "exampleBoolean": false
       },

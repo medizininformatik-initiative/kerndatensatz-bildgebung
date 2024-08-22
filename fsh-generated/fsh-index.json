@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "capabilitystatements\\CapabilityStatement-1x.fsh",
     "startLine": 31,
-    "endLine": 277
+    "endLine": 282
   },
   {
     "outputFile": "CarePlan-mii-exa-bildgebung-behandlungsempfehlung.json",
@@ -432,8 +432,8 @@
     "endLine": 869
   },
   {
-    "outputFile": "SearchParameter-mii-sp-bildgebung-observation-serie-uid.json",
-    "fshName": "mii-sp-bildgebung-observation-serie-uid",
+    "outputFile": "SearchParameter-mii-sp-bildgebung-observation-series-uid.json",
+    "fshName": "mii-sp-bildgebung-observation-series-uid",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
     "startLine": 794,

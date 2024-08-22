@@ -77,7 +77,7 @@
 [mii-sp-bildgebung-observation-body-site]: SearchParameter-mii-sp-bildgebung-observation-body-site.html
 [mii-sp-bildgebung-observation-body-structure]: SearchParameter-mii-sp-bildgebung-observation-body-structure.html
 [mii-sp-bildgebung-observation-issued]: SearchParameter-mii-sp-bildgebung-observation-issued.html
-[mii-sp-bildgebung-observation-serie-uid]: SearchParameter-mii-sp-bildgebung-observation-serie-uid.html
+[mii-sp-bildgebung-observation-series-uid]: SearchParameter-mii-sp-bildgebung-observation-series-uid.html
 [mii-sp-bildgebung-observation-sop-instance-uid]: SearchParameter-mii-sp-bildgebung-observation-sop-instance-uid.html
 [mii-sp-bildgebung-read-proc-report]: SearchParameter-mii-sp-bildgebung-read-proc-report.html
 [mii-sp-bildgebung-reason-reference]: SearchParameter-mii-sp-bildgebung-reason-reference.html

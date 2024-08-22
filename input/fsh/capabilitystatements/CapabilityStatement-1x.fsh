@@ -206,7 +206,7 @@ Usage: #definition
 * insert SupportSearchParam(_lastUpdated, http://hl7.org/fhir/SearchParameter/Resource-lastUpdated, #date, #SHALL)
 * insert SupportSearchParam(_profile, http://hl7.org/fhir/SearchParameter/Resource-profile, #uri, #SHALL)
 * insert SupportSearchParam(_source, http://hl7.org/fhir/SearchParameter/Resource-source, #uri, #SHALL)
-* insert SupportSearchParam(serie-uid, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-serie-uid, #token, #SHALL)
+* insert SupportSearchParam(series-uid, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-series-uid, #token, #SHALL)
 * insert SupportSearchParam(sop-instance-uid, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-sop-instance-uid, #token, #SHALL)
 * insert SupportSearchParam(body-structure, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-structure, #reference, #SHALL)
 * insert SupportSearchParam(part-of, http://hl7.org/fhir/SearchParameter/Observation-part-of, #reference, #SHALL)
@@ -215,22 +215,27 @@ Usage: #definition
 * insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
 * insert SupportSearchParam(issued, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-issued, #date, #SHALL)
+
 * insert SupportSearchParam(value-concept, http://hl7.org/fhir/SearchParameter/Observation-value-concept, #quantity, #SHALL)
 * insert SupportSearchParam(value-date, http://hl7.org/fhir/SearchParameter/Observation-value-date, #date, #SHALL)
 * insert SupportSearchParam(value-quantity, http://hl7.org/fhir/SearchParameter/Observation-value-quantity, #quantity, #SHALL)
 * insert SupportSearchParam(value-string, http://hl7.org/fhir/SearchParameter/Observation-value-string, #string, #SHALL)
+
 * insert SupportSearchParam(body-site, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-site, #token, #SHALL)
 * insert SupportSearchParam(has-member, http://hl7.org/fhir/SearchParameter/Observation-has-member, #reference, #SHALL)
 * insert SupportSearchParam(derived-from, http://hl7.org/fhir/SearchParameter/Observation-derived-from, #reference, #SHALL)
+
 * insert SupportSearchParam(code-value-concept, http://hl7.org/fhir/SearchParameter/Observation-code-value-concept, #composite, #SHALL)
 * insert SupportSearchParam(code-value-date, http://hl7.org/fhir/SearchParameter/Observation-code-value-date, #composite, #SHALL)
 * insert SupportSearchParam(code-value-quantity, http://hl7.org/fhir/SearchParameter/Observation-code-value-quantity, #composite, #SHALL)
 * insert SupportSearchParam(code-value-string, http://hl7.org/fhir/SearchParameter/Observation-code-value-string, #composite, #SHALL)
+
 * insert SupportSearchParam(combo-code, http://hl7.org/fhir/SearchParameter/Observation-combo-code, #token, #SHALL)
 * insert SupportSearchParam(combo-code-value-concept, http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-concept, #composite, #SHALL)
 * insert SupportSearchParam(combo-code-value-quantity, http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-quantity, #composite, #SHALL)
 * insert SupportSearchParam(combo-value-concept, http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept, #token, #SHALL)
 * insert SupportSearchParam(combo-value-quantity, http://hl7.org/fhir/SearchParameter/Observation-combo-value-quantity, #quantity, #SHALL)
+
 * insert SupportSearchParam(component-code, http://hl7.org/fhir/SearchParameter/Observation-component-code, #token, #SHALL)
 * insert SupportSearchParam(component-code-value-concept, http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept, #composite, #SHALL)
 * insert SupportSearchParam(component-code-value-quantity, http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity, #composite, #SHALL)

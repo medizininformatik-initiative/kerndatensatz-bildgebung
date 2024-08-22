@@ -1630,8 +1630,8 @@
               ]
             },
             {
-              "name": "serie-uid",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-serie-uid",
+              "name": "series-uid",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-series-uid",
               "type": "token",
               "extension": [
                 {

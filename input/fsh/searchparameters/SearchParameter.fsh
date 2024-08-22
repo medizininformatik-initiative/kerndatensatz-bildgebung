@@ -791,21 +791,21 @@ Usage: #definition
 * comparator[+] = #le
 
 //Observation
-Instance: mii-sp-bildgebung-observation-serie-uid
+Instance: mii-sp-bildgebung-observation-series-uid
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-serie-uid"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-series-uid"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Observation_Serie_UID"
+* name = "MII_SP_Bildgebung_Observation_Series_UID"
 * status = #active
 * experimental = false
 * date = "2024-07-30"
 * description = "Suchparameter für Observation.extension.seriesUID"
-* code = #serie-uid
+* code = #series-uid
 * base = #Observation
 * type = #token
-* expression = "Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid').value"
+* expression = "Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid').value"
 * modifier[+] = #text
 * modifier[+] = #not
 * modifier[+] = #above
