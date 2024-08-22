@@ -19,7 +19,7 @@
   "experimental": false,
   "date": "2024-07-30",
   "description": "Suchparameter für ImagingStudy.series.radiopharmaceuticalStartTime",
-  "code": "started",
+  "code": "radiopharmaceutical-start-time",
   "base": [
     "ImagingStudy"
   ],

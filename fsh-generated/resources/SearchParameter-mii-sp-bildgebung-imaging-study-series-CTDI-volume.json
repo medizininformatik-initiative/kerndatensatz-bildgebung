@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-bildgebung-imaging-study-series-CTDI-volume",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-CTDI-volume",
+  "id": "mii-sp-bildgebung-imaging-study-series-ctdi-volume",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-ctdi-volume",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -19,7 +19,7 @@
   "experimental": false,
   "date": "2024-07-30",
   "description": "Suchparameter für ImagingStudy.series.extension.CTDIvolume",
-  "code": "CTDI-volume",
+  "code": "ctdi-volume",
   "base": [
     "ImagingStudy"
   ],

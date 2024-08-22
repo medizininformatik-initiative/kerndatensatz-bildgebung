@@ -37,7 +37,7 @@
 [MII_PR_Bildgebung_TNM_Radiologische_Befundungsprozedur]: StructureDefinition-mii-pr-bildgebung-TNM-radiologische-befundungsprozedur.html
 [MII_VS_Bildgebung_ServiceRequest_Coding]: ValueSet-mii-vs-bildgebung-serviceRequest-coding.html
 [MII_VS_Bildgebung_ServiceRequest_Reason]: ValueSet-mii-vs-bildgebung-serviceRequest-reason.html
-[mii-sp-bildgebung-body-structure-location-qualfier]: SearchParameter-mii-sp-bildgebung-body-structure-location-qualfier.html
+[mii-sp-bildgebung-body-structure-location-qualifier]: SearchParameter-mii-sp-bildgebung-body-structure-location-qualifier.html
 [mii-sp-bildgebung-composition-section-author]: SearchParameter-mii-sp-bildgebung-composition-section-author.html
 [mii-sp-bildgebung-composition-section-title]: SearchParameter-mii-sp-bildgebung-composition-section-title.html
 [mii-sp-bildgebung-description]: SearchParameter-mii-sp-bildgebung-description.html
@@ -56,7 +56,7 @@
 [mii-sp-bildgebung-imaging-study-procedure-reference]: SearchParameter-mii-sp-bildgebung-imaging-study-procedure-reference.html
 [mii-sp-bildgebung-imaging-study-series-contrast-bolus]: SearchParameter-mii-sp-bildgebung-imaging-study-series-contrast-bolus.html
 [mii-sp-bildgebung-imaging-study-series-contrast-bolus-details]: SearchParameter-mii-sp-bildgebung-imaging-study-series-contrast-bolus-details.html
-[mii-sp-bildgebung-imaging-study-series-CTDI-volume]: SearchParameter-mii-sp-bildgebung-imaging-study-series-CTDI-volume.html
+[mii-sp-bildgebung-imaging-study-series-ctdi-volume]: SearchParameter-mii-sp-bildgebung-imaging-study-series-ctdi-volume.html
 [mii-sp-bildgebung-imaging-study-series-exposure]: SearchParameter-mii-sp-bildgebung-imaging-study-series-exposure.html
 [mii-sp-bildgebung-imaging-study-series-exposure-time]: SearchParameter-mii-sp-bildgebung-imaging-study-series-exposure-time.html
 [mii-sp-bildgebung-imaging-study-series-kvp]: SearchParameter-mii-sp-bildgebung-imaging-study-series-kvp.html
@@ -71,7 +71,6 @@
 [mii-sp-bildgebung-imaging-study-series-scanning-sequence]: SearchParameter-mii-sp-bildgebung-imaging-study-series-scanning-sequence.html
 [mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant]: SearchParameter-mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant.html
 [mii-sp-bildgebung-imaging-study-series-started]: SearchParameter-mii-sp-bildgebung-imaging-study-series-started.html
-[mii-sp-bildgebung-imaging-study-series-tube-voltage]: SearchParameter-mii-sp-bildgebung-imaging-study-series-tube-voltage.html
 [mii-sp-bildgebung-imaging-study-series-xray-tube-current]: SearchParameter-mii-sp-bildgebung-imaging-study-series-xray-tube-current.html
 [mii-sp-bildgebung-imaging-study-slice-thickness]: SearchParameter-mii-sp-bildgebung-imaging-study-slice-thickness.html
 [mii-sp-bildgebung-medications-dose]: SearchParameter-mii-sp-bildgebung-medications-dose.html

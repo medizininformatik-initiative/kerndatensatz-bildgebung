@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-bildgebung-body-structure-location-qualfier",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-body-structure-location-qualfier",
+  "id": "mii-sp-bildgebung-body-structure-location-qualifier",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-body-structure-location-qualifier",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -14,12 +14,12 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Bildgebung_Koerperstruktur_Location_Qualfier",
+  "name": "MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier",
   "status": "active",
   "experimental": false,
   "date": "2024-07-30",
   "description": "Suchparameter für BodyStructure.locationQualifier",
-  "code": "location-qualfier",
+  "code": "location-qualifier",
   "base": [
     "BodyStructure"
   ],

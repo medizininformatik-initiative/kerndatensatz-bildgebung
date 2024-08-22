@@ -25,7 +25,7 @@
     "ServiceRequest"
   ],
   "type": "reference",
-  "expression": "ImagingStudy-reasonReference | ServiceRequest.reasonReference",
+  "expression": "ImagingStudy.reasonReference | ServiceRequest.reasonReference",
   "target": [
     "Condition",
     "Observation",

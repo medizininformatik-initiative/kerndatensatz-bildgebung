@@ -354,9 +354,9 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-body-structure-location-qualfier"
+          "reference": "SearchParameter/mii-sp-bildgebung-body-structure-location-qualifier"
         },
-        "name": "mii-sp-bildgebung-body-structure-location-qualfier",
+        "name": "mii-sp-bildgebung-body-structure-location-qualifier",
         "description": "Suchparameter für BodyStructure.locationQualifier",
         "exampleBoolean": false
       },
@@ -506,9 +506,9 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-CTDI-volume"
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-ctdi-volume"
         },
-        "name": "mii-sp-bildgebung-imaging-study-series-CTDI-volume",
+        "name": "mii-sp-bildgebung-imaging-study-series-ctdi-volume",
         "description": "Suchparameter für ImagingStudy.series.extension.CTDIvolume",
         "exampleBoolean": false
       },
@@ -622,14 +622,6 @@
         },
         "name": "mii-sp-bildgebung-imaging-study-series-started",
         "description": "Suchparameter für ImagingStudy.series.started",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-tube-voltage"
-        },
-        "name": "mii-sp-bildgebung-imaging-study-series-tube-voltage",
-        "description": "Suchparameter für ImagingStudy.series.extension.tubeVoltage",
         "exampleBoolean": false
       },
       {

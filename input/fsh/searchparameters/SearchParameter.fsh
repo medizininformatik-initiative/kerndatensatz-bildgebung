@@ -33,7 +33,7 @@ Usage: #definition
 * base[+] = #ImagingStudy
 * base[+] = #ServiceRequest
 * type = #reference
-* expression = "ImagingStudy-reasonReference | ServiceRequest.reasonReference"
+* expression = "ImagingStudy.reasonReference | ServiceRequest.reasonReference"
 * target[+] = #Condition
 * target[+] = #Observation
 * target[+] = #DiagnosticReport
@@ -64,18 +64,18 @@ Usage: #definition
 * modifier[+] = #not-in
 
 // BodyStructure
-Instance: mii-sp-bildgebung-body-structure-location-qualfier
+Instance: mii-sp-bildgebung-body-structure-location-qualifier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-body-structure-location-qualfier"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-body-structure-location-qualifier"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Koerperstruktur_Location_Qualfier"
+* name = "MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier"
 * status = #active
 * experimental = false
 * date = "2024-07-30"
 * description = "Suchparameter für BodyStructure.locationQualifier"
-* code = #location-qualfier
+* code = #location-qualifier
 * base = #BodyStructure
 * type = #token
 * expression = "BodyStructure.locationQualifier"
@@ -126,6 +126,7 @@ Usage: #definition
 * expression = "Composition.section.author"
 * target = #Practitioner
 
+//DiagnosticReport
 Instance: mii-sp-bildgebung-diagnostic-report-imaging-study
 InstanceOf: SearchParameter
 Usage: #definition
@@ -269,10 +270,10 @@ Usage: #definition
 * expression = "ImagingStudy.procedureReference"
 * target = #Procedure
 
-Instance: mii-sp-bildgebung-imaging-study-series-CTDI-volume
+Instance: mii-sp-bildgebung-imaging-study-series-ctdi-volume
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-CTDI-volume"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-ctdi-volume"
 * insert SP_Publisher
 * insert Version
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_CTDI_Volume"
@@ -280,7 +281,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.CTDIvolume"
-* code = #CTDI-volume
+* code = #ctdi-volume
 * base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('CTDIvol').value"
@@ -288,28 +289,7 @@ Usage: #definition
 * comparator[+] = #gt 
 * comparator[+] = #lt
 * comparator[+] = #ge 
-* comparator[+] = #le 
-
-Instance: mii-sp-bildgebung-imaging-study-series-tube-voltage
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-tube-voltage"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Imaging_Study_Series_Tube_Voltage"
-* status = #active
-* experimental = false
-* date = "2024-07-30"
-* description = "Suchparameter für ImagingStudy.series.extension.tubeVoltage"
-* code = #tube-voltage
-* base = #ImagingStudy
-* type = #quantity
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('tubeVoltage').value"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le 
+* comparator[+] = #le  
 
 Instance: mii-sp-bildgebung-imaging-study-series-exposure-time
 InstanceOf: SearchParameter
@@ -364,7 +344,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent"
-* code = #xRay-tube-current
+* code = #xray-tube-current
 * base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('xRayTubeCurrent').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('xRayTubeCurrent').value"
@@ -388,7 +368,7 @@ Usage: #definition
 * code = #KVP
 * base = #ImagingStudy
 * type = #quantity
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('KVP').value"
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('KVP').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('KVP').value"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -406,7 +386,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.extension.magneticFieldStrength"
-* code = #magnetic-field-stregth
+* code = #magnetic-field-strength
 * base = #ImagingStudy
 * type = #quantity
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('magneticFieldStrength').value"
@@ -493,7 +473,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.radiopharmaceuticalStartTime"
-* code = #started
+* code = #radiopharmaceutical-start-time
 * base = #ImagingStudy
 * type = #date
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radiopharmaceuticalStartTime').value"
@@ -677,7 +657,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.laterality"
-* code = #laterality
+* code = #series-laterality
 * base = #ImagingStudy
 * type = #token
 * expression = "ImagingStudy.series.laterality"
@@ -699,7 +679,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-30"
 * description = "Suchparameter für ImagingStudy.series.started"
-* code = #started
+* code = #series-started
 * base = #ImagingStudy
 * type = #date
 * expression = "ImagingStudy.series.started"
