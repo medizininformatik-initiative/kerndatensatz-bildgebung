@@ -1,0 +1,79 @@
+{
+    "resourceType": "Observation",
+    "id": "ObsExample",
+    "meta": {
+      "profile": [
+        "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
+      ]
+    },
+    "extension": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid",
+        "valueId": "example-serie-uid"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid",
+        "valueId": "example-instanz-uid"
+      },
+      {
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure",
+        "valueReference": {
+          "reference": "BodyStructure/mii-exa-bildgebung-koerperstruktur"
+        }
+      }
+    ],
+    "partOf": [
+      {
+        "reference": "Procedure/mii-exa-bildgebung-radiologische-befundungsprozedur"
+      }
+    ],
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "code": "imaging",
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "code": "32422-8",
+          "system": "http://loinc.org",
+          "display": "Physical findings of Breast"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/PatExample"
+    },
+    "issued": "2024-07-19T12:03:30+02:00",
+    "valueString": "microcalcifications in the upper outer quadrant in the left breast",
+    "bodySite": {
+      "coding": [
+        {
+          "code": "76752008",
+          "system": "http://snomed.info/sct",
+          "display": "Breast structure (body structure)"
+        }
+      ]
+    },
+    "component": [
+      {
+        "code": {
+          "coding": [
+            {
+              "code": "10157-6",
+              "system": "http://loinc.org",
+              "display": "History of family member diseases Narrative"
+            }
+          ]
+        },
+        "valueBoolean": true
+      }
+    ]
+  }
+  
