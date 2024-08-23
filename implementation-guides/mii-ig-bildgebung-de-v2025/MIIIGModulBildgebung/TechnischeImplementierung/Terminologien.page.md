@@ -4,7 +4,7 @@
 
 | Hinweis |  |
 |---------|---------------------|
-| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Das DICOM FHIR Package definiert ein CodeSystem und ValueSets nach den vorgeschriebenen Inhalten bestimmter TAGs. Dabei werden die Strings der Enumerated Values allerdings nicht als Codes aufgeführt und benötigen eine andere Lösung zur Darstellung als CodeableConcept. Aktuell werden diese Felder als Strings abgebildet. Hier wird weiterhin nach einer annehmbaren und praktikablen Lösung gesucht.|
+| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Das DICOM FHIR Package definiert ein CodeSystem und ValueSets nach den vorgeschriebenen Inhalten bestimmter TAGs. Dabei werden die Strings der Enumerated Values allerdings nicht als Codes aufgeführt und können deshalb nicht als CodeableConcept abgebildet werden. Aktuell werden diese Felder deshalb als Strings umgesetzt. Hier wird weiterhin nach einer annehmbaren und praktikablen Lösung gesucht.|
 
 DICOM ist das führende Standardprotokoll für die Verwaltung und Übertragung medizinischer Bilddaten. Es wird zur Identifizierung und Übertragung von Bildstudien verwendet und bildet die Grundlage für die Daten, die in **ImagingStudy**-Profilen referenziert werden. 
 Der DICOM-Standard definiert zum Teil für bestimmte Tags eigene Value Sets, welche auch in diesen Profilen genutzt werden sollen. Diese sind:
@@ -20,6 +20,7 @@ Für folgenden Tags muss noch eine Lösung für die Darstellung der Enumerated V
     (0018,0021) Sequence Variant -> ImagingStudy-Extension MR scanningSequenceVariant
     (0008,0008) Image Type -> ImagingStudy-Extension Instanzdetails imageType
     (0028,1054) Rescale Type Attribute -> ImagingStudy-Extension PT NM rescaleType
+Diese können aktuell als Strings gespeichert werden, wobei jedoch keine Validierung der angegebenen Werte möglich ist. Es liegt damit in der Verantwortung jedes Standortes, hier nur gültige Werte anzugeben. Siehe auch Diskussion zur zukünfitigen Umsetzung im [FHIR Chat](https://chat.fhir.org/#narrow/stream/179202-terminology/topic/Using.20DICOM.20Enums.20in.20FHIR/near/456487414).
 
 **SNOMED CT**
 
