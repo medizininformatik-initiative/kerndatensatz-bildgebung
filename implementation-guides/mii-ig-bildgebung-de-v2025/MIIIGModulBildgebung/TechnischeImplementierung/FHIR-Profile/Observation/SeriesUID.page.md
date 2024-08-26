@@ -1,7 +1,7 @@
 ---
 parent:
 topic: ObservationExtensionSerieUID
-subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid
+subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid
 ---
 
 ## Extension Serien UID
@@ -12,7 +12,7 @@ Diese Extension ergänzt die Observation-Ressource um den Bezug zur Bildserien a
 from
     StructureDefinition
 where
-    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid'
+    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid'
 select
     Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 ```
@@ -26,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid'
+	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid'
         select
 	        Beschreibung: description
         with
@@ -36,7 +36,7 @@ select
         from
             StructureDefinition
         where
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid'
+            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid'
         for
             differential.element
             where
