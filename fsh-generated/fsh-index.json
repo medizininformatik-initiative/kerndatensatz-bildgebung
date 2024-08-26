@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "capabilitystatements\\CapabilityStatement-1x.fsh",
     "startLine": 31,
-    "endLine": 282
+    "endLine": 281
   },
   {
     "outputFile": "CarePlan-mii-exa-bildgebung-behandlungsempfehlung.json",
@@ -400,14 +400,6 @@
     "endLine": 748
   },
   {
-    "outputFile": "SearchParameter-mii-sp-bildgebung-medications-dose.json",
-    "fshName": "mii-sp-bildgebung-medications-dose",
-    "fshType": "Instance",
-    "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 894,
-    "endLine": 913
-  },
-  {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-body-site.json",
     "fshName": "mii-sp-bildgebung-observation-body-site",
     "fshType": "Instance",
@@ -452,8 +444,8 @@
     "fshName": "mii-sp-bildgebung-read-proc-report",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 916,
-    "endLine": 933
+    "startLine": 894,
+    "endLine": 911
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-reason-reference.json",
@@ -468,8 +460,8 @@
     "fshName": "mii-sp-bildgebung-service-request-reason-code",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 936,
-    "endLine": 956
+    "startLine": 914,
+    "endLine": 934
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-supporting-info.json",

@@ -3,7 +3,7 @@ InstanceOf: MII_PR_Bildgebung_Radiologische_Beobachtung
 Usage: #example
 Title: "MII Example Bildgebung Radiologische Beobachtung"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
-* extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid].valueId = "example-serie-uid"
+* extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid].valueId = "example-serie-uid"
 * extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid].valueId = "example-instanz-uid"
 * extension[http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure].valueReference = Reference(BodyStructure/mii-exa-bildgebung-koerperstruktur)
 * partOf = Reference(Procedure/mii-exa-bildgebung-radiologische-befundungsprozedur)

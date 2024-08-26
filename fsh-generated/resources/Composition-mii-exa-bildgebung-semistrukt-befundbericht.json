@@ -17,12 +17,12 @@
     ]
   },
   "subject": {
-    "reference": "Patient/PatExample1"
+    "reference": "Patient/PatExample"
   },
   "date": "2024-07-19T12:03:30+02:00",
   "author": [
     {
-      "reference": "Practitioner/PracExample"
+      "reference": "Practitioner/PracExample1"
     }
   ],
   "title": "Mammographic Report",

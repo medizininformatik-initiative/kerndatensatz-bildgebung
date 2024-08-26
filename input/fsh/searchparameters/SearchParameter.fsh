@@ -15,7 +15,7 @@ Usage: #definition
 * base[+] = #ServiceRequest
 * base[+] = #DiagnosticReport
 * type = #reference
-* expression = "CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').value"
+* expression = "CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').extension('reference').value"
 * target[+] = #DiagnosticReport
 
 Instance: mii-sp-bildgebung-reason-reference
@@ -698,7 +698,7 @@ Usage: #definition
 * code = #instance-pixel-spacing-x
 * base = #ImagingStudy
 * type = #quantity
-* expression = "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension(pixelSpacingX).value"
+* expression = "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('pixelSpacingX').value"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -719,7 +719,7 @@ Usage: #definition
 * code = #instance-pixel-spacing-y
 * base = #ImagingStudy
 * type = #quantity
-* expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension(pixelSpacingY).value"
+* expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('pixelSpacingY').value"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -761,7 +761,7 @@ Usage: #definition
 * code = #instance-image-type
 * base = #ImagingStudy
 * type = #string
-* expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension(imageType).value"
+* expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('imageType').value"
 * modifier[+] = #text
 * modifier[+] = #not
 * modifier[+] = #above
@@ -846,7 +846,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-30"
 * description = "Suchparameter für Observation.bodyStructure"
-* code = #bodyStructure
+* code = #body-structure
 * base = #Observation
 * type = #reference
 * expression = "Observation.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure').value"
@@ -889,28 +889,6 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
-
-//ContrastAdministration
-Instance: mii-sp-bildgebung-medications-dose
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-medications-dose"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Medications_Dose"
-* status = #active
-* experimental = false
-* date = "2024-07-30"
-* description = "Suchparameter für MedicationAdministration.dosage.dose"
-* code = #dosage-dose
-* base = #MedicationAdministration
-* type = #quantity
-* expression = "MedicationAdministration.dosage.dose"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le 
 
 //ReadProcedure
 Instance: mii-sp-bildgebung-read-proc-report

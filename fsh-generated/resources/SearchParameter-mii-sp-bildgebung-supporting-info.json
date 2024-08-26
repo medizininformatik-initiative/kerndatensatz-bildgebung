@@ -13,7 +13,7 @@
       ]
     }
   ],
-  "version": "2025.0.0",
+  "version": "2025.0.0-ballot",
   "name": "MII_SP_Bildgebung_Supporting_Info",
   "status": "active",
   "experimental": false,
@@ -26,7 +26,7 @@
     "DiagnosticReport"
   ],
   "type": "reference",
-  "expression": "CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').value",
+  "expression": "CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').extension('reference').value",
   "target": [
     "DiagnosticReport"
   ]

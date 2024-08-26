@@ -2,7 +2,7 @@
   "resourceType": "CapabilityStatement",
   "id": "mii-cps-bildgebung-capabilitystatement-1x",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata",
-  "version": "2025.0.0",
+  "version": "2025.0.0-ballot",
   "name": "MII_CPS_Bildgebung_CapabilityStatement_1x",
   "title": "MII CPS Bildgebung CapabilityStatement",
   "status": "active",
@@ -443,17 +443,6 @@
             {
               "name": "type",
               "definition": "http://hl7.org/fhir/SearchParameter/clinical-type",
-              "type": "token",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "description",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-description",
               "type": "token",
               "extension": [
                 {
@@ -2112,8 +2101,8 @@
               ]
             },
             {
-              "name": "dosage-dose",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-medications-dose",
+              "name": "dose-quantity",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseQuantity",
               "type": "quantity",
               "extension": [
                 {

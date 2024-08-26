@@ -73,7 +73,6 @@
 [mii-sp-bildgebung-imaging-study-series-started]: SearchParameter-mii-sp-bildgebung-imaging-study-series-started.html
 [mii-sp-bildgebung-imaging-study-series-xray-tube-current]: SearchParameter-mii-sp-bildgebung-imaging-study-series-xray-tube-current.html
 [mii-sp-bildgebung-imaging-study-slice-thickness]: SearchParameter-mii-sp-bildgebung-imaging-study-slice-thickness.html
-[mii-sp-bildgebung-medications-dose]: SearchParameter-mii-sp-bildgebung-medications-dose.html
 [mii-sp-bildgebung-observation-body-site]: SearchParameter-mii-sp-bildgebung-observation-body-site.html
 [mii-sp-bildgebung-observation-body-structure]: SearchParameter-mii-sp-bildgebung-observation-body-structure.html
 [mii-sp-bildgebung-observation-issued]: SearchParameter-mii-sp-bildgebung-observation-issued.html

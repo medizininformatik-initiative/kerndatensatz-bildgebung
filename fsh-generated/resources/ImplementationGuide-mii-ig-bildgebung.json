@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "mii-ig-bildgebung",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ImplementationGuide/mii-ig-bildgebung",
-  "version": "2024.0.0",
+  "version": "2025.0.0-ballot",
   "name": "MII_IG_Bildgebung",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
@@ -638,14 +638,6 @@
         },
         "name": "mii-sp-bildgebung-imaging-study-slice-thickness",
         "description": "Suchparameter für ImagingStudy.series.instance.Extension.sliceThickness",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-medications-dose"
-        },
-        "name": "mii-sp-bildgebung-medications-dose",
-        "description": "Suchparameter für MedicationAdministration.dosage.dose",
         "exampleBoolean": false
       },
       {
