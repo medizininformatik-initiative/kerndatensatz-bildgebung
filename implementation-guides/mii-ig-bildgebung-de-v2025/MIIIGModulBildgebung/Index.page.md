@@ -5,9 +5,9 @@ Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Prof
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | XXXXXX |
-| Version | 0.0.9 |
-| Status  | wip      |
+| Datum   | 30.08.2024 |
+| Version | 2025.0.0-ballot |
+| Status  | ballot      |
 | Realm   | DE          | 
 
 ## Inhaltsverzeichnis
@@ -40,7 +40,7 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 * David Männle (Universitätsmedizin Mannheim)
 * Máté Maros (Universitätsmedizin Mannheim)
 * Matthias May (Univeristätsklinikum Erlangen)
-* Daniel Pinto dos Santos (Universitätsklinikum Köln)
+* Daniel Pinto dos Santos (Universitätsklinikum Köln, Universitätsklinikum Frankfurt)
 * Tobias Pogarell (Univeristätsklinikum Erlangen)
 * Lucas Scherer (Universitätsklinikum Erlangen)
 * Daniel Schmitz (Universitätsmedizin Mainz)
