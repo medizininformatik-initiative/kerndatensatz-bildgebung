@@ -136,7 +136,7 @@
   },
   "basedOn": [
     {
-      "reference": "CarePlan/mii-exa-bildgebung-behandlungsempfehlung"
+      "reference": "ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"
     }
   ],
   "numberOfSeries": 1,

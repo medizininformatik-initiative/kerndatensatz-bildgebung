@@ -88,14 +88,14 @@
                     "unit": "millimeter",
                     "value": 1.36
                   },
-                  "url": "pixelSpacing(x)"
+                  "url": "pixelSpacingX"
                 },
                 {
                   "valueQuantity": {
                     "unit": "millimeter",
                     "value": 1.36
                   },
-                  "url": "pixelSpacing(y)"
+                  "url": "pixelSpacingY"
                 },
                 {
                   "valueQuantity": {
@@ -106,7 +106,7 @@
                 },
                 {
                   "url": "imageType",
-                  "valueString": "['DERIVED', 'PRIMARY', 'AXIAL', 'CT_SOM5 SPI']"
+                  "valueString": "DERIVED, PRIMARY"
                 }
               ],
               "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
@@ -164,7 +164,7 @@
   },
   "basedOn": [
     {
-      "reference": "CarePlan/mii-exa-bildgebung-behandlungsempfehlung"
+      "reference": "ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"
     }
   ],
   "numberOfSeries": 2,

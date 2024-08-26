@@ -10,7 +10,7 @@ Title: "MII Example Bildgebung Imaging Study CR"
 * subject.identifier.system = "https://system-url"
 * subject.identifier.value = "study-uid"
 * encounter = Reference(Encounter/EncExample)
-* basedOn = Reference(CarePlan/mii-exa-bildgebung-behandlungsempfehlung)
+* basedOn = Reference(ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung)
 * numberOfSeries = 1
 * numberOfInstances = 1
 * procedureReference = Reference(Procedure/mii-exa-bildgebung-bildgebungsprozedur)

@@ -85,25 +85,25 @@
   "differential": {
     "element": [
       {
-        "id": "Extension.extension:pixelSpacing(x)",
+        "id": "Extension.extension:pixelSpacingX",
         "path": "Extension.extension",
-        "sliceName": "pixelSpacing(x)",
+        "sliceName": "pixelSpacingX",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:pixelSpacing(x).extension",
+        "id": "Extension.extension:pixelSpacingX.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:pixelSpacing(x).url",
+        "id": "Extension.extension:pixelSpacingX.url",
         "path": "Extension.extension.url",
-        "fixedUri": "pixelSpacing(x)"
+        "fixedUri": "pixelSpacingX"
       },
       {
-        "id": "Extension.extension:pixelSpacing(x).value[x]",
+        "id": "Extension.extension:pixelSpacingX.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
@@ -115,40 +115,40 @@
         ]
       },
       {
-        "id": "Extension.extension:pixelSpacing(x).value[x].unit",
+        "id": "Extension.extension:pixelSpacingX.value[x].unit",
         "path": "Extension.extension.value[x].unit",
         "patternString": "millimeter"
       },
       {
-        "id": "Extension.extension:pixelSpacing(x).value[x].system",
+        "id": "Extension.extension:pixelSpacingX.value[x].system",
         "path": "Extension.extension.value[x].system",
         "patternUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Extension.extension:pixelSpacing(x).value[x].code",
+        "id": "Extension.extension:pixelSpacingX.value[x].code",
         "path": "Extension.extension.value[x].code",
         "patternCode": "mm"
       },
       {
-        "id": "Extension.extension:pixelSpacing(y)",
+        "id": "Extension.extension:pixelSpacingY",
         "path": "Extension.extension",
-        "sliceName": "pixelSpacing(y)",
+        "sliceName": "pixelSpacingY",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:pixelSpacing(y).extension",
+        "id": "Extension.extension:pixelSpacingY.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:pixelSpacing(y).url",
+        "id": "Extension.extension:pixelSpacingY.url",
         "path": "Extension.extension.url",
-        "fixedUri": "pixelSpacing(y)"
+        "fixedUri": "pixelSpacingY"
       },
       {
-        "id": "Extension.extension:pixelSpacing(y).value[x]",
+        "id": "Extension.extension:pixelSpacingY.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
@@ -160,17 +160,17 @@
         ]
       },
       {
-        "id": "Extension.extension:pixelSpacing(y).value[x].unit",
+        "id": "Extension.extension:pixelSpacingY.value[x].unit",
         "path": "Extension.extension.value[x].unit",
         "patternString": "millimeter"
       },
       {
-        "id": "Extension.extension:pixelSpacing(y).value[x].system",
+        "id": "Extension.extension:pixelSpacingY.value[x].system",
         "path": "Extension.extension.value[x].system",
         "patternUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Extension.extension:pixelSpacing(y).value[x].code",
+        "id": "Extension.extension:pixelSpacingY.value[x].code",
         "path": "Extension.extension.value[x].code",
         "patternCode": "mm"
       },

@@ -36,7 +36,7 @@
   },
   "authoredOn": "2024-07-19T12:03:30+02:00",
   "requester": {
-    "reference": "Practitioner/PracExample"
+    "reference": "Practitioner/PracExample1"
   },
   "reasonCode": [
     {
@@ -56,7 +56,7 @@
   ],
   "supportingInfo": [
     {
-      "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
+      "reference": "DiagnosticReport/DiagRepExample"
     }
   ]
 }

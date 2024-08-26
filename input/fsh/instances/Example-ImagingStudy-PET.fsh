@@ -10,7 +10,7 @@ Title: "MII Example Bildgebung Imaging Study PT"
 * subject.identifier.system = "https://system-url"
 * subject.identifier.value = "study-uid"
 * encounter = Reference(Encounter/EncExample)
-* basedOn = Reference(CarePlan/mii-exa-bildgebung-behandlungsempfehlung)
+* basedOn = Reference(ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung)
 * numberOfSeries = 2
 * numberOfInstances = 390
 * procedureReference = Reference(Procedure/mii-exa-bildgebung-bildgebungsprozedur)
@@ -33,10 +33,10 @@ Title: "MII Example Bildgebung Imaging Study PT"
 * series.bodySite = $SCT#51185008 "Thoracic structure (body structure)"
 * series.laterality = $SCT#66459002 "Unilateral"
 * series.started = "2024-07-19T12:03:30+02:00"
-* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacing(x)].valueQuantity.value = 2.89
-* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacing(x)].valueQuantity.unit = "millimeter"
-* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacing(y)].valueQuantity.value = 2.89
-* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacing(y)].valueQuantity.unit = "millimeter"
+* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacingX].valueQuantity.value = 2.89
+* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacingX].valueQuantity.unit = "millimeter"
+* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacingY].valueQuantity.value = 2.89
+* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacingY].valueQuantity.unit = "millimeter"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[sliceThickness].valueQuantity.value = 4
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[sliceThickness].valueQuantity.unit = "millimeter"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueString = "['ORIGINAL', 'PRIMARY']"

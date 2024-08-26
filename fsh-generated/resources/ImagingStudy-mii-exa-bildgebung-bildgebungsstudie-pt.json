@@ -77,14 +77,14 @@
                     "unit": "millimeter",
                     "value": 2.89
                   },
-                  "url": "pixelSpacing(x)"
+                  "url": "pixelSpacingX"
                 },
                 {
                   "valueQuantity": {
                     "unit": "millimeter",
                     "value": 2.89
                   },
-                  "url": "pixelSpacing(y)"
+                  "url": "pixelSpacingY"
                 },
                 {
                   "valueQuantity": {
@@ -153,7 +153,7 @@
   },
   "basedOn": [
     {
-      "reference": "CarePlan/mii-exa-bildgebung-behandlungsempfehlung"
+      "reference": "ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"
     }
   ],
   "numberOfSeries": 2,

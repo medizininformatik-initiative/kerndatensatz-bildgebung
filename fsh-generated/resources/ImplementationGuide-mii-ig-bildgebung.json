@@ -429,7 +429,7 @@
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-x"
         },
         "name": "mii-sp-bildgebung-imaging-study-instance-pixel-x",
-        "description": "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(X)",
+        "description": "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacingX",
         "exampleBoolean": false
       },
       {
@@ -437,7 +437,7 @@
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-y"
         },
         "name": "mii-sp-bildgebung-imaging-study-instance-pixel-y",
-        "description": "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacing(Y)",
+        "description": "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacingY",
         "exampleBoolean": false
       },
       {
@@ -533,7 +533,7 @@
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-kvp"
         },
         "name": "mii-sp-bildgebung-imaging-study-series-kvp",
-        "description": "Suchparameter für ImagingStudy.series.extension.KVP",
+        "description": "Suchparameter für ImagingStudy.series.extension.kvp",
         "exampleBoolean": false
       },
       {

@@ -15,18 +15,18 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
 * insert ExtensionContext(ImagingStudy.series.instance)
 //Extension
 * extension contains
-    pixelSpacing(x) 0..1 MS and
-    pixelSpacing(y) 0..1 MS and
+    pixelSpacingX 0..1 MS and
+    pixelSpacingY 0..1 MS and
     sliceThickness 0..1 MS and
     imageType 0..1 MS
-* extension[pixelSpacing(x)].value[x]  only SimpleQuantity
-* extension[pixelSpacing(x)].valueQuantity.unit = "millimeter" 
-* extension[pixelSpacing(x)].valueQuantity.system = "http://unitsofmeasure.org"
-* extension[pixelSpacing(x)].valueQuantity.code = #mm
-* extension[pixelSpacing(y)].value[x]  only SimpleQuantity
-* extension[pixelSpacing(y)].valueQuantity.unit = "millimeter" 
-* extension[pixelSpacing(y)].valueQuantity.system = "http://unitsofmeasure.org"
-* extension[pixelSpacing(y)].valueQuantity.code = #mm
+* extension[pixelSpacingX].value[x]  only SimpleQuantity
+* extension[pixelSpacingX].valueQuantity.unit = "millimeter" 
+* extension[pixelSpacingX].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[pixelSpacingX].valueQuantity.code = #mm
+* extension[pixelSpacingY].value[x]  only SimpleQuantity
+* extension[pixelSpacingY].valueQuantity.unit = "millimeter" 
+* extension[pixelSpacingY].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[pixelSpacingY].valueQuantity.code = #mm
 * extension[sliceThickness].value[x]  only SimpleQuantity
 * extension[sliceThickness].valueQuantity.unit = "millimeter" 
 * extension[sliceThickness].valueQuantity.system = "http://unitsofmeasure.org"
