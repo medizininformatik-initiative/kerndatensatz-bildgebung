@@ -21,4 +21,4 @@ Die Ressource **Vorbefund** (Condition) enthält Verknüpfungen zum Modul [DIAGN
 
 ### Beziehung zum Modul Medikation
 
-Zur Darstellung der Kontrastmittelgabe wird sowohl in der **Bildgebungsprozedur** (Procedure), als auch in der **Studie** (ImagingStudy) ein Bezug auf das Modul [Medikation](https://simplifier.net/mii-basismodul-medikation-2024) hergestellt. In der **Bildgebungsprozedur** wird die Kontrastmittelgabe mit Hilfe der **Medikamentenverabreichung** (MedicationAdministration) abgebildet und in der **Studie** (ImagingStudy) zusätzlich durch die **Medikationsverordnung** (MedicationStatement) ergänzt.
+Zur Darstellung der Kontrastmittelgabe wird sowohl in der **Bildgebungsprozedur** (Procedure), als auch in der **Studie** (ImagingStudy) ein Bezug auf das Modul [MEDIKATION](https://simplifier.net/mii-basismodul-medikation-2024) hergestellt. In der **Bildgebungsprozedur** wird die Kontrastmittelgabe mit Hilfe der **Medikamentenverabreichung** (MedicationAdministration) abgebildet und in der **Studie** (ImagingStudy) zusätzlich durch die **Medikationsverordnung** (MedicationStatement) ergänzt.
