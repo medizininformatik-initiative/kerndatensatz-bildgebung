@@ -9,11 +9,11 @@
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid",
-      "valueId": "example-serie-uid"
+      "valueId": "example-series-uid"
     },
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid",
-      "valueId": "example-instanz-uid"
+      "valueId": "example-sop-instance-uid"
     },
     {
       "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure",

@@ -21,7 +21,7 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * status MS
 * category 1.. MS 
 * category.coding 1.. MS 
-* category.coding[sct] ^patternCodeableConcept = $SCT#363679005
+* category.coding[sct] ^patternCodeableConcept = $SCT#363679005 "Imaging (procedure)"
 * code MS
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
