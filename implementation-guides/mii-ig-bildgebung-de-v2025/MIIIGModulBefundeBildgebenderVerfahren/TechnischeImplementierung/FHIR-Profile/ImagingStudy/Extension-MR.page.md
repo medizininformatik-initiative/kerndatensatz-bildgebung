@@ -57,8 +57,6 @@ select
   <tab title="Link">{{link}}</tab>
 </tabs>
 
----
-
 --- 
 **Beispiele**
 
