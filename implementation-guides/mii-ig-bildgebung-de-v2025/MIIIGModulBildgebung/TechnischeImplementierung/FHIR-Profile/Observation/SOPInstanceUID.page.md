@@ -53,7 +53,7 @@ select
 
 **Beispiele**
 
-Beispiel einer DiagnosticReport-Ressource mit Angaben zum Applikationsweg und der Dosierung
+Beispiel einer Observation-Resssource mit der Angabe zur betrachteten Bild-Instanz
 
 {{json:fsh-generated/resources/Observation-mii-exa-bildgebung-radiologische-beobachtung.json}}
 

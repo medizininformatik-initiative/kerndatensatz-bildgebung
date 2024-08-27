@@ -75,7 +75,7 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 **Beispiele**
 
-Beispiel einer MedicationAdministration-Ressource mit der Applikation eines Radiopharmakon
+Beispiel einer MedicationAdministration-Ressource mit der Applikation eines Kontrastmittels
 
 {{json:fsh-generated/resources/MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.json}}
 
