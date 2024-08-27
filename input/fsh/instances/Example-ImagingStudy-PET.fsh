@@ -17,7 +17,7 @@ Title: "MII Example Bildgebung Imaging Study PT"
 * procedureReference = Reference(Procedure/mii-exa-bildgebung-bildgebungsprozedur)
 * reasonReference = Reference(Condition/CondExample)
 * description = "whole body aquisition"
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radiopharmaceutical].valueCodeableConcept.coding = $SCT#35321007 
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radiopharmaceutical].valueCodeableConcept.coding = $SCT#35321007 "Fluorodeoxyglucose (18-F) (substance)"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radiopharmaceuticalStartTime].valueDateTime = "2024-07-19T12:03:30+02:00"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[rescaleType].valueString = "BQML"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm].extension[radionuclideTotalDose].valueQuantity.value = 196

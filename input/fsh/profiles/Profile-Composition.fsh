@@ -25,6 +25,12 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * author only Reference(Practitioner)
 * title MS
 * section MS
+* section ^slicing.discriminator.type = #profile
+* section ^slicing.discriminator.path = "Composition.section.entry().resolve()"
+* section ^slicing.rules = #open
+* section contains
+    diagRep 1..1
+* section[diagRep].entry only Reference(MII_PR_Bildgebung_Radiologischer_Befund)
 * section.title MS
 * section.code MS
 * section.author MS

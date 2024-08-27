@@ -8,7 +8,7 @@ Title: "MII Example Bildgebung Radiologische Beobachtung"
 * extension[http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure].valueReference = Reference(BodyStructure/mii-exa-bildgebung-koerperstruktur)
 * partOf = Reference(Procedure/mii-exa-bildgebung-radiologische-befundungsprozedur)
 * status = #final
-* category = $observation-category#imaging
+* category = $observation-category#imaging "Imaging"
 * code = $loinc#32422-8 "Physical findings of Breast"
 * subject = Reference(Patient/PatExample)
 * issued = "2024-07-19T12:03:30+02:00"

@@ -12,4 +12,5 @@ Title: "MII Example Bildgebung Composition"
 * section.title = "Left Breast"
 * section.code = $loinc#66110-8 "Breast Pathology biopsy report"
 * section.author = Reference(Practitioner/PracExample2)
-* section.entry = Reference(Observation/mii-exa-bildgebung-radiologische-beobachtung)
+* section.entry = Reference(DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund)
+* section.section.entry = Reference(Observation/mii-exa-bildgebung-radiologische-beobachtung)

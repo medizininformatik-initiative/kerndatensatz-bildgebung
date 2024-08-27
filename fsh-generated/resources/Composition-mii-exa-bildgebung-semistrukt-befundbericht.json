@@ -45,7 +45,16 @@
       ],
       "entry": [
         {
-          "reference": "Observation/mii-exa-bildgebung-radiologische-beobachtung"
+          "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
+        }
+      ],
+      "section": [
+        {
+          "entry": [
+            {
+              "reference": "Observation/mii-exa-bildgebung-radiologische-beobachtung"
+            }
+          ]
         }
       ]
     }
