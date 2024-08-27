@@ -17,7 +17,7 @@ Zur Modellierung wurde die ImagingStudy analog in drei Teilmodule strukturiert:
 2. Serienebene
 3. Instanzebene
 
-Dafür wurde sich am internationalen FHIR-Profil "ImagingStudy" (https://hl7.org/fhir/R4/imagingstudy.html) orientiert und überlegt, welche Elemente für die Mediziniformatik-Initaitve relevant sind. Es wurde außerdem diskutiert, welche weiteren DICOM-Metadaten von Interesse sind, die im Profil abgebildet werden sollen.
+Dafür wurde sich am internationalen FHIR-Profil "ImagingStudy" (https://hl7.org/fhir/R4/imagingstudy.html) orientiert und überlegt, welche Elemente für die Medizininformatik-Initiative relevant sind. Es wurde außerdem diskutiert, welche weiteren DICOM-Metadaten von Interesse sind, die im Profil abgebildet werden sollen.
 
 Ergänzt wurden vorrangig modalitätsspezifische Attribute auf Serien-Ebene. Diese sollen dazu beitragen, einen tieferen technischen Einblick in die jeweilige genutzte Modalität zu erlangen.
 • Bei den röntgenbasierten Modalitäten (DX, CT, MG, CR) werden die Werte der
