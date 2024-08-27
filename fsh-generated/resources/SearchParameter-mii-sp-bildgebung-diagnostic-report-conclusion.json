@@ -26,11 +26,8 @@
   "type": "string",
   "expression": "DiagnosticReport.conclusion",
   "modifier": [
-    "text",
-    "not",
-    "above",
-    "below",
-    "in",
-    "not-in"
+    "contains",
+    "exact",
+    "missing"
   ]
 }

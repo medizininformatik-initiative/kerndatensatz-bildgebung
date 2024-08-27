@@ -49,19 +49,15 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2024-07-30"
-* description = "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description | Composition.description"
+* description = "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description"
 * code = #description
 * base[+] = #CarePlan
 * base[+] = #ImagingStudy
-* base[+] = #Composition
 * type = #string
-* expression = "CarePlan.description | ImagingStudy.description | ImagingStudy.series.description | Composition.description"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
+* expression = "CarePlan.description | ImagingStudy.description | ImagingStudy.series.description"
+* modifier[+] = #contains
+* modifier[+] = #exact
+* modifier[+] = #missing
 
 // BodyStructure
 Instance: mii-sp-bildgebung-body-structure-location-qualifier
@@ -85,6 +81,7 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
+* modifier[+] = #missing
 
 //Composition
 Instance: mii-sp-bildgebung-composition-section-title
@@ -102,12 +99,9 @@ Usage: #definition
 * base = #Composition
 * type = #string
 * expression = "Composition.section.title"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
+* modifier[+] = #contains
+* modifier[+] = #exact
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-composition-section-author
 InstanceOf: SearchParameter
@@ -159,12 +153,9 @@ Usage: #definition
 * base = #DiagnosticReport
 * type = #string
 * expression = "DiagnosticReport.conclusion"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
+* modifier[+] = #contains
+* modifier[+] = #exact
+* modifier[+] = #missing
 
 //ImagingStudy
 Instance: mii-sp-bildgebung-imaging-study-bildgebungsgrund
@@ -182,12 +173,9 @@ Usage: #definition
 * base = #ImagingStudy
 * type = #string
 * expression = "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund').value"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
+* modifier[+] = #contains
+* modifier[+] = #exact
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-modality
 InstanceOf: SearchParameter
@@ -210,6 +198,7 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-number-series
 InstanceOf: SearchParameter
@@ -409,14 +398,11 @@ Usage: #definition
 * description = "Suchparameter für ImagingStudy.series.extension.scanningSequence"
 * code = #scanning-sequence
 * base = #ImagingStudy
-* type = #token
+* type = #string
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('scanningSequence').value"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
+* modifier[+] = #contains
+* modifier[+] = #exact
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant
 InstanceOf: SearchParameter
@@ -431,14 +417,11 @@ Usage: #definition
 * description = "Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant"
 * code = #scanning-sequence-variant
 * base = #ImagingStudy
-* type = #token
+* type = #string
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('scanningSequenceVariant').value"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
+* modifier[+] = #contains
+* modifier[+] = #exact
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-series-radiopharmaceutical
 InstanceOf: SearchParameter
@@ -461,6 +444,7 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-series-radiopharma-start-time
 InstanceOf: SearchParameter
@@ -499,6 +483,7 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose
 InstanceOf: SearchParameter
@@ -563,6 +548,7 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-series-contrast-bolus-details
 InstanceOf: SearchParameter
@@ -579,7 +565,8 @@ Usage: #definition
 * base = #ImagingStudy
 * type = #reference
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolusDetails').value"
-* target = #MedicationStatement
+* target[+] = #MedicationStatement
+* target[+] = #MedicationAdministration
 
 Instance: mii-sp-bildgebung-imaging-study-manufacturer
 InstanceOf: SearchParameter
@@ -596,12 +583,9 @@ Usage: #definition
 * base = #ImagingStudy
 * type = #string
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturer').value"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
+* modifier[+] = #contains
+* modifier[+] = #exact
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-manufacturer-model-name
 InstanceOf: SearchParameter
@@ -618,12 +602,9 @@ Usage: #definition
 * base = #ImagingStudy
 * type = #string
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturerModelName').value"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
+* modifier[+] = #contains
+* modifier[+] = #exact
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-series-number
 InstanceOf: SearchParameter
@@ -667,6 +648,7 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-series-started
 InstanceOf: SearchParameter
@@ -698,7 +680,7 @@ Usage: #definition
 * code = #instance-pixel-spacing-x
 * base = #ImagingStudy
 * type = #quantity
-* expression = "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('pixelSpacingX').value"
+* expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('pixelSpacingX').value"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -762,12 +744,9 @@ Usage: #definition
 * base = #ImagingStudy
 * type = #string
 * expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('imageType').value"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
+* modifier[+] = #contains
+* modifier[+] = #exact
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-instance-number
 InstanceOf: SearchParameter
@@ -812,6 +791,7 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-observation-sop-instance-uid
 InstanceOf: SearchParameter
@@ -834,6 +814,7 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
+* modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-observation-body-structure
 InstanceOf: SearchParameter
@@ -889,6 +870,7 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
+* modifier[+] = #missing
 
 //ReadProcedure
 Instance: mii-sp-bildgebung-read-proc-report
@@ -905,7 +887,7 @@ Usage: #definition
 * code = #report
 * base = #Procedure
 * type = #reference
-* expression = "ReadProcedure.report"
+* expression = "Procedure.report"
 * target[+] = #DiagnosticReport
 * target[+] = #Composition
 * target[+] = #DocumentReference
@@ -932,3 +914,4 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #in
 * modifier[+] = #not-in
+* modifier[+] = #missing

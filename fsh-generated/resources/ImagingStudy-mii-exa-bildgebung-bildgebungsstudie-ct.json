@@ -73,6 +73,12 @@
             {
               "url": "contrastBolus",
               "valueBoolean": true
+            },
+            {
+              "url": "contrastBolusDetails",
+              "valueReference": {
+                "reference": "MedicationAdministration/mii-exa-bildgebung-kontrastmittelgabe"
+              }
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
@@ -106,7 +112,7 @@
                 },
                 {
                   "url": "imageType",
-                  "valueString": "DERIVED, PRIMARY"
+                  "valueString": "[DERIVED, PRIMARY]"
                 }
               ],
               "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
@@ -143,6 +149,13 @@
     }
   ],
   "status": "available",
+  "modality": [
+    {
+      "code": "CT",
+      "system": "http://dicom.nema.org/resources/ontology/DCM",
+      "display": "Computed Tomography"
+    }
+  ],
   "subject": {
     "reference": "Patient/PatExample",
     "identifier": {

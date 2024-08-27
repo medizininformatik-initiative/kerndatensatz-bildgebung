@@ -5,6 +5,7 @@ Title: "MII Example Bildgebung Imaging Study PT"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
 * extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund].valueString = "Verdacht auf Karzinom"
 * status = #available
+* modality = $DCM#PT "Positron emission tomography"
 * subject = Reference(Patient/PatExample)
 * subject.identifier.type = $v2-0203#MR "Medical record number"
 * subject.identifier.system = "https://system-url"

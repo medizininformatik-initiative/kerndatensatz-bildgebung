@@ -26,6 +26,7 @@
   "type": "reference",
   "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolusDetails').value",
   "target": [
-    "MedicationStatement"
+    "MedicationStatement",
+    "MedicationAdministration"
   ]
 }

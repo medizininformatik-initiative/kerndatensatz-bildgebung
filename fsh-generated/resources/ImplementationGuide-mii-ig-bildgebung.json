@@ -381,7 +381,7 @@
           "reference": "SearchParameter/mii-sp-bildgebung-description"
         },
         "name": "mii-sp-bildgebung-description",
-        "description": "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description | Composition.description",
+        "description": "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description",
         "exampleBoolean": false
       },
       {

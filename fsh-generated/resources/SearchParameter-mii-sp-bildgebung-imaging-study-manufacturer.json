@@ -26,11 +26,8 @@
   "type": "string",
   "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturer').value",
   "modifier": [
-    "text",
-    "not",
-    "above",
-    "below",
-    "in",
-    "not-in"
+    "contains",
+    "exact",
+    "missing"
   ]
 }
