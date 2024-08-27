@@ -18,3 +18,7 @@ Im Zusammenhang mit bildgebenden Modalitäten kann es zu Beziehungen zu durchgef
 ### Beziehung zum Modul Diagnose
 
 Die Ressource **Vorbefund** (Condition) enthält Verknüpfungen zum Modul [DIAGNOSE](https://simplifier.net/mii-basismodul-diagnose-2024), die es ermöglichen, die bildgebende Untersuchung als diagnostisches Werkzeug zur Unterstützung der Diagnose zu erfassen. Diese werden über eine Referenz in der Ressource **Anforderung** (ServiceRequest) abgebildet, welche wiederum im **Befundbericht** (DiagnosticReport) referenziert wird.
+
+### Beziehung zum Modul Medikation
+
+Zur Darstellung der Kontrastmittelgabe wird sowohl in der **Bildgebungsprozedur** (Procedure), als auch in der **Studie** (ImagingStudy) ein Bezug auf das Modul [Medikation](https://simplifier.net/mii-basismodul-medikation-2024) hergestellt. In der **Bildgebungsprozedur** wird die Kontrastmittelgabe mit Hilfe der **Medikamentenverabreichung** (MedicationAdministration) abgebildet und in der **Studie** (ImagingStudy) zusätzlich durch die **Medikationsverordnung** (MedicationStatement) ergänzt.
