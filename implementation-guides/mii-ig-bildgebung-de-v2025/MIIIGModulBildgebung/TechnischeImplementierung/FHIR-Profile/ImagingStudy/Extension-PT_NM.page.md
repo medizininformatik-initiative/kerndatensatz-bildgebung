@@ -14,8 +14,8 @@ Diese nested DICOM-Tags sind:
     
     Radiopharmakon [(0054, 0304) RadiopharmaceuticalCodeSequence]
     Applikationsstartzeit [(0018, 1072) RadiopharmaceuticalStartTime]
-    Gesamte Radionukliddosis [(0018, 1074) RadionuclideTotalDose] in Megabecquerel [MBq]
     Halbwertszeit [(0018, 1075) RadionuclideHalfLife] in Sekunden [s]
+    Gesamte Radionukliddosis [(0018, 1074) RadionuclideTotalDose] in Megabecquerel [MBq] <-Nicht konsistent zwischen PET & Nuklearmedizin und unter Umständen zwischen Standorten. Angaben in MBq sind normalerweise 1- bis 5-stellig. Ist die Angabe um den Faktor 10⁶ höher, also 7- bis 12-stellig, handelt es sich um die Radionuklid-Totaldosis in Bq, und sie muss entsprechend umgerechnet werden.
 
 Nicht nested DICOM-Tags:
     
