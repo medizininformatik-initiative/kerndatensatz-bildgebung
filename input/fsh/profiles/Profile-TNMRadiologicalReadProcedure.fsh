@@ -10,6 +10,7 @@ Description: "Spezifiziert die radiologische Befundungsprozedur nach TNM"
 * insert Translation(^title, en-US, MII PR Imaging TNM Radiological Readprocedure)
 * insert Translation(^description, en-US, This radiological procedure profile describes the radiological reading process following TNM criteria. It derives from the Radiological_Read_Procedure and needs to define which entity and in which version the read was performed.)
 * insert PR_CS_VS_Version
+* ^status = #draft
 //Meta
 * id MS
 * meta MS

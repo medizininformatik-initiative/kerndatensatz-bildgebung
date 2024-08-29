@@ -573,7 +573,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-TNMRadiologicalReadProcedure.fsh",
     "startLine": 2,
-    "endLine": 20
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.json",
@@ -677,7 +677,7 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets\\ValueSet-TNMCategoryObservation.fsh",
     "startLine": 2,
-    "endLine": 9
+    "endLine": 10
   },
   {
     "outputFile": "ValueSet-mii-vs-bildgebung-tnmRadiologicalReadProcedure.json",
@@ -685,6 +685,6 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets\\Valueset-TNMRadiologicalReadProcedures.fsh",
     "startLine": 2,
-    "endLine": 7
+    "endLine": 8
   }
 ]
