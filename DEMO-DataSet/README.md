@@ -20,6 +20,8 @@ Um die Ressourcen des Moduls **Bildgebung** testen zu können, benötigt es zum 
 - [Patient](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Person_Version_2/MIIIGModulPerson.html)
 - [Practitioner](http://hl7.org/fhir/R4/practitioner-examples.html)
 
+Die Ressourcen des Moduls **Bildgebung** liegen im Ordner ´´´/fsh-generated/resources´´´
+
 ## Reihenfolgen für die hier benutzten Profile
 
 Durch die definierten Referenzen ist es notwendig die Ressourcen in der richtigen Reihenfolge dem FHIR-Server hinzuzufügen:
