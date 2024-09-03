@@ -31,14 +31,14 @@ RuleSet: SupportSearchParam (name, canonical, type, expectation)
 Instance: mii-cps-bildgebung-capabilitystatement-1x
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata"
 * insert Version
+* insert SP_Publisher
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata"
 * name = "MII_CPS_Bildgebung_CapabilityStatement_1x"
 * title = "MII CPS Bildgebung CapabilityStatement"
 * status = #active
 * experimental = false
 * date = "2024-07-30"
-* insert SP_Publisher
 * description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Bildgebung der Medizininformatik Initiative zu implementieren."
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
 * kind = #requirements
