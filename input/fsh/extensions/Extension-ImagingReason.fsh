@@ -10,8 +10,9 @@ Description: "Die Extension ermöglicht es, den Bildgebungsgrund aus dem entspre
 * insert Translation(^description, en-US, The extension allows specifying the reason for the imaging procedure from the corresponding DICOM tag at the study level.)
 //Meta
 * insert PR_CS_VS_Version
-* ^experimental = false
+* insert KDS_Copyright
 * insert Publisher
 * insert ExtensionContext(ImagingStudy)
+* ^experimental = false
 //Extension
 * value[x]  only string

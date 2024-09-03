@@ -10,9 +10,10 @@ Description: "Die Extension ermöglicht es, Informationen zum verwendeten Gerät
 * insert Translation(^description, en-US, The extension allows specifying information about the device used and its manufacturer at the series level.)
 //Meta
 * insert PR_CS_VS_Version
-* ^experimental = false
+* insert KDS_Copyright
 * insert Publisher
 * insert ExtensionContext(ImagingStudy.series)
+* ^experimental = false
 //Extension
 * extension contains
     manufacturer 0..1 MS and
