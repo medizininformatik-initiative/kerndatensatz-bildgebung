@@ -11,6 +11,8 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * insert Translation(^description, en-US, The profile describes a diagnostic report for a radiological image.)
 //Meta
 * insert PR_CS_VS_Version
+* insert Publisher
+* insert KDS_Copyright
 * id MS
 * meta MS
 * meta.source MS

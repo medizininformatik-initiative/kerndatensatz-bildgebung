@@ -9,8 +9,10 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * insert Translation(^name, en-US, MII_PR_Imaging_Composition)
 * insert Translation(^title, en-US, MII PR Imaging Composition)
 * insert Translation(^description, en-US, The profile describes a semistructured report. It is an addition for the main medical report.)
-* insert PR_CS_VS_Version
 //Meta
+* insert PR_CS_VS_Version
+* insert Publisher
+* insert KDS_Copyright
 * id MS
 * meta MS
 * meta.source MS
