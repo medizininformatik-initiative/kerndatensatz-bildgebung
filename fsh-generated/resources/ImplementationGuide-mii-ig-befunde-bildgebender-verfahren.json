@@ -338,7 +338,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-bildgebung-serviceRequest-coding"
+          "reference": "ValueSet/mii-vs-bildgebung-service-request-coding"
         },
         "name": "MII VS Bildgebung ServiceRequest Coding",
         "description": "Import the ValueSet for Imaging Procedures",
@@ -346,7 +346,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-bildgebung-serviceRequest-reason"
+          "reference": "ValueSet/mii-vs-bildgebung-service-request-reason"
         },
         "name": "MII VS Bildgebung ServiceRequest Reason",
         "description": "Imports the ValueSet for clinical findings",
@@ -714,7 +714,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-bildgebung-tnmCategoryObservation"
+          "reference": "ValueSet/mii-vs-bildgebung-tnm-category-observation"
         },
         "name": "Valueset for Categories of a BodyStructure in the context of one TNM procedure",
         "description": "This Valueset contains the coded for the different categories for BodyStructures in the context of TNM (Tumor|Node|Metastase)",
@@ -722,7 +722,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-bildgebung-tnmRadiologicalReadProcedure"
+          "reference": "ValueSet/mii-vs-bildgebung-tnm-radiological-read-procedure"
         },
         "name": "Valueset for TNM Radiological Read Procedures",
         "description": "This Valueset contains the snomed codes of the different TNM tumor staging systems",

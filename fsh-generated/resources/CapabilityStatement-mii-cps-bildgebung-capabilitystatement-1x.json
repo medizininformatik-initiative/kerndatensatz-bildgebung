@@ -3,11 +3,6 @@
   "id": "mii-cps-bildgebung-capabilitystatement-1x",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata",
   "version": "2025.0.0-ballot",
-  "name": "MII_CPS_Bildgebung_CapabilityStatement_1x",
-  "title": "MII CPS Bildgebung CapabilityStatement",
-  "status": "active",
-  "experimental": false,
-  "date": "2024-07-30",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -19,6 +14,11 @@
       ]
     }
   ],
+  "name": "MII_CPS_Bildgebung_CapabilityStatement_1x",
+  "title": "MII CPS Bildgebung CapabilityStatement",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-30",
   "description": "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Bildgebung der Medizininformatik Initiative zu implementieren.",
   "jurisdiction": [
     {

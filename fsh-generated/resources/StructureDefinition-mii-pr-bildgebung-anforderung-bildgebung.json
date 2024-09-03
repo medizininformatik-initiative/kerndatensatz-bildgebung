@@ -40,6 +40,17 @@
     ]
   },
   "status": "active",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
   "description": "Profil zur Anforderung einer Bildgebung.",
   "_description": {
     "extension": [
@@ -58,6 +69,7 @@
       }
     ]
   },
+  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -162,7 +174,7 @@
         "path": "ServiceRequest.code.coding.code",
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-serviceRequest-coding"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-service-request-coding"
         }
       },
       {
@@ -199,7 +211,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-serviceRequest-reason"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-service-request-reason"
         }
       },
       {

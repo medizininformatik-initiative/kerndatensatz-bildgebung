@@ -15,7 +15,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII_PR_Imaging_TNM_Radiological_Readprocedure"
+            "valueString": "MII_PR_Imaging_TNM_Radiological_Read_Procedure"
           }
         ]
       }
@@ -33,13 +33,24 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Imaging TNM Radiological Readprocedure"
+            "valueString": "MII PR Imaging TNM Radiological Read Procedure"
           }
         ]
       }
     ]
   },
   "status": "draft",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
   "description": "Spezifiziert die radiologische Befundungsprozedur nach TNM",
   "_description": {
     "extension": [
@@ -58,6 +69,7 @@
       }
     ]
   },
+  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -71,7 +83,7 @@
         "path": "Procedure.code",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/TNMRadiologicalReadProcedures"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-tnm-radiological-read-procedure"
         }
       }
     ]

@@ -35,8 +35,8 @@
 [MII_PR_Bildgebung_Radiologischer_Befund]: StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html
 [MII_PR_Bildgebung_Semistrukt_Befundbericht]: StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html
 [MII_PR_Bildgebung_TNM_Radiologische_Befundungsprozedur]: StructureDefinition-mii-pr-bildgebung-TNM-radiologische-befundungsprozedur.html
-[MII_VS_Bildgebung_ServiceRequest_Coding]: ValueSet-mii-vs-bildgebung-serviceRequest-coding.html
-[MII_VS_Bildgebung_ServiceRequest_Reason]: ValueSet-mii-vs-bildgebung-serviceRequest-reason.html
+[MII_VS_Bildgebung_Service_Request_Coding]: ValueSet-mii-vs-bildgebung-service-request-coding.html
+[MII_VS_Bildgebung_Service_Request_Reason]: ValueSet-mii-vs-bildgebung-service-request-reason.html
 [mii-sp-bildgebung-body-structure-location-qualifier]: SearchParameter-mii-sp-bildgebung-body-structure-location-qualifier.html
 [mii-sp-bildgebung-composition-section-author]: SearchParameter-mii-sp-bildgebung-composition-section-author.html
 [mii-sp-bildgebung-composition-section-title]: SearchParameter-mii-sp-bildgebung-composition-section-title.html
@@ -82,5 +82,5 @@
 [mii-sp-bildgebung-reason-reference]: SearchParameter-mii-sp-bildgebung-reason-reference.html
 [mii-sp-bildgebung-service-request-reason-code]: SearchParameter-mii-sp-bildgebung-service-request-reason-code.html
 [mii-sp-bildgebung-supporting-info]: SearchParameter-mii-sp-bildgebung-supporting-info.html
-[MII_VS_Bildgebung_TNMCategoryObservation]: ValueSet-mii-vs-bildgebung-tnmCategoryObservation.html
-[MII_VS_Bildgebung_TNMRadiologicalReadProcedures]: ValueSet-mii-vs-bildgebung-tnmRadiologicalReadProcedure.html
+[MII_VS_Bildgebung_TNM_Category_Observation]: ValueSet-mii-vs-bildgebung-tnm-category-observation.html
+[MII_VS_Bildgebung_TNM_Radiological_Read_Procedure]: ValueSet-mii-vs-bildgebung-tnm-radiological-read-procedure.html

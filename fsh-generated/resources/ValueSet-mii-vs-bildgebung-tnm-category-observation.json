@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_Bildgebung_TNM_Category_Observation",
+  "id": "mii-vs-bildgebung-tnm-category-observation",
+  "title": "Valueset for Categories of a BodyStructure in the context of one TNM procedure",
+  "description": "This Valueset contains the coded for the different categories for BodyStructures in the context of TNM (Tumor|Node|Metastase)",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-tnm-category-observation",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0-ballot",
+  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc)",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "date": "2024-08-30",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "21905-5",
+            "display": "Primary tumor.clinical [Class] Cancer"
+          },
+          {
+            "code": "21906-3",
+            "display": "Regional lymph nodes.clinical [Class] Cancer"
+          },
+          {
+            "code": "21907-1",
+            "display": "Distant metastases.clinical [Class] Cancer"
+          }
+        ]
+      }
+    ]
+  }
+}
