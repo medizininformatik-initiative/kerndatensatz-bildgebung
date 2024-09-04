@@ -1,4 +1,4 @@
-# Medizininformatik-Initiative - Kerndatensatz - Modul Diagnostik: Befunde bildgebender Verfahren 
+## Medizininformatik-Initiative - Kerndatensatz - Modul Diagnostik: Befunde bildgebender Verfahren 
 
 ## Übersicht
 
