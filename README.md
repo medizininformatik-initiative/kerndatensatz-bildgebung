@@ -1,5 +1,4 @@
-# Erweiterungsmodul Bildgebung 
-_Erweiterungsmodul Diagnostik: Befunde bildgebender Verfahren_
+# Erweiterungsmodul Diagnostik: Befunde bildgebender Verfahren 
 
 Subtask AG: 
 - [AG Befundtext](#teilmodul:-befundtext)
