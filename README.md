@@ -10,7 +10,7 @@ Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Erweiterungsmoduls
 
 ### Status
 
-Aktuelle Kommentireungsversion: [2025.0.0-ballot](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/2025.0.0-ballot)
+Aktuelle Kommentierungsversion: [2025.0.0-ballot](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/2025.0.0-ballot)
 
 Alle veröffentlichen FHIR-Artefakte innerhalb des Projektes verfügen über einen Status durch welchen der jeweilige Reifegrad abgeleitet werden kann. Profile mit dem Status 'Draft' wurden noch nicht ballotiert und können noch diversen und substantiellen Änderungen unterliegen. Verpflichtende und ballotierte Ergebnisse sind unter dem Tab 'Packages' zu finden.
 
