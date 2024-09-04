@@ -1,11 +1,25 @@
-- include: recommended
-  name: include-recommended
+- action: parse
+  name: parse-fhir-resources
+  status: "Checking if all FHIR Resource files can be parsed"
+  files:
+    - /**/*.xml
+    - /**/*.json
+    - "!package.json"
+    - "!fhirpkg.lock.json"
+
+- name: resource-validation
+  status: "Validating resources against the FHIR standard and their profiles"
+  action: validate
+  category: Resource
+  suppress:
+    - 6005
+    - eld-16
 
 - name: version-filled
   filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or ConceptMap or ImplementationGuide).exists()
   # Excluding NamingSystem as they have no version
   status: "Checking if all resources have version filled"
-  predicate: version.exists() and (version in ('2025.0.0'))
+  predicate: version.exists() and (version in ('2025.0.0-ballot'))
   error-message: "version not filled (correctly)"
   files:
     - /**/*.xml
