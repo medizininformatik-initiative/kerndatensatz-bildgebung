@@ -16,9 +16,9 @@ Alle veröffentlichen FHIR-Artefakte innerhalb des Projektes verfügen über ein
 
 ## Mitwirkungs- und Kommentierungsmöglichkeiten
 
-    Kommentareinreichung via [GitHub](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/issues)
-    Diskussionsforum im int. [FHIR-Chat](https://chat.fhir.org/#narrow/stream/179307-german.2Fmi-initiative)
-    Teilnahme am [Interoperabilitätsforum](https://wiki.hl7.de/index.php?title=Interoperabilit%C3%A4tsforum)
+* Kommentareinreichung via [GitHub](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/issues)
+* Diskussionsforum im int. [FHIR-Chat](https://chat.fhir.org/#narrow/stream/179307-german.2Fmi-initiative)
+* Teilnahme am [Interoperabilitätsforum](https://wiki.hl7.de/index.php?title=Interoperabilit%C3%A4tsforum)
 
 ## Zusammenfassung
 
@@ -53,15 +53,15 @@ Zusätzlich gibt es modalitätsspezifische Metadaten, die sich je nach vorliegen
 
 ## Wichtige Dokumente und Links
 
-    [Beschreibung des MII-Kerndatensatzes in der Version 1.0 vom 10.3.2017 (PDF)](https://www.medizininformatik-initiative.de/sites/default/files/inline-files/MII_04_Kerndatensatz_1-0.pdf)
-    [Datenmodellbeschreibung des MII-Kerndatensatzes in ART-DECOR](https://art-decor.org/ad/#/mide-/datasets/dataset/2.16.840.1.113883.3.1937.777.24.1.1/2018-06-05T12:44:12/concept/2.16.840.1.113883.3.1937.777.24.2.2795/2023-11-14T08:32:26)
-    [GitHub Repository](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung)
+* [Beschreibung des MII-Kerndatensatzes in der Version 1.0 vom 10.3.2017 (PDF)](https://www.medizininformatik-initiative.de/sites/default/files/inline-files/MII_04_Kerndatensatz_1-0.pdf)
+* [Datenmodellbeschreibung des MII-Kerndatensatzes in ART-DECOR](https://art-decor.org/ad/#/mide-/datasets/dataset/2.16.840.1.113883.3.1937.777.24.1.1/2018-06-05T12:44:12/concept/2.16.840.1.113883.3.1937.777.24.2.2795/2023-11-14T08:32:26)
+* [GitHub Repository](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung)
 
 ## Autoren und Ansprechpartner
 
 ### Leitung des Moduls:
 
-    * Máté Maros, Universitätsmedizin Mannheim
+* Máté Maros, Universitätsmedizin Mannheim
 
 ### Technische Umsetzung:
 
