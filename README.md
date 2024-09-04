@@ -1,4 +1,12 @@
-# Erweiterungsmodul Diagnostik: Befunde bildgebender Verfahren 
+## Medizininformatik-Initiative - Kerndatensatz - Modul Diagnostik: Befunde bildgebender Verfahren 
+
+### Übersicht
+
+[![FHIR Project on GitHub.com](https://img.shields.io/badge/FHIR_project_on_GitHub.com-kerndatensatzmodul--bildgebung-green)](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung)
+
+[![CI (FHIR Validation)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-bildgebung/actions/workflows/main.yml/badge.svg)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-bildgebung/actions/workflows/main.yml)
+
+Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Erweiterungsmoduls 'Diagnostik: Befunde bildgebender Verfahren', welches einen zentralen Teil des Kerndatensatzes der Medizininformatik-Initiative darstellt. Die hier veröffentlichten FHIR-Profile und ImplemenationGuides dienen als zentrale und verbindliche Spezifikation für die syntaktische und semantische Kodierung der Modulinhalte
 
 Subtask AG: 
 - [AG Befundtext](#teilmodul:-befundtext)
