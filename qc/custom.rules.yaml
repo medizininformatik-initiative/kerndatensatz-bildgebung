@@ -19,7 +19,7 @@
 
 - name: naming-convention-id
   status: "Checking if all resource ids follow the naming convention"
-  predicate: id.matches('^mii-(pr|ex|lm|vs|cs|cm|sm|ns|sp|cps|od|ig|exa)-medikation')
+  predicate: id.matches('^mii-(pr|ex|lm|vs|cs|cm|sm|ns|sp|cps|od|ig|exa)-bildgebung')
   error-message: "resource id naming convention mismatch"
   files:
     - /**/*.xml
@@ -29,7 +29,7 @@
 - name: naming-convention-name
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
   status: "Checking if all resource names follow the naming convention"
-  predicate: name.exists() implies name.matches('^MII_(PR|EX|LM|VS|CS|CM|SM|NS|SP|CPS|OD|IG|EXA)_Medikation')
+  predicate: name.exists() implies name.matches('^MII_(PR|EX|LM|VS|CS|CM|SM|NS|SP|CPS|OD|IG|EXA)_Bildgebung')
   error-message: "resource name naming convention mismatch"
   files:
     - /**/*.xml
@@ -39,7 +39,7 @@
 - name: naming-convention-title
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
   status: "Checking if all resource titles follow the naming convention"
-  predicate: title.exists() implies title.matches('^MII (PR|EX|LM|VS|CS|CM|SM|NS|SP|CPS|OD|IG|EXA) Medikation')
+  predicate: title.exists() implies title.matches('^MII (PR|EX|LM|VS|CS|CM|SM|NS|SP|CPS|OD|IG|EXA) Bildgebung')
   error-message: "resource name naming convention mismatch"
   files:
     - /**/*.xml
@@ -50,7 +50,7 @@
 - name: naming-convention-url
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
   status: "Checking if all resource urls follow the naming convention"
-  predicate: url.exists() implies url.matches('^https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/')
+  predicate: url.exists() implies url.matches('^https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/')
   error-message: "resource url naming convention mismatch"
   files:
     - /**/*.xml
