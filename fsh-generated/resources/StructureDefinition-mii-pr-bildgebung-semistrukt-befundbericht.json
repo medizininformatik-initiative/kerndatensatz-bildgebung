@@ -151,7 +151,7 @@
           "discriminator": [
             {
               "type": "profile",
-              "path": "Composition.section.entry().resolve()"
+              "path": "Composition.section.entry.resolve()"
             }
           ],
           "rules": "open"

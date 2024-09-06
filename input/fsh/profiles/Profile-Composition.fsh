@@ -28,7 +28,7 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * title MS
 * section MS
 * section ^slicing.discriminator.type = #profile
-* section ^slicing.discriminator.path = "Composition.section.entry().resolve()"
+* section ^slicing.discriminator.path = "Composition.section.entry.resolve()"
 * section ^slicing.rules = #open
 * section contains
     diagRep 1..1

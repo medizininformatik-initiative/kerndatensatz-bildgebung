@@ -1939,7 +1939,7 @@
             },
             {
               "name": "component-value-quantity",
-              "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-value-quantity",
               "type": "quantity",
               "extension": [
                 {
