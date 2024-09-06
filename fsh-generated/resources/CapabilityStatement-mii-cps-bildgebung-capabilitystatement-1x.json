@@ -1249,7 +1249,7 @@
             {
               "name": "scanning-sequence",
               "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence",
-              "type": "token",
+              "type": "string",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -1260,7 +1260,7 @@
             {
               "name": "scanning-sequence-variant",
               "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant",
-              "type": "token",
+              "type": "string",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -1392,7 +1392,7 @@
             {
               "name": "modality",
               "definition": "http://hl7.org/fhir/SearchParameter/ImagingStudy-modality",
-              "type": "quantity",
+              "type": "token",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -1414,7 +1414,7 @@
             {
               "name": "series-bodysite",
               "definition": "http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite",
-              "type": "quantity",
+              "type": "token",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -1720,7 +1720,7 @@
             {
               "name": "value-concept",
               "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-concept",
-              "type": "quantity",
+              "type": "token",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -1939,7 +1939,7 @@
             },
             {
               "name": "component-value-quantity",
-              "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity",
               "type": "quantity",
               "extension": [
                 {
