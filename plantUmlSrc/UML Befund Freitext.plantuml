@@ -1,0 +1,33 @@
+@startuml
+skinparam Linetype ortho
+skinparam Nodesep 150
+skinparam Ranksep 80
+skinparam legendBackgroundColor #white
+
+package "Befund" {
+  class Befundbericht <<DiagnosticReport>> #LightCyan {
+  + {field} Anfordende Maßnahme: Reference(ServiceRequest) [0..*]
+  + Status: Coding [1..1]
+  + {field} Personen-Identifikation: Reference(Patient) [1..1]
+  + {field} Fall-Referenz: Reference(Encounter) [0..1]
+  + Klinisch relevante Zeit: dateTime [0..1]
+  + Klinisch relevante Periode: period [0..1]
+  + Zeit der Erstellung: issued [0..1]
+  + {field} Studienbezug: Reference(ImagingStudy) [1..*]
+  + {field} Zusatzinformation: Reference(DiagnosticReport; Procedure) [0..1]
+  + Interpretation der Beobachtung: markdown [0..1]
+  + strukturierte Interpretation: CodeableConcept [0..1]
+  + {field} Dokumentenanhang: Attachment [0..*]
+}
+  
+  class Empfehlung <<CarePlan>> {
+  + Art der Empfehlung: Coding [1..1]
+  + Freitextempfehlung: String [0..1]
+}
+}
+
+Befundbericht "1..1" -- "0..*" Befundbericht : DR.supportingInfo (R5!)
+
+Empfehlung "0..*" -- "1..*" Befundbericht : CP.supportingInfo 
+
+@enduml

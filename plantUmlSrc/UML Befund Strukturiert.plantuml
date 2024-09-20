@@ -1,0 +1,58 @@
+@startuml
+skinparam Linetype ortho
+skinparam Nodesep 150
+skinparam Ranksep 80
+skinparam legendBackgroundColor #white
+
+class Körperstruktur <<BodyStructure>> {
+  + Morphologie: CodeableConcept [0..1]
+  + Lokalisation: CodeableConcept [0..1]
+  + nähere Lokalisation: CodeableConcept [0..1]
+}
+
+package <<Befund>> {
+class Befundbericht <<DiagnosticReport>> #LightCyan {
+  + {field} Anfordende Maßnahme: Reference(ServiceRequest) [0..*]
+  + Status: Coding [1..1]
+  + {field} Personen-Identifikation: Reference(Patient) [1..1]
+  + {field} Fall-Referenz: Reference(Encounter) [0..1]
+  + Klinisch relevante Zeit: dateTime [0..1]
+  + Klinisch relevante Periode: period [0..1]
+  + Zeit der Erstellung: issued [0..1]
+  + {field} Beobachtung: Reference(Observation) [0..*]
+  + {field} Studienbezug: Reference(ImagingStudy) [1..*]
+  + {field} Zusatzinformation: Reference(DiagnosticReport; Procedure) [0..1]
+  + Interpretation der Beobachtung: markdown [0..1]
+  + strukturierte Interpretation: CodeableConcept [0..1]
+  + {field} Dokumentenanhang: Attachment [0..*]
+}
+  
+class Empfehlung <<CarePlan>> {
+  + Art der Empfehlung: Coding [1..1]
+  + Freitextempfehlung: String [0..1]
+}
+
+class GenerischeBeobachtung <<Observation>> {
+  + {field} Extension: Bildnummer: DICOM Instance UID (Series)
+  + {field} Extension: Schichtposition: DICOM Instance UID (SOP Instance)
+  + {field} Extension: Erweiterte Körperstruktur: Reference(BodyStructure) [0..1]
+  + {field} Teil einer Befundungsprocedur: Reference(Procedure) [0..*]
+  + Status: Coding [1..1]
+  + Beobachtungstyp: CodeableConcept [1..1]
+  + Beobachtungszeitpunkt: issued [0..1]
+  + Beschreibung: value[x] [0..1]
+  + {field} Körperregion(bodySite): CodeableConcept [0..1]
+  + {field} Studienbezug: Reference(ImagingStudy) [0..*]
+  + {field} weitere Beobachtung: Reference(Observation) [0..*]
+  + erweiterte Beschreibung: component [0..*]
+}
+}
+
+Befundbericht "1..1" -- "0..*" Befundbericht : DR.supportingInfo (R5!)
+Befundbericht "1..1" -l- "0..*" GenerischeBeobachtung: DR.result
+
+Empfehlung "0..*" -- "1..*" Befundbericht : CP.supportingInfo 
+
+GenerischeBeobachtung "1..1" -- "0..*" GenerischeBeobachtung: Obs.hasMember
+GenerischeBeobachtung "0..*" -- "0..1" Körperstruktur: Obs.bodyStructure
+@enduml
