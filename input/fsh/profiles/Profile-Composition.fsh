@@ -20,7 +20,7 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 //Profile
 * status MS
 * type MS
-* subject MS
+* subject 1..1 MS
 * subject only Reference(Patient)
 * date MS
 * author MS
@@ -37,5 +37,5 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * section.code MS
 * section.author MS
 * section.text MS
-* section.entry MS
+* section.entry 1..* MS
 * section.section MS

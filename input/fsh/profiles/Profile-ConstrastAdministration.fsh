@@ -19,8 +19,8 @@ Description: "Dieses Profil bietet die Möglichkeit die Kontrastmittelgabe aus d
 * meta.profile MS
 //Profile
 * status MS
-* medication[x]
+* medication[x] MS
 * subject MS
 * subject only Reference(Patient)
 * effective[x] only Period
-* dosage.dose 1..1
+* dosage.dose 1..1 MS

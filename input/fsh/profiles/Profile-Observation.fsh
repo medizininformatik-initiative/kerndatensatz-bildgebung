@@ -28,7 +28,7 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * status MS
 * category MS
 * code MS
-* subject MS
+* subject 1..1 MS
 * subject only Reference(Patient)
 * issued MS
 * value[x] MS

@@ -22,4 +22,3 @@ Description: "Dieses Profil beschreibt die dargestellte Körperstrukturen nach M
 * location MS
 * locationQualifier MS
 * patient MS
-* patient only Reference(Patient)

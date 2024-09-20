@@ -39,7 +39,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * category.coding[diagnostic-service-sections] = $DSS#RAD
 * category.coding[snomed-ct] = $SCT#4201000179104 "Imaging report"
 * code MS 
-* subject MS
+* subject 1..1 MS
 * subject only Reference(Patient) 
 * encounter MS
 * effective[x] MS
