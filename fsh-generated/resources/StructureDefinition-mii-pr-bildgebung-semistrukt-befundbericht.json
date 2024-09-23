@@ -111,6 +111,7 @@
       {
         "id": "Composition.subject",
         "path": "Composition.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -182,6 +183,7 @@
       {
         "id": "Composition.section.entry",
         "path": "Composition.section.entry",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -219,6 +221,7 @@
       {
         "id": "Composition.section:diagRep.entry",
         "path": "Composition.section.entry",
+        "min": 1,
         "type": [
           {
             "code": "Reference",

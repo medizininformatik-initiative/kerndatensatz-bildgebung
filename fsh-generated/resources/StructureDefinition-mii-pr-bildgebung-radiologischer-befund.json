@@ -236,6 +236,7 @@
       {
         "id": "DiagnosticReport.subject",
         "path": "DiagnosticReport.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",

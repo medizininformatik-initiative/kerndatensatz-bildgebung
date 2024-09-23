@@ -123,6 +123,11 @@
         "mustSupport": true
       },
       {
+        "id": "ServiceRequest.code",
+        "path": "ServiceRequest.code",
+        "mustSupport": true
+      },
+      {
         "id": "ServiceRequest.code.coding",
         "path": "ServiceRequest.code.coding",
         "slicing": {
