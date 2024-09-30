@@ -42,7 +42,7 @@ package <<Befund>> {
     + {field} Extension: Bildnummer: DICOM Instance UID (Series) [0..1]
     + {field} Extension: Schichtposition: DICOM Instance UID (SOP Instance) [0..1]
     + {field} Extension: Erweiterte Körperstruktur: Reference(BodyStructure) [0..1]
-    + {field} Teil einer Befundungsprocedur: Reference(Procedure) [0..*]
+    + {field} Teil einer Befundungsprozedur: Reference(Procedure) [0..*]
     + Status: Coding [1..1]
     + Beobachtungsklassifizierung: CodeableConcept [0..*]
     + Beobachtungstyp: CodeableConcept [1..1]
