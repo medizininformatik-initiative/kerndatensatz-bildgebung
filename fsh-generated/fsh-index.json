@@ -536,12 +536,20 @@
     "endLine": 27
   },
   {
-    "outputFile": "StructureDefinition-mii-ex-bildgebung-modalitaet-pt-nm.json",
-    "fshName": "MII_EX_Bildgebung_Modalitaet_PT_NM",
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-modalitaet-nm.json",
+    "fshName": "MII_EX_Bildgebung_Modalitaet_NM",
     "fshType": "Extension",
-    "fshFile": "extensions\\Extension-Modality-PT_NM.fsh",
+    "fshFile": "extensions\\Extension-Modality-NM.fsh",
     "startLine": 2,
-    "endLine": 37
+    "endLine": 49
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.json",
+    "fshName": "MII_EX_Bildgebung_Modalitaet_PT",
+    "fshType": "Extension",
+    "fshFile": "extensions\\Extension-Modality-PT.fsh",
+    "startLine": 2,
+    "endLine": 46
   },
   {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-serie-uid.json",
@@ -605,7 +613,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-ImagingStudy.fsh",
     "startLine": 2,
-    "endLine": 67
+    "endLine": 68
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",

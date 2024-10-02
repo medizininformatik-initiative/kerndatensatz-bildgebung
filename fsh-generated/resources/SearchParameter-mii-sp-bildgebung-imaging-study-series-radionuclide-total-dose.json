@@ -24,7 +24,7 @@
     "ImagingStudy"
   ],
   "type": "quantity",
-  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radionuclideTotalDose').value",
+  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radionuclideTotalDose').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radionuclideTotalDose').value",
   "comparator": [
     "eq",
     "gt",

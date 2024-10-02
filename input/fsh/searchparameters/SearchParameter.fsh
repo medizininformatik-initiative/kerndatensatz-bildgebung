@@ -437,7 +437,7 @@ Usage: #definition
 * code = #radiopharmaceutical
 * base = #ImagingStudy
 * type = #token
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radiopharmaceutical').value"
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radiopharmaceutical').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radiopharmaceutical').value"
 * modifier[+] = #text
 * modifier[+] = #not
 * modifier[+] = #above
@@ -460,7 +460,7 @@ Usage: #definition
 * code = #radiopharmaceutical-start-time
 * base = #ImagingStudy
 * type = #date
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radiopharmaceuticalStartTime').value"
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radiopharmaceuticalStartTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radiopharmaceuticalStartTime').value"
 
 Instance: mii-sp-bildgebung-imaging-study-series-rescale-type
 InstanceOf: SearchParameter
@@ -476,7 +476,7 @@ Usage: #definition
 * code = #rescale-type
 * base = #ImagingStudy
 * type = #token
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('rescaleType').value"
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('rescaleType').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('rescaleType').value"
 * modifier[+] = #text
 * modifier[+] = #not
 * modifier[+] = #above
@@ -499,7 +499,7 @@ Usage: #definition
 * code = #radionuclide-total-dose
 * base = #ImagingStudy
 * type = #quantity
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radionuclideTotalDose').value"
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radionuclideTotalDose').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radionuclideTotalDose').value"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -520,7 +520,7 @@ Usage: #definition
 * code = #radionuclide-half-life
 * base = #ImagingStudy
 * type = #quantity
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm').extension('radionuclideHalfLife').value"
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radionuclideHalfLife').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radionuclideHalfLife').value"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
