@@ -16,7 +16,7 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * ^experimental = false
 //Extension
 * extension contains
- radiopharmaceutical 0..1 MS and
+    radiopharmaceutical 0..1 MS and
     radionuclide 0..1 MS and
     tracerExposureTime 0..1 MS and
     units 0..1 MS and

@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-bildgebung-imaging-study-slice-thickness",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-slice-thickness",
+  "id": "mii-sp-bildgebung-imaging-study-instance-slice-thickness",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-slice-thickness",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -14,11 +14,11 @@
     }
   ],
   "version": "2025.0.0-ballot",
-  "name": "MII_SP_Bildgebung_Imaging_Study_Slice_Thickness",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Instance_Slice_Thickness",
   "status": "active",
   "experimental": false,
   "date": "2024-08-30",
-  "description": "Suchparameter für ImagingStudy.series.instance.Extension.sliceThickness",
+  "description": "Suchparameter für ImagingStudy.series.instance.extension.sliceThickness",
   "code": "instance-slice-thickness",
   "base": [
     "ImagingStudy"

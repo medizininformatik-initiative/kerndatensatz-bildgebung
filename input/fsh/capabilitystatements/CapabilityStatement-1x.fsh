@@ -163,23 +163,32 @@ Usage: #definition
 * insert SupportSearchParam(procedure-reference, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-procedure-reference, #reference, #SHALL)
 * insert SupportSearchParam(reason-reference, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-reason-reference, #reference, #SHALL)
 * insert SupportSearchParam(description, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-description, #string, #SHALL)
+//Extension CT & CR & MG & DX
 * insert SupportSearchParam(ctdi-volume, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-ctdi-volume, #quantity, #SHALL)
 * insert SupportSearchParam(exposure-time, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure-time, #quantity, #SHALL)
 * insert SupportSearchParam(exposure, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure, #quantity, #SHALL)
 * insert SupportSearchParam(x-ray-tube-current, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current, #quantity, #SHALL)
 * insert SupportSearchParam(kvp, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-kvp, #quantity, #SHALL)
+//Extension MR
 * insert SupportSearchParam(magnetic-field-strength, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-magnetic-field-strength, #quantity, #SHALL)
 * insert SupportSearchParam(scanning-sequence, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence, #string, #SHALL)
 * insert SupportSearchParam(scanning-sequence-variant, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant, #string, #SHALL)
+//Extension PT & NM
 * insert SupportSearchParam(radiopharmaceutical, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical, #token, #SHALL)
-* insert SupportSearchParam(radiopharmaceutical-start-time, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical-start-time, #date, #SHALL)
-* insert SupportSearchParam(rescale-type, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-rescale-type, #token, #SHALL)
+* insert SupportSearchParam(radionuclide, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide, #token, #SHALL)
+* insert SupportSearchParam(tracer-exposure-time, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-tracer-exposure-time, #quantity, #SHALL)
+* insert SupportSearchParam(units, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-units, #token, #SHALL)
 * insert SupportSearchParam(radionuclide-total-dose, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose, #quantity, #SHALL)
 * insert SupportSearchParam(radionuclide-half-life, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-half-life, #quantity, #SHALL)
+* insert SupportSearchParam(series-type, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-series-type, #string, #SHALL)
+* insert SupportSearchParam(energy-window-mean, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-energy-window-mean, #quantity, #SHALL)
+//Extension Contrast
 * insert SupportSearchParam(contrast-bolus, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus, #token, #SHALL)
 * insert SupportSearchParam(contrast-bolus-details, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus-details, #reference, #SHALL)
-* insert SupportSearchParam(manufacturer, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer, #string, #SHALL)
-* insert SupportSearchParam(manufacturer-model-name, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer-model-name, #string, #SHALL)
+//Extension Manufacturer
+* insert SupportSearchParam(manufacturer, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-manufacturer, #string, #SHALL)
+* insert SupportSearchParam(manufacturer-model-name, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-manufacturer-model-name, #string, #SHALL)
+//Series
 * insert SupportSearchParam(series, http://hl7.org/fhir/SearchParameter/ImagingStudy-series, #token, #SHALL)
 * insert SupportSearchParam(series-number, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-number, #number, #SHALL)
 * insert SupportSearchParam(modality, http://hl7.org/fhir/SearchParameter/ImagingStudy-modality, #token, #SHALL)
@@ -187,10 +196,12 @@ Usage: #definition
 * insert SupportSearchParam(series-bodysite, http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite, #token, #SHALL)
 * insert SupportSearchParam(series-laterality, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-laterality, #token, #SHALL)
 * insert SupportSearchParam(series-started, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-started, #date, #SHALL)
+//Extension Instance
 * insert SupportSearchParam(instance-pixel-spacing-x, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-x, #quantity, #SHALL)
 * insert SupportSearchParam(instance-pixel-spacing-y, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-y, #quantity, #SHALL)
 * insert SupportSearchParam(instance-slice-thickness, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-slice-thickness, #quantity, #SHALL)
 * insert SupportSearchParam(instance-image-type, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-image-type, #string, #SHALL)
+//Instance
 * insert SupportSearchParam(instance, http://hl7.org/fhir/SearchParameter/ImagingStudy-instance, #token, #SHALL)
 * insert SupportSearchParam(dicom-class, http://hl7.org/fhir/SearchParameter/ImagingStudy-dicom-class, #token, #SHALL)
 * insert SupportSearchParam(instance-number, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-number, #number, #SHALL)

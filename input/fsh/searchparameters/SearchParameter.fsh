@@ -446,37 +446,65 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-series-radiopharma-start-time
+Instance: mii-sp-bildgebung-imaging-study-series-radionuclide
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical-start-time"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Imaging_Study_Series_Radiopharmaceutical_Start_Time"
+* name = "MII_SP_Bildgebung_Imaging_Study_Radionuclide"
 * status = #active
 * experimental = false
 * date = "2024-08-30"
-* description = "Suchparameter für ImagingStudy.series.radiopharmaceuticalStartTime"
-* code = #radiopharmaceutical-start-time
-* base = #ImagingStudy
-* type = #date
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radiopharmaceuticalStartTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radiopharmaceuticalStartTime').value"
-
-Instance: mii-sp-bildgebung-imaging-study-series-rescale-type
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-rescale-type"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Imaging_Study_Series_Rescale_Type"
-* status = #active
-* experimental = false
-* date = "2024-08-30"
-* description = "Suchparameter für ImagingStudy.series.extension.rescaleType"
-* code = #rescale-type
+* description = "Suchparameter für ImagingStudy.series.extension.radionuclide"
+* code = #radionuclide
 * base = #ImagingStudy
 * type = #token
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('rescaleType').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('rescaleType').value"
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radionuclide').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radionuclide').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+* modifier[+] = #missing
+
+Instance: mii-sp-bildgebung-imaging-study-series-tracer-exposure-time
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-tracer-exposure-time"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Tracer_Exposure_Time"
+* status = #active
+* experimental = false
+* date = "2024-08-30"
+* description = "Suchparameter für ImagingStudy.series.tracerExposureTime"
+* code = #tracer-exposure-time
+* base = #ImagingStudy
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('tracerExposureTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('tracerExposureTime').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
+Instance: mii-sp-bildgebung-imaging-study-series-units
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-units"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Units"
+* status = #active
+* experimental = false
+* date = "2024-08-30"
+* description = "Suchparameter für ImagingStudy.series.extension.units"
+* code = #units
+* base = #ImagingStudy
+* type = #token
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('units').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('units').value"
 * modifier[+] = #text
 * modifier[+] = #not
 * modifier[+] = #above
@@ -527,6 +555,46 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
+Instance: mii-sp-bildgebung-imaging-study-series-series-type
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-series-type"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Series_Type"
+* status = #active
+* experimental = false
+* date = "2024-08-30"
+* description = "ImagingStudy.series.extension.seriesType"
+* code = #series-type
+* base = #ImagingStudy
+* type = #string
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('seriesType').value"
+* modifier[+] = #contains
+* modifier[+] = #exact
+* modifier[+] = #missing
+
+Instance: mii-sp-bildgebung-imaging-study-series-energy-window-mean
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-energy-window-mean"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Energy_Window_Mean"
+* status = #active
+* experimental = false
+* date = "2024-08-30"
+* description = "Suchparameter für ImagingStudy.series.extension.energyWindowMean"
+* code = #energy-window-mean
+* base = #ImagingStudy
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('energyWindowMean').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
 Instance: mii-sp-bildgebung-imaging-study-series-contrast-bolus
 InstanceOf: SearchParameter
 Usage: #definition
@@ -568,13 +636,13 @@ Usage: #definition
 * target[+] = #MedicationStatement
 * target[+] = #MedicationAdministration
 
-Instance: mii-sp-bildgebung-imaging-study-manufacturer
+Instance: mii-sp-bildgebung-imaging-study-series-manufacturer
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-series-study-manufacturer"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Imaging_Study_Manufacturer"
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Manufacturer"
 * status = #active
 * experimental = false
 * date = "2024-08-30"
@@ -587,13 +655,13 @@ Usage: #definition
 * modifier[+] = #exact
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-manufacturer-model-name
+Instance: mii-sp-bildgebung-imaging-study-series-manufacturer-model-name
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer-model-name"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-manufacturer-model-name"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Imaging_Study_Manufacturer_Model_Name"
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Manufacturer_Model_Name"
 * status = #active
 * experimental = false
 * date = "2024-08-30"
@@ -676,7 +744,7 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2024-08-30"
-* description = "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacingX"
+* description = "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingX"
 * code = #instance-pixel-spacing-x
 * base = #ImagingStudy
 * type = #quantity
@@ -697,7 +765,7 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2024-08-30"
-* description = "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacingY"
+* description = "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingY"
 * code = #instance-pixel-spacing-y
 * base = #ImagingStudy
 * type = #quantity
@@ -708,17 +776,17 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-slice-thickness
+Instance: mii-sp-bildgebung-imaging-study-instance-slice-thickness
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-slice-thickness"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-slice-thickness"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Imaging_Study_Slice_Thickness"
+* name = "MII_SP_Bildgebung_Imaging_Study_Instance_Slice_Thickness"
 * status = #active
 * experimental = false
 * date = "2024-08-30"
-* description = "Suchparameter für ImagingStudy.series.instance.Extension.sliceThickness"
+* description = "Suchparameter für ImagingStudy.series.instance.extension.sliceThickness"
 * code = #instance-slice-thickness
 * base = #ImagingStudy
 * type = #quantity
@@ -739,7 +807,7 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2024-08-30"
-* description = "Suchparameter für ImagingStudy.series.instance.Extension.imageType"
+* description = "Suchparameter für ImagingStudy.series.instance.extension.imageType"
 * code = #instance-image-type
 * base = #ImagingStudy
 * type = #string

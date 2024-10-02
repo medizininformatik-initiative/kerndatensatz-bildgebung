@@ -421,7 +421,7 @@
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-instance-image-type"
         },
         "name": "mii-sp-bildgebung-imaging-study-instance-image-type",
-        "description": "Suchparameter für ImagingStudy.series.instance.Extension.imageType",
+        "description": "Suchparameter für ImagingStudy.series.instance.extension.imageType",
         "exampleBoolean": false
       },
       {
@@ -437,7 +437,7 @@
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-x"
         },
         "name": "mii-sp-bildgebung-imaging-study-instance-pixel-x",
-        "description": "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacingX",
+        "description": "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingX",
         "exampleBoolean": false
       },
       {
@@ -445,23 +445,15 @@
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-y"
         },
         "name": "mii-sp-bildgebung-imaging-study-instance-pixel-y",
-        "description": "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacingY",
+        "description": "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingY",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer"
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-instance-slice-thickness"
         },
-        "name": "mii-sp-bildgebung-imaging-study-manufacturer",
-        "description": "ImagingStudy.series.extension.manufacturer",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer-model-name"
-        },
-        "name": "mii-sp-bildgebung-imaging-study-manufacturer-model-name",
-        "description": "ImagingStudy.series.extension.manufacturerModelName",
+        "name": "mii-sp-bildgebung-imaging-study-instance-slice-thickness",
+        "description": "Suchparameter für ImagingStudy.series.instance.extension.sliceThickness",
         "exampleBoolean": false
       },
       {
@@ -522,6 +514,14 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-energy-window-mean"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-energy-window-mean",
+        "description": "Suchparameter für ImagingStudy.series.extension.energyWindowMean",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure"
         },
         "name": "mii-sp-bildgebung-imaging-study-series-exposure",
@@ -562,10 +562,34 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-manufacturer"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-manufacturer",
+        "description": "ImagingStudy.series.extension.manufacturer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-manufacturer-model-name"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-manufacturer-model-name",
+        "description": "ImagingStudy.series.extension.manufacturerModelName",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-number"
         },
         "name": "mii-sp-bildgebung-imaging-study-series-number",
         "description": "Suchparameter für ImagingStudy.series.number",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-radionuclide",
+        "description": "Suchparameter für ImagingStudy.series.extension.radionuclide",
         "exampleBoolean": false
       },
       {
@@ -586,26 +610,10 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharma-start-time"
-        },
-        "name": "mii-sp-bildgebung-imaging-study-series-radiopharma-start-time",
-        "description": "Suchparameter für ImagingStudy.series.radiopharmaceuticalStartTime",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical"
         },
         "name": "mii-sp-bildgebung-imaging-study-series-radiopharmaceutical",
         "description": "Suchparameter für ImagingStudy.series.extension.radiopharmaceutical",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-rescale-type"
-        },
-        "name": "mii-sp-bildgebung-imaging-study-series-rescale-type",
-        "description": "Suchparameter für ImagingStudy.series.extension.rescaleType",
         "exampleBoolean": false
       },
       {
@@ -626,6 +634,14 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-series-type"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-series-type",
+        "description": "ImagingStudy.series.extension.seriesType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-started"
         },
         "name": "mii-sp-bildgebung-imaging-study-series-started",
@@ -634,18 +650,26 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current"
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-tracer-exposure-time"
         },
-        "name": "mii-sp-bildgebung-imaging-study-series-xray-tube-current",
-        "description": "Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent",
+        "name": "mii-sp-bildgebung-imaging-study-series-tracer-exposure-time",
+        "description": "Suchparameter für ImagingStudy.series.tracerExposureTime",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-slice-thickness"
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-units"
         },
-        "name": "mii-sp-bildgebung-imaging-study-slice-thickness",
-        "description": "Suchparameter für ImagingStudy.series.instance.Extension.sliceThickness",
+        "name": "mii-sp-bildgebung-imaging-study-series-units",
+        "description": "Suchparameter für ImagingStudy.series.extension.units",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-xray-tube-current",
+        "description": "Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent",
         "exampleBoolean": false
       },
       {
