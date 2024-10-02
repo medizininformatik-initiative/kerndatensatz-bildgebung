@@ -1,0 +1,383 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-ex-bildgebung-modalitaet-nm",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm",
+  "version": "2025.0.0-ballot",
+  "name": "MII_EX_Bildgebung_Modalitaet_NM",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_EX_Imaging_Modality_NM"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII EX Bildgebung Modalität PT/NM",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII EX Imaging Modality NM"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf NM Daten zu erweitern.",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "The extension allows to extend the resources and feasibility analysis to NM data."
+          }
+        ]
+      }
+    ]
+  },
+  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ImagingStudy.series"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:radiopharmaceutical",
+        "path": "Extension.extension",
+        "sliceName": "radiopharmaceutical",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:radiopharmaceutical.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:radiopharmaceutical.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "radiopharmaceutical"
+      },
+      {
+        "id": "Extension.extension:radiopharmaceutical.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html"
+        }
+      },
+      {
+        "id": "Extension.extension:radiopharmaceutical.value[x].text",
+        "path": "Extension.extension.value[x].text",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:radionuclide",
+        "path": "Extension.extension",
+        "sliceName": "radionuclide",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:radionuclide.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:radionuclide.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "radionuclide"
+      },
+      {
+        "id": "Extension.extension:radionuclide.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_18.html"
+        }
+      },
+      {
+        "id": "Extension.extension:radionuclide.value[x].text",
+        "path": "Extension.extension.value[x].text",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:tracerexposuretime",
+        "path": "Extension.extension",
+        "sliceName": "tracerexposuretime",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:tracerexposuretime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:tracerexposuretime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "tracerexposuretime"
+      },
+      {
+        "id": "Extension.extension:tracerexposuretime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:tracerexposuretime.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "Seconds"
+      },
+      {
+        "id": "Extension.extension:tracerexposuretime.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:tracerexposuretime.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "s"
+      },
+      {
+        "id": "Extension.extension:units",
+        "path": "Extension.extension",
+        "sliceName": "units",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:units.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:units.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "units"
+      },
+      {
+        "id": "Extension.extension:units.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_84.html"
+        }
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose",
+        "path": "Extension.extension",
+        "sliceName": "radionuclideTotalDose",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "radionuclideTotalDose"
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "Megabecquerel"
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:radionuclideTotalDose.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "MBq"
+      },
+      {
+        "id": "Extension.extension:radionuclideHalfLife",
+        "path": "Extension.extension",
+        "sliceName": "radionuclideHalfLife",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:radionuclideHalfLife.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:radionuclideHalfLife.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "radionuclideHalfLife"
+      },
+      {
+        "id": "Extension.extension:radionuclideHalfLife.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:radionuclideHalfLife.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "Seconds"
+      },
+      {
+        "id": "Extension.extension:radionuclideHalfLife.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:radionuclideHalfLife.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "s"
+      },
+      {
+        "id": "Extension.extension:energyWindowMean",
+        "path": "Extension.extension",
+        "sliceName": "energyWindowMean",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:energyWindowMean.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:energyWindowMean.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "energyWindowMean"
+      },
+      {
+        "id": "Extension.extension:energyWindowMean.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:energyWindowMean.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "kiloelectronvolt"
+      },
+      {
+        "id": "Extension.extension:energyWindowMean.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:energyWindowMean.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "keV"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -30,16 +30,15 @@
               }
             },
             {
-              "url": "radiopharmaceuticalStartTime",
-              "valueDateTime": "2024-07-19T12:03:30+02:00"
-            },
-            {
-              "url": "rescaleType",
-              "valueString": "BQML"
+              "valueQuantity": {
+                "unit": "Seconds",
+                "value": 10000
+              },
+              "url": "tracerExposureTime"
             },
             {
               "valueQuantity": {
-                "unit": "Megabecquerel",
+                "unit": "Becquerel",
                 "value": 196
               },
               "url": "radionuclideTotalDose"
@@ -52,7 +51,7 @@
               "url": "radionuclideHalfLife"
             }
           ],
-          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm"
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt"
         },
         {
           "extension": [

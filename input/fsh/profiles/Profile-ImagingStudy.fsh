@@ -42,7 +42,8 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
   MII_EX_Bildgebung_Modalitaet_CT named modalitätCT 0..1 and
   MII_EX_Bildgebung_Modalitaet_MG_CR_DX named modalitätMG_CR_DX 0..1 and
   MII_EX_Bildgebung_Modalitaet_MR named modalitätMR 0..1 and
-  MII_EX_Bildgebung_Modalitaet_PT_NM named modalitätPT_NM 0..1 and
+  MII_EX_Bildgebung_Modalitaet_PT named modalitätPT 0..1 and
+  MII_EX_Bildgebung_Modalitaet_NM named modalitätNM 0..1 and
   MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1 and
   MII_EX_Bildgebung_Geraete_Hersteller named gerät 0..1
 * series.uid MS 

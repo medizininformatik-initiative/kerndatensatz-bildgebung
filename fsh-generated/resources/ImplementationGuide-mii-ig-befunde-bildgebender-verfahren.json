@@ -130,10 +130,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm"
+          "reference": "StructureDefinition/mii-ex-bildgebung-modalitaet-pt"
+        },
+        "name": "MII EX Bildgebung Modalität PT",
+        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf PT Daten zu erweitern.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-bildgebung-modalitaet-nm"
         },
         "name": "MII EX Bildgebung Modalität PT/NM",
-        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf PT & NM Daten zu erweitern.",
+        "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf NM Daten zu erweitern.",
         "exampleBoolean": false
       },
       {
