@@ -10,9 +10,10 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
 * insert Translation(^description, en-US, The extension allows specifying information about the selected series at the instance level.)
 //Meta
 * insert PR_CS_VS_Version
-* ^experimental = false
+* insert KDS_Copyright
 * insert Publisher
 * insert ExtensionContext(ImagingStudy.series.instance)
+* ^experimental = false
 //Extension
 * extension contains
     pixelSpacingX 0..1 MS and

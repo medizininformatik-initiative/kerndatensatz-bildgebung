@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-bildgebung-imaging-study-manufacturer",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-manufacturer",
+  "id": "mii-sp-bildgebung-imaging-study-series-manufacturer",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-series-study-manufacturer",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -14,10 +14,10 @@
     }
   ],
   "version": "2025.0.0-ballot",
-  "name": "MII_SP_Bildgebung_Imaging_Study_Manufacturer",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Series_Manufacturer",
   "status": "active",
   "experimental": false,
-  "date": "2024-07-30",
+  "date": "2024-08-30",
   "description": "ImagingStudy.series.extension.manufacturer",
   "code": "manufacturer",
   "base": [

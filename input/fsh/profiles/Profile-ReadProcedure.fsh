@@ -11,6 +11,8 @@ Description: "Diese Profil beschreibt die radiologische Befundungsprozedur. Es l
 * insert Translation(^description, en-US, This FHIR resource profile specifically characterizes the radiological reading process.)
 //Meta
 * insert PR_CS_VS_Version
+* insert Publisher
+* insert KDS_Copyright
 * id MS
 * meta MS
 * meta.source MS

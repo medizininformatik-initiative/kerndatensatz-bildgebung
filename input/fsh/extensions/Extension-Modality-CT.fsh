@@ -10,9 +10,10 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * insert Translation(^description, en-US, The extension allows to extend the resources and feasibility analysis to CT data.)
 //Meta
 * insert PR_CS_VS_Version
-* ^experimental = false
+* insert KDS_Copyright
 * insert Publisher
-* insert ExtensionContext(ImagingStudy.Series)
+* insert ExtensionContext(ImagingStudy.series)
+* ^experimental = false
 //Extension
 * extension contains
     CTDIvol 0..1 and

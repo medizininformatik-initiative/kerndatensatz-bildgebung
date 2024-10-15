@@ -11,6 +11,8 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * insert Translation(^description, en-US, The profile describes a observation for radiological images.)
 //Meta
 * insert PR_CS_VS_Version
+* insert Publisher
+* insert KDS_Copyright
 * id MS
 * meta MS
 * meta.source MS
@@ -26,7 +28,7 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * status MS
 * category MS
 * code MS
-* subject MS
+* subject 1..1 MS
 * subject only Reference(Patient)
 * issued MS
 * value[x] MS

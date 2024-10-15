@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-ex-bildgebung-modalitaet-pt-nm",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm",
+  "id": "mii-ex-bildgebung-modalitaet-pt",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt",
   "version": "2025.0.0-ballot",
-  "name": "MII_EX_Bildgebung_Modalitaet_PT_NM",
+  "name": "MII_EX_Bildgebung_Modalitaet_PT",
   "_name": {
     "extension": [
       {
@@ -15,13 +15,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_EX_Imaging_Modality_PT_NM"
+            "valueString": "MII_EX_Imaging_Modality_PT"
           }
         ]
       }
     ]
   },
-  "title": "MII EX Bildgebung Modalität PT/NM",
+  "title": "MII EX Bildgebung Modalität PT",
   "_title": {
     "extension": [
       {
@@ -33,7 +33,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII EX Imaging Modality PT/NM"
+            "valueString": "MII EX Imaging Modality PT"
           }
         ]
       }
@@ -52,7 +52,7 @@
       ]
     }
   ],
-  "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf PT & NM Daten zu erweitern.",
+  "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf PT Daten zu erweitern.",
   "_description": {
     "extension": [
       {
@@ -64,19 +64,20 @@
           },
           {
             "url": "content",
-            "valueString": "The extension allows to extend the resources and feasibility analysis to PT & NM data."
+            "valueString": "The extension allows to extend the resources and feasibility analysis to PT data."
           }
         ]
       }
     ]
   },
+  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "ImagingStudy.Series"
+      "expression": "ImagingStudy.series"
     }
   ],
   "type": "Extension",
@@ -112,7 +113,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html"
+          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4021.html"
         }
       },
       {
@@ -121,58 +122,116 @@
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:radiopharmaceuticalStartTime",
+        "id": "Extension.extension:radionuclide",
         "path": "Extension.extension",
-        "sliceName": "radiopharmaceuticalStartTime",
+        "sliceName": "radionuclide",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:radiopharmaceuticalStartTime.extension",
+        "id": "Extension.extension:radionuclide.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:radiopharmaceuticalStartTime.url",
+        "id": "Extension.extension:radionuclide.url",
         "path": "Extension.extension.url",
-        "fixedUri": "radiopharmaceuticalStartTime"
+        "fixedUri": "radionuclide"
       },
       {
-        "id": "Extension.extension:radiopharmaceuticalStartTime.value[x]",
+        "id": "Extension.extension:radionuclide.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "dateTime"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4020.html"
+        }
       },
       {
-        "id": "Extension.extension:rescaleType",
+        "id": "Extension.extension:radionuclide.value[x].text",
+        "path": "Extension.extension.value[x].text",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:tracerExposureTime",
         "path": "Extension.extension",
-        "sliceName": "rescaleType",
+        "sliceName": "tracerExposureTime",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:rescaleType.extension",
+        "id": "Extension.extension:tracerExposureTime.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:rescaleType.url",
+        "id": "Extension.extension:tracerExposureTime.url",
         "path": "Extension.extension.url",
-        "fixedUri": "rescaleType"
+        "fixedUri": "tracerExposureTime"
       },
       {
-        "id": "Extension.extension:rescaleType.value[x]",
+        "id": "Extension.extension:tracerExposureTime.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
           }
         ]
+      },
+      {
+        "id": "Extension.extension:tracerExposureTime.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "Seconds"
+      },
+      {
+        "id": "Extension.extension:tracerExposureTime.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:tracerExposureTime.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "s"
+      },
+      {
+        "id": "Extension.extension:units",
+        "path": "Extension.extension",
+        "sliceName": "units",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:units.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:units.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "units"
+      },
+      {
+        "id": "Extension.extension:units.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_84.html"
+        }
       },
       {
         "id": "Extension.extension:radionuclideTotalDose",
@@ -207,7 +266,7 @@
       {
         "id": "Extension.extension:radionuclideTotalDose.value[x].unit",
         "path": "Extension.extension.value[x].unit",
-        "patternString": "Megabecquerel"
+        "patternString": "Becquerel"
       },
       {
         "id": "Extension.extension:radionuclideTotalDose.value[x].system",
@@ -217,7 +276,7 @@
       {
         "id": "Extension.extension:radionuclideTotalDose.value[x].code",
         "path": "Extension.extension.value[x].code",
-        "patternCode": "MBq"
+        "patternCode": "Bq"
       },
       {
         "id": "Extension.extension:radionuclideHalfLife",
@@ -265,9 +324,36 @@
         "patternCode": "s"
       },
       {
+        "id": "Extension.extension:seriesType",
+        "path": "Extension.extension",
+        "sliceName": "seriesType",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:seriesType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:seriesType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "seriesType"
+      },
+      {
+        "id": "Extension.extension:seriesType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm"
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt"
       },
       {
         "id": "Extension.value[x]",

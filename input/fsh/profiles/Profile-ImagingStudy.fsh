@@ -11,6 +11,8 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(^description, en-US, The profile describes the metadata of an DICOM imaging study.)
 //Meta
 * insert PR_CS_VS_Version
+* insert Publisher
+* insert KDS_Copyright
 * id MS
 * meta MS
 * meta.source MS
@@ -40,7 +42,8 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
   MII_EX_Bildgebung_Modalitaet_CT named modalitätCT 0..1 and
   MII_EX_Bildgebung_Modalitaet_MG_CR_DX named modalitätMG_CR_DX 0..1 and
   MII_EX_Bildgebung_Modalitaet_MR named modalitätMR 0..1 and
-  MII_EX_Bildgebung_Modalitaet_PT_NM named modalitätPT_NM 0..1 and
+  MII_EX_Bildgebung_Modalitaet_PT named modalitätPT 0..1 and
+  MII_EX_Bildgebung_Modalitaet_NM named modalitätNM 0..1 and
   MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1 and
   MII_EX_Bildgebung_Geraete_Hersteller named gerät 0..1
 * series.uid MS 

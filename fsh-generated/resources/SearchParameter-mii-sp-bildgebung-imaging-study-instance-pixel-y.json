@@ -17,8 +17,8 @@
   "name": "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_Y",
   "status": "active",
   "experimental": false,
-  "date": "2024-07-30",
-  "description": "Suchparameter für ImagingStudy.series.instance.Extension.pixelSpacingY",
+  "date": "2024-08-30",
+  "description": "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingY",
   "code": "instance-pixel-spacing-y",
   "base": [
     "ImagingStudy"

@@ -204,6 +204,6 @@ fabric.properties
 /input-cache/*
 /node_modules/*
 package-lock.json
-package.json
+# package.json
 .idea/*
 .history

@@ -40,6 +40,17 @@
     ]
   },
   "status": "active",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
   "description": "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten auf Studien-, Serien- sowie Instanzen-Ebene der jeweiligen DICOM-Studie.",
   "_description": {
     "extension": [
@@ -58,6 +69,7 @@
       }
     ]
   },
+  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -252,16 +264,31 @@
         ]
       },
       {
-        "id": "ImagingStudy.series.extension:modalitätPT_NM",
+        "id": "ImagingStudy.series.extension:modalitätPT",
         "path": "ImagingStudy.series.extension",
-        "sliceName": "modalitätPT_NM",
+        "sliceName": "modalitätPT",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ImagingStudy.series.extension:modalitätNM",
+        "path": "ImagingStudy.series.extension",
+        "sliceName": "modalitätNM",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm"
             ]
           }
         ]

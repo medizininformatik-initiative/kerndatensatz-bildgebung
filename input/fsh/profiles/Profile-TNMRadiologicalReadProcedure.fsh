@@ -6,16 +6,18 @@ Title: "MII PR Bildgebung TNM Radiologische Befundungsprozedur"
 Description: "Spezifiziert die radiologische Befundungsprozedur nach TNM"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructurDefinition/mii-pr-bildgebung-TNM-radiologische-befundungsprozedur"
 //Translation
-* insert Translation(^name, en-US, MII_PR_Imaging_TNM_Radiological_Readprocedure)
-* insert Translation(^title, en-US, MII PR Imaging TNM Radiological Readprocedure)
+* insert Translation(^name, en-US, MII_PR_Imaging_TNM_Radiological_Read_Procedure)
+* insert Translation(^title, en-US, MII PR Imaging TNM Radiological Read Procedure)
 * insert Translation(^description, en-US, This radiological procedure profile describes the radiological reading process following TNM criteria. It derives from the Radiological_Read_Procedure and needs to define which entity and in which version the read was performed.)
-* insert PR_CS_VS_Version
-* ^status = #draft
 //Meta
+* ^status = #draft
+* insert PR_CS_VS_Version
+* insert Publisher
+* insert KDS_Copyright
 * id MS
 * meta MS
 * meta.source MS
 * meta.profile MS
 //Profile
 * code 1..1
-* code from MII_VS_Bildgebung_TNMRadiologicalReadProcedures (required)
+* code from MII_VS_Bildgebung_TNM_Radiological_Read_Procedure (required)

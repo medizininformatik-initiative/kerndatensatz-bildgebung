@@ -1,0 +1,41 @@
+@startuml
+skinparam Linetype ortho
+skinparam Nodesep 150
+skinparam Ranksep 80
+skinparam legendBackgroundColor #white
+
+class Studie <<ImagingStudy>> #LightCyan {}
+
+class Anforderung <<ServiceRequest>> {}
+
+class Körperstruktur <<BodyStructure>> {}
+
+package "Befund" {
+  class Befundbericht <<DiagnosticReport>> #LightCyan {}
+  
+  class Empfehlung <<CarePlan>> {}
+
+  class GenerischeBeobachtung <<Observation>> {}
+
+  class SemistrukturiertesBefunddokument <<Composition>>{}
+}
+
+Befundbericht "0..1" -- "0..*" Anforderung: DR.basedOn
+Befundbericht "1..1" -- "0..*" GenerischeBeobachtung: DR.result
+Befundbericht "0..*" -l- "0..*" Studie: DR.imagingStudy
+Befundbericht "1..1" -u- "0..*" Befundbericht: DR.supportingInfo (R5!)
+
+Empfehlung "0..*" -- "0..*" Befundbericht: CP.supportingInfo
+
+GenerischeBeobachtung "0..*" -- "0..1" Körperstruktur: Obs.bodyStructure (R5!)
+GenerischeBeobachtung "1..1" -u- "0..*" GenerischeBeobachtung: Obs.hasMember
+GenerischeBeobachtung "0..*" -- "0..*" Studie: Obs.derivedFrom
+
+Studie "0..*" -- "0..*" Anforderung: ISt.basedOn
+
+Anforderung "0..*" -- "0..*" Studie: SR.supportingInfo
+Anforderung "0..1" -- "0..*" Befundbericht: SR.supportingInfo
+
+SemistrukturiertesBefunddokument "1..1" -- "1..1" Befundbericht: Co.section.entry
+SemistrukturiertesBefunddokument "0..1" -- "0..*" GenerischeBeobachtung : Co.section.entry
+@enduml

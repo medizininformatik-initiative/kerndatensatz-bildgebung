@@ -17,8 +17,8 @@
   "name": "MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type",
   "status": "active",
   "experimental": false,
-  "date": "2024-07-30",
-  "description": "Suchparameter für ImagingStudy.series.instance.Extension.imageType",
+  "date": "2024-08-30",
+  "description": "Suchparameter für ImagingStudy.series.instance.extension.imageType",
   "code": "instance-image-type",
   "base": [
     "ImagingStudy"

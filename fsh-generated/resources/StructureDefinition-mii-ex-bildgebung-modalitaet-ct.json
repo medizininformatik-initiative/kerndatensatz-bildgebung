@@ -70,13 +70,14 @@
       }
     ]
   },
+  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "ImagingStudy.Series"
+      "expression": "ImagingStudy.series"
     }
   ],
   "type": "Extension",

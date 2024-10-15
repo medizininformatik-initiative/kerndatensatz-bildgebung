@@ -11,6 +11,8 @@ Description: "Dieses Profil beschreibt die dargestellte Körperstrukturen nach M
 * insert Translation(^description, en-US, The profile describes the examined bodystructure in morphology and location.)
 //Meta
 * insert PR_CS_VS_Version
+* insert Publisher
+* insert KDS_Copyright
 * id MS
 * meta MS
 * meta.source MS
@@ -20,4 +22,3 @@ Description: "Dieses Profil beschreibt die dargestellte Körperstrukturen nach M
 * location MS
 * locationQualifier MS
 * patient MS
-* patient only Reference(Patient)

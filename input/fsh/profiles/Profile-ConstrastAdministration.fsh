@@ -11,14 +11,16 @@ Description: "Dieses Profil bietet die Möglichkeit die Kontrastmittelgabe aus d
 * insert Translation(^description, en-US, The profile describes medication administration for contrastmedication.)
 //Meta
 * insert PR_CS_VS_Version
+* insert Publisher
+* insert KDS_Copyright
 * id MS
 * meta MS
 * meta.source MS
 * meta.profile MS
 //Profile
 * status MS
-* medication[x]
+* medication[x] MS
 * subject MS
 * subject only Reference(Patient)
 * effective[x] only Period
-* dosage.dose 1..1
+* dosage.dose 1..1 MS

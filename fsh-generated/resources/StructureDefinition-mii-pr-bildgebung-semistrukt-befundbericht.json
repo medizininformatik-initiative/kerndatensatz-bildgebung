@@ -40,6 +40,17 @@
     ]
   },
   "status": "active",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
   "description": "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer semi-strukturierten Weise abzubilden. Es dient damit als Ergänzung zum eigentlichen Befundbericht",
   "_description": {
     "extension": [
@@ -58,6 +69,7 @@
       }
     ]
   },
+  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -99,6 +111,7 @@
       {
         "id": "Composition.subject",
         "path": "Composition.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -139,7 +152,7 @@
           "discriminator": [
             {
               "type": "profile",
-              "path": "Composition.section.entry().resolve()"
+              "path": "Composition.section.entry.resolve()"
             }
           ],
           "rules": "open"
@@ -170,6 +183,7 @@
       {
         "id": "Composition.section.entry",
         "path": "Composition.section.entry",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -207,6 +221,7 @@
       {
         "id": "Composition.section:diagRep.entry",
         "path": "Composition.section.entry",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
