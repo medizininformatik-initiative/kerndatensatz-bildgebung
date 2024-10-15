@@ -8,9 +8,12 @@ Zur besseren Lesbarkeit findet sich das UML [hier](https://simplifier.net/medizi
 
 {{render:implementation-guides/ImplementationGuide-Common/images/UML_Befund_Bildgebung.png}}
 
+
 Zur besseren Übersicht ist hier zusätzlich noch die abstrakte Darstellung des Moduls Bildgebung dargestellt:
  
 {{render:implementation-guides/ImplementationGuide-Common/images/UML_Modul_Bildgebung_Simple.png}}
+
+
 
 Die Darstellung des Befunds ist im vollständigen UML möglichst generisch abgebildet, wobei er zur Implementierung verschiedene Ansätze gibt. Im Anschluss sollen die verschiedenen Varianten detailiert aufgeführt werden:
 
