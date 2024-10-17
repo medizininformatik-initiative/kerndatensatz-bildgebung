@@ -32,9 +32,9 @@
         "system": "http://snomed.info/sct",
         "filter": [
           {
-            "property": "concept",
-            "op": "descendent-of",
-            "value": "363679005"
+            "property": "constraint",
+            "op": "=",
+            "value": "(< 363679005 |Imaging (procedure)|"
           }
         ]
       }
