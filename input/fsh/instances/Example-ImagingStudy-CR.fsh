@@ -25,8 +25,7 @@ Title: "MII Example Bildgebung Imaging Study CR"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[exposureTime].valueQuantity.unit = "milliseconds"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[xRayTubeCurrent].valueQuantity.value = 96
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[xRayTubeCurrent].valueQuantity.unit = "milliampere"
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller].extension[manufacturer].valueString = "SIEMENS" 
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller].extension[manufacturerModelName].valueString = "Fluorospot Compact FD"
+* series.performer.actor = Reference(Device/DevExample)
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel].extension[contrastBolus].valueBoolean = false
 * series.uid = "series-example-uid"
 * series.number = 1

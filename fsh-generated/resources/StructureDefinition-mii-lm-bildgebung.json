@@ -1287,7 +1287,7 @@
         "short": "Prozedur",
         "definition": "Referenz auf die dazugehörige medizinische Prozedur der Studie. Hier soll auf das MII KDS-Modul Prozedur referenziert werden.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -1536,10 +1536,29 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Hersteller",
-        "path": "Bildgebung.Studie.Serien.Hersteller",
-        "short": "Hersteller",
-        "definition": "Hersteller der genutzten bildgebenden Modalitaet. ",
+        "id": "Bildgebung.Studie.Serien.Performer",
+        "path": "Bildgebung.Studie.Serien.Performer",
+        "short": "Performer der Serie",
+        "definition": "Performer der Serie",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.performer"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.Performer.Funktion",
+        "path": "Bildgebung.Studie.Serien.Performer.Funktion",
+        "short": "Funktion des Performers",
+        "definition": "Funktion des Performers",
         "min": 0,
         "max": "1",
         "type": [
@@ -1550,26 +1569,29 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller)"
+            "map": "ImagingStudy.series.performer.function"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Modell",
-        "path": "Bildgebung.Studie.Serien.Modell",
-        "short": "Modell",
-        "definition": "Das genutzte Modell des Herstellers der bildgebenden Modalitaet.",
-        "min": 0,
+        "id": "Bildgebung.Studie.Serien.Performer.Akteur",
+        "path": "Bildgebung.Studie.Serien.Performer.Akteur",
+        "short": "Geraet",
+        "definition": "Genutztes Geraet in der Serie",
+        "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
           }
         ],
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller)"
+            "map": "ImagingStudy.series.performer.actor"
           }
         ]
       },

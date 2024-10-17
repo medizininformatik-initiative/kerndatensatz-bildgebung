@@ -44,8 +44,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
   MII_EX_Bildgebung_Modalitaet_MR named modalitätMR 0..1 and
   MII_EX_Bildgebung_Modalitaet_PT named modalitätPT 0..1 and
   MII_EX_Bildgebung_Modalitaet_NM named modalitätNM 0..1 and
-  MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1 and
-  MII_EX_Bildgebung_Geraete_Hersteller named gerät 0..1
+  MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1
 * series.uid MS 
 * series.number MS
 * series.modality MS 
@@ -57,6 +56,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.laterality MS
 * series.laterality from $laterality (required)
 * series.started MS
+* series.performer.actor only Reference(MII_PR_Bildgebung_Geraet)
 //Instanzebene
 * series.instance MS
 * series.instance.extension contains

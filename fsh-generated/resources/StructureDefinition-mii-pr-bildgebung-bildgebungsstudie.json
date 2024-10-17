@@ -138,7 +138,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html"
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html"
         }
       },
       {
@@ -309,21 +309,6 @@
         ]
       },
       {
-        "id": "ImagingStudy.series.extension:gerät",
-        "path": "ImagingStudy.series.extension",
-        "sliceName": "gerät",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
-            ]
-          }
-        ]
-      },
-      {
         "id": "ImagingStudy.series.uid",
         "path": "ImagingStudy.series.uid",
         "mustSupport": true
@@ -339,7 +324,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html"
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html"
         }
       },
       {
@@ -367,13 +352,25 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html"
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html"
         }
       },
       {
         "id": "ImagingStudy.series.started",
         "path": "ImagingStudy.series.started",
         "mustSupport": true
+      },
+      {
+        "id": "ImagingStudy.series.performer.actor",
+        "path": "ImagingStudy.series.performer.actor",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet"
+            ]
+          }
+        ]
       },
       {
         "id": "ImagingStudy.series.instance",
@@ -420,7 +417,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html"
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html"
         }
       },
       {

@@ -58,19 +58,6 @@
         {
           "extension": [
             {
-              "url": "manufacturer",
-              "valueString": "Beispielhersteller"
-            },
-            {
-              "url": "manufacturerModelName",
-              "valueString": "Beispielmodell"
-            }
-          ],
-          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
-        },
-        {
-          "extension": [
-            {
               "url": "contrastBolus",
               "valueBoolean": true
             },
@@ -124,6 +111,13 @@
             "system": "urn:ietf:rfc:3986"
           },
           "number": 31
+        }
+      ],
+      "performer": [
+        {
+          "actor": {
+            "reference": "Device/DevExample"
+          }
         }
       ],
       "uid": "series-example-uid",
