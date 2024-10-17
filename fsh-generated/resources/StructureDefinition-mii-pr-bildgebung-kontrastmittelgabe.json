@@ -103,6 +103,11 @@
         ]
       },
       {
+        "id": "MedicationAdministration.dosage",
+        "path": "MedicationAdministration.dosage",
+        "min": 1
+      },
+      {
         "id": "MedicationAdministration.dosage.dose",
         "path": "MedicationAdministration.dosage.dose",
         "min": 1

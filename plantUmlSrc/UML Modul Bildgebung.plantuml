@@ -15,7 +15,7 @@ package "DICOM-Header" {
   + {field} Quelle zum PACS Bild: Reference(Endpoint) [0..*]
   + Anzahl an enhaltenen Serien: unsignedInt [0..1]
   + Anzahl an enthaltenen SOP Instanzen: unsignedInt [0..1]
-  + {field} Bildgebungsprozedur: Reference(Procedure) [0..*]
+  + {field} Bildgebungsprozedur: Reference(Procedure) [0..1]
   + Bildgebungsgrund: string [0..1]
   + {field} Indikation: Reference(Condition|Observation) [0..*]
   + Studien-Beschreibung: string [0..1]
