@@ -24,9 +24,8 @@ Title: "MII Example Bildgebung Imaging Study PT"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[radionuclideTotalDose].valueQuantity.unit = "Becquerel"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[radionuclideHalfLife].valueQuantity.value = 6586.2
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[radionuclideHalfLife].valueQuantity.unit = "Seconds"
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller].extension[manufacturer].valueString = "Beispielhersteller" 
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller].extension[manufacturerModelName].valueString = "Beispielmodell"
 * series.uid = "series-example-uid"
+* series.performer.actor = Reference(Device/DevExample)
 * series.number = 1
 * series.modality = $DCM#PT "Positron emission tomography"
 * series.description = "PET WB"

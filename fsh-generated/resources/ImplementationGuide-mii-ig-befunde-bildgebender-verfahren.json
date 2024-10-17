@@ -82,14 +82,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
-        },
-        "name": "MII EX Bildgebung Gerät und Hersteller",
-        "description": "Die Extension ermöglicht es, Informationen zum verwendeten Gerät und dessen Hersteller auf Serien-Ebene anzugeben.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-ex-bildgebung-instanz-details"
         },
         "name": "MII EX Bildgebung Instanzdetails",
@@ -286,6 +278,14 @@
         },
         "name": "MII PR Bildgebung Bildgebungsstudie",
         "description": "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten auf Studien-, Serien- sowie Instanzen-Ebene der jeweiligen DICOM-Studie.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-bildgebung-geraet"
+        },
+        "name": "MII PR Bildgebung Gerät",
+        "description": "Dieses Profil beschreibt das genutzte Gerät in der radiologischer Bildgebung. Es bietet die Möglichkeit, Informationen über das Gerät strukturiert abzubilden.",
         "exampleBoolean": false
       },
       {

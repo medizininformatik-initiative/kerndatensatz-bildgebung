@@ -2,7 +2,6 @@
 [mii-cps-bildgebung-capabilitystatement-1x]: CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.html
 [MII_EX_Bildgebung_Bildgebungsgrund]: StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.html
 [MII_EX_Bildgebung_Serie_UID]: StructureDefinition-mii-ex-bildgebung-serie-uid.html
-[MII_EX_Bildgebung_Geraete_Hersteller]: StructureDefinition-mii-ex-bildgebung-geraet-hersteller.html
 [MII_EX_Bildgebung_Instanz_Details]: StructureDefinition-mii-ex-bildgebung-instanz-details.html
 [MII_EX_Bildgebung_Kontrastmittel]: StructureDefinition-mii-ex-bildgebung-kontrastmittel.html
 [MII_EX_Bildgebung_Modalitaet_CT]: StructureDefinition-mii-ex-bildgebung-modalitaet-ct.html
@@ -29,6 +28,7 @@
 [MII_PR_Bildgebung_Behandlungsempfehlung]: StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html
 [MII_PR_Bildgebung_Bildgebungsprozedur]: StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html
 [MII_PR_Bildgebung_Bildgebungsstudie]: StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html
+[MII_PR_Bildgebung_Geraet]: StructureDefinition-mii-pr-bildgebung-geraet.html
 [MII_PR_Bildgebung_Kontrastmittelgabe]: StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html
 [MII_PR_Bildgebung_Koerperstruktur]: StructureDefinition-mii-pr-bildgebung-koerperstruktur.html
 [MII_PR_Bildgebung_Radiologische_Befundungsprozedur]: StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html

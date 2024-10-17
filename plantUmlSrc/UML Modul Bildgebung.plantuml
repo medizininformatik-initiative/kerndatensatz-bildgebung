@@ -15,7 +15,7 @@ package "DICOM-Header" {
   + {field} Quelle zum PACS Bild: Reference(Endpoint) [0..*]
   + Anzahl an enhaltenen Serien: unsignedInt [0..1]
   + Anzahl an enthaltenen SOP Instanzen: unsignedInt [0..1]
-  + {field} Bildgebungsprozedur: Reference(Procedure) [0..1]
+  + {field} Bildgebungsprozedur: Reference(Procedure) [0..*]
   + Bildgebungsgrund: string [0..1]
   + {field} Indikation: Reference(Condition|Observation) [0..*]
   + Studien-Beschreibung: string [0..1]
@@ -208,7 +208,7 @@ legend left
     |<#lightyellow>    | Extensions|
 endlegend
 
-DICOMSerie "1..*" -l- "0..*" DICOMInstanz: ISt.series.instance
+DICOMSerie "1..1" -l- "0..*" DICOMInstanz: ISt.series.instance
 DICOMSerie "1..1" -u- "0..1" ModalitätMR
 DICOMSerie "1..1" -u- "0..1" ModalitätCT
 DICOMSerie "1..1" -u- "0..1" ModalitätDX
@@ -246,7 +246,7 @@ Studie "0..*" -- "0..1" Versorgungsstellenkontakt: ISt.encounter
 Studie "0..*" -- "1..1" "Patient:in": ISt.subject
 Studie "0..*" -d- "0..*" Anforderung: ISt.basedOn
 Studie "0..*" -- "0..1" Bildgebung: ISt.procedureReference
-Studie "1..*" -r---- "0..*" DICOMSerie: ISt.series
+Studie "1..1" -r---- "0..*" DICOMSerie: ISt.series
 
 Anforderung "0..*" -- "1..1" "Patient:in": SR.subject
 Anforderung "0..*" -- "0..1" Versorgungsstellenkontakt: SR.encounter

@@ -38,19 +38,6 @@
         {
           "extension": [
             {
-              "url": "manufacturer",
-              "valueString": "Siemens Healthineers"
-            },
-            {
-              "url": "manufacturerModelName",
-              "valueString": "MAGNETOM Vida"
-            }
-          ],
-          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
-        },
-        {
-          "extension": [
-            {
               "url": "contrastBolus",
               "valueBoolean": false
             }
@@ -98,6 +85,13 @@
             "system": "urn:ietf:rfc:3986"
           },
           "number": 28
+        }
+      ],
+      "performer": [
+        {
+          "actor": {
+            "reference": "Device/DevExample"
+          }
         }
       ],
       "uid": "series-example-uid",

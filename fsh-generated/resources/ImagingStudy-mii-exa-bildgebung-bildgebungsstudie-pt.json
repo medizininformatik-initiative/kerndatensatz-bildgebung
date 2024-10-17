@@ -52,19 +52,6 @@
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt"
-        },
-        {
-          "extension": [
-            {
-              "url": "manufacturer",
-              "valueString": "Beispielhersteller"
-            },
-            {
-              "url": "manufacturerModelName",
-              "valueString": "Beispielmodell"
-            }
-          ],
-          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller"
         }
       ],
       "instance": [
@@ -110,6 +97,13 @@
         }
       ],
       "uid": "series-example-uid",
+      "performer": [
+        {
+          "actor": {
+            "reference": "Device/DevExample"
+          }
+        }
+      ],
       "number": 1,
       "modality": {
         "code": "PT",

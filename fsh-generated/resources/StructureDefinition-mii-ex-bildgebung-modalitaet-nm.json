@@ -113,7 +113,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html"
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html"
         }
       },
       {
@@ -149,7 +149,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_18.html"
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_18.html"
         }
       },
       {
@@ -230,7 +230,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_84.html"
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_84.html"
         }
       },
       {

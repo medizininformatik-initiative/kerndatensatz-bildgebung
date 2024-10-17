@@ -45,7 +45,7 @@
     "fshType": "Instance",
     "fshFile": "instances\\Example-ImagingStudy-CR.fsh",
     "startLine": 1,
-    "endLine": 42
+    "endLine": 41
   },
   {
     "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.json",
@@ -53,7 +53,7 @@
     "fshType": "Instance",
     "fshFile": "instances\\Example-ImagingStudy-CT.fsh",
     "startLine": 1,
-    "endLine": 51
+    "endLine": 50
   },
   {
     "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.json",
@@ -61,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "instances\\Example-ImagingStudy-MR.fsh",
     "startLine": 1,
-    "endLine": 44
+    "endLine": 43
   },
   {
     "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json",
@@ -69,7 +69,7 @@
     "fshType": "Instance",
     "fshFile": "instances\\Example-ImagingStudy-PET.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 45
   },
   {
     "outputFile": "MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.json",
@@ -512,14 +512,6 @@
     "endLine": 18
   },
   {
-    "outputFile": "StructureDefinition-mii-ex-bildgebung-geraet-hersteller.json",
-    "fshName": "MII_EX_Bildgebung_Geraete_Hersteller",
-    "fshType": "Extension",
-    "fshFile": "extensions\\Extension-series-device.fsh",
-    "startLine": 2,
-    "endLine": 22
-  },
-  {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-instanz-details.json",
     "fshName": "MII_EX_Bildgebung_Instanz_Details",
     "fshType": "Extension",
@@ -597,7 +589,7 @@
     "fshType": "Logical",
     "fshFile": "logicals\\LogicalModelBildgebung.fsh",
     "startLine": 2,
-    "endLine": 180
+    "endLine": 181
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-TNM-radiologische-befundungsprozedur.json",
@@ -638,6 +630,14 @@
     "fshFile": "profiles\\Profile-ImagingStudy.fsh",
     "startLine": 2,
     "endLine": 68
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-bildgebung-geraet.json",
+    "fshName": "MII_PR_Bildgebung_Geraet",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Profile-Device.fsh",
+    "startLine": 2,
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",
