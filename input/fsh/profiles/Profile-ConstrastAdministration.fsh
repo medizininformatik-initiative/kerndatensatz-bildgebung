@@ -23,4 +23,5 @@ Description: "Dieses Profil bietet die Möglichkeit die Kontrastmittelgabe aus d
 * subject MS
 * subject only Reference(Patient)
 * effective[x] only Period
+* dosage 1..1 MS
 * dosage.dose 1..1 MS

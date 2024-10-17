@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-bildgebung-geraet",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet",
+  "version": "2025.0.0-ballot",
+  "name": "MII_PR_Bildgebung_Geraet",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_PR_Imaging_Device"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII PR Bildgebung Gerät",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII PR Imaging Device"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Dieses Profil beschreibt das genutzte Gerät in der radiologischer Bildgebung. Es bietet die Möglichkeit, Informationen über das Gerät strukturiert abzubilden.",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "The profile describes a device for radiological images."
+          }
+        ]
+      }
+    ]
+  },
+  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Device",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Device",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Device.id",
+        "path": "Device.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.meta",
+        "path": "Device.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.meta.source",
+        "path": "Device.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.meta.profile",
+        "path": "Device.meta.profile",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.manufacturer",
+        "path": "Device.manufacturer",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.deviceName",
+        "path": "Device.deviceName",
+        "mustSupport": true
+      }
+    ]
+  }
+}
