@@ -168,6 +168,13 @@
       },
       {
         "reference": {
+          "reference": "Device/mii-exa-bildgebung-geraet"
+        },
+        "name": "MII Example Bildgebung Device",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet"
+      },
+      {
+        "reference": {
           "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
         },
         "name": "MII Example Bildgebung Diagnostic Report",
@@ -558,22 +565,6 @@
         },
         "name": "mii-sp-bildgebung-imaging-study-series-magnetic-field-strength",
         "description": "Suchparameter für ImagingStudy.series.extension.magneticFieldStrength",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-manufacturer"
-        },
-        "name": "mii-sp-bildgebung-imaging-study-series-manufacturer",
-        "description": "ImagingStudy.series.extension.manufacturer",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-manufacturer-model-name"
-        },
-        "name": "mii-sp-bildgebung-imaging-study-series-manufacturer-model-name",
-        "description": "ImagingStudy.series.extension.manufacturerModelName",
         "exampleBoolean": false
       },
       {

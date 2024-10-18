@@ -32,6 +32,14 @@
     "endLine": 16
   },
   {
+    "outputFile": "Device-mii-exa-bildgebung-geraet.json",
+    "fshName": "mii-exa-bildgebung-geraet",
+    "fshType": "Instance",
+    "fshFile": "instances\\Example-Device.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
     "outputFile": "DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json",
     "fshName": "mii-exa-bildgebung-radiologischer-Befund",
     "fshType": "Instance",
@@ -310,22 +318,6 @@
     "fshFile": "searchparameters\\SearchParameter.fsh",
     "startLine": 367,
     "endLine": 386
-  },
-  {
-    "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-manufacturer-model-name.json",
-    "fshName": "mii-sp-bildgebung-imaging-study-series-manufacturer-model-name",
-    "fshType": "Instance",
-    "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 658,
-    "endLine": 675
-  },
-  {
-    "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-manufacturer.json",
-    "fshName": "mii-sp-bildgebung-imaging-study-series-manufacturer",
-    "fshType": "Instance",
-    "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 639,
-    "endLine": 656
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-number.json",
