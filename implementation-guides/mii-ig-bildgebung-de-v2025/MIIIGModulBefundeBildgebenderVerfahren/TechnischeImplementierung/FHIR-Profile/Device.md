@@ -77,6 +77,5 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 Beispiel einer Device-Ressource:
 
-TODO
-
+{{json:fsh-generated/resources/Device-mii-exa-bildgebung-geraet.json}}
 ---

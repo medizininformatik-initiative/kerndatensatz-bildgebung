@@ -13,6 +13,7 @@
 [mii-exa-bildgebung-koerperstruktur]: BodyStructure-mii-exa-bildgebung-koerperstruktur.html
 [mii-exa-bildgebung-behandlungsempfehlung]: CarePlan-mii-exa-bildgebung-behandlungsempfehlung.html
 [mii-exa-bildgebung-semistrukt-befundbericht]: Composition-mii-exa-bildgebung-semistrukt-befundbericht.html
+[mii-exa-bildgebung-geraet]: Device-mii-exa-bildgebung-geraet.html
 [mii-exa-bildgebung-radiologischer-Befund]: DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.html
 [mii-exa-bildgebung-bildgebungsprozedur]: Procedure-mii-exa-bildgebung-bildgebungsprozedur.html
 [mii-exa-bildgebung-bildgebungsstudie-cr]: ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.html
@@ -63,8 +64,6 @@
 [mii-sp-bildgebung-imaging-study-series-kvp]: SearchParameter-mii-sp-bildgebung-imaging-study-series-kvp.html
 [mii-sp-bildgebung-imaging-study-series-laterality]: SearchParameter-mii-sp-bildgebung-imaging-study-series-laterality.html
 [mii-sp-bildgebung-imaging-study-series-magnetic-field-strength]: SearchParameter-mii-sp-bildgebung-imaging-study-series-magnetic-field-strength.html
-[mii-sp-bildgebung-imaging-study-series-manufacturer]: SearchParameter-mii-sp-bildgebung-imaging-study-series-manufacturer.html
-[mii-sp-bildgebung-imaging-study-series-manufacturer-model-name]: SearchParameter-mii-sp-bildgebung-imaging-study-series-manufacturer-model-name.html
 [mii-sp-bildgebung-imaging-study-series-number]: SearchParameter-mii-sp-bildgebung-imaging-study-series-number.html
 [mii-sp-bildgebung-imaging-study-series-radionuclide]: SearchParameter-mii-sp-bildgebung-imaging-study-series-radionuclide.html
 [mii-sp-bildgebung-imaging-study-series-radionuclide-half-life]: SearchParameter-mii-sp-bildgebung-imaging-study-series-radionuclide-half-life.html

@@ -636,43 +636,43 @@ Usage: #definition
 * target[+] = #MedicationStatement
 * target[+] = #MedicationAdministration
 
-Instance: mii-sp-bildgebung-imaging-study-series-manufacturer
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-series-study-manufacturer"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Imaging_Study_Series_Manufacturer"
-* status = #active
-* experimental = false
-* date = "2024-08-30"
-* description = "ImagingStudy.series.extension.manufacturer"
-* code = #manufacturer
-* base = #ImagingStudy
-* type = #string
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturer').value"
-* modifier[+] = #contains
-* modifier[+] = #exact
-* modifier[+] = #missing
+// Instance: mii-sp-bildgebung-imaging-study-series-manufacturer
+// InstanceOf: SearchParameter
+// Usage: #definition
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-series-study-manufacturer"
+// * insert SP_Publisher
+// * insert Version
+// * name = "MII_SP_Bildgebung_Imaging_Study_Series_Manufacturer"
+// * status = #active
+// * experimental = false
+// * date = "2024-08-30"
+// * description = "ImagingStudy.series.extension.manufacturer"
+// * code = #manufacturer
+// * base = #ImagingStudy
+// * type = #string
+// * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturer').value"
+// * modifier[+] = #contains
+// * modifier[+] = #exact
+// * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-series-manufacturer-model-name
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-manufacturer-model-name"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Imaging_Study_Series_Manufacturer_Model_Name"
-* status = #active
-* experimental = false
-* date = "2024-08-30"
-* description = "ImagingStudy.series.extension.manufacturerModelName"
-* code = #manufacturer-model-name
-* base = #ImagingStudy
-* type = #string
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturerModelName').value"
-* modifier[+] = #contains
-* modifier[+] = #exact
-* modifier[+] = #missing
+// Instance: mii-sp-bildgebung-imaging-study-series-manufacturer-model-name
+// InstanceOf: SearchParameter
+// Usage: #definition
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-manufacturer-model-name"
+// * insert SP_Publisher
+// * insert Version
+// * name = "MII_SP_Bildgebung_Imaging_Study_Series_Manufacturer_Model_Name"
+// * status = #active
+// * experimental = false
+// * date = "2024-08-30"
+// * description = "ImagingStudy.series.extension.manufacturerModelName"
+// * code = #manufacturer-model-name
+// * base = #ImagingStudy
+// * type = #string
+// * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturerModelName').value"
+// * modifier[+] = #contains
+// * modifier[+] = #exact
+// * modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-series-number
 InstanceOf: SearchParameter
