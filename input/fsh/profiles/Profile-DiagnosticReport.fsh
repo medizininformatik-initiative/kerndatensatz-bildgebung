@@ -34,10 +34,10 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * category.coding contains
     loinc 0..1 and
     diagnostic-service-sections 0..1 and 
-    snomed-ct 1..1
-* category.coding[loinc] = $loinc#18748-4 "Diagnostic imaging study"
+    sct 1..1
+* category.coding[loinc] = $loinc#18748-4
 * category.coding[diagnostic-service-sections] = $DSS#RAD
-* category.coding[snomed-ct] = $SCT#4201000179104 "Imaging report"
+* category.coding[sct] = $SCT#4201000179104
 * code MS 
 * subject 1..1 MS
 * subject only Reference(Patient) 

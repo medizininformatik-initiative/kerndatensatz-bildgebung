@@ -20,7 +20,7 @@ Description: "Diese Profil beschreibt die radiologische Befundungsprozedur. Es l
 //Profile
 * status MS 
 * category 1..1 MS
-* category = $SCT#165197003 "Diagnostic assessment" (exactly)
+* category = $SCT#165197003
 * code MS
 * subject MS
 * subject only Reference(Patient)
