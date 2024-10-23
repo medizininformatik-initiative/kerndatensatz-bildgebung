@@ -20,3 +20,4 @@ Description: "Die Extension ermöglicht es, die Gabe von Kontrastmitteln auf Ser
     contrastBolusDetails 0..* 
 * extension[contrastBolus].value[x]  only boolean
 * extension[contrastBolusDetails].value[x] only Reference
+* extension[contrastBolusDetails].valueReference only Reference(MedicationAdministration or MedicationStatement)

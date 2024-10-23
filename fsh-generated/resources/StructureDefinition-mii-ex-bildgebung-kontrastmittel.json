@@ -139,7 +139,11 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+              "http://hl7.org/fhir/StructureDefinition/MedicationStatement"
+            ]
           }
         ]
       },
