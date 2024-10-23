@@ -26,7 +26,3 @@ Description: "Dieses Profil bietet die Möglichkeit die Kontrastmittelgabe aus d
 * effective[x] only Period
 * dosage 1..1 MS
 * dosage.dose 1..1 MS
-* dosage.dose.value MS
-* dosage.dose.unit MS
-* dosage.dose.system MS
-* dosage.dose.code MS
