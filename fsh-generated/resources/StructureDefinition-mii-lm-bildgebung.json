@@ -896,7 +896,7 @@
         "short": "Zusatzinformation",
         "definition": "Referenz auf weitere Befundberichte zum Patienten. Backport aus FHIR R5",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -1282,10 +1282,10 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Prozedur",
-        "path": "Bildgebung.Studie.Prozedur",
-        "short": "Prozedur",
-        "definition": "Referenz auf die dazugehörige medizinische Prozedur der Studie. Hier soll auf das MII KDS-Modul Prozedur referenziert werden.",
+        "id": "Bildgebung.Studie.Bildgebungsprozedur",
+        "path": "Bildgebung.Studie.Bildgebungsprozedur",
+        "short": "Bildgebungsprozedur",
+        "definition": "Referenz auf die dazugehörige bildgebende Prozedur der Studie. Hier soll auf das MII KDS-Modul Prozedur referenziert werden.",
         "min": 0,
         "max": "*",
         "type": [
@@ -1536,10 +1536,10 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Performer",
-        "path": "Bildgebung.Studie.Serien.Performer",
-        "short": "Performer der Serie",
-        "definition": "Performer der Serie",
+        "id": "Bildgebung.Studie.Serien.Ausführender",
+        "path": "Bildgebung.Studie.Serien.Ausführender",
+        "short": "Ausführender der Serie",
+        "definition": "Person oder Gerät das die Serie ausführt",
         "min": 0,
         "max": "*",
         "type": [
@@ -1555,8 +1555,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Performer.Funktion",
-        "path": "Bildgebung.Studie.Serien.Performer.Funktion",
+        "id": "Bildgebung.Studie.Serien.Ausführender.Funktion",
+        "path": "Bildgebung.Studie.Serien.Ausführender.Funktion",
         "short": "Funktion des Performers",
         "definition": "Funktion des Performers",
         "min": 0,
@@ -1574,8 +1574,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Performer.Akteur",
-        "path": "Bildgebung.Studie.Serien.Performer.Akteur",
+        "id": "Bildgebung.Studie.Serien.Ausführender.Akteur",
+        "path": "Bildgebung.Studie.Serien.Ausführender.Akteur",
         "short": "Geraet",
         "definition": "Genutztes Geraet in der Serie",
         "min": 1,
@@ -1610,7 +1610,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel/contrastBolus)"
           }
         ]
       },
@@ -1618,21 +1618,22 @@
         "id": "Bildgebung.Studie.Serien.Kontrastmitteldetails",
         "path": "Bildgebung.Studie.Serien.Kontrastmitteldetails",
         "short": "Kontrastmitteldetails",
-        "definition": "Details zur Kontrastmittelgabe über das MedicationStatement. Hier soll auf das MII KDS-Modul Medikation referenziert werden",
+        "definition": "Details zur Kontrastmittelgabe über das MedicationStatement oder MedicationAdministration. Hier soll auf das MII KDS-Modul Medikation referenziert werden",
         "min": 0,
         "max": "*",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/MedicationStatement"
+              "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+              "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
             ]
           }
         ],
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel/contrastBolusDetails)"
           }
         ]
       },
@@ -1673,7 +1674,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/KVP)"
           }
         ]
       },
@@ -1695,7 +1696,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/exposureTime)"
           }
         ]
       },
@@ -1717,7 +1718,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/exposure)"
           }
         ]
       },
@@ -1739,7 +1740,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/xRayTubeCurrent)"
           }
         ]
       },
@@ -1780,7 +1781,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/KVP)"
           }
         ]
       },
@@ -1802,7 +1803,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/exposureTime)"
           }
         ]
       },
@@ -1824,7 +1825,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/exposure)"
           }
         ]
       },
@@ -1846,7 +1847,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/xRayTubeCurrent)"
           }
         ]
       },
@@ -1887,7 +1888,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/KVP)"
           }
         ]
       },
@@ -1909,7 +1910,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/exposureTime)"
           }
         ]
       },
@@ -1931,7 +1932,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/exposure)"
           }
         ]
       },
@@ -1953,7 +1954,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/xRayTubeCurrent)"
           }
         ]
       },
@@ -1994,7 +1995,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct/CTDIvol)"
           }
         ]
       },
@@ -2016,7 +2017,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct/KVP)"
           }
         ]
       },
@@ -2038,7 +2039,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct/exposureTime)"
           }
         ]
       },
@@ -2060,7 +2061,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct/exposure)"
           }
         ]
       },
@@ -2082,7 +2083,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct/xRayTubeCurrent)"
           }
         ]
       },
@@ -2111,7 +2112,7 @@
         "short": "Scanning Sequenz",
         "definition": "Code der aktuellen Scanning Sequenz",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -2120,7 +2121,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr/scanningSequence)"
           }
         ]
       },
@@ -2139,7 +2140,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr/scanningSequenceVariant)"
           }
         ]
       },
@@ -2161,7 +2162,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr/magneticFieldStrength)"
           }
         ]
       },
@@ -2199,45 +2200,67 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt/radiopharmaceutical)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitaetPT.Applikationsstartzeit",
-        "path": "Bildgebung.Studie.Serien.ModalitaetPT.Applikationsstartzeit",
-        "short": "Applikationsstartzeit",
-        "definition": "Zeit des Beginn der Applikation des Radiopharmakons",
+        "id": "Bildgebung.Studie.Serien.ModalitaetPT.Radionuklid",
+        "path": "Bildgebung.Studie.Serien.ModalitaetPT.Radionuklid",
+        "short": "Radionuklid",
+        "definition": "Genutztes Radionuklid",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "dateTime"
+            "code": "CodeableConcept"
           }
         ],
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt/radionuclide)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitaetPT.Reskaliserungstyp",
-        "path": "Bildgebung.Studie.Serien.ModalitaetPT.Reskaliserungstyp",
-        "short": "Reskalierungstyp",
-        "definition": "Abkürzung des Reskalierungstypen",
+        "id": "Bildgebung.Studie.Serien.ModalitaetPT.TracerExpositionszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitaetPT.TracerExpositionszeit",
+        "short": "Tracer-Expositionszeit",
+        "definition": "Zeit die der Tracer im Körper einwirken konnte",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
           }
         ],
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt/tracerExposureTime)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetPT.Skalierungseinheit",
+        "path": "Bildgebung.Studie.Serien.ModalitaetPT.Skalierungseinheit",
+        "short": "Skalierungseinheit",
+        "definition": "Einheit die zur Skalierung genutzt wird",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt/units)"
           }
         ]
       },
@@ -2259,7 +2282,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt/radionuclideTotalDose)"
           }
         ]
       },
@@ -2281,7 +2304,26 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt/radionuclideHalfLife)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetPT.Serientyp",
+        "path": "Bildgebung.Studie.Serien.ModalitaetPT.Serientyp",
+        "short": "Serientyp",
+        "definition": "Angabe, um welchen Typ von Serie es sich handelt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/seriesType)"
           }
         ]
       },
@@ -2319,45 +2361,67 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/radiopharmaceutical)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitaetNM.Applikationsstartzeit",
-        "path": "Bildgebung.Studie.Serien.ModalitaetNM.Applikationsstartzeit",
-        "short": "Applikationsstartzeit",
-        "definition": "Zeit des Beginn der Applikation des Radiopharmakons",
+        "id": "Bildgebung.Studie.Serien.ModalitaetNM.Radionuklid",
+        "path": "Bildgebung.Studie.Serien.ModalitaetNM.Radionuklid",
+        "short": "Radionuklid",
+        "definition": "Genutztes Radionuklid",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "dateTime"
+            "code": "CodeableConcept"
           }
         ],
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/radionuclide)"
           }
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitaetNM.Reskaliserungstyp",
-        "path": "Bildgebung.Studie.Serien.ModalitaetNM.Reskaliserungstyp",
-        "short": "Reskalierungstyp",
-        "definition": "Abkürzung des Reskalierungstypen",
+        "id": "Bildgebung.Studie.Serien.ModalitaetNM.TracerExpositionszeit",
+        "path": "Bildgebung.Studie.Serien.ModalitaetNM.TracerExpositionszeit",
+        "short": "Tracer-Expositionszeit",
+        "definition": "Zeit die der Tracer im Körper einwirken konnte",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
           }
         ],
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/tracerExposureTime)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetNM.Skalierungseinheit",
+        "path": "Bildgebung.Studie.Serien.ModalitaetNM.Skalierungseinheit",
+        "short": "Skalierungseinheit",
+        "definition": "Einheit die zur Skalierung genutzt wird",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/units)"
           }
         ]
       },
@@ -2379,7 +2443,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/radionuclideTotalDose)"
           }
         ]
       },
@@ -2401,7 +2465,26 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt-nm)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/radionuclideHalfLife)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetNM.EnergiefensterMittelwert",
+        "path": "Bildgebung.Studie.Serien.ModalitaetNM.EnergiefensterMittelwert",
+        "short": "Energiefenster Mittelwert",
+        "definition": "Mittelwert der vorhandenen Energiefenster",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/energyWindowMean)"
           }
         ]
       },
@@ -2515,7 +2598,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details)"
+            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details/imageType)"
           }
         ]
       },
@@ -2537,7 +2620,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details)"
+            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details/sliceThickness)"
           }
         ]
       },
@@ -2559,7 +2642,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details)"
+            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details/pixelSpacingX)"
           }
         ]
       },
@@ -2581,7 +2664,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details)"
+            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details/pixelSpacingY)"
           }
         ]
       },
@@ -2705,7 +2788,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "Observation.staus"
+            "map": "Observation.status"
           }
         ]
       },
@@ -2913,6 +2996,29 @@
         ]
       },
       {
+        "id": "Bildgebung.Kontrastmittelgabe.TeilVon",
+        "path": "Bildgebung.Kontrastmittelgabe.TeilVon",
+        "short": "Teil von",
+        "definition": "Teil einer Prozedur oder einer Medikationsgabe",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "MedicationAdministration.partOf"
+          }
+        ]
+      },
+      {
         "id": "Bildgebung.Kontrastmittelgabe.Status",
         "path": "Bildgebung.Kontrastmittelgabe.Status",
         "short": "Status",
@@ -2987,7 +3093,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "MedicationAdministration.effective[x]"
+            "map": "MedicationAdministration.effectivePeriod"
           }
         ]
       },
@@ -2996,7 +3102,7 @@
         "path": "Bildgebung.Kontrastmittelgabe.Dosierung",
         "short": "Dosierung",
         "definition": "Dosierung der Medikation",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -3103,6 +3209,12 @@
         "type": [
           {
             "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Procedure.code"
           }
         ]
       },
@@ -3407,7 +3519,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+              "http://hl7.org/fhir/StructureDefinition/ImagingStudy"
             ]
           }
         ],

@@ -473,6 +473,14 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-modality-body-site"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-modality-body-site",
+        "description": "Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-number-instances"
         },
         "name": "mii-sp-bildgebung-imaging-study-number-instances",

@@ -22,7 +22,6 @@ Alias: $radiopharmaceutical_NM = http://dicom.nema.org/medical/dicom/current/out
 Alias: $radionuclide_NM = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_18.html
 Alias: $radionuclide_PET = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4020.html
 Alias: $units = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_84.html
-//Alias: $rescaleType = http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.11.html#sect_C.11.1.1.2
 Alias: $radiopharmaceutical = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html
 Alias: $modality = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html
 Alias: $laterality = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html

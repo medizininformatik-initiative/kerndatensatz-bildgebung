@@ -34,6 +34,6 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * value[x] MS
 * bodySite MS
 * hasMember MS
-* hasMember only Reference(MII_PR_Bildgebung_Radiologische_Beobachtung)
+* hasMember only Reference(Observation)
 * derivedFrom MS
 * component MS

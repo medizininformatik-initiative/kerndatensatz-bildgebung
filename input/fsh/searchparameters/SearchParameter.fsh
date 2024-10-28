@@ -158,6 +158,25 @@ Usage: #definition
 * modifier[+] = #missing
 
 //ImagingStudy
+Instance: mii-sp-bildgebung-imaging-study-modality-body-site
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-modality-body-site"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site"
+* status = #active
+* experimental = false
+* date = "2024-08-30"
+* description = "Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite"
+* code = #study-modality-body-site
+* base = #ImagingStudy
+* type = #composite
+* component[0].definition = "http://hl7.org/fhir/SearchParameter/ImagingStudy-modality"
+* component[=].expression = "modality"
+* component[+].definition = "http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite"
+* component[=].expression = "bodysite" 
+
 Instance: mii-sp-bildgebung-imaging-study-bildgebungsgrund
 InstanceOf: SearchParameter
 Usage: #definition
@@ -635,44 +654,6 @@ Usage: #definition
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolusDetails').value"
 * target[+] = #MedicationStatement
 * target[+] = #MedicationAdministration
-
-// Instance: mii-sp-bildgebung-imaging-study-series-manufacturer
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-series-study-manufacturer"
-// * insert SP_Publisher
-// * insert Version
-// * name = "MII_SP_Bildgebung_Imaging_Study_Series_Manufacturer"
-// * status = #active
-// * experimental = false
-// * date = "2024-08-30"
-// * description = "ImagingStudy.series.extension.manufacturer"
-// * code = #manufacturer
-// * base = #ImagingStudy
-// * type = #string
-// * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturer').value"
-// * modifier[+] = #contains
-// * modifier[+] = #exact
-// * modifier[+] = #missing
-
-// Instance: mii-sp-bildgebung-imaging-study-series-manufacturer-model-name
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-manufacturer-model-name"
-// * insert SP_Publisher
-// * insert Version
-// * name = "MII_SP_Bildgebung_Imaging_Study_Series_Manufacturer_Model_Name"
-// * status = #active
-// * experimental = false
-// * date = "2024-08-30"
-// * description = "ImagingStudy.series.extension.manufacturerModelName"
-// * code = #manufacturer-model-name
-// * base = #ImagingStudy
-// * type = #string
-// * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-geraet-hersteller').extension('manufacturerModelName').value"
-// * modifier[+] = #contains
-// * modifier[+] = #exact
-// * modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-series-number
 InstanceOf: SearchParameter

@@ -82,12 +82,11 @@
         "id": "Procedure.category",
         "path": "Procedure.category",
         "min": 1,
-        "fixedCodeableConcept": {
+        "patternCodeableConcept": {
           "coding": [
             {
               "code": "165197003",
-              "system": "http://snomed.info/sct",
-              "display": "Diagnostic assessment"
+              "system": "http://snomed.info/sct"
             }
           ]
         }
