@@ -182,6 +182,182 @@
         ]
       },
       {
+        "id": "Extension.extension:echoTime",
+        "path": "Extension.extension",
+        "sliceName": "echoTime",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:echoTime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:echoTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "echoTime"
+      },
+      {
+        "id": "Extension.extension:echoTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:echoTime.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "milliseconds"
+      },
+      {
+        "id": "Extension.extension:echoTime.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:echoTime.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "ms"
+      },
+      {
+        "id": "Extension.extension:repetitionTime",
+        "path": "Extension.extension",
+        "sliceName": "repetitionTime",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:repetitionTime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repetitionTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "repetitionTime"
+      },
+      {
+        "id": "Extension.extension:repetitionTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repetitionTime.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "milliseconds"
+      },
+      {
+        "id": "Extension.extension:repetitionTime.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:repetitionTime.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "ms"
+      },
+      {
+        "id": "Extension.extension:inversionTime",
+        "path": "Extension.extension",
+        "sliceName": "inversionTime",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:inversionTime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:inversionTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "inversionTime"
+      },
+      {
+        "id": "Extension.extension:inversionTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:inversionTime.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "milliseconds"
+      },
+      {
+        "id": "Extension.extension:inversionTime.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:inversionTime.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "ms"
+      },
+      {
+        "id": "Extension.extension:flipAngle",
+        "path": "Extension.extension",
+        "sliceName": "flipAngle",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:flipAngle.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:flipAngle.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "flipAngle"
+      },
+      {
+        "id": "Extension.extension:flipAngle.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:flipAngle.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "plane angle degree"
+      },
+      {
+        "id": "Extension.extension:flipAngle.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:flipAngle.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "deg"
+      },
+      {
         "id": "Extension.url",
         "path": "Extension.url",
         "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"

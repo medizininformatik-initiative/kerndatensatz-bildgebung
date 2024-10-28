@@ -18,11 +18,30 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension contains
     magneticFieldStrength 0..1 and
     scanningSequence 0..1 and
-    scanningSequenceVariant 0..1
+    scanningSequenceVariant 0..1 and
+    echoTime 0..1 and
+    repetitionTime 0..1 and
+    inversionTime 0..1 and
+    flipAngle 0..1
 * extension[magneticFieldStrength].value[x]  only SimpleQuantity
 * extension[magneticFieldStrength].valueQuantity.unit = "tesla" 
 * extension[magneticFieldStrength].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[magneticFieldStrength].valueQuantity.code = #T
 * extension[scanningSequence].value[x] only string //erstmal String bis Lösung für DICOM URLS gelöst
 * extension[scanningSequenceVariant].value[x] only string //erstmal String bis Lösung für DICOM URLS gelöst
-
+* extension[echoTime].value[x]  only SimpleQuantity
+* extension[echoTime].valueQuantity.unit = "milliseconds" 
+* extension[echoTime].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[echoTime].valueQuantity.code = #ms
+* extension[inversionTime].value[x]  only SimpleQuantity
+* extension[inversionTime].valueQuantity.unit = "milliseconds" 
+* extension[inversionTime].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[inversionTime].valueQuantity.code = #ms
+* extension[repetitionTime].value[x]  only SimpleQuantity
+* extension[repetitionTime].valueQuantity.unit = "milliseconds" 
+* extension[repetitionTime].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[repetitionTime].valueQuantity.code = #ms
+* extension[flipAngle].value[x]  only SimpleQuantity
+* extension[flipAngle].valueQuantity.unit = "plane angle degree"
+* extension[flipAngle].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[flipAngle].valueQuantity.code = #deg

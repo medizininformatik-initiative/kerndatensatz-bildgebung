@@ -69,7 +69,7 @@
           "reference": "StructureDefinition/mii-ex-bildgebung-bildgebungsgrund"
         },
         "name": "MII EX Bildgebung Bildgebungsgrund",
-        "description": "Die Extension ermöglicht es, den Bildgebungsgrund aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.",
+        "description": "Die Extension ermöglicht es, den Bildgebungsgrund aus dem entsprechenden DICOM Tag [0040,1002] auf Studien-Ebene anzugeben.",
         "exampleBoolean": false
       },
       {
@@ -529,6 +529,14 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-echo-time"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-echo-time",
+        "description": "Suchparameter für ImagingStudy.series.extension.echoTime",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-energy-window-mean"
         },
         "name": "mii-sp-bildgebung-imaging-study-series-energy-window-mean",
@@ -549,6 +557,22 @@
         },
         "name": "mii-sp-bildgebung-imaging-study-series-exposure-time",
         "description": "Suchparameter für ImagingStudy.series.extension.exposureTime",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-flip-angle"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-flip-angle",
+        "description": "Suchparameter für ImagingStudy.series.extension.flipAngle",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-inversion-time"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-inversion-time",
+        "description": "Suchparameter für ImagingStudy.series.extension.inversionTime",
         "exampleBoolean": false
       },
       {
@@ -613,6 +637,14 @@
         },
         "name": "mii-sp-bildgebung-imaging-study-series-radiopharmaceutical",
         "description": "Suchparameter für ImagingStudy.series.extension.radiopharmaceutical",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-repetition-time"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-repetition-time",
+        "description": "Suchparameter für ImagingStudy.series.extension.repetitionTime",
         "exampleBoolean": false
       },
       {

@@ -54,6 +54,10 @@ package "DICOM-Header" {
   + Scanning Sequenz: string [0..1]
   + Scanning Sequenz Untervariante: string [0..1]
   + Magnetische Feldstärke: Quantity[T] [0..1]
+  + Echozeit (TE): Quantity[ms] [0..1]
+  + Repetitionszeit (TR): Quantity[ms] [0..1]
+  + Inversionszeit (TI): Quantity[ms] [0..1]
+  + Kippwinkel: Quantity[deg] [0..1]
   }
 
   class ModalitätCT #LightYellow {
