@@ -36,6 +36,9 @@ Description: "Dieses Profil beschreibt die dargestellte Körperstrukturen nach M
 * insert Translation(patient ^definition, en-US, person\, who contains the described body structure)
 //Profile
 * morphology MS
+* morphology from $morphology (preferred)
 * location MS
+* location from $location (preferred)
 * locationQualifier MS
+* locationQualifier from $locQual (preferred)
 * patient MS

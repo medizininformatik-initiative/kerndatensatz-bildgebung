@@ -102,6 +102,10 @@
         "id": "BodyStructure.morphology",
         "path": "BodyStructure.morphology",
         "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-code"
+        },
         "_short": {
           "extension": [
             {
@@ -167,6 +171,10 @@
         "id": "BodyStructure.location",
         "path": "BodyStructure.location",
         "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/body-site"
+        },
         "_short": {
           "extension": [
             {
@@ -232,6 +240,10 @@
         "id": "BodyStructure.locationQualifier",
         "path": "BodyStructure.locationQualifier",
         "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-relative-location"
+        },
         "_short": {
           "extension": [
             {
