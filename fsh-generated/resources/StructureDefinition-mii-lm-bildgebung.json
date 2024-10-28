@@ -2121,7 +2121,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr/scanningSequence)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
           }
         ]
       },
@@ -2140,7 +2140,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr/scanningSequenceVariant)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
           }
         ]
       },
@@ -2162,7 +2162,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr/magneticFieldStrength)"
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
           }
         ]
       },

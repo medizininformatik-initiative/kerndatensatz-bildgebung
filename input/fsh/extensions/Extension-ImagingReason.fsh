@@ -7,7 +7,7 @@ Description: "Die Extension ermöglicht es, den Bildgebungsgrund aus dem entspre
 //Translation
 * insert Translation(^name, en-US, MII_EX_Imaging_Imaging_Reason)
 * insert Translation(^title, en-US, MII EX Imaging Imaging Reason)
-* insert Translation(^description, en-US, The extension allows specifying the reason for the imaging procedure from the corresponding DICOM tag [0040,1002] at the study level.)
+* insert Translation(^description, en-US, The extension allows specifying the reason for the imaging procedure from the corresponding DICOM tag [0040/1002] at the study level.)
 //Meta
 * insert PR_CS_VS_Version
 * insert KDS_Copyright

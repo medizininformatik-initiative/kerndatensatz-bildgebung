@@ -69,7 +69,7 @@
           "reference": "StructureDefinition/mii-ex-bildgebung-bildgebungsgrund"
         },
         "name": "MII EX Bildgebung Bildgebungsgrund",
-        "description": "Die Extension ermöglicht es, den Bildgebungsgrund aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.",
+        "description": "Die Extension ermöglicht es, den Bildgebungsgrund aus dem entsprechenden DICOM Tag [0040,1002] auf Studien-Ebene anzugeben.",
         "exampleBoolean": false
       },
       {
