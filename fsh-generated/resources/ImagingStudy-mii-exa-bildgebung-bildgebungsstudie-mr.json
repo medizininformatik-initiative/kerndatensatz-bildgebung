@@ -31,6 +31,34 @@
             {
               "url": "scanningSequenceVariant",
               "valueString": "SP, SK"
+            },
+            {
+              "valueQuantity": {
+                "unit": "milliseconds",
+                "value": 388
+              },
+              "url": "echoTime"
+            },
+            {
+              "valueQuantity": {
+                "unit": "milliseconds",
+                "value": 5000
+              },
+              "url": "repetitionTime"
+            },
+            {
+              "valueQuantity": {
+                "unit": "milliseconds",
+                "value": 900
+              },
+              "url": "inversionTime"
+            },
+            {
+              "valueQuantity": {
+                "unit": "plane angle degree",
+                "value": 130
+              },
+              "url": "flipAngle"
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"

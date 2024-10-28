@@ -2166,6 +2166,94 @@
         ]
       },
       {
+        "id": "Bildgebung.Studie.Serien.ModalitaetMR.Echozeit_TE",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMR.Echozeit_TE",
+        "short": "Echozeit (TE)",
+        "definition": "Zeitintervall zwischen der Anregung und der Messung des MR-Signals in ms",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetMR.Repetitionszeit_TR",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMR.Repetitionszeit_TR",
+        "short": "Repetitionszeit (TR)",
+        "definition": "Zeit, die bei der MRT zwischen zwei Anregungspulsen vergeht in ms",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetMR.Inversionszeit_TI",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMR.Inversionszeit_TI",
+        "short": "Inversionszeit (TI)",
+        "definition": "Zeit, die beim MRT zwischen dem 180°-Umkehrpuls und dem eigentlichen 90°-Anregungspuls vergeht in ms",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetMR.Kippwinkel",
+        "path": "Bildgebung.Studie.Serien.ModalitaetMR.Kippwinkel",
+        "short": "Kippwinkel",
+        "definition": "Ausmaß an Rotation in Winkelmaß (°)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+          }
+        ]
+      },
+      {
         "id": "Bildgebung.Studie.Serien.ModalitaetPT",
         "path": "Bildgebung.Studie.Serien.ModalitaetPT",
         "short": "Modalitaet PT",

@@ -58,9 +58,12 @@
 [mii-sp-bildgebung-imaging-study-series-contrast-bolus]: SearchParameter-mii-sp-bildgebung-imaging-study-series-contrast-bolus.html
 [mii-sp-bildgebung-imaging-study-series-contrast-bolus-details]: SearchParameter-mii-sp-bildgebung-imaging-study-series-contrast-bolus-details.html
 [mii-sp-bildgebung-imaging-study-series-ctdi-volume]: SearchParameter-mii-sp-bildgebung-imaging-study-series-ctdi-volume.html
+[mii-sp-bildgebung-imaging-study-series-echo-time]: SearchParameter-mii-sp-bildgebung-imaging-study-series-echo-time.html
 [mii-sp-bildgebung-imaging-study-series-energy-window-mean]: SearchParameter-mii-sp-bildgebung-imaging-study-series-energy-window-mean.html
 [mii-sp-bildgebung-imaging-study-series-exposure]: SearchParameter-mii-sp-bildgebung-imaging-study-series-exposure.html
 [mii-sp-bildgebung-imaging-study-series-exposure-time]: SearchParameter-mii-sp-bildgebung-imaging-study-series-exposure-time.html
+[mii-sp-bildgebung-imaging-study-series-flip-angle]: SearchParameter-mii-sp-bildgebung-imaging-study-series-flip-angle.html
+[mii-sp-bildgebung-imaging-study-series-inversion-time]: SearchParameter-mii-sp-bildgebung-imaging-study-series-inversion-time.html
 [mii-sp-bildgebung-imaging-study-series-kvp]: SearchParameter-mii-sp-bildgebung-imaging-study-series-kvp.html
 [mii-sp-bildgebung-imaging-study-series-laterality]: SearchParameter-mii-sp-bildgebung-imaging-study-series-laterality.html
 [mii-sp-bildgebung-imaging-study-series-magnetic-field-strength]: SearchParameter-mii-sp-bildgebung-imaging-study-series-magnetic-field-strength.html
@@ -69,6 +72,7 @@
 [mii-sp-bildgebung-imaging-study-series-radionuclide-half-life]: SearchParameter-mii-sp-bildgebung-imaging-study-series-radionuclide-half-life.html
 [mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose]: SearchParameter-mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose.html
 [mii-sp-bildgebung-imaging-study-series-radiopharmaceutical]: SearchParameter-mii-sp-bildgebung-imaging-study-series-radiopharmaceutical.html
+[mii-sp-bildgebung-imaging-study-series-repetition-time]: SearchParameter-mii-sp-bildgebung-imaging-study-series-repetition-time.html
 [mii-sp-bildgebung-imaging-study-series-scanning-sequence]: SearchParameter-mii-sp-bildgebung-imaging-study-series-scanning-sequence.html
 [mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant]: SearchParameter-mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant.html
 [mii-sp-bildgebung-imaging-study-series-series-type]: SearchParameter-mii-sp-bildgebung-imaging-study-series-series-type.html
