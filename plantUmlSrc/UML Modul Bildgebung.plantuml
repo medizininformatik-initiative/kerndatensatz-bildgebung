@@ -1,4 +1,4 @@
-@startuml
+@startuml UML Modul Bildgebung
 skinparam Linetype ortho
 skinparam Nodesep 150
 skinparam Ranksep 80
@@ -87,19 +87,22 @@ package "DICOM-Header" {
 
   class ModalitätNM #LightYellow {
   + Radiopharmakon: CodeableConcept [0..1]
-  + Applikationsstartzeit: dateTime [0..1]
-  + Applikationsstopzeit: dateTime [0..1]
-  + Reskalierungstyp: String [0..1]
+  + Radionuklid: CodeableConcept [0..1]
+  + Tracer Expositionszeit: Quantity[s] [0..1]
+  + Skalierungseinheit: CodeableConcept [0..1]
   + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
   + Halbwertszeit: Quantity[s] [0..1]
+  + Energiefenstermittelwert: Quantity[keV] [0..1]
   } 
 
   class ModalitätPT #LightYellow {
   + Radiopharmakon: CodeableConcept [0..1]
-  + Applikationsstartzeit: dateTime [0..1]
-  + Reskalierungstyp: String [0..1]
+  + Radionuklid: CodeableConcept [0..1]
+  + Tracer Expositionszeit: Quantity[s] [0..1]
+  + Skalierungseinheit: CodeableConcept [0..1]
   + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
   + Halbwertszeit: Quantity[s] [0..1]
+  + Serientyp: String [0..1]
   }
 }
 
@@ -216,6 +219,7 @@ DICOMSerie "1..1" -d- "0..1" ModalitätCR
 DICOMSerie "1..1" -d- "0..1" ModalitätMG
 DICOMSerie "1..1" -d- "0..1" ModalitätNM
 DICOMSerie "1..1" -d- "0..1" ModalitätPT
+DICOMSerie "0..1" -- "0..1" Kontrastmittelgabe_Medikationsgabe: ISt.series.extension(Kontrastdetails)
 
 Bildgebung "0..*" -- "0..*" Anforderung: Pr.basedOn
 Bildgebung -[hidden]u- Vorbefund
