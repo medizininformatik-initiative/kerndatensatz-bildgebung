@@ -47,7 +47,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * effectivePeriod MS
 * issued MS
 * result MS
-* result only Reference(MII_PR_Bildgebung_Radiologische_Beobachtung) 
+* result only Reference(Observation) 
 * imagingStudy 1.. MS
 * imagingStudy only Reference(MII_PR_Bildgebung_Bildgebungsstudie)
 * conclusion MS
