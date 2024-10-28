@@ -18,6 +18,7 @@ Description: "Dieses Profil bietet die Möglichkeit die Kontrastmittelgabe aus d
 * meta.source MS
 * meta.profile MS
 //Profile
+* partOf MS
 * status MS
 * medication[x] MS
 * subject MS
