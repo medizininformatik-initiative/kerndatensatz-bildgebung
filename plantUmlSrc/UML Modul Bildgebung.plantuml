@@ -15,8 +15,8 @@ package "DICOM-Header" {
   + {field} Quelle zum PACS Bild: Reference(Endpoint) [0..*]
   + Anzahl an enhaltenen Serien: unsignedInt [0..1]
   + Anzahl an enthaltenen SOP Instanzen: unsignedInt [0..1]
-  + {field} Bildgebungsprozedur: Reference(Procedure) [0..1]
-  + Bildgebungsgrund: string [0..1]
+  + {field} Bildgebungsprozedur: Reference(Procedure) [0..*]
+  + Extension: Bildgebungsgrund: string [0..1]
   + {field} Indikation: Reference(Condition|Observation) [0..*]
   + Studien-Beschreibung: string [0..1]
   + DICOM-Serien: DICOM-Serie [0..*]
@@ -31,8 +31,8 @@ package "DICOM-Header" {
   + {field} Körperregion(bodySite): Coding [0..1]
   + Körperseite: Coding [0..1]
   + Beginn: dateTime [0..1]
-  + Extension: Hersteller: string [0..1]
-  + Extension: Modell: string [0..1]
+  + Funktion des Ausführenden: CodeableConcept [0..1]
+  + {field} Akteur: Reference(Device) [1..1]
   + Extension: Kontrastmittelgabe: boolean [0..1]
   + {field} Extension: Kontrastmitteldetails: Reference(MII_PR_Medikation_MedicationStatement) [0..*]
   + {field} Extension: Modalitäten(DX,CR,MG,CT,MR,PT,NM) [0..1]
@@ -92,7 +92,7 @@ package "DICOM-Header" {
   + Skalierungseinheit: CodeableConcept [0..1]
   + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
   + Halbwertszeit: Quantity[s] [0..1]
-  + Energiefenstermittelwert: Quantity[keV] [0..1]
+  + Energiefenster Mittelwert: Quantity[keV] [0..1]
   } 
 
   class ModalitätPT #LightYellow {
@@ -142,7 +142,7 @@ package "Befund" {
   + {field} Studienbezug: Reference(ImagingStudy) [1..*]
   + Interpretation der Beobachtung: markdown [0..1]
   + strukturierte Interpretation: CodeableConcept [0..*]
-  + {field} Zusatzinformation: Reference(DiagnosticReport|Procedure) [0..1]
+  + {field} Zusatzinformation: Reference(DiagnosticReport|Procedure) [0..*]
   + {field} Dokumentenanhang: Attachment [0..*]
   }
   
@@ -166,7 +166,7 @@ package "Befund" {
     + {field} Personen-Identifikation: Reference(Patient) [1..1]
     + Beobachtungszeitpunkt: issued [0..1]
     + Beschreibung: value[x] [0..1]
-    + {field} Körperregion(bodySite): CodeableConcept [0..1]
+    + {field} Körperregion: CodeableConcept [0..1]
     + {field} weitere Beobachtung: Reference(Observation) [0..*]
     + {field} Studienbezug: Reference(ImagingStudy) [0..*]
     + erweiterte Beschreibung: component [0..*]
@@ -177,6 +177,7 @@ package "Befund" {
     class SemistrukturiertesBefunddokument <<Composition>>{
     + Status: Coding [1..1]
     + Typ: CodeableConcept [1..1]
+    + {field} Personen-Identifikation: Reference(Patient) [1..1]
     + Datum und Uhrzeit der Bearbeitung: DateTime [1..1]
     + {field} Autor: Reference(Practitioner) [1..*]
     + Titel: String [1..1]
