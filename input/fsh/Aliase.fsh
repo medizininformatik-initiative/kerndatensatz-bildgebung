@@ -3,6 +3,9 @@ Alias: $exp = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expect
 Alias: $reasonCode = http://hl7.org/fhir/ValueSet/procedure-reason
 Alias: $bodySite = http://hl7.org/fhir/ValueSet/body-site
 Alias: $performerFunction = http://hl7.org/fhir/ValueSet/series-performer-function
+Alias: $morphology = http://hl7.org/fhir/ValueSet/bodystructure-code
+Alias: $location = http://hl7.org/fhir/ValueSet/body-site
+Alias: $locQual = http://hl7.org/fhir/ValueSet/bodystructure-relative-location
 //MII-Profile
 Alias: $miiProcedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
 Alias: $miiMedicationAdministration = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration
