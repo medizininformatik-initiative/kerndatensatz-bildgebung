@@ -661,7 +661,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-ImagingProcedure.fsh",
     "startLine": 2,
-    "endLine": 37
+    "endLine": 62
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.json",
@@ -669,7 +669,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-ImagingStudy.fsh",
     "startLine": 2,
-    "endLine": 68
+    "endLine": 173
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-geraet.json",
@@ -717,7 +717,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-DiagnosticReport.fsh",
     "startLine": 2,
-    "endLine": 102
+    "endLine": 118
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.json",
