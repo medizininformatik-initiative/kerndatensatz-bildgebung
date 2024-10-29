@@ -10,4 +10,4 @@ Description: "This Valueset contains the snomed codes of the different TNM tumor
 * ^experimental = false
 * ^status = #draft
 * ^date = "2024-08-30"
-* include codes from system $SCT where concept descendent-of #254293002
+* include codes from system $SCT where constraint = "(< 254293002 ||"

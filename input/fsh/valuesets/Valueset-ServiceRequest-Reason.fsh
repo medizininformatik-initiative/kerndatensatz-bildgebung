@@ -8,4 +8,4 @@ Description: "Imports the ValueSet for clinical findings"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 * ^date = "2024-08-30"
-* include codes from system $SCT where concept descendent-of #404684003 "Clinical finding (finding)"
+* include codes from system $SCT where constraint = "(< 404684003 |Clinical finding (finding)|"
