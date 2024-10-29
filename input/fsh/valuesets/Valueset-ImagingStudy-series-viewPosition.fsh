@@ -8,5 +8,5 @@ Description: "Import the ValueSets for view position in MG and DX/CR series"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 * ^date = "2024-08-30"
-* include codes from valueset http://dicom.nema.org/medical/dicom/2018d/output/chtml/part16/sect_CID_4014.html
-* include codes from valueset http://dicom.nema.org/medical/dicom/2018d/output/chtml/part16/sect_CID_4010.html
+* include codes from valueset http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html
+* include codes from valueset http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4010.html
