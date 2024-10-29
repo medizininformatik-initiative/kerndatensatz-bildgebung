@@ -381,7 +381,30 @@ Usage: #definition
 * comparator[+] = #gt 
 * comparator[+] = #lt
 * comparator[+] = #ge 
-* comparator[+] = #le 
+* comparator[+] = #le
+
+Instance: mii-sp-bildgebung-imaging-study-series-viewposition
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-viewposition"
+* insert SP_Publisher
+* insert Version
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_viewposition"
+* status = #active
+* experimental = false
+* date = "2024-08-30"
+* description = "Suchparameter für ImagingStudy.series.extension.viewposition"
+* code = #viewposition
+* base = #ImagingStudy
+* type = #token
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-viewposition').extension('KVP').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('KVP').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+* modifier[+] = #missing 
 
 Instance: mii-sp-bildgebung-imaging-study-series-magnetic-field-strength
 InstanceOf: SearchParameter

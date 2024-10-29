@@ -262,6 +262,36 @@
         "patternCode": "mA"
       },
       {
+        "id": "Extension.extension:viewPosition",
+        "path": "Extension.extension",
+        "sliceName": "viewPosition",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:viewPosition.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:viewPosition.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "viewPosition"
+      },
+      {
+        "id": "Extension.extension:viewPosition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-viewPosition"
+        }
+      },
+      {
         "id": "Extension.url",
         "path": "Extension.url",
         "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx"

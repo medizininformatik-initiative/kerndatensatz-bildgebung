@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "capabilitystatements\\CapabilityStatement-1x.fsh",
     "startLine": 31,
-    "endLine": 292
+    "endLine": 297
   },
   {
     "outputFile": "CarePlan-mii-exa-bildgebung-behandlungsempfehlung.json",
@@ -180,40 +180,40 @@
     "fshName": "mii-sp-bildgebung-imaging-study-instance-image-type",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 865,
-    "endLine": 882
+    "startLine": 888,
+    "endLine": 905
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-instance-number.json",
     "fshName": "mii-sp-bildgebung-imaging-study-instance-number",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 884,
-    "endLine": 903
+    "startLine": 907,
+    "endLine": 926
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-instance-pixel-x.json",
     "fshName": "mii-sp-bildgebung-imaging-study-instance-pixel-x",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 802,
-    "endLine": 821
+    "startLine": 825,
+    "endLine": 844
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-instance-pixel-y.json",
     "fshName": "mii-sp-bildgebung-imaging-study-instance-pixel-y",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 823,
-    "endLine": 842
+    "startLine": 846,
+    "endLine": 865
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-instance-slice-thickness.json",
     "fshName": "mii-sp-bildgebung-imaging-study-instance-slice-thickness",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 844,
-    "endLine": 863
+    "startLine": 867,
+    "endLine": 886
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-modality-body-site.json",
@@ -260,16 +260,16 @@
     "fshName": "mii-sp-bildgebung-imaging-study-series-contrast-bolus-details",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 724,
-    "endLine": 740
+    "startLine": 747,
+    "endLine": 763
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-contrast-bolus.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-contrast-bolus",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 701,
-    "endLine": 722
+    "startLine": 724,
+    "endLine": 745
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-ctdi-volume.json",
@@ -284,16 +284,16 @@
     "fshName": "mii-sp-bildgebung-imaging-study-series-echo-time",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 445,
-    "endLine": 464
+    "startLine": 468,
+    "endLine": 487
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-energy-window-mean.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-energy-window-mean",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 680,
-    "endLine": 699
+    "startLine": 703,
+    "endLine": 722
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-exposure-time.json",
@@ -316,16 +316,16 @@
     "fshName": "mii-sp-bildgebung-imaging-study-series-flip-angle",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 508,
-    "endLine": 527
+    "startLine": 531,
+    "endLine": 550
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-inversion-time.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-inversion-time",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 487,
-    "endLine": 506
+    "startLine": 510,
+    "endLine": 529
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-kvp.json",
@@ -340,112 +340,120 @@
     "fshName": "mii-sp-bildgebung-imaging-study-series-laterality",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 763,
-    "endLine": 784
+    "startLine": 786,
+    "endLine": 807
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-magnetic-field-strength.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-magnetic-field-strength",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 386,
-    "endLine": 405
+    "startLine": 409,
+    "endLine": 428
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-number.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-number",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 742,
-    "endLine": 761
+    "startLine": 765,
+    "endLine": 784
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-radionuclide-half-life.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-radionuclide-half-life",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 640,
-    "endLine": 659
+    "startLine": 663,
+    "endLine": 682
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 619,
-    "endLine": 638
+    "startLine": 642,
+    "endLine": 661
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-radionuclide.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-radionuclide",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 552,
-    "endLine": 573
+    "startLine": 575,
+    "endLine": 596
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-radiopharmaceutical.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-radiopharmaceutical",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 529,
-    "endLine": 550
+    "startLine": 552,
+    "endLine": 573
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-repetition-time.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-repetition-time",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 466,
-    "endLine": 485
+    "startLine": 489,
+    "endLine": 508
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 426,
-    "endLine": 443
+    "startLine": 449,
+    "endLine": 466
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-scanning-sequence.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-scanning-sequence",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 407,
-    "endLine": 424
+    "startLine": 430,
+    "endLine": 447
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-series-type.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-series-type",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 661,
-    "endLine": 678
+    "startLine": 684,
+    "endLine": 701
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-started.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-started",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 786,
-    "endLine": 800
+    "startLine": 809,
+    "endLine": 823
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-tracer-exposure-time.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-tracer-exposure-time",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 575,
-    "endLine": 594
+    "startLine": 598,
+    "endLine": 617
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-units.json",
     "fshName": "mii-sp-bildgebung-imaging-study-series-units",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 596,
-    "endLine": 617
+    "startLine": 619,
+    "endLine": 640
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-viewposition.json",
+    "fshName": "mii-sp-bildgebung-imaging-study-series-viewposition",
+    "fshType": "Instance",
+    "fshFile": "searchparameters\\SearchParameter.fsh",
+    "startLine": 386,
+    "endLine": 407
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-imaging-study-series-xray-tube-current.json",
@@ -460,48 +468,48 @@
     "fshName": "mii-sp-bildgebung-observation-body-site",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 985,
-    "endLine": 1006
+    "startLine": 1008,
+    "endLine": 1029
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-body-structure.json",
     "fshName": "mii-sp-bildgebung-observation-body-structure",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 952,
-    "endLine": 967
+    "startLine": 975,
+    "endLine": 990
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-issued.json",
     "fshName": "mii-sp-bildgebung-observation-issued",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 969,
-    "endLine": 983
+    "startLine": 992,
+    "endLine": 1006
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-series-uid.json",
     "fshName": "mii-sp-bildgebung-observation-series-uid",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 906,
-    "endLine": 927
+    "startLine": 929,
+    "endLine": 950
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-observation-sop-instance-uid.json",
     "fshName": "mii-sp-bildgebung-observation-sop-instance-uid",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 929,
-    "endLine": 950
+    "startLine": 952,
+    "endLine": 973
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-read-proc-report.json",
     "fshName": "mii-sp-bildgebung-read-proc-report",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 1009,
-    "endLine": 1026
+    "startLine": 1032,
+    "endLine": 1049
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-reason-reference.json",
@@ -516,8 +524,8 @@
     "fshName": "mii-sp-bildgebung-service-request-reason-code",
     "fshType": "Instance",
     "fshFile": "searchparameters\\SearchParameter.fsh",
-    "startLine": 1029,
-    "endLine": 1050
+    "startLine": 1052,
+    "endLine": 1073
   },
   {
     "outputFile": "SearchParameter-mii-sp-bildgebung-supporting-info.json",
@@ -573,7 +581,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\Extension-Modality-MG_CR_DX.fsh",
     "startLine": 2,
-    "endLine": 38
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-modalitaet-mr.json",
@@ -621,7 +629,7 @@
     "fshType": "Logical",
     "fshFile": "logicals\\LogicalModelBildgebung.fsh",
     "startLine": 2,
-    "endLine": 190
+    "endLine": 191
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-TNM-radiologische-befundungsprozedur.json",
@@ -709,7 +717,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-DiagnosticReport.fsh",
     "startLine": 2,
-    "endLine": 64
+    "endLine": 65
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.json",
@@ -718,6 +726,22 @@
     "fshFile": "profiles\\Profile-Composition.fsh",
     "startLine": 2,
     "endLine": 66
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-bildgebung-diagnostic-report-coding.json",
+    "fshName": "MII_VS_Bildgebung_Diagnostic_Report_Coding",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\Valueset-DiagnosticReport-ConclusionCoding.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-bildgebung-imagingStudy-series-viewPosition.json",
+    "fshName": "MII_VS_Bildgebung_ImagingStudy_series_viewPosition",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\Valueset-ImagingStudy-series-viewPosition.fsh",
+    "startLine": 1,
+    "endLine": 12
   },
   {
     "outputFile": "ValueSet-mii-vs-bildgebung-service-request-coding.json",

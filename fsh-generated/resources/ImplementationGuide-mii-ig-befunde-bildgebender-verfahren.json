@@ -353,6 +353,22 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-diagnostic-report-coding"
+        },
+        "name": "MII VS Bildgebung DiagnosticReport Coding",
+        "description": "Import the ValueSet for Diagnostic Reports",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-imagingStudy-series-viewPosition"
+        },
+        "name": "MII VS Bildgebung ImagingStudy-Series View Position",
+        "description": "Import the ValueSets for view position in MG and DX/CR series",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-bildgebung-service-request-coding"
         },
         "name": "MII VS Bildgebung ServiceRequest Coding",
@@ -693,6 +709,14 @@
         },
         "name": "mii-sp-bildgebung-imaging-study-series-units",
         "description": "Suchparameter für ImagingStudy.series.extension.units",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-viewposition"
+        },
+        "name": "mii-sp-bildgebung-imaging-study-series-viewposition",
+        "description": "Suchparameter für ImagingStudy.series.extension.viewposition",
         "exampleBoolean": false
       },
       {

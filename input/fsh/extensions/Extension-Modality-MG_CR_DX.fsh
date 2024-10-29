@@ -19,7 +19,8 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     KVP 0..1 and
     exposureTime 0..1 and 
     exposure 0..1 and
-    xRayTubeCurrent 0..1 
+    xRayTubeCurrent 0..1 and
+    viewPosition 0..1
 * extension[KVP].value[x] only SimpleQuantity
 * extension[KVP].valueQuantity.unit = "kilovolt" 
 * extension[KVP].valueQuantity.system = "http://unitsofmeasure.org"
@@ -36,3 +37,5 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[xRayTubeCurrent].valueQuantity.unit = "milliampere" 
 * extension[xRayTubeCurrent].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[xRayTubeCurrent].valueQuantity.code = #mA
+* extension[viewPosition].value[x] only CodeableConcept
+* extension[viewPosition].valueCodeableConcept from MII_VS_Bildgebung_ImagingStudy_series_viewPosition (preferred)

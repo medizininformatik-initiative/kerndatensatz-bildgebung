@@ -26,3 +26,5 @@ Alias: $radiopharmaceutical = http://dicom.nema.org/medical/dicom/current/output
 Alias: $modality = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html
 Alias: $laterality = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html
 Alias: $sop-class = http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html
+Alias: $view-position = http://dicom.nema.org/medical/dicom/2018d/output/chtml/part16/sect_CID_4014.html
+Alias: $view-position_DX = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4010.html

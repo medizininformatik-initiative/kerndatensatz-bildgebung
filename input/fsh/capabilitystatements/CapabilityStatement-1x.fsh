@@ -169,10 +169,15 @@ Usage: #definition
 * insert SupportSearchParam(exposure, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure, #quantity, #SHALL)
 * insert SupportSearchParam(x-ray-tube-current, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current, #quantity, #SHALL)
 * insert SupportSearchParam(kvp, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-kvp, #quantity, #SHALL)
+* insert SupportSearchParam(viewposition, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-viewposition, #token, #SHALL)
 //Extension MR
 * insert SupportSearchParam(magnetic-field-strength, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-magnetic-field-strength, #quantity, #SHALL)
 * insert SupportSearchParam(scanning-sequence, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence, #string, #SHALL)
 * insert SupportSearchParam(scanning-sequence-variant, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant, #string, #SHALL)
+* insert SupportSearchParam(echo-time, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-echo-time, #quantity, #SHALL)
+* insert SupportSearchParam(repetition-time, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-repetition-time, #quantity, #SHALL)
+* insert SupportSearchParam(inversion-time, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-inversion-time, #quantity, #SHALL)
+* insert SupportSearchParam(flip-angle, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-flip-angle, #quantity, #SHALL)
 //Extension PT & NM
 * insert SupportSearchParam(radiopharmaceutical, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical, #token, #SHALL)
 * insert SupportSearchParam(radionuclide, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide, #token, #SHALL)
