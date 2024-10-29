@@ -20,11 +20,9 @@ Zur Modellierung wurde die ImagingStudy analog in drei Teilmodule strukturiert:
 Dafür wurde sich an der internationalen FHIR-Ressource "ImagingStudy" (https://hl7.org/fhir/R4/imagingstudy.html) orientiert und überlegt, welche Elemente für die Medizininformatik-Initiative relevant sind. Es wurde außerdem diskutiert, welche weiteren DICOM-Metadaten von Interesse sind, die im Profil abgebildet werden sollen.
 
 Ergänzt wurden vorrangig modalitätsspezifische Attribute auf Serien-Ebene. Diese sollen dazu beitragen, einen tieferen technischen Einblick in die jeweilige genutzte Modalität zu erlangen.
-• Bei den röntgenbasierten Modalitäten (DX, CT, MG, CR) werden die Werte der
-Röntgenröhrenspannung und des Röntgenröhrenstroms abgebildet sowie die Werte der
-Exposition und der Expositionszeit.
-• Die nuklearmedizinischen Modalitäten (NM und PET) beinhalten Dosis und weitere Informationen zum applizierten Radiopharmakon sowie dem Reskalierungstypen.
-• Bei der Modalität MR werden die Scanning Sequence und Variant sowie die genutzte magnetische Feldstärke abgebildet.
+* Bei den röntgenbasierten Modalitäten (DX, CT, MG, CR) werden die Werte der Röntgenröhrenspannung und des Röntgenröhrenstroms abgebildet sowie die Werte der Exposition und der Expositionszeit und der Blickposition.
+* Die nuklearmedizinischen Modalitäten (NM und PET) beinhalten Dosis und weitere Informationen zum applizierten Radiopharmakon, Radionuklid und Tracer.
+* Bei der Modalität MR werden die Scanning Sequence und Variant sowie die genutzte magnetische Feldstärke und die Zeitintervalle TE, TR und TI abgebildet.
 
 Im Moment werden diese sieben Modalitäten (MR, CT, DX, CR, MG, NM und PET) im Teilmodul betrachtet und es ist geplant, in einem stufenweisen Verfahren, in Zukunft auch weitere modalitätsspezifische Attribute anderer Modalitäten zu spezifizieren.
 

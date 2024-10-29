@@ -362,6 +362,14 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.conclusionCode.coding:sct.code",
+        "path": "DiagnosticReport.conclusionCode.coding.code",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-coding"
+        }
+      },
+      {
         "id": "DiagnosticReport.presentedForm",
         "path": "DiagnosticReport.presentedForm",
         "mustSupport": true

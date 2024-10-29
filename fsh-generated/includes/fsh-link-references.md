@@ -37,6 +37,8 @@
 [MII_PR_Bildgebung_Radiologischer_Befund]: StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html
 [MII_PR_Bildgebung_Semistrukt_Befundbericht]: StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html
 [MII_PR_Bildgebung_TNM_Radiologische_Befundungsprozedur]: StructureDefinition-mii-pr-bildgebung-TNM-radiologische-befundungsprozedur.html
+[MII_VS_Bildgebung_Diagnostic_Report_Coding]: ValueSet-mii-vs-bildgebung-diagnostic-report-coding.html
+[MII_VS_Bildgebung_ImagingStudy_series_viewPosition]: ValueSet-mii-vs-bildgebung-imagingStudy-series-viewPosition.html
 [MII_VS_Bildgebung_Service_Request_Coding]: ValueSet-mii-vs-bildgebung-service-request-coding.html
 [MII_VS_Bildgebung_Service_Request_Reason]: ValueSet-mii-vs-bildgebung-service-request-reason.html
 [mii-sp-bildgebung-body-structure-location-qualifier]: SearchParameter-mii-sp-bildgebung-body-structure-location-qualifier.html
@@ -80,6 +82,7 @@
 [mii-sp-bildgebung-imaging-study-series-started]: SearchParameter-mii-sp-bildgebung-imaging-study-series-started.html
 [mii-sp-bildgebung-imaging-study-series-tracer-exposure-time]: SearchParameter-mii-sp-bildgebung-imaging-study-series-tracer-exposure-time.html
 [mii-sp-bildgebung-imaging-study-series-units]: SearchParameter-mii-sp-bildgebung-imaging-study-series-units.html
+[mii-sp-bildgebung-imaging-study-series-viewposition]: SearchParameter-mii-sp-bildgebung-imaging-study-series-viewposition.html
 [mii-sp-bildgebung-imaging-study-series-xray-tube-current]: SearchParameter-mii-sp-bildgebung-imaging-study-series-xray-tube-current.html
 [mii-sp-bildgebung-observation-body-site]: SearchParameter-mii-sp-bildgebung-observation-body-site.html
 [mii-sp-bildgebung-observation-body-structure]: SearchParameter-mii-sp-bildgebung-observation-body-structure.html

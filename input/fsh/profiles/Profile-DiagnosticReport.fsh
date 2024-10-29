@@ -38,7 +38,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * category.coding[loinc] = $loinc#18748-4
 * category.coding[diagnostic-service-sections] = $DSS#RAD
 * category.coding[sct] = $SCT#4201000179104
-* code MS 
+* code MS
 * subject 1..1 MS
 * subject only Reference(Patient) 
 * encounter MS
@@ -61,4 +61,5 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
     sct 0..* MS
 * conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd10-gm
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
+* conclusionCode.coding[sct].code from MII_VS_Bildgebung_Diagnostic_Report_Coding (preferred)
 * presentedForm MS

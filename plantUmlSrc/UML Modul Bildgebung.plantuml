@@ -87,6 +87,7 @@ package "DICOM-Header" {
   + Expositionszeit: Quantity[ms] [0..1]
   + Exposition: Quantity[mAs] [0..1]
   + Röntgenröhrenstrom: Quantity[mA] [0..1]
+  + Blickposition: CodeableConcept [0..1]
   } 
 
   class ModalitätNM #LightYellow {
