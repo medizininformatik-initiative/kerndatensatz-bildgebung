@@ -4,7 +4,7 @@ Usage: #example
 Title: "MII Example Bildgebung Diagnostic Report"
 * basedOn = Reference(ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung)
 * status = #final
-* category.coding[sct] = $SCT#4201000179104 "Imaging report"
+//* category.coding[sct] = $SCT#4201000179104 "Imaging report"
 * code = $SCT#4231000179109 "Mammography report"
 * subject = Reference(Patient/PatExample)
 * encounter = Reference(Encounter/EncExample)

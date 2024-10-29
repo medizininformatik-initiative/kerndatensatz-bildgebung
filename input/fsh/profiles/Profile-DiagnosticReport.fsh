@@ -37,7 +37,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
     sct 1..1
 * category.coding[loinc] = $loinc#18748-4
 * category.coding[diagnostic-service-sections] = $DSS#RAD
-* category.coding[sct] = $SCT#4201000179104
+* category.coding[sct] = $SCT#4201000179104 " Imaging report (record artifact)"
 * code MS
 * subject 1..1 MS
 * subject only Reference(Patient) 

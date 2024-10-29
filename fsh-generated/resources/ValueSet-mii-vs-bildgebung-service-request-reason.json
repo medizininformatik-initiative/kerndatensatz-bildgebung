@@ -32,9 +32,9 @@
         "system": "http://snomed.info/sct",
         "filter": [
           {
-            "property": "concept",
-            "op": "descendent-of",
-            "value": "404684003"
+            "property": "constraint",
+            "op": "=",
+            "value": "(< 404684003 |Clinical finding (finding)|"
           }
         ]
       }

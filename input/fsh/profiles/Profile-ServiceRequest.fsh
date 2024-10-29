@@ -21,7 +21,7 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * status MS
 * intent MS
 * category 1..* MS
-* category ^patternCodeableConcept = $SCT#363679005
+* category ^patternCodeableConcept = $SCT#363679005 "Imaging (procedure)"
 * code MS
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
