@@ -32,9 +32,9 @@
         "system": "http://snomed.info/sct",
         "filter": [
           {
-            "property": "concept",
-            "op": "descendent-of",
-            "value": "254293002"
+            "property": "constraint",
+            "op": "=",
+            "value": "(< 254293002 ||"
           }
         ]
       }
