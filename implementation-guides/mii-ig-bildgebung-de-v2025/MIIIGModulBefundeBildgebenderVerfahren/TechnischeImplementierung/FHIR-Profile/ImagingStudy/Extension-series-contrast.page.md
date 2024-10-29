@@ -10,7 +10,7 @@ Diese Extension Kontrastmitelgabe ermöglicht es, die Verwendung von Kontrastmit
 
 Relevante DICOM-Tags sind:
 
-    Contrast/Bolus Agent [(0018,0010) contrastBolus]
+* Contrast/Bolus Agent [(0018,0010) contrastBolus]
     
 @```
 from

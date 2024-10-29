@@ -13,10 +13,10 @@ Beispielsweise kann die Homogenität der Pixelabstände oder Schichtdicken über
 
 Relevante DICOM-Tags:
 
-    Schichtdicke [(0018, 0050) SliceThickness] in [mm]
-    Bildtyp [(0008, 0008) ImageType]
-    Pixelabstand (x) [(0028, 0030) PixelSpacing] in [mm]
-    Pixelabstand (y) [(0028, 0030) PixelSpacing] in [mm]
+* Schichtdicke [(0018, 0050) SliceThickness] in [mm]
+* Bildtyp [(0008, 0008) ImageType]
+* Pixelabstand (x) [(0028, 0030) PixelSpacing] in [mm]
+* Pixelabstand (y) [(0028, 0030) PixelSpacing] in [mm]
 
 Die Pixelabstände sind in X und Y aufgeteilt und müssen aus dem zugrunde liegenden DICOM-Tag extrahiert werden. 
 Das DICOM-Tag PixelSpacing speichert X- und Y-Abstände gleichzeitig als String in folgendem Format: z. B. [0.703125, 0.703125].

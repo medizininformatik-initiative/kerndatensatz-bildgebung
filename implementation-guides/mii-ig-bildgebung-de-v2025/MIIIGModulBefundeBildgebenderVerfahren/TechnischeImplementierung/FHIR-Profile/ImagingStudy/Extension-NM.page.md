@@ -16,28 +16,28 @@ Beispiel des Zugriffs auf ein nested DICOM-Tag mit Python aus einer DICOM-Schich
 
 Implementation:
     
-    Radiopharmakon (ValueSet mit Codes: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4021.html):
-    Das Radiopharmakon kann unter Bestimmung des Codes „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0304“ (Radiopharmaceutical Code Sequence)  → „0008,0100“ (Code Value) als Code in den Klarnamen umgewandelt werden.
-    Ist der nicht vorhanden, kann der Wert direkt aus dem Tag „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0304“ (Radiopharmaceutical Code Sequence)  → „0008,0104“ (Code Meaning) direkt extrahiert werden. Falls unter Umständen sich der Klarname von dem ValueSet unterscheidet, kann ein lokales Mapping am Standort gemacht werden. Alternativ kann bei weiterem Fehlen auch noch das Tag „0054,0016“ (Radiopharmaceutical Information Sequence) → "0018,0031" (Radiopharmaceutical) zu rate gezogen werden, bitte nur verwenden Falls im String sich konstant der Tracer UND das Radionuklid befinden (siehe Link des Valuesets).
+* Radiopharmakon (ValueSet mit Codes: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4021.html):
+Das Radiopharmakon kann unter Bestimmung des Codes „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0304“ (Radiopharmaceutical Code Sequence)  → „0008,0100“ (Code Value) als Code in den Klarnamen umgewandelt werden.
+Ist der nicht vorhanden, kann der Wert direkt aus dem Tag „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0304“ (Radiopharmaceutical Code Sequence)  → „0008,0104“ (Code Meaning) direkt extrahiert werden. Falls unter Umständen sich der Klarname von dem ValueSet unterscheidet, kann ein lokales Mapping am Standort gemacht werden. Alternativ kann bei weiterem Fehlen auch noch das Tag „0054,0016“ (Radiopharmaceutical Information Sequence) → "0018,0031" (Radiopharmaceutical) zu rate gezogen werden, bitte nur verwenden Falls im String sich konstant der Tracer UND das Radionuklid befinden (siehe Link des Valuesets).
 
-    Radionuklid (ValueSet mit Codes: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html)
-    Das Radionuklid kann unter Bestimmung des Codes „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0300“ (Radiopharmaceutical Code Sequence)  → „0008,0100“ (Code Value) als Code in den Klarnamen umgewandelt werden.
+* Radionuklid (ValueSet mit Codes: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html)
+Das Radionuklid kann unter Bestimmung des Codes „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0300“ (Radiopharmaceutical Code Sequence)  → „0008,0100“ (Code Value) als Code in den Klarnamen umgewandelt werden.
           
-    Tracer-Einwirkzeit:
-    Dies ist ein Custom Tag und wird aus der Differenz zwischen den Zeitangaben in Sekunden der Acquisition Time "0008,0032" (oder ähnlichem) und der „0054,0016“ (Radiopharmaceutical Information Sequence) → "0018, 1072" RadiopharmaceuticalStartTime gebildet.
+* Tracer-Einwirkzeit:
+Dies ist ein Custom Tag und wird aus der Differenz zwischen den Zeitangaben in Sekunden der Acquisition Time "0008,0032" (oder ähnlichem) und der „0054,0016“ (Radiopharmaceutical Information Sequence) → "0018, 1072" RadiopharmaceuticalStartTime gebildet.
 
-    Halbwertszeit ["0018, 1075" RadionuclideHalfLife] in Sekunden [s]
+* Halbwertszeit ["0018, 1075" RadionuclideHalfLife] in Sekunden [s]
 
-    Gesamte Radionukliddosis ["0018, 1074" RadionuclideTotalDose] in Becquerel [Bq] 
+* Gesamte Radionukliddosis ["0018, 1074" RadionuclideTotalDose] in Becquerel [Bq] 
 
-    Skalierungseinheit ["0054,1001" Units]
-    Falls Units nicht vorhanden oder Leer, kann das Tag "0028,1054" (RescaleType) verwendet werden.
+* Skalierungseinheit ["0054,1001" Units]
+Falls Units nicht vorhanden oder leer, kann das Tag "0028,1054" (RescaleType) verwendet werden.
 
-    MittleresEnergieFenster:
-    Dies ist ein Custom Tag, welches sich aus den Inhalten des Dicom Tags "0054,0012" (Energy Window Information Sequence) gebildet wird.
-    Dieses DICOM-Tag ist ein komplexer Datentyp, der eine Liste (0 bis n) enthält, die die Emissions- sowie Streukorrektur-Fenster beschreibt. Diese Fenster sind durch ein oberes und unteres Limit sowie den Namen des Fensters gekennzeichnet. Da die Breite der Fenster herstellerspezifisch ist, soll für die Energiefenster ein Mittelwert aus dem oberen und unteren Limit gebildet werden, um den Energie-Peak des Radionuklids zu ermitteln. Dieser Peak ist einfacher abbildbar und abfragbar als die größte verwendete Breite unter allen Herstellern. Zudem kann das Streukorrekturfenster eines Radionuklids innerhalb des Emissionsfensters eines anderen Radionuklids liegen, was bei Abfragen eines Energy-Window zu False Positives führen kann.
-    Dieser Peak wird bestimmt durch die Mittelwertsbildung aus den Tags "0054,0012" (Energy Window Information Sequence) →  "0054,0013" (Energy Window Range Sequence) → [ "0054,0014" Energy Window Lower Limit &  "0054,0015" Energy Window Upper Limit].
-    Da es mehrere Fenster geben kann, muss diese Instanz mehrmals angelegt werden.
+* MittleresEnergieFenster:
+Dies ist ein Custom Tag, welches sich aus den Inhalten des Dicom Tags "0054,0012" (Energy Window Information Sequence) gebildet wird.
+Dieses DICOM-Tag ist ein komplexer Datentyp, der eine Liste (0 bis n) enthält, die die Emissions- sowie Streukorrektur-Fenster beschreibt. Diese Fenster sind durch ein oberes und unteres Limit sowie den Namen des Fensters gekennzeichnet. Da die Breite der Fenster herstellerspezifisch ist, soll für die Energiefenster ein Mittelwert aus dem oberen und unteren Limit gebildet werden, um den Energie-Peak des Radionuklids zu ermitteln. Dieser Peak ist einfacher abbildbar und abfragbar als die größte verwendete Breite unter allen Herstellern. Zudem kann das Streukorrekturfenster eines Radionuklids innerhalb des Emissionsfensters eines anderen Radionuklids liegen, was bei Abfragen eines Energy-Window zu False Positives führen kann.
+Dieser Peak wird bestimmt durch die Mittelwertsbildung aus den Tags "0054,0012" (Energy Window Information Sequence) →  "0054,0013" (Energy Window Range Sequence) → [ "0054,0014" Energy Window Lower Limit &  "0054,0015" Energy Window Upper Limit].
+Da es mehrere Fenster geben kann, muss diese Instanz mehrmals angelegt werden.
 
 @```
 from
