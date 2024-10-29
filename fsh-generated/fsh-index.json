@@ -653,7 +653,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-CarePlan.fsh",
     "startLine": 2,
-    "endLine": 27
+    "endLine": 48
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.json",
@@ -685,7 +685,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-BodyStructure.fsh",
     "startLine": 2,
-    "endLine": 24
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.json",
@@ -693,7 +693,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-ConstrastAdministration.fsh",
     "startLine": 2,
-    "endLine": 28
+    "endLine": 53
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.json",
@@ -725,7 +725,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-Composition.fsh",
     "startLine": 2,
-    "endLine": 41
+    "endLine": 66
   },
   {
     "outputFile": "ValueSet-mii-vs-bildgebung-diagnostic-report-coding.json",
