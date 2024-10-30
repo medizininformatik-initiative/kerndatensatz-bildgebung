@@ -934,7 +934,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Serie"
+                  "valueString": "Serienebene"
                 }
               ]
             },
@@ -947,7 +947,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "series"
+                  "valueString": "series level"
                 }
               ]
             }
@@ -1168,7 +1168,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person"
+                  "valueString": "Nummer"
                 }
               ]
             },
@@ -1181,7 +1181,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person"
+                  "valueString": "number"
                 }
               ]
             }
@@ -1198,7 +1198,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
+                  "valueString": "Nummer der Serie"
                 }
               ]
             },
@@ -1211,7 +1211,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this report is about"
+                  "valueString": "number of this series"
                 }
               ]
             }
@@ -1237,7 +1237,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person"
+                  "valueString": "Modalität"
                 }
               ]
             },
@@ -1250,7 +1250,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person"
+                  "valueString": "modality"
                 }
               ]
             }
@@ -1267,7 +1267,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
+                  "valueString": "Modalität der Serie"
                 }
               ]
             },
@@ -1280,7 +1280,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this report is about"
+                  "valueString": "modality of this series"
                 }
               ]
             }
@@ -1302,7 +1302,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person"
+                  "valueString": "Serienbeschreibung"
                 }
               ]
             },
@@ -1315,7 +1315,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person"
+                  "valueString": "seriesdescription"
                 }
               ]
             }
@@ -1332,7 +1332,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
+                  "valueString": "Beschreibung der aktuellen Serie"
                 }
               ]
             },
@@ -1345,7 +1345,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this report is about"
+                  "valueString": "description of this series"
                 }
               ]
             }
@@ -1367,7 +1367,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person"
+                  "valueString": "Instanzanzahl"
                 }
               ]
             },
@@ -1380,7 +1380,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person"
+                  "valueString": "number of instances"
                 }
               ]
             }
@@ -1397,7 +1397,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
+                  "valueString": "Anzahl der Instanzen in der aktuellen Serie"
                 }
               ]
             },
@@ -1410,7 +1410,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this report is about"
+                  "valueString": "number of instances in this series"
                 }
               ]
             }
@@ -1436,7 +1436,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person"
+                  "valueString": "Anatomie"
                 }
               ]
             },
@@ -1449,7 +1449,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person"
+                  "valueString": "body site"
                 }
               ]
             }
@@ -1466,7 +1466,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
+                  "valueString": "betrachtete Anatomie der Serie"
                 }
               ]
             },
@@ -1479,7 +1479,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this report is about"
+                  "valueString": "inspected body site in this series"
                 }
               ]
             }
@@ -1505,7 +1505,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person"
+                  "valueString": "Lateralität"
                 }
               ]
             },
@@ -1518,7 +1518,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person"
+                  "valueString": "laterality"
                 }
               ]
             }
@@ -1535,7 +1535,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
+                  "valueString": "Lateralität der betrachteten Anatomie dieser Serie"
                 }
               ]
             },
@@ -1548,7 +1548,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this report is about"
+                  "valueString": "laterality of the inspected body site in this series"
                 }
               ]
             }
@@ -1570,7 +1570,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person"
+                  "valueString": "Startzeit"
                 }
               ]
             },
@@ -1583,7 +1583,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person"
+                  "valueString": "startingtime"
                 }
               ]
             }
@@ -1600,7 +1600,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
+                  "valueString": "Aufnahmestartzeit der Serie"
                 }
               ]
             },
@@ -1613,7 +1613,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this report is about"
+                  "valueString": "start time of this series"
                 }
               ]
             }
@@ -1634,7 +1634,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person"
+                  "valueString": "Durchführender"
                 }
               ]
             },
@@ -1647,7 +1647,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person"
+                  "valueString": "performer"
                 }
               ]
             }
@@ -1664,7 +1664,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
+                  "valueString": "Durchführender der Serie. Hier speziell das Gerät"
                 }
               ]
             },
@@ -1677,7 +1677,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this report is about"
+                  "valueString": "performer of this series. In this case especially a device"
                 }
               ]
             }
@@ -1711,7 +1711,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person"
+                  "valueString": "Instanzebene"
                 }
               ]
             },
@@ -1724,7 +1724,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person"
+                  "valueString": "instancelevel"
                 }
               ]
             }
@@ -1741,7 +1741,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
+                  "valueString": "Instanzebene der Serie"
                 }
               ]
             },
@@ -1754,7 +1754,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this report is about"
+                  "valueString": "instance level of this series"
                 }
               ]
             }
@@ -1805,7 +1805,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person"
+                  "valueString": "Instanz UID"
                 }
               ]
             },
@@ -1818,7 +1818,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person"
+                  "valueString": "instance uid"
                 }
               ]
             }
@@ -1835,7 +1835,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
+                  "valueString": "SOP Instanz UID"
                 }
               ]
             },
@@ -1848,7 +1848,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this report is about"
+                  "valueString": "sop instance uid"
                 }
               ]
             }
@@ -1874,7 +1874,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person"
+                  "valueString": "SOP Klasse"
                 }
               ]
             },
@@ -1887,7 +1887,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person"
+                  "valueString": "sop class"
                 }
               ]
             }
@@ -1904,7 +1904,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
+                  "valueString": "SOP Klasse"
                 }
               ]
             },
@@ -1917,7 +1917,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this report is about"
+                  "valueString": "sop class"
                 }
               ]
             }
@@ -1939,7 +1939,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person"
+                  "valueString": "Instanznummer"
                 }
               ]
             },
@@ -1952,7 +1952,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person"
+                  "valueString": "instancenumber"
                 }
               ]
             }
@@ -1969,7 +1969,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Person, auf die sich die Befundbericht bezieht"
+                  "valueString": "Nummer der aktuellen Instanz"
                 }
               ]
             },
@@ -1982,7 +1982,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "person, which this report is about"
+                  "valueString": "number of this instance"
                 }
               ]
             }
