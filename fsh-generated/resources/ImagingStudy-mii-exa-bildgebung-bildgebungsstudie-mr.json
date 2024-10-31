@@ -26,11 +26,23 @@
             },
             {
               "url": "scanningSequence",
-              "valueString": "SE"
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "SE"
+                  }
+                ]
+              }
             },
             {
               "url": "scanningSequenceVariant",
-              "valueString": "SP, SK"
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "SK"
+                  }
+                ]
+              }
             },
             {
               "valueQuantity": {

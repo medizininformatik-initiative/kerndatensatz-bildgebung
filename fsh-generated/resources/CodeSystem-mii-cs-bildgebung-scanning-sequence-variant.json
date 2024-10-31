@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_Bildgebung_Scanning_Sequence_Variant",
+  "id": "mii-cs-bildgebung-scanning-sequence-variant",
+  "title": "MII CS Bildgebung Scanning Sequence Variant",
+  "description": "Scanning Sequence Varianten für MR Untersuchungen",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant",
+  "concept": [
+    {
+      "code": "SK",
+      "display": "segmented k-space"
+    },
+    {
+      "code": "MTC",
+      "display": "magnetization transfer contrast"
+    },
+    {
+      "code": "SS",
+      "display": "steady state"
+    },
+    {
+      "code": "TRSS",
+      "display": "time reversed steady state"
+    },
+    {
+      "code": "SP",
+      "display": "spoiled"
+    },
+    {
+      "code": "MP",
+      "display": "MAG prepared"
+    },
+    {
+      "code": "OSP",
+      "display": "oversampling phase"
+    },
+    {
+      "code": "NONE",
+      "display": "no sequence variant"
+    }
+  ],
+  "version": "2025.0.0-ballot",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2024-10-30",
+  "caseSensitive": true,
+  "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-scanning-sequence-variant",
+  "count": 8
+}

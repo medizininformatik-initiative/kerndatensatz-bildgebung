@@ -66,6 +66,30 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-bildgebung-instance-image-type"
+        },
+        "name": "MII CS Bildgebung Instance Image Type",
+        "description": "Image type für Radiologische Bilder",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-bildgebung-scanning-sequence"
+        },
+        "name": "MII CS Bildgebung Scanning Sequence",
+        "description": "Scanning Sequence für MR Untersuchungen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-bildgebung-scanning-sequence-variant"
+        },
+        "name": "MII CS Bildgebung Scanning Sequence Variant",
+        "description": "Scanning Sequence Varianten für MR Untersuchungen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-ex-bildgebung-bildgebungsgrund"
         },
         "name": "MII EX Bildgebung Bildgebungsgrund",
@@ -361,10 +385,34 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-mr-scanning-sequence"
+        },
+        "name": "MII VS Bildgebung Imaging Study MR Scanning Sequence",
+        "description": "Import the ValueSet for MR Scanning Sequence",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant"
+        },
+        "name": "MII VS Bildgebung Imaging Study MR Scanning Sequence Variant",
+        "description": "Import the ValueSet for MR Scanning Sequence Variant",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-bildgebung-imagingStudy-series-viewPosition"
         },
         "name": "MII VS Bildgebung ImagingStudy-Series View Position",
         "description": "Import the ValueSets for view position in MG and DX/CR series",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-instance-image-type"
+        },
+        "name": "MII VS Bildgebung Instance Image Type",
+        "description": "Import the ValueSet for Instance Image Type",
         "exampleBoolean": false
       },
       {

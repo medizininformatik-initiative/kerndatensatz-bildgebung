@@ -134,7 +134,7 @@
         "path": "Extension.extension",
         "sliceName": "scanningSequence",
         "min": 0,
-        "max": "1"
+        "max": "*"
       },
       {
         "id": "Extension.extension:scanningSequence.extension",
@@ -151,16 +151,20 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence"
+        }
       },
       {
         "id": "Extension.extension:scanningSequenceVariant",
         "path": "Extension.extension",
         "sliceName": "scanningSequenceVariant",
         "min": 0,
-        "max": "1"
+        "max": "*"
       },
       {
         "id": "Extension.extension:scanningSequenceVariant.extension",
@@ -177,9 +181,13 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant"
+        }
       },
       {
         "id": "Extension.extension:echoTime",

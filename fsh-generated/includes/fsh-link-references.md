@@ -1,5 +1,8 @@
 [mii-exa-bildgebung-tnm-radiologische-befundungsprozedur]: Procedure-mii-exa-bildgebung-tnm-radiologische-befundungsprozedur.html
 [mii-cps-bildgebung-capabilitystatement-1x]: CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.html
+[MII_CS_Bildgebung_Instance_Image_Type]: CodeSystem-mii-cs-bildgebung-instance-image-type.html
+[MII_CS_Bildgebung_Scanning_Sequence]: CodeSystem-mii-cs-bildgebung-scanning-sequence.html
+[MII_CS_Bildgebung_Scanning_Sequence_Variant]: CodeSystem-mii-cs-bildgebung-scanning-sequence-variant.html
 [MII_EX_Bildgebung_Bildgebungsgrund]: StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.html
 [MII_EX_Bildgebung_Serie_UID]: StructureDefinition-mii-ex-bildgebung-serie-uid.html
 [MII_EX_Bildgebung_Instanz_Details]: StructureDefinition-mii-ex-bildgebung-instanz-details.html
@@ -38,7 +41,10 @@
 [MII_PR_Bildgebung_Semistrukt_Befundbericht]: StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html
 [MII_PR_Bildgebung_TNM_Radiologische_Befundungsprozedur]: StructureDefinition-mii-pr-bildgebung-TNM-radiologische-befundungsprozedur.html
 [MII_VS_Bildgebung_Diagnostic_Report_Coding]: ValueSet-mii-vs-bildgebung-diagnostic-report-coding.html
+[MII_VS_Bildgebung_MR_Scanning_Sequence]: ValueSet-mii-vs-bildgebung-mr-scanning-sequence.html
+[MII_VS_Bildgebung_MR_Scanning_Sequence_Variant]: ValueSet-mii-vs-bildgebung-mr-scanning-sequence-variant.html
 [MII_VS_Bildgebung_ImagingStudy_series_viewPosition]: ValueSet-mii-vs-bildgebung-imagingStudy-series-viewPosition.html
+[MII_VS_Bildgebung_Instance_Image_Type]: ValueSet-mii-vs-bildgebung-instance-image-type.html
 [MII_VS_Bildgebung_Service_Request_Coding]: ValueSet-mii-vs-bildgebung-service-request-coding.html
 [MII_VS_Bildgebung_Service_Request_Reason]: ValueSet-mii-vs-bildgebung-service-request-reason.html
 [mii-sp-bildgebung-body-structure-location-qualifier]: SearchParameter-mii-sp-bildgebung-body-structure-location-qualifier.html

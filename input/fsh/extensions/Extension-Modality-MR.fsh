@@ -17,8 +17,8 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 //Extension
 * extension contains
     magneticFieldStrength 0..1 and
-    scanningSequence 0..1 and
-    scanningSequenceVariant 0..1 and
+    scanningSequence 0..* and
+    scanningSequenceVariant 0..* and
     echoTime 0..1 and
     repetitionTime 0..1 and
     inversionTime 0..1 and
@@ -27,8 +27,10 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[magneticFieldStrength].valueQuantity.unit = "tesla" 
 * extension[magneticFieldStrength].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[magneticFieldStrength].valueQuantity.code = #T
-* extension[scanningSequence].value[x] only string //erstmal String bis Lösung für DICOM URLS gelöst
-* extension[scanningSequenceVariant].value[x] only string //erstmal String bis Lösung für DICOM URLS gelöst
+* extension[scanningSequence].value[x] only CodeableConcept
+* extension[scanningSequence].valueCodeableConcept from MII_VS_Bildgebung_MR_Scanning_Sequence (required)
+* extension[scanningSequenceVariant].value[x] only CodeableConcept
+* extension[scanningSequenceVariant].valueCodeableConcept from MII_VS_Bildgebung_MR_Scanning_Sequence_Variant (required)
 * extension[echoTime].value[x]  only SimpleQuantity
 * extension[echoTime].valueQuantity.unit = "milliseconds" 
 * extension[echoTime].valueQuantity.system = "http://unitsofmeasure.org"

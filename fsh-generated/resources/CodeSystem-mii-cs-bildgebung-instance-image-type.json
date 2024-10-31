@@ -1,0 +1,148 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_Bildgebung_Instance_Image_Type",
+  "id": "mii-cs-bildgebung-instance-image-type",
+  "title": "MII CS Bildgebung Instance Image Type",
+  "description": "Image type für Radiologische Bilder",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+  "concept": [
+    {
+      "code": "PDC",
+      "display": "Pixel Data Characteristics",
+      "property": [
+        {
+          "code": "child",
+          "valueCode": "ORIGINAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "DERIVED"
+        }
+      ]
+    },
+    {
+      "code": "ORIGINAL",
+      "display": "identifies an original image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "PDC"
+        }
+      ]
+    },
+    {
+      "code": "DERIVED",
+      "display": "identifies an derived image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "PDC"
+        }
+      ]
+    },
+    {
+      "code": "PEC",
+      "display": "Patient Examination Characteristics",
+      "property": [
+        {
+          "code": "child",
+          "valueCode": "PRIMARY"
+        },
+        {
+          "code": "child",
+          "valueCode": "SECONDARY"
+        }
+      ]
+    },
+    {
+      "code": "PRIMARY",
+      "display": "identifies a primary image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "PEC"
+        }
+      ]
+    },
+    {
+      "code": "SECONDARY",
+      "display": "identifies a secondary image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "PEC"
+        }
+      ]
+    },
+    {
+      "code": "MSC",
+      "display": "Modality Specific Characteristics",
+      "property": [
+        {
+          "code": "child",
+          "valueCode": "CT"
+        },
+        {
+          "code": "child",
+          "valueCode": "MR"
+        },
+        {
+          "code": "child",
+          "valueCode": "CR"
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "display": "CT Specific Characteristics",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MSC"
+        }
+      ]
+    },
+    {
+      "code": "MR",
+      "display": "MR Specific Characteristics",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MSC"
+        }
+      ]
+    },
+    {
+      "code": "CR",
+      "display": "CR Specific Characteristics",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MSC"
+        }
+      ]
+    },
+    {
+      "code": "ISI",
+      "display": "Implemetation Specific Identifiers"
+    }
+  ],
+  "version": "2025.0.0-ballot",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2024-10-30",
+  "caseSensitive": true,
+  "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type",
+  "count": 11
+}

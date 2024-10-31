@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_Bildgebung_Scanning_Sequence",
+  "id": "mii-cs-bildgebung-scanning-sequence",
+  "title": "MII CS Bildgebung Scanning Sequence",
+  "description": "Scanning Sequence für MR Untersuchungen",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence",
+  "concept": [
+    {
+      "code": "SE",
+      "display": "Spin Echo"
+    },
+    {
+      "code": "IR",
+      "display": "Inversion Recovery"
+    },
+    {
+      "code": "GR",
+      "display": "Gradient Recalled"
+    },
+    {
+      "code": "EP",
+      "display": "Echo Planar"
+    },
+    {
+      "code": "RM",
+      "display": "Research Mode"
+    }
+  ],
+  "version": "2025.0.0-ballot",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2024-10-30",
+  "caseSensitive": true,
+  "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence",
+  "count": 5
+}

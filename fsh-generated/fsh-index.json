@@ -24,6 +24,30 @@
     "endLine": 10
   },
   {
+    "outputFile": "CodeSystem-mii-cs-bildgebung-instance-image-type.json",
+    "fshName": "MII_CS_Bildgebung_Instance_Image_Type",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems\\CodeSystem-ImageType.fsh",
+    "startLine": 1,
+    "endLine": 51
+  },
+  {
+    "outputFile": "CodeSystem-mii-cs-bildgebung-scanning-sequence-variant.json",
+    "fshName": "MII_CS_Bildgebung_Scanning_Sequence_Variant",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems\\CodeSystem-MR_ScanningSequence_Variant.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "CodeSystem-mii-cs-bildgebung-scanning-sequence.json",
+    "fshName": "MII_CS_Bildgebung_Scanning_Sequence",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems\\CodeSystem-MR_ScanningSequence.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
     "outputFile": "Composition-mii-exa-bildgebung-semistrukt-befundbericht.json",
     "fshName": "mii-exa-bildgebung-semistrukt-befundbericht",
     "fshType": "Instance",
@@ -69,7 +93,7 @@
     "fshType": "Instance",
     "fshFile": "instances\\Example-ImagingStudy-MR.fsh",
     "startLine": 1,
-    "endLine": 51
+    "endLine": 52
   },
   {
     "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json",
@@ -589,7 +613,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\Extension-Modality-MR.fsh",
     "startLine": 2,
-    "endLine": 47
+    "endLine": 49
   },
   {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-modalitaet-nm.json",
@@ -740,6 +764,30 @@
     "fshName": "MII_VS_Bildgebung_ImagingStudy_series_viewPosition",
     "fshType": "ValueSet",
     "fshFile": "valuesets\\Valueset-ImagingStudy-series-viewPosition.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-bildgebung-instance-image-type.json",
+    "fshName": "MII_VS_Bildgebung_Instance_Image_Type",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\Valueset-ImagingStudy-Instance-Image-Type.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-bildgebung-mr-scanning-sequence-variant.json",
+    "fshName": "MII_VS_Bildgebung_MR_Scanning_Sequence_Variant",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\Valueset-ImagingStudy-MR-Scanning-Sequence-Variant.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-bildgebung-mr-scanning-sequence.json",
+    "fshName": "MII_VS_Bildgebung_MR_Scanning_Sequence",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\Valueset-ImagingStudy-MR-ScanningSequence.fsh",
     "startLine": 1,
     "endLine": 12
   },
