@@ -287,7 +287,11 @@
         "path": "Extension.extension.value[x].coding",
         "sliceName": "modalityMR",
         "min": 0,
-        "max": "*"
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr"
+        }
       },
       {
         "id": "Extension.extension:imageType.value[x].coding:modalityCR",
@@ -315,7 +319,11 @@
         "path": "Extension.extension.value[x].coding",
         "sliceName": "modalityNM",
         "min": 0,
-        "max": "*"
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm"
+        }
       },
       {
         "id": "Extension.extension:imageType.value[x].coding:modalityMG",

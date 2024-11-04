@@ -433,6 +433,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-instance-image-type-nm"
+        },
+        "name": "MII VS Bildgebung Instance Image Type NM",
+        "description": "Import the ValueSet for Instance Image Type NM",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-bildgebung-service-request-coding"
         },
         "name": "MII VS Bildgebung ServiceRequest Coding",

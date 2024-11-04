@@ -47,6 +47,7 @@
 [MII_VS_Bildgebung_Instance_Image_Type]: ValueSet-mii-vs-bildgebung-instance-image-type.html
 [MII_VS_Bildgebung_Instance_Image_Type_CT]: ValueSet-mii-vs-bildgebung-instance-image-type-ct.html
 [MII_VS_Bildgebung_Instance_Image_Type_MR]: ValueSet-mii-vs-bildgebung-instance-image-type-mr.html
+[MII_VS_Bildgebung_Instance_Image_Type_NM]: ValueSet-mii-vs-bildgebung-instance-image-type-nm.html
 [MII_VS_Bildgebung_Service_Request_Coding]: ValueSet-mii-vs-bildgebung-service-request-coding.html
 [MII_VS_Bildgebung_Service_Request_Reason]: ValueSet-mii-vs-bildgebung-service-request-reason.html
 [mii-sp-bildgebung-body-structure-location-qualifier]: SearchParameter-mii-sp-bildgebung-body-structure-location-qualifier.html

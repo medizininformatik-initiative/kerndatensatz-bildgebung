@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Bildgebung_Instance_Image_Type_NM",
+  "id": "mii-vs-bildgebung-instance-image-type-nm",
+  "title": "MII VS Bildgebung Instance Image Type NM",
+  "description": "Import the ValueSet for Instance Image Type NM",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0-ballot",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "date": "2024-10-30",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+        "concept": [
+          {
+            "code": "STATIC"
+          },
+          {
+            "code": "DYNAMIC"
+          },
+          {
+            "code": "GATED"
+          },
+          {
+            "code": "WHOLEBODY"
+          },
+          {
+            "code": "TOMO"
+          },
+          {
+            "code": "GATEDTOMO"
+          },
+          {
+            "code": "RECONTOMO"
+          },
+          {
+            "code": "RECONGATEDTOMO"
+          },
+          {
+            "code": "EMISSION"
+          },
+          {
+            "code": "TRANSMISSION"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -39,6 +39,10 @@ Description: "Image type für Radiologische Bilder"
 * #MSC ^property[=].valueCode = #MR 
 * #MSC ^property[+].code = #child
 * #MSC ^property[=].valueCode = #CR
+* #MSC ^property[+].code = #child
+* #MSC ^property[=].valueCode = #NM
+* #MSC ^property[+].code = #child
+* #MSC ^property[=].valueCode = #XR
 * #CT "CT Specific Characteristics"
 * #CT ^property[0].code = #parent
 * #CT ^property[=].valueCode = #MSC
@@ -115,7 +119,64 @@ Description: "Image type für Radiologische Bilder"
 * #VELOCITYMAP "Velocity Map"
 * #VELOCITYMAP ^property[0].code = #parent
 * #VELOCITYMAP ^property[=].valueCode = #MR
-* #DX "DX Specific Characteristics"
-* #DX ^property[0].code = #parent
-* #DX ^property[=].valueCode = #MSC
+* #NM "NM Specific Characteristics"
+* #NM ^property[0].code = #parent
+* #NM ^property[=].valueCode = #MSC
+* #NM ^property[+].code = #child
+* #NM ^property[=].valueCode = #STATIC
+* #NM ^property[+].code = #child
+* #NM ^property[=].valueCode = #DYNAMIC
+* #NM ^property[+].code = #child
+* #NM ^property[=].valueCode = #GATED
+* #NM ^property[+].code = #child
+* #NM ^property[=].valueCode = #WHOLEBODY
+* #NM ^property[+].code = #child
+* #NM ^property[=].valueCode = #TOMO
+* #NM ^property[+].code = #child
+* #NM ^property[=].valueCode = #GATEDTOMO
+* #NM ^property[+].code = #child
+* #NM ^property[=].valueCode = #RECONTOMO
+* #NM ^property[+].code = #child
+* #NM ^property[=].valueCode = #RECONGATEDTOMO
+* #STATIC "Static"
+* #STATIC ^property[0].code = #parent
+* #STATIC ^property[=].valueCode = #NM
+* #DYNAMIC "Dynamic"
+* #DYNAMIC ^property[+].code = #parent
+* #DYNAMIC ^property[=].valueCode = #NM
+* #GATED "Gated"
+* #GATED ^property[+].code = #parent
+* #GATED ^property[=].valueCode = #NM
+* #WHOLEBODY "Whole Body"
+* #WHOLEBODY ^property[+].code = #parent
+* #WHOLEBODY ^property[=].valueCode = #NM
+* #TOMO "Tomo"
+* #TOMO ^property[+].code = #parent
+* #TOMO ^property[=].valueCode = #NM
+* #GATEDTOMO "Gated Tomo"
+* #GATEDTOMO ^property[+].code = #parent
+* #GATEDTOMO ^property[=].valueCode = #NM
+* #RECONTOMO "Recon Tomo"
+* #RECONTOMO ^property[+].code = #parent
+* #RECONTOMO ^property[=].valueCode = #NM
+* #RECONGATEDTOMO "Recon Gated Tomo"
+* #RECONGATEDTOMO ^property[+].code = #parent
+* #RECONGATEDTOMO ^property[=].valueCode = #NM
+* #MSC ^property[+].code = #child
+* #MSC ^property[=].valueCode = #NM
 * #ISI "Implemetation Specific Identifiers"
+* #ISI ^property[0].code = #child
+* #ISI ^property[=].valueCode = #NMI
+* #NMI "NM implematation"
+* #NMI ^property[0].code = #parent
+* #NMI ^property[=].valueCode = #ISI
+* #NMI ^property[+].code = #child
+* #NMI ^property[=].valueCode = #EMISSION
+* #NMI ^property[+].code = #child
+* #NMI ^property[=].valueCode = #TRANSMISSION
+* #EMISSION "Emission"
+* #EMISSION ^property[0].code = #parent
+* #EMISSION ^property[=].valueCode = #NMI
+* #TRANSMISSION "Transmission"
+* #TRANSMISSION ^property[+].code = #parent
+* #TRANSMISSION ^property[=].valueCode = #NMI

@@ -29,7 +29,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems\\CodeSystem-ImageType.fsh",
     "startLine": 1,
-    "endLine": 121
+    "endLine": 182
   },
   {
     "outputFile": "CodeSystem-mii-cs-bildgebung-scanning-sequence-variant.json",
@@ -573,7 +573,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\Extension-Instance-Details.fsh",
     "startLine": 2,
-    "endLine": 49
+    "endLine": 51
   },
   {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-kontrastmittel.json",
@@ -774,6 +774,14 @@
     "fshFile": "valuesets\\Valueset-ImagingStudy-Instance-Image-Type-MR.fsh",
     "startLine": 1,
     "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-bildgebung-instance-image-type-nm.json",
+    "fshName": "MII_VS_Bildgebung_Instance_Image_Type_NM",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\Valueset-ImagingStudy-Instance-Image-Type-NM.fsh",
+    "startLine": 1,
+    "endLine": 20
   },
   {
     "outputFile": "ValueSet-mii-vs-bildgebung-instance-image-type.json",

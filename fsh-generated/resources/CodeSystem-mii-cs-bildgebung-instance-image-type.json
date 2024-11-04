@@ -91,6 +91,18 @@
         {
           "code": "child",
           "valueCode": "CR"
+        },
+        {
+          "code": "child",
+          "valueCode": "NM"
+        },
+        {
+          "code": "child",
+          "valueCode": "XR"
+        },
+        {
+          "code": "child",
+          "valueCode": "NM"
         }
       ]
     },
@@ -263,18 +275,174 @@
       ]
     },
     {
-      "code": "DX",
-      "display": "DX Specific Characteristics",
+      "code": "NM",
+      "display": "NM Specific Characteristics",
       "property": [
         {
           "code": "parent",
           "valueCode": "MSC"
+        },
+        {
+          "code": "child",
+          "valueCode": "STATIC"
+        },
+        {
+          "code": "child",
+          "valueCode": "DYNAMIC"
+        },
+        {
+          "code": "child",
+          "valueCode": "GATED"
+        },
+        {
+          "code": "child",
+          "valueCode": "WHOLEBODY"
+        },
+        {
+          "code": "child",
+          "valueCode": "TOMO"
+        },
+        {
+          "code": "child",
+          "valueCode": "GATEDTOMO"
+        },
+        {
+          "code": "child",
+          "valueCode": "RECONTOMO"
+        },
+        {
+          "code": "child",
+          "valueCode": "RECONGATEDTOMO"
+        }
+      ]
+    },
+    {
+      "code": "STATIC",
+      "display": "Static",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "DYNAMIC",
+      "display": "Dynamic",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "GATED",
+      "display": "Gated",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "WHOLEBODY",
+      "display": "Whole Body",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "TOMO",
+      "display": "Tomo",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "GATEDTOMO",
+      "display": "Gated Tomo",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "RECONTOMO",
+      "display": "Recon Tomo",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
+        }
+      ]
+    },
+    {
+      "code": "RECONGATEDTOMO",
+      "display": "Recon Gated Tomo",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NM"
         }
       ]
     },
     {
       "code": "ISI",
-      "display": "Implemetation Specific Identifiers"
+      "display": "Implemetation Specific Identifiers",
+      "property": [
+        {
+          "code": "child",
+          "valueCode": "NMI"
+        }
+      ]
+    },
+    {
+      "code": "NMI",
+      "display": "NM implematation",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "ISI"
+        },
+        {
+          "code": "child",
+          "valueCode": "EMISSION"
+        },
+        {
+          "code": "child",
+          "valueCode": "TRANSMISSION"
+        }
+      ]
+    },
+    {
+      "code": "EMISSION",
+      "display": "Emission",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NMI"
+        }
+      ]
+    },
+    {
+      "code": "TRANSMISSION",
+      "display": "Transmission",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "NMI"
+        }
+      ]
     }
   ],
   "version": "2025.0.0-ballot",
@@ -292,5 +460,5 @@
   "date": "2024-10-30",
   "caseSensitive": true,
   "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type",
-  "count": 25
+  "count": 36
 }
