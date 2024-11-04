@@ -172,6 +172,7 @@ Usage: #definition
 * code = #study-modality-body-site
 * base = #ImagingStudy
 * type = #composite
+* expression = "ImagingStudy.series"
 * component[0].definition = "http://hl7.org/fhir/SearchParameter/ImagingStudy-modality"
 * component[=].expression = "modality"
 * component[+].definition = "http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite"
