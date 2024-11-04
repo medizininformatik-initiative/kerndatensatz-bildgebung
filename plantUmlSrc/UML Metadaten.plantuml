@@ -44,7 +44,7 @@ package "DICOM-Header" {
   + SOP-Klasse: Coding [1..1]
   + Instanz-Nummer: unsignedInt [0..1]
   + Titel: String [0..1]
-  + Extension: Bildtyp: string [0..1]
+  + Extension: Bildtyp: CodeableConcept [0..*]
   + Extension: Schichtdicke: Quantity[mm] [0..1]
   + {field} Extension: Pixelabstand(x): Quantity[mm] [0..1]
   + {field} Extension: Pixelabstand(y): Quantity[mm] [0..1]
@@ -122,5 +122,6 @@ DICOMSerie "1..1" -u- "0..1" ModalitätPT
 Studie "1..1" -- "0..*" DICOMSerie: ISt.series
 
 ModalitätPT -[hidden]r- ModalitätNM
+
 
 @enduml
