@@ -700,27 +700,6 @@ Usage: #definition
 * modifier[+] = #exact
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-series-energy-window-mean
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-energy-window-mean"
-* insert SP_Publisher
-* insert Version
-* name = "MII_SP_Bildgebung_Imaging_Study_Series_Energy_Window_Mean"
-* status = #active
-* experimental = false
-* date = "2024-08-30"
-* description = "Suchparameter für ImagingStudy.series.extension.energyWindowMean"
-* code = #energy-window-mean
-* base = #ImagingStudy
-* type = #quantity
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('energyWindowMean').value"
-* comparator[+] = #eq 
-* comparator[+] = #gt 
-* comparator[+] = #lt
-* comparator[+] = #ge 
-* comparator[+] = #le
-
 Instance: mii-sp-bildgebung-imaging-study-series-contrast-bolus
 InstanceOf: SearchParameter
 Usage: #definition

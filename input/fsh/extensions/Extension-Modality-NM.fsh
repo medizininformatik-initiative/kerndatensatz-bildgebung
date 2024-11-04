@@ -43,7 +43,3 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[radionuclideHalfLife].valueQuantity.unit = "Seconds" 
 * extension[radionuclideHalfLife].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[radionuclideHalfLife].valueQuantity.code = #s
-* extension[energyWindowMean].value[x] only SimpleQuantity
-* extension[energyWindowMean].valueQuantity.unit = "kiloelectronvolt"
-* extension[energyWindowMean].valueQuantity.system = "http://unitsofmeasure.org"
-* extension[energyWindowMean].valueQuantity.code = #keV
