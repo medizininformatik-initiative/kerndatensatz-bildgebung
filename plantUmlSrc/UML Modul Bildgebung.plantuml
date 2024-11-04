@@ -34,7 +34,7 @@ package "DICOM-Header" {
   + Funktion des Ausführenden: CodeableConcept [0..1]
   + {field} Akteur: Reference(Device) [1..1]
   + Extension: Kontrastmittelgabe: boolean [0..1]
-  + {field} Extension: Kontrastmitteldetails: Reference(MII_PR_Medikation_MedicationStatement) [0..*]
+  + {field} Extension: Kontrastmitteldetails: Reference(Statement|Administration) [0..*]
   + {field} Extension: Modalitäten(DX,CR,MG,CT,MR,PT,NM) [0..1]
   + DICOM-Instanzen: Instance [0..*]
   }
@@ -44,24 +44,24 @@ package "DICOM-Header" {
   + SOP-Klasse: Coding [1..1]
   + Instanz-Nummer: unsignedInt [0..1]
   + Titel: String [0..1]
-  + Extension: Bildtyp: string [0..1]
+  + Extension: Bildtyp: CodeableConcept [0..*]
   + Extension: Schichtdicke: Quantity[mm] [0..1]
   + {field} Extension: Pixelabstand(x): Quantity[mm] [0..1]
   + {field} Extension: Pixelabstand(y): Quantity[mm] [0..1]
   }
 
   class ModalitätMR #LightYellow {
-  + Scanning Sequenz: CodeableConcept [0..1]
-  + Scanning Sequenz Untervariante: CodeableConcept [0..1]
+  + Scansequenz: CodeableConcept [0..*]
+  + Scansequenz Untervariante: CodeableConcept [0..*]
   + Magnetische Feldstärke: Quantity[T] [0..1]
-  + Echozeit (TE): Quantity[ms] [0..1]
-  + Repetitionszeit (TR): Quantity[ms] [0..1]
-  + Inversionszeit (TI): Quantity[ms] [0..1]
+  + {field} Echozeit (TE): Quantity[ms] [0..1]
+  + {field} Repetitionszeit (TR): Quantity[ms] [0..1]
+  + {field} Inversionszeit (TI): Quantity[ms] [0..1]
   + Kippwinkel: Quantity[deg] [0..1]
   }
 
   class ModalitätCT #LightYellow {
-  + CTDIvolume: Quantity[mGy] [0..1]
+  + CTDI Volumen: Quantity[mGy] [0..1]
   + KVP: Quantity[kV] [0..1]
   + Expositionszeit: Quantity[ms] [0..1]
   + Exposition: Quantity[mAs] [0..1]
@@ -97,7 +97,6 @@ package "DICOM-Header" {
   + Skalierungseinheit: CodeableConcept [0..1]
   + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
   + Halbwertszeit: Quantity[s] [0..1]
-  + Energiefenster Mittelwert: Quantity[keV] [0..1]
   } 
 
   class ModalitätPT #LightYellow {
