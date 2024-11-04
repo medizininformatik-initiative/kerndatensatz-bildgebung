@@ -4,7 +4,6 @@ Title: "MII VS Bildgebung ImagingStudy-Series View Position"
 Description: "Import the ValueSets for view position in MG and DX/CR series"
 * insert Publisher
 * insert PR_CS_VS_Version
-* insert SNOMED_Copyright
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 * ^date = "2024-08-30"

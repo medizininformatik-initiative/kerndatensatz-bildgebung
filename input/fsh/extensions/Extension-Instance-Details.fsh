@@ -19,17 +19,31 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
     pixelSpacingX 0..1 MS and
     pixelSpacingY 0..1 MS and
     sliceThickness 0..1 MS and
-    imageType 0..1 MS
-* extension[pixelSpacingX].value[x]  only SimpleQuantity
+    imageType 0..* MS
+* extension[pixelSpacingX].value[x] only SimpleQuantity
 * extension[pixelSpacingX].valueQuantity.unit = "millimeter" 
 * extension[pixelSpacingX].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[pixelSpacingX].valueQuantity.code = #mm
-* extension[pixelSpacingY].value[x]  only SimpleQuantity
+* extension[pixelSpacingY].value[x] only SimpleQuantity
 * extension[pixelSpacingY].valueQuantity.unit = "millimeter" 
 * extension[pixelSpacingY].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[pixelSpacingY].valueQuantity.code = #mm
-* extension[sliceThickness].value[x]  only SimpleQuantity
+* extension[sliceThickness].value[x] only SimpleQuantity
 * extension[sliceThickness].valueQuantity.unit = "millimeter" 
 * extension[sliceThickness].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[sliceThickness].valueQuantity.code = #mm
-* extension[imageType].value[x]  only string
+* extension[imageType].value[x] only CodeableConcept
+* extension[imageType].valueCodeableConcept.coding ^slicing.discriminator.type = #value
+* extension[imageType].valueCodeableConcept.coding ^slicing.discriminator.path = "coding"
+* extension[imageType].valueCodeableConcept.coding ^slicing.rules = #open
+* extension[imageType].valueCodeableConcept.coding contains
+    patientPixelData 0..* and
+    modalityCT 0..* and
+    modalityMR 0..* and
+    modalityCR 0..* and
+    modalityDX 0..* and
+    modalityPT 0..* and
+    modalityNM 0..* and
+    modalityMG 0..*
+* extension[imageType].valueCodeableConcept.coding[patientPixelData] from MII_VS_Bildgebung_Instance_Image_Type
+* extension[imageType].valueCodeableConcept.coding[modalityCT] from MII_VS_Bildgebung_Instance_Image_Type_CT

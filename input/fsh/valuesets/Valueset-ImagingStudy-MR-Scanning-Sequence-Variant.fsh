@@ -5,7 +5,6 @@ Description: "Import the ValueSet for MR Scanning Sequence Variant"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant"
 * insert Publisher
 * insert PR_CS_VS_Version
-* insert SNOMED_Copyright
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 * ^date = "2024-10-30"

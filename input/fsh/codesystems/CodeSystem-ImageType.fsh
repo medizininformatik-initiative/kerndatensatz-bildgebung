@@ -42,10 +42,80 @@ Description: "Image type für Radiologische Bilder"
 * #CT "CT Specific Characteristics"
 * #CT ^property[0].code = #parent
 * #CT ^property[=].valueCode = #MSC
+* #CT ^property[+].code = #child
+* #CT ^property[=].valueCode = #AXIAL
+* #CT ^property[+].code = #child
+* #CT ^property[=].valueCode = #LOCALIZER
+* #AXIAL "a CT Cross-sectional Image"
+* #AXIAL ^property[0].code = #parent
+* #AXIAL ^property[=].valueCode = #CT
+* #LOCALIZER "a CT Localizer Image"
+* #LOCALIZER ^property[0].code = #parent
+* #LOCALIZER ^property[=].valueCode = #CT
 * #MR "MR Specific Characteristics"
 * #MR ^property[0].code = #parent
 * #MR ^property[=].valueCode = #MSC
-* #CR "CR Specific Characteristics"
-* #CR ^property[0].code = #parent
-* #CR ^property[=].valueCode = #MSC
+* #MR ^property[0].code = #child
+* #MR ^property[=].valueCode = #DENSITYMAP
+* #MR ^property[0].code = #child
+* #MR ^property[=].valueCode = #DIFFUSIONMAP
+* #MR ^property[0].code = #child
+* #MR ^property[=].valueCode = #IMAGEADDITION
+* #MR ^property[0].code = #child
+* #MR ^property[=].valueCode = #MODULUSSUBTRACT
+* #MR ^property[0].code = #child
+* #MR ^property[=].valueCode = #MPR
+* #MR ^property[0].code = #child
+* #MR ^property[=].valueCode = #OTHER
+* #MR ^property[0].code = #child
+* #MR ^property[=].valueCode = #PHASEMAP
+* #MR ^property[0].code = #child
+* #MR ^property[=].valueCode = #PHASESUBTRACT
+* #MR ^property[0].code = #child
+* #MR ^property[=].valueCode = #PROJECTIONIMAGE
+* #MR ^property[0].code = #child
+* #MR ^property[=].valueCode = #T1MAP
+* #MR ^property[0].code = #child
+* #MR ^property[=].valueCode = #T2MAP
+* #MR ^property[0].code = #child
+* #MR ^property[=].valueCode = #VELOCITYMAP
+* #DENSITYMAP "Density Map"
+* #DENSITYMAP ^property[0].code = #parent
+* #DENSITYMAP ^property[=].valueCode = #MR
+* #DIFFUSIONMAP "Diffusion Map"
+* #DIFFUSIONMAP ^property[0].code = #parent
+* #DIFFUSIONMAP ^property[=].valueCode = #MR
+* #IMAGEADDITION "Image Addition"
+* #IMAGEADDITION ^property[0].code = #parent
+* #IMAGEADDITION ^property[=].valueCode = #MR
+* #MODULUSSUBTRACT "Modulus Substract"
+* #MODULUSSUBTRACT ^property[0].code = #parent
+* #MODULUSSUBTRACT ^property[=].valueCode = #MR
+* #MPR "MPR"
+* #MPR ^property[0].code = #parent
+* #MPR ^property[=].valueCode = #MR
+* #OTHER "Other"
+* #OTHER ^property[0].code = #parent
+* #OTHER ^property[=].valueCode = #MR
+* #PHASEMAP "Phase Map"
+* #PHASEMAP ^property[0].code = #parent
+* #PHASEMAP ^property[=].valueCode = #MR
+* #PHASESUBTRACT "Phase Substract"
+* #PHASESUBTRACT ^property[0].code = #parent
+* #PHASESUBTRACT ^property[=].valueCode = #MR
+* #PROJECTIONIMAGE "Projection Image"
+* #PROJECTIONIMAGE ^property[0].code = #parent
+* #PROJECTIONIMAGE ^property[=].valueCode = #MR
+* #T1MAP "T1 Map"
+* #T1MAP ^property[0].code = #parent
+* #T1MAP ^property[=].valueCode = #MR
+* #T2MAP "T2 Map"
+* #T2MAP ^property[0].code = #parent
+* #T2MAP ^property[=].valueCode = #MR
+* #VELOCITYMAP "Velocity Map"
+* #VELOCITYMAP ^property[0].code = #parent
+* #VELOCITYMAP ^property[=].valueCode = #MR
+* #DX "DX Specific Characteristics"
+* #DX ^property[0].code = #parent
+* #DX ^property[=].valueCode = #MSC
 * #ISI "Implemetation Specific Identifiers"

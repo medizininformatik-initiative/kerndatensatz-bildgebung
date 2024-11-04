@@ -122,10 +122,13 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(series.instance.number ^short, en-US, instancenumber)
 * insert Translation(series.instance.number ^definition, de-DE, Nummer der aktuellen Instanz)
 * insert Translation(series.instance.number ^definition, en-US, number of this instance)
+
 //Studienebene
 * extension contains
   //Extension Studienebene
   MII_EX_Bildgebung_Bildgebungsgrund named bildgebungsgrund 0..1 
+
+* insert Translation(extension[bildgebungsgrund] ^short, de-DE, Bildgebungsgrund)
 * status MS
 * modality MS
 * modality from $modality (required)
