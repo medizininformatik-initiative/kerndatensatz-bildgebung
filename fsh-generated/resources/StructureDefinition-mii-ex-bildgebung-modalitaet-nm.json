@@ -332,41 +332,9 @@
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:energyWindowMean.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
         "id": "Extension.extension:energyWindowMean.url",
         "path": "Extension.extension.url",
         "fixedUri": "energyWindowMean"
-      },
-      {
-        "id": "Extension.extension:energyWindowMean.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Quantity",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:energyWindowMean.value[x].unit",
-        "path": "Extension.extension.value[x].unit",
-        "patternString": "kiloelectronvolt"
-      },
-      {
-        "id": "Extension.extension:energyWindowMean.value[x].system",
-        "path": "Extension.extension.value[x].system",
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Extension.extension:energyWindowMean.value[x].code",
-        "path": "Extension.extension.value[x].code",
-        "patternCode": "keV"
       },
       {
         "id": "Extension.url",

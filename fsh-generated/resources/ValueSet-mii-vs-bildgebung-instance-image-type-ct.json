@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MII_VS_Bildgebung_Instance_Image_Type",
-  "id": "mii-vs-bildgebung-instance-image-type",
-  "title": "MII VS Bildgebung Instance Image Type",
-  "description": "Import the ValueSet for Instance Image Type",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type",
+  "name": "MII_VS_Bildgebung_Instance_Image_Type_CT",
+  "id": "mii-vs-bildgebung-instance-image-type-ct",
+  "title": "MII VS Bildgebung Instance Image Type CT",
+  "description": "Import the ValueSet for Instance Image Type CT",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -31,16 +31,10 @@
         "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
         "concept": [
           {
-            "code": "ORIGINAL"
+            "code": "AXIAL"
           },
           {
-            "code": "DERIVED"
-          },
-          {
-            "code": "PRIMARY"
-          },
-          {
-            "code": "SECONDARY"
+            "code": "LOCALIZER"
           }
         ]
       }

@@ -1536,8 +1536,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Ausführender",
-        "path": "Bildgebung.Studie.Serien.Ausführender",
+        "id": "Bildgebung.Studie.Serien.Ausfuehrender",
+        "path": "Bildgebung.Studie.Serien.Ausfuehrender",
         "short": "Ausführender der Serie",
         "definition": "Person oder Gerät das die Serie ausführt",
         "min": 0,
@@ -1555,8 +1555,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Ausführender.Funktion",
-        "path": "Bildgebung.Studie.Serien.Ausführender.Funktion",
+        "id": "Bildgebung.Studie.Serien.Ausfuehrender.Funktion",
+        "path": "Bildgebung.Studie.Serien.Ausfuehrender.Funktion",
         "short": "Funktion des Performers",
         "definition": "Funktion des Performers",
         "min": 0,
@@ -1574,8 +1574,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.Ausführender.Akteur",
-        "path": "Bildgebung.Studie.Serien.Ausführender.Akteur",
+        "id": "Bildgebung.Studie.Serien.Ausfuehrender.Akteur",
+        "path": "Bildgebung.Studie.Serien.Ausfuehrender.Akteur",
         "short": "Geraet",
         "definition": "Genutztes Geraet in der Serie",
         "min": 1,

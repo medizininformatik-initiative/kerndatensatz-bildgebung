@@ -24,6 +24,7 @@
     "ImagingStudy"
   ],
   "type": "composite",
+  "expression": "ImagingStudy.series",
   "component": [
     {
       "definition": "http://hl7.org/fhir/SearchParameter/ImagingStudy-modality",

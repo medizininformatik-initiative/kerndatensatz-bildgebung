@@ -225,7 +225,7 @@
         "path": "Extension.extension",
         "sliceName": "imageType",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -243,9 +243,86 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:imageType.value[x].coding",
+        "path": "Extension.extension.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:imageType.value[x].coding:patientPixelData",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "patientPixelData",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type"
+        }
+      },
+      {
+        "id": "Extension.extension:imageType.value[x].coding:modalityCT",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "modalityCT",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct"
+        }
+      },
+      {
+        "id": "Extension.extension:imageType.value[x].coding:modalityMR",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "modalityMR",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:imageType.value[x].coding:modalityCR",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "modalityCR",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:imageType.value[x].coding:modalityDX",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "modalityDX",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:imageType.value[x].coding:modalityPT",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "modalityPT",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:imageType.value[x].coding:modalityNM",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "modalityNM",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:imageType.value[x].coding:modalityMG",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "modalityMG",
+        "min": 0,
+        "max": "*"
       },
       {
         "id": "Extension.url",

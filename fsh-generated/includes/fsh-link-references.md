@@ -45,6 +45,8 @@
 [MII_VS_Bildgebung_MR_Scanning_Sequence_Variant]: ValueSet-mii-vs-bildgebung-mr-scanning-sequence-variant.html
 [MII_VS_Bildgebung_ImagingStudy_series_viewPosition]: ValueSet-mii-vs-bildgebung-imagingStudy-series-viewPosition.html
 [MII_VS_Bildgebung_Instance_Image_Type]: ValueSet-mii-vs-bildgebung-instance-image-type.html
+[MII_VS_Bildgebung_Instance_Image_Type_CT]: ValueSet-mii-vs-bildgebung-instance-image-type-ct.html
+[MII_VS_Bildgebung_Instance_Image_Type_MR]: ValueSet-mii-vs-bildgebung-instance-image-type-mr.html
 [MII_VS_Bildgebung_Service_Request_Coding]: ValueSet-mii-vs-bildgebung-service-request-coding.html
 [MII_VS_Bildgebung_Service_Request_Reason]: ValueSet-mii-vs-bildgebung-service-request-reason.html
 [mii-sp-bildgebung-body-structure-location-qualifier]: SearchParameter-mii-sp-bildgebung-body-structure-location-qualifier.html
@@ -68,7 +70,6 @@
 [mii-sp-bildgebung-imaging-study-series-contrast-bolus-details]: SearchParameter-mii-sp-bildgebung-imaging-study-series-contrast-bolus-details.html
 [mii-sp-bildgebung-imaging-study-series-ctdi-volume]: SearchParameter-mii-sp-bildgebung-imaging-study-series-ctdi-volume.html
 [mii-sp-bildgebung-imaging-study-series-echo-time]: SearchParameter-mii-sp-bildgebung-imaging-study-series-echo-time.html
-[mii-sp-bildgebung-imaging-study-series-energy-window-mean]: SearchParameter-mii-sp-bildgebung-imaging-study-series-energy-window-mean.html
 [mii-sp-bildgebung-imaging-study-series-exposure]: SearchParameter-mii-sp-bildgebung-imaging-study-series-exposure.html
 [mii-sp-bildgebung-imaging-study-series-exposure-time]: SearchParameter-mii-sp-bildgebung-imaging-study-series-exposure-time.html
 [mii-sp-bildgebung-imaging-study-series-flip-angle]: SearchParameter-mii-sp-bildgebung-imaging-study-series-flip-angle.html

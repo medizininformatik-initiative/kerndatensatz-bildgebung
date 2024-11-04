@@ -417,6 +417,22 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-instance-image-type-ct"
+        },
+        "name": "MII VS Bildgebung Instance Image Type CT",
+        "description": "Import the ValueSet for Instance Image Type CT",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-instance-image-type-mr"
+        },
+        "name": "MII VS Bildgebung Instance Image Type MR",
+        "description": "Import the ValueSet for Instance Image Type MR",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-bildgebung-service-request-coding"
         },
         "name": "MII VS Bildgebung ServiceRequest Coding",
@@ -597,14 +613,6 @@
         },
         "name": "mii-sp-bildgebung-imaging-study-series-echo-time",
         "description": "Suchparameter für ImagingStudy.series.extension.echoTime",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-energy-window-mean"
-        },
-        "name": "mii-sp-bildgebung-imaging-study-series-energy-window-mean",
-        "description": "Suchparameter für ImagingStudy.series.extension.energyWindowMean",
         "exampleBoolean": false
       },
       {

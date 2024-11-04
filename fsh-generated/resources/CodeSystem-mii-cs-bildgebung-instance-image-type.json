@@ -101,6 +101,34 @@
         {
           "code": "parent",
           "valueCode": "MSC"
+        },
+        {
+          "code": "child",
+          "valueCode": "AXIAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "LOCALIZER"
+        }
+      ]
+    },
+    {
+      "code": "AXIAL",
+      "display": "a CT Cross-sectional Image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "CT"
+        }
+      ]
+    },
+    {
+      "code": "LOCALIZER",
+      "display": "a CT Localizer Image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "CT"
         }
       ]
     },
@@ -109,14 +137,134 @@
       "display": "MR Specific Characteristics",
       "property": [
         {
-          "code": "parent",
-          "valueCode": "MSC"
+          "code": "child",
+          "valueCode": "VELOCITYMAP"
         }
       ]
     },
     {
-      "code": "CR",
-      "display": "CR Specific Characteristics",
+      "code": "DENSITYMAP",
+      "display": "Density Map",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "DIFFUSIONMAP",
+      "display": "Diffusion Map",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "IMAGEADDITION",
+      "display": "Image Addition",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "MODULUSSUBTRACT",
+      "display": "Modulus Substract",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "MPR",
+      "display": "MPR",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "OTHER",
+      "display": "Other",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "PHASEMAP",
+      "display": "Phase Map",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "PHASESUBTRACT",
+      "display": "Phase Substract",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "PROJECTIONIMAGE",
+      "display": "Projection Image",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "T1MAP",
+      "display": "T1 Map",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "T2MAP",
+      "display": "T2 Map",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "VELOCITYMAP",
+      "display": "Velocity Map",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MR"
+        }
+      ]
+    },
+    {
+      "code": "DX",
+      "display": "DX Specific Characteristics",
       "property": [
         {
           "code": "parent",
@@ -144,5 +292,5 @@
   "date": "2024-10-30",
   "caseSensitive": true,
   "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type",
-  "count": 11
+  "count": 25
 }
