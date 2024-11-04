@@ -1,0 +1,123 @@
+@startuml UML Modul Bildgebung
+skinparam Linetype ortho
+skinparam Nodesep 150
+skinparam Ranksep 80
+skinparam legendBackgroundColor #white
+
+package "DICOM-Header" {
+  class Studie <<ImagingStudy>> #LightCyan {
+  + Status: Coding [1..1]
+  + Modalitäten: Coding [0..*]
+  + {field} Personen-Identifikation: Reference(Patient) [1..1]
+  + {field} Versorgungsstellenkontakt: Reference(Encounter) [0..1]
+  + Beginn: dateTime [0..1]
+  + {field} Anfordernde Maßnahme: Reference(ServiceRequest) [0..*]
+  + {field} Quelle zum PACS Bild: Reference(Endpoint) [0..*]
+  + Anzahl an enhaltenen Serien: unsignedInt [0..1]
+  + Anzahl an enthaltenen SOP Instanzen: unsignedInt [0..1]
+  + {field} Bildgebungsprozedur: Reference(Procedure) [0..*]
+  + Extension: Bildgebungsgrund: string [0..1]
+  + {field} Indikation: Reference(Condition|Observation) [0..*]
+  + Studien-Beschreibung: string [0..1]
+  + DICOM-Serien: DICOM-Serie [0..*]
+  }
+
+  class DICOMSerie {
+  + Serien-UID: id [1..1]
+  + Serien-Nummer: unsignedInt [0..1]
+  + Modalität: Coding [1..1]
+  + Serienbeschreibung: string [0..1]
+  + Anzahl an in Serie enthaltenen Instanzen: unsignedInt [0..1]
+  + {field} Körperregion(bodySite): Coding [0..1]
+  + Körperseite: Coding [0..1]
+  + Beginn: dateTime [0..1]
+  + Funktion des Ausführenden: CodeableConcept [0..1]
+  + {field} Akteur: Reference(Device) [1..1]
+  + Extension: Kontrastmittelgabe: boolean [0..1]
+  + {field} Extension: Kontrastmitteldetails: Reference(MII_PR_Medikation_MedicationStatement) [0..*]
+  + {field} Extension: Modalitäten(DX,CR,MG,CT,MR,PT,NM) [0..1]
+  + DICOM-Instanzen: Instance [0..*]
+  }
+
+  class DICOMInstanz {
+  + SOP-Instanz UID: id [1..1]
+  + SOP-Klasse: Coding [1..1]
+  + Instanz-Nummer: unsignedInt [0..1]
+  + Titel: String [0..1]
+  + Extension: Bildtyp: string [0..1]
+  + Extension: Schichtdicke: Quantity[mm] [0..1]
+  + {field} Extension: Pixelabstand(x): Quantity[mm] [0..1]
+  + {field} Extension: Pixelabstand(y): Quantity[mm] [0..1]
+  }
+
+  class ModalitätMR #LightYellow {
+  + Scansequenz: CodeableConcept [0..1]
+  + Scansequenz Untervariante: CodeableConcept [0..1]
+  + Magnetische Feldstärke: Quantity[T] [0..1]
+  + {field} Echozeit (TE): Quantity[ms] [0..1]
+  + {field} Repetitionszeit (TR): Quantity[ms] [0..1]
+  + {field} Inversionszeit (TI): Quantity[ms] [0..1]
+  + Kippwinkel: Quantity[deg] [0..1]
+  }
+
+  class ModalitätCT #LightYellow {
+  + CTDI Volumen: Quantity[mGy] [0..1]
+  + KVP: Quantity[kV] [0..1]
+  + Expositionszeit: Quantity[ms] [0..1]
+  + Exposition: Quantity[mAs] [0..1]
+  + Röntgenröhrenstrom: Quantity[mA] [0..1]
+  } 
+
+  class ModalitätDX #LightYellow {
+  + KVP: Quantity[kV] [0..1]
+  + Expositionszeit: Quantity[ms] [0..1]
+  + Exposition: Quantity[mAs] [0..1]
+  + Röntgenröhrenstrom: Quantity[mA] [0..1]
+  } 
+
+  class ModalitätCR #LightYellow {
+  + KVP: Quantity[kV] [0..1]
+  + Expositionszeit: Quantity[ms] [0..1]
+  + Exposition: Quantity[mAs] [0..1]
+  + Röntgenröhrenstrom: Quantity[mA] [0..1]
+  } 
+
+  class ModalitätMG #LightYellow {
+  + KVP: Quantity[kV] [0..1]
+  + Expositionszeit: Quantity[ms] [0..1]
+  + Exposition: Quantity[mAs] [0..1]
+  + Röntgenröhrenstrom: Quantity[mA] [0..1]
+  + Blickposition: CodeableConcept [0..1]
+  } 
+
+  class ModalitätNM #LightYellow {
+  + Radiopharmakon: CodeableConcept [0..1]
+  + Radionuklid: CodeableConcept [0..1]
+  + Tracer Expositionszeit: Quantity[s] [0..1]
+  + Skalierungseinheit: CodeableConcept [0..1]
+  + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
+  + Halbwertszeit: Quantity[s] [0..1]
+  } 
+
+  class ModalitätPT #LightYellow {
+  + Radiopharmakon: CodeableConcept [0..1]
+  + Radionuklid: CodeableConcept [0..1]
+  + Tracer Expositionszeit: Quantity[s] [0..1]
+  + Skalierungseinheit: CodeableConcept [0..1]
+  + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
+  + Halbwertszeit: Quantity[s] [0..1]
+  + Serientyp: String [0..1]
+  }
+}
+
+DICOMSerie "1..1" -r- "0..*" DICOMInstanz: ISt.series.instance
+DICOMSerie "1..1" -u- "0..1" ModalitätMR
+DICOMSerie "1..1" -d- "0..1" ModalitätCT
+DICOMSerie "1..1" -d- "0..1" ModalitätDX
+DICOMSerie "1..1" -d- "0..1" ModalitätCR
+DICOMSerie "1..1" -d- "0..1" ModalitätMG
+DICOMSerie "1..1" -u- "0..1" ModalitätNM
+DICOMSerie "1..1" -u- "0..1" ModalitätPT
+
+Studie "1..1" -r- "0..*" DICOMSerie: ISt.series
+@enduml

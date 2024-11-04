@@ -51,8 +51,8 @@ package "DICOM-Header" {
   }
 
   class ModalitätMR #LightYellow {
-  + Scanning Sequenz: string [0..1]
-  + Scanning Sequenz Untervariante: string [0..1]
+  + Scanning Sequenz: CodeableConcept [0..1]
+  + Scanning Sequenz Untervariante: CodeableConcept [0..1]
   + Magnetische Feldstärke: Quantity[T] [0..1]
   + Echozeit (TE): Quantity[ms] [0..1]
   + Repetitionszeit (TR): Quantity[ms] [0..1]
@@ -114,7 +114,7 @@ package "DICOM-Header" {
 class Anforderung <<ServiceRequest>> {
   + Status: Coding [1..1]
   + Anforderungsabsicht: Coding [1..1]
-  + Anforderungsklassifizierung: [1..*]
+  + Anforderungsklassifizierung: CodeableConcept [1..*]
   + Art der Anfrage: CodeableConcept [0..1]
   + {field} Personen-Identifikation: Reference(Patient) [1..1]
   + {field} Versorgungsstellenkontakt: Reference(Encounter) [0..1]
