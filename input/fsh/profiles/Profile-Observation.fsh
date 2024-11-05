@@ -17,7 +17,40 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * meta MS
 * meta.source MS
 * meta.profile MS
+//Profile
+* extension contains
+  MII_EX_Bildgebung_Serie_UID named SeriesUID 0..1 and
+  MII_EX_Bildgebung_SOP_Instanz_UID named SOPInstanzUID 0..1 and
+  http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure named bodyStructure 0..* MS
+* extension[bodyStructure].valueReference only Reference(MII_PR_Bildgebung_Koerperstruktur)
+* partOf MS
+* partOf only Reference (MII_PR_Bildgebung_Radiologische_Befundungsprozedur)
+* status MS
+* category MS
+* code MS
+* subject 1..1 MS
+* subject only Reference(Patient)
+* issued MS
+* value[x] MS
+* bodySite MS
+* hasMember MS
+* hasMember only Reference(Observation)
+* derivedFrom MS
+* component MS
+
 //Translation Profile
+* insert Translation(extension[SeriesUID] ^short, de-DE, Serien UID)
+* insert Translation(extension[SeriesUID] ^short, en-US, Series UID)
+* insert Translation(extension[SeriesUID] ^definition, de-DE, UID einer DICOM-Serie)
+* insert Translation(extension[SeriesUID] ^definition, en-US, UID of a series)
+* insert Translation(extension[SOPInstanzUID] ^short, de-DE, SOP Instanz UID)
+* insert Translation(extension[SOPInstanzUID] ^short, en-US, SOP Instance UID)
+* insert Translation(extension[SOPInstanzUID] ^definition, de-DE, UID einer SOP Instanz)
+* insert Translation(extension[SOPInstanzUID] ^definition, en-US, UID of a SOP instance)
+* insert Translation(extension[bodyStructure] ^short, de-DE, Körperstruktur)
+* insert Translation(extension[bodyStructure] ^short, en-US, body structure)
+* insert Translation(extension[bodyStructure] ^definition, de-DE, Referenz auf eine Körperstruktur)
+* insert Translation(extension[bodyStructure] ^definition, en-US, reference on a body structure)
 * insert Translation(partOf ^short, de-DE, Teil von)
 * insert Translation(partOf ^short, en-US, part of)
 * insert Translation(partOf ^definition, de-DE, Teil einer Befundungprozedur)
@@ -58,23 +91,3 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * insert Translation(component ^short, en-US, components)
 * insert Translation(component ^definition, de-DE, detailierte Bestandteile der Beobachtung)
 * insert Translation(component ^definition, en-US, detailed components of this observation)
-//Profile
-* extension contains
-  MII_EX_Bildgebung_Serie_UID named SeriesUID 0..1 and
-  MII_EX_Bildgebung_SOP_Instanz_UID named SOPInstanzUID 0..1 and
-  http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure named bodyStructure 0..* MS
-* extension[bodyStructure].valueReference only Reference(MII_PR_Bildgebung_Koerperstruktur)
-* partOf MS
-* partOf only Reference (MII_PR_Bildgebung_Radiologische_Befundungsprozedur)
-* status MS
-* category MS
-* code MS
-* subject 1..1 MS
-* subject only Reference(Patient)
-* issued MS
-* value[x] MS
-* bodySite MS
-* hasMember MS
-* hasMember only Reference(Observation)
-* derivedFrom MS
-* component MS

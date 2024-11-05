@@ -17,6 +17,25 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * meta MS
 * meta.source MS
 * meta.profile MS
+//Profile
+* basedOn 1..* MS
+* basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung)
+* status MS
+* category 1.. MS 
+* category.coding 1.. MS 
+* category.coding[sct] ^patternCodeableConcept = $SCT#363679005
+* code MS
+* code.coding MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+  loinc 0..1 MS
+* code.coding[loinc] ^patternCoding.system = $loinc
+* subject MS
+* subject only Reference(Patient)
+* performed[x] MS
+
 //Translation Profile
 * insert Translation(basedOn ^short, de-DE, Basiert auf)
 * insert Translation(basedOn ^short, en-US, based on)
@@ -42,22 +61,3 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * insert Translation(performed[x] ^short, en-US, Performed date)
 * insert Translation(performed[x] ^definition, de-DE, Durchführungsdatum oder -zeitraum der Prozedur.)
 * insert Translation(performed[x] ^definition, en-US, The date or period of time the procedure was performed.)
-//Profile
-* basedOn 1..* MS
-* basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung)
-* status MS
-* category 1.. MS 
-* category.coding 1.. MS 
-* category.coding[sct] ^patternCodeableConcept = $SCT#363679005
-* code MS
-* code.coding MS
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
-* code.coding ^slicing.rules = #open
-* code.coding contains
-  loinc 0..1 MS
-* code.coding[loinc] ^patternCoding.system = $loinc
-* subject MS
-* subject only Reference(Patient)
-* performed[x] MS
-

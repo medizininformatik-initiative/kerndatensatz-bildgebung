@@ -17,11 +17,58 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * meta MS
 * meta.source MS
 * meta.profile MS
+//Profile
+* extension contains
+  http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
+* extension[supportingInfo].extension[reference] 1..1 MS
+* extension[supportingInfo].extension[type] 1..1 MS
+* extension[supportingInfo].extension[reference].valueReference only Reference(DiagnosticReport or Procedure)
+* basedOn MS
+* basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung or CarePlan)
+* status MS 
+* category 1.. MS 
+* category.coding 1.. MS 
+* category.coding ^slicing.discriminator.type = #pattern
+* category.coding ^slicing.discriminator.path = "$this"
+* category.coding ^slicing.rules = #open
+* category.coding contains
+    loinc 0..1 and
+    diagnostic-service-sections 0..1 and 
+    sct 1..1
+* category.coding[loinc] = $loinc#18748-4
+* category.coding[diagnostic-service-sections] = $DSS#RAD
+* category.coding[sct] = $SCT#4201000179104
+* code MS
+* subject 1..1 MS
+* subject only Reference(Patient) 
+* encounter MS
+* effective[x] MS
+* effectiveDateTime MS
+* effectivePeriod MS
+* issued MS
+* result MS
+* result only Reference(Observation) 
+* imagingStudy 1.. MS
+* imagingStudy only Reference(MII_PR_Bildgebung_Bildgebungsstudie)
+* conclusion MS
+* conclusionCode MS
+* conclusionCode.coding MS
+* conclusionCode.coding ^slicing.discriminator.type = #pattern
+* conclusionCode.coding ^slicing.discriminator.path = "$this"
+* conclusionCode.coding ^slicing.rules = #open
+* conclusionCode.coding contains
+    icd10-gm 0..* MS and
+    sct 0..* MS
+* conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd10-gm
+* conclusionCode.coding[sct] ^patternCoding.system = $SCT
+* conclusionCode.coding[sct].code from MII_VS_Bildgebung_Diagnostic_Report_Coding (preferred)
+* presentedForm MS
+
 //Translation Profile
-/* insert Translation(extension[supportingInfo] ^short, de-DE, Zusatzinformation)
+* insert Translation(extension[supportingInfo] ^short, de-DE, Zusatzinformation)
 * insert Translation(extension[supportingInfo] ^short, en-US, additional information)
 * insert Translation(extension[supportingInfo] ^definition, de-DE, Zusatzinformation zum Befundbericht)
-* insert Translation(extension[supportingInfo] ^definition, en-US, additional information for the report)*/
+* insert Translation(extension[supportingInfo] ^definition, en-US, additional information for the report)
 * insert Translation(basedOn ^short, de-DE, Anforderung)
 * insert Translation(basedOn ^short, en-US, request)
 * insert Translation(basedOn ^definition, de-DE, Anforderung\, die den Befundbericht ausgelöst hat)
@@ -70,49 +117,3 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * insert Translation(presentedForm ^short, en-US, Attachment)
 * insert Translation(presentedForm ^definition, de-DE, zusätzlicher wichtiger Anhang)
 * insert Translation(presentedForm ^definition, en-US, additional attachment to the report)
-//Profile
-* extension contains
-  http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
-* extension[supportingInfo].extension[reference] 1..1 MS
-* extension[supportingInfo].extension[type] 1..1 MS
-* extension[supportingInfo].extension[reference].valueReference only Reference(DiagnosticReport or Procedure)
-* basedOn MS
-* basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung or CarePlan)
-* status MS 
-* category 1.. MS 
-* category.coding 1.. MS 
-* category.coding ^slicing.discriminator.type = #pattern
-* category.coding ^slicing.discriminator.path = "$this"
-* category.coding ^slicing.rules = #open
-* category.coding contains
-    loinc 0..1 and
-    diagnostic-service-sections 0..1 and 
-    sct 1..1
-* category.coding[loinc] = $loinc#18748-4
-* category.coding[diagnostic-service-sections] = $DSS#RAD
-* category.coding[sct] = $SCT#4201000179104
-* code MS
-* subject 1..1 MS
-* subject only Reference(Patient) 
-* encounter MS
-* effective[x] MS
-* effectiveDateTime MS
-* effectivePeriod MS
-* issued MS
-* result MS
-* result only Reference(Observation) 
-* imagingStudy 1.. MS
-* imagingStudy only Reference(MII_PR_Bildgebung_Bildgebungsstudie)
-* conclusion MS
-* conclusionCode MS
-* conclusionCode.coding MS
-* conclusionCode.coding ^slicing.discriminator.type = #pattern
-* conclusionCode.coding ^slicing.discriminator.path = "$this"
-* conclusionCode.coding ^slicing.rules = #open
-* conclusionCode.coding contains
-    icd10-gm 0..* MS and
-    sct 0..* MS
-* conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd10-gm
-* conclusionCode.coding[sct] ^patternCoding.system = $SCT
-* conclusionCode.coding[sct].code from MII_VS_Bildgebung_Diagnostic_Report_Coding (preferred)
-* presentedForm MS

@@ -17,7 +17,61 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * meta MS
 * meta.source MS
 * meta.profile MS
+//Studienebene
+* extension contains
+  //Extension Studienebene
+  MII_EX_Bildgebung_Bildgebungsgrund named bildgebungsgrund 0..1 
+* status MS
+* modality MS
+* modality from $modality (required)
+* subject MS
+* subject only Reference(Patient)
+* encounter MS
+* started MS
+* basedOn MS
+* endpoint MS
+* numberOfSeries MS
+* numberOfInstances MS
+* procedureReference MS
+* reasonReference MS
+* description MS
+//Serieebene
+* series MS
+* series.extension contains
+  //Extension Serienebene
+  MII_EX_Bildgebung_Modalitaet_CT named modalitätCT 0..1 and
+  MII_EX_Bildgebung_Modalitaet_MG_CR_DX named modalitätMG_CR_DX 0..1 and
+  MII_EX_Bildgebung_Modalitaet_MR named modalitätMR 0..1 and
+  MII_EX_Bildgebung_Modalitaet_PT named modalitätPT 0..1 and
+  MII_EX_Bildgebung_Modalitaet_NM named modalitätNM 0..1 and
+  MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1
+* series.uid MS 
+* series.number MS
+* series.modality MS 
+* series.modality from $modality (required)
+* series.description MS
+* series.numberOfInstances MS
+* series.bodySite MS 
+* series.bodySite from $bodySite (required)
+* series.laterality MS
+* series.laterality from $laterality (required)
+* series.started MS
+* series.performer.actor only Reference(MII_PR_Bildgebung_Geraet)
+//Instanzebene
+* series.instance MS
+* series.instance.extension contains
+  //Extension Instanzebene
+  MII_EX_Bildgebung_Instanz_Details named InstanceDetails 0..1
+* series.instance.uid MS
+* series.instance.sopClass MS
+* series.instance.sopClass from $sop-class (required)
+* series.instance.number MS
+
 //Translation Profile
+* insert Translation(extension[bildgebungsgrund] ^short, de-DE, Bildgebungsgrund)
+* insert Translation(extension[bildgebungsgrund] ^short, en-US, imaging reason)
+* insert Translation(extension[bildgebungsgrund] ^definition, de-DE, Bildgebungsgrund aus DICOM-Header)
+* insert Translation(extension[bildgebungsgrund] ^definition, en-US, reason for imaging from the DICOM-Header)
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, status)
 * insert Translation(status ^definition, de-DE, Angemeldet | Verfügbar | Abgebrochen | fehlerhafte Eingabe | Unbekannt)
@@ -70,6 +124,30 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(series ^short, en-US, series level)
 * insert Translation(series ^definition, de-DE, einzelne Bildserie einer Studie)
 * insert Translation(series ^definition, en-US, single series in a study)
+* insert Translation(series.extension[modalitätCT] ^short, de-DE, Modalität CT)
+* insert Translation(series.extension[modalitätCT] ^short, en-US, modality CT)
+* insert Translation(series.extension[modalitätCT] ^definition, de-DE, Bildgebungsmodalität CT)
+* insert Translation(series.extension[modalitätCT] ^definition, en-US, Imagingmodality CT)
+* insert Translation(series.extension[modalitätMG_CR_DX] ^short, de-DE, Modalität MG CR DX)
+* insert Translation(series.extension[modalitätMG_CR_DX] ^short, en-US, modality MG CR DX)
+* insert Translation(series.extension[modalitätMG_CR_DX] ^definition, de-DE, Bildgebungsmodalität MG\, CR und DX)
+* insert Translation(series.extension[modalitätMG_CR_DX] ^definition, en-US, Imagingmodality MG\, CR and DX)
+* insert Translation(series.extension[modalitätMR] ^short, de-DE, Modalität MR)
+* insert Translation(series.extension[modalitätMR] ^short, en-US, modality MR)
+* insert Translation(series.extension[modalitätMR] ^definition, de-DE, Bildgebungsmodalität MR)
+* insert Translation(series.extension[modalitätMR] ^definition, en-US, Imagingmodality MR)
+* insert Translation(series.extension[modalitätNM] ^short, de-DE, Modalität NM)
+* insert Translation(series.extension[modalitätNM] ^short, en-US, modality NM)
+* insert Translation(series.extension[modalitätNM] ^definition, de-DE, Bildgebungsmodalität NM)
+* insert Translation(series.extension[modalitätNM] ^definition, en-US, Imagingmodality NM)
+* insert Translation(series.extension[modalitätPT] ^short, de-DE, Modalität PT)
+* insert Translation(series.extension[modalitätPT] ^short, en-US, modality PT)
+* insert Translation(series.extension[modalitätPT] ^definition, de-DE, Bildgebungsmodalität PT)
+* insert Translation(series.extension[modalitätPT] ^definition, en-US, Imagingmodality PT)
+* insert Translation(series.extension[kontrastmittel] ^short, de-DE, kontrastmittel)
+* insert Translation(series.extension[kontrastmittel] ^short, en-US, contrast medication)
+* insert Translation(series.extension[kontrastmittel] ^definition, de-DE, Kontrastmittelgabe)
+* insert Translation(series.extension[kontrastmittel] ^definition, en-US, application of contrast medication)
 * insert Translation(series.uid ^short, de-DE, SerienUID)
 * insert Translation(series.uid ^short, en-US, series uid)
 * insert Translation(series.uid ^definition, de-DE, UID einer Serie)
@@ -122,55 +200,3 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(series.instance.number ^short, en-US, instancenumber)
 * insert Translation(series.instance.number ^definition, de-DE, Nummer der aktuellen Instanz)
 * insert Translation(series.instance.number ^definition, en-US, number of this instance)
-
-//Studienebene
-* extension contains
-  //Extension Studienebene
-  MII_EX_Bildgebung_Bildgebungsgrund named bildgebungsgrund 0..1 
-
-* insert Translation(extension[bildgebungsgrund] ^short, de-DE, Bildgebungsgrund)
-* status MS
-* modality MS
-* modality from $modality (required)
-* subject MS
-* subject only Reference(Patient)
-* encounter MS
-* started MS
-* basedOn MS
-* endpoint MS
-* numberOfSeries MS
-* numberOfInstances MS
-* procedureReference MS
-* reasonReference MS
-* description MS
-//Serieebene
-* series MS
-* series.extension contains
-  //Extension Serienebene
-  MII_EX_Bildgebung_Modalitaet_CT named modalitätCT 0..1 and
-  MII_EX_Bildgebung_Modalitaet_MG_CR_DX named modalitätMG_CR_DX 0..1 and
-  MII_EX_Bildgebung_Modalitaet_MR named modalitätMR 0..1 and
-  MII_EX_Bildgebung_Modalitaet_PT named modalitätPT 0..1 and
-  MII_EX_Bildgebung_Modalitaet_NM named modalitätNM 0..1 and
-  MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1
-* series.uid MS 
-* series.number MS
-* series.modality MS 
-* series.modality from $modality (required)
-* series.description MS
-* series.numberOfInstances MS
-* series.bodySite MS 
-* series.bodySite from $bodySite (required)
-* series.laterality MS
-* series.laterality from $laterality (required)
-* series.started MS
-* series.performer.actor only Reference(MII_PR_Bildgebung_Geraet)
-//Instanzebene
-* series.instance MS
-* series.instance.extension contains
-  //Extension Instanzebene
-  MII_EX_Bildgebung_Instanz_Details named InstanceDetails 0..1
-* series.instance.uid MS
-* series.instance.sopClass MS
-* series.instance.sopClass from $sop-class (required)
-* series.instance.number MS

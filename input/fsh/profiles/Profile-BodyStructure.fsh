@@ -17,6 +17,15 @@ Description: "Dieses Profil beschreibt die dargestellte Körperstrukturen nach M
 * meta MS
 * meta.source MS
 * meta.profile MS
+//Profile
+* morphology MS
+* morphology from $morphology (preferred)
+* location MS
+* location from $location (preferred)
+* locationQualifier MS
+* locationQualifier from $locQual (preferred)
+* patient MS
+
 //Translation Profile
 * insert Translation(morphology ^short, de-DE, Morphologie)
 * insert Translation(morphology ^short, en-US, morphology)
@@ -34,11 +43,3 @@ Description: "Dieses Profil beschreibt die dargestellte Körperstrukturen nach M
 * insert Translation(patient ^short, en-US, person)
 * insert Translation(patient ^definition, de-DE, Person\, an der sich die untersuchte Körperstruktur befindet)
 * insert Translation(patient ^definition, en-US, person\, who contains the described body structure)
-//Profile
-* morphology MS
-* morphology from $morphology (preferred)
-* location MS
-* location from $location (preferred)
-* locationQualifier MS
-* locationQualifier from $locQual (preferred)
-* patient MS

@@ -17,6 +17,29 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * meta MS
 * meta.source MS
 * meta.profile MS
+//Profile
+* status MS
+* type MS
+* subject 1..1 MS
+* subject only Reference(Patient)
+* date MS
+* author MS
+* author only Reference(Practitioner)
+* title MS
+* section MS
+* section ^slicing.discriminator.type = #profile
+* section ^slicing.discriminator.path = "Composition.section.entry.resolve()"
+* section ^slicing.rules = #open
+* section contains
+    diagRep 1..1
+* section[diagRep].entry only Reference(MII_PR_Bildgebung_Radiologischer_Befund)
+* section.title MS
+* section.code MS
+* section.author MS
+* section.text MS
+* section.entry 1..* MS
+* section.section MS
+
 //Translation Profile
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, status)
@@ -42,25 +65,3 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * insert Translation(section ^short, en-US, section)
 * insert Translation(section ^definition, de-DE, 1. Abschnitt immer der Befundbericht\, 2.-X. Abschnitt können Beobachtungen oder Freitext sein. Unterteilt in Titel\, Code\, Autor\, Text und Eintrag)
 * insert Translation(section ^definition, en-US, 1. section is the report\, 2.-X. sections are observations or text. Subdivided in title\, code\, author\, text and entry)
-//Profile
-* status MS
-* type MS
-* subject 1..1 MS
-* subject only Reference(Patient)
-* date MS
-* author MS
-* author only Reference(Practitioner)
-* title MS
-* section MS
-* section ^slicing.discriminator.type = #profile
-* section ^slicing.discriminator.path = "Composition.section.entry.resolve()"
-* section ^slicing.rules = #open
-* section contains
-    diagRep 1..1
-* section[diagRep].entry only Reference(MII_PR_Bildgebung_Radiologischer_Befund)
-* section.title MS
-* section.code MS
-* section.author MS
-* section.text MS
-* section.entry 1..* MS
-* section.section MS

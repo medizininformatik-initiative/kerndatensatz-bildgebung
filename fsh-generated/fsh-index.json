@@ -661,7 +661,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-ServiceRequest.fsh",
     "startLine": 2,
-    "endLine": 92
+    "endLine": 93
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.json",
@@ -669,7 +669,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-CarePlan.fsh",
     "startLine": 2,
-    "endLine": 48
+    "endLine": 49
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.json",
@@ -677,7 +677,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-ImagingProcedure.fsh",
     "startLine": 2,
-    "endLine": 62
+    "endLine": 63
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.json",
@@ -685,7 +685,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-ImagingStudy.fsh",
     "startLine": 2,
-    "endLine": 176
+    "endLine": 202
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-geraet.json",
@@ -693,7 +693,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-Device.fsh",
     "startLine": 2,
-    "endLine": 31
+    "endLine": 32
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",
@@ -701,7 +701,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-BodyStructure.fsh",
     "startLine": 2,
-    "endLine": 44
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.json",
@@ -709,7 +709,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-ConstrastAdministration.fsh",
     "startLine": 2,
-    "endLine": 53
+    "endLine": 79
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.json",
@@ -717,7 +717,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-ReadProcedure.fsh",
     "startLine": 2,
-    "endLine": 54
+    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.json",
@@ -725,7 +725,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-Observation.fsh",
     "startLine": 2,
-    "endLine": 80
+    "endLine": 93
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.json",
@@ -733,7 +733,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-DiagnosticReport.fsh",
     "startLine": 2,
-    "endLine": 118
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.json",
@@ -741,7 +741,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-Composition.fsh",
     "startLine": 2,
-    "endLine": 66
+    "endLine": 67
   },
   {
     "outputFile": "ValueSet-mii-vs-bildgebung-diagnostic-report-coding.json",

@@ -17,6 +17,10 @@ Description: "Dieses Profil beschreibt das genutzte Gerät in der radiologischer
 * meta MS
 * meta.source MS
 * meta.profile MS
+//Profile
+* manufacturer MS
+* deviceName MS
+
 //Translation Profile
 * insert Translation(manufacturer ^short, de-DE, Hersteller)
 * insert Translation(manufacturer ^short, en-US, manufacturer)
@@ -26,6 +30,3 @@ Description: "Dieses Profil beschreibt das genutzte Gerät in der radiologischer
 * insert Translation(deviceName ^short, en-US, device name)
 * insert Translation(deviceName ^definition, de-DE, Name und Modell des Aufnahmegeräts)
 * insert Translation(deviceName ^definition, en-US, name and model of the imagingdevice)
-//Profile
-* manufacturer MS
-* deviceName MS

@@ -17,6 +17,35 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * meta MS
 * meta.source MS
 * meta.profile MS
+//Profile
+* status MS
+* intent MS
+* category 1..* MS
+* category ^patternCodeableConcept = $SCT#363679005
+* code MS
+* code.coding MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    loinc 0..* MS and
+    radlex 0..* MS and
+    sct 0..* MS
+* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[radlex] ^patternCoding.system = $radlex
+* code.coding[sct] ^patternCoding.system = $SCT
+* code.coding[sct].code from MII_VS_Bildgebung_Service_Request_Coding (preferred)
+* subject MS
+* subject only Reference(Patient)
+* encounter MS
+* authoredOn MS
+* requester MS
+* reasonCode MS
+* reasonCode from MII_VS_Bildgebung_Service_Request_Reason (preferred)
+* reasonReference MS
+* supportingInfo MS
+* supportingInfo only Reference(MII_PR_Bildgebung_Radiologischer_Befund)
+
 //Translation Profile
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, status)
@@ -62,31 +91,3 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * insert Translation(supportingInfo ^short, en-US, additional information)
 * insert Translation(supportingInfo ^definition, de-DE, Zusätzliche Informationen zur Anforderung)
 * insert Translation(supportingInfo ^definition, en-US, additional information on this service request)
-//Profile
-* status MS
-* intent MS
-* category 1..* MS
-* category ^patternCodeableConcept = $SCT#363679005
-* code MS
-* code.coding MS
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
-* code.coding ^slicing.rules = #open
-* code.coding contains
-    loinc 0..* MS and
-    radlex 0..* MS and
-    sct 0..* MS
-* code.coding[loinc] ^patternCoding.system = $loinc
-* code.coding[radlex] ^patternCoding.system = $radlex
-* code.coding[sct] ^patternCoding.system = $SCT
-* code.coding[sct].code from MII_VS_Bildgebung_Service_Request_Coding (preferred)
-* subject MS
-* subject only Reference(Patient)
-* encounter MS
-* authoredOn MS
-* requester MS
-* reasonCode MS
-* reasonCode from MII_VS_Bildgebung_Service_Request_Reason (preferred)
-* reasonReference MS
-* supportingInfo MS
-* supportingInfo only Reference(MII_PR_Bildgebung_Radiologischer_Befund)

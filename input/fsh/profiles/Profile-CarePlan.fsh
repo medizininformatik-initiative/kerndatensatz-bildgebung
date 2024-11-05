@@ -17,6 +17,15 @@ Description: "Diese Profil beschreibt die ärztliche Behandlungsempfehlung einer
 * meta MS
 * meta.source MS
 * meta.profile MS
+//Profile
+* status MS
+* intent MS
+* description MS
+* subject MS
+* subject only Reference(Patient)
+* supportingInfo MS
+* supportingInfo only Reference(MII_PR_Bildgebung_Radiologischer_Befund)
+
 //Translation Profile
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, status)
@@ -38,11 +47,3 @@ Description: "Diese Profil beschreibt die ärztliche Behandlungsempfehlung einer
 * insert Translation(supportingInfo ^short, en-US, additional information)
 * insert Translation(supportingInfo ^definition, de-DE, Zusatzinformation für einen Befundbericht)
 * insert Translation(supportingInfo ^definition, en-US, additional information for a diagnostic report)
-//Profile
-* status MS
-* intent MS
-* description MS
-* subject MS
-* subject only Reference(Patient)
-* supportingInfo MS
-* supportingInfo only Reference(MII_PR_Bildgebung_Radiologischer_Befund)

@@ -17,6 +17,17 @@ Description: "Diese Profil beschreibt die radiologische Befundungsprozedur. Es l
 * meta MS
 * meta.source MS
 * meta.profile MS
+//Profile
+* status MS 
+* category 1..1 MS
+* category = $SCT#165197003
+* code MS
+* subject MS
+* subject only Reference(Patient)
+* performed[x] MS
+* report 1..* MS 
+* report ^definition = "In cases where follow ups are performed (e.g. RECIST or TNM) this procedure might be used in more than one diagnostic report this way we guarantee that the tumor categories stay the same over time."
+
 //Translation Profile
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, Status)
@@ -42,13 +53,3 @@ Description: "Diese Profil beschreibt die radiologische Befundungsprozedur. Es l
 * insert Translation(report ^short, en-US, report)
 * insert Translation(report ^definition, de-DE, Referenz auf den Bericht)
 * insert Translation(report ^definition, en-US, reference on the report)
-//Profile
-* status MS 
-* category 1..1 MS
-* category = $SCT#165197003
-* code MS
-* subject MS
-* subject only Reference(Patient)
-* performed[x] MS
-* report 1..* MS 
-* report ^definition = "In cases where follow ups are performed (e.g. RECIST or TNM) this procedure might be used in more than one diagnostic report this way we guarantee that the tumor categories stay the same over time."
