@@ -6,7 +6,7 @@ Als abstraktere Version eines Informationsmodells und zur besseren Verdeutlichun
 
 Zur besseren Lesbarkeit des vollständigen UML, findet dises sich [hier](https://simplifier.net/medizininformatik-initiative-modul-bildgebung/guides-implementationguide-common-images-uml-befund-bildgebung)
 
-{{render:implementation-guides/ImplementationGuide-Common/images/UML_Befund_Bildgebung.png}}
+{{render:implementation-guides/ImplementationGuide-Common/images/UML_Modul_Bildgebung.png}}
 
 
 Die abstrakte Darstellung des UMLs zeigt das Modul rein auf Klassenebene mit dem Fokus auf die Assoziationsbeziehungen untereinander:
