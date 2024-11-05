@@ -9,6 +9,6 @@ Zur besseren Lesbarkeit des vollständigen UML, findet dieses sich nochmal [hier
 {{render:implementation-guides/ImplementationGuide-Common/images/UML_Modul_Bildgebung.png}}
 
 
-Die abstrakte Darstellung des UMLs zeigt das Modul rein auf Klassenebene mit dem Fokus auf die Assoziationsbeziehungen untereinander:
+Die abstrakte Darstellung des UMLs zeigt das UML rein auf Klassenebene mit dem Fokus auf die Assoziationsbeziehungen im Modul:
  
 {{render:implementation-guides/ImplementationGuide-Common/images/UML_Modul_Bildgebung_Simple.png}}
