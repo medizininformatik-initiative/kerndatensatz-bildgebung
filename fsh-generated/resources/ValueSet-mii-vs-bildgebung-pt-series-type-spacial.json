@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Bildgebung_PT_Series_Type_Spacial",
+  "id": "mii-vs-bildgebung-pt-series-type-spacial",
+  "title": "MII VS Bildgebung Imaging Study PT Series Type Spacial",
+  "description": "Import the ValueSet for PT Series Type Spacial",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0-ballot",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "date": "2024-10-30",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type",
+        "concept": [
+          {
+            "code": "STATIC"
+          },
+          {
+            "code": "DYNAMIC"
+          },
+          {
+            "code": "GATED"
+          },
+          {
+            "code": "WHOLEBODY"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_Bildgebung_Series_Type",
+  "id": "mii-cs-bildgebung-series-type",
+  "title": "MII CS Bildgebung Series Type",
+  "description": "Series Type für PET Untersuchungen",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type",
+  "concept": [
+    {
+      "code": "STATIC",
+      "display": "a group of images at varying spatial locations at the same time"
+    },
+    {
+      "code": "DYNAMIC",
+      "display": "a group of images at a set of spatial locations (e.g., slices) at varying time slices, with all spatial locations acquired at all time slices"
+    },
+    {
+      "code": "GATED",
+      "display": "a group of images at the same spatial location, same starting and ending time, but acquired in different time slots of (possibly) different R-R intervals"
+    },
+    {
+      "code": "WHOLEBODY",
+      "display": "same as STATIC, except covering multiple transverse fields of view (and therefore acquired at a different time)"
+    },
+    {
+      "code": "IMAGE",
+      "display": "a tomographic image slice"
+    },
+    {
+      "code": "REPROJECTION",
+      "display": "a projection image derived from forward projection through slices of tomographic images, using the algorithm defined in Reprojection Method (0054,1004)"
+    }
+  ],
+  "version": "2025.0.0-ballot",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2024-10-30",
+  "caseSensitive": true,
+  "count": 6
+}
