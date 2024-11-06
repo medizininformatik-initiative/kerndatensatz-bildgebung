@@ -44,6 +44,7 @@ Title: "MII Example Bildgebung Imaging Study NM"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueCodeableConcept.coding[pixelData] = MII_CS_Bildgebung_Instance_Image_Type#ORIGINAL
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueCodeableConcept.coding[patientExamination] = MII_CS_Bildgebung_Instance_Image_Type#PRIMARY
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueCodeableConcept.coding[modalityNM] = MII_CS_Bildgebung_Instance_Image_Type#DYNAMIC
+* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueCodeableConcept.coding[implementationNM] = MII_CS_Bildgebung_Instance_Image_Type#EMISSION
 * series.instance.uid = "instance-example-uid"
 * series.instance.sopClass = urn:ietf:rfc:3986#urn:oid:1.2.840.10008.5.1.4.1.1.128
 * series.instance.number = 31
