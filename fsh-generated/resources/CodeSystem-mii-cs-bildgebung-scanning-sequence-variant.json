@@ -41,7 +41,7 @@
       "display": "no sequence variant"
     }
   ],
-  "version": "2025.0.0-ballot",
+  "version": "2025.0.0-release",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -53,7 +53,7 @@
       ]
     }
   ],
-  "date": "2024-10-30",
+  "date": "2024-11-11",
   "caseSensitive": true,
   "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-scanning-sequence-variant",
   "count": 8

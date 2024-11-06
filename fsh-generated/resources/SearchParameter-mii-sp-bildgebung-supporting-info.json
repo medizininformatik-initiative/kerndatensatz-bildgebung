@@ -13,11 +13,11 @@
       ]
     }
   ],
-  "version": "2025.0.0-ballot",
+  "version": "2025.0.0-release",
   "name": "MII_SP_Bildgebung_Supporting_Info",
   "status": "active",
   "experimental": false,
-  "date": "2024-08-30",
+  "date": "2024-11-11",
   "description": "Suchparameter für CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension.supportingInfo",
   "code": "supporting-info",
   "base": [

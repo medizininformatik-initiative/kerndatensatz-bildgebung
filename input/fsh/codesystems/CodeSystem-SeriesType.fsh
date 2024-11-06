@@ -5,8 +5,8 @@ Description: "Series Type für PET Untersuchungen"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type"
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert PR_CS_VS_Date
 * ^status = #active
-* ^date = "2024-10-30"
 * ^caseSensitive = true
 * ^content = #complete
 * #STATIC "a group of images at varying spatial locations at the same time"

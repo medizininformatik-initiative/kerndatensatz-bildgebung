@@ -17,15 +17,15 @@
       ]
     }
   ],
-  "version": "2025.0.0-ballot",
+  "version": "2025.0.0-release",
   "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc)",
+  "date": "2024-11-11",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
     ]
   },
   "experimental": false,
-  "date": "2024-08-30",
   "compose": {
     "include": [
       {

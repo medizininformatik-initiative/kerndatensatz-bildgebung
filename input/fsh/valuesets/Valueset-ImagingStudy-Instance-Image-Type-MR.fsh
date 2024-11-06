@@ -5,9 +5,9 @@ Description: "Import the ValueSet for Instance Image Type MR"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr"
 * insert Publisher
 * insert PR_CS_VS_Version
+* insert PR_CS_VS_Date
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
-* ^date = "2024-10-30"
 * MII_CS_Bildgebung_Instance_Image_Type#DENSITYMAP
 * MII_CS_Bildgebung_Instance_Image_Type#DIFFUSIONMAP
 * MII_CS_Bildgebung_Instance_Image_Type#IMAGEADDITION

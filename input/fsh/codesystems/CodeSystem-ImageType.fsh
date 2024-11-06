@@ -5,8 +5,8 @@ Description: "Image type für Radiologische Bilder"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert PR_CS_VS_Date
 * ^status = #active
-* ^date = "2024-10-30"
 * ^caseSensitive = true
 * ^content = #complete
 //Pixel Data Characteristics

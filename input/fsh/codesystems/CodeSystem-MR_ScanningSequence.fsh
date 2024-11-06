@@ -5,8 +5,8 @@ Description: "Scanning Sequence für MR Untersuchungen"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence"
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert PR_CS_VS_Date
 * ^status = #active
-* ^date = "2024-10-30"
 * ^caseSensitive = true
 * ^valueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence"
 * ^content = #complete
