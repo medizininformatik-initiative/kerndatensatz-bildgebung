@@ -110,6 +110,17 @@
                     "value": 3
                   },
                   "url": "sliceThickness"
+                },
+                {
+                  "url": "imageType",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "ORIGINAL",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                      }
+                    ]
+                  }
                 }
               ],
               "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
@@ -126,7 +137,7 @@
       "performer": [
         {
           "actor": {
-            "reference": "Device/DevExample"
+            "reference": "Device/mii-exa-bildgebung-geraet"
           }
         }
       ],

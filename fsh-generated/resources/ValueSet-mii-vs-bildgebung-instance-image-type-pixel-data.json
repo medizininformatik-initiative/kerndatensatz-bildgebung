@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MII_VS_Bildgebung_Instance_Image_Type",
-  "id": "mii-vs-bildgebung-instance-image-type",
-  "title": "MII VS Bildgebung Instance Image Type",
-  "description": "Import the ValueSet for Instance Image Type",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type",
+  "name": "MII_VS_Bildgebung_Instance_Image_Type_Pixel_Data",
+  "id": "mii-vs-bildgebung-instance-image-type-pixel-data",
+  "title": "MII VS Bildgebung Instance Image Type Pixel Data",
+  "description": "Import the ValueSet for Instance Image Type Pixel Data",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -35,12 +35,6 @@
           },
           {
             "code": "DERIVED"
-          },
-          {
-            "code": "PRIMARY"
-          },
-          {
-            "code": "SECONDARY"
           }
         ]
       }

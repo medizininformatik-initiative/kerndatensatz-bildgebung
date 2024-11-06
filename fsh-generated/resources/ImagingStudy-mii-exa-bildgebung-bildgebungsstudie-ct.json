@@ -96,6 +96,22 @@
                     "value": 4
                   },
                   "url": "sliceThickness"
+                },
+                {
+                  "url": "imageType",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "DERIVED"
+                      },
+                      {
+                        "code": "PRIMARY"
+                      },
+                      {
+                        "code": "AXIAL"
+                      }
+                    ]
+                  }
                 }
               ],
               "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
@@ -112,7 +128,7 @@
       "performer": [
         {
           "actor": {
-            "reference": "Device/DevExample"
+            "reference": "Device/mii-exa-bildgebung-geraet"
           }
         }
       ],

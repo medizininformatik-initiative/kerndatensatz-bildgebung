@@ -8,7 +8,6 @@ Description: "Image type für Radiologische Bilder"
 * ^status = #active
 * ^date = "2024-10-30"
 * ^caseSensitive = true
-* ^valueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type"
 * ^content = #complete
 //Pixel Data Characteristics
 * #PDC "Pixel Data Characteristics"

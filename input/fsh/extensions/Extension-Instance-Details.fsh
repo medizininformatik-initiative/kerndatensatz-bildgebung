@@ -37,11 +37,13 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
 * extension[imageType].valueCodeableConcept.coding ^slicing.discriminator.path = "coding"
 * extension[imageType].valueCodeableConcept.coding ^slicing.rules = #open
 * extension[imageType].valueCodeableConcept.coding contains
-    patientPixelData 0..* and
+    pixelData 0..* and
+    patientExamination 0..* and
     modalityCT 0..* and
     modalityMR 0..* and
     modalityNM 0..*
-* extension[imageType].valueCodeableConcept.coding[patientPixelData] from MII_VS_Bildgebung_Instance_Image_Type
+* extension[imageType].valueCodeableConcept.coding[pixelData] from MII_VS_Bildgebung_Instance_Image_Type_Pixel_Data
+* extension[imageType].valueCodeableConcept.coding[patientExamination] from MII_VS_Bildgebung_Instance_Image_Type_Patient_Examination
 * extension[imageType].valueCodeableConcept.coding[modalityCT] from MII_VS_Bildgebung_Instance_Image_Type_CT
 * extension[imageType].valueCodeableConcept.coding[modalityMR] from MII_VS_Bildgebung_Instance_Image_Type_MR
 * extension[imageType].valueCodeableConcept.coding[modalityNM] from MII_VS_Bildgebung_Instance_Image_Type_NM

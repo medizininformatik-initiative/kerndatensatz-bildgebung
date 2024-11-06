@@ -409,14 +409,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-bildgebung-instance-image-type"
-        },
-        "name": "MII VS Bildgebung Instance Image Type",
-        "description": "Import the ValueSet for Instance Image Type",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/mii-vs-bildgebung-instance-image-type-ct"
         },
         "name": "MII VS Bildgebung Instance Image Type CT",
@@ -437,6 +429,22 @@
         },
         "name": "MII VS Bildgebung Instance Image Type NM",
         "description": "Import the ValueSet for Instance Image Type NM",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination"
+        },
+        "name": "MII VS Bildgebung Instance Image Type Patient Examination",
+        "description": "Import the ValueSet for Instance Image Type Examination",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data"
+        },
+        "name": "MII VS Bildgebung Instance Image Type Pixel Data",
+        "description": "Import the ValueSet for Instance Image Type Pixel Data",
         "exampleBoolean": false
       },
       {

@@ -18,14 +18,16 @@ Title: "MII Example Bildgebung Imaging Study PT"
 * reasonReference = Reference(Condition/CondExample)
 * description = "whole body aquisition"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[radiopharmaceutical].valueCodeableConcept.coding = $SCT#35321007 "Fluorodeoxyglucose (18-F) (substance)"
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[radionuclide].valueCodeableConcept.coding = $SCT#23451235 ""
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[tracerExposureTime].valueQuantity.value = 10000
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[tracerExposureTime].valueQuantity.unit = "Seconds"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[radionuclideTotalDose].valueQuantity.value = 196
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[radionuclideTotalDose].valueQuantity.unit = "Becquerel"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[radionuclideHalfLife].valueQuantity.value = 6586.2
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[radionuclideHalfLife].valueQuantity.unit = "Seconds"
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[seriesType].valueString = "Seconds"
 * series.uid = "series-example-uid"
-* series.performer.actor = Reference(Device/DevExample)
+* series.performer.actor = Reference(Device/mii-exa-bildgebung-geraet)
 * series.number = 1
 * series.modality = $DCM#PT "Positron emission tomography"
 * series.description = "PET WB"
@@ -39,7 +41,8 @@ Title: "MII Example Bildgebung Imaging Study PT"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacingY].valueQuantity.unit = "millimeter"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[sliceThickness].valueQuantity.value = 4
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[sliceThickness].valueQuantity.unit = "millimeter"
-//* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueString = "['ORIGINAL', 'PRIMARY']"
+* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueCodeableConcept.coding[pixelData] = #ORIGINAL
+* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueCodeableConcept.coding[patientExamination] = #PRIMARY
 * series.instance.uid = "instance-example-uid"
 * series.instance.sopClass = urn:ietf:rfc:3986#urn:oid:1.2.840.10008.5.1.4.1.1.128
 * series.instance.number = 31

@@ -261,14 +261,25 @@
         }
       },
       {
-        "id": "Extension.extension:imageType.value[x].coding:patientPixelData",
+        "id": "Extension.extension:imageType.value[x].coding:pixelData",
         "path": "Extension.extension.value[x].coding",
-        "sliceName": "patientPixelData",
+        "sliceName": "pixelData",
         "min": 0,
         "max": "*",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data"
+        }
+      },
+      {
+        "id": "Extension.extension:imageType.value[x].coding:patientExamination",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "patientExamination",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination"
         }
       },
       {
