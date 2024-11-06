@@ -294,27 +294,6 @@
         }
       },
       {
-        "id": "Extension.extension:imageType.value[x].coding:modalityCR",
-        "path": "Extension.extension.value[x].coding",
-        "sliceName": "modalityCR",
-        "min": 0,
-        "max": "*"
-      },
-      {
-        "id": "Extension.extension:imageType.value[x].coding:modalityDX",
-        "path": "Extension.extension.value[x].coding",
-        "sliceName": "modalityDX",
-        "min": 0,
-        "max": "*"
-      },
-      {
-        "id": "Extension.extension:imageType.value[x].coding:modalityPT",
-        "path": "Extension.extension.value[x].coding",
-        "sliceName": "modalityPT",
-        "min": 0,
-        "max": "*"
-      },
-      {
         "id": "Extension.extension:imageType.value[x].coding:modalityNM",
         "path": "Extension.extension.value[x].coding",
         "sliceName": "modalityNM",
@@ -324,13 +303,6 @@
           "strength": "required",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm"
         }
-      },
-      {
-        "id": "Extension.extension:imageType.value[x].coding:modalityMG",
-        "path": "Extension.extension.value[x].coding",
-        "sliceName": "modalityMG",
-        "min": 0,
-        "max": "*"
       },
       {
         "id": "Extension.url",

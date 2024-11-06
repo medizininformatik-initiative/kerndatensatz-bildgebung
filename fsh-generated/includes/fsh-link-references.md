@@ -90,7 +90,7 @@
 [mii-sp-bildgebung-imaging-study-series-started]: SearchParameter-mii-sp-bildgebung-imaging-study-series-started.html
 [mii-sp-bildgebung-imaging-study-series-tracer-exposure-time]: SearchParameter-mii-sp-bildgebung-imaging-study-series-tracer-exposure-time.html
 [mii-sp-bildgebung-imaging-study-series-units]: SearchParameter-mii-sp-bildgebung-imaging-study-series-units.html
-[mii-sp-bildgebung-imaging-study-series-viewposition]: SearchParameter-mii-sp-bildgebung-imaging-study-series-viewposition.html
+[mii-sp-bildgebung-imaging-study-series-view-position]: SearchParameter-mii-sp-bildgebung-imaging-study-series-view-position.html
 [mii-sp-bildgebung-imaging-study-series-xray-tube-current]: SearchParameter-mii-sp-bildgebung-imaging-study-series-xray-tube-current.html
 [mii-sp-bildgebung-observation-body-site]: SearchParameter-mii-sp-bildgebung-observation-body-site.html
 [mii-sp-bildgebung-observation-body-structure]: SearchParameter-mii-sp-bildgebung-observation-body-structure.html

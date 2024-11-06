@@ -169,7 +169,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-08-30"
 * description = "Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite"
-* code = #study-modality-body-site
+* code = #modality-body-site
 * base = #ImagingStudy
 * type = #composite
 * expression = "ImagingStudy.series"
@@ -384,21 +384,21 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-viewposition
+Instance: mii-sp-bildgebung-imaging-study-series-view-position
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-viewposition"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-view-position"
 * insert SP_Publisher
 * insert Version
-* name = "MII_SP_Bildgebung_Imaging_Study_Series_viewposition"
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_View_Position"
 * status = #active
 * experimental = false
 * date = "2024-08-30"
-* description = "Suchparameter für ImagingStudy.series.extension.viewposition"
-* code = #viewposition
+* description = "Suchparameter für ImagingStudy.series.extension.viewPosition"
+* code = #view-position
 * base = #ImagingStudy
 * type = #token
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-viewposition').extension('KVP').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('KVP').value"
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('viewPosition').value"
 * modifier[+] = #text
 * modifier[+] = #not
 * modifier[+] = #above
@@ -441,11 +441,15 @@ Usage: #definition
 * description = "Suchparameter für ImagingStudy.series.extension.scanningSequence"
 * code = #scanning-sequence
 * base = #ImagingStudy
-* type = #string
+* type = #token
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('scanningSequence').value"
-* modifier[+] = #contains
-* modifier[+] = #exact
-* modifier[+] = #missing
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+* modifier[+] = #missing 
 
 Instance: mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant
 InstanceOf: SearchParameter
@@ -460,11 +464,15 @@ Usage: #definition
 * description = "Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant"
 * code = #scanning-sequence-variant
 * base = #ImagingStudy
-* type = #string
+* type = #token
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('scanningSequenceVariant').value"
-* modifier[+] = #contains
-* modifier[+] = #exact
-* modifier[+] = #missing
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+* modifier[+] = #missing 
 
 Instance: mii-sp-bildgebung-imaging-study-series-echo-time
 InstanceOf: SearchParameter
@@ -878,10 +886,14 @@ Usage: #definition
 * description = "Suchparameter für ImagingStudy.series.instance.extension.imageType"
 * code = #instance-image-type
 * base = #ImagingStudy
-* type = #string
+* type = #token
 * expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('imageType').value"
-* modifier[+] = #contains
-* modifier[+] = #exact
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
 * modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-instance-number

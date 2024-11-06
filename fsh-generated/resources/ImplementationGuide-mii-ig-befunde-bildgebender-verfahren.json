@@ -777,10 +777,10 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-viewposition"
+          "reference": "SearchParameter/mii-sp-bildgebung-imaging-study-series-view-position"
         },
-        "name": "mii-sp-bildgebung-imaging-study-series-viewposition",
-        "description": "Suchparameter für ImagingStudy.series.extension.viewposition",
+        "name": "mii-sp-bildgebung-imaging-study-series-view-position",
+        "description": "Suchparameter für ImagingStudy.series.extension.viewPosition",
         "exampleBoolean": false
       },
       {
