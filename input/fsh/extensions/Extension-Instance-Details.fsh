@@ -40,11 +40,7 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
     patientPixelData 0..* and
     modalityCT 0..* and
     modalityMR 0..* and
-    modalityCR 0..* and
-    modalityDX 0..* and
-    modalityPT 0..* and
     modalityNM 0..* and
-    modalityMG 0..*
 * extension[imageType].valueCodeableConcept.coding[patientPixelData] from MII_VS_Bildgebung_Instance_Image_Type
 * extension[imageType].valueCodeableConcept.coding[modalityCT] from MII_VS_Bildgebung_Instance_Image_Type_CT
 * extension[imageType].valueCodeableConcept.coding[modalityMR] from MII_VS_Bildgebung_Instance_Image_Type_MR

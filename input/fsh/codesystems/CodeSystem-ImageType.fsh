@@ -10,6 +10,7 @@ Description: "Image type für Radiologische Bilder"
 * ^caseSensitive = true
 * ^valueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type"
 * ^content = #complete
+//Pixel Data Characteristics
 * #PDC "Pixel Data Characteristics"
 * #PDC ^property[0].code = #child
 * #PDC ^property[=].valueCode = #ORIGINAL 
@@ -21,6 +22,7 @@ Description: "Image type für Radiologische Bilder"
 * #DERIVED "identifies an derived image"
 * #DERIVED ^property[0].code = #parent
 * #DERIVED ^property[=].valueCode = #PDC
+//Patient Examinatiion Characteristics
 * #PEC "Patient Examination Characteristics"
 * #PEC ^property[0].code = #child
 * #PEC ^property[=].valueCode = #PRIMARY
@@ -32,6 +34,7 @@ Description: "Image type für Radiologische Bilder"
 * #SECONDARY "identifies a secondary image"
 * #SECONDARY ^property[0].code = #parent
 * #SECONDARY ^property[=].valueCode = #PEC
+//Modality Specific Characteristics
 * #MSC "Modality Specific Characteristics"
 * #MSC ^property[0].code = #child
 * #MSC ^property[=].valueCode = #CT
@@ -162,8 +165,7 @@ Description: "Image type für Radiologische Bilder"
 * #RECONGATEDTOMO "Recon Gated Tomo"
 * #RECONGATEDTOMO ^property[+].code = #parent
 * #RECONGATEDTOMO ^property[=].valueCode = #NM
-* #MSC ^property[+].code = #child
-* #MSC ^property[=].valueCode = #NM
+//Implemation Specific Identifiers
 * #ISI "Implemetation Specific Identifiers"
 * #ISI ^property[0].code = #child
 * #ISI ^property[=].valueCode = #NMI
