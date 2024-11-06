@@ -106,7 +106,7 @@ package "DICOM-Header" {
   + Skalierungseinheit: CodeableConcept [0..1]
   + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
   + Halbwertszeit: Quantity[s] [0..1]
-  + Serientyp: String [0..1]
+  + Serientyp: CodeableConcept [0..*]
   }
 }
 
@@ -217,11 +217,11 @@ legend left
 endlegend
 
 DICOMSerie "1..1" -l- "0..*" DICOMInstanz: ISt.series.instance
-DICOMSerie "1..1" -u- "0..1" ModalitätMR
+DICOMSerie "1..1" -d- "0..1" ModalitätMR
 DICOMSerie "1..1" -u- "0..1" ModalitätCT
 DICOMSerie "1..1" -u- "0..1" ModalitätDX
-DICOMSerie "1..1" -d- "0..1" ModalitätCR
-DICOMSerie "1..1" -d- "0..1" ModalitätMG
+DICOMSerie "1..1" -u- "0..1" ModalitätCR
+DICOMSerie "1..1" -u- "0..1" ModalitätMG
 DICOMSerie "1..1" -d- "0..1" ModalitätNM
 DICOMSerie "1..1" -d- "0..1" ModalitätPT
 DICOMSerie "0..1" -- "0..1" Kontrastmittelgabe_Medikationsgabe: ISt.series.extension(Kontrastdetails)
@@ -234,7 +234,7 @@ Befundungsprozedur "0..1" -- "0..*" Anforderung: Pr.basedOn
 
 Kontrastmittelgabe_Medikationsgabe "0..*" -r- "0..*" Bildgebung: MA.partOf
 
-Befundbericht "0..1" -- "0..*" Anforderung: DR.basedOn
+Befundbericht "0..1" -d- "0..*" Anforderung: DR.basedOn
 Befundbericht "0..*" -- "1..1" "Patient:in": DR.subject
 Befundbericht "0..*" -- "0..1" Versorgungsstellenkontakt: DR.encounter
 Befundbericht "1..1" -- "0..*" GenerischeBeobachtung: DR.result
@@ -242,31 +242,29 @@ Befundbericht "0..*" -l- "0..*" Studie: DR.imagingStudy
 Befundbericht "1..1" -u- "0..*" Befundbericht: DR.supportingInfo (R5!)
 Befundbericht "0..1" -- "1..1" Befundungsprozedur: DR.supportingInfo (R5!)
 
-Empfehlung "0..*" -- "1..1" "Patient:in": CP.subject
 Empfehlung "0..*" -- "0..*" Befundbericht: CP.supportingInfo 
 
 GenerischeBeobachtung "0..*" -- "0..1" Körperstruktur: Obs.bodyStructure (R5!)
 GenerischeBeobachtung "0..*" -- "0..1" Befundungsprozedur: Obs.partOf
-GenerischeBeobachtung "0..*" -- "1..1" "Patient:in": Obs.subject
 GenerischeBeobachtung "1..1" -u- "0..*" GenerischeBeobachtung: Obs.hasMember
 GenerischeBeobachtung "0..*" -- "0..*" Studie: Obs.derivedFrom
 
 Studie "0..*" -- "0..1" Versorgungsstellenkontakt: ISt.encounter
 Studie "0..*" -- "1..1" "Patient:in": ISt.subject
-Studie "0..*" -d- "0..*" Anforderung: ISt.basedOn
+Studie "0..*" -u- "0..*" Anforderung: ISt.basedOn
 Studie "0..*" -- "0..1" Bildgebung: ISt.procedureReference
-Studie "1..1" -r---- "0..*" DICOMSerie: ISt.series
+Studie "1..1" -r- "0..*" DICOMSerie: ISt.series
 
 Anforderung "0..*" -- "1..1" "Patient:in": SR.subject
 Anforderung "0..*" -- "0..1" Versorgungsstellenkontakt: SR.encounter
 Anforderung "0..*" -- "0..*" Vorbefund: SR.reasonRef
-Anforderung "0..*" -u- "0..*" Studie: SR.supportingInfo
-Anforderung "0..1" -- "0..*" Befundbericht: SR.supportingInfo
+Anforderung "0..*" -- "0..*" Studie: SR.supportingInfo
+Anforderung "0..1" -r- "0..*" Befundbericht: SR.supportingInfo
 
 SemistrukturiertesBefunddokument "1..1" -- "1..*" Befundabschnitt: Co.section
-SemistrukturiertesBefunddokument "0..*" -- "1..1" "Patient:in": Co.subject
 
 Befundabschnitt "1..1" -- "1..1" Befundbericht: Co.section.entry
 Befundabschnitt "1..1" -u- "0..*" Befundabschnitt: Co.section.section
 Befundabschnitt "0..1" -- "0..*" GenerischeBeobachtung: Co.section.entry
+
 @enduml
