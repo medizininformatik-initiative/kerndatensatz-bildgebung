@@ -328,7 +328,7 @@
         "path": "Extension.extension",
         "sliceName": "seriesType",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -344,11 +344,63 @@
       {
         "id": "Extension.extension:seriesType.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:seriesType.value[x]:valueCodeableConcept",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:seriesType.value[x]:valueCodeableConcept.coding",
+        "path": "Extension.extension.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:seriesType.value[x]:valueCodeableConcept.coding:spacial",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "spacial",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial"
+        }
+      },
+      {
+        "id": "Extension.extension:seriesType.value[x]:valueCodeableConcept.coding:volumetric",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "volumetric",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-volumetric"
+        }
       },
       {
         "id": "Extension.url",

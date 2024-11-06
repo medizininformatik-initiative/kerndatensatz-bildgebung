@@ -90,6 +90,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-bildgebung-series-type"
+        },
+        "name": "MII CS Bildgebung Series Type",
+        "description": "Series Type für PET Untersuchungen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-ex-bildgebung-bildgebungsgrund"
         },
         "name": "MII EX Bildgebung Bildgebungsgrund",
@@ -233,6 +241,14 @@
         },
         "name": "MII Example Bildgebung Imaging Study MR",
         "description": "Knie DOT",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+      },
+      {
+        "reference": {
+          "reference": "ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-nm"
+        },
+        "name": "MII Example Bildgebung Imaging Study NM",
+        "description": "whole body aquisition",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
       },
       {
@@ -401,6 +417,22 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-pt-series-type-spacial"
+        },
+        "name": "MII VS Bildgebung Imaging Study PT Series Type Spacial",
+        "description": "Import the ValueSet for PT Series Type Spacial",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-pt-series-type-volumetric"
+        },
+        "name": "MII VS Bildgebung Imaging Study PT Series Type Volumetric",
+        "description": "Import the ValueSet for PT Series Type Volumetric",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-bildgebung-imagingStudy-series-viewPosition"
         },
         "name": "MII VS Bildgebung ImagingStudy-Series View Position",
@@ -429,6 +461,14 @@
         },
         "name": "MII VS Bildgebung Instance Image Type NM",
         "description": "Import the ValueSet for Instance Image Type NM",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation"
+        },
+        "name": "MII VS Bildgebung Instance Image Type NM Implementation",
+        "description": "Import the ValueSet for Instance Image Type NM Implementation",
         "exampleBoolean": false
       },
       {

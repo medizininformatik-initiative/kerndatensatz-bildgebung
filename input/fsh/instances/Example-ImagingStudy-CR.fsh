@@ -25,7 +25,7 @@ Title: "MII Example Bildgebung Imaging Study CR"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[exposureTime].valueQuantity.unit = "milliseconds"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[xRayTubeCurrent].valueQuantity.value = 96
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[xRayTubeCurrent].valueQuantity.unit = "milliampere"
-* series.performer.actor = Reference(Device/mii-exa-bildgebung-geraett)
+* series.performer.actor = Reference(Device/mii-exa-bildgebung-geraet)
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel].extension[contrastBolus].valueBoolean = false
 * series.uid = "series-example-uid"
 * series.number = 1
@@ -35,7 +35,8 @@ Title: "MII Example Bildgebung Imaging Study CR"
 * series.bodySite = $SCT#43799004 "Thoracic structure (body structure)"
 * series.laterality = $SCT#66459002 "Unilateral"
 * series.started = "2024-07-19T12:03:30+02:00"
-//* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueString = "[ORIGINAL,PRIMARY,RAD]"
+* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueCodeableConcept.coding[pixelData] = MII_CS_Bildgebung_Instance_Image_Type#ORIGINAL
+* series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueCodeableConcept.coding[patientExamination] = MII_CS_Bildgebung_Instance_Image_Type#PRIMARY
 * series.instance.uid = "instance-example-uid"
 * series.instance.sopClass = urn:ietf:rfc:3986#urn:oid:1.2.840.10008.5.1.4.1.1.1
 * series.instance.number = 1

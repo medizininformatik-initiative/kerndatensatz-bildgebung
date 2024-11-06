@@ -158,25 +158,25 @@
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:tracerexposuretime",
+        "id": "Extension.extension:tracerExposureTime",
         "path": "Extension.extension",
-        "sliceName": "tracerexposuretime",
+        "sliceName": "tracerExposureTime",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:tracerexposuretime.extension",
+        "id": "Extension.extension:tracerExposureTime.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:tracerexposuretime.url",
+        "id": "Extension.extension:tracerExposureTime.url",
         "path": "Extension.extension.url",
-        "fixedUri": "tracerexposuretime"
+        "fixedUri": "tracerExposureTime"
       },
       {
-        "id": "Extension.extension:tracerexposuretime.value[x]",
+        "id": "Extension.extension:tracerExposureTime.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
@@ -188,17 +188,17 @@
         ]
       },
       {
-        "id": "Extension.extension:tracerexposuretime.value[x].unit",
+        "id": "Extension.extension:tracerExposureTime.value[x].unit",
         "path": "Extension.extension.value[x].unit",
         "patternString": "Seconds"
       },
       {
-        "id": "Extension.extension:tracerexposuretime.value[x].system",
+        "id": "Extension.extension:tracerExposureTime.value[x].system",
         "path": "Extension.extension.value[x].system",
         "patternUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Extension.extension:tracerexposuretime.value[x].code",
+        "id": "Extension.extension:tracerExposureTime.value[x].code",
         "path": "Extension.extension.value[x].code",
         "patternCode": "s"
       },

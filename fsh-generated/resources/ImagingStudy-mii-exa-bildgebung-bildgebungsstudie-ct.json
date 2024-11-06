@@ -102,13 +102,16 @@
                   "valueCodeableConcept": {
                     "coding": [
                       {
-                        "code": "DERIVED"
+                        "code": "DERIVED",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
                       },
                       {
-                        "code": "PRIMARY"
+                        "code": "PRIMARY",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
                       },
                       {
-                        "code": "AXIAL"
+                        "code": "AXIAL",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
                       }
                     ]
                   }

@@ -58,10 +58,42 @@
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
         }
       ],
+      "instance": [
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "imageType",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "ORIGINAL",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                      },
+                      {
+                        "code": "PRIMARY",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
+            }
+          ],
+          "uid": "instance-example-uid",
+          "sopClass": {
+            "code": "urn:oid:1.2.840.10008.5.1.4.1.1.1",
+            "system": "urn:ietf:rfc:3986"
+          },
+          "number": 1
+        }
+      ],
       "performer": [
         {
           "actor": {
-            "reference": "Device/mii-exa-bildgebung-geraett"
+            "reference": "Device/mii-exa-bildgebung-geraet"
           }
         }
       ],
@@ -84,17 +116,7 @@
         "system": "http://snomed.info/sct",
         "display": "Unilateral"
       },
-      "started": "2024-07-19T12:03:30+02:00",
-      "instance": [
-        {
-          "uid": "instance-example-uid",
-          "sopClass": {
-            "code": "urn:oid:1.2.840.10008.5.1.4.1.1.1",
-            "system": "urn:ietf:rfc:3986"
-          },
-          "number": 1
-        }
-      ]
+      "started": "2024-07-19T12:03:30+02:00"
     }
   ],
   "status": "available",

@@ -3,6 +3,7 @@
 [MII_CS_Bildgebung_Instance_Image_Type]: CodeSystem-mii-cs-bildgebung-instance-image-type.html
 [MII_CS_Bildgebung_Scanning_Sequence]: CodeSystem-mii-cs-bildgebung-scanning-sequence.html
 [MII_CS_Bildgebung_Scanning_Sequence_Variant]: CodeSystem-mii-cs-bildgebung-scanning-sequence-variant.html
+[MII_CS_Bildgebung_Series_Type]: CodeSystem-mii-cs-bildgebung-series-type.html
 [MII_EX_Bildgebung_Bildgebungsgrund]: StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.html
 [MII_EX_Bildgebung_Serie_UID]: StructureDefinition-mii-ex-bildgebung-serie-uid.html
 [MII_EX_Bildgebung_Instanz_Details]: StructureDefinition-mii-ex-bildgebung-instanz-details.html
@@ -22,6 +23,7 @@
 [mii-exa-bildgebung-bildgebungsstudie-cr]: ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.html
 [mii-exa-bildgebung-bildgebungsstudie-ct]: ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.html
 [mii-exa-bildgebung-bildgebungsstudie-mr]: ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.html
+[mii-exa-bildgebung-bildgebungsstudie-nm]: ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-nm.html
 [mii-exa-bildgebung-bildgebungsstudie-pt]: ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.html
 [mii-exa-bildgebung-kontrastmittelgabe]: MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.html
 [mii-exa-bildgebung-radiologische-beobachtung]: Observation-mii-exa-bildgebung-radiologische-beobachtung.html
@@ -43,10 +45,13 @@
 [MII_VS_Bildgebung_Diagnostic_Report_Coding]: ValueSet-mii-vs-bildgebung-diagnostic-report-coding.html
 [MII_VS_Bildgebung_MR_Scanning_Sequence]: ValueSet-mii-vs-bildgebung-mr-scanning-sequence.html
 [MII_VS_Bildgebung_MR_Scanning_Sequence_Variant]: ValueSet-mii-vs-bildgebung-mr-scanning-sequence-variant.html
+[MII_VS_Bildgebung_PT_Series_Type_Spacial]: ValueSet-mii-vs-bildgebung-pt-series-type-spacial.html
+[MII_VS_Bildgebung_PT_Series_Type_Volumetric]: ValueSet-mii-vs-bildgebung-pt-series-type-volumetric.html
 [MII_VS_Bildgebung_ImagingStudy_series_viewPosition]: ValueSet-mii-vs-bildgebung-imagingStudy-series-viewPosition.html
 [MII_VS_Bildgebung_Instance_Image_Type_CT]: ValueSet-mii-vs-bildgebung-instance-image-type-ct.html
 [MII_VS_Bildgebung_Instance_Image_Type_MR]: ValueSet-mii-vs-bildgebung-instance-image-type-mr.html
 [MII_VS_Bildgebung_Instance_Image_Type_NM]: ValueSet-mii-vs-bildgebung-instance-image-type-nm.html
+[MII_VS_Bildgebung_Instance_Image_Type_NM_Implementation]: ValueSet-mii-vs-bildgebung-instance-image-type-nm-implementation.html
 [MII_VS_Bildgebung_Instance_Image_Type_Patient_Examination]: ValueSet-mii-vs-bildgebung-instance-image-type-patient-examination.html
 [MII_VS_Bildgebung_Instance_Image_Type_Pixel_Data]: ValueSet-mii-vs-bildgebung-instance-image-type-pixel-data.html
 [MII_VS_Bildgebung_Service_Request_Coding]: ValueSet-mii-vs-bildgebung-service-request-coding.html

@@ -48,6 +48,14 @@
     "endLine": 17
   },
   {
+    "outputFile": "CodeSystem-mii-cs-bildgebung-series-type.json",
+    "fshName": "MII_CS_Bildgebung_Series_Type",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems\\CodeSystem-SeriesType.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
     "outputFile": "Composition-mii-exa-bildgebung-semistrukt-befundbericht.json",
     "fshName": "mii-exa-bildgebung-semistrukt-befundbericht",
     "fshType": "Instance",
@@ -77,7 +85,7 @@
     "fshType": "Instance",
     "fshFile": "instances\\Example-ImagingStudy-CR.fsh",
     "startLine": 1,
-    "endLine": 41
+    "endLine": 42
   },
   {
     "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.json",
@@ -93,7 +101,15 @@
     "fshType": "Instance",
     "fshFile": "instances\\Example-ImagingStudy-MR.fsh",
     "startLine": 1,
-    "endLine": 52
+    "endLine": 54
+  },
+  {
+    "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-nm.json",
+    "fshName": "mii-exa-bildgebung-bildgebungsstudie-nm",
+    "fshType": "Instance",
+    "fshFile": "instances\\Example-ImagingStudy-NM.fsh",
+    "startLine": 1,
+    "endLine": 49
   },
   {
     "outputFile": "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json",
@@ -101,7 +117,7 @@
     "fshType": "Instance",
     "fshFile": "instances\\Example-ImagingStudy-PET.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 50
   },
   {
     "outputFile": "MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.json",
@@ -621,7 +637,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\Extension-Modality-PT.fsh",
     "startLine": 2,
-    "endLine": 46
+    "endLine": 54
   },
   {
     "outputFile": "StructureDefinition-mii-ex-bildgebung-serie-uid.json",
@@ -776,6 +792,14 @@
     "endLine": 22
   },
   {
+    "outputFile": "ValueSet-mii-vs-bildgebung-instance-image-type-nm-implementation.json",
+    "fshName": "MII_VS_Bildgebung_Instance_Image_Type_NM_Implementation",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\Valueset-ImagingStudy-Instance-Image-Type-NM-Implementation.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
     "outputFile": "ValueSet-mii-vs-bildgebung-instance-image-type-nm.json",
     "fshName": "MII_VS_Bildgebung_Instance_Image_Type_NM",
     "fshType": "ValueSet",
@@ -787,7 +811,7 @@
     "outputFile": "ValueSet-mii-vs-bildgebung-instance-image-type-patient-examination.json",
     "fshName": "MII_VS_Bildgebung_Instance_Image_Type_Patient_Examination",
     "fshType": "ValueSet",
-    "fshFile": "valuesets\\Valueset-ImagingStudy-Instance-Image-Type_Patient_Exam.fsh",
+    "fshFile": "valuesets\\Valueset-ImagingStudy-Instance-Image-Type-Patient-Exam.fsh",
     "startLine": 1,
     "endLine": 12
   },
@@ -795,7 +819,7 @@
     "outputFile": "ValueSet-mii-vs-bildgebung-instance-image-type-pixel-data.json",
     "fshName": "MII_VS_Bildgebung_Instance_Image_Type_Pixel_Data",
     "fshType": "ValueSet",
-    "fshFile": "valuesets\\Valueset-ImagingStudy-Instance-Image-Type.fsh",
+    "fshFile": "valuesets\\Valueset-ImagingStudy-Instance-Image-Type-Pixel-Data.fsh",
     "startLine": 1,
     "endLine": 12
   },
@@ -814,6 +838,22 @@
     "fshFile": "valuesets\\Valueset-ImagingStudy-MR-ScanningSequence.fsh",
     "startLine": 1,
     "endLine": 11
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-bildgebung-pt-series-type-spacial.json",
+    "fshName": "MII_VS_Bildgebung_PT_Series_Type_Spacial",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\Valueset-ImagingStudy-PT-Series-Type-spacial.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-bildgebung-pt-series-type-volumetric.json",
+    "fshName": "MII_VS_Bildgebung_PT_Series_Type_Volumetric",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\Valueset-ImagingStudy-PT-Series-Type-Volumetric.fsh",
+    "startLine": 1,
+    "endLine": 12
   },
   {
     "outputFile": "ValueSet-mii-vs-bildgebung-service-request-coding.json",

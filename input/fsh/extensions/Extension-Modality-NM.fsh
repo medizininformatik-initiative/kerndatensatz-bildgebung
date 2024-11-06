@@ -18,7 +18,7 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension contains
     radiopharmaceutical 0..1 MS and
     radionuclide 0..1 MS and
-    tracerexposuretime 0..1 MS and
+    tracerExposureTime 0..1 MS and
     units 0..1 MS and
     radionuclideTotalDose 0..1 MS and
     radionuclideHalfLife 0..1 MS and
@@ -29,10 +29,10 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[radionuclide].value[x] only CodeableConcept
 * extension[radionuclide].valueCodeableConcept from $radionuclide_NM (extensible)
 * extension[radionuclide].valueCodeableConcept.text MS
-* extension[tracerexposuretime].value[x] only SimpleQuantity
-* extension[tracerexposuretime].valueQuantity.unit = "Seconds" 
-* extension[tracerexposuretime].valueQuantity.system = "http://unitsofmeasure.org"
-* extension[tracerexposuretime].valueQuantity.code = #s
+* extension[tracerExposureTime].value[x] only SimpleQuantity
+* extension[tracerExposureTime].valueQuantity.unit = "Seconds" 
+* extension[tracerExposureTime].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[tracerExposureTime].valueQuantity.code = #s
 * extension[units].value[x] only CodeableConcept
 * extension[units].valueCodeableConcept from $units (extensible)
 * extension[radionuclideTotalDose].value[x] only SimpleQuantity

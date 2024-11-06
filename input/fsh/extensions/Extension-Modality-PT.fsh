@@ -22,7 +22,7 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     units 0..1 MS and
     radionuclideTotalDose 0..1 MS and
     radionuclideHalfLife 0..1 MS and
-    seriesType 0..1 MS
+    seriesType 0..* MS
 * extension[radiopharmaceutical].value[x] only CodeableConcept
 * extension[radiopharmaceutical].valueCodeableConcept from $radiopharmaceutical_PET (extensible)
 * extension[radiopharmaceutical].valueCodeableConcept.text MS
@@ -43,4 +43,12 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[radionuclideHalfLife].valueQuantity.unit = "Seconds" 
 * extension[radionuclideHalfLife].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[radionuclideHalfLife].valueQuantity.code = #s
-* extension[seriesType].value[x] only string
+* extension[seriesType].valueCodeableConcept
+* extension[seriesType].valueCodeableConcept.coding ^slicing.discriminator.type = #value
+* extension[seriesType].valueCodeableConcept.coding ^slicing.discriminator.path = "coding"
+* extension[seriesType].valueCodeableConcept.coding ^slicing.rules = #open
+* extension[seriesType].valueCodeableConcept.coding contains
+    spacial 0..* and
+    volumetric 0..*
+* extension[seriesType].valueCodeableConcept.coding[spacial] from MII_VS_Bildgebung_PT_Series_Type_Spacial
+* extension[seriesType].valueCodeableConcept.coding[volumetric] from MII_VS_Bildgebung_PT_Series_Type_Volumetric

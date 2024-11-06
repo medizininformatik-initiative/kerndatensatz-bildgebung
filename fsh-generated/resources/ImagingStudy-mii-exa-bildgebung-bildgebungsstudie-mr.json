@@ -29,7 +29,8 @@
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "code": "SE"
+                    "code": "SE",
+                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence"
                   }
                 ]
               }
@@ -39,7 +40,12 @@
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "code": "SK"
+                    "code": "SP",
+                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant"
+                  },
+                  {
+                    "code": "SK",
+                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant"
                   }
                 ]
               }
@@ -116,7 +122,11 @@
                   "valueCodeableConcept": {
                     "coding": [
                       {
-                        "code": "ORIGINAL",
+                        "code": "SECONDARY",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                      },
+                      {
+                        "code": "OTHER",
                         "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
                       }
                     ]

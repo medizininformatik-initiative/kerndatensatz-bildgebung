@@ -1,6 +1,6 @@
 {
   "resourceType": "ImagingStudy",
-  "id": "mii-exa-bildgebung-bildgebungsstudie-pt",
+  "id": "mii-exa-bildgebung-bildgebungsstudie-nm",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
@@ -34,8 +34,9 @@
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "code": "23451235",
-                    "system": "http://snomed.info/sct"
+                    "code": "77004003",
+                    "system": "http://snomed.info/sct",
+                    "display": "^18^Fluorine"
                   }
                 ]
               }
@@ -60,7 +61,7 @@
             },
             {
               "valueQuantity": {
-                "unit": "Becquerel",
+                "unit": "Megabecquerel",
                 "value": 196
               },
               "url": "radionuclideTotalDose"
@@ -71,24 +72,9 @@
                 "value": 6586.2
               },
               "url": "radionuclideHalfLife"
-            },
-            {
-              "url": "seriesType",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "DYNAMIC",
-                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type"
-                  },
-                  {
-                    "code": "IMAGE",
-                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type"
-                  }
-                ]
-              }
             }
           ],
-          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt"
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm"
         }
       ],
       "instance": [
@@ -122,10 +108,16 @@
                   "valueCodeableConcept": {
                     "coding": [
                       {
-                        "code": "ORIGINAL"
+                        "code": "ORIGINAL",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
                       },
                       {
-                        "code": "PRIMARY"
+                        "code": "PRIMARY",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                      },
+                      {
+                        "code": "DYNAMIC",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
                       }
                     ]
                   }
@@ -152,11 +144,11 @@
       ],
       "number": 1,
       "modality": {
-        "code": "PT",
+        "code": "NM",
         "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Positron emission tomography"
+        "display": "Nuclear Medicine"
       },
-      "description": "PET WB",
+      "description": "NM WB",
       "numberOfInstances": 195,
       "bodySite": {
         "code": "51185008",
@@ -174,9 +166,9 @@
   "status": "available",
   "modality": [
     {
-      "code": "PT",
+      "code": "NM",
       "system": "http://dicom.nema.org/resources/ontology/DCM",
-      "display": "Positron emission tomography"
+      "display": "Nuclear Medicine"
     }
   ],
   "subject": {
