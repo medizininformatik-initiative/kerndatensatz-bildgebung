@@ -33,12 +33,6 @@ Dies ist ein Custom Tag und wird aus der Differenz zwischen den Zeitangaben in S
 * Skalierungseinheit ["0054,1001" Units]
 Falls Units nicht vorhanden oder leer, kann das Tag "0028,1054" (RescaleType) verwendet werden.
 
-* MittleresEnergieFenster:
-Dies ist ein Custom Tag, welches sich aus den Inhalten des Dicom Tags "0054,0012" (Energy Window Information Sequence) gebildet wird.
-Dieses DICOM-Tag ist ein komplexer Datentyp, der eine Liste (0 bis n) enthält, die die Emissions- sowie Streukorrektur-Fenster beschreibt. Diese Fenster sind durch ein oberes und unteres Limit sowie den Namen des Fensters gekennzeichnet. Da die Breite der Fenster herstellerspezifisch ist, soll für die Energiefenster ein Mittelwert aus dem oberen und unteren Limit gebildet werden, um den Energie-Peak des Radionuklids zu ermitteln. Dieser Peak ist einfacher abbildbar und abfragbar als die größte verwendete Breite unter allen Herstellern. Zudem kann das Streukorrekturfenster eines Radionuklids innerhalb des Emissionsfensters eines anderen Radionuklids liegen, was bei Abfragen eines Energy-Window zu False Positives führen kann.
-Dieser Peak wird bestimmt durch die Mittelwertsbildung aus den Tags "0054,0012" (Energy Window Information Sequence) →  "0054,0013" (Energy Window Range Sequence) → [ "0054,0014" Energy Window Lower Limit &  "0054,0015" Energy Window Upper Limit].
-Da es mehrere Fenster geben kann, muss diese Instanz mehrmals angelegt werden.
-
 @```
 from
     StructureDefinition
