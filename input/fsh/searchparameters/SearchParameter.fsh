@@ -703,10 +703,14 @@ Usage: #definition
 * description = "ImagingStudy.series.extension.seriesType"
 * code = #series-type
 * base = #ImagingStudy
-* type = #string
+* type = #token
 * expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('seriesType').value"
-* modifier[+] = #contains
-* modifier[+] = #exact
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
 * modifier[+] = #missing
 
 Instance: mii-sp-bildgebung-imaging-study-series-contrast-bolus

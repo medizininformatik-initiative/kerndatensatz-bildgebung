@@ -188,7 +188,7 @@ Usage: #definition
 * insert SupportSearchParam(units, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-units, #token, #SHALL)
 * insert SupportSearchParam(radionuclide-total-dose, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose, #quantity, #SHALL)
 * insert SupportSearchParam(radionuclide-half-life, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-half-life, #quantity, #SHALL)
-* insert SupportSearchParam(series-type, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-series-type, #string, #SHALL)
+* insert SupportSearchParam(series-type, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-series-type, #token, #SHALL)
 //Extension Contrast
 * insert SupportSearchParam(contrast-bolus, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus, #token, #SHALL)
 * insert SupportSearchParam(contrast-bolus-details, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus-details, #reference, #SHALL)
