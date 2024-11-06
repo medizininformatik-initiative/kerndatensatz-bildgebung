@@ -16,11 +16,11 @@ Beispiel des Zugriffs auf ein nested DICOM-Tag mit Python aus einer DICOM-Schich
 
 Implementation:
     
-* Radiopharmakon (ValueSet mit Codes: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4021.html):
+* Radiopharmakon (ValueSet mit Codes: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html):
 Das Radiopharmakon kann unter Bestimmung des Codes „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0304“ (Radiopharmaceutical Code Sequence)  → „0008,0100“ (Code Value) als Code in den Klarnamen umgewandelt werden.
 Ist der nicht vorhanden, kann der Wert direkt aus dem Tag „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0304“ (Radiopharmaceutical Code Sequence)  → „0008,0104“ (Code Meaning) direkt extrahiert werden. Falls unter Umständen sich der Klarname von dem ValueSet unterscheidet, kann ein lokales Mapping am Standort gemacht werden. Alternativ kann bei weiterem Fehlen auch noch das Tag „0054,0016“ (Radiopharmaceutical Information Sequence) → "0018,0031" (Radiopharmaceutical) zu rate gezogen werden, bitte nur verwenden Falls im String sich konstant der Tracer UND das Radionuklid befinden (siehe Link des Valuesets).
 
-* Radionuklid (ValueSet mit Codes: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html)
+* Radionuklid (ValueSet mit Codes: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_18.html)
 Das Radionuklid kann unter Bestimmung des Codes „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0300“ (Radiopharmaceutical Code Sequence)  → „0008,0100“ (Code Value) als Code in den Klarnamen umgewandelt werden.
           
 * Tracer-Einwirkzeit:
