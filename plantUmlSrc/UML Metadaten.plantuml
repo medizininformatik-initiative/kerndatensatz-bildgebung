@@ -15,7 +15,7 @@ package "DICOM-Header" {
   + {field} Quelle zum PACS Bild: Reference(Endpoint) [0..*]
   + Anzahl an enhaltenen Serien: unsignedInt [0..1]
   + Anzahl an enthaltenen SOP Instanzen: unsignedInt [0..1]
-  + {field} Bildgebungsprozedur: Reference(Procedure) [0..*]
+  + {field} Bildgebungsprozedur: Reference(Procedure) [0..1]
   + Extension: Bildgebungsgrund: string [0..1]
   + {field} Indikation: Reference(Condition|Observation) [0..*]
   + Studien-Beschreibung: string [0..1]
@@ -31,7 +31,7 @@ package "DICOM-Header" {
   + {field} Körperregion(bodySite): Coding [0..1]
   + Körperseite: Coding [0..1]
   + Beginn: dateTime [0..1]
-  + Funktion des Ausführenden: CodeableConcept [0..1]
+  + Funktion des Ausführenden: CodeableConcept [0..*]
   + {field} Akteur: Reference(Device) [1..1]
   + Extension: Kontrastmittelgabe: boolean [0..1]
   + {field} Extension: Kontrastmitteldetails: Reference(Statement|Administration) [0..*]
@@ -73,6 +73,7 @@ package "DICOM-Header" {
   + Expositionszeit: Quantity[ms] [0..1]
   + Exposition: Quantity[mAs] [0..1]
   + Röntgenröhrenstrom: Quantity[mA] [0..1]
+  + Blickposition: CodeableConcept [0..1]
   } 
 
   class ModalitätCR #LightYellow {
@@ -80,6 +81,7 @@ package "DICOM-Header" {
   + Expositionszeit: Quantity[ms] [0..1]
   + Exposition: Quantity[mAs] [0..1]
   + Röntgenröhrenstrom: Quantity[mA] [0..1]
+  + Blickposition: CodeableConcept [0..1]
   } 
 
   class ModalitätMG #LightYellow {
@@ -106,7 +108,7 @@ package "DICOM-Header" {
   + Skalierungseinheit: CodeableConcept [0..1]
   + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
   + Halbwertszeit: Quantity[s] [0..1]
-  + Serientyp: String [0..1]
+  + Serientyp: CodeableConcept [0..*]
   }
 }
 
