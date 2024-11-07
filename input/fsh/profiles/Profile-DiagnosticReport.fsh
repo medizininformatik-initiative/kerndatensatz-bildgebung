@@ -32,13 +32,21 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
 * category.coding contains
-    loinc 0..1 and
-    diagnostic-service-sections 0..1 and 
-    sct 1..1
+    loinc 0..* MS and
+    diagnostic-service-sections 0..* MS and 
+    sct 1..1 MS
 * category.coding[loinc] = $loinc#18748-4
 * category.coding[diagnostic-service-sections] = $DSS#RAD
 * category.coding[sct] = $SCT#4201000179104
 * code MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    sct 0..1 MS and
+    loinc 0..1 MS
+* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[sct] ^patternCoding.system = $SCT
 * subject 1..1 MS
 * subject only Reference(Patient) 
 * encounter MS
