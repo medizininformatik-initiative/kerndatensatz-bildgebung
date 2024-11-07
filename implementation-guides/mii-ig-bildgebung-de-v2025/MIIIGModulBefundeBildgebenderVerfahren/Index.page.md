@@ -5,9 +5,9 @@ Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Prof
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 30.08.2024 |
-| Version | 2025.0.0-ballot |
-| Status  | ballot      |
+| Datum   | 11.11.2024 |
+| Version | 2025.0.0-release |
+| Status  | release      |
 | Realm   | DE          | 
 
 ## Inhaltsverzeichnis
@@ -45,6 +45,7 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 * Lucas Scherer (Universitätsklinikum Erlangen)
 * Daniel Schmitz (Universitätsmedizin Mainz)
 * Friederike Schneider (Mint Medical GmbH)
+* Damian Wrobel (Mint Medical GmbH)
 
 
 ## Copyright-Hinweis, Nutzungshinweise

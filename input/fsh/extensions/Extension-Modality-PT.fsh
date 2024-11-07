@@ -16,13 +16,13 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * ^experimental = false
 //Extension
 * extension contains
-    radiopharmaceutical 0..1 MS and
-    radionuclide 0..1 MS and
-    tracerExposureTime 0..1 MS and
-    units 0..1 MS and
-    radionuclideTotalDose 0..1 MS and
-    radionuclideHalfLife 0..1 MS and
-    seriesType 0..* MS
+    radiopharmaceutical 0..1 and
+    radionuclide 0..1 and
+    tracerExposureTime 0..1 and
+    units 0..1 and
+    radionuclideTotalDose 0..1 and
+    radionuclideHalfLife 0..1 and
+    seriesType 0..*
 * extension[radiopharmaceutical].value[x] only CodeableConcept
 * extension[radiopharmaceutical].valueCodeableConcept from $radiopharmaceutical_PET (extensible)
 * extension[radiopharmaceutical].valueCodeableConcept.text MS

@@ -1,5 +1,5 @@
 [mii-exa-bildgebung-tnm-radiologische-befundungsprozedur]: Procedure-mii-exa-bildgebung-tnm-radiologische-befundungsprozedur.html
-[mii-cps-bildgebung-capabilitystatement-1x]: CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.html
+[mii-cps-bildgebung-capabilitystatement-2025x]: CapabilityStatement-mii-cps-bildgebung-capabilitystatement-2025x.html
 [MII_CS_Bildgebung_Instance_Image_Type]: CodeSystem-mii-cs-bildgebung-instance-image-type.html
 [MII_CS_Bildgebung_Scanning_Sequence]: CodeSystem-mii-cs-bildgebung-scanning-sequence.html
 [MII_CS_Bildgebung_Scanning_Sequence_Variant]: CodeSystem-mii-cs-bildgebung-scanning-sequence-variant.html

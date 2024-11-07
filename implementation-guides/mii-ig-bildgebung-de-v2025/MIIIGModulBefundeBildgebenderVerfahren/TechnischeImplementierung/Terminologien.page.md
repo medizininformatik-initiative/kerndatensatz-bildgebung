@@ -12,15 +12,20 @@ Der DICOM-Standard definiert zum Teil für bestimmte Tags eigene Value Sets, wel
 * Modalität: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html
 * Körperseite: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html
 * SOP-Klasse: https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html
-* Radiopharmakon: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html
+* Radiopharmakon PT: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4021.html
+* Radionuklid PT: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4020.html
+* Radiopharmakon NM:https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html
+* Radionuklid NM: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_18.html
+* Skalierungseinheit: http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_84.html
 
-Für folgenden Tags muss noch eine Lösung für die Darstellung der Enumerated Values als CodeableConcept gefunden werden:
+
+Für folgenden Tags wurden eigene Code-Systeme erstellt, um Tags mit "enumerated-values" abfragbar abbilden zu können:
 
     (0018,0020) Scanning Sequence -> ImagingStudy-Extension MR scanningSequence
     (0018,0021) Sequence Variant -> ImagingStudy-Extension MR scanningSequenceVariant
     (0008,0008) Image Type -> ImagingStudy-Extension Instanzdetails imageType
-    (0028,1054) Rescale Type Attribute -> ImagingStudy-Extension PT NM rescaleType
-Diese können aktuell als Strings gespeichert werden, wobei jedoch keine Validierung der angegebenen Werte möglich ist. Es liegt damit in der Verantwortung jedes Standortes, hier nur gültige Werte anzugeben. Siehe auch Diskussion zur zukünfitigen Umsetzung im [FHIR Chat](https://chat.fhir.org/#narrow/stream/179202-terminology/topic/Using.20DICOM.20Enums.20in.20FHIR/near/456487414).
+    (0054,1000) Series Type -> ImagingStudy-Extension PT seriesType
+
 
 **SNOMED CT**
 

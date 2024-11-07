@@ -8,12 +8,12 @@
     "endLine": 9
   },
   {
-    "outputFile": "CapabilityStatement-mii-cps-bildgebung-capabilitystatement-1x.json",
-    "fshName": "mii-cps-bildgebung-capabilitystatement-1x",
+    "outputFile": "CapabilityStatement-mii-cps-bildgebung-capabilitystatement-2025x.json",
+    "fshName": "mii-cps-bildgebung-capabilitystatement-2025x",
     "fshType": "Instance",
     "fshFile": "capabilitystatements\\CapabilityStatement-1x.fsh",
     "startLine": 31,
-    "endLine": 296
+    "endLine": 310
   },
   {
     "outputFile": "CarePlan-mii-exa-bildgebung-behandlungsempfehlung.json",
@@ -749,7 +749,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Profile-DiagnosticReport.fsh",
     "startLine": 2,
-    "endLine": 119
+    "endLine": 127
   },
   {
     "outputFile": "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.json",

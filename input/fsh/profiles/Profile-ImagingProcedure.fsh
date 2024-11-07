@@ -30,7 +30,7 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
-  loinc 0..1 MS
+    loinc 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * subject MS
 * subject only Reference(Patient)
