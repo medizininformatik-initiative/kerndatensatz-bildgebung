@@ -90,8 +90,7 @@
         "path": "Extension.extension",
         "sliceName": "radiopharmaceutical",
         "min": 0,
-        "max": "1",
-        "mustSupport": true
+        "max": "1"
       },
       {
         "id": "Extension.extension:radiopharmaceutical.extension",
@@ -126,8 +125,7 @@
         "path": "Extension.extension",
         "sliceName": "radionuclide",
         "min": 0,
-        "max": "1",
-        "mustSupport": true
+        "max": "1"
       },
       {
         "id": "Extension.extension:radionuclide.extension",
@@ -162,8 +160,7 @@
         "path": "Extension.extension",
         "sliceName": "tracerExposureTime",
         "min": 0,
-        "max": "1",
-        "mustSupport": true
+        "max": "1"
       },
       {
         "id": "Extension.extension:tracerExposureTime.extension",
@@ -207,8 +204,7 @@
         "path": "Extension.extension",
         "sliceName": "units",
         "min": 0,
-        "max": "1",
-        "mustSupport": true
+        "max": "1"
       },
       {
         "id": "Extension.extension:units.extension",
@@ -238,8 +234,7 @@
         "path": "Extension.extension",
         "sliceName": "radionuclideTotalDose",
         "min": 0,
-        "max": "1",
-        "mustSupport": true
+        "max": "1"
       },
       {
         "id": "Extension.extension:radionuclideTotalDose.extension",
@@ -283,8 +278,7 @@
         "path": "Extension.extension",
         "sliceName": "radionuclideHalfLife",
         "min": 0,
-        "max": "1",
-        "mustSupport": true
+        "max": "1"
       },
       {
         "id": "Extension.extension:radionuclideHalfLife.extension",
@@ -328,8 +322,7 @@
         "path": "Extension.extension",
         "sliceName": "seriesType",
         "min": 0,
-        "max": "*",
-        "mustSupport": true
+        "max": "*"
       },
       {
         "id": "Extension.extension:seriesType.extension",

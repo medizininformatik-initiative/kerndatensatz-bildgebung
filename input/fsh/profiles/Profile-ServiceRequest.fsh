@@ -44,7 +44,7 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * reasonCode from MII_VS_Bildgebung_Service_Request_Reason (preferred)
 * reasonReference MS
 * supportingInfo MS
-* supportingInfo only Reference(MII_PR_Bildgebung_Radiologischer_Befund)
+* supportingInfo only Reference(DiagnosticReport or ImagingStudy)
 
 //Translation Profile
 * insert Translation(status ^short, de-DE, Status)

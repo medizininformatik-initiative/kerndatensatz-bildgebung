@@ -32,7 +32,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * endpoint MS
 * numberOfSeries MS
 * numberOfInstances MS
-* procedureReference ..* MS
+* procedureReference MS
 * reasonReference MS
 * description MS
 //Serieebene
@@ -56,6 +56,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.laterality MS
 * series.laterality from $laterality (required)
 * series.started MS
+* series.performer MS
 * series.performer.actor MS
 * series.performer.actor only Reference(MII_PR_Bildgebung_Geraet)
 //Instanzebene

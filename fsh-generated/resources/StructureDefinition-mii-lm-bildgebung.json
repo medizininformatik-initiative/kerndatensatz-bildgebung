@@ -1287,7 +1287,7 @@
         "short": "Bildgebungsprozedur",
         "definition": "Referenz auf die dazugehörige bildgebende Prozedur der Studie. Hier soll auf das MII KDS-Modul Prozedur referenziert werden.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -1441,8 +1441,8 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.SerienBeschreibung",
-        "path": "Bildgebung.Studie.Serien.SerienBeschreibung",
+        "id": "Bildgebung.Studie.Serien.Serienbeschreibung",
+        "path": "Bildgebung.Studie.Serien.Serienbeschreibung",
         "short": "Serien-Beschreibung",
         "definition": "Beschreibung der jeweiligen Serie",
         "min": 0,
@@ -1551,25 +1551,6 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.performer"
-          }
-        ]
-      },
-      {
-        "id": "Bildgebung.Studie.Serien.Ausfuehrender.Funktion",
-        "path": "Bildgebung.Studie.Serien.Ausfuehrender.Funktion",
-        "short": "Funktion des Performers",
-        "definition": "Funktion des Performers",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.performer.function"
           }
         ]
       },
@@ -1745,6 +1726,19 @@
         ]
       },
       {
+        "id": "Bildgebung.Studie.Serien.ModalitaetDX.Blickposition",
+        "path": "Bildgebung.Studie.Serien.ModalitaetDX.Blickposition",
+        "short": "Blickposition",
+        "definition": "Position der Aufnahme, z.B. medio-lateral",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
         "id": "Bildgebung.Studie.Serien.ModalitaetCR",
         "path": "Bildgebung.Studie.Serien.ModalitaetCR",
         "short": "Modalitaet CR",
@@ -1848,6 +1842,19 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/xRayTubeCurrent)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetCR.Blickposition",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCR.Blickposition",
+        "short": "Blickposition",
+        "definition": "Position der Aufnahme, z.B. medio-lateral",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
           }
         ]
       },
@@ -2131,10 +2138,10 @@
         "short": "Scanning Sequenz",
         "definition": "Code der aktuellen Scanning Sequenz",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ],
         "mapping": [
@@ -2150,10 +2157,10 @@
         "short": "Scanning Sequenz Untervariante",
         "definition": "Code der aktuellen Scanning Sequenz Untervariante",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ],
         "mapping": [
@@ -2421,10 +2428,10 @@
         "short": "Serientyp",
         "definition": "Angabe, um welchen Typ von Serie es sich handelt",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ],
         "mapping": [
@@ -2577,25 +2584,6 @@
         ]
       },
       {
-        "id": "Bildgebung.Studie.Serien.ModalitaetNM.EnergiefensterMittelwert",
-        "path": "Bildgebung.Studie.Serien.ModalitaetNM.EnergiefensterMittelwert",
-        "short": "Energiefenster Mittelwert",
-        "definition": "Mittelwert der vorhandenen Energiefenster",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "FHIR",
-            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/energyWindowMean)"
-          }
-        ]
-      },
-      {
         "id": "Bildgebung.Studie.Serien.Instanzen",
         "path": "Bildgebung.Studie.Serien.Instanzen",
         "short": "Instanzen",
@@ -2696,10 +2684,10 @@
         "short": "Bildtyp",
         "definition": "Bildtyp der Instanz",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ],
         "mapping": [
@@ -2842,7 +2830,7 @@
         "short": "Erweiterte Körperstruktur",
         "definition": "Backport der R5 Referenz auf das BodyStructure-Profil.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Reference",

@@ -831,7 +831,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+              "http://hl7.org/fhir/StructureDefinition/ImagingStudy"
             ]
           }
         ],

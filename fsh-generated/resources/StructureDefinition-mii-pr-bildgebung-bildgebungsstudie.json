@@ -2043,6 +2043,7 @@
       {
         "id": "ImagingStudy.series.performer",
         "path": "ImagingStudy.series.performer",
+        "mustSupport": true,
         "_short": {
           "extension": [
             {
@@ -2114,7 +2115,8 @@
               "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.instance",
