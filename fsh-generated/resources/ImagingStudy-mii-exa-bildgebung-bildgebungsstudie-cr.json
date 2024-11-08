@@ -44,6 +44,18 @@
                 "value": 96
               },
               "url": "xRayTubeCurrent"
+            },
+            {
+              "url": "viewPosition",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "399038007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Right posterior oblique projection (qualifier value)"
+                  }
+                ]
+              }
             }
           ],
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx"

@@ -122,6 +122,10 @@
                   "valueCodeableConcept": {
                     "coding": [
                       {
+                        "code": "ORIGINAL",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                      },
+                      {
                         "code": "SECONDARY",
                         "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
                       },
