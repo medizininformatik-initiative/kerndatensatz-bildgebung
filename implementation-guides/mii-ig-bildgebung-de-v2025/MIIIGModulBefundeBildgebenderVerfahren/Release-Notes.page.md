@@ -15,3 +15,4 @@
 - ValueSets für neu angelegte eigene CodeSysteme
 - Composite-Suchparameter für ImagingStudy-modality und ImagingStudy-bodysite
 - Kontrastmittelreferenz in der ImagingStudy ergänzt auf MedicationAdministration
+- Ressourcen verwenden in diesem Release modulübergreifend SNOMED CT in der Version http://snomed.info/sct/900000000000207008/version/20240701, um eine stabile ValueSet-Expansion sicherzustellen.
