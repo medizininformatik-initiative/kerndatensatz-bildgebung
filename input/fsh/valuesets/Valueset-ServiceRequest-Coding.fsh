@@ -8,4 +8,4 @@ Description: "Import the ValueSet for Imaging Procedures"
 * insert PR_CS_VS_Date
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
-* include codes from system $SCT where constraint = "(< 363679005 |Imaging (procedure)|"
+* include codes from system $SCT-version where constraint = "(< 363679005 |Imaging (procedure)|"
