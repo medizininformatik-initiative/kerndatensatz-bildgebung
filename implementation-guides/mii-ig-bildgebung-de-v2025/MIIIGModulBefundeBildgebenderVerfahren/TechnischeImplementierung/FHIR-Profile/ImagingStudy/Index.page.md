@@ -102,6 +102,12 @@ where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebu
 
 Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombination:
 
+Der Composite-Suchparameter kann in verschiedenen Varianten von Suchqueries verwendet werden:
+- Variante 1 (mit Angabe des Codesystems): ImagingStudy?study-modality-body-site=[modality-system]|[modality-value],[bodysite-system]|[bodysite-value]
+- Variante 2 (ohen Codesystem): ImagingStudy?study-modality-body-site=[modality-value],[bodysite-value]
+
+Variante 1 ist in manchen FHIR-Server performanter, da das verwendet Codesystem direkt durchsucht werden kann und nicht erst noch zusätzlich das passende Codesystem dazu gefunden werden muss.
+
 @``` from CapabilityStatement where url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata' for rest.resource.where(type='ImagingStudy').searchParam select Name: name, Definition: definition, Type: type, Expectation: extension.where(url='http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value.ofType(code)
 ```
 
