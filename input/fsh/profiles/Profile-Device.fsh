@@ -20,6 +20,7 @@ Description: "Dieses Profil beschreibt das genutzte Gerät in der radiologischer
 //Profile
 * manufacturer MS
 * deviceName MS
+* deviceName.type from $VSdeviceName (required)
 
 //Translation Profile
 * insert Translation(manufacturer ^short, de-DE, Hersteller)

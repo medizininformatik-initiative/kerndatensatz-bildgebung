@@ -227,6 +227,14 @@
             }
           ]
         }
+      },
+      {
+        "id": "Device.deviceName.type",
+        "path": "Device.deviceName.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/device-nametype"
+        }
       }
     ]
   }
