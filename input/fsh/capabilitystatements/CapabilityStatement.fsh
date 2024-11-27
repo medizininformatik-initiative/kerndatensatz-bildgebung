@@ -28,14 +28,14 @@ RuleSet: SupportSearchParam (name, canonical, type, expectation)
 * rest.resource[=].searchParam[=].extension[0].url = $exp
 * rest.resource[=].searchParam[=].extension[0].valueCode = {expectation}
 
-Instance: mii-cps-bildgebung-capabilitystatement-2025x
+Instance: mii-cps-bildgebung-capabilitystatement
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert Version
 * insert SP_Publisher
 * insert Date
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata"
-* name = "MII_CPS_Bildgebung_CapabilityStatement_2025x"
+* name = "MII_CPS_Bildgebung_CapabilityStatement"
 * title = "MII CPS Bildgebung CapabilityStatement"
 * status = #active
 * experimental = false

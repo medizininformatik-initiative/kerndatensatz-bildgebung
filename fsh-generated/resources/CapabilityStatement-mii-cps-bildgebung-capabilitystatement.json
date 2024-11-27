@@ -1,6 +1,6 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "mii-cps-bildgebung-capabilitystatement-2025x",
+  "id": "mii-cps-bildgebung-capabilitystatement",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata",
   "version": "2025.0.0",
   "publisher": "Medizininformatik Initiative",
@@ -15,7 +15,7 @@
     }
   ],
   "date": "2024-11-11",
-  "name": "MII_CPS_Bildgebung_CapabilityStatement_2025x",
+  "name": "MII_CPS_Bildgebung_CapabilityStatement",
   "title": "MII CPS Bildgebung CapabilityStatement",
   "status": "active",
   "experimental": false,
