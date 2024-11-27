@@ -51,6 +51,10 @@ Zusätzlich gibt es modalitätsspezifische Metadaten, die sich je nach vorliegen
 
 2024.08.23 - Finale Überarbeitung der FHIR-Implementierung und des Implementation Guides für die 1. Ballotierungsphase
 
+2024.10.11 - Abschluss der Kommentierungsphase
+
+2024.11.12 - Einreichung AG-IOP- und NSG-Beschlussvorlage nach finaler Einarbeitung der Kommentare
+
 ### Wichtige Dokumente und Links
 
 * [Beschreibung des MII-Kerndatensatzes in der Version 1.0 vom 10.3.2017 (PDF)](https://www.medizininformatik-initiative.de/sites/default/files/inline-files/MII_04_Kerndatensatz_1-0.pdf)
@@ -65,9 +69,9 @@ Zusätzlich gibt es modalitätsspezifische Metadaten, die sich je nach vorliegen
 
 #### Technische Umsetzung:
 
-* Steven Böhner (Technische Umsetzung FHIR Profile, Implementation Guides)
-* Viola Braunmüller (Technische Umsetzung FHIR Profile, Implementation Guides)
-* Noemi Deppenwiese (Technische Umsetzung FHIR Profile, Implementation Guides)
-* Alexa Iancu (Technische Umsetzung FHIR Profile, Implementation Guide, Logical Models)
+* Steven Böhner (Technische Umsetzung FHIR Profile, Implementation Guide)
+* Viola Braunmüller (Technische Umsetzung FHIR Profile, Implementation Guide)
+* Noemi Deppenwiese (Technische Umsetzung FHIR Profile, Implementation Guide)
+* Alexa Iancu (Technische Umsetzung FHIR Profile, Implementation Guide, Logical Model)
 * Johannes Kast (Technische Umsetzung FHIR Profile)
 * Lucas Scherer (Technische Umsetzung FHIR Profile, Implementation Guides)
