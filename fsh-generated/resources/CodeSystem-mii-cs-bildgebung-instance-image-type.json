@@ -3,9 +3,60 @@
   "status": "active",
   "content": "complete",
   "name": "MII_CS_Bildgebung_Instance_Image_Type",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_CS_Imaging_Image_Type"
+          }
+        ]
+      }
+    ]
+  },
   "id": "mii-cs-bildgebung-instance-image-type",
   "title": "MII CS Bildgebung Instance Image Type",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII CS Imaging Image Type"
+          }
+        ]
+      }
+    ]
+  },
   "description": "Image type für Radiologische Bilder",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "Codes for Image Type in radiological images"
+          }
+        ]
+      }
+    ]
+  },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
   "concept": [
     {
@@ -441,7 +492,12 @@
       ]
     }
   ],
-  "version": "2025.0.0",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -453,7 +509,22 @@
       ]
     }
   ],
-  "date": "2024-11-11",
+  "version": "2025.0.0",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "date": "2025-01-01",
   "caseSensitive": true,
   "count": 36
 }

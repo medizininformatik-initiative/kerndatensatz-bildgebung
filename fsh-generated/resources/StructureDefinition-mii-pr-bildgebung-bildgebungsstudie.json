@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-bildgebung-bildgebungsstudie",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie",
   "version": "2025.0.0",
   "name": "MII_PR_Bildgebung_Bildgebungsstudie",
@@ -40,6 +54,7 @@
     ]
   },
   "status": "active",
+  "date": "2025-01-01",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -69,7 +84,6 @@
       }
     ]
   },
-  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -116,16 +130,7 @@
         "id": "ImagingStudy.extension:bildgebungsgrund",
         "path": "ImagingStudy.extension",
         "sliceName": "bildgebungsgrund",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund"
-            ]
-          }
-        ],
+        "short": "Bildgebungsgrund",
         "_short": {
           "extension": [
             {
@@ -156,6 +161,7 @@
             }
           ]
         },
+        "definition": "Bildgebungsgrund aus DICOM-Header",
         "_definition": {
           "extension": [
             {
@@ -185,12 +191,22 @@
               ]
             }
           ]
-        }
+        },
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund"
+            ]
+          }
+        ]
       },
       {
         "id": "ImagingStudy.status",
         "path": "ImagingStudy.status",
-        "mustSupport": true,
+        "short": "Status",
         "_short": {
           "extension": [
             {
@@ -221,6 +237,7 @@
             }
           ]
         },
+        "definition": "Angemeldet | Verfügbar | Abgebrochen | fehlerhafte Eingabe | Unbekannt",
         "_definition": {
           "extension": [
             {
@@ -250,16 +267,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.modality",
         "path": "ImagingStudy.modality",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html"
-        },
+        "short": "Modalität",
         "_short": {
           "extension": [
             {
@@ -290,6 +304,7 @@
             }
           ]
         },
+        "definition": "Modalität der Studie",
         "_definition": {
           "extension": [
             {
@@ -319,20 +334,17 @@
               ]
             }
           ]
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html"
         }
       },
       {
         "id": "ImagingStudy.subject",
         "path": "ImagingStudy.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "Person",
         "_short": {
           "extension": [
             {
@@ -363,6 +375,7 @@
             }
           ]
         },
+        "definition": "Person, auf die sich die Studie bezieht",
         "_definition": {
           "extension": [
             {
@@ -392,12 +405,21 @@
               ]
             }
           ]
-        }
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.encounter",
         "path": "ImagingStudy.encounter",
-        "mustSupport": true,
+        "short": "Versorgungsstellenkontakt",
         "_short": {
           "extension": [
             {
@@ -428,6 +450,7 @@
             }
           ]
         },
+        "definition": "Referenz auf eine Fall-Ressource",
         "_definition": {
           "extension": [
             {
@@ -457,12 +480,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.started",
         "path": "ImagingStudy.started",
-        "mustSupport": true,
+        "short": "Startzeit",
         "_short": {
           "extension": [
             {
@@ -493,6 +517,7 @@
             }
           ]
         },
+        "definition": "Startzeit der Studie",
         "_definition": {
           "extension": [
             {
@@ -522,12 +547,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.basedOn",
         "path": "ImagingStudy.basedOn",
-        "mustSupport": true,
+        "short": "Basiert auf",
         "_short": {
           "extension": [
             {
@@ -558,6 +584,7 @@
             }
           ]
         },
+        "definition": "Basiert auf einer Anforderung",
         "_definition": {
           "extension": [
             {
@@ -587,12 +614,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.endpoint",
         "path": "ImagingStudy.endpoint",
-        "mustSupport": true,
+        "short": "Endpunkt",
         "_short": {
           "extension": [
             {
@@ -623,6 +651,7 @@
             }
           ]
         },
+        "definition": "DICOM-Endpunkt",
         "_definition": {
           "extension": [
             {
@@ -652,12 +681,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.numberOfSeries",
         "path": "ImagingStudy.numberOfSeries",
-        "mustSupport": true,
+        "short": "Serienanzahl",
         "_short": {
           "extension": [
             {
@@ -688,6 +718,7 @@
             }
           ]
         },
+        "definition": "Anzahl der Serien in der Studie",
         "_definition": {
           "extension": [
             {
@@ -699,7 +730,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Anzhal der Serien in der Studie"
+                  "valueString": "Anzahl der Serien in der Studie"
                 }
               ]
             },
@@ -717,12 +748,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.numberOfInstances",
         "path": "ImagingStudy.numberOfInstances",
-        "mustSupport": true,
+        "short": "Instanzanzahl",
         "_short": {
           "extension": [
             {
@@ -753,6 +785,7 @@
             }
           ]
         },
+        "definition": "Anzahl der Instanzen in der Studie",
         "_definition": {
           "extension": [
             {
@@ -782,12 +815,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.procedureReference",
         "path": "ImagingStudy.procedureReference",
-        "mustSupport": true,
+        "short": "Bildgebungsprozedur",
         "_short": {
           "extension": [
             {
@@ -818,6 +852,7 @@
             }
           ]
         },
+        "definition": "Referenz auf die Bildgebungsprozedur",
         "_definition": {
           "extension": [
             {
@@ -847,12 +882,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.reasonReference",
         "path": "ImagingStudy.reasonReference",
-        "mustSupport": true,
+        "short": "Bildgebungsgrund",
         "_short": {
           "extension": [
             {
@@ -883,6 +919,7 @@
             }
           ]
         },
+        "definition": "Referenz auf den Bildgebungsgrund",
         "_definition": {
           "extension": [
             {
@@ -912,12 +949,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.description",
         "path": "ImagingStudy.description",
-        "mustSupport": true,
+        "short": "Studienbeschreibung",
         "_short": {
           "extension": [
             {
@@ -948,6 +986,7 @@
             }
           ]
         },
+        "definition": "Beschreibung der Studie",
         "_definition": {
           "extension": [
             {
@@ -977,12 +1016,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series",
         "path": "ImagingStudy.series",
-        "mustSupport": true,
+        "short": "Serienebene",
         "_short": {
           "extension": [
             {
@@ -1013,6 +1053,7 @@
             }
           ]
         },
+        "definition": "einzelne Bildserie einer Studie",
         "_definition": {
           "extension": [
             {
@@ -1042,7 +1083,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.extension",
@@ -1062,16 +1104,7 @@
         "id": "ImagingStudy.series.extension:modalitätCT",
         "path": "ImagingStudy.series.extension",
         "sliceName": "modalitätCT",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct"
-            ]
-          }
-        ],
+        "short": "Modalität CT",
         "_short": {
           "extension": [
             {
@@ -1102,6 +1135,7 @@
             }
           ]
         },
+        "definition": "Bildgebungsmodalität CT",
         "_definition": {
           "extension": [
             {
@@ -1131,22 +1165,23 @@
               ]
             }
           ]
-        }
-      },
-      {
-        "id": "ImagingStudy.series.extension:modalitätMG_CR_DX",
-        "path": "ImagingStudy.series.extension",
-        "sliceName": "modalitätMG_CR_DX",
+        },
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct"
             ]
           }
-        ],
+        ]
+      },
+      {
+        "id": "ImagingStudy.series.extension:modalitätMG_CR_DX",
+        "path": "ImagingStudy.series.extension",
+        "sliceName": "modalitätMG_CR_DX",
+        "short": "Modalität MG CR DX",
         "_short": {
           "extension": [
             {
@@ -1177,6 +1212,7 @@
             }
           ]
         },
+        "definition": "Bildgebungsmodalität MG, CR und DX",
         "_definition": {
           "extension": [
             {
@@ -1206,22 +1242,23 @@
               ]
             }
           ]
-        }
-      },
-      {
-        "id": "ImagingStudy.series.extension:modalitätMR",
-        "path": "ImagingStudy.series.extension",
-        "sliceName": "modalitätMR",
+        },
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx"
             ]
           }
-        ],
+        ]
+      },
+      {
+        "id": "ImagingStudy.series.extension:modalitätMR",
+        "path": "ImagingStudy.series.extension",
+        "sliceName": "modalitätMR",
+        "short": "Modalität MR",
         "_short": {
           "extension": [
             {
@@ -1252,6 +1289,7 @@
             }
           ]
         },
+        "definition": "Bildgebungsmodalität MR",
         "_definition": {
           "extension": [
             {
@@ -1281,22 +1319,23 @@
               ]
             }
           ]
-        }
-      },
-      {
-        "id": "ImagingStudy.series.extension:modalitätPT",
-        "path": "ImagingStudy.series.extension",
-        "sliceName": "modalitätPT",
+        },
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"
             ]
           }
-        ],
+        ]
+      },
+      {
+        "id": "ImagingStudy.series.extension:modalitätPT",
+        "path": "ImagingStudy.series.extension",
+        "sliceName": "modalitätPT",
+        "short": "Modalität PT",
         "_short": {
           "extension": [
             {
@@ -1327,6 +1366,7 @@
             }
           ]
         },
+        "definition": "Bildgebungsmodalität PT",
         "_definition": {
           "extension": [
             {
@@ -1356,22 +1396,23 @@
               ]
             }
           ]
-        }
-      },
-      {
-        "id": "ImagingStudy.series.extension:modalitätNM",
-        "path": "ImagingStudy.series.extension",
-        "sliceName": "modalitätNM",
+        },
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt"
             ]
           }
-        ],
+        ]
+      },
+      {
+        "id": "ImagingStudy.series.extension:modalitätNM",
+        "path": "ImagingStudy.series.extension",
+        "sliceName": "modalitätNM",
+        "short": "Modalität NM",
         "_short": {
           "extension": [
             {
@@ -1402,6 +1443,7 @@
             }
           ]
         },
+        "definition": "Bildgebungsmodalität NM",
         "_definition": {
           "extension": [
             {
@@ -1431,22 +1473,23 @@
               ]
             }
           ]
-        }
-      },
-      {
-        "id": "ImagingStudy.series.extension:kontrastmittel",
-        "path": "ImagingStudy.series.extension",
-        "sliceName": "kontrastmittel",
+        },
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm"
             ]
           }
-        ],
+        ]
+      },
+      {
+        "id": "ImagingStudy.series.extension:kontrastmittel",
+        "path": "ImagingStudy.series.extension",
+        "sliceName": "kontrastmittel",
+        "short": "Kontrastmittel",
         "_short": {
           "extension": [
             {
@@ -1458,7 +1501,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "kontrastmittel"
+                  "valueString": "Kontrastmittel"
                 }
               ]
             },
@@ -1477,6 +1520,7 @@
             }
           ]
         },
+        "definition": "Kontrastmittelgabe",
         "_definition": {
           "extension": [
             {
@@ -1506,12 +1550,22 @@
               ]
             }
           ]
-        }
+        },
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
+            ]
+          }
+        ]
       },
       {
         "id": "ImagingStudy.series.uid",
         "path": "ImagingStudy.series.uid",
-        "mustSupport": true,
+        "short": "SerienUID",
         "_short": {
           "extension": [
             {
@@ -1542,6 +1596,7 @@
             }
           ]
         },
+        "definition": "UID einer Serie",
         "_definition": {
           "extension": [
             {
@@ -1571,12 +1626,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.number",
         "path": "ImagingStudy.series.number",
-        "mustSupport": true,
+        "short": "Nummer",
         "_short": {
           "extension": [
             {
@@ -1607,6 +1663,7 @@
             }
           ]
         },
+        "definition": "Nummer der Serie",
         "_definition": {
           "extension": [
             {
@@ -1636,16 +1693,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.modality",
         "path": "ImagingStudy.series.modality",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html"
-        },
+        "short": "Modalität",
         "_short": {
           "extension": [
             {
@@ -1676,6 +1730,7 @@
             }
           ]
         },
+        "definition": "Modalität der Serie",
         "_definition": {
           "extension": [
             {
@@ -1705,12 +1760,17 @@
               ]
             }
           ]
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html"
         }
       },
       {
         "id": "ImagingStudy.series.description",
         "path": "ImagingStudy.series.description",
-        "mustSupport": true,
+        "short": "Serienbeschreibung",
         "_short": {
           "extension": [
             {
@@ -1741,6 +1801,7 @@
             }
           ]
         },
+        "definition": "Beschreibung der aktuellen Serie",
         "_definition": {
           "extension": [
             {
@@ -1770,12 +1831,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.numberOfInstances",
         "path": "ImagingStudy.series.numberOfInstances",
-        "mustSupport": true,
+        "short": "Instanzanzahl",
         "_short": {
           "extension": [
             {
@@ -1806,6 +1868,7 @@
             }
           ]
         },
+        "definition": "Anzahl der Instanzen in der aktuellen Serie",
         "_definition": {
           "extension": [
             {
@@ -1835,16 +1898,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.bodySite",
         "path": "ImagingStudy.series.bodySite",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/body-site"
-        },
+        "short": "Anatomie",
         "_short": {
           "extension": [
             {
@@ -1875,6 +1935,7 @@
             }
           ]
         },
+        "definition": "betrachtete Anatomie der Serie",
         "_definition": {
           "extension": [
             {
@@ -1904,16 +1965,17 @@
               ]
             }
           ]
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/body-site"
         }
       },
       {
         "id": "ImagingStudy.series.laterality",
         "path": "ImagingStudy.series.laterality",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html"
-        },
+        "short": "Lateralität",
         "_short": {
           "extension": [
             {
@@ -1944,6 +2006,7 @@
             }
           ]
         },
+        "definition": "Lateralität der betrachteten Anatomie dieser Serie",
         "_definition": {
           "extension": [
             {
@@ -1973,12 +2036,17 @@
               ]
             }
           ]
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html"
         }
       },
       {
         "id": "ImagingStudy.series.started",
         "path": "ImagingStudy.series.started",
-        "mustSupport": true,
+        "short": "Startzeit",
         "_short": {
           "extension": [
             {
@@ -2009,6 +2077,7 @@
             }
           ]
         },
+        "definition": "Aufnahmestartzeit der Serie",
         "_definition": {
           "extension": [
             {
@@ -2038,12 +2107,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.performer",
         "path": "ImagingStudy.series.performer",
-        "mustSupport": true,
+        "short": "Durchführender",
         "_short": {
           "extension": [
             {
@@ -2074,6 +2144,7 @@
             }
           ]
         },
+        "definition": "Durchführender der Serie. Hier speziell das Gerät",
         "_definition": {
           "extension": [
             {
@@ -2103,7 +2174,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.performer.actor",
@@ -2121,7 +2193,7 @@
       {
         "id": "ImagingStudy.series.instance",
         "path": "ImagingStudy.series.instance",
-        "mustSupport": true,
+        "short": "Instanzebene",
         "_short": {
           "extension": [
             {
@@ -2152,6 +2224,7 @@
             }
           ]
         },
+        "definition": "Instanzebene der Serie",
         "_definition": {
           "extension": [
             {
@@ -2181,7 +2254,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.instance.extension",
@@ -2201,16 +2275,7 @@
         "id": "ImagingStudy.series.instance.extension:InstanceDetails",
         "path": "ImagingStudy.series.instance.extension",
         "sliceName": "InstanceDetails",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
-            ]
-          }
-        ],
+        "short": "Instanzdetails",
         "_short": {
           "extension": [
             {
@@ -2241,6 +2306,7 @@
             }
           ]
         },
+        "definition": "Details der jeweilige Instanz",
         "_definition": {
           "extension": [
             {
@@ -2270,12 +2336,22 @@
               ]
             }
           ]
-        }
+        },
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
+            ]
+          }
+        ]
       },
       {
         "id": "ImagingStudy.series.instance.uid",
         "path": "ImagingStudy.series.instance.uid",
-        "mustSupport": true,
+        "short": "Instanz UID",
         "_short": {
           "extension": [
             {
@@ -2306,6 +2382,7 @@
             }
           ]
         },
+        "definition": "SOP Instanz UID",
         "_definition": {
           "extension": [
             {
@@ -2335,16 +2412,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.instance.sopClass",
         "path": "ImagingStudy.series.instance.sopClass",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html"
-        },
+        "short": "SOP Klasse",
         "_short": {
           "extension": [
             {
@@ -2375,6 +2449,7 @@
             }
           ]
         },
+        "definition": "SOP Klasse",
         "_definition": {
           "extension": [
             {
@@ -2404,12 +2479,17 @@
               ]
             }
           ]
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html"
         }
       },
       {
         "id": "ImagingStudy.series.instance.number",
         "path": "ImagingStudy.series.instance.number",
-        "mustSupport": true,
+        "short": "Instanznummer",
         "_short": {
           "extension": [
             {
@@ -2440,6 +2520,7 @@
             }
           ]
         },
+        "definition": "Nummer der aktuellen Instanz",
         "_definition": {
           "extension": [
             {
@@ -2469,7 +2550,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       }
     ]
   }

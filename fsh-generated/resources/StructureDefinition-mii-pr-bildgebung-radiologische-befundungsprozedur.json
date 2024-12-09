@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-bildgebung-radiologische-befundungsprozedur",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur",
   "version": "2025.0.0",
   "name": "MII_PR_Bildgebung_Radiologische_Befundungsprozedur",
@@ -40,6 +54,7 @@
     ]
   },
   "status": "active",
+  "date": "2025-01-01",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -69,7 +84,6 @@
       }
     ]
   },
-  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -81,6 +95,7 @@
       {
         "id": "Procedure.status",
         "path": "Procedure.status",
+        "short": "Status",
         "_short": {
           "extension": [
             {
@@ -111,6 +126,7 @@
             }
           ]
         },
+        "definition": "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt",
         "_definition": {
           "extension": [
             {
@@ -145,15 +161,7 @@
       {
         "id": "Procedure.category",
         "path": "Procedure.category",
-        "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "165197003",
-              "system": "http://snomed.info/sct"
-            }
-          ]
-        },
+        "short": "Kategorie",
         "_short": {
           "extension": [
             {
@@ -184,6 +192,7 @@
             }
           ]
         },
+        "definition": "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen",
         "_definition": {
           "extension": [
             {
@@ -213,11 +222,21 @@
               ]
             }
           ]
+        },
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "165197003",
+              "system": "http://snomed.info/sct"
+            }
+          ]
         }
       },
       {
         "id": "Procedure.code",
         "path": "Procedure.code",
+        "short": "Code",
         "_short": {
           "extension": [
             {
@@ -248,6 +267,7 @@
             }
           ]
         },
+        "definition": "ode aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere.",
         "_definition": {
           "extension": [
             {
@@ -282,14 +302,7 @@
       {
         "id": "Procedure.subject",
         "path": "Procedure.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
+        "short": "Person",
         "_short": {
           "extension": [
             {
@@ -320,6 +333,7 @@
             }
           ]
         },
+        "definition": "Person, auf die sich die Befundungprozedur bezieht",
         "_definition": {
           "extension": [
             {
@@ -349,11 +363,20 @@
               ]
             }
           ]
-        }
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
       },
       {
         "id": "Procedure.performed[x]",
         "path": "Procedure.performed[x]",
+        "short": "Durchführungsdatum",
         "_short": {
           "extension": [
             {
@@ -384,6 +407,7 @@
             }
           ]
         },
+        "definition": "Durchführungsdatum oder -zeitraum der Prozedur.",
         "_definition": {
           "extension": [
             {
@@ -418,7 +442,38 @@
       {
         "id": "Procedure.report",
         "path": "Procedure.report",
-        "definition": "In cases where follow ups are performed (e.g. RECIST or TNM) this procedure might be used in more than one diagnostic report this way we guarantee that the tumor categories stay the same over time.",
+        "short": "Bericht",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Bericht"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "report"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Referenz auf den Bericht",
         "_definition": {
           "extension": [
             {
@@ -450,37 +505,7 @@
           ]
         },
         "min": 1,
-        "mustSupport": true,
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Bericht"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "report"
-                }
-              ]
-            }
-          ]
-        }
+        "mustSupport": true
       }
     ]
   }

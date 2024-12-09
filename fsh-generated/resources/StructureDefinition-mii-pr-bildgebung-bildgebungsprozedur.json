@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-bildgebung-bildgebungsprozedur",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur",
   "version": "2025.0.0",
   "name": "MII_PR_Bildgebung_Bildgebungsprozedur",
@@ -40,6 +54,7 @@
     ]
   },
   "status": "active",
+  "date": "2025-01-01",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -69,7 +84,6 @@
       }
     ]
   },
-  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -81,16 +95,7 @@
       {
         "id": "Procedure.basedOn",
         "path": "Procedure.basedOn",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "Basiert auf",
         "_short": {
           "extension": [
             {
@@ -121,6 +126,7 @@
             }
           ]
         },
+        "definition": "Basiert auf einem Anforderung",
         "_definition": {
           "extension": [
             {
@@ -150,11 +156,22 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Procedure.status",
         "path": "Procedure.status",
+        "short": "Status",
         "_short": {
           "extension": [
             {
@@ -185,6 +202,7 @@
             }
           ]
         },
+        "definition": "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt",
         "_definition": {
           "extension": [
             {
@@ -219,7 +237,7 @@
       {
         "id": "Procedure.category",
         "path": "Procedure.category",
-        "min": 1,
+        "short": "Kategorie",
         "_short": {
           "extension": [
             {
@@ -250,6 +268,7 @@
             }
           ]
         },
+        "definition": "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen",
         "_definition": {
           "extension": [
             {
@@ -279,7 +298,8 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1
       },
       {
         "id": "Procedure.category.coding",
@@ -290,6 +310,7 @@
       {
         "id": "Procedure.code",
         "path": "Procedure.code",
+        "short": "Code",
         "_short": {
           "extension": [
             {
@@ -320,6 +341,7 @@
             }
           ]
         },
+        "definition": "Code aus LOINC",
         "_definition": {
           "extension": [
             {
@@ -365,14 +387,7 @@
       {
         "id": "Procedure.subject",
         "path": "Procedure.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
+        "short": "Person",
         "_short": {
           "extension": [
             {
@@ -403,6 +418,7 @@
             }
           ]
         },
+        "definition": "Person, auf die sich die Prozedur bezieht",
         "_definition": {
           "extension": [
             {
@@ -432,11 +448,20 @@
               ]
             }
           ]
-        }
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
       },
       {
         "id": "Procedure.performed[x]",
         "path": "Procedure.performed[x]",
+        "short": "Durchführungsdatum",
         "_short": {
           "extension": [
             {
@@ -467,6 +492,7 @@
             }
           ]
         },
+        "definition": "Durchführungsdatum oder -zeitraum der Prozedur.",
         "_definition": {
           "extension": [
             {

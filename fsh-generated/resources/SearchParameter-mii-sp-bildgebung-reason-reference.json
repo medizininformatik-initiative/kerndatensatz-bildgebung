@@ -14,18 +14,17 @@
     }
   ],
   "version": "2025.0.0",
-  "date": "2024-11-11",
+  "date": "2025-01-01",
   "name": "MII_SP_Bildgebung_Reason_Reference",
   "status": "active",
   "experimental": false,
-  "description": "Suchparameter für ImagingStudy.reasonReference | ServiceRequest.reasonReference",
+  "description": "Suchparameter für ImagingStudy.reasonReference",
   "code": "reason-reference",
   "base": [
-    "ImagingStudy",
-    "ServiceRequest"
+    "ImagingStudy"
   ],
   "type": "reference",
-  "expression": "ImagingStudy.reasonReference | ServiceRequest.reasonReference",
+  "expression": "ImagingStudy.reasonReference",
   "target": [
     "Condition",
     "Observation",

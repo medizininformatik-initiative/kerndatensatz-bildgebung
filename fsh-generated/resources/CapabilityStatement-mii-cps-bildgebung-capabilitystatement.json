@@ -14,7 +14,21 @@
       ]
     }
   ],
-  "date": "2024-11-11",
+  "date": "2025-01-01",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "name": "MII_CPS_Bildgebung_CapabilityStatement",
   "title": "MII CPS Bildgebung CapabilityStatement",
   "status": "active",
@@ -867,7 +881,7 @@
             },
             {
               "name": "imaging-study",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-imaging-study",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter",
               "type": "reference",
               "extension": [
                 {
@@ -1915,7 +1929,7 @@
             },
             {
               "name": "issued",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-issued",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-issued",
               "type": "date",
               "extension": [
                 {
@@ -1970,7 +1984,7 @@
             },
             {
               "name": "body-site",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-site",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-bodysite",
               "type": "token",
               "extension": [
                 {
@@ -2309,7 +2323,7 @@
             },
             {
               "name": "dose-quantity",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseQuantity",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
               "type": "quantity",
               "extension": [
                 {
@@ -2505,7 +2519,7 @@
             },
             {
               "name": "reason-code",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-service-request-reason-code",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasoncode",
               "type": "token",
               "extension": [
                 {
@@ -2516,7 +2530,7 @@
             },
             {
               "name": "reason-reference",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-reason-reference",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasonreference",
               "type": "reference",
               "extension": [
                 {
@@ -2527,7 +2541,7 @@
             },
             {
               "name": "supporting-info",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-supporting-info",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-supportinginfo",
               "type": "reference",
               "extension": [
                 {

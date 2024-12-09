@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-bildgebung-anforderung-bildgebung",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung",
   "version": "2025.0.0",
   "name": "MII_PR_Bildgebung_Anforderung_Bildgebung",
@@ -40,6 +54,7 @@
     ]
   },
   "status": "active",
+  "date": "2025-01-01",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -69,7 +84,6 @@
       }
     ]
   },
-  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -101,7 +115,7 @@
       {
         "id": "ServiceRequest.status",
         "path": "ServiceRequest.status",
-        "mustSupport": true,
+        "short": "Status",
         "_short": {
           "extension": [
             {
@@ -132,6 +146,7 @@
             }
           ]
         },
+        "definition": "Entwurf | Aktiv | Wartend | Widerrufen | Abgeschlossen | Fehlerhafte Eingabe | Unbekannt",
         "_definition": {
           "extension": [
             {
@@ -161,12 +176,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.intent",
         "path": "ServiceRequest.intent",
-        "mustSupport": true,
+        "short": "Absicht",
         "_short": {
           "extension": [
             {
@@ -197,6 +213,7 @@
             }
           ]
         },
+        "definition": "Vorschlag | Plan | Anweisung | Erstverordnung | Reflexverordnung | Füllverordnung | Beispielverordnung | Option",
         "_definition": {
           "extension": [
             {
@@ -226,21 +243,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.category",
         "path": "ServiceRequest.category",
-        "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "363679005",
-              "system": "http://snomed.info/sct"
-            }
-          ]
-        },
-        "mustSupport": true,
+        "short": "Kategorie",
         "_short": {
           "extension": [
             {
@@ -271,6 +280,7 @@
             }
           ]
         },
+        "definition": "Kategorie der Serviceanforderung",
         "_definition": {
           "extension": [
             {
@@ -300,12 +310,22 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "363679005",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
-        "mustSupport": true,
+        "short": "Kode",
         "_short": {
           "extension": [
             {
@@ -336,6 +356,7 @@
             }
           ]
         },
+        "definition": "Kode der Serviceanforderung in LOINC, RadLex oder SNOMED CT",
         "_definition": {
           "extension": [
             {
@@ -365,7 +386,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.code.coding",
@@ -425,15 +447,7 @@
       {
         "id": "ServiceRequest.subject",
         "path": "ServiceRequest.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "Person",
         "_short": {
           "extension": [
             {
@@ -464,6 +478,7 @@
             }
           ]
         },
+        "definition": "Person, auf die sich die Anforderung bezieht",
         "_definition": {
           "extension": [
             {
@@ -493,12 +508,21 @@
               ]
             }
           ]
-        }
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.encounter",
         "path": "ServiceRequest.encounter",
-        "mustSupport": true,
+        "short": "Versorgungsstellenkontakt",
         "_short": {
           "extension": [
             {
@@ -529,6 +553,7 @@
             }
           ]
         },
+        "definition": "Referenz auf den Versorgungsstellenkontakt",
         "_definition": {
           "extension": [
             {
@@ -558,12 +583,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.authoredOn",
         "path": "ServiceRequest.authoredOn",
-        "mustSupport": true,
+        "short": "Erstellungszeitpunkt",
         "_short": {
           "extension": [
             {
@@ -594,6 +620,7 @@
             }
           ]
         },
+        "definition": "Erstellungszeitpunkt der Anforderung",
         "_definition": {
           "extension": [
             {
@@ -623,12 +650,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.requester",
         "path": "ServiceRequest.requester",
-        "mustSupport": true,
+        "short": "Anforderer",
         "_short": {
           "extension": [
             {
@@ -659,6 +687,7 @@
             }
           ]
         },
+        "definition": "Person, die die Anforderung erstellt",
         "_definition": {
           "extension": [
             {
@@ -688,16 +717,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.reasonCode",
         "path": "ServiceRequest.reasonCode",
-        "mustSupport": true,
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-service-request-reason"
-        },
+        "short": "Anforderungsgrund",
         "_short": {
           "extension": [
             {
@@ -728,6 +754,7 @@
             }
           ]
         },
+        "definition": "kodierter Grund für die Anforderung",
         "_definition": {
           "extension": [
             {
@@ -757,12 +784,17 @@
               ]
             }
           ]
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-service-request-reason"
         }
       },
       {
         "id": "ServiceRequest.reasonReference",
         "path": "ServiceRequest.reasonReference",
-        "mustSupport": true,
+        "short": "Anforderungbezug",
         "_short": {
           "extension": [
             {
@@ -793,6 +825,7 @@
             }
           ]
         },
+        "definition": "Grund, auf den sich die Anforderung bezieht",
         "_definition": {
           "extension": [
             {
@@ -822,21 +855,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.supportingInfo",
         "path": "ServiceRequest.supportingInfo",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-              "http://hl7.org/fhir/StructureDefinition/ImagingStudy"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "Zusatzinformation",
         "_short": {
           "extension": [
             {
@@ -867,6 +892,7 @@
             }
           ]
         },
+        "definition": "Zusätzliche Informationen zur Anforderung",
         "_definition": {
           "extension": [
             {
@@ -896,7 +922,17 @@
               ]
             }
           ]
-        }
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+              "http://hl7.org/fhir/StructureDefinition/ImagingStudy"
+            ]
+          }
+        ],
+        "mustSupport": true
       }
     ]
   }
