@@ -6,6 +6,7 @@ Description: "Import the ValueSet for PT Series Type Volumetric"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
+* insert LicenseCodeableCCBY40
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 * MII_CS_Bildgebung_Series_Type#IMAGE
