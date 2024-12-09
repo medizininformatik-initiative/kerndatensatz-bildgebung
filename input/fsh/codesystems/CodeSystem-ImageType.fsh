@@ -2,11 +2,17 @@ CodeSystem: MII_CS_Bildgebung_Instance_Image_Type
 Id: mii-cs-bildgebung-instance-image-type
 Title: "MII CS Bildgebung Instance Image Type"
 Description: "Image type für Radiologische Bilder"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
-* insert PR_CS_VS_Version
-* insert Publisher
-* insert PR_CS_VS_Date
+* insert Translation(^name, en-US, MII_CS_Imaging_Image_Type)
+* insert Translation(^title, en-US, MII CS Imaging Image Type)
+* insert Translation(^description, en-US, Codes for Image Type in radiological images)
 * ^status = #active
+* ^experimental = false
+* insert Publisher
+* insert PR_CS_VS_Version
+* insert LicenseCodeableCCBY40 
+* insert PR_CS_VS_Date
 * ^caseSensitive = true
 * ^content = #complete
 //Pixel Data Characteristics
