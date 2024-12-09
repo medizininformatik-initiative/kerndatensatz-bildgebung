@@ -10,7 +10,7 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * insert Translation(^description, en-US, The extension allows to extend the resources and feasibility analysis to NM data.)
 //Meta
 * insert PR_CS_VS_Version
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * insert Publisher
 * insert ExtensionContext(ImagingStudy.series)
 * ^experimental = false
