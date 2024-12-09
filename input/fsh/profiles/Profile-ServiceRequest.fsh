@@ -11,18 +11,27 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * insert Translation(^description, en-US, The profile describes a service request.)
 //Meta
 * insert PR_CS_VS_Version
+* insert PR_CS_VS_Date
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * id MS
 * meta MS
 * meta.source MS
 * meta.profile MS
 //Profile
 * status MS
+* status ^short = "Status"
+* status ^definition = "Entwurf | Aktiv | Wartend | Widerrufen | Abgeschlossen | Fehlerhafte Eingabe | Unbekannt"
 * intent MS
+* intent ^short = "Absicht"
+* intent ^definition = "Vorschlag | Plan | Anweisung | Erstverordnung | Reflexverordnung | Füllverordnung | Beispielverordnung | Option"
 * category 1..* MS
 * category ^patternCodeableConcept = $SCT#363679005
+* category ^short = "Kategorie"
+* category ^definition = "Kategorie der Serviceanforderung"
 * code MS
+* code ^short = "Kode"
+* code ^definition = "Kode der Serviceanforderung in LOINC, RadLex oder SNOMED CT"
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
@@ -37,14 +46,28 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * code.coding[sct].code from MII_VS_Bildgebung_Service_Request_Coding (preferred)
 * subject MS
 * subject only Reference(Patient)
+* subject ^short = "Person"
+* subject ^definition = "Person, auf die sich die Anforderung bezieht"
 * encounter MS
+* encounter ^short = "Versorgungsstellenkontakt"
+* encounter ^definition = "Referenz auf den Versorgungsstellenkontakt"
 * authoredOn MS
+* authoredOn ^short = "Erstellungszeitpunkt"
+* authoredOn ^definition = "Erstellungszeitpunkt der Anforderung"
 * requester MS
+* requester ^short = "Anforderer"
+* requester ^definition = "Person, die die Anforderung erstellt"
 * reasonCode MS
 * reasonCode from MII_VS_Bildgebung_Service_Request_Reason (preferred)
+* reasonCode ^short = "Anforderungsgrund"
+* reasonCode ^definition = "kodierter Grund für die Anforderung"
 * reasonReference MS
+* reasonReference ^short = "Anforderungbezug"
+* reasonReference ^definition = "Grund, auf den sich die Anforderung bezieht"
 * supportingInfo MS
 * supportingInfo only Reference(DiagnosticReport or ImagingStudy)
+* supportingInfo ^short = "Zusatzinformation"
+* supportingInfo ^definition = "Zusätzliche Informationen zur Anforderung"
 
 //Translation Profile
 * insert Translation(status ^short, de-DE, Status)

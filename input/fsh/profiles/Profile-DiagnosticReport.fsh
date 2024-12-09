@@ -11,8 +11,9 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * insert Translation(^description, en-US, The profile describes a diagnostic report for a radiological image.)
 //Meta
 * insert PR_CS_VS_Version
+* insert PR_CS_VS_Date
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * id MS
 * meta MS
 * meta.source MS
@@ -23,11 +24,19 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * extension[supportingInfo].extension[reference] 1..1 MS
 * extension[supportingInfo].extension[type] 1..1 MS
 * extension[supportingInfo].extension[reference].valueReference only Reference(DiagnosticReport or Procedure)
+* extension[supportingInfo] ^short = "Zusatzinformation"
+* extension[supportingInfo] ^definition = "Zusatzinformation zum Befundbericht"
 * basedOn MS
 * basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung or CarePlan)
-* status MS 
-* category 1.. MS 
-* category.coding 1.. MS 
+* basedOn ^short = "Anforderung"
+* basedOn ^definition = "Anforderung, die den Befundbericht ausgelöst hat"
+* status MS
+* status ^short = "Status"
+* status ^definition = "angemeldet | unvollständig | vorläufig | endgültig | geändert | korrigiert | angefügt | abgebrochen | fehlerhafte Eingabe | unbekannt"
+* category 1.. MS
+* category ^short = "Kategorie"
+* category ^definition = "Kategorie des Befundberichts"
+* category.coding 1.. MS
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
@@ -39,6 +48,8 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * category.coding[diagnostic-service-sections] = $DSS#RAD
 * category.coding[sct] = $SCT#4201000179104
 * code MS
+* code ^short = "Code"
+* code ^definition = "Code des Befundberichts"
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -48,18 +59,34 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[sct] ^patternCoding.system = $SCT
 * subject 1..1 MS
-* subject only Reference(Patient) 
+* subject only Reference(Patient)
+* subject ^short = "Person"
+* subject ^definition = "Person, auf die sich die Befundbericht bezieht"
 * encounter MS
+* encounter ^short = "Versorgungssstellenkontakt"
+* encounter ^definition = "Fall-Referenz auf den Versorgungssstellenkontakt"
 * effective[x] MS
+* effective[x] ^short = "Erstellungsdatum"
+* effective[x] ^definition = "Zeitpunkt der Erstellung"
 * effectiveDateTime MS
 * effectivePeriod MS
 * issued MS
+* issued ^short = "Erstellungszeitpunkt"
+* issued ^definition = "Zeit an der der Bericht erstellt wurde"
 * result MS
-* result only Reference(Observation) 
+* result only Reference(Observation)
+* result ^short = "Ergebnis"
+* result ^definition = "Ergebnis einer Beobachtung"
 * imagingStudy 1.. MS
 * imagingStudy only Reference(MII_PR_Bildgebung_Bildgebungsstudie)
+* imagingStudy ^short = "Bildgebungsstudie"
+* imagingStudy ^definition = "Studie, die die vollständige Bildgebung umfasst"
 * conclusion MS
+* conclusion ^short = "Fazit"
+* conclusion ^definition = "Fazit zur aktuellen Befundung"
 * conclusionCode MS
+* conclusionCode ^short = "Strukturiertes Fazit"
+* conclusionCode ^definition = "Fazit, welches strukturiert über Codes dargestellt wird"
 * conclusionCode.coding MS
 * conclusionCode.coding ^slicing.discriminator.type = #pattern
 * conclusionCode.coding ^slicing.discriminator.path = "$this"
@@ -71,6 +98,8 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
 * conclusionCode.coding[sct].code from MII_VS_Bildgebung_Diagnostic_Report_Coding (preferred)
 * presentedForm MS
+* presentedForm ^short = "Anhang"
+* presentedForm ^definition = "zusätzlicher wichtiger Anhang"
 
 //Translation Profile
 * insert Translation(extension[supportingInfo] ^short, de-DE, Zusatzinformation)
@@ -83,20 +112,24 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * insert Translation(basedOn ^definition, en-US, request\, which triggered the report)
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, status)
-* insert Translation(status ^definition, de-DE, angemeldet | unvollständig | vorläufig | endgültig | geändert | korrigiert | angefügt | abgebrochen | fehlerhafte Eingabe | unbekannt )
+* insert Translation(status ^definition, de-DE, angemeldet | unvollständig | vorläufig | endgültig | geändert | korrigiert | angefügt | abgebrochen | fehlerhafte Eingabe | unbekannt)
 * insert Translation(status ^definition, en-US, registered | partial | preliminary | final | amended | corrected | appended | cancelled | entered-in-error | unknown)
-* insert Translation(category ^short, de-DE, Autor)
+* insert Translation(category ^short, de-DE, Kategorie)
 * insert Translation(category ^short, en-US, category)
-* insert Translation(category ^definition, de-DE, Autor der Komposition)
-* insert Translation(category ^definition, en-US, category of the composition)
-* insert Translation(code ^short, de-DE, Autor)
+* insert Translation(category ^definition, de-DE, Kategorie des Befundberichts)
+* insert Translation(category ^definition, en-US, category of the diagnostic report)
+* insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, code)
-* insert Translation(code ^definition, de-DE, Autor der Komposition)
-* insert Translation(code ^definition, en-US, code of the composition)
+* insert Translation(code ^definition, de-DE, Code des Befundberichts)
+* insert Translation(code ^definition, en-US, code of the diagnostic report)
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)
 * insert Translation(subject ^definition, de-DE, Person\, auf die sich die Befundbericht bezieht)
 * insert Translation(subject ^definition, en-US, person\, which this report is about)
+* insert Translation(encounter ^short, de-DE, Versorgungssstellenkontakt)
+* insert Translation(encounter ^short, en-US, Encounter)
+* insert Translation(encounter ^definition, de-DE, Fall-Referenz auf den Versorgungssstellenkontakt)
+* insert Translation(encounter ^definition, en-US, encounter reference)
 * insert Translation(effective[x] ^short, de-DE, Erstellungsdatum)
 * insert Translation(effective[x] ^short, en-US, effective[x])
 * insert Translation(effective[x] ^definition, de-DE, Zeitpunkt der Erstellung)

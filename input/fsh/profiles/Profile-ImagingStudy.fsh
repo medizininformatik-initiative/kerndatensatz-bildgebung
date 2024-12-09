@@ -11,8 +11,9 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(^description, en-US, The profile describes the metadata of an DICOM imaging study.)
 //Meta
 * insert PR_CS_VS_Version
+* insert PR_CS_VS_Date
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * id MS
 * meta MS
 * meta.source MS
@@ -21,22 +22,50 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * extension contains
   //Extension Studienebene
   MII_EX_Bildgebung_Bildgebungsgrund named bildgebungsgrund 0..1 
+* extension[bildgebungsgrund] ^short = "Bildgebungsgrund"
+* extension[bildgebungsgrund] ^definition = "Bildgebungsgrund aus DICOM-Header"
 * status MS
+* status ^short = "Status"
+* status ^definition = "Angemeldet | Verfügbar | Abgebrochen | fehlerhafte Eingabe | Unbekannt"
 * modality MS
 * modality from $modality (required)
+* modality ^short = "Modalität"
+* modality ^definition = "Modalität der Studie"
 * subject MS
 * subject only Reference(Patient)
+* subject ^short = "Person"
+* subject ^definition = "Person, auf die sich die Studie bezieht"
 * encounter MS
+* encounter ^short = "Versorgungsstellenkontakt"
+* encounter ^definition = "Referenz auf eine Fall-Ressource"
 * started MS
+* started ^short = "Startzeit"
+* started ^definition = "Startzeit der Studie"
 * basedOn MS
+* basedOn ^short = "Basiert auf"
+* basedOn ^definition = "Basiert auf einer Anforderung"
 * endpoint MS
+* endpoint ^short = "Endpunkt"
+* endpoint ^definition = "DICOM-Endpunkt"
 * numberOfSeries MS
+* numberOfSeries ^short = "Serienanzahl"
+* numberOfSeries ^definition = "Anzahl der Serien in der Studie"
 * numberOfInstances MS
+* numberOfInstances ^short = "Instanzanzahl"
+* numberOfInstances ^definition = "Anzahl der Instanzen in der Studie"
 * procedureReference MS
+* procedureReference ^short = "Bildgebungsprozedur"
+* procedureReference ^definition = "Referenz auf die Bildgebungsprozedur"
 * reasonReference MS
+* reasonReference ^short = "Bildgebungsgrund"
+* reasonReference ^definition = "Referenz auf den Bildgebungsgrund"
 * description MS
+* description ^short = "Studienbeschreibung"
+* description ^definition = "Beschreibung der Studie"
 //Serieebene
 * series MS
+* series ^short = "Serienebene"
+* series ^definition = "einzelne Bildserie einer Studie"
 * series.extension contains
   //Extension Serienebene
   MII_EX_Bildgebung_Modalitaet_CT named modalitätCT 0..1 and
@@ -45,29 +74,69 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
   MII_EX_Bildgebung_Modalitaet_PT named modalitätPT 0..1 and
   MII_EX_Bildgebung_Modalitaet_NM named modalitätNM 0..1 and
   MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1
-* series.uid MS 
+* series.extension[modalitätCT] ^short = "Modalität CT"
+* series.extension[modalitätCT] ^definition = "Bildgebungsmodalität CT"
+* series.extension[modalitätMG_CR_DX] ^short = "Modalität MG CR DX"
+* series.extension[modalitätMG_CR_DX] ^definition = "Bildgebungsmodalität MG, CR und DX"
+* series.extension[modalitätMR] ^short = "Modalität MR"
+* series.extension[modalitätMR] ^definition = "Bildgebungsmodalität MR"
+* series.extension[modalitätPT] ^short = "Modalität PT"
+* series.extension[modalitätPT] ^definition = "Bildgebungsmodalität PT"
+* series.extension[modalitätNM] ^short = "Modalität NM"
+* series.extension[modalitätNM] ^definition = "Bildgebungsmodalität NM"
+* series.extension[kontrastmittel] ^short = "Kontrastmittel"
+* series.extension[kontrastmittel] ^definition = "Kontrastmittelgabe"
+* series.uid MS
+* series.uid ^short = "SerienUID"
+* series.uid ^definition = "UID einer Serie"
 * series.number MS
-* series.modality MS 
+* series.number ^short = "Nummer"
+* series.number ^definition = "Nummer der Serie"
+* series.modality MS
 * series.modality from $modality (required)
+* series.modality ^short = "Modalität"
+* series.modality ^definition = "Modalität der Serie"
 * series.description MS
+* series.description ^short = "Serienbeschreibung"
+* series.description ^definition = "Beschreibung der aktuellen Serie"
 * series.numberOfInstances MS
+* series.numberOfInstances ^short = "Instanzanzahl"
+* series.numberOfInstances ^definition = "Anzahl der Instanzen in der aktuellen Serie"
 * series.bodySite MS 
 * series.bodySite from $bodySite (required)
+* series.bodySite ^short = "Anatomie"
+* series.bodySite ^definition = "betrachtete Anatomie der Serie"
 * series.laterality MS
 * series.laterality from $laterality (required)
+* series.laterality ^short = "Lateralität"
+* series.laterality ^definition = "Lateralität der betrachteten Anatomie dieser Serie"
 * series.started MS
+* series.started ^short = "Startzeit"
+* series.started ^definition = "Aufnahmestartzeit der Serie"
 * series.performer MS
+* series.performer ^short = "Durchführender"
+* series.performer ^definition = "Durchführender der Serie. Hier speziell das Gerät"
 * series.performer.actor MS
 * series.performer.actor only Reference(MII_PR_Bildgebung_Geraet)
 //Instanzebene
 * series.instance MS
+* series.instance ^short = "Instanzebene"
+* series.instance ^definition = "Instanzebene der Serie"
 * series.instance.extension contains
   //Extension Instanzebene
   MII_EX_Bildgebung_Instanz_Details named InstanceDetails 0..1
+* series.instance.extension[InstanceDetails] ^short = "Instanzdetails"
+* series.instance.extension[InstanceDetails] ^definition = "Details der jeweilige Instanz"
 * series.instance.uid MS
+* series.instance.uid ^short = "Instanz UID"
+* series.instance.uid ^definition = "SOP Instanz UID"
 * series.instance.sopClass MS
 * series.instance.sopClass from $sop-class (required)
+* series.instance.sopClass ^short = "SOP Klasse"
+* series.instance.sopClass ^definition = "SOP Klasse"
 * series.instance.number MS
+* series.instance.number ^short = "Instanznummer"
+* series.instance.number ^definition = "Nummer der aktuellen Instanz"
 
 //Translation Profile
 * insert Translation(extension[bildgebungsgrund] ^short, de-DE, Bildgebungsgrund)
@@ -104,7 +173,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(endpoint ^definition, en-US, DICOM endpoint)
 * insert Translation(numberOfSeries ^short, de-DE, Serienanzahl)
 * insert Translation(numberOfSeries ^short, en-US, number of series)
-* insert Translation(numberOfSeries ^definition, de-DE, Anzhal der Serien in der Studie)
+* insert Translation(numberOfSeries ^definition, de-DE, Anzahl der Serien in der Studie)
 * insert Translation(numberOfSeries ^definition, en-US, number of series in the study)
 * insert Translation(numberOfInstances ^short, de-DE, Instanzanzahl)
 * insert Translation(numberOfInstances ^short, en-US, number of instances)
@@ -146,7 +215,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(series.extension[modalitätPT] ^short, en-US, modality PT)
 * insert Translation(series.extension[modalitätPT] ^definition, de-DE, Bildgebungsmodalität PT)
 * insert Translation(series.extension[modalitätPT] ^definition, en-US, Imagingmodality PT)
-* insert Translation(series.extension[kontrastmittel] ^short, de-DE, kontrastmittel)
+* insert Translation(series.extension[kontrastmittel] ^short, de-DE, Kontrastmittel)
 * insert Translation(series.extension[kontrastmittel] ^short, en-US, contrast medication)
 * insert Translation(series.extension[kontrastmittel] ^definition, de-DE, Kontrastmittelgabe)
 * insert Translation(series.extension[kontrastmittel] ^definition, en-US, application of contrast medication)

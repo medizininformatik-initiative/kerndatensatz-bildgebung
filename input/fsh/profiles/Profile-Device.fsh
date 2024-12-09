@@ -11,16 +11,21 @@ Description: "Dieses Profil beschreibt das genutzte Gerät in der radiologischer
 * insert Translation(^description, en-US, The profile describes a device for radiological images.)
 //Meta
 * insert PR_CS_VS_Version
+* insert PR_CS_VS_Date
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * id MS
 * meta MS
 * meta.source MS
 * meta.profile MS
 //Profile
 * manufacturer MS
+* manufacturer ^short = "Hersteller"
+* manufacturer ^definition = "Hersteller des Aufnahmegeräts"
 * deviceName MS
 * deviceName.type from $VSdeviceName (required)
+* deviceName ^short = "Gerätename"
+* deviceName ^definition = "Name und Modell des Aufnahmegeräts"
 
 //Translation Profile
 * insert Translation(manufacturer ^short, de-DE, Hersteller)

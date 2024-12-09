@@ -12,8 +12,9 @@ Description: "Spezifiziert die radiologische Befundungsprozedur nach TNM"
 //Meta
 * ^status = #draft
 * insert PR_CS_VS_Version
+* insert PR_CS_VS_Date
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * id MS
 * meta MS
 * meta.source MS

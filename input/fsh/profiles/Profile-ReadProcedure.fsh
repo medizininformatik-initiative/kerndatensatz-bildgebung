@@ -11,22 +11,35 @@ Description: "Diese Profil beschreibt die radiologische Befundungsprozedur. Es l
 * insert Translation(^description, en-US, This FHIR resource profile specifically characterizes the radiological reading process.)
 //Meta
 * insert PR_CS_VS_Version
+* insert PR_CS_VS_Date
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * id MS
 * meta MS
 * meta.source MS
 * meta.profile MS
 //Profile
-* status MS 
+* status MS
+* status ^short = "Status"
+* status ^definition = "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt"
 * category 1..1 MS
 * category = $SCT#165197003
+* category ^short = "Kategorie"
+* category ^definition = "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
 * code MS
+* code ^short = "Code"
+* code ^definition = "ode aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere."
 * subject MS
 * subject only Reference(Patient)
+* subject ^short = "Person"
+* subject ^definition = "Person, auf die sich die Befundungprozedur bezieht"
 * performed[x] MS
+* performed[x] ^short = "Durchführungsdatum"
+* performed[x] ^definition = "Durchführungsdatum oder -zeitraum der Prozedur."
 * report 1..* MS 
 * report ^definition = "In cases where follow ups are performed (e.g. RECIST or TNM) this procedure might be used in more than one diagnostic report this way we guarantee that the tumor categories stay the same over time."
+* report ^short = "Bericht"
+* report ^definition = "Referenz auf den Bericht"
 
 //Translation Profile
 * insert Translation(status ^short, de-DE, Status)

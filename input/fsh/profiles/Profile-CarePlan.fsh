@@ -11,20 +11,31 @@ Description: "Diese Profil beschreibt die ärztliche Behandlungsempfehlung einer
 * insert Translation(^description, en-US, The profile describes a advisory for medical care.)
 //Meta
 * insert PR_CS_VS_Version
+* insert PR_CS_VS_Date
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * id MS
 * meta MS
 * meta.source MS
 * meta.profile MS
 //Profile
 * status MS
+* status ^short = "Status"
+* status ^definition = "Entwurf | Aktiv | Wartend | Widerrufen | Abgeschlossen | Fehlerhafte Eingabe | Unbekannt"
 * intent MS
+* intent ^short = "Absicht"
+* intent ^definition = "Vorschlag | Plan | Anordnung | Option | Richtlinie"
 * description MS
+* description ^short = "Beschreibung"
+* description ^definition = "Freitextbeschreibung der Behandlungsempfehlung"
 * subject MS
 * subject only Reference(Patient)
+* subject ^short = "Person"
+* subject ^definition = "Person, auf die sich die Behandlungsempfehlung bezieht"
 * supportingInfo MS
 * supportingInfo only Reference(MII_PR_Bildgebung_Radiologischer_Befund)
+* supportingInfo ^short = "Zusatzinformation"
+* supportingInfo ^definition = "Zusatzinformation für einen Befundbericht"
 
 //Translation Profile
 * insert Translation(status ^short, de-DE, Status)
