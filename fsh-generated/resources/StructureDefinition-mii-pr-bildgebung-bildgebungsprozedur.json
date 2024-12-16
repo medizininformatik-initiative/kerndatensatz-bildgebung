@@ -7,8 +7,8 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "CC-BY-4.0",
             "system": "http://hl7.org/fhir/spdx-license",
+            "code": "CC-BY-4.0",
             "display": "Creative Commons Attribution 4.0 International"
           }
         ]
@@ -169,136 +169,8 @@
         "mustSupport": true
       },
       {
-        "id": "Procedure.status",
-        "path": "Procedure.status",
-        "short": "Status",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Status"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Status"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
         "id": "Procedure.category",
         "path": "Procedure.category",
-        "short": "Kategorie",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Kategorie"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Category"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Diagnostic procedures | Imaging procedures | Operations | Medications | Non-operative therapeutic procedures | Other procedures"
-                }
-              ]
-            }
-          ]
-        },
         "min": 1
       },
       {
@@ -310,42 +182,10 @@
       {
         "id": "Procedure.code",
         "path": "Procedure.code",
-        "short": "Code",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Code"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Code"
-                }
-              ]
-            }
-          ]
-        },
         "definition": "Code aus LOINC",
         "_definition": {
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -355,10 +195,10 @@
                   "url": "content",
                   "valueString": "Code aus LOINC"
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -368,7 +208,8 @@
                   "url": "content",
                   "valueString": "Code from LOINC"
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -457,72 +298,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Procedure.performed[x]",
-        "path": "Procedure.performed[x]",
-        "short": "Durchführungsdatum",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Durchführungsdatum"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Performed date"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Durchführungsdatum oder -zeitraum der Prozedur.",
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Durchführungsdatum oder -zeitraum der Prozedur."
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "The date or period of time the procedure was performed."
-                }
-              ]
-            }
-          ]
-        }
       }
     ]
   }
