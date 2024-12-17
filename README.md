@@ -10,7 +10,7 @@ Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Erweiterungsmoduls
 
 ### Status
 
-Aktuelle Kommentierungsversion: [2025.0.0-ballot](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/2025.0.0-ballot)
+Siehe: [Übersicht der Versionen der Kerndatensatz-Module](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/%C3%9Cbersicht-%C3%BCber-Versionen-der-Kerndatensatz%E2%80%90Module)
 
 Alle veröffentlichen FHIR-Artefakte innerhalb des Projektes verfügen über einen Status durch welchen der jeweilige Reifegrad abgeleitet werden kann. Profile mit dem Status 'Draft' wurden noch nicht ballotiert und können noch diversen und substantiellen Änderungen unterliegen. Verpflichtende und ballotierte Ergebnisse sind unter dem Tab 'Packages' zu finden.
 
@@ -54,6 +54,8 @@ Zusätzlich gibt es modalitätsspezifische Metadaten, die sich je nach vorliegen
 2024.10.11 - Abschluss der Kommentierungsphase
 
 2024.11.12 - Einreichung AG-IOP- und NSG-Beschlussvorlage nach finaler Einarbeitung der Kommentare
+
+2024.12.17 - Positives Votum NSG zur Veröffentlichung
 
 ### Wichtige Dokumente und Links
 
