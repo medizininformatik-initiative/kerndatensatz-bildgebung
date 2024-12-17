@@ -1,5 +1,7 @@
 # Beschreibung Modul 
 
+{{render:implementation-guides/ImplementationGuide-Common/images/Modulübersicht.png}}
+
 Das Modul **Befunde bildgebender Verfahren** enthält Datenelemenete zur Dokumentation radiologischer Bildgebung und Befundung aller gängigen Modalitäten. Es ist Bestandteil der Erweiterungsmodule des Kerndatensatzes (KDS) der Medizininformatik-Initiative (MII).
 
 Die medizinische Bildgebung spielt eine zentrale Rolle in der klinischen Praxis bei der Diagnose, Therapie und Dokumentation verschiedener Krankheiten und wird voraussichtlich noch wichtiger werden. Es existiert ein stetig wachsendes Volumen an klinischen Bilddaten in den Krankenhäusern. Diese Daten sind entscheidend für eine patientenzentrierte und individualisierte Gesundheitsversorgung und fördern die Entwicklung neuer Auswertungsmethoden zur Optimierung des Behandlungsstandards. Die sekundäre Nutzung dieser Daten bietet massive Potentiale, die durch dieses Erweiterungsmoduls des KDS in der MII zukünftig abgebildet werden können. 
