@@ -1,6 +1,6 @@
 # Beschreibung Modul 
 
-{{render:implementation-guides/ImplementationGuide-Common/images/Modulübersicht.png}}
+{{render:implementation-guides/ImplementationGuide-Common/images/Moduluebersicht.jpg}}
 
 Das Modul **Befunde bildgebender Verfahren** enthält Datenelemenete zur Dokumentation radiologischer Bildgebung und Befundung aller gängigen Modalitäten. Es ist Bestandteil der Erweiterungsmodule des Kerndatensatzes (KDS) der Medizininformatik-Initiative (MII).
 
