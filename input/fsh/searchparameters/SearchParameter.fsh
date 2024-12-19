@@ -9,35 +9,13 @@ Usage: #definition
 * status = #active
 * experimental = false
 * insert Date
-* description = "Suchparameter für CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension.supportingInfo"
+* description = "Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo"
 * code = #supporting-info
 * base[+] = #CarePlan
-* base[+] = #ServiceRequest
 * base[+] = #DiagnosticReport
 * type = #reference
-* expression = "CarePlan.supportingInfo | ServiceRequest.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').extension('reference').value"
+* expression = "CarePlan.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').extension('reference').value"
 * target[+] = #DiagnosticReport
-
-Instance: mii-sp-bildgebung-reason-reference
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-reason-reference"
-* insert SP_Publisher
-* insert Version
-* insert Date
-* name = "MII_SP_Bildgebung_Reason_Reference"
-* status = #active
-* experimental = false
-* description = "Suchparameter für ImagingStudy.reasonReference | ServiceRequest.reasonReference"
-* code = #reason-reference
-* base[+] = #ImagingStudy
-* base[+] = #ServiceRequest
-* type = #reference
-* expression = "ImagingStudy.reasonReference | ServiceRequest.reasonReference"
-* target[+] = #Condition
-* target[+] = #Observation
-* target[+] = #DiagnosticReport
-* target[+] = #DocumentReference
 
 Instance: mii-sp-bildgebung-description
 InstanceOf: SearchParameter
@@ -121,28 +99,12 @@ Usage: #definition
 * target = #Practitioner
 
 //DiagnosticReport
-Instance: mii-sp-bildgebung-diagnostic-report-imaging-study
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-imaging-study"
-* insert SP_Publisher
-* insert Version
-* insert Date
-* name = "MII_SP_Bildgebung_Diagnostic_Report_Imaging_Study"
-* status = #active
-* experimental = false
-* description = "Suchparameter für DiagnosticReport.imagingStudy"
-* code = #imaging-study
-* base = #DiagnosticReport
-* type = #reference
-* expression = "DiagnosticReport.imagingStudy"
-* target = #ImagingStudy
-
 Instance: mii-sp-bildgebung-diagnostic-report-conclusion
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion"
 * insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
 * insert Version
 * insert Date
 * name = "MII_SP_Bildgebung_Diagnostic_Report_Conclusion"
@@ -219,6 +181,26 @@ Usage: #definition
 * modifier[+] = #in
 * modifier[+] = #not-in
 * modifier[+] = #missing
+
+Instance: mii-sp-bildgebung-reason-reference
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-reason-reference"
+* insert SP_Publisher
+* insert Version
+* insert Date
+* name = "MII_SP_Bildgebung_Reason_Reference"
+* status = #active
+* experimental = false
+* description = "Suchparameter für ImagingStudy.reasonReference"
+* code = #reason-reference
+* base = #ImagingStudy
+* type = #reference
+* expression = "ImagingStudy.reasonReference"
+* target[+] = #Condition
+* target[+] = #Observation
+* target[+] = #DiagnosticReport
+* target[+] = #DocumentReference
 
 Instance: mii-sp-bildgebung-imaging-study-number-series
 InstanceOf: SearchParameter
@@ -985,45 +967,6 @@ Usage: #definition
 * expression = "Observation.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure').value"
 * target = #BodyStructure
 
-Instance: mii-sp-bildgebung-observation-issued
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-issued"
-* insert SP_Publisher
-* insert Version
-* insert Date
-* name = "MII_SP_Bildgebung_Observation_Issued"
-* status = #active
-* experimental = false
-* description = "Suchparameter für Observation.issued"
-* code = #issued
-* base = #Observation
-* type = #date
-* expression = "Observation.issued"
-
-Instance: mii-sp-bildgebung-observation-body-site
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-site"
-* insert SP_Publisher
-* insert Version
-* insert Date
-* name = "MII_SP_Bildgebung_Observation_Body_Site"
-* status = #active
-* experimental = false
-* description = "Suchparameter für Observation.bodySite"
-* code = #body-site
-* base = #Observation
-* type = #token
-* expression = "Observation.bodySite"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
-* modifier[+] = #missing
-
 //ReadProcedure
 Instance: mii-sp-bildgebung-read-proc-report
 InstanceOf: SearchParameter
@@ -1043,27 +986,3 @@ Usage: #definition
 * target[+] = #DiagnosticReport
 * target[+] = #Composition
 * target[+] = #DocumentReference
-
-//ServiceRequest
-Instance: mii-sp-bildgebung-service-request-reason-code
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-service-request-reason-code"
-* insert SP_Publisher
-* insert Version
-* insert Date
-* name = "MII_SP_Bildgebung_Service_Request_Reason_Code"
-* status = #active
-* experimental = false
-* description = "Suchparameter für ServiceRequest.reasonCode"
-* code = #reason-code
-* base = #ServiceRequest
-* type = #token
-* expression = "ServiceRequest.reasonCode"
-* modifier[+] = #text
-* modifier[+] = #not
-* modifier[+] = #above
-* modifier[+] = #below
-* modifier[+] = #in
-* modifier[+] = #not-in
-* modifier[+] = #missing

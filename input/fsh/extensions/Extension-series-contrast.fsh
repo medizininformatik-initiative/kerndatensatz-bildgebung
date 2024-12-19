@@ -10,7 +10,7 @@ Description: "Die Extension ermöglicht es, die Gabe von Kontrastmitteln auf Ser
 * insert Translation(^description, en-US, The extension allows specifying the administration of contrast agents at the series level.)
 //Meta
 * insert PR_CS_VS_Version
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * insert Publisher
 * insert ExtensionContext(ImagingStudy.series)
 * ^experimental = false

@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-bildgebung-radiologische-beobachtung",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung",
   "version": "2025.0.0",
   "name": "MII_PR_Bildgebung_Radiologische_Beobachtung",
@@ -40,6 +54,7 @@
     ]
   },
   "status": "active",
+  "date": "2025-01-01",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -69,7 +84,6 @@
       }
     ]
   },
-  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -116,16 +130,7 @@
         "id": "Observation.extension:SeriesUID",
         "path": "Observation.extension",
         "sliceName": "SeriesUID",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid"
-            ]
-          }
-        ],
+        "short": "Serien UID",
         "_short": {
           "extension": [
             {
@@ -156,6 +161,7 @@
             }
           ]
         },
+        "definition": "UID einer DICOM-Serie",
         "_definition": {
           "extension": [
             {
@@ -185,22 +191,23 @@
               ]
             }
           ]
-        }
-      },
-      {
-        "id": "Observation.extension:SOPInstanzUID",
-        "path": "Observation.extension",
-        "sliceName": "SOPInstanzUID",
+        },
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid"
             ]
           }
-        ],
+        ]
+      },
+      {
+        "id": "Observation.extension:SOPInstanzUID",
+        "path": "Observation.extension",
+        "sliceName": "SOPInstanzUID",
+        "short": "SOP Instanz UID",
         "_short": {
           "extension": [
             {
@@ -231,6 +238,7 @@
             }
           ]
         },
+        "definition": "UID einer SOP Instanz",
         "_definition": {
           "extension": [
             {
@@ -260,23 +268,23 @@
               ]
             }
           ]
-        }
+        },
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.extension:bodyStructure",
         "path": "Observation.extension",
         "sliceName": "bodyStructure",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "Körperstruktur",
         "_short": {
           "extension": [
             {
@@ -307,6 +315,7 @@
             }
           ]
         },
+        "definition": "Referenz auf eine Körperstruktur",
         "_definition": {
           "extension": [
             {
@@ -336,7 +345,18 @@
               ]
             }
           ]
-        }
+        },
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.extension:bodyStructure.value[x]",
@@ -353,15 +373,7 @@
       {
         "id": "Observation.partOf",
         "path": "Observation.partOf",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "Teil von",
         "_short": {
           "extension": [
             {
@@ -392,6 +404,7 @@
             }
           ]
         },
+        "definition": "Teil einer Befundungprozedur",
         "_definition": {
           "extension": [
             {
@@ -421,12 +434,21 @@
               ]
             }
           ]
-        }
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.status",
         "path": "Observation.status",
-        "mustSupport": true,
+        "short": "Status",
         "_short": {
           "extension": [
             {
@@ -457,6 +479,7 @@
             }
           ]
         },
+        "definition": "angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt",
         "_definition": {
           "extension": [
             {
@@ -486,12 +509,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.category",
         "path": "Observation.category",
-        "mustSupport": true,
+        "short": "Kategorie",
         "_short": {
           "extension": [
             {
@@ -522,6 +546,7 @@
             }
           ]
         },
+        "definition": "Klassifikation in diagnostischen Fachbereich und Gruppe",
         "_definition": {
           "extension": [
             {
@@ -551,12 +576,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "mustSupport": true,
+        "short": "Code",
         "_short": {
           "extension": [
             {
@@ -587,6 +613,7 @@
             }
           ]
         },
+        "definition": "Ein Code für die zu befundende Beoabchtung",
         "_definition": {
           "extension": [
             {
@@ -616,21 +643,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "Person",
         "_short": {
           "extension": [
             {
@@ -661,6 +680,7 @@
             }
           ]
         },
+        "definition": "Person, auf die sich die Beobachtung bezieht",
         "_definition": {
           "extension": [
             {
@@ -690,12 +710,22 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.issued",
         "path": "Observation.issued",
-        "mustSupport": true,
+        "short": "Dokumentationsdatum",
         "_short": {
           "extension": [
             {
@@ -726,6 +756,7 @@
             }
           ]
         },
+        "definition": "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde",
         "_definition": {
           "extension": [
             {
@@ -755,12 +786,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "mustSupport": true,
+        "short": "Messwert",
         "_short": {
           "extension": [
             {
@@ -791,6 +823,7 @@
             }
           ]
         },
+        "definition": "Wert der Analyse",
         "_definition": {
           "extension": [
             {
@@ -820,12 +853,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
-        "mustSupport": true,
+        "short": "Anatomie",
         "_short": {
           "extension": [
             {
@@ -856,6 +890,7 @@
             }
           ]
         },
+        "definition": "betrachtete Anatomie der Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -885,20 +920,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.hasMember",
         "path": "Observation.hasMember",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "weitere Beobachtungen",
         "_short": {
           "extension": [
             {
@@ -929,6 +957,7 @@
             }
           ]
         },
+        "definition": "Referenzierung weiterer Beobachtungen",
         "_definition": {
           "extension": [
             {
@@ -958,17 +987,88 @@
               ]
             }
           ]
-        }
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.derivedFrom",
         "path": "Observation.derivedFrom",
+        "short": "abgeleitet",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "abgeleitet"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "derived from"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Abgeleitet von ImagingStudy, ect.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Abgeleitet von ImagingStudy, ect."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "derived from an imagingStud, etc."
+                }
+              ]
+            }
+          ]
+        },
         "mustSupport": true
       },
       {
         "id": "Observation.component",
         "path": "Observation.component",
-        "mustSupport": true,
+        "short": "Bestandteile",
         "_short": {
           "extension": [
             {
@@ -999,6 +1099,7 @@
             }
           ]
         },
+        "definition": "detailierte Bestandteile der Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -1028,7 +1129,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       }
     ]
   }

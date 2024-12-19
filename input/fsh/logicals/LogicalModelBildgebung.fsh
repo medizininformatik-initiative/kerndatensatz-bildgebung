@@ -11,7 +11,7 @@ Description: "MII LogicalModel Modul Bildgebung"
 //Meta
 * insert Publisher
 * insert PR_CS_VS_Version
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * insert PR_CS_VS_Date
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung"
 * . ^short = "Das Erweiterungsmodul Bildgebung enthält Datenelemente zur Dokumentation Bildgebungsstudien und radiologischen Befundberichten"

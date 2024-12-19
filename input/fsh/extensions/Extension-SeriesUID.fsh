@@ -10,7 +10,7 @@ Description: "Die Extension ermöglicht es, den Bildnummer aus dem entsprechende
 * insert Translation(^description, en-US, The extension allows specifying the reason for the imaging procedure from the corresponding DICOM tag at the study level.)
 //Meta
 * insert PR_CS_VS_Version
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * insert Publisher
 * insert ExtensionContext(Observation)
 * ^experimental = false

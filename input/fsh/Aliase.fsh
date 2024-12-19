@@ -6,6 +6,8 @@ Alias: $performerFunction = http://hl7.org/fhir/ValueSet/series-performer-functi
 Alias: $morphology = http://hl7.org/fhir/ValueSet/bodystructure-code
 Alias: $location = http://hl7.org/fhir/ValueSet/body-site
 Alias: $locQual = http://hl7.org/fhir/ValueSet/bodystructure-relative-location
+Alias: $VSdeviceName = http://hl7.org/fhir/ValueSet/device-nametype
+Alias: $CSdeviceName = http://hl7.org/fhir/device-nametype
 //MII-Profile
 Alias: $miiProcedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
 Alias: $miiMedicationAdministration = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration

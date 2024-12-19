@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-bildgebung-radiologischer-befund",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund",
   "version": "2025.0.0",
   "name": "MII_PR_Bildgebung_Radiologischer_Befund",
@@ -40,6 +54,7 @@
     ]
   },
   "status": "active",
+  "date": "2025-01-01",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -69,7 +84,6 @@
       }
     ]
   },
-  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -116,17 +130,7 @@
         "id": "DiagnosticReport.extension:supportingInfo",
         "path": "DiagnosticReport.extension",
         "sliceName": "supportingInfo",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "Zusatzinformation",
         "_short": {
           "extension": [
             {
@@ -157,6 +161,7 @@
             }
           ]
         },
+        "definition": "Zusatzinformation zum Befundbericht",
         "_definition": {
           "extension": [
             {
@@ -186,7 +191,18 @@
               ]
             }
           ]
-        }
+        },
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.extension:supportingInfo.extension:type",
@@ -216,16 +232,7 @@
       {
         "id": "DiagnosticReport.basedOn",
         "path": "DiagnosticReport.basedOn",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung",
-              "http://hl7.org/fhir/StructureDefinition/CarePlan"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "Anforderung",
         "_short": {
           "extension": [
             {
@@ -256,6 +263,7 @@
             }
           ]
         },
+        "definition": "Anforderung, die den Befundbericht ausgelöst hat",
         "_definition": {
           "extension": [
             {
@@ -285,12 +293,22 @@
               ]
             }
           ]
-        }
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung",
+              "http://hl7.org/fhir/StructureDefinition/CarePlan"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.status",
         "path": "DiagnosticReport.status",
-        "mustSupport": true,
+        "short": "Status",
         "_short": {
           "extension": [
             {
@@ -321,6 +339,7 @@
             }
           ]
         },
+        "definition": "angemeldet | unvollständig | vorläufig | endgültig | geändert | korrigiert | angefügt | abgebrochen | fehlerhafte Eingabe | unbekannt",
         "_definition": {
           "extension": [
             {
@@ -350,13 +369,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.category",
         "path": "DiagnosticReport.category",
-        "min": 1,
-        "mustSupport": true,
+        "short": "Kategorie",
         "_short": {
           "extension": [
             {
@@ -368,7 +387,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Autor"
+                  "valueString": "Kategorie"
                 }
               ]
             },
@@ -387,6 +406,7 @@
             }
           ]
         },
+        "definition": "Kategorie des Befundberichts",
         "_definition": {
           "extension": [
             {
@@ -398,7 +418,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Autor der Komposition"
+                  "valueString": "Kategorie des Befundberichts"
                 }
               ]
             },
@@ -411,12 +431,14 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "category of the composition"
+                  "valueString": "category of the diagnostic report"
                 }
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.category.coding",
@@ -472,7 +494,7 @@
       {
         "id": "DiagnosticReport.code",
         "path": "DiagnosticReport.code",
-        "mustSupport": true,
+        "short": "Code",
         "_short": {
           "extension": [
             {
@@ -484,7 +506,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Autor"
+                  "valueString": "Code"
                 }
               ]
             },
@@ -503,6 +525,7 @@
             }
           ]
         },
+        "definition": "Code des Befundberichts",
         "_definition": {
           "extension": [
             {
@@ -514,7 +537,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Autor der Komposition"
+                  "valueString": "Code des Befundberichts"
                 }
               ]
             },
@@ -527,12 +550,13 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "code of the composition"
+                  "valueString": "code of the diagnostic report"
                 }
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.code.coding",
@@ -572,16 +596,7 @@
       {
         "id": "DiagnosticReport.subject",
         "path": "DiagnosticReport.subject",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "Person",
         "_short": {
           "extension": [
             {
@@ -612,6 +627,7 @@
             }
           ]
         },
+        "definition": "Person, auf die sich die Befundbericht bezieht",
         "_definition": {
           "extension": [
             {
@@ -641,11 +657,83 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.encounter",
         "path": "DiagnosticReport.encounter",
+        "short": "Versorgungssstellenkontakt",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Versorgungssstellenkontakt"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Encounter"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Fall-Referenz auf den Versorgungssstellenkontakt",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fall-Referenz auf den Versorgungssstellenkontakt"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "encounter reference"
+                }
+              ]
+            }
+          ]
+        },
         "mustSupport": true
       },
       {
@@ -661,7 +749,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "mustSupport": true,
+        "short": "Erstellungsdatum",
         "_short": {
           "extension": [
             {
@@ -692,6 +780,7 @@
             }
           ]
         },
+        "definition": "Zeitpunkt der Erstellung",
         "_definition": {
           "extension": [
             {
@@ -721,7 +810,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.effective[x]:effectiveDateTime",
@@ -752,7 +842,7 @@
       {
         "id": "DiagnosticReport.issued",
         "path": "DiagnosticReport.issued",
-        "mustSupport": true,
+        "short": "Erstellungszeitpunkt",
         "_short": {
           "extension": [
             {
@@ -783,6 +873,7 @@
             }
           ]
         },
+        "definition": "Zeit an der der Bericht erstellt wurde",
         "_definition": {
           "extension": [
             {
@@ -812,12 +903,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.result",
         "path": "DiagnosticReport.result",
-        "mustSupport": true,
+        "short": "Ergebnis",
         "_short": {
           "extension": [
             {
@@ -848,6 +940,7 @@
             }
           ]
         },
+        "definition": "Ergebnis einer Beobachtung",
         "_definition": {
           "extension": [
             {
@@ -877,21 +970,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.imagingStudy",
         "path": "DiagnosticReport.imagingStudy",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "Bildgebungsstudie",
         "_short": {
           "extension": [
             {
@@ -922,6 +1007,7 @@
             }
           ]
         },
+        "definition": "Studie, die die vollständige Bildgebung umfasst",
         "_definition": {
           "extension": [
             {
@@ -951,12 +1037,22 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.conclusion",
         "path": "DiagnosticReport.conclusion",
-        "mustSupport": true,
+        "short": "Fazit",
         "_short": {
           "extension": [
             {
@@ -987,6 +1083,7 @@
             }
           ]
         },
+        "definition": "Fazit zur aktuellen Befundung",
         "_definition": {
           "extension": [
             {
@@ -1016,12 +1113,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.conclusionCode",
         "path": "DiagnosticReport.conclusionCode",
-        "mustSupport": true,
+        "short": "Strukturiertes Fazit",
         "_short": {
           "extension": [
             {
@@ -1052,6 +1150,7 @@
             }
           ]
         },
+        "definition": "Fazit, welches strukturiert über Codes dargestellt wird",
         "_definition": {
           "extension": [
             {
@@ -1081,7 +1180,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.conclusionCode.coding",
@@ -1130,7 +1230,7 @@
       {
         "id": "DiagnosticReport.presentedForm",
         "path": "DiagnosticReport.presentedForm",
-        "mustSupport": true,
+        "short": "Anhang",
         "_short": {
           "extension": [
             {
@@ -1161,6 +1261,7 @@
             }
           ]
         },
+        "definition": "zusätzlicher wichtiger Anhang",
         "_definition": {
           "extension": [
             {
@@ -1190,7 +1291,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       }
     ]
   }

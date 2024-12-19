@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-bildgebung-koerperstruktur",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur",
   "version": "2025.0.0",
   "name": "MII_PR_Bildgebung_Koerperstruktur",
@@ -40,6 +54,7 @@
     ]
   },
   "status": "active",
+  "date": "2025-01-01",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -69,7 +84,6 @@
       }
     ]
   },
-  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -101,11 +115,7 @@
       {
         "id": "BodyStructure.morphology",
         "path": "BodyStructure.morphology",
-        "mustSupport": true,
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-code"
-        },
+        "short": "Morphologie",
         "_short": {
           "extension": [
             {
@@ -136,6 +146,7 @@
             }
           ]
         },
+        "definition": "Morphologie der Körperstruktur",
         "_definition": {
           "extension": [
             {
@@ -165,16 +176,17 @@
               ]
             }
           ]
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-code"
         }
       },
       {
         "id": "BodyStructure.location",
         "path": "BodyStructure.location",
-        "mustSupport": true,
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "http://hl7.org/fhir/ValueSet/body-site"
-        },
+        "short": "Lokalisation",
         "_short": {
           "extension": [
             {
@@ -205,6 +217,7 @@
             }
           ]
         },
+        "definition": "Lokalisation der Körperstruktur im Bild",
         "_definition": {
           "extension": [
             {
@@ -234,16 +247,17 @@
               ]
             }
           ]
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/body-site"
         }
       },
       {
         "id": "BodyStructure.locationQualifier",
         "path": "BodyStructure.locationQualifier",
-        "mustSupport": true,
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-relative-location"
-        },
+        "short": "nähere Lokalisation",
         "_short": {
           "extension": [
             {
@@ -274,6 +288,7 @@
             }
           ]
         },
+        "definition": "explizite Beschreibung der Lokalisation",
         "_definition": {
           "extension": [
             {
@@ -303,12 +318,17 @@
               ]
             }
           ]
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-relative-location"
         }
       },
       {
         "id": "BodyStructure.patient",
         "path": "BodyStructure.patient",
-        "mustSupport": true,
+        "short": "Person",
         "_short": {
           "extension": [
             {
@@ -339,6 +359,7 @@
             }
           ]
         },
+        "definition": "Person, an der sich die untersuchte Körperstruktur befindet",
         "_definition": {
           "extension": [
             {
@@ -368,7 +389,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       }
     ]
   }

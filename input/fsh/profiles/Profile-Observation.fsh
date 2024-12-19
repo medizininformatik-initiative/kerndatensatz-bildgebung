@@ -11,8 +11,9 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * insert Translation(^description, en-US, The profile describes a observation for radiological images.)
 //Meta
 * insert PR_CS_VS_Version
+* insert PR_CS_VS_Date
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * id MS
 * meta MS
 * meta.source MS
@@ -23,20 +24,48 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
   MII_EX_Bildgebung_SOP_Instanz_UID named SOPInstanzUID 0..1 and
   http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure named bodyStructure 0..* MS
 * extension[bodyStructure].valueReference only Reference(MII_PR_Bildgebung_Koerperstruktur)
+* extension[SeriesUID] ^short = "Serien UID"
+* extension[SeriesUID] ^definition = "UID einer DICOM-Serie"
+* extension[SOPInstanzUID] ^short = "SOP Instanz UID"
+* extension[SOPInstanzUID] ^definition = "UID einer SOP Instanz"
+* extension[bodyStructure] ^short = "Körperstruktur"
+* extension[bodyStructure] ^definition = "Referenz auf eine Körperstruktur"
 * partOf MS
 * partOf only Reference (MII_PR_Bildgebung_Radiologische_Befundungsprozedur)
+* partOf ^short = "Teil von"
+* partOf ^definition = "Teil einer Befundungprozedur"
 * status MS
+* status ^short = "Status"
+* status ^definition = "angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt"
 * category MS
+* category ^short = "Kategorie"
+* category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
 * code MS
+* code ^short = "Code"
+* code ^definition = "Ein Code für die zu befundende Beoabchtung"
 * subject 1..1 MS
 * subject only Reference(Patient)
+* subject ^short = "Person"
+* subject ^definition = "Person, auf die sich die Beobachtung bezieht"
 * issued MS
+* issued ^short = "Dokumentationsdatum"
+* issued ^definition = "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
 * value[x] MS
+* value[x] ^short = "Messwert"
+* value[x] ^definition = "Wert der Analyse"
 * bodySite MS
+* bodySite ^short = "Anatomie"
+* bodySite ^definition = "betrachtete Anatomie der Beobachtung"
 * hasMember MS
 * hasMember only Reference(Observation)
+* hasMember ^short = "weitere Beobachtungen"
+* hasMember ^definition = "Referenzierung weiterer Beobachtungen"
 * derivedFrom MS
+* derivedFrom ^short = "abgeleitet"
+* derivedFrom ^definition = "Abgeleitet von ImagingStudy, ect."
 * component MS
+* component ^short = "Bestandteile"
+* component ^definition = "detailierte Bestandteile der Beobachtung"
 
 //Translation Profile
 * insert Translation(extension[SeriesUID] ^short, de-DE, Serien UID)
@@ -57,7 +86,7 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * insert Translation(partOf ^definition, en-US, part of a read procedure)
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, status)
-* insert Translation(status ^definition, de-DE, angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt )
+* insert Translation(status ^definition, de-DE, angemeldet | vorläufig | endgültig | geändert | korrigiert | abgebrochen | fehlerhafte Eingabe | unbekannt)
 * insert Translation(status ^definition, en-US, registered | preliminary | final | amended | corrected | cancelled | entered-in-error | unknown)
 * insert Translation(category ^short, de-DE, Kategorie)
 * insert Translation(category ^short, en-US, Category)
@@ -87,6 +116,10 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * insert Translation(hasMember ^short, en-US, additional observation)
 * insert Translation(hasMember ^definition, de-DE, Referenzierung weiterer Beobachtungen)
 * insert Translation(hasMember ^definition, en-US, reference on additional observations)
+* insert Translation(derivedFrom ^short, de-DE, abgeleitet)
+* insert Translation(derivedFrom ^short, en-US, derived from)
+* insert Translation(derivedFrom ^definition, de-DE, Abgeleitet von ImagingStudy\, ect.)
+* insert Translation(derivedFrom ^definition, en-US, derived from an imagingStud\, etc.)
 * insert Translation(component ^short, de-DE, Bestandteile)
 * insert Translation(component ^short, en-US, components)
 * insert Translation(component ^definition, de-DE, detailierte Bestandteile der Beobachtung)

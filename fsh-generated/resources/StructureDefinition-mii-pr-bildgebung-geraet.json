@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-bildgebung-geraet",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet",
   "version": "2025.0.0",
   "name": "MII_PR_Bildgebung_Geraet",
@@ -40,6 +54,7 @@
     ]
   },
   "status": "active",
+  "date": "2025-01-01",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -69,7 +84,6 @@
       }
     ]
   },
-  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -101,7 +115,7 @@
       {
         "id": "Device.manufacturer",
         "path": "Device.manufacturer",
-        "mustSupport": true,
+        "short": "Hersteller",
         "_short": {
           "extension": [
             {
@@ -132,6 +146,7 @@
             }
           ]
         },
+        "definition": "Hersteller des Aufnahmegeräts",
         "_definition": {
           "extension": [
             {
@@ -161,12 +176,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Device.deviceName",
         "path": "Device.deviceName",
-        "mustSupport": true,
+        "short": "Gerätename",
         "_short": {
           "extension": [
             {
@@ -197,6 +213,7 @@
             }
           ]
         },
+        "definition": "Name und Modell des Aufnahmegeräts",
         "_definition": {
           "extension": [
             {
@@ -226,6 +243,15 @@
               ]
             }
           ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Device.deviceName.type",
+        "path": "Device.deviceName.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/device-nametype"
         }
       }
     ]

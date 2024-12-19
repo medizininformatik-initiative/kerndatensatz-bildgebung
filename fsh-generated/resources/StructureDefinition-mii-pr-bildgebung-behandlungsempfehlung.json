@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-bildgebung-behandlungsempfehlung",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung",
   "version": "2025.0.0",
   "name": "MII_PR_Bildgebung_Behandlungsempfehlung",
@@ -40,6 +54,7 @@
     ]
   },
   "status": "active",
+  "date": "2025-01-01",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -69,7 +84,6 @@
       }
     ]
   },
-  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -101,7 +115,7 @@
       {
         "id": "CarePlan.status",
         "path": "CarePlan.status",
-        "mustSupport": true,
+        "short": "Status",
         "_short": {
           "extension": [
             {
@@ -132,6 +146,7 @@
             }
           ]
         },
+        "definition": "Entwurf | Aktiv | Wartend | Widerrufen | Abgeschlossen | Fehlerhafte Eingabe | Unbekannt",
         "_definition": {
           "extension": [
             {
@@ -161,12 +176,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "CarePlan.intent",
         "path": "CarePlan.intent",
-        "mustSupport": true,
+        "short": "Absicht",
         "_short": {
           "extension": [
             {
@@ -197,6 +213,7 @@
             }
           ]
         },
+        "definition": "Vorschlag | Plan | Anordnung | Option | Richtlinie",
         "_definition": {
           "extension": [
             {
@@ -226,12 +243,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "CarePlan.description",
         "path": "CarePlan.description",
-        "mustSupport": true,
+        "short": "Beschreibung",
         "_short": {
           "extension": [
             {
@@ -262,6 +280,7 @@
             }
           ]
         },
+        "definition": "Freitextbeschreibung der Behandlungsempfehlung",
         "_definition": {
           "extension": [
             {
@@ -291,20 +310,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "CarePlan.subject",
         "path": "CarePlan.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
-        "mustSupport": true,
+        "short": "Person",
         "_short": {
           "extension": [
             {
@@ -335,6 +347,7 @@
             }
           ]
         },
+        "definition": "Person, auf die sich die Behandlungsempfehlung bezieht",
         "_definition": {
           "extension": [
             {
@@ -364,20 +377,21 @@
               ]
             }
           ]
-        }
-      },
-      {
-        "id": "CarePlan.supportingInfo",
-        "path": "CarePlan.supportingInfo",
+        },
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
+              "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
         ],
-        "mustSupport": true,
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.supportingInfo",
+        "path": "CarePlan.supportingInfo",
+        "short": "Zusatzinformation",
         "_short": {
           "extension": [
             {
@@ -408,6 +422,7 @@
             }
           ]
         },
+        "definition": "Zusatzinformation für einen Befundbericht",
         "_definition": {
           "extension": [
             {
@@ -437,7 +452,16 @@
               ]
             }
           ]
-        }
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
+            ]
+          }
+        ],
+        "mustSupport": true
       }
     ]
   }

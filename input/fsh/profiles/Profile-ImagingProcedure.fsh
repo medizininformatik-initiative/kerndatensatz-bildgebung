@@ -11,8 +11,9 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * insert Translation(^description, en-US, The profile describes a advisory for medical care.)
 //Meta
 * insert PR_CS_VS_Version
+* insert PR_CS_VS_Date
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * id MS
 * meta MS
 * meta.source MS
@@ -20,11 +21,19 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 //Profile
 * basedOn 1..* MS
 * basedOn only Reference(MII_PR_Bildgebung_Anforderung_Bildgebung)
+* basedOn ^short = "Basiert auf"
+* basedOn ^definition = "Basiert auf einem Anforderung"
 * status MS
-* category 1.. MS 
+* status ^short = "Status"
+* status ^definition = "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt"
+* category 1.. MS
+* category ^short = "Kategorie"
+* category ^definition = "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
 * category.coding 1.. MS 
 * category.coding[sct] ^patternCodeableConcept = $SCT#363679005
 * code MS
+* code ^short = "Code"
+* code ^definition = "Code aus LOINC"
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
@@ -34,7 +43,11 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * code.coding[loinc] ^patternCoding.system = $loinc
 * subject MS
 * subject only Reference(Patient)
+* subject ^short = "Person"
+* subject ^definition = "Person, auf die sich die Prozedur bezieht"
 * performed[x] MS
+* performed[x] ^short = "Durchführungsdatum"
+* performed[x] ^definition = "Durchführungsdatum oder -zeitraum der Prozedur."
 
 //Translation Profile
 * insert Translation(basedOn ^short, de-DE, Basiert auf)
