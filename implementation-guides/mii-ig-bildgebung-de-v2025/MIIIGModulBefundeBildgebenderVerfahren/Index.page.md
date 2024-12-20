@@ -1,11 +1,11 @@
-# Kerndatensatz Erweiterungsmodul Befunde bildgebender Verfahren
+# Kerndatensatz Modul Befunde bildgebender Verfahren
 
-Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls **Befunde bildgebender Verfahren** der Medizininformatik-Initiative.
+Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatzmoduls **Befunde bildgebender Verfahren** der Medizininformatik-Initiative.
 Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 01.01.2025 |
+| Datum   | 20.12.2024 |
 | Version | 2025.0.0 |
 | Status  | aktiv      |
 | Realm   | DE          | 
