@@ -14,7 +14,7 @@ Der DICOM-Standard definiert zum Teil für bestimmte Tags eigene Value Sets, wel
 * SOP-Klasse: https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html
 * Radiopharmakon PT: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4021.html
 * Radionuklid PT: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4020.html
-* Radiopharmakon NM:https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html
+* Radiopharmakon NM: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html
 * Radionuklid NM: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_18.html
 * Skalierungseinheit: http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_84.html
 
