@@ -10,4 +10,4 @@ Description: "This Valueset contains the snomed codes of the different TNM tumor
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 * ^status = #draft
-* include codes from system $SCT-version where constraint = "(< 254293002 ||"
+* include codes from system $SCT-version where constraint = "< 1222584008 |American Joint Committee on Cancer allowable value (qualifier value)|"
