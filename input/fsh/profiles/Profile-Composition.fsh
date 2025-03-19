@@ -7,7 +7,9 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Imaging_Composition)
-* insert Translation(^title, en-US, MII PR Imaging Composition)
+* insert Translation(^title, de-DE, Befundbericht semistrukturiert)
+* insert Translation(^title, en-US, composition)
+* insert Translation(^description, de-DE, Beschreibt den semistrukturierten Befundbericht)
 * insert Translation(^description, en-US, The profile describes a semistructured report. It is an addition for the main medical report.)
 //Meta
 * insert PR_CS_VS_Version

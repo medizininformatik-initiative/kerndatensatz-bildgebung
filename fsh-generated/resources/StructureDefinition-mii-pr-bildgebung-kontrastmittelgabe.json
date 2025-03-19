@@ -43,11 +43,24 @@
         "extension": [
           {
             "url": "lang",
+            "valueCode": "de-DE"
+          },
+          {
+            "url": "content",
+            "valueString": "Kontrastmittelgabe"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
             "valueCode": "en-US"
           },
           {
             "url": "content",
-            "valueString": "MII PR Imaging Contrast Medication Administration"
+            "valueString": "contrast medication administration"
           }
         ]
       }
@@ -69,6 +82,19 @@
   "description": "Dieses Profil bietet die Möglichkeit die Kontrastmittelgabe aus dem RIS zu erfassen und ist somit die Alternative zu der Erfassung der Kontrastmittelgabe aus den DICOM-Metadaten.",
   "_description": {
     "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "de-DE"
+          },
+          {
+            "url": "content",
+            "valueString": "Beschreibt die Kontrastmittelgabe"
+          }
+        ]
+      },
       {
         "url": "http://hl7.org/fhir/StructureDefinition/translation",
         "extension": [

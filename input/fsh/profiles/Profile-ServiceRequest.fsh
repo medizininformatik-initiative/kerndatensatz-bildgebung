@@ -7,7 +7,9 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Imaging_Service_Request)
-* insert Translation(^title, en-US, MII PR Imaging Service Request)
+* insert Translation(^title, de-DE, Anforderung Bildgebung)
+* insert Translation(^title, en-US, radiological service request)
+* insert Translation(^description, de-DE, Beschreibt die Anforderung einer Bildgebung)
 * insert Translation(^description, en-US, The profile describes a service request.)
 //Meta
 * insert PR_CS_VS_Version

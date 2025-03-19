@@ -43,11 +43,24 @@
         "extension": [
           {
             "url": "lang",
+            "valueCode": "de-DE"
+          },
+          {
+            "url": "content",
+            "valueString": "Bildgebungsprozedur"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
             "valueCode": "en-US"
           },
           {
             "url": "content",
-            "valueString": "MII PR Imaging Imaging Procedure"
+            "valueString": "imaging procedure"
           }
         ]
       }
@@ -69,6 +82,19 @@
   "description": "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.",
   "_description": {
     "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "de-DE"
+          },
+          {
+            "url": "content",
+            "valueString": "Darstellung der Befundungsprozedur"
+          }
+        ]
+      },
       {
         "url": "http://hl7.org/fhir/StructureDefinition/translation",
         "extension": [

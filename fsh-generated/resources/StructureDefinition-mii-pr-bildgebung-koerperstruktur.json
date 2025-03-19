@@ -43,11 +43,24 @@
         "extension": [
           {
             "url": "lang",
+            "valueCode": "de-DE"
+          },
+          {
+            "url": "content",
+            "valueString": "Körperstrukutur"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
             "valueCode": "en-US"
           },
           {
             "url": "content",
-            "valueString": "MII PR Imaging BodyStructure"
+            "valueString": "body structure"
           }
         ]
       }
@@ -69,6 +82,19 @@
   "description": "Dieses Profil beschreibt die dargestellte Körperstrukturen nach Morphologie und Lokalisation.",
   "_description": {
     "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "de-EN"
+          },
+          {
+            "url": "content",
+            "valueString": "Beschreibt die befundete Körperstruktur mit Morphologie und Lokalisation"
+          }
+        ]
+      },
       {
         "url": "http://hl7.org/fhir/StructureDefinition/translation",
         "extension": [

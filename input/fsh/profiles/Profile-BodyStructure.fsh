@@ -7,7 +7,9 @@ Description: "Dieses Profil beschreibt die dargestellte Körperstrukturen nach M
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Imaging_BodyStructure)
-* insert Translation(^title, en-US, MII PR Imaging BodyStructure)
+* insert Translation(^title, de-DE, Körperstrukutur)
+* insert Translation(^title, en-US, body structure)
+* insert Translation(^description, de-EN, Beschreibt die befundete Körperstruktur mit Morphologie und Lokalisation)
 * insert Translation(^description, en-US, The profile describes the examined body structure in morphology and location.)
 //Meta
 * insert PR_CS_VS_Version

@@ -7,7 +7,9 @@ Description: "Diese Profil beschreibt die radiologische Befundungsprozedur. Es l
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Imaging_Radiological_Readprocedure)
-* insert Translation(^title, en-US, MII PR Imaging Radiological Readprocedure)
+* insert Translation(^title, de-DE, radiologische Befundungsprozedur)
+* insert Translation(^title, en-US, radiological read-procedure)
+* insert Translation(^description, de-DE, BEschreibt eine Befundungsprozedur)
 * insert Translation(^description, en-US, This FHIR resource profile specifically characterizes the radiological reading process.)
 //Meta
 * insert PR_CS_VS_Version

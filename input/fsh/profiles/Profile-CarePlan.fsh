@@ -7,7 +7,9 @@ Description: "Diese Profil beschreibt die ärztliche Behandlungsempfehlung einer
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Imaging_Care_Plan)
-* insert Translation(^title, en-US, MII PR Imaging Care Plan)
+* insert Translation(^title, de-DE, Behandlungsempfehlung)
+* insert Translation(^title, en-US, care plan)
+* insert Translation(^description, de-DE, Empfehlung zur Behandlung)
 * insert Translation(^description, en-US, The profile describes a advisory for medical care.)
 //Meta
 * insert PR_CS_VS_Version

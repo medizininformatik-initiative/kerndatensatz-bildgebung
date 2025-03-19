@@ -7,7 +7,9 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Imaging_Imaging_Study)
-* insert Translation(^title, en-US, MII PR Imaging Imaging Study)
+* insert Translation(^title, de-DE, Bildgebungsstudie)
+* insert Translation(^title, en-US, imaging study)
+* insert Translation(^description, de-DE, Beschreibt die Bildgebungsstudie zum passenden Befundbericht)
 * insert Translation(^description, en-US, The profile describes the metadata of an DICOM imaging study.)
 //Meta
 * insert PR_CS_VS_Version

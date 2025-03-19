@@ -7,7 +7,9 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
 //Translation Meta
 * insert Translation(^name, en-US, MII_PR_Imaging_Radiological_Observation)
-* insert Translation(^title, en-US, MII PR Imaging Radiological Observation)
+* insert Translation(^title, de-DE, radiologische Beobachtung)
+* insert Translation(^title, en-US, radiological observation)
+* insert Translation(^description, de-DE, Beschreibt eine radiologische Beobachtung)
 * insert Translation(^description, en-US, The profile describes a observation for radiological images.)
 //Meta
 * insert PR_CS_VS_Version
