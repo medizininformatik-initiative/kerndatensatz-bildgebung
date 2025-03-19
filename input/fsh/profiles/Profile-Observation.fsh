@@ -22,7 +22,7 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * extension contains
   MII_EX_Bildgebung_Serie_UID named SeriesUID 0..1 and
   MII_EX_Bildgebung_SOP_Instanz_UID named SOPInstanzUID 0..1 and
-  http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure named bodyStructure 0..* MS
+  http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure named bodyStructure 0..1 MS
 * extension[bodyStructure].valueReference only Reference(MII_PR_Bildgebung_Koerperstruktur)
 * extension[SeriesUID] ^short = "Serien UID"
 * extension[SeriesUID] ^definition = "UID einer DICOM-Serie"

@@ -164,7 +164,7 @@ package "Befund" {
     class GenerischeBeobachtung <<Observation>> {
     + {field} Extension: Bildnummer: DICOM Instance UID (Series) [0..1]
     + {field} Extension: Schichtposition: DICOM Instance UID (SOP Instance) [0..1]
-    + {field} Extension: Erweiterte Körperstruktur: Reference(BodyStructure) [0..*]
+    + {field} Extension: Erweiterte Körperstruktur: Reference(BodyStructure) [0..1]
     + {field} Teil einer Befundungsprozedur: Reference(Procedure) [0..*]
     + Status: Coding [1..1]
     + Beobachtungsklassifizierung: CodeableConcept [0..*]
@@ -246,7 +246,7 @@ Befundbericht "0..1" -- "1..1" Befundungsprozedur: DR.supportingInfo (R5!)
 
 Empfehlung "0..*" -- "0..*" Befundbericht: CP.supportingInfo 
 
-GenerischeBeobachtung "0..*" -- "0..*" Körperstruktur: Obs.bodyStructure (R5!)
+GenerischeBeobachtung "0..*" -- "0..1" Körperstruktur: Obs.bodyStructure (R5!)
 GenerischeBeobachtung "0..*" -- "0..1" Befundungsprozedur: Obs.partOf
 GenerischeBeobachtung "1..1" -u- "0..*" GenerischeBeobachtung: Obs.hasMember
 GenerischeBeobachtung "0..*" -- "0..*" Studie: Obs.derivedFrom
