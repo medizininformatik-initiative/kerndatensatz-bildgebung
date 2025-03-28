@@ -139,20 +139,6 @@
         "mustSupport": true
       },
       {
-        "id": "ImagingStudy.extension",
-        "path": "ImagingStudy.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "ImagingStudy.extension:bildgebungsgrund",
         "path": "ImagingStudy.extension",
         "sliceName": "bildgebungsgrund",
@@ -1111,20 +1097,6 @@
           ]
         },
         "mustSupport": true
-      },
-      {
-        "id": "ImagingStudy.series.extension",
-        "path": "ImagingStudy.series.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "ImagingStudy.series.extension:modalitätCT",
@@ -2282,20 +2254,6 @@
           ]
         },
         "mustSupport": true
-      },
-      {
-        "id": "ImagingStudy.series.instance.extension",
-        "path": "ImagingStudy.series.instance.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "ImagingStudy.series.instance.extension:InstanceDetails",
