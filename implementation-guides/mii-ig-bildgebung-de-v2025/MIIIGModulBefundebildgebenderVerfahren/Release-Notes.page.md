@@ -1,5 +1,10 @@
 ## {{page-title}}
 
+**Version: 2025.0.1**
+- Überarbeitung Translations für bessere Darstellung und Lesbarkeit im FDPG
+- Verbesserung von Tippfehlern in SNOMED CT ValueSets
+- Verbesserung der Kardinalität der Referenz vom Profil Observation auf das Profil BodyStructure
+
 **Version: 2025.0.0**
 
 - Zusätzliche UMLs gesondert für Befund und Metadaten zum besseren Verständnis

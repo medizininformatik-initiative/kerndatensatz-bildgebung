@@ -109,7 +109,7 @@
       ]
     }
   ],
-  "version": "2025.0.0",
+  "version": "2025.0.1",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -124,7 +124,7 @@
       }
     }
   ],
-  "date": "2025-01-01",
+  "date": "2025-03-28",
   "caseSensitive": true,
   "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-scanning-sequence-variant",
   "count": 8

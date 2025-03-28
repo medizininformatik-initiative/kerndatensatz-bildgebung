@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund",
-  "version": "2025.0.0",
+  "version": "2025.0.1",
   "name": "MII_PR_Bildgebung_Radiologischer_Befund",
   "_name": {
     "extension": [
@@ -67,7 +67,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-01-01",
+  "date": "2025-03-28",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -137,6 +137,20 @@
         "id": "DiagnosticReport.meta.profile",
         "path": "DiagnosticReport.meta.profile",
         "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.extension",
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "DiagnosticReport.extension:supportingInfo",
