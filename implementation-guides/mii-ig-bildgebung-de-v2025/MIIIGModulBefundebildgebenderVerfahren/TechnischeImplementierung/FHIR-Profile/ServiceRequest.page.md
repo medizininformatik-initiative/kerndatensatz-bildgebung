@@ -6,7 +6,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## ServiceRequest
 
-Diese ServiceRequest-Ressource wird verwendet, um eine Anforderung einer Bildgebung zu erfassen. Es dient als Ausgangslage für einen Befund und ebenfalls auch der Anfertigung einer Bildstudie. 
+Diese ServiceRequest-Ressource wird verwendet, um eine Anforderung einer Bildgebung zu erfassen. Es dient als Ausgangslage für einen Befund und ebenfalls der Anfertigung einer Bildstudie. 
 
 @```
 from
