@@ -1,4 +1,6 @@
 ## {{page-title}}
+**Version: 2025.0.2**
+- Problemlösung zur Verfügbarkeit des R5-Extension-Package
 
 **Version: 2025.0.1**
 - Überarbeitung Translations für bessere Darstellung und Lesbarkeit im FDPG
