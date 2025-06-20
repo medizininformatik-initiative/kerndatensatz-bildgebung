@@ -12,7 +12,8 @@ Alias: $CSdeviceName = http://hl7.org/fhir/device-nametype
 Alias: $miiProcedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
 Alias: $miiMedicationAdministration = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration
 //Terminologien
-Alias: $icd10-gm = http://fhir.de/CodeSystem/bfarm/icd-10-gm
+Alias: $CS_icd10-gm = http://fhir.de/CodeSystem/bfarm/icd-10-gm
+Alias: $VS_icd10-gm = http://fhir.de/ValueSet/bfarm/icd-10-gm
 Alias: $SCT = http://snomed.info/sct
 Alias: $SCT-version = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240701
 Alias: $DSS = http://terminology.hl7.org/CodeSystem/v2-0074

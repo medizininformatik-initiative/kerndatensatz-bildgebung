@@ -1,6 +1,6 @@
-ValueSet: MII_VS_Bildgebung_Diagnostic_Report_Coding
-Id: mii-vs-bildgebung-diagnostic-report-coding
-Title: "MII VS Bildgebung DiagnosticReport Coding"
+ValueSet: MII_VS_Bildgebung_Diagnostic_Report_Coding_SCT
+Id: mii-vs-bildgebung-diagnostic-report-coding-sct
+Title: "MII VS Bildgebung DiagnosticReport Coding SCT"
 Description: "Import the ValueSet for Diagnostic Reports"
 * insert Publisher
 * insert PR_CS_VS_Version

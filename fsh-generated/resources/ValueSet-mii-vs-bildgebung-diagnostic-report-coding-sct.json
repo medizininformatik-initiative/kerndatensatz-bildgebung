@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MII_VS_Bildgebung_Diagnostic_Report_Coding",
-  "id": "mii-vs-bildgebung-diagnostic-report-coding",
-  "title": "MII VS Bildgebung DiagnosticReport Coding",
+  "name": "MII_VS_Bildgebung_Diagnostic_Report_Coding_SCT",
+  "id": "mii-vs-bildgebung-diagnostic-report-coding-sct",
+  "title": "MII VS Bildgebung DiagnosticReport Coding SCT",
   "description": "Import the ValueSet for Diagnostic Reports",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-coding",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-coding-sct",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

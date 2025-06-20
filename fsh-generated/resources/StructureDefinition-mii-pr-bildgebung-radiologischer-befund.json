@@ -139,6 +139,20 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.extension",
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "DiagnosticReport.extension:supportingInfo",
         "path": "DiagnosticReport.extension",
         "sliceName": "supportingInfo",
@@ -1214,29 +1228,29 @@
         "path": "DiagnosticReport.conclusionCode.coding",
         "sliceName": "icd10-gm",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "patternCoding": {
           "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
         },
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.de/ValueSet/bfarm/icd-10-gm"
+        }
       },
       {
         "id": "DiagnosticReport.conclusionCode.coding:sct",
         "path": "DiagnosticReport.conclusionCode.coding",
         "sliceName": "sct",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct"
         },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.conclusionCode.coding:sct.code",
-        "path": "DiagnosticReport.conclusionCode.coding.code",
+        "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-coding"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-coding-sct"
         }
       },
       {

@@ -6,3 +6,6 @@ RuleSet: SNOMED_Copyright
 
 RuleSet: LOINC_Copyright
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc)"
+
+RuleSet: ICD10_Copyright
+* ^copyright = "WHO, BfArM 1994 - 2024 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des  Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM)"

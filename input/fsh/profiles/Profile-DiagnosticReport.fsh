@@ -94,11 +94,12 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * conclusionCode.coding ^slicing.discriminator.path = "$this"
 * conclusionCode.coding ^slicing.rules = #open
 * conclusionCode.coding contains
-    icd10-gm 0..* MS and
-    sct 0..* MS
-* conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd10-gm
+    icd10-gm 0..1 MS and
+    sct 0..1 MS
+* conclusionCode.coding[icd10-gm] ^patternCoding.system = $CS_icd10-gm
+* conclusionCode.coding[icd10-gm] from $VS_icd10-gm (preferred)
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
-* conclusionCode.coding[sct].code from MII_VS_Bildgebung_Diagnostic_Report_Coding (preferred)
+* conclusionCode.coding[sct] from MII_VS_Bildgebung_Diagnostic_Report_Coding_SCT (preferred)
 * presentedForm MS
 * presentedForm ^short = "Anhang"
 * presentedForm ^definition = "zusätzlicher wichtiger Anhang"
