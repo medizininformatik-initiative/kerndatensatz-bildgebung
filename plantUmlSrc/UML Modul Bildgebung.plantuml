@@ -110,6 +110,13 @@ package "DICOM-Header" {
   + Halbwertszeit: Quantity[s] [0..1]
   + Serientyp: CodeableConcept [0..*]
   }
+  
+  class ModalitätUS #LightYellow {
+  + Fokustiefe: Quantity[cm] [0..1]
+  + Schallkopffrequenz: Quantity[kHz] [0..1]
+  + Schallkopftyp: CodeableConcept [0..1]
+  + Ultraschallfarbe: Boolean [0..1]
+  }
 }
 
 class Anforderung <<ServiceRequest>> {
@@ -226,6 +233,7 @@ DICOMSerie "1..1" -u- "0..1" ModalitätCR
 DICOMSerie "1..1" -u- "0..1" ModalitätMG
 DICOMSerie "1..1" -d- "0..1" ModalitätNM
 DICOMSerie "1..1" -d- "0..1" ModalitätPT
+DICOMSerie "1..1" -d- "0..1" ModalitätUS
 DICOMSerie "0..1" -- "0..1" Kontrastmittelgabe_Medikationsgabe: ISt.series.extension(Kontrastdetails)
 
 Bildgebung "0..*" -- "0..*" Anforderung: Pr.basedOn

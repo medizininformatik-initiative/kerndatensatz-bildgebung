@@ -110,6 +110,13 @@ package "DICOM-Header" {
   + Halbwertszeit: Quantity[s] [0..1]
   + Serientyp: CodeableConcept [0..*]
   }
+
+  class ModalitätUS #LightYellow {
+  + Fokustiefe: Quantity[cm] [0..1]
+  + Schallkopffrequenz: Quantity[kHz] [0..1]
+  + Schallkopftyp: CodeableConcept [0..1]
+  + Ultraschallfarbe: Boolean [0..1]
+  }
 }
 
 DICOMSerie "1..1" -- "0..*" DICOMInstanz: ISt.series.instance
@@ -120,10 +127,12 @@ DICOMSerie "1..1" -- "0..1" ModalitätCR
 DICOMSerie "1..1" -r- "0..1" ModalitätMG
 DICOMSerie "1..1" -u- "0..1" ModalitätNM
 DICOMSerie "1..1" -u- "0..1" ModalitätPT
+DICOMSerie "1..1" -u- "0..1" ModalitätUS
 
 Studie "1..1" -- "0..*" DICOMSerie: ISt.series
 
 ModalitätPT -[hidden]r- ModalitätNM
+ModalitätNM -[hidden]r- ModalitätUS
 
 
 @enduml
