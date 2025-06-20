@@ -43,8 +43,8 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
 * category.coding contains
-    loinc 0..* MS and
-    diagnostic-service-sections 0..* MS and 
+    loinc 0..1 MS and
+    diagnostic-service-sections 0..1 MS and 
     sct 1..1 MS
 * category.coding[loinc] = $loinc#18748-4
 * category.coding[diagnostic-service-sections] = $DSS#RAD

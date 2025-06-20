@@ -16,7 +16,7 @@ Description: "Die Extension ermöglicht es, die Gabe von Kontrastmitteln auf Ser
 * ^experimental = false
 //Extension
 * extension contains
-    contrastBolus 0..1 MS and
+    contrastBolus 1..1 MS and
     contrastBolusDetails 0..* 
 * extension[contrastBolus].value[x]  only boolean
 * extension[contrastBolusDetails].value[x] only Reference
