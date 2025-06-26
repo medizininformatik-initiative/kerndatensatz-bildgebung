@@ -48,6 +48,7 @@ package "DICOM-Header" {
   + Extension: Schichtdicke: Quantity[mm] [0..1]
   + {field} Extension: Pixelabstand(x): Quantity[mm] [0..1]
   + {field} Extension: Pixelabstand(y): Quantity[mm] [0..1]
+  + Extension: Eingebrannte Annotierung: Boolean [0..1]
   }
 
   class ModalitätMR #LightYellow {
@@ -112,7 +113,7 @@ package "DICOM-Header" {
   }
   
   class ModalitätUS #LightYellow {
-  + Fokustiefe: Quantity[cm] [0..1]
+  + Impulsfolgefrequenz: Quantity[Hz] [0..1]
   + Schallkopffrequenz: Quantity[kHz] [0..1]
   + Schallkopftyp: CodeableConcept [0..1]
   + Ultraschallfarbe: Boolean [0..1]
