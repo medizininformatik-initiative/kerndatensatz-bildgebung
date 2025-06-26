@@ -33,7 +33,7 @@ package "DICOM-Header" {
   + Beginn: dateTime [0..1]
   + Funktion des Ausführenden: CodeableConcept [0..*]
   + {field} Akteur: Reference(Device) [1..1]
-  + Extension: Kontrastmittelgabe: boolean [0..1]
+  + Extension: Kontrastmittelgabe: boolean [1..1]
   + {field} Extension: Kontrastmitteldetails: Reference(Statement|Administration) [0..*]
   + {field} Extension: Modalitäten(DX,CR,MG,CT,MR,PT,NM) [0..1]
   + DICOM-Instanzen: Instance [0..*]
