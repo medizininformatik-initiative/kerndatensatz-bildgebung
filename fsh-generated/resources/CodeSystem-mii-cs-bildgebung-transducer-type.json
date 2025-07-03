@@ -1,0 +1,163 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_Bildgebung_TransducerType",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_CS_Imaging_Transducer_Type"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "mii-cs-bildgebung-transducer-type",
+  "title": "MII CS Bildgebung Transducer Type",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII CS Imaging Transducer Type"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Schallkopftyp für US Untersuchungen",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "Codes for transducer types in radiological ultrasound images"
+          }
+        ]
+      }
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type",
+  "concept": [
+    {
+      "code": "SECTOR_PHASED",
+      "display": "Sector Phased"
+    },
+    {
+      "code": "SECTOR_MECH",
+      "display": "Sector Mech"
+    },
+    {
+      "code": "SECTOR_ANNULAR",
+      "display": "Sector Annular"
+    },
+    {
+      "code": "LINEAR",
+      "display": "Linear"
+    },
+    {
+      "code": "CURVED_LINEAR",
+      "display": "Curved Linear"
+    },
+    {
+      "code": "SINGLE_CRYSTAL",
+      "display": "Single Crystal"
+    },
+    {
+      "code": "SPLIT_XTAL_CWD",
+      "display": "Split Xtal CWD"
+    },
+    {
+      "code": "IV_PHASED",
+      "display": "IV Phased"
+    },
+    {
+      "code": "IV_ROT_XTAL",
+      "display": "IV Rot XTAL"
+    },
+    {
+      "code": "IV_ROT_MIRROR",
+      "display": "IV Rot Mirror"
+    },
+    {
+      "code": "ENDOCAV_PA",
+      "display": "Endocav PA"
+    },
+    {
+      "code": "ENDOCAV_MECH",
+      "display": "Endocav Mech"
+    },
+    {
+      "code": "ENDOCAV_CLA",
+      "display": "EndocavCLA"
+    },
+    {
+      "code": "ENDOCAV_AA",
+      "display": "Endocav AA"
+    },
+    {
+      "code": "ENDOCAV_LINEAR",
+      "display": "Endocav Linear"
+    },
+    {
+      "code": "VECTOR_PHASED",
+      "display": "Vector Phased"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.2",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "date": "2025-05-26",
+  "caseSensitive": true,
+  "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type",
+  "count": 16
+}

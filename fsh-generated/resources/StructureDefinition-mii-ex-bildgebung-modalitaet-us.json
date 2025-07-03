@@ -1,0 +1,257 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-ex-bildgebung-modalitaet-us",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us",
+  "version": "2025.0.2",
+  "name": "MII_EX_Bildgebung_Modalitaet_US",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_EX_Imaging_Modality_US"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII EX Bildgebung Modalität US",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII EX Imaging Modality US"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf US Daten zu erweitern.",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "The extension allows to extend the resources and feasibility analysis to US data."
+          }
+        ]
+      }
+    ]
+  },
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ImagingStudy.series"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:transducerType",
+        "path": "Extension.extension",
+        "sliceName": "transducerType",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:transducerType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:transducerType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "transducerType"
+      },
+      {
+        "id": "Extension.extension:transducerType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type"
+        }
+      },
+      {
+        "id": "Extension.extension:transducerFrequency",
+        "path": "Extension.extension",
+        "sliceName": "transducerFrequency",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:transducerFrequency.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:transducerFrequency.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "transducerFrequency"
+      },
+      {
+        "id": "Extension.extension:transducerFrequency.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:transducerFrequency.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "kilohertz"
+      },
+      {
+        "id": "Extension.extension:transducerFrequency.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:transducerFrequency.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "kHz"
+      },
+      {
+        "id": "Extension.extension:pulseRepetitionFrequency",
+        "path": "Extension.extension",
+        "sliceName": "pulseRepetitionFrequency",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:pulseRepetitionFrequency.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:pulseRepetitionFrequency.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "pulseRepetitionFrequency"
+      },
+      {
+        "id": "Extension.extension:pulseRepetitionFrequency.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:pulseRepetitionFrequency.value[x].unit",
+        "path": "Extension.extension.value[x].unit",
+        "patternString": "hertz"
+      },
+      {
+        "id": "Extension.extension:pulseRepetitionFrequency.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:pulseRepetitionFrequency.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "patternCode": "Hz"
+      },
+      {
+        "id": "Extension.extension:ultrasoundColor",
+        "path": "Extension.extension",
+        "sliceName": "ultrasoundColor",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:ultrasoundColor.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:ultrasoundColor.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "ultrasoundColor"
+      },
+      {
+        "id": "Extension.extension:ultrasoundColor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}
