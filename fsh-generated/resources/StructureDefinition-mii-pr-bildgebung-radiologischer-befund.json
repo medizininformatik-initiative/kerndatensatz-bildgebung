@@ -139,20 +139,6 @@
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.extension",
-        "path": "DiagnosticReport.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "DiagnosticReport.extension:supportingInfo",
         "path": "DiagnosticReport.extension",
         "sliceName": "supportingInfo",
@@ -486,7 +472,7 @@
         "path": "DiagnosticReport.category.coding",
         "sliceName": "loinc",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "patternCoding": {
           "code": "18748-4",
           "system": "http://loinc.org"
@@ -498,7 +484,7 @@
         "path": "DiagnosticReport.category.coding",
         "sliceName": "diagnostic-service-sections",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "patternCoding": {
           "code": "RAD",
           "system": "http://terminology.hl7.org/CodeSystem/v2-0074"

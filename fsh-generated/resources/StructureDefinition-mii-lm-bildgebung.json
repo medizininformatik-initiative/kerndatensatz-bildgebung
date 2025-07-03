@@ -2597,6 +2597,107 @@
         ]
       },
       {
+        "id": "Bildgebung.Studie.Serien.ModalitaetUS",
+        "path": "Bildgebung.Studie.Serien.ModalitaetUS",
+        "short": "Modalitaet US",
+        "definition": "Modalitaet Ultraschall",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetUS.Schallkopftyp",
+        "path": "Bildgebung.Studie.Serien.ModalitaetUS.Schallkopftyp",
+        "short": "Schallkopftyp",
+        "definition": "Typ des genutzten Schallkopfes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us/transducerType)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetUS.Schallkopffrequenz",
+        "path": "Bildgebung.Studie.Serien.ModalitaetUS.Schallkopffrequenz",
+        "short": "Schallkopffrequenz",
+        "definition": "Frequenz des genutzten Schallkopfes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us/transducerFrequency)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetUS.Impulsfolgefrequenz",
+        "path": "Bildgebung.Studie.Serien.ModalitaetUS.Impulsfolgefrequenz",
+        "short": "Impulsfolgefrequenz",
+        "definition": "Frequenz der aufeinanderfolgenden Impulse des Schallkopfes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us/pulseRepetitionFrequency)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetUS.Ultraschallfarbe",
+        "path": "Bildgebung.Studie.Serien.ModalitaetUS.Ultraschallfarbe",
+        "short": "Ultraschallfarbe",
+        "definition": "Angabe, ob der Ultraschall in Farbe aufgenommen wurde",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us/ultrasoundColor)"
+          }
+        ]
+      },
+      {
         "id": "Bildgebung.Studie.Serien.Instanzen",
         "path": "Bildgebung.Studie.Serien.Instanzen",
         "short": "Instanzen",
