@@ -17,6 +17,7 @@ Relevante DICOM-Tags:
 * Bildtyp [(0008, 0008) ImageType]
 * Pixelabstand (x) [(0028, 0030) PixelSpacing] in [mm]
 * Pixelabstand (y) [(0028, 0030) PixelSpacing] in [mm]
+* Eingebrannte Annotation [(0028,0301) BurnedInAnnotation] als boolean
 
 Die Pixelabstände sind in X und Y aufgeteilt und müssen aus dem zugrunde liegenden DICOM-Tag extrahiert werden. 
 Das DICOM-Tag PixelSpacing speichert X- und Y-Abstände gleichzeitig als String in folgendem Format: z. B. [0.703125, 0.703125].
@@ -82,5 +83,8 @@ Beispiel eine Röntgenbilds:
 
 Beispiel eines PET-Scans:
 {{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json}}
+
+Beispiel einer US-Untersuchung:
+{{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-us.json}}
 
 ---

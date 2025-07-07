@@ -48,7 +48,7 @@ package "DICOM-Header" {
   + Extension: Schichtdicke: Quantity[mm] [0..1]
   + {field} Extension: Pixelabstand(x): Quantity[mm] [0..1]
   + {field} Extension: Pixelabstand(y): Quantity[mm] [0..1]
-  + Extension: Eingebrannte Annotierung: Boolean [0..1]
+  + Extension: Eingebrannte Annotation: Boolean [0..1]
   }
 
   class ModalitätMR #LightYellow {

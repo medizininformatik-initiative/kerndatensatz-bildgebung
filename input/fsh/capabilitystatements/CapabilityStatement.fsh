@@ -218,6 +218,7 @@ Usage: #definition
 * insert SupportSearchParam(instance-pixel-spacing-x, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-x, #quantity, #SHALL)
 * insert SupportSearchParam(instance-pixel-spacing-y, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-y, #quantity, #SHALL)
 * insert SupportSearchParam(instance-slice-thickness, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-slice-thickness, #quantity, #SHALL)
+* insert SupportSearchParam(instance-burned-in-annotation, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-burned-in-annotation, #token, #SHALL)
 * insert SupportSearchParam(instance-image-type, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-image-type, #token, #SHALL)
 //Instance
 * insert SupportSearchParam(instance, http://hl7.org/fhir/SearchParameter/ImagingStudy-instance, #token, #SHALL)

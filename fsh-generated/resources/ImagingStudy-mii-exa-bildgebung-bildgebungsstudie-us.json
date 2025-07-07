@@ -1,0 +1,174 @@
+{
+  "resourceType": "ImagingStudy",
+  "id": "mii-exa-bildgebung-bildgebungsstudie-us",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund",
+      "valueString": "Verdacht auf Kreuzbandruptur"
+    }
+  ],
+  "series": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "valueQuantity": {
+                "unit": "kilohertz",
+                "value": 1670
+              },
+              "url": "transducerFrequency"
+            },
+            {
+              "valueQuantity": {
+                "unit": "hertz",
+                "value": 5860
+              },
+              "url": "pulseRepetitionFrequency"
+            },
+            {
+              "url": "ultrasoundColor",
+              "valueBoolean": false
+            },
+            {
+              "url": "transducerType",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "CURVED_LINEAR",
+                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type"
+                  }
+                ]
+              }
+            }
+          ],
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us"
+        },
+        {
+          "extension": [
+            {
+              "url": "contrastBolus",
+              "valueBoolean": false
+            }
+          ],
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
+        }
+      ],
+      "instance": [
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "imageType",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "ORIGINAL",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                      },
+                      {
+                        "code": "SECONDARY",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                      },
+                      {
+                        "code": "OTHER",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "burnedInAnnotation",
+                  "valueBoolean": true
+                }
+              ],
+              "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
+            }
+          ],
+          "uid": "instance-example-uid",
+          "sopClass": {
+            "code": "urn:oid:1.2.840.10008.5.1.4.1.1.4",
+            "system": "urn:ietf:rfc:3986"
+          },
+          "number": 1
+        }
+      ],
+      "performer": [
+        {
+          "actor": {
+            "reference": "Device/mii-exa-bildgebung-geraet"
+          }
+        }
+      ],
+      "uid": "series-example-uid",
+      "number": 1,
+      "modality": {
+        "code": "US",
+        "system": "http://dicom.nema.org/resources/ontology/DCM",
+        "display": "Ultrasound"
+      },
+      "description": "Abdomen Oberbauch",
+      "numberOfInstances": 28,
+      "bodySite": {
+        "code": "818981001",
+        "system": "http://snomed.info/sct",
+        "display": "Abdomen (body structure)"
+      },
+      "laterality": {
+        "code": "51440002",
+        "system": "http://snomed.info/sct",
+        "display": "Bilateral"
+      },
+      "started": "2025-07-07T12:03:30+02:00"
+    }
+  ],
+  "status": "available",
+  "modality": [
+    {
+      "code": "US",
+      "system": "http://dicom.nema.org/resources/ontology/DCM",
+      "display": "Ultrasound"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/PatExample",
+    "identifier": {
+      "type": {
+        "coding": [
+          {
+            "code": "MR",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "display": "Medical record number"
+          }
+        ]
+      },
+      "system": "https://system-url",
+      "value": "study-uid"
+    }
+  },
+  "encounter": {
+    "reference": "Encounter/EncExample"
+  },
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"
+    }
+  ],
+  "numberOfSeries": 2,
+  "numberOfInstances": 6,
+  "procedureReference": {
+    "reference": "Procedure/mii-exa-bildgebung-bildgebungsprozedur"
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/CondExample"
+    }
+  ],
+  "description": "Abdomen Ober- und Unterbauch"
+}

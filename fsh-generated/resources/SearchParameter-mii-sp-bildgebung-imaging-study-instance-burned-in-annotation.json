@@ -1,0 +1,37 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-bildgebung-imaging-study-instance-burned-in-annotation",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-burned-in-annotation",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2026.0.0",
+  "date": "2025-07-07",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation",
+  "status": "active",
+  "experimental": false,
+  "description": "Suchparameter für ImagingStudy.series.instance.extension.burnedInAnnotation",
+  "code": "instance-burned-in-annotation",
+  "base": [
+    "ImagingStudy"
+  ],
+  "type": "token",
+  "expression": "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('burnedInAnnotation').value",
+  "modifier": [
+    "text",
+    "not",
+    "above",
+    "below",
+    "in",
+    "not-in",
+    "missing"
+  ]
+}

@@ -67,7 +67,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-07-04",
+  "date": "2025-07-07",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -137,20 +137,6 @@
         "id": "DiagnosticReport.meta.profile",
         "path": "DiagnosticReport.meta.profile",
         "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.extension",
-        "path": "DiagnosticReport.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "DiagnosticReport.extension:supportingInfo",

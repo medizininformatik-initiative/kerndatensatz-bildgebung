@@ -882,6 +882,29 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
+Instance: mii-sp-bildgebung-imaging-study-instance-burned-in-annotation
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-burned-in-annotation"
+* insert SP_Publisher
+* insert Version
+* insert Date
+* name = "MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation"
+* status = #active
+* experimental = false
+* description = "Suchparameter für ImagingStudy.series.instance.extension.burnedInAnnotation"
+* code = #instance-burned-in-annotation
+* base = #ImagingStudy
+* type = #token
+* expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('burnedInAnnotation').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+* modifier[+] = #missing
+
 Instance: mii-sp-bildgebung-imaging-study-instance-number
 InstanceOf: SearchParameter
 Usage: #definition

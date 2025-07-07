@@ -19,7 +19,8 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
     pixelSpacingX 0..1 MS and
     pixelSpacingY 0..1 MS and
     sliceThickness 0..1 MS and
-    imageType 0..* MS
+    imageType 0..* MS and
+    burnedInAnnotation 0..1 MS
 * extension[pixelSpacingX].value[x] only SimpleQuantity
 * extension[pixelSpacingX].valueQuantity.unit = "millimeter" 
 * extension[pixelSpacingX].valueQuantity.system = "http://unitsofmeasure.org"
@@ -49,3 +50,4 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
 * extension[imageType].valueCodeableConcept.coding[modalityMR] from MII_VS_Bildgebung_Instance_Image_Type_MR
 * extension[imageType].valueCodeableConcept.coding[modalityNM] from MII_VS_Bildgebung_Instance_Image_Type_NM
 * extension[imageType].valueCodeableConcept.coding[implementationNM] from MII_VS_Bildgebung_Instance_Image_Type_NM_Implementation
+* extension[burnedInAnnotation].value[x]  only boolean
