@@ -51,6 +51,8 @@ Description: "Image type für Radiologische Bilder"
 * #MSC ^property[=].valueCode = #NM
 * #MSC ^property[+].code = #child
 * #MSC ^property[=].valueCode = #XR
+* #MSC ^property[+].code = #child
+* #MSC ^property[=].valueCode = #US
 * #CT "CT Specific Characteristics"
 * #CT ^property[0].code = #parent
 * #CT ^property[=].valueCode = #MSC
@@ -170,11 +172,151 @@ Description: "Image type für Radiologische Bilder"
 * #RECONGATEDTOMO "Recon Gated Tomo"
 * #RECONGATEDTOMO ^property[+].code = #parent
 * #RECONGATEDTOMO ^property[=].valueCode = #NM
+* #US "US Specific Characteristics"
+* #US ^property[0].code = #parent
+* #US ^property[=].valueCode = #MSC
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #ADOMINAL
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #BREAST
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #CHEST
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #ENDOCAVITARY
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #ENDORECTAL
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #ENDOVAGINAL
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #EPICARDIAL
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #FETAL_HEART
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #GYNECOLOGY
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #INTRACARDIAC
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #INTRAOPERATIVE
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #INTRAVASCULAR
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #MUSCULOSKELETAL
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #NEONATAL_HEAD
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #OBSTETRICAL
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #OPHTHALMIC
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #PEDIATRIC
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #PELVIC
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #RETROPERITONEAL
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #SCROTAL
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #SMALL_PARTS
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #TEE
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #THYROID
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #TRANSCRANIAL
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #TTE
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #US_BIOPSY
+* #US ^property[+].code = #child
+* #US ^property[=].valueCode = #VASCULAR
+* #ABDOMINAL "ABDOMINAL"
+* #ABDOMINAL ^property[0].code = #parent
+* #ABDOMINAL ^property[=].valueCode = #US
+* #BREAST "BREAST"
+* #BREAST ^property[+].code = #parent
+* #BREAST ^property[=].valueCode = #US
+* #CHEST "CHEST"
+* #CHEST ^property[+].code = #parent
+* #CHEST ^property[=].valueCode = #US
+* #ENDOCAVITARY "ENDOCAVITARY"
+* #ENDOCAVITARY ^property[+].code = #parent
+* #ENDOCAVITARY ^property[=].valueCode = #US
+* #ENDORECTAL "ENDORECTAL"
+* #ENDORECTAL ^property[+].code = #parent
+* #ENDORECTAL ^property[=].valueCode = #US
+* #ENDOVAGINAL "ENDOVAGINAL"
+* #ENDOVAGINAL ^property[+].code = #parent
+* #ENDOVAGINAL ^property[=].valueCode = #US
+* #EPICARDIAL "EPICARDIAL"
+* #EPICARDIAL ^property[+].code = #parent
+* #EPICARDIAL ^property[=].valueCode = #US
+* #FETAL_HEART "FETAL HEART"
+* #FETAL_HEART ^property[+].code = #parent
+* #FETAL_HEART ^property[=].valueCode = #US
+* #GYNECOLOGY "GYNECOLOGY"
+* #GYNECOLOGY ^property[+].code = #parent
+* #GYNECOLOGY ^property[=].valueCode = #US
+* #INTRACARDIAC "INTRACARDIAC"
+* #INTRACARDIAC ^property[+].code = #parent
+* #INTRACARDIAC ^property[=].valueCode = #US
+* #INTRAOPERATIVE "INTRAOPERATIVE"
+* #INTRAOPERATIVE ^property[+].code = #parent
+* #INTRAOPERATIVE ^property[=].valueCode = #US
+* #INTRAVASCULAR "INTRAVASCULAR"
+* #INTRAVASCULAR ^property[+].code = #parent
+* #INTRAVASCULAR ^property[=].valueCode = #US
+* #MUSCULOSKELETAL "MUSCULOSKELETAL"
+* #MUSCULOSKELETAL ^property[+].code = #parent
+* #MUSCULOSKELETAL ^property[=].valueCode = #US
+* #NEONATAL_HEAD "NEONATAL HEAD"
+* #NEONATAL_HEAD ^property[+].code = #parent
+* #NEONATAL_HEAD ^property[=].valueCode = #US
+* #OBSTETRICAL "OBSTETRICAL"
+* #OBSTETRICAL ^property[+].code = #parent
+* #OBSTETRICAL ^property[=].valueCode = #US
+* #OPHTHALMIC "OPHTHALMIC"
+* #OPHTHALMIC ^property[+].code = #parent
+* #OPHTHALMIC ^property[=].valueCode = #US
+* #PEDIATRIC "PEDIATRIC"
+* #PEDIATRIC ^property[+].code = #parent
+* #PEDIATRIC ^property[=].valueCode = #US
+* #PELVIC "PELVIC"
+* #PELVIC ^property[+].code = #parent
+* #PELVIC ^property[=].valueCode = #US
+* #RETROPERITONEAL "RETROPERITONEAL"
+* #RETROPERITONEAL ^property[+].code = #parent
+* #RETROPERITONEAL ^property[=].valueCode = #US
+* #SCROTAL "SCROTAL"
+* #SCROTAL ^property[+].code = #parent
+* #SCROTAL ^property[=].valueCode = #US
+* #SMALL_PARTS "SMALL PARTS"
+* #SMALL_PARTS ^property[+].code = #parent
+* #SMALL_PARTS ^property[=].valueCode = #US
+* #TEE "TEE"
+* #TEE ^property[+].code = #parent
+* #TEE ^property[=].valueCode = #US
+* #THYROID "THYROID"
+* #THYROID ^property[+].code = #parent
+* #THYROID ^property[=].valueCode = #US
+* #TRANSCRANIAL "TRANSCRANIAL"
+* #TRANSCRANIAL ^property[+].code = #parent
+* #TRANSCRANIAL ^property[=].valueCode = #US
+* #TTE "TTE"
+* #TTE ^property[+].code = #parent
+* #TTE ^property[=].valueCode = #US
+* #US_BIOPSY "US BIOPSY"
+* #US_BIOPSY ^property[+].code = #parent
+* #US_BIOPSY ^property[=].valueCode = #US
+* #VASCULAR "VASCULAR"
+* #VASCULAR ^property[+].code = #parent
+* #VASCULAR ^property[=].valueCode = #US
 //Implemation Specific Identifiers
 * #ISI "Implemetation Specific Identifiers"
 * #ISI ^property[0].code = #child
 * #ISI ^property[=].valueCode = #NMI
-* #NMI "NM implematation"
+* #ISI ^property[+].code = #child
+* #ISI ^property[=].valueCode = #USI
+* #NMI "NM Implematation"
 * #NMI ^property[0].code = #parent
 * #NMI ^property[=].valueCode = #ISI
 * #NMI ^property[+].code = #child
@@ -187,3 +329,56 @@ Description: "Image type für Radiologische Bilder"
 * #TRANSMISSION "Transmission"
 * #TRANSMISSION ^property[+].code = #parent
 * #TRANSMISSION ^property[=].valueCode = #NMI
+* #USI "US Implemantation"
+* #USI ^property[0].code = #parent
+* #USI ^property[=].valueCode = #ISI
+* #USI ^property[+].code = #child
+* #USI ^property[=].valueCode = #0001
+* #USI ^property[+].code = #child
+* #USI ^property[=].valueCode = #0002
+* #USI ^property[0].code = #child
+* #USI ^property[=].valueCode = #0004
+* #USI ^property[+].code = #child
+* #USI ^property[=].valueCode = #0008
+* #USI ^property[+].code = #child
+* #USI ^property[=].valueCode = #0010
+* #USI ^property[0].code = #child
+* #USI ^property[=].valueCode = #0020
+* #USI ^property[+].code = #child
+* #USI ^property[=].valueCode = #0040
+* #USI ^property[+].code = #child
+* #USI ^property[=].valueCode = #0100
+* #USI ^property[0].code = #child
+* #USI ^property[=].valueCode = #0200
+* #USI ^property[+].code = #child
+* #USI ^property[=].valueCode = #0400
+* #0001 "2D Imaging"
+* #0001 ^property[+].code = #parent
+* #0001 ^property[=].valueCode = #USI
+* #0002 "M-Mode"
+* #0002 ^property[+].code = #parent
+* #0002 ^property[=].valueCode = #USI
+* #0004 "CW Doppler"
+* #0004 ^property[+].code = #parent
+* #0004 ^property[=].valueCode = #USI
+* #0008 "PW Doppler"
+* #0008 ^property[+].code = #parent
+* #0008 ^property[=].valueCode = #USI
+* #0010 "Color Doppler"
+* #0010 ^property[+].code = #parent
+* #0010 ^property[=].valueCode = #USI
+* #0020 "Color M-Mode"
+* #0020 ^property[+].code = #parent
+* #0020 ^property[=].valueCode = #USI
+* #0040 "3D Rendering"
+* #0040 ^property[+].code = #parent
+* #0040 ^property[=].valueCode = #USI
+* #0100 "Color Power Mode"
+* #0100 ^property[+].code = #parent
+* #0100 ^property[=].valueCode = #USI
+* #0200 "Tissue Characterization"
+* #0200 ^property[+].code = #parent
+* #0200 ^property[=].valueCode = #USI
+* #0400 "Spatially-related frames"
+* #0400 ^property[+].code = #parent
+* #0400 ^property[=].valueCode = #USI
