@@ -35,7 +35,7 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
 * extension[sliceThickness].valueQuantity.code = #mm
 * extension[imageType].value[x] only CodeableConcept
 * extension[imageType].valueCodeableConcept.coding ^slicing.discriminator.type = #value
-* extension[imageType].valueCodeableConcept.coding ^slicing.discriminator.path = "coding"
+* extension[imageType].valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * extension[imageType].valueCodeableConcept.coding ^slicing.rules = #open
 * extension[imageType].valueCodeableConcept.coding contains
     pixelData 0..* and
