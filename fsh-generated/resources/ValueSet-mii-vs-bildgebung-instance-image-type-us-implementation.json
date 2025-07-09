@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MII_VS_Bildgebung_Instance_Image_Type_NM_Implementation",
-  "id": "mii-vs-bildgebung-instance-image-type-nm-implementation",
-  "title": "MII VS Bildgebung Instance Image Type NM Implementation",
-  "description": "Import the ValueSet for Instance Image Type NM Implementation",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation",
+  "name": "MII_VS_Bildgebung_Instance_Image_Type_US_Implemantation",
+  "id": "mii-vs-bildgebung-instance-image-type-us-implementation",
+  "title": "MII VS Bildgebung Instance Image Type US Implemantation",
+  "description": "Import the ValueSet for Instance Image Type US Implemantation",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -45,10 +45,34 @@
         "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
         "concept": [
           {
-            "code": "EMISSION"
+            "code": "0001"
           },
           {
-            "code": "TRANSMISSION"
+            "code": "0002"
+          },
+          {
+            "code": "0004"
+          },
+          {
+            "code": "0008"
+          },
+          {
+            "code": "0010"
+          },
+          {
+            "code": "0020"
+          },
+          {
+            "code": "0040"
+          },
+          {
+            "code": "0100"
+          },
+          {
+            "code": "0200"
+          },
+          {
+            "code": "0400"
           }
         ]
       }

@@ -1,0 +1,132 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Bildgebung_Instance_Image_Type_US",
+  "id": "mii-vs-bildgebung-instance-image-type-us",
+  "title": "MII VS Bildgebung Instance Image Type US",
+  "description": "Import the ValueSet for Instance Image Type US",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2026.0.0",
+  "date": "2025-07-30",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+        "concept": [
+          {
+            "code": "ABDOMINAL"
+          },
+          {
+            "code": "BREAST"
+          },
+          {
+            "code": "CHEST"
+          },
+          {
+            "code": "ENDOCAVITARY"
+          },
+          {
+            "code": "ENDORECTAL"
+          },
+          {
+            "code": "ENDOVAGINAL"
+          },
+          {
+            "code": "EPICARDIAL"
+          },
+          {
+            "code": "FETAL_HEART"
+          },
+          {
+            "code": "GYNECOLOGY"
+          },
+          {
+            "code": "INTRACARDIAC"
+          },
+          {
+            "code": "INTRAOPERATIVE"
+          },
+          {
+            "code": "INTRAVASCULAR"
+          },
+          {
+            "code": "MUSCULOSKELETAL"
+          },
+          {
+            "code": "NEONATAL_HEAD"
+          },
+          {
+            "code": "OBSTETRICAL"
+          },
+          {
+            "code": "OPHTHALMIC"
+          },
+          {
+            "code": "PEDIATRIC"
+          },
+          {
+            "code": "PELVIC"
+          },
+          {
+            "code": "RETROPERITONEAL"
+          },
+          {
+            "code": "SCROTAL"
+          },
+          {
+            "code": "SMALL_PARTS"
+          },
+          {
+            "code": "TEE"
+          },
+          {
+            "code": "THYROID"
+          },
+          {
+            "code": "TRANSCRANIAL"
+          },
+          {
+            "code": "TTE"
+          },
+          {
+            "code": "US_BIOPSY"
+          },
+          {
+            "code": "VASCULAR"
+          }
+        ]
+      }
+    ]
+  }
+}

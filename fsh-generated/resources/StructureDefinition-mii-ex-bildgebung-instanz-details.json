@@ -329,6 +329,17 @@
         }
       },
       {
+        "id": "Extension.extension:imageType.value[x].coding:modalityUS",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "modalityUS",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us"
+        }
+      },
+      {
         "id": "Extension.extension:imageType.value[x].coding:implementationNM",
         "path": "Extension.extension.value[x].coding",
         "sliceName": "implementationNM",
@@ -337,6 +348,17 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation"
+        }
+      },
+      {
+        "id": "Extension.extension:imageType.value[x].coding:implementationUS",
+        "path": "Extension.extension.value[x].coding",
+        "sliceName": "implementationUS",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation"
         }
       },
       {

@@ -54,7 +54,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-07-07",
+  "date": "2025-07-30",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -615,6 +615,67 @@
           {
             "identity": "FHIR",
             "map": "Composition.section.section"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Geraet",
+        "path": "Bildgebung.Geraet",
+        "short": "Gerät",
+        "definition": "Gerät zur Bildgebung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Device"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Geraet.Hersteller",
+        "path": "Bildgebung.Geraet.Hersteller",
+        "short": "Hersteller",
+        "definition": "Hersteller des Geräts",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Device.manufacturer"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Geraet.Geraetename",
+        "path": "Bildgebung.Geraet.Geraetename",
+        "short": "Gerätename",
+        "definition": "Name des Geräts",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Device.deviceName"
           }
         ]
       },
