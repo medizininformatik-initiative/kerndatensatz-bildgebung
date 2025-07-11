@@ -1,0 +1,37 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-bildgebung-imaging-study-series-transducer-type",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-type",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2026.0.0",
+  "date": "2025-07-30",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Type",
+  "status": "active",
+  "experimental": false,
+  "description": "ImagingStudy.series.extension.transducerType",
+  "code": "transducer-type",
+  "base": [
+    "ImagingStudy"
+  ],
+  "type": "token",
+  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('transducerType').value",
+  "modifier": [
+    "text",
+    "not",
+    "above",
+    "below",
+    "in",
+    "not-in",
+    "missing"
+  ]
+}
