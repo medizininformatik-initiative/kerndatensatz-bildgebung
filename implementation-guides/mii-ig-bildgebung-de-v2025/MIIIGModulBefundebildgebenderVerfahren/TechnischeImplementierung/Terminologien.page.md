@@ -26,6 +26,9 @@ Für folgenden Tags wurden eigene Code-Systeme erstellt, um Tags mit "enumerated
     (0008,0008) Image Type -> ImagingStudy-Extension Instanzdetails imageType
     (0054,1000) Series Type -> ImagingStudy-Extension PT seriesType
 
+Für den Schallkopftyp bei der Modalität US wurde ebenfalls ein eigenes Codesystem erstellt, um die Codes gemäß des FHIR-Standards semantisch korrekt aufzuführen:
+
+    (0018,6031) Transducer Type -> ImagingStudy-Extension US transducerType
 
 **SNOMED CT**
 

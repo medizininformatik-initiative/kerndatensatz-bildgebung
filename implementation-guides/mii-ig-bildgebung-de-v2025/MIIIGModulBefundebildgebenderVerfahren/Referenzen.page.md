@@ -14,11 +14,11 @@ Die verwendeten Codesysteme, Terminologien und Referenzen für Prozeduren, Diagn
 
 Befundungsspezifische Erweiterungsmodule und Profile zur Befundung, die auf diese Implentierung referenzieren, sollen sich inhaltlich an den gängigen Befundungsrichtlinien
 und -kriterien orientieren. Z.B.:
-* Mamma -  [BI-RADS](https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems/BI-RADS)
-* Prostata - [PI-RADS](https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems/PI-RADS)
-* Leber - [LI-RADS](https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems/LI-RADS)
+* Mamma -  [BI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/BI-RADS)
+* Prostata - [PI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/PI-RADS)
+* Leber - [LI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS)
 * COVID-19 - [CO-RADS](https://radiologyassistant.nl/chest/covid-19/corads-classification) 
-* DRG Befundvorlagen - [DRG-Templates](https://www.befundung.drg.de/de-DE/3199/befundvorlagen/)
+* DRG Befundvorlagen - [DRG-Templates GitHub](https://github.com/DRGagit/ak_befundung)
 
 Es wurden außerdem die [Kernspezifikation von HL7 FHIR](http://hl7.org/fhir/R4/license.html ) verwendet- darunter insbesondere die entsprechenden Ressourcen [ImagingStudy](https://hl7.org/fhir/R4/imagingstudy.html) sowie [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html) und zusätzlich die Ressourcen [Observation](https://hl7.org/fhir/R4/observation.html), [Composition](https://hl7.org/fhir/R4/composition.html), [BodyStructure](https://hl7.org/fhir/R4/bodystructure.html) und [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html).
 

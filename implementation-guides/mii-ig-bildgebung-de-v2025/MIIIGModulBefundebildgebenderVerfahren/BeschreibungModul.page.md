@@ -22,11 +22,12 @@ Zur Modellierung wurde die ImagingStudy analog in drei Teilmodule strukturiert:
 Dafür wurde sich an der internationalen FHIR-Ressource "ImagingStudy" (https://hl7.org/fhir/R4/imagingstudy.html) orientiert und überlegt, welche Elemente für die Medizininformatik-Initiative relevant sind. Es wurde außerdem diskutiert, welche weiteren DICOM-Metadaten von Interesse sind, die im Profil abgebildet werden sollen.
 
 Ergänzt wurden vorrangig modalitätsspezifische Attribute auf Serien-Ebene. Diese sollen dazu beitragen, einen tieferen technischen Einblick in die jeweilige genutzte Modalität zu erlangen.
-* Bei den röntgenbasierten Modalitäten (DX, CT, MG, CR) werden die Werte der Röntgenröhrenspannung und des Röntgenröhrenstroms abgebildet sowie die Werte der Exposition und der Expositionszeit und der Blickposition.
+* Bei den röntgenbasierten Modalitäten (DX, CT, MG, CR) werden die Werte der Röntgenröhrenspannung und des Röntgenröhrenstroms betrachtet sowie die Werte der Exposition und der Expositionszeit und der Blickposition.
 * Die nuklearmedizinischen Modalitäten (NM und PET) beinhalten Dosis und weitere Informationen zum applizierten Radiopharmakon, Radionuklid und Tracer.
 * Bei der Modalität MR werden die Scanning Sequence und Variant sowie die genutzte magnetische Feldstärke und die Zeitintervalle TE, TR und TI abgebildet.
+* Beim Ultraschall (US) werden der genutzte Schallkopftyp, die Schallkopffrequenz, die Impulsfolgefrequenz und die Ultraschallfarbe betrachtet.
 
-Im Moment werden diese sieben Modalitäten (MR, CT, DX, CR, MG, NM und PET) im Teilmodul betrachtet und es ist geplant, in einem stufenweisen Verfahren, in Zukunft auch weitere modalitätsspezifische Attribute anderer Modalitäten zu spezifizieren.
+Im Moment werden diese acht Modalitäten (MR, CT, DX, CR, MG, US NM und PET) im Teilmodul abgebildet, welche den Großteil des radiologischen Klinikalltags abdecken. In Zukunft ist geplant, auch noch weitere Modalitäten auszuspezifizieren.
 
 Die Originalnamen der Elemente aus dem FHIR Profil wurden ins Deutsche übersetzt und ggf. zur besseren Lesbarkeit angepasst. Die Instanzebene sowie auch die Serienebene sind komplett optional, sodass auch nur die Attribute auf Studienebene befüllt werden können. Allerdings wird empfohlen, wenn mögich, auch die beiden unteren Ebenen zu befüllen, um ein umfassendes Bild der abgebildeten Bildgebungsstudien zu erhalten.
 
