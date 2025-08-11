@@ -22,7 +22,7 @@ Title: "MII Example Bildgebung Imaging Study US"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us].extension[pulseRepetitionFrequency].valueQuantity.value = 5860
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us].extension[pulseRepetitionFrequency].valueQuantity.unit = "hertz"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us].extension[ultrasoundColor].valueBoolean = false
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us].extension[transducerType].valueCodeableConcept = MII_CS_Bildgebung_TransducerType#CURVED_LINEAR
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us].extension[transducerType].valueCodeableConcept = MII_CS_Bildgebung_Transducer_Type#CURVED_LINEAR
 * series.performer.actor = Reference(Device/mii-exa-bildgebung-geraet)
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel].extension[contrastBolus].valueBoolean = false
 * series.uid = "series-example-uid"

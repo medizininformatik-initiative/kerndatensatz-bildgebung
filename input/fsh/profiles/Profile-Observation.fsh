@@ -42,9 +42,25 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * category MS
 * category ^short = "Kategorie"
 * category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe"
+* category.coding 1.. MS
+* category.coding ^slicing.discriminator.type = #pattern
+* category.coding ^slicing.discriminator.path = "$this"
+* category.coding ^slicing.rules = #open
+* category.coding contains
+    loinc 0..1 MS
+* category.coding[loinc] ^patternCoding.system = $loinc
+* category.coding[loinc] = $loinc#18782-3 "Radiology Study observation (narrative)"
 * code MS
 * code ^short = "Code"
 * code ^definition = "Ein Code für die zu befundende Beoabchtung"
+* code.coding 1.. MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    sct 0..1 MS
+* code.coding[sct] ^patternCoding.system = $SCT
+* code.coding[sct] from MII_VS_Bildgebung_Findings_SCT (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -52,12 +68,13 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * issued MS
 * issued ^short = "Dokumentationsdatum"
 * issued ^definition = "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
-* value[x] MS
+* value[x] 1.. MS
 * value[x] ^short = "Messwert"
 * value[x] ^definition = "Wert der Analyse"
 * bodySite MS
 * bodySite ^short = "Anatomie"
 * bodySite ^definition = "betrachtete Anatomie der Beobachtung"
+* bodySite from MII_VS_Bildgebung_Observation_Body_Site_SCT (required)
 * hasMember MS
 * hasMember only Reference(Observation)
 * hasMember ^short = "weitere Beobachtungen"
@@ -94,10 +111,12 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, de-DE, Klassifikation in diagnostischen Fachbereich und Gruppe)
 * insert Translation(category ^definition, en-US, Classification of the diagnostic service section)
+* insert AddLoincCodingTranslation(category.coding[loinc])
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, de-DE, Ein Code für die zu befundende Beoabchtung)
 * insert Translation(code ^definition, en-US, A code identifying the inspected observation)
+* insert AddSnomedCodingTranslation(code.coding[sct])
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)
 * insert Translation(subject ^definition, de-DE, Person\, auf die sich die Beobachtung bezieht)
@@ -114,6 +133,7 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * insert Translation(bodySite ^short, en-US, body site)
 * insert Translation(bodySite ^definition, de-DE, betrachtete Anatomie der Beobachtung)
 * insert Translation(bodySite ^definition, en-US, inspected body site in this observation)
+* insert AddSnomedCodingTranslation(bodySite)
 * insert Translation(hasMember ^short, de-DE, weitere Beobachtungen)
 * insert Translation(hasMember ^short, en-US, additional observation)
 * insert Translation(hasMember ^definition, de-DE, Referenzierung weiterer Beobachtungen)

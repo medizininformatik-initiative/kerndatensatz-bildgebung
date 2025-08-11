@@ -22,15 +22,15 @@ Description: "Dieses Profil beschreibt die dargestellte Körperstrukturen nach M
 * meta.profile MS
 //Profile
 * morphology MS
-* morphology from $morphology (preferred)
+* morphology from $morphology (required)
 * morphology ^short = "Morphologie"
 * morphology ^definition = "Morphologie der Körperstruktur"
 * location MS
-* location from $location (preferred)
+* location from $location (required)
 * location ^short = "Lokalisation"
 * location ^definition = "Lokalisation der Körperstruktur im Bild"
 * locationQualifier MS
-* locationQualifier from $locQual (preferred)
+* locationQualifier from $locQual (required)
 * locationQualifier ^short = "nähere Lokalisation"
 * locationQualifier ^definition = "explizite Beschreibung der Lokalisation"
 * patient MS
