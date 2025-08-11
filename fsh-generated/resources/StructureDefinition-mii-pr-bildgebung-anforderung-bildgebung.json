@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung",
-  "version": "2026.0.0",
+  "version": "2026.0.0-ballot",
   "name": "MII_PR_Bildgebung_Anforderung_Bildgebung",
   "_name": {
     "extension": [
@@ -67,7 +67,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-07-30",
+  "date": "2025-08-20",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -338,13 +338,95 @@
           ]
         },
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.category.coding",
+        "path": "ServiceRequest.category.coding",
+        "slicing": {
+          "discriminator": [
             {
-              "code": "363679005",
-              "system": "http://snomed.info/sct"
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.category.coding:sct",
+        "path": "ServiceRequest.category.coding",
+        "sliceName": "sct",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
             }
           ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "400999005",
+          "system": "http://snomed.info/sct",
+          "display": "Procedure requested (situation)"
         },
         "mustSupport": true
       },
@@ -413,6 +495,7 @@
             }
           ]
         },
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -427,36 +510,154 @@
           ],
           "rules": "open"
         },
+        "min": 1,
         "mustSupport": true
       },
       {
         "id": "ServiceRequest.code.coding:loinc",
         "path": "ServiceRequest.code.coding",
         "sliceName": "loinc",
+        "short": "LOINC Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen vom LOINC definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von LOINC definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by LOINC"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
-        "max": "*",
+        "max": "1",
         "patternCoding": {
           "system": "http://loinc.org"
         },
-        "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.code.coding:radlex",
-        "path": "ServiceRequest.code.coding",
-        "sliceName": "radlex",
-        "min": 0,
-        "max": "*",
-        "patternCoding": {
-          "system": "https://radlex.org"
-        },
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://loinc.org/vs/loinc-rsna-radiology-playbook"
+        }
       },
       {
         "id": "ServiceRequest.code.coding:sct",
         "path": "ServiceRequest.code.coding",
         "sliceName": "sct",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
-        "max": "*",
+        "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct"
         },
@@ -466,8 +667,8 @@
         "id": "ServiceRequest.code.coding:sct.code",
         "path": "ServiceRequest.code.coding.code",
         "binding": {
-          "strength": "preferred",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-service-request-coding"
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-service-request-code-sct"
         }
       },
       {
@@ -811,10 +1012,98 @@
             }
           ]
         },
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding",
+        "path": "ServiceRequest.reasonCode.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding:sct",
+        "path": "ServiceRequest.reasonCode.coding",
+        "sliceName": "sct",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-service-request-reason"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct"
         }
       },
       {

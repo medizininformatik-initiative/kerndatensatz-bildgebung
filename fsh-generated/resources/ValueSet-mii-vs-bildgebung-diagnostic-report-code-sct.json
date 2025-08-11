@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
-  "name": "MII_VS_Bildgebung_TNM_Radiological_Read_Procedure",
-  "id": "mii-vs-bildgebung-tnm-radiological-read-procedure",
-  "title": "Valueset for TNM Radiological Read Procedures",
-  "description": "This Valueset contains the snomed codes of the different TNM tumor staging systems",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-tnm-radiological-read-procedure",
+  "status": "active",
+  "name": "MII_VS_Bildgebung_Diagnostic_Report_Code_SCT",
+  "id": "mii-vs-bildgebung-diagnostic-report-code-sct",
+  "title": "MII VS Bildgebung DiagnosticReport Code SCT",
+  "description": "Import the ValueSet for Diagnostic Reports",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -35,7 +35,7 @@
           {
             "property": "constraint",
             "op": "=",
-            "value": "< 1222584008 |American Joint Committee on Cancer allowable value (qualifier value)|"
+            "value": "< 371525003 | Clinical procedure report (record artifact) |"
           }
         ]
       }

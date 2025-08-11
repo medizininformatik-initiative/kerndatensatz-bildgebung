@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "status": "active",
   "content": "complete",
-  "name": "MII_CS_Bildgebung_TransducerType",
+  "name": "MII_CS_Bildgebung_Transducer_Type",
   "_name": {
     "extension": [
       {
@@ -141,7 +141,7 @@
       ]
     }
   ],
-  "version": "2026.0.0",
+  "version": "2026.0.0-ballot",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -156,7 +156,7 @@
       }
     }
   ],
-  "date": "2025-07-30",
+  "date": "2025-08-20",
   "caseSensitive": true,
   "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type",
   "count": 16

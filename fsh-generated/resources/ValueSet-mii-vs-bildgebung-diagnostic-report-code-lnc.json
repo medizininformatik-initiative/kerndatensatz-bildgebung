@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
-  "name": "MII_VS_Bildgebung_TNM_Category_Observation",
-  "id": "mii-vs-bildgebung-tnm-category-observation",
-  "title": "Valueset for Categories of a BodyStructure in the context of one TNM procedure",
-  "description": "This Valueset contains the coded for the different categories for BodyStructures in the context of TNM (Tumor|Node|Metastase)",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-tnm-category-observation",
+  "status": "active",
+  "name": "MII_VS_Bildgebung_Diagnostic_Report_Code_LNC",
+  "id": "mii-vs-bildgebung-diagnostic-report-code-lnc",
+  "title": "MII VS Bildgebung DiagnosticReport Code Loinc",
+  "description": "Import the ValueSet for Diagnostic Reports",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -30,18 +30,16 @@
     "include": [
       {
         "system": "http://loinc.org",
-        "concept": [
+        "filter": [
           {
-            "code": "21905-5",
-            "display": "Primary tumor.clinical [Class] Cancer"
+            "property": "SCALE_TYP",
+            "op": "=",
+            "value": "LP32888-7"
           },
           {
-            "code": "21906-3",
-            "display": "Regional lymph nodes.clinical [Class] Cancer"
-          },
-          {
-            "code": "21907-1",
-            "display": "Distant metastases.clinical [Class] Cancer"
+            "property": "CLASS",
+            "op": "=",
+            "value": "LP29684-5"
           }
         ]
       }
