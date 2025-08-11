@@ -1,5 +1,5 @@
 ## {{page-title}}
-**Version 2026.0.0-ballot**
+**Version: 2026.0.0-ballot**
 
 **Version: 2025.0.2**
 - Problemlösung zur Verfügbarkeit des R5-Extension-Package
@@ -18,7 +18,7 @@
 - Zusätzliche Attribute für MG_CR_DX-Extension (viewPosition)
 - Getrennte Extension für PT und NM
 - Geänderte und zusätzliche Attribute für PT-Extension (radiopharmaceutical, radionuclide, tracerExposureTime, units, seriesType)
-- Geänderte und zusätzliche Attribute für NM-Extension (radiepharmaceutical, radionuclide, tracerExposureTime, units)
+- Geänderte und zusätzliche Attribute für NM-Extension (radiopharmaceutical, radionuclide, tracerExposureTime, units)
 - Geänderter Datentyp für ScanningSequence, -Variant und ImageType von string auf CodeableConcept
 - CodeSysteme für MR-ScanningSequence, MR-ScanningSequenceVariant, PT-SeriesType, Instanz-ImageType
 - ValueSets für neu angelegte eigene CodeSysteme

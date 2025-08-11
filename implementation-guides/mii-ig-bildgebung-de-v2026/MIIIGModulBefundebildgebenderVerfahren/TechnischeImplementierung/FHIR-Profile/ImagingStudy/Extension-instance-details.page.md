@@ -17,7 +17,6 @@ Relevante DICOM-Tags:
 * Bildtyp [(0008, 0008) ImageType]
 * Pixelabstand (x) [(0028, 0030) PixelSpacing] in [mm]
 * Pixelabstand (y) [(0028, 0030) PixelSpacing] in [mm]
-* Eingebrannte Annotation [(0028,0301) BurnedInAnnotation] als boolean
 
 Die Pixelabstände sind in X und Y aufgeteilt und müssen aus dem zugrunde liegenden DICOM-Tag extrahiert werden. 
 Das DICOM-Tag PixelSpacing speichert X- und Y-Abstände gleichzeitig als String in folgendem Format: z. B. [0.703125, 0.703125].
@@ -68,7 +67,7 @@ select
 
 | Hinweis |  |
 |---------|---------------------|
-| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Aus Gründen der Übersichtlichkeit wurde in diesem Beispiel darauf verzichtet, alle dazugehörigen Serien bzw. Instanzen mit einzubinden. Natürlich ist es bei der Implkementierung vorgesehen, dass alle zur jeweiligen Studie gehörenden Serien und Instanzen auch in der resultierenden FHIR-Ressource enthalten sind - dafür wird dann einfach die Sequenz "series" bzw "instance" für jede Serie bzw. Instanz wiederholt und mit den entsprechenden Werten befüllt.|
+| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Aus Gründen der Übersichtlichkeit wurde in diesem Beispiel darauf verzichtet, alle dazugehörigen Serien bzw. Instanzen mit einzubinden. Natürlich ist es bei der Implementierung vorgesehen, dass alle zur jeweiligen Studie gehörenden Serien und Instanzen auch in der resultierenden FHIR-Ressource enthalten sind - dafür wird dann einfach die Sequenz "series" bzw "instance" für jede Serie bzw. Instanz wiederholt und mit den entsprechenden Werten befüllt.|
 
 Beispiele von ImagingStudy-Ressourcen mit der Extension für Intanzdetails:
 
@@ -83,8 +82,5 @@ Beispiel eine Röntgenbilds:
 
 Beispiel eines PET-Scans:
 {{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json}}
-
-Beispiel einer US-Untersuchung:
-{{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-us.json}}
 
 ---

@@ -6,7 +6,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## Extension Kontrastmittelgabe auf Serienebene
 
-Diese Extension Kontrastmitelgabe ermöglicht es, die Verwendung von Kontrastmitteln in der BildSerie anzugeben und gleichzeitig mit einer Referenz auf das KDS-Modul Medikation(MedicationStatement) Details anzulegen. Der hier verwendete DICOM Tag bildet einen boolschen Wert ab.
+Diese Extension Kontrastmittelgabe ermöglicht es, die Verwendung von Kontrastmitteln in der BildSerie anzugeben und gleichzeitig mit einer Referenz auf das KDS-Modul Medikation(MedicationStatement) Details anzulegen. Der hier verwendete DICOM Tag bildet einen boolschen Wert ab.
 
 Relevante DICOM-Tags sind:
 
@@ -58,7 +58,7 @@ select
 
 | Hinweis |  |
 |---------|---------------------|
-| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Aus Gründen der Übersichtlichkeit wurde in diesem Beispiel darauf verzichtet, alle dazugehörigen Serien bzw. Instanzen mit einzubinden. Natürlich ist es bei der Implkementierung vorgesehen, dass alle zur jeweiligen Studie gehörenden Serien und Instanzen auch in der resultierenden FHIR-Ressource enthalten sind - dafür wird dann einfach die Sequenz "series" bzw "instance" für jede Serie bzw. Instanz wiederholt und mit den entsprechenden Werten befüllt.|
+| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Aus Gründen der Übersichtlichkeit wurde in diesem Beispiel darauf verzichtet, alle dazugehörigen Serien bzw. Instanzen mit einzubinden. Natürlich ist es bei der Implementierung vorgesehen, dass alle zur jeweiligen Studie gehörenden Serien und Instanzen auch in der resultierenden FHIR-Ressource enthalten sind - dafür wird dann einfach die Sequenz "series" bzw "instance" für jede Serie bzw. Instanz wiederholt und mit den entsprechenden Werten befüllt.|
 
 Beispiele von ImagingStudy-Ressourcen mit der Extension für Kontrastmittelgabe:
 

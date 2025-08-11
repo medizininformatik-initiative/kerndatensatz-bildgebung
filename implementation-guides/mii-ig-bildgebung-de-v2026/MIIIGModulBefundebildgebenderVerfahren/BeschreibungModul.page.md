@@ -2,7 +2,7 @@
 
 {{render:implementation-guides/ImplementationGuide-Common/images/Moduluebersicht.jpg}}
 
-Das Kerndatensatzmodul **Befunde bildgebender Verfahren** enthält Datenelemenete zur Dokumentation radiologischer Bildgebung und Befundung aller gängigen Modalitäten. Es ist Bestandteil der Erweiterungsmodule des Kerndatensatzes (KDS) der Medizininformatik-Initiative (MII).
+Das Kerndatensatzmodul **Befunde bildgebender Verfahren** enthält Datenelemente zur Dokumentation radiologischer Bildgebung und Befundung aller gängigen Modalitäten. Es ist Bestandteil der Erweiterungsmodule des Kerndatensatzes (KDS) der Medizininformatik-Initiative (MII).
 
 Die medizinische Bildgebung spielt eine zentrale Rolle in der klinischen Praxis bei der Diagnose, Therapie und Dokumentation verschiedener Krankheiten und wird voraussichtlich noch wichtiger werden. Es existiert ein stetig wachsendes Volumen an klinischen Bilddaten in den Krankenhäusern. Diese Daten sind entscheidend für eine patientenzentrierte und individualisierte Gesundheitsversorgung und fördern die Entwicklung neuer Auswertungsmethoden zur Optimierung des Behandlungsstandards. Die sekundäre Nutzung dieser Daten bietet massive Potentiale, die durch dieses Erweiterungsmoduls des KDS in der MII zukünftig abgebildet werden können. 
 
@@ -10,7 +10,7 @@ Die medizinische Bildgebung spielt eine zentrale Rolle in der klinischen Praxis 
 
 Grob lässt sich das gesamte Kerndatensatzmodul **Befunde bildgebender Verfahren** in zwei Teilmodule aufteilen: die ImagingStudy mit Informationen aus dem DICOM-Header und die Abbildung des radiologischen Befundberichts über den DiagnosticReport.
 Beide Teilmodule ergänzen sich in der Abbildung ihrer Datenelemente und wurden kongruent aufeinander abgestimmt.
-Um einen Gesamtüberblick über die vorliegende Datenlage zu bekommen, ist die Nutzung beider Teilmodule erforderlich. Theoretisch ist es aber auch möglich, die Teilmodule getrennt voneinander zu implementieren, falls am gegegebenen Standort bisher nur eine Datenquelle (z.B. RIS) erschlossen wurde.
+Um einen Gesamtüberblick über die vorliegende Datenlage zu bekommen, ist die Nutzung beider Teilmodule erforderlich. Theoretisch ist es aber auch möglich, die Teilmodule getrennt voneinander zu implementieren, falls am gegebenen Standort bisher nur eine Datenquelle (z.B. RIS) erschlossen wurde.
 
 ### Teilmodul "Metadaten"
 
@@ -22,14 +22,13 @@ Zur Modellierung wurde die ImagingStudy analog in drei Teilmodule strukturiert:
 Dafür wurde sich an der internationalen FHIR-Ressource "ImagingStudy" (https://hl7.org/fhir/R4/imagingstudy.html) orientiert und überlegt, welche Elemente für die Medizininformatik-Initiative relevant sind. Es wurde außerdem diskutiert, welche weiteren DICOM-Metadaten von Interesse sind, die im Profil abgebildet werden sollen.
 
 Ergänzt wurden vorrangig modalitätsspezifische Attribute auf Serien-Ebene. Diese sollen dazu beitragen, einen tieferen technischen Einblick in die jeweilige genutzte Modalität zu erlangen.
-* Bei den röntgenbasierten Modalitäten (DX, CT, MG, CR) werden die Werte der Röntgenröhrenspannung und des Röntgenröhrenstroms betrachtet sowie die Werte der Exposition und der Expositionszeit und der Blickposition.
+* Bei den röntgenbasierten Modalitäten (DX, CT, MG, CR) werden die Werte der Röntgenröhrenspannung und des Röntgenröhrenstroms abgebildet sowie die Werte der Exposition und der Expositionszeit und der Blickposition.
 * Die nuklearmedizinischen Modalitäten (NM und PET) beinhalten Dosis und weitere Informationen zum applizierten Radiopharmakon, Radionuklid und Tracer.
 * Bei der Modalität MR werden die Scanning Sequence und Variant sowie die genutzte magnetische Feldstärke und die Zeitintervalle TE, TR und TI abgebildet.
-* Beim Ultraschall (US) werden der genutzte Schallkopftyp, die Schallkopffrequenz, die Impulsfolgefrequenz und die Ultraschallfarbe betrachtet.
 
-Im Moment werden diese acht Modalitäten (MR, CT, DX, CR, MG, US NM und PET) im Teilmodul abgebildet, welche den Großteil des radiologischen Klinikalltags abdecken. In Zukunft ist geplant, auch noch weitere Modalitäten auszuspezifizieren.
+Im Moment werden diese sieben Modalitäten (MR, CT, DX, CR, MG, NM und PET) im Teilmodul betrachtet und es ist geplant, in einem stufenweisen Verfahren, in Zukunft auch weitere modalitätsspezifische Attribute anderer Modalitäten zu spezifizieren.
 
-Die Originalnamen der Elemente aus dem FHIR Profil wurden ins Deutsche übersetzt und ggf. zur besseren Lesbarkeit angepasst. Die Instanzebene sowie auch die Serienebene sind komplett optional, sodass auch nur die Attribute auf Studienebene befüllt werden können. Allerdings wird empfohlen, wenn mögich, auch die beiden unteren Ebenen zu befüllen, um ein umfassendes Bild der abgebildeten Bildgebungsstudien zu erhalten.
+Die Originalnamen der Elemente aus dem FHIR Profil wurden ins Deutsche übersetzt und ggf. zur besseren Lesbarkeit angepasst. Die Instanzebene sowie auch die Serienebene sind komplett optional, sodass auch nur die Attribute auf Studienebene befüllt werden können. Allerdings wird empfohlen, wenn möglich, auch die beiden unteren Ebenen zu befüllen, um ein umfassendes Bild der abgebildeten Bildgebungsstudien zu erhalten.
 
 ### Teilmodul "Befundbericht"
 

@@ -34,14 +34,14 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 * Steven Böhner (Universitätsklinikum Regensburg)
 * Viola Braunmüller (Universitätsklinikum Tübingen)
 * Noemi Deppenwiese (Universitätsklinikum Erlangen)
-* Teresa Graetz (Univeristätsklinikum Erlangen)
+* Teresa Graetz (Universitätsklinikum Erlangen)
 * Alexa Iancu (Universitätsklinikum Erlangen)
 * Johannes Kast (Mint Medical GmbH)
 * David Männle (Universitätsmedizin Mannheim)
 * Máté Maros (Universitätsmedizin Mannheim)
-* Matthias May (Univeristätsklinikum Erlangen)
+* Matthias May (Universitätsklinikum Erlangen)
 * Daniel Pinto dos Santos (Universitätsklinikum Köln, Universitätsklinikum Frankfurt)
-* Tobias Pogarell (Univeristätsklinikum Erlangen)
+* Tobias Pogarell (Universitätsklinikum Erlangen)
 * Lucas Scherer (Universitätsklinikum Erlangen)
 * Daniel Schmitz (Universitätsmedizin Mainz)
 * Friederike Schneider (Mint Medical GmbH)
@@ -61,4 +61,3 @@ Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben un
 * Der Inhalt dieses Dokuments ist öffentlich. Zu beachten ist, dass Teile dieses Dokuments auf FHIR Version R4 beruhen, für die das Copyright von HL7 International gilt.
 
 * Obwohl diese Publikation mit größter Sorgfalt erstellt wurde, können die Autoren keinerlei Haftung für direkten oder indirekten Schaden übernehmen, der durch den Inhalt dieser Spezifikation entstehen könnte.
-
