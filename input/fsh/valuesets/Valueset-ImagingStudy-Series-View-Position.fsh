@@ -1,5 +1,5 @@
-ValueSet: MII_VS_Bildgebung_ImagingStudy_series_viewPosition
-Id: mii-vs-bildgebung-imagingStudy-series-viewPosition
+ValueSet: MII_VS_Bildgebung_ImagingStudy_Series_View_Position
+Id: mii-vs-bildgebung-imagingStudy-series-view-position
 Title: "MII VS Bildgebung ImagingStudy-Series View Position"
 Description: "Import the ValueSets for view position in MG and DX/CR series"
 * insert Publisher

@@ -9,4 +9,4 @@ Description: "Import the ValueSet for US Transducer Type"
 * insert LicenseCodeableCCBY40
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
-* include codes from system MII_CS_Bildgebung_TransducerType
+* include codes from system MII_CS_Bildgebung_Transducer_Type
