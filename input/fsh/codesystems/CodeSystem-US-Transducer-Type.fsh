@@ -1,4 +1,4 @@
-CodeSystem: MII_CS_Bildgebung_TransducerType
+CodeSystem: MII_CS_Bildgebung_Transducer_Type
 Id: mii-cs-bildgebung-transducer-type
 Title: "MII CS Bildgebung Transducer Type"
 Description: "Schallkopftyp für US Untersuchungen"
