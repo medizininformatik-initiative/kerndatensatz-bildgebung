@@ -40,7 +40,7 @@ Zur Modellierung wurde das Teilmodul „Metadaten“ analog zu der Hierarchie im
 - Serienebene
 - Instanzebene 
 
-Zusätzlich gibt es modalitätsspezifische Metadaten, die sich je nach vorliegender Modalität unterscheiden. Im Moment werden die Modalitäten MR, CT, DX, CR, MG, NM und PET betrachtet und es ist geplant, in einem stufenweisen Verfahren, in Zukunft auch weitere modalitätsspezifische Attribute anderer Modalitäten zu spezifizieren.
+Zusätzlich gibt es modalitätsspezifische Metadaten, die sich je nach vorliegender Modalität unterscheiden. Im Moment werden die Modalitäten MR, CT, DX, CR, MG, US, NM und PET betrachtet und es ist geplant, in einem stufenweisen Verfahren, in Zukunft auch weitere modalitätsspezifische Attribute anderer Modalitäten zu spezifizieren.
 
 #### Updates 
 2024.01.16 - Restrukturierung und Verschönerung des UML Diagramms von Lucas Scherer (UKER).

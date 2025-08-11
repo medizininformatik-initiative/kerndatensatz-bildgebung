@@ -3,11 +3,11 @@
       "4.0.1"
     ],
     "name": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
-    "version": "2026.0.0",
+    "version": "2026.0.0-ballot",
     "description": "Medizininformatik Initiative - Modul Befunde bildgebender Verfahren",
     "author": "lucasscherer",
     "dependencies": {
-      "fhir.dicom": "2024.2.20240331",
+      "fhir.dicom": "2025.3.20250714",
       "de.medizininformatikinitiative.kerndatensatz.medikation": "2025.0.0",
       "de.medizininformatikinitiative.kerndatensatz.prozedur": "2025.0.0",
       "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.0",
