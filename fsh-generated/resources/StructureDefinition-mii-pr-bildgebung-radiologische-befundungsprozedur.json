@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur",
-  "version": "2025.0.2",
+  "version": "2026.0.0-ballot",
   "name": "MII_PR_Bildgebung_Radiologische_Befundungsprozedur",
   "_name": {
     "extension": [
@@ -67,7 +67,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-05-26",
+  "date": "2025-08-20",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -121,20 +121,33 @@
       {
         "id": "Procedure.category",
         "path": "Procedure.category",
+        "min": 1
+      },
+      {
+        "id": "Procedure.category.coding",
+        "path": "Procedure.category.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "165197003",
-              "system": "http://snomed.info/sct"
-            }
-          ]
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category.coding:sct",
+        "path": "Procedure.category.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "363679005",
+          "system": "http://snomed.info/sct",
+          "display": "Imaging (procedure)"
         }
       },
       {
-        "id": "Procedure.code",
-        "path": "Procedure.code",
-        "definition": "ode aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere."
+        "id": "Procedure.code.coding:sct",
+        "path": "Procedure.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "28191001",
+          "system": "http://snomed.info/sct",
+          "display": "Consultation and report by radiologist (procedure)"
+        }
       },
       {
         "id": "Procedure.subject",

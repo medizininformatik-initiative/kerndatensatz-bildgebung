@@ -27,25 +27,31 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * intent MS
 * intent ^short = "Absicht"
 * intent ^definition = "Vorschlag | Plan | Anweisung | Erstverordnung | Reflexverordnung | Füllverordnung | Beispielverordnung | Option"
-* category 1..* MS
-* category ^patternCodeableConcept = $SCT#363679005
+* category 1.. MS
 * category ^short = "Kategorie"
 * category ^definition = "Kategorie der Serviceanforderung"
-* code MS
+* category.coding 1.. MS
+* category.coding ^slicing.discriminator.type = #pattern
+* category.coding ^slicing.discriminator.path = "$this"
+* category.coding ^slicing.rules = #open
+* category.coding contains
+    sct 0..1 MS
+* category.coding[sct] ^patternCoding.system = $SCT
+* category.coding[sct] = $SCT#400999005 "Procedure requested (situation)"
+* code 1.. MS
 * code ^short = "Kode"
 * code ^definition = "Kode der Serviceanforderung in LOINC, RadLex oder SNOMED CT"
-* code.coding MS
+* code.coding 1.. MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
-    loinc 0..* MS and
-    radlex 0..* MS and
-    sct 0..* MS
+    loinc 0..1 MS and
+    sct 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
-* code.coding[radlex] ^patternCoding.system = $radlex
+* code.coding[loinc] from $VS-loinc-rsna (required)
 * code.coding[sct] ^patternCoding.system = $SCT
-* code.coding[sct].code from MII_VS_Bildgebung_Service_Request_Coding (preferred)
+* code.coding[sct].code from MII_VS_Bildgebung_ServiceRequest_Code_SCT (required)
 * subject MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -60,9 +66,16 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * requester ^short = "Anforderer"
 * requester ^definition = "Person, die die Anforderung erstellt"
 * reasonCode MS
-* reasonCode from MII_VS_Bildgebung_Service_Request_Reason (preferred)
 * reasonCode ^short = "Anforderungsgrund"
 * reasonCode ^definition = "kodierter Grund für die Anforderung"
+* reasonCode.coding 1.. MS
+* reasonCode.coding ^slicing.discriminator.type = #pattern
+* reasonCode.coding ^slicing.discriminator.path = "$this"
+* reasonCode.coding ^slicing.rules = #open
+* reasonCode.coding contains
+    sct 0..1 MS
+* reasonCode.coding[sct] ^patternCoding.system = $SCT
+* reasonCode.coding[sct] from MII_VS_Bildgebung_Findings_SCT (preferred)
 * reasonReference MS
 * reasonReference ^short = "Anforderungbezug"
 * reasonReference ^definition = "Grund, auf den sich die Anforderung bezieht"
@@ -84,10 +97,13 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * insert Translation(category ^short, en-US, category)
 * insert Translation(category ^definition, de-DE, Kategorie der Serviceanforderung)
 * insert Translation(category ^definition, en-US, category of this service request)
+* insert AddSnomedCodingTranslation(category.coding[sct])
 * insert Translation(code ^short, de-DE, Kode)
 * insert Translation(code ^short, en-US, code)
 * insert Translation(code ^definition, de-DE, Kode der Serviceanforderung in LOINC\, RadLex oder SNOMED CT)
 * insert Translation(code ^definition, en-US, code of this service request in LOINC\, RadLex or SNOMED CT)
+* insert AddLoincCodingTranslation(code.coding[loinc])
+* insert AddSnomedCodingTranslation(code.coding[sct])
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)
 * insert Translation(subject ^definition, de-DE, Person\, auf die sich die Anforderung bezieht)
@@ -108,6 +124,7 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * insert Translation(reasonCode ^short, en-US, reason)
 * insert Translation(reasonCode ^definition, de-DE, kodierter Grund für die Anforderung)
 * insert Translation(reasonCode ^definition, en-US, coded reason for this service request)
+* insert AddSnomedCodingTranslation(reasonCode.coding[sct])
 * insert Translation(reasonReference ^short, de-DE, Anforderungbezug)
 * insert Translation(reasonReference ^short, en-US, reason reference)
 * insert Translation(reasonReference ^definition, de-DE, Grund\, auf den sich die Anforderung bezieht)

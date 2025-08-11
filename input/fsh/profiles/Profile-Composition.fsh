@@ -27,6 +27,14 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * type MS
 * type ^short = "Kompositionstyp"
 * type ^definition = "Typ der Komposition"
+* type.coding 1.. MS
+* type.coding ^slicing.discriminator.type = #pattern
+* type.coding ^slicing.discriminator.path = "$this"
+* type.coding ^slicing.rules = #open
+* type.coding contains
+    loinc 0..1 MS
+* type.coding[loinc] ^patternCoding.system = $loinc
+* type.coding = $loinc#18748-4 "Diagnostic imaging study"
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -56,6 +64,14 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * section.code MS
 * section.code ^short = "Abschnitttyp"
 * section.code ^definition = "Typ des Abschnitts"
+* section.code.coding 1.. MS
+* section.code.coding ^slicing.discriminator.type = #pattern
+* section.code.coding ^slicing.discriminator.path = "$this"
+* section.code.coding ^slicing.rules = #open
+* section.code.coding contains
+    loinc 0..1 MS
+* section.code.coding[loinc] ^patternCoding.system = $loinc
+* section.code.coding = $loinc#18782-3 "Radiology Study observation (narrative)"
 * section.author MS
 * section.author ^short = "Abschnittsautor"
 * section.author ^definition = "Autor des Abschnitts"
@@ -78,6 +94,7 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * insert Translation(type ^short, en-US, compositiontype)
 * insert Translation(type ^definition, de-DE, Typ der Komposition)
 * insert Translation(type ^definition, en-US, type of the composition)
+* insert AddLoincCodingTranslation(type.coding[loinc])
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)
 * insert Translation(subject ^definition, de-DE, Person\, auf die sich die Komposition bezieht)
@@ -106,6 +123,7 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * insert Translation(section.code ^short, en-US, section type)
 * insert Translation(section.code ^definition, de-DE, Typ des Abschnitts)
 * insert Translation(section.code ^definition, en-US, type of section)
+* insert AddLoincCodingTranslation(section.code.coding[loinc])
 * insert Translation(section.author ^short, de-DE, Abschnittsautor)
 * insert Translation(section.author ^short, en-US, section-author)
 * insert Translation(section.author ^definition, de-DE, Autor des Abschnitts)

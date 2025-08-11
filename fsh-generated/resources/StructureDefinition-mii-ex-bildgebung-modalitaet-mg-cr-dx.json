@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx",
-  "version": "2025.0.2",
+  "version": "2026.0.0-ballot",
   "name": "MII_EX_Bildgebung_Modalitaet_MG_CR_DX",
   "_name": {
     "extension": [
@@ -301,7 +301,7 @@
         ],
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-viewPosition"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position"
         }
       },
       {

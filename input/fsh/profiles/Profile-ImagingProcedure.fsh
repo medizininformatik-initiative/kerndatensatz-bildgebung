@@ -31,8 +31,8 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * category 1.. MS
 * category ^short = "Kategorie"
 * category ^definition = "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
-* category.coding 1.. MS 
-* category.coding[sct] ^patternCodeableConcept = $SCT#363679005
+* category.coding 1.. MS
+* category.coding[sct] = $SCT#363679005 "Imaging (procedure)"
 * code MS
 * code ^short = "Code"
 * code ^definition = "Code aus LOINC"
@@ -43,6 +43,8 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * code.coding contains
     loinc 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] from $VS-loinc-rsna (required)
+* code.coding[sct] from MII_VS_Bildgebung_ImagingProcedure_Code_SCT (required)
 * subject MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -64,10 +66,13 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, de-DE, Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen)
 * insert Translation(category ^definition, en-US, Diagnostic procedures | Imaging procedures | Operations | Medications | Non-operative therapeutic procedures | Other procedures)
+* insert AddSnomedCodingTranslation(category.coding[sct])
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, de-DE, Code aus LOINC)
 * insert Translation(code ^definition, en-US, Code from LOINC)
+* insert AddLoincCodingTranslation(code.coding[loinc])
+* insert AddSnomedCodingTranslation(code.coding[sct])
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)
 * insert Translation(subject ^definition, de-DE, Person\, auf die sich die Prozedur bezieht)

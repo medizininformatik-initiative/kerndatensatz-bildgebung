@@ -695,6 +695,94 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
+Instance: mii-sp-bildgebung-imaging-study-series-transducer-type
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-type"
+* insert SP_Publisher
+* insert Version
+* insert Date
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Type"
+* status = #active
+* experimental = false
+* description = "ImagingStudy.series.extension.transducerType"
+* code = #transducer-type
+* base = #ImagingStudy
+* type = #token
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('transducerType').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+* modifier[+] = #missing
+
+Instance: mii-sp-bildgebung-imaging-study-series-transducer-frequency
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-frequency"
+* insert SP_Publisher
+* insert Version
+* insert Date
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Frequency"
+* status = #active
+* experimental = false
+* description = "Suchparameter für ImagingStudy.series.extension.transducerFrequency"
+* code = #transducer-frequency
+* base = #ImagingStudy
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('transducerFrequency').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
+Instance: mii-sp-bildgebung-imaging-study-series-pulse-frequency
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-pulse-frequency"
+* insert SP_Publisher
+* insert Version
+* insert Date
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Pulse_Frequency"
+* status = #active
+* experimental = false
+* description = "Suchparameter für ImagingStudy.series.extension.pulseRepetitionFrequency"
+* code = #pulse-frequency
+* base = #ImagingStudy
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('pulseRepetitionFrequency').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
+Instance: mii-sp-bildgebung-imaging-study-series-ultrasound-color
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-ultrasound-color"
+* insert SP_Publisher
+* insert Version
+* insert Date
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Ultrasound_Color"
+* status = #active
+* experimental = false
+* description = "ImagingStudy.series.extension.ultrasoundPresent"
+* code = #ultrasound-color
+* base = #ImagingStudy
+* type = #token
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('ultrasoundPresent').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+* modifier[+] = #missing
+
 Instance: mii-sp-bildgebung-imaging-study-series-contrast-bolus
 InstanceOf: SearchParameter
 Usage: #definition
@@ -874,6 +962,29 @@ Usage: #definition
 * base = #ImagingStudy
 * type = #token
 * expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('imageType').value"
+* modifier[+] = #text
+* modifier[+] = #not
+* modifier[+] = #above
+* modifier[+] = #below
+* modifier[+] = #in
+* modifier[+] = #not-in
+* modifier[+] = #missing
+
+Instance: mii-sp-bildgebung-imaging-study-instance-burned-in-annotation
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-burned-in-annotation"
+* insert SP_Publisher
+* insert Version
+* insert Date
+* name = "MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation"
+* status = #active
+* experimental = false
+* description = "Suchparameter für ImagingStudy.series.instance.extension.burnedInAnnotation"
+* code = #instance-burned-in-annotation
+* base = #ImagingStudy
+* type = #token
+* expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('burnedInAnnotation').value"
 * modifier[+] = #text
 * modifier[+] = #not
 * modifier[+] = #above

@@ -150,6 +150,10 @@
         {
           "code": "child",
           "valueCode": "XR"
+        },
+        {
+          "code": "child",
+          "valueCode": "US"
         }
       ]
     },
@@ -444,18 +448,410 @@
       ]
     },
     {
+      "code": "US",
+      "display": "US Specific Characteristics",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "MSC"
+        },
+        {
+          "code": "child",
+          "valueCode": "ADOMINAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "BREAST"
+        },
+        {
+          "code": "child",
+          "valueCode": "CHEST"
+        },
+        {
+          "code": "child",
+          "valueCode": "ENDOCAVITARY"
+        },
+        {
+          "code": "child",
+          "valueCode": "ENDORECTAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "ENDOVAGINAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "EPICARDIAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "FETAL_HEART"
+        },
+        {
+          "code": "child",
+          "valueCode": "GYNECOLOGY"
+        },
+        {
+          "code": "child",
+          "valueCode": "INTRACARDIAC"
+        },
+        {
+          "code": "child",
+          "valueCode": "INTRAOPERATIVE"
+        },
+        {
+          "code": "child",
+          "valueCode": "INTRAVASCULAR"
+        },
+        {
+          "code": "child",
+          "valueCode": "MUSCULOSKELETAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "NEONATAL_HEAD"
+        },
+        {
+          "code": "child",
+          "valueCode": "OBSTETRICAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "OPHTHALMIC"
+        },
+        {
+          "code": "child",
+          "valueCode": "PEDIATRIC"
+        },
+        {
+          "code": "child",
+          "valueCode": "PELVIC"
+        },
+        {
+          "code": "child",
+          "valueCode": "RETROPERITONEAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "SCROTAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "SMALL_PARTS"
+        },
+        {
+          "code": "child",
+          "valueCode": "TEE"
+        },
+        {
+          "code": "child",
+          "valueCode": "THYROID"
+        },
+        {
+          "code": "child",
+          "valueCode": "TRANSCRANIAL"
+        },
+        {
+          "code": "child",
+          "valueCode": "TTE"
+        },
+        {
+          "code": "child",
+          "valueCode": "US_BIOPSY"
+        },
+        {
+          "code": "child",
+          "valueCode": "VASCULAR"
+        }
+      ]
+    },
+    {
+      "code": "ABDOMINAL",
+      "display": "ABDOMINAL",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "BREAST",
+      "display": "BREAST",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "CHEST",
+      "display": "CHEST",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "ENDOCAVITARY",
+      "display": "ENDOCAVITARY",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "ENDORECTAL",
+      "display": "ENDORECTAL",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "ENDOVAGINAL",
+      "display": "ENDOVAGINAL",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "EPICARDIAL",
+      "display": "EPICARDIAL",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "FETAL_HEART",
+      "display": "FETAL HEART",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "GYNECOLOGY",
+      "display": "GYNECOLOGY",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "INTRACARDIAC",
+      "display": "INTRACARDIAC",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "INTRAOPERATIVE",
+      "display": "INTRAOPERATIVE",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "INTRAVASCULAR",
+      "display": "INTRAVASCULAR",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "MUSCULOSKELETAL",
+      "display": "MUSCULOSKELETAL",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "NEONATAL_HEAD",
+      "display": "NEONATAL HEAD",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "OBSTETRICAL",
+      "display": "OBSTETRICAL",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "OPHTHALMIC",
+      "display": "OPHTHALMIC",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "PEDIATRIC",
+      "display": "PEDIATRIC",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "PELVIC",
+      "display": "PELVIC",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "RETROPERITONEAL",
+      "display": "RETROPERITONEAL",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "SCROTAL",
+      "display": "SCROTAL",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "SMALL_PARTS",
+      "display": "SMALL PARTS",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "TEE",
+      "display": "TEE",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "THYROID",
+      "display": "THYROID",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "TRANSCRANIAL",
+      "display": "TRANSCRANIAL",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "TTE",
+      "display": "TTE",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "US_BIOPSY",
+      "display": "US BIOPSY",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
+      "code": "VASCULAR",
+      "display": "VASCULAR",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "US"
+        }
+      ]
+    },
+    {
       "code": "ISI",
       "display": "Implemetation Specific Identifiers",
       "property": [
         {
           "code": "child",
           "valueCode": "NMI"
+        },
+        {
+          "code": "child",
+          "valueCode": "USI"
         }
       ]
     },
     {
       "code": "NMI",
-      "display": "NM implematation",
+      "display": "NM Implematation",
       "property": [
         {
           "code": "parent",
@@ -490,6 +886,124 @@
           "valueCode": "NMI"
         }
       ]
+    },
+    {
+      "code": "USI",
+      "display": "US Implemantation",
+      "property": [
+        {
+          "code": "child",
+          "valueCode": "0200"
+        },
+        {
+          "code": "child",
+          "valueCode": "0400"
+        },
+        {
+          "code": "child",
+          "valueCode": "0100"
+        }
+      ]
+    },
+    {
+      "code": "0001",
+      "display": "2D Imaging",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "USI"
+        }
+      ]
+    },
+    {
+      "code": "0002",
+      "display": "M-Mode",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "USI"
+        }
+      ]
+    },
+    {
+      "code": "0004",
+      "display": "CW Doppler",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "USI"
+        }
+      ]
+    },
+    {
+      "code": "0008",
+      "display": "PW Doppler",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "USI"
+        }
+      ]
+    },
+    {
+      "code": "0010",
+      "display": "Color Doppler",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "USI"
+        }
+      ]
+    },
+    {
+      "code": "0020",
+      "display": "Color M-Mode",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "USI"
+        }
+      ]
+    },
+    {
+      "code": "0040",
+      "display": "3D Rendering",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "USI"
+        }
+      ]
+    },
+    {
+      "code": "0100",
+      "display": "Color Power Mode",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "USI"
+        }
+      ]
+    },
+    {
+      "code": "0200",
+      "display": "Tissue Characterization",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "USI"
+        }
+      ]
+    },
+    {
+      "code": "0400",
+      "display": "Spatially-related frames",
+      "property": [
+        {
+          "code": "parent",
+          "valueCode": "USI"
+        }
+      ]
     }
   ],
   "meta": {
@@ -509,7 +1023,7 @@
       ]
     }
   ],
-  "version": "2025.0.2",
+  "version": "2026.0.0-ballot",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -524,7 +1038,7 @@
       }
     }
   ],
-  "date": "2025-05-26",
+  "date": "2025-08-20",
   "caseSensitive": true,
-  "count": 36
+  "count": 75
 }

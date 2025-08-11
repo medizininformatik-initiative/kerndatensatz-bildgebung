@@ -38,4 +38,4 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[xRayTubeCurrent].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[xRayTubeCurrent].valueQuantity.code = #mA
 * extension[viewPosition].value[x] only CodeableConcept
-* extension[viewPosition].valueCodeableConcept from MII_VS_Bildgebung_ImagingStudy_series_viewPosition (preferred)
+* extension[viewPosition].valueCodeableConcept from MII_VS_Bildgebung_ImagingStudy_Series_View_Position (preferred)

@@ -43,15 +43,19 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
 * category.coding contains
-    loinc 0..* MS and
-    diagnostic-service-sections 0..* MS and 
+    loinc 0..1 MS and
+    diagnostic-service-sections 0..1 MS and 
     sct 1..1 MS
+* category.coding[loinc] ^patternCoding.system = $loinc
 * category.coding[loinc] = $loinc#18748-4
+* category.coding[diagnostic-service-sections] ^patternCoding.system = $DSS
 * category.coding[diagnostic-service-sections] = $DSS#RAD
+* category.coding[sct] ^patternCoding.system = $SCT
 * category.coding[sct] = $SCT#4201000179104
 * code MS
 * code ^short = "Code"
 * code ^definition = "Code des Befundberichts"
+* code.coding 1.. MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -59,7 +63,9 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
     sct 0..1 MS and
     loinc 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] from MII_VS_Bildgebung_Diagnostic_Report_Code_LNC (required)
 * code.coding[sct] ^patternCoding.system = $SCT
+* code.coding[sct] from MII_VS_Bildgebung_Diagnostic_Report_Code_SCT (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -89,7 +95,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * conclusionCode MS
 * conclusionCode ^short = "Strukturiertes Fazit"
 * conclusionCode ^definition = "Fazit, welches strukturiert über Codes dargestellt wird"
-* conclusionCode.coding MS
+* conclusionCode.coding 1.. MS
 * conclusionCode.coding ^slicing.discriminator.type = #pattern
 * conclusionCode.coding ^slicing.discriminator.path = "$this"
 * conclusionCode.coding ^slicing.rules = #open
@@ -99,7 +105,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * conclusionCode.coding[icd10-gm] ^patternCoding.system = $CS_icd10-gm
 * conclusionCode.coding[icd10-gm] from $VS_icd10-gm (preferred)
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
-* conclusionCode.coding[sct] from MII_VS_Bildgebung_Diagnostic_Report_Coding_SCT (preferred)
+* conclusionCode.coding[sct] from MII_VS_Bildgebung_Findings_SCT (preferred)
 * presentedForm MS
 * presentedForm ^short = "Anhang"
 * presentedForm ^definition = "zusätzlicher wichtiger Anhang"
@@ -121,10 +127,15 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * insert Translation(category ^short, en-US, category)
 * insert Translation(category ^definition, de-DE, Kategorie des Befundberichts)
 * insert Translation(category ^definition, en-US, category of the diagnostic report)
+* insert AddLoincCodingTranslation(category.coding[loinc])
+* insert AddDSSCodingTranslation(category.coding[diagnostic-service-sections])
+* insert AddSnomedCodingTranslation(category.coding[sct])
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, code)
 * insert Translation(code ^definition, de-DE, Code des Befundberichts)
 * insert Translation(code ^definition, en-US, code of the diagnostic report)
+* insert AddLoincCodingTranslation(code.coding[loinc])
+* insert AddSnomedCodingTranslation(code.coding[sct])
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)
 * insert Translation(subject ^definition, de-DE, Person\, auf die sich die Befundbericht bezieht)
@@ -157,6 +168,8 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * insert Translation(conclusionCode ^short, en-US, structured conclusion)
 * insert Translation(conclusionCode ^definition, de-DE, Fazit\, welches strukturiert über Codes dargestellt wird)
 * insert Translation(conclusionCode ^definition, en-US, conclusion presented with structured codes)
+* insert AddICDCodingTranslation(conclusionCode.coding[icd10-gm])
+* insert AddSnomedCodingTranslation(conclusionCode.coding[sct])
 * insert Translation(presentedForm ^short, de-DE, Anhang)
 * insert Translation(presentedForm ^short, en-US, Attachment)
 * insert Translation(presentedForm ^definition, de-DE, zusätzlicher wichtiger Anhang)

@@ -33,7 +33,7 @@ package "DICOM-Header" {
   + Beginn: dateTime [0..1]
   + Funktion des Ausführenden: CodeableConcept [0..*]
   + {field} Akteur: Reference(Device) [1..1]
-  + Extension: Kontrastmittelgabe: boolean [0..1]
+  + Extension: Kontrastmittelgabe: boolean [1..1]
   + {field} Extension: Kontrastmitteldetails: Reference(Statement|Administration) [0..*]
   + {field} Extension: Modalitäten(DX,CR,MG,CT,MR,PT,NM) [0..1]
   + DICOM-Instanzen: Instance [0..*]
@@ -48,6 +48,7 @@ package "DICOM-Header" {
   + Extension: Schichtdicke: Quantity[mm] [0..1]
   + {field} Extension: Pixelabstand(x): Quantity[mm] [0..1]
   + {field} Extension: Pixelabstand(y): Quantity[mm] [0..1]
+  + Extension: Eingebrannte Annotierung: Boolean [0..1]
   }
 
   class ModalitätMR #LightYellow {
@@ -109,6 +110,13 @@ package "DICOM-Header" {
   + Gesamte Radionukliddosis: Quantity[MBq] [0..1]
   + Halbwertszeit: Quantity[s] [0..1]
   + Serientyp: CodeableConcept [0..*]
+  }
+  
+  class ModalitätUS #LightYellow {
+  + Impulsfolgefrequenz: Quantity[Hz] [0..1]
+  + Schallkopffrequenz: Quantity[kHz] [0..1]
+  + Schallkopftyp: CodeableConcept [0..1]
+  + Ultraschallfarbe: Boolean [0..1]
   }
 }
 
@@ -226,6 +234,7 @@ DICOMSerie "1..1" -u- "0..1" ModalitätCR
 DICOMSerie "1..1" -u- "0..1" ModalitätMG
 DICOMSerie "1..1" -d- "0..1" ModalitätNM
 DICOMSerie "1..1" -d- "0..1" ModalitätPT
+DICOMSerie "1..1" -d- "0..1" ModalitätUS
 DICOMSerie "0..1" -- "0..1" Kontrastmittelgabe_Medikationsgabe: ISt.series.extension(Kontrastdetails)
 
 Bildgebung "0..*" -- "0..*" Anforderung: Pr.basedOn

@@ -17,9 +17,9 @@
       ]
     }
   ],
-  "version": "2025.0.2",
+  "version": "2026.0.0-ballot",
   "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
-  "date": "2025-05-26",
+  "date": "2025-08-20",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -30,7 +30,7 @@
     "include": [
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20240701",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250801",
         "filter": [
           {
             "property": "constraint",

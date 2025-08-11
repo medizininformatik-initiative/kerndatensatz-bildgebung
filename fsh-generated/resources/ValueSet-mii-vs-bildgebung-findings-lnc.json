@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Bildgebung_Findings_LNC",
+  "id": "mii-vs-bildgebung-findings-lnc",
+  "title": "MII VS Bildgebung Findings Loinc",
+  "description": "Import the ValueSet for LOINC Findings",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-lnc",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2026.0.0-ballot",
+  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc)",
+  "date": "2025-08-20",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "SYSTEM",
+            "op": "=",
+            "value": "LP310005-6"
+          },
+          {
+            "property": "METHOD_TYP",
+            "op": "=",
+            "value": "LP6486-7"
+          }
+        ]
+      }
+    ]
+  }
+}

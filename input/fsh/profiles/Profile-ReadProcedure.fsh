@@ -24,13 +24,15 @@ Description: "Diese Profil beschreibt die radiologische Befundungsprozedur. Es l
 * status MS
 * status ^short = "Status"
 * status ^definition = "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt"
-* category 1..1 MS
-* category = $SCT#165197003
+* category 1.. MS
 * category ^short = "Kategorie"
 * category ^definition = "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
+* category.coding 1.. MS
+* category.coding[sct] = $SCT#363679005 "Imaging (procedure)"
 * code MS
 * code ^short = "Code"
-* code ^definition = "ode aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere."
+* code ^definition = "Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere."
+* code.coding[sct] = $SCT#28191001 "Consultation and report by radiologist (procedure)"
 * subject MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -52,10 +54,12 @@ Description: "Diese Profil beschreibt die radiologische Befundungsprozedur. Es l
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, de-DE, Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen)
 * insert Translation(category ^definition, en-US, Diagnostic procedures | Imaging procedures | Operations | Medications | Non-operative therapeutic procedures | Other procedures)
+* insert AddSnomedCodingTranslation(category.coding[sct])
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, de-DE, Code aus OPS - Operationen- und Prozedurenschlüssel\, SNOMED CT oder andere.)
 * insert Translation(code ^definition, en-US, Code from OPS - Operationen- und Prozedurenschlüssel\, SNOMED CT or other.)
+* insert AddSnomedCodingTranslation(code.coding[sct])
 * insert Translation(subject ^short, de-DE, Person)
 * insert Translation(subject ^short, en-US, person)
 * insert Translation(subject ^definition, de-DE, Person\, auf die sich die Befundungprozedur bezieht)

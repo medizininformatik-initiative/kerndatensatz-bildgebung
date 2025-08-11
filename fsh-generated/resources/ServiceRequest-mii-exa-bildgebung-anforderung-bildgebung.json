@@ -6,6 +6,8 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
     ]
   },
+  "status": "completed",
+  "intent": "order",
   "category": [
     {
       "coding": [
@@ -17,8 +19,6 @@
       ]
     }
   ],
-  "status": "completed",
-  "intent": "order",
   "subject": {
     "reference": "Patient/PatExample"
   },

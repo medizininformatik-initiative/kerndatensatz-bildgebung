@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie",
-  "version": "2025.0.2",
+  "version": "2026.0.0-ballot",
   "name": "MII_PR_Bildgebung_Bildgebungsstudie",
   "_name": {
     "extension": [
@@ -67,7 +67,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-05-26",
+  "date": "2025-08-20",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -137,6 +137,20 @@
         "id": "ImagingStudy.meta.profile",
         "path": "ImagingStudy.meta.profile",
         "mustSupport": true
+      },
+      {
+        "id": "ImagingStudy.extension",
+        "path": "ImagingStudy.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "ImagingStudy.extension:bildgebungsgrund",
@@ -1099,6 +1113,20 @@
         "mustSupport": true
       },
       {
+        "id": "ImagingStudy.series.extension",
+        "path": "ImagingStudy.series.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "ImagingStudy.series.extension:modalitätCT",
         "path": "ImagingStudy.series.extension",
         "sliceName": "modalitätCT",
@@ -1479,6 +1507,83 @@
             "code": "Extension",
             "profile": [
               "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ImagingStudy.series.extension:modalitätUS",
+        "path": "ImagingStudy.series.extension",
+        "sliceName": "modalitätUS",
+        "short": "Modalität US",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Modalität US"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "modality US"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Bildgebungsmodalität US",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Bildgebungsmodalität US"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Imagingmodality US"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us"
             ]
           }
         ]
@@ -2254,6 +2359,20 @@
           ]
         },
         "mustSupport": true
+      },
+      {
+        "id": "ImagingStudy.series.instance.extension",
+        "path": "ImagingStudy.series.instance.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "ImagingStudy.series.instance.extension:InstanceDetails",

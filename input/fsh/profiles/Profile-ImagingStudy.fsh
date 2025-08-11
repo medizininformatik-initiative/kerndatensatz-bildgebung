@@ -75,6 +75,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
   MII_EX_Bildgebung_Modalitaet_MR named modalitätMR 0..1 and
   MII_EX_Bildgebung_Modalitaet_PT named modalitätPT 0..1 and
   MII_EX_Bildgebung_Modalitaet_NM named modalitätNM 0..1 and
+  MII_EX_Bildgebung_Modalitaet_US named modalitätUS 0..1 and
   MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1
 * series.extension[modalitätCT] ^short = "Modalität CT"
 * series.extension[modalitätCT] ^definition = "Bildgebungsmodalität CT"
@@ -86,6 +87,8 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.extension[modalitätPT] ^definition = "Bildgebungsmodalität PT"
 * series.extension[modalitätNM] ^short = "Modalität NM"
 * series.extension[modalitätNM] ^definition = "Bildgebungsmodalität NM"
+* series.extension[modalitätUS] ^short = "Modalität US"
+* series.extension[modalitätUS] ^definition = "Bildgebungsmodalität US"
 * series.extension[kontrastmittel] ^short = "Kontrastmittel"
 * series.extension[kontrastmittel] ^definition = "Kontrastmittelgabe"
 * series.uid MS
@@ -209,6 +212,10 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(series.extension[modalitätMR] ^short, en-US, modality MR)
 * insert Translation(series.extension[modalitätMR] ^definition, de-DE, Bildgebungsmodalität MR)
 * insert Translation(series.extension[modalitätMR] ^definition, en-US, Imagingmodality MR)
+* insert Translation(series.extension[modalitätUS] ^short, de-DE, Modalität US)
+* insert Translation(series.extension[modalitätUS] ^short, en-US, modality US)
+* insert Translation(series.extension[modalitätUS] ^definition, de-DE, Bildgebungsmodalität US)
+* insert Translation(series.extension[modalitätUS] ^definition, en-US, Imagingmodality US)
 * insert Translation(series.extension[modalitätNM] ^short, de-DE, Modalität NM)
 * insert Translation(series.extension[modalitätNM] ^short, en-US, modality NM)
 * insert Translation(series.extension[modalitätNM] ^definition, de-DE, Bildgebungsmodalität NM)

@@ -1,0 +1,81 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Bildgebung_Instance_Image_Type_US_Implemantation",
+  "id": "mii-vs-bildgebung-instance-image-type-us-implementation",
+  "title": "MII VS Bildgebung Instance Image Type US Implemantation",
+  "description": "Import the ValueSet for Instance Image Type US Implemantation",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2026.0.0-ballot",
+  "date": "2025-08-20",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+        "concept": [
+          {
+            "code": "0001"
+          },
+          {
+            "code": "0002"
+          },
+          {
+            "code": "0004"
+          },
+          {
+            "code": "0008"
+          },
+          {
+            "code": "0010"
+          },
+          {
+            "code": "0020"
+          },
+          {
+            "code": "0040"
+          },
+          {
+            "code": "0100"
+          },
+          {
+            "code": "0200"
+          },
+          {
+            "code": "0400"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -6,17 +6,18 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
     ]
   },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
   "category": {
     "coding": [
       {
         "code": "165197003",
-        "system": "http://snomed.info/sct"
+        "system": "http://snomed.info/sct",
+        "display": "Diagnostic assessment (procedure)"
       }
     ]
-  },
-  "status": "completed",
-  "subject": {
-    "reference": "Patient/PatExample"
   },
   "code": {
     "coding": [

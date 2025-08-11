@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung",
-  "version": "2025.0.2",
+  "version": "2026.0.0-ballot",
   "name": "MII_LM_Bildgebung",
   "_name": {
     "extension": [
@@ -54,7 +54,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-05-26",
+  "date": "2025-08-20",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -615,6 +615,67 @@
           {
             "identity": "FHIR",
             "map": "Composition.section.section"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Geraet",
+        "path": "Bildgebung.Geraet",
+        "short": "Gerät",
+        "definition": "Gerät zur Bildgebung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Device"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Geraet.Hersteller",
+        "path": "Bildgebung.Geraet.Hersteller",
+        "short": "Hersteller",
+        "definition": "Hersteller des Geräts",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Device.manufacturer"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Geraet.Geraetename",
+        "path": "Bildgebung.Geraet.Geraetename",
+        "short": "Gerätename",
+        "definition": "Name des Geräts",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Device.deviceName"
           }
         ]
       },
@@ -2597,6 +2658,107 @@
         ]
       },
       {
+        "id": "Bildgebung.Studie.Serien.ModalitaetUS",
+        "path": "Bildgebung.Studie.Serien.ModalitaetUS",
+        "short": "Modalitaet US",
+        "definition": "Modalitaet Ultraschall",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetUS.Schallkopftyp",
+        "path": "Bildgebung.Studie.Serien.ModalitaetUS.Schallkopftyp",
+        "short": "Schallkopftyp",
+        "definition": "Typ des genutzten Schallkopfes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us/transducerType)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetUS.Schallkopffrequenz",
+        "path": "Bildgebung.Studie.Serien.ModalitaetUS.Schallkopffrequenz",
+        "short": "Schallkopffrequenz",
+        "definition": "Frequenz des genutzten Schallkopfes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us/transducerFrequency)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetUS.Impulsfolgefrequenz",
+        "path": "Bildgebung.Studie.Serien.ModalitaetUS.Impulsfolgefrequenz",
+        "short": "Impulsfolgefrequenz",
+        "definition": "Frequenz der aufeinanderfolgenden Impulse des Schallkopfes",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us/pulseRepetitionFrequency)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.ModalitaetUS.Ultraschallfarbe",
+        "path": "Bildgebung.Studie.Serien.ModalitaetUS.Ultraschallfarbe",
+        "short": "Ultraschallfarbe",
+        "definition": "Angabe, ob der Ultraschall in Farbe aufgenommen wurde",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us/ultrasoundColor)"
+          }
+        ]
+      },
+      {
         "id": "Bildgebung.Studie.Serien.Instanzen",
         "path": "Bildgebung.Studie.Serien.Instanzen",
         "short": "Instanzen",
@@ -2773,6 +2935,25 @@
           {
             "identity": "FHIR",
             "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details/pixelSpacingY)"
+          }
+        ]
+      },
+      {
+        "id": "Bildgebung.Studie.Serien.Instanzen.EingebrannteAnnotation",
+        "path": "Bildgebung.Studie.Serien.Instanzen.EingebrannteAnnotation",
+        "short": "Eingebrannte Annotation",
+        "definition": "Information über das Vorhandensein einer eingebrannten Annotation in dieser SOP-Instanz",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details/burnedInAnnotation)"
           }
         ]
       },
