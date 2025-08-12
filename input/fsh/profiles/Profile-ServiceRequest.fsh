@@ -37,7 +37,10 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * category.coding contains
     sct 0..1 MS
 * category.coding[sct] ^patternCoding.system = $SCT
-* category.coding[sct] = $SCT#400999005 "Procedure requested (situation)"
+* category.coding[sct] = $SCT#400999005
+* category.coding[sct].display = "Procedure requested (situation)"
+* category.coding[sct].system 1.. MS
+* category.coding[sct].code 1.. MS
 * code 1.. MS
 * code ^short = "Kode"
 * code ^definition = "Kode der Serviceanforderung in LOINC, RadLex oder SNOMED CT"
@@ -52,6 +55,8 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * code.coding[loinc] from $VS-loinc-rsna (required)
 * code.coding[sct] ^patternCoding.system = $SCT
 * code.coding[sct].code from MII_VS_Bildgebung_ServiceRequest_Code_SCT (required)
+* code.coding.system 1.. MS
+* code.coding.code 1.. MS
 * subject MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -76,6 +81,8 @@ Description: "Profil zur Anforderung einer Bildgebung."
     sct 0..1 MS
 * reasonCode.coding[sct] ^patternCoding.system = $SCT
 * reasonCode.coding[sct] from MII_VS_Bildgebung_Findings_SCT (required)
+* reasonCode.coding.system 1.. MS
+* reasonCode.coding.code 1.. MS
 * reasonReference MS
 * reasonReference ^short = "Anforderungbezug"
 * reasonReference ^definition = "Grund, auf den sich die Anforderung bezieht"

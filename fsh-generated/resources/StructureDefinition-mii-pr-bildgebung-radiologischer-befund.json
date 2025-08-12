@@ -139,6 +139,20 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.extension",
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "DiagnosticReport.extension:supportingInfo",
         "path": "DiagnosticReport.extension",
         "sliceName": "supportingInfo",
@@ -468,6 +482,18 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.category.coding.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding.code",
+        "path": "DiagnosticReport.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "DiagnosticReport.category.coding:loinc",
         "path": "DiagnosticReport.category.coding",
         "sliceName": "loinc",
@@ -540,6 +566,23 @@
           "system": "http://loinc.org"
         },
         "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding:loinc.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding:loinc.code",
+        "path": "DiagnosticReport.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding:loinc.display",
+        "path": "DiagnosticReport.category.coding.display",
+        "patternString": "Diagnostic imaging study"
       },
       {
         "id": "DiagnosticReport.category.coding:diagnostic-service-sections",
@@ -616,6 +659,23 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.category.coding:diagnostic-service-sections.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding:diagnostic-service-sections.code",
+        "path": "DiagnosticReport.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding:diagnostic-service-sections.display",
+        "path": "DiagnosticReport.category.coding.display",
+        "patternString": "Radiology"
+      },
+      {
         "id": "DiagnosticReport.category.coding:sct",
         "path": "DiagnosticReport.category.coding",
         "sliceName": "sct",
@@ -688,6 +748,23 @@
           "system": "http://snomed.info/sct"
         },
         "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding:sct.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding:sct.code",
+        "path": "DiagnosticReport.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding:sct.display",
+        "path": "DiagnosticReport.category.coding.display",
+        "patternString": "Imaging report (record artifact)"
       },
       {
         "id": "DiagnosticReport.code",
@@ -768,6 +845,18 @@
           ],
           "rules": "open"
         },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding.code",
+        "path": "DiagnosticReport.code.coding.code",
         "min": 1,
         "mustSupport": true
       },
@@ -1527,6 +1616,18 @@
           ],
           "rules": "open"
         },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.conclusionCode.coding.system",
+        "path": "DiagnosticReport.conclusionCode.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.conclusionCode.coding.code",
+        "path": "DiagnosticReport.conclusionCode.coding.code",
         "min": 1,
         "mustSupport": true
       },

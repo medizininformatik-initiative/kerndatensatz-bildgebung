@@ -139,6 +139,20 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Observation.extension:SeriesUID",
         "path": "Observation.extension",
         "sliceName": "SeriesUID",
@@ -607,6 +621,18 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category.coding.system",
+        "path": "Observation.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding.code",
+        "path": "Observation.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Observation.category.coding:loinc",
         "path": "Observation.category.coding",
         "sliceName": "loinc",
@@ -676,10 +702,26 @@
         "max": "1",
         "patternCoding": {
           "code": "18782-3",
-          "system": "http://loinc.org",
-          "display": "Radiology Study observation (narrative)"
+          "system": "http://loinc.org"
         },
         "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding:loinc.system",
+        "path": "Observation.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding:loinc.code",
+        "path": "Observation.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding:loinc.display",
+        "path": "Observation.category.coding.display",
+        "patternString": "Radiology Study observation (narrative)"
       },
       {
         "id": "Observation.code",
@@ -760,6 +802,18 @@
           ],
           "rules": "open"
         },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
         "min": 1,
         "mustSupport": true
       },

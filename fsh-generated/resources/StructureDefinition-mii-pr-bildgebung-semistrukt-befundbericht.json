@@ -285,11 +285,18 @@
           "rules": "open"
         },
         "min": 1,
-        "patternCoding": {
-          "code": "18748-4",
-          "system": "http://loinc.org",
-          "display": "Diagnostic imaging study"
-        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type.coding.system",
+        "path": "Composition.type.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type.coding.code",
+        "path": "Composition.type.coding.code",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -361,9 +368,27 @@
         "min": 0,
         "max": "1",
         "patternCoding": {
+          "code": "18748-4",
           "system": "http://loinc.org"
         },
         "mustSupport": true
+      },
+      {
+        "id": "Composition.type.coding:loinc.system",
+        "path": "Composition.type.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type.coding:loinc.code",
+        "path": "Composition.type.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type.coding:loinc.display",
+        "path": "Composition.type.coding.display",
+        "patternString": "Diagnostic imaging study"
       },
       {
         "id": "Composition.subject",
@@ -874,11 +899,18 @@
           "rules": "open"
         },
         "min": 1,
-        "patternCoding": {
-          "code": "18782-3",
-          "system": "http://loinc.org",
-          "display": "Radiology Study observation (narrative)"
-        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -950,9 +982,27 @@
         "min": 0,
         "max": "1",
         "patternCoding": {
+          "code": "18782-3",
           "system": "http://loinc.org"
         },
         "mustSupport": true
+      },
+      {
+        "id": "Composition.section.code.coding:loinc.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.code.coding:loinc.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section.code.coding:loinc.display",
+        "path": "Composition.section.code.coding.display",
+        "patternString": "Radiology Study observation (narrative)"
       },
       {
         "id": "Composition.section.author",

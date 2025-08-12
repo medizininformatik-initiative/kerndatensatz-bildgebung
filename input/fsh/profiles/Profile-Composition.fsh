@@ -34,7 +34,10 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * type.coding contains
     loinc 0..1 MS
 * type.coding[loinc] ^patternCoding.system = $loinc
-* type.coding = $loinc#18748-4 "Diagnostic imaging study"
+* type.coding[loinc] = $loinc#18748-4
+* type.coding[loinc].display = "Diagnostic imaging study"
+* type.coding.system 1.. MS
+* type.coding.code 1.. MS
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -71,7 +74,10 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * section.code.coding contains
     loinc 0..1 MS
 * section.code.coding[loinc] ^patternCoding.system = $loinc
-* section.code.coding = $loinc#18782-3 "Radiology Study observation (narrative)"
+* section.code.coding[loinc] = $loinc#18782-3
+* section.code.coding[loinc].display = "Radiology Study observation (narrative)"
+* section.code.coding.system 1.. MS
+* section.code.coding.code 1.. MS
 * section.author MS
 * section.author ^short = "Abschnittsautor"
 * section.author ^definition = "Autor des Abschnitts"

@@ -49,7 +49,10 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * category.coding contains
     loinc 0..1 MS
 * category.coding[loinc] ^patternCoding.system = $loinc
-* category.coding[loinc] = $loinc#18782-3 "Radiology Study observation (narrative)"
+* category.coding[loinc] = $loinc#18782-3
+* category.coding[loinc].display = "Radiology Study observation (narrative)"
+* category.coding.system 1.. MS
+* category.coding.code 1.. MS
 * code MS
 * code ^short = "Code"
 * code ^definition = "Ein Code für die zu befundende Beoabchtung"
@@ -61,6 +64,8 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
     sct 0..1 MS
 * code.coding[sct] ^patternCoding.system = $SCT
 * code.coding[sct] from MII_VS_Bildgebung_Findings_SCT (required)
+* code.coding.system 1.. MS
+* code.coding.code 1.. MS
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"

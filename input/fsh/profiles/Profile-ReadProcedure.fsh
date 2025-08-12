@@ -28,11 +28,17 @@ Description: "Diese Profil beschreibt die radiologische Befundungsprozedur. Es l
 * category ^short = "Kategorie"
 * category ^definition = "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
 * category.coding 1.. MS
-* category.coding[sct] = $SCT#363679005 "Imaging (procedure)"
+* category.coding[sct] = $SCT#363679005
+* category.coding[sct].display = "Imaging (procedure)"
+* category.coding.system 1.. MS
+* category.coding.code 1.. MS
 * code MS
 * code ^short = "Code"
 * code ^definition = "Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere."
-* code.coding[sct] = $SCT#28191001 "Consultation and report by radiologist (procedure)"
+* code.coding[sct] = $SCT#28191001
+* code.coding[sct].display = "Consultation and report by radiologist (procedure)"
+* code.coding.system 1.. MS
+* code.coding.code 1.. MS
 * subject MS
 * subject only Reference(Patient)
 * subject ^short = "Person"

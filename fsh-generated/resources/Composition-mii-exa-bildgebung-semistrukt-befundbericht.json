@@ -6,6 +6,7 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"
     ]
   },
+  "status": "final",
   "type": {
     "coding": [
       {
@@ -15,8 +16,19 @@
       }
     ]
   },
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
+  "date": "2024-07-19T12:03:30+02:00",
+  "author": [
+    {
+      "reference": "Practitioner/PracExample1"
+    }
+  ],
+  "title": "Mammographic Report",
   "section": [
     {
+      "title": "Left Breast",
       "code": {
         "coding": [
           {
@@ -26,7 +38,6 @@
           }
         ]
       },
-      "title": "Left Breast",
       "author": [
         {
           "reference": "Practitioner/PracExample2"
@@ -47,16 +58,5 @@
         }
       ]
     }
-  ],
-  "status": "final",
-  "subject": {
-    "reference": "Patient/PatExample"
-  },
-  "date": "2024-07-19T12:03:30+02:00",
-  "author": [
-    {
-      "reference": "Practitioner/PracExample1"
-    }
-  ],
-  "title": "Mammographic Report"
+  ]
 }

@@ -206,14 +206,30 @@
         "mustSupport": true
       },
       {
+        "id": "Procedure.category.coding.system",
+        "path": "Procedure.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category.coding.code",
+        "path": "Procedure.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Procedure.category.coding:sct",
         "path": "Procedure.category.coding",
         "sliceName": "sct",
         "patternCoding": {
           "code": "363679005",
-          "system": "http://snomed.info/sct",
-          "display": "Imaging (procedure)"
+          "system": "http://snomed.info/sct"
         }
+      },
+      {
+        "id": "Procedure.category.coding:sct.display",
+        "path": "Procedure.category.coding.display",
+        "patternString": "Imaging (procedure)"
       },
       {
         "id": "Procedure.code",
@@ -249,6 +265,22 @@
             }
           ]
         }
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding"
+      },
+      {
+        "id": "Procedure.code.coding.system",
+        "path": "Procedure.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Procedure.code.coding:sct",

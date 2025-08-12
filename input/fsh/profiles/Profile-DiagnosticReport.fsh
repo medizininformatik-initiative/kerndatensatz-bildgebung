@@ -48,10 +48,15 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
     sct 1..1 MS
 * category.coding[loinc] ^patternCoding.system = $loinc
 * category.coding[loinc] = $loinc#18748-4
+* category.coding[loinc].display = "Diagnostic imaging study"
 * category.coding[diagnostic-service-sections] ^patternCoding.system = $DSS
 * category.coding[diagnostic-service-sections] = $DSS#RAD
+* category.coding[diagnostic-service-sections].display = "Radiology"
 * category.coding[sct] ^patternCoding.system = $SCT
 * category.coding[sct] = $SCT#4201000179104
+* category.coding[sct].display = "Imaging report (record artifact)"
+* category.coding.system 1.. MS
+* category.coding.code 1.. MS
 * code MS
 * code ^short = "Code"
 * code ^definition = "Code des Befundberichts"
@@ -66,6 +71,8 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * code.coding[loinc] from MII_VS_Bildgebung_Diagnostic_Report_Code_LNC (required)
 * code.coding[sct] ^patternCoding.system = $SCT
 * code.coding[sct] from MII_VS_Bildgebung_Diagnostic_Report_Code_SCT (required)
+* code.coding.system 1.. MS
+* code.coding.code 1.. MS
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
@@ -106,6 +113,8 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * conclusionCode.coding[icd10-gm] from $VS_icd10-gm (required)
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
 * conclusionCode.coding[sct] from MII_VS_Bildgebung_Findings_SCT (required)
+* conclusionCode.coding.system 1.. MS
+* conclusionCode.coding.code 1.. MS
 * presentedForm MS
 * presentedForm ^short = "Anhang"
 * presentedForm ^definition = "zusätzlicher wichtiger Anhang"

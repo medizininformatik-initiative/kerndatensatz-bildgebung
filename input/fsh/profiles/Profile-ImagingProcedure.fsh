@@ -32,7 +32,10 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * category ^short = "Kategorie"
 * category ^definition = "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
 * category.coding 1.. MS
-* category.coding[sct] = $SCT#363679005 "Imaging (procedure)"
+* category.coding[sct] = $SCT#363679005
+* category.coding[sct].display = "Imaging (procedure)"
+* category.coding.system 1.. MS
+* category.coding.code 1.. MS
 * code MS
 * code ^short = "Code"
 * code ^definition = "Code aus LOINC"
@@ -45,6 +48,8 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] from $VS-loinc-rsna (required)
 * code.coding[sct] from MII_VS_Bildgebung_ImagingProcedure_Code_SCT (required)
+* code.coding.system 1.. MS
+* code.coding.code 1.. MS
 * subject MS
 * subject only Reference(Patient)
 * subject ^short = "Person"
