@@ -689,18 +689,6 @@
         "patternCoding": {
           "system": "http://snomed.info/sct"
         },
-        "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.code.coding:sct.system",
-        "path": "ServiceRequest.code.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.code.coding:sct.code",
-        "path": "ServiceRequest.code.coding.code",
-        "min": 1,
         "mustSupport": true,
         "binding": {
           "strength": "required",
