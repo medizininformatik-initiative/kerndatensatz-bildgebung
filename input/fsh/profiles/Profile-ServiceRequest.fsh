@@ -75,7 +75,7 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * reasonCode.coding contains
     sct 0..1 MS
 * reasonCode.coding[sct] ^patternCoding.system = $SCT
-* reasonCode.coding[sct] from MII_VS_Bildgebung_Findings_SCT (preferred)
+* reasonCode.coding[sct] from MII_VS_Bildgebung_Findings_SCT (required)
 * reasonReference MS
 * reasonReference ^short = "Anforderungbezug"
 * reasonReference ^definition = "Grund, auf den sich die Anforderung bezieht"

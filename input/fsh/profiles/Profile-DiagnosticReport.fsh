@@ -103,9 +103,9 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
     icd10-gm 0..1 MS and
     sct 0..1 MS
 * conclusionCode.coding[icd10-gm] ^patternCoding.system = $CS_icd10-gm
-* conclusionCode.coding[icd10-gm] from $VS_icd10-gm (preferred)
+* conclusionCode.coding[icd10-gm] from $VS_icd10-gm (required)
 * conclusionCode.coding[sct] ^patternCoding.system = $SCT
-* conclusionCode.coding[sct] from MII_VS_Bildgebung_Findings_SCT (preferred)
+* conclusionCode.coding[sct] from MII_VS_Bildgebung_Findings_SCT (required)
 * presentedForm MS
 * presentedForm ^short = "Anhang"
 * presentedForm ^definition = "zusätzlicher wichtiger Anhang"
