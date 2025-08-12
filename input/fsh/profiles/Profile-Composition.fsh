@@ -68,14 +68,14 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * section.code ^short = "Abschnitttyp"
 * section.code ^definition = "Typ des Abschnitts"
 * section.code.coding 1.. MS
-* section.code.coding ^slicing.discriminator.type = #pattern
-* section.code.coding ^slicing.discriminator.path = "$this"
-* section.code.coding ^slicing.rules = #open
-* section.code.coding contains
+* section[diagRep].code.coding ^slicing.discriminator.type = #pattern
+* section[diagRep].code.coding ^slicing.discriminator.path = "$this"
+* section[diagRep].code.coding ^slicing.rules = #open
+* section[diagRep].code.coding contains
     loinc 0..1 MS
-* section.code.coding[loinc] ^patternCoding.system = $loinc
-* section.code.coding[loinc] = $loinc#18782-3
-* section.code.coding[loinc].display = "Radiology Study observation (narrative)"
+* section[diagRep].code.coding[loinc] ^patternCoding.system = $loinc
+* section[diagRep].code.coding[loinc] = $loinc#18782-3
+* section[diagRep].code.coding[loinc].display = "Radiology Study observation (narrative)"
 * section.code.coding.system 1.. MS
 * section.code.coding.code 1.. MS
 * section.author MS
@@ -129,7 +129,7 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * insert Translation(section.code ^short, en-US, section type)
 * insert Translation(section.code ^definition, de-DE, Typ des Abschnitts)
 * insert Translation(section.code ^definition, en-US, type of section)
-* insert AddLoincCodingTranslation(section.code.coding[loinc])
+* insert AddLoincCodingTranslation(section[diagRep].code.coding[loinc])
 * insert Translation(section.author ^short, de-DE, Abschnittsautor)
 * insert Translation(section.author ^short, en-US, section-author)
 * insert Translation(section.author ^definition, de-DE, Autor des Abschnitts)
