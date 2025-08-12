@@ -39,8 +39,8 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * category.coding[sct] ^patternCoding.system = $SCT
 * category.coding[sct] = $SCT#400999005
 * category.coding[sct].display = "Procedure requested (situation)"
-* category.coding[sct].system 1.. MS
-* category.coding[sct].code 1.. MS
+* category.coding.system 1.. MS
+* category.coding.code 1.. MS
 * code 1.. MS
 * code ^short = "Kode"
 * code ^definition = "Kode der Serviceanforderung in LOINC, RadLex oder SNOMED CT"
