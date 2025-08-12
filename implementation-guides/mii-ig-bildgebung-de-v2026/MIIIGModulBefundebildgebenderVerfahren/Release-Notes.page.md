@@ -1,5 +1,24 @@
 ## {{page-title}}
 **Version: 2026.0.0-ballot**
+- Neue Modalität-Extension für Ultraschall inkl. Suchparameter
+- Kardinalität für Codes in DiagnosticReport.conclusionCode.coding eingeschränkt auf "0..1"
+- Kardinalität für DiagnosticReport.code.coding für Loinc und Diagnostic-Service-Section eingeschränkt auf "0..1"
+- Kardinalität für ContrastBolus in ContrastAdministration-Extension eingeschränkt auf "1..1"
+- Instance-Details-Extension erweitert mit burnedinAnnotation-Tag
+- Festlegung von Codes für Kategorien, Codes und BodySite in den Profilen
+- Kardinalität für Value in Observation eingeschränkt auf "1..1"
+- Erweiterung des Image-Type-CodeSystem für Modalität Ultraschall
+- Anpassung des LogicalModel an die aktuellen Profile
+- Fehlerbehebung in Slicing-Discriminator in Instance-Details-Extension
+- Neue ValueSets für ServiceRequest, DiagnosticReport, Observation
+- ValueSets-Binding für alle ValueSets auf required gesetzt
+- Update der UML-Diagramme an neue Modalität Ultraschall
+- Ausbesserung von Rechtschreibfehlern
+- Übersetzungen für Terminologien für FDPG-Darstellung
+- Fehler in Links im IG verbessert
+
+
+
 
 **Version: 2025.0.2**
 - Problemlösung zur Verfügbarkeit des R5-Extension-Package
