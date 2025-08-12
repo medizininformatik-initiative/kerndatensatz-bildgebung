@@ -139,6 +139,20 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.extension",
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "DiagnosticReport.extension:supportingInfo",
         "path": "DiagnosticReport.extension",
         "sliceName": "supportingInfo",
@@ -1603,7 +1617,7 @@
         },
         "mustSupport": true,
         "binding": {
-          "strength": "preferred",
+          "strength": "required",
           "valueSet": "http://fhir.de/ValueSet/bfarm/icd-10-gm"
         }
       },
@@ -1680,7 +1694,7 @@
         },
         "mustSupport": true,
         "binding": {
-          "strength": "preferred",
+          "strength": "required",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct"
         }
       },
