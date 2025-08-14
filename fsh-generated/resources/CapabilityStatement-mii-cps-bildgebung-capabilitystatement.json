@@ -1590,7 +1590,7 @@
             },
             {
               "name": "pulse-repetition-frequency",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-pulse-repetition-frequency",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-pulse-frequency",
               "type": "quantity",
               "extension": [
                 {

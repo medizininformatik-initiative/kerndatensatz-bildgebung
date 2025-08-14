@@ -206,7 +206,7 @@ Usage: #definition
 //Extension US
 * insert SupportSearchParam(transducer-type, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-type, #token, #SHALL)
 * insert SupportSearchParam(transducer-frequency, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-frequency, #quantity, #SHALL)
-* insert SupportSearchParam(pulse-repetition-frequency, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-pulse-repetition-frequency, #quantity, #SHALL)
+* insert SupportSearchParam(pulse-repetition-frequency, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-pulse-frequency, #quantity, #SHALL)
 * insert SupportSearchParam(ultrasound-color, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-ultrasound-color, #token, #SHALL)
 //Extension Contrast
 * insert SupportSearchParam(contrast-bolus, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus, #token, #SHALL)
