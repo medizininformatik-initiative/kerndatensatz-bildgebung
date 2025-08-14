@@ -19,7 +19,8 @@ Description: "Die Extension ermöglicht es im DiagnosticReport eine R5 Item zu b
     reference 1..1 MS and
     type 1..1 MS
 * extension[type].value[x] only CodeableConcept
-* extension[type].valueCodeableConcept.coding = $v2-0936#SCI
+* extension[type].valueCodeableConcept.coding.system = $v2-0936
+* extension[type].valueCodeableConcept.coding.code = $v2-0936#SCI
 * extension[type].valueCodeableConcept.coding.display = "Supporting Clinical Information"
 * extension[reference].value[x] only Reference
 * extension[reference].valueReference only Reference(DiagnosticReport or Procedure)

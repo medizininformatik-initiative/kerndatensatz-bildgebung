@@ -54,7 +54,7 @@ select
 
 **Beispiele**
 
-Beispiel einer Observation-Resssource mit der Angabe zur betrachteten Bild-Serie
+Beispiel einer Observation-Resssource mit der Angabe zur betrachteten Körperstruktur
 
 {{json:fsh-generated/resources/Observation-mii-exa-bildgebung-radiologische-beobachtung.json}}
 

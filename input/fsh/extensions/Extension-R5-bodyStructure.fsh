@@ -15,4 +15,5 @@ Description: "Die Extension ermöglicht es auf die BodyStructure zu referenziere
 * insert ExtensionContext(Observation)
 * ^experimental = false
 //Extension
+* value[x] 1.. MS
 * value[x] only Reference(BodyStructure)

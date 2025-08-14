@@ -54,7 +54,7 @@ select
 
 **Beispiele**
 
-Beispiel einer Observation-Resssource mit der Angabe zur betrachteten Bild-Serie
+Beispiel einer DiagnosticReport-Ressource mit weiterem Zusatzbefund
 
 {{json:fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json}}
 

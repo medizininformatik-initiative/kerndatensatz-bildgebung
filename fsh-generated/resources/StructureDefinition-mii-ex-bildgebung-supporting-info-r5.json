@@ -162,12 +162,14 @@
         ]
       },
       {
-        "id": "Extension.extension:type.value[x].coding",
-        "path": "Extension.extension.value[x].coding",
-        "patternCoding": {
-          "code": "SCI",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0936"
-        }
+        "id": "Extension.extension:type.value[x].coding.system",
+        "path": "Extension.extension.value[x].coding.system",
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0936"
+      },
+      {
+        "id": "Extension.extension:type.value[x].coding.code",
+        "path": "Extension.extension.value[x].coding.code",
+        "patternCode": "SCI"
       },
       {
         "id": "Extension.extension:type.value[x].coding.display",
