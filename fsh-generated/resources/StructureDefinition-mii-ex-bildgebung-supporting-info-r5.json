@@ -124,23 +124,6 @@
       {
         "id": "Extension.extension:reference.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Extension.extension:reference.value[x]:valueReference",
-        "path": "Extension.extension.value[x]",
-        "sliceName": "valueReference",
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -172,23 +155,6 @@
       {
         "id": "Extension.extension:type.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Extension.extension:type.value[x]:valueCodeableConcept",
-        "path": "Extension.extension.value[x]",
-        "sliceName": "valueCodeableConcept",
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"
@@ -196,7 +162,7 @@
         ]
       },
       {
-        "id": "Extension.extension:type.value[x]:valueCodeableConcept.coding",
+        "id": "Extension.extension:type.value[x].coding",
         "path": "Extension.extension.value[x].coding",
         "patternCoding": {
           "code": "SCI",
