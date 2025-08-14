@@ -170,6 +170,11 @@
         }
       },
       {
+        "id": "Extension.extension:type.value[x].coding.display",
+        "path": "Extension.extension.value[x].coding.display",
+        "patternString": "Supporting Clinical Information"
+      },
+      {
         "id": "Extension.url",
         "path": "Extension.url",
         "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo"
