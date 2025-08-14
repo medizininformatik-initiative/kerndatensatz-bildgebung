@@ -881,7 +881,7 @@
             },
             {
               "name": "imaging-study",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy",
               "type": "reference",
               "extension": [
                 {
