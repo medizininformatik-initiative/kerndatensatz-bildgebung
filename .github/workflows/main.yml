@@ -25,7 +25,7 @@ jobs:
     steps:
         
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ github.event.pull_request.head.ref }}
         
@@ -39,13 +39,10 @@ jobs:
           PATH_TO_QUALITY_CONTROL_RULES: qc/custom
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
-          OUTPUT_FORMAT: RAW
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_DOTNET VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA
-          JAVA_VALIDATOR_VERSION: 6.4.0
-          SUSHI_ENABLED: true 
-          SUSHI_VERSION: 3.16.3
+          SUSHI_ENABLED: true
 
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9
