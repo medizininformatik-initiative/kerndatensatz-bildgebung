@@ -371,18 +371,6 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.extension:bodyStructure.value[x]",
-        "path": "Observation.extension.value[x]",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Observation.partOf",
         "path": "Observation.partOf",
         "short": "Teil von",

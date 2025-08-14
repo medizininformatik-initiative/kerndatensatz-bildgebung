@@ -22,10 +22,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * meta.profile MS
 //Profile
 * extension contains
-  http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
-* extension[supportingInfo].extension[reference] 1..1 MS
-* extension[supportingInfo].extension[type] 1..1 MS
-* extension[supportingInfo].extension[reference].valueReference only Reference(DiagnosticReport or Procedure)
+  MII_EX_Bildgebung_Supporting_Info_R5 named supportingInfo 0..* MS
 * extension[supportingInfo] ^short = "Zusatzinformation"
 * extension[supportingInfo] ^definition = "Zusatzinformation zum Befundbericht"
 * basedOn MS

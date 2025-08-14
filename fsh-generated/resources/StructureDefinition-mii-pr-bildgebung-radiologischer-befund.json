@@ -217,31 +217,6 @@
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.extension:supportingInfo.extension:type",
-        "path": "DiagnosticReport.extension.extension",
-        "sliceName": "type",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.extension:supportingInfo.extension:reference",
-        "path": "DiagnosticReport.extension.extension",
-        "sliceName": "reference",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.extension:supportingInfo.extension:reference.value[x]",
-        "path": "DiagnosticReport.extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-              "http://hl7.org/fhir/StructureDefinition/Procedure"
-            ]
-          }
-        ]
-      },
-      {
         "id": "DiagnosticReport.basedOn",
         "path": "DiagnosticReport.basedOn",
         "short": "Anforderung",
