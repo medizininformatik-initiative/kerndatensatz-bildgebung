@@ -1,7 +1,7 @@
 ---
 parent:
 topic: ObservationExtensionBodyStructure
-subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-body-structure-r5
+subject: http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure
 ---
 
 ## Extension BodyStructure
@@ -12,7 +12,7 @@ Diese Extension ergänzt die Observation-Ressource um die Möglichkeit die Körp
 from
     StructureDefinition
 where
-    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-body-structure-r5'
+    url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure'
 select
     Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 ```
@@ -26,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-body-structure-r5'
+	        url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure'
         select
 	        Beschreibung: description
         with
@@ -36,7 +36,7 @@ select
         from
             StructureDefinition
         where
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-body-structure-r5'
+            url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure'
         for
             differential.element
             where

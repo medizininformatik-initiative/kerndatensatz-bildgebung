@@ -12,7 +12,7 @@ Diese Extension ergänzt die DiagnosticReport-Ressource um weitere DiagnosticRep
 from
     StructureDefinition
 where
-    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-supporting-info-r5'
+    url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo'
 select
     Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 ```
@@ -26,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-supporting-info-r5'
+	        url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo'
         select
 	        Beschreibung: description
         with
@@ -36,7 +36,7 @@ select
         from
             StructureDefinition
         where
-            url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-supporting-info-r5'
+            url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo'
         for
             differential.element
             where
