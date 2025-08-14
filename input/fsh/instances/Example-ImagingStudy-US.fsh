@@ -3,7 +3,7 @@ InstanceOf: MII_PR_Bildgebung_Bildgebungsstudie
 Usage: #example
 Title: "MII Example Bildgebung Imaging Study US"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
-* extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund].valueString = "Verdacht auf Kreuzbandruptur"
+* extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund].valueString = "Verdacht auf akutes Abdomen"
 * status = #available
 * modality = $DCM#US "Ultrasound"
 * subject = Reference(Patient/PatExample)
