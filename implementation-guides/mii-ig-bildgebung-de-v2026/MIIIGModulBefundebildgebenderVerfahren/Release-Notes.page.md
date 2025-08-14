@@ -16,6 +16,7 @@
 - Ausbesserung von Rechtschreibfehlern
 - Übersetzungen für Terminologien für FDPG-Darstellung
 - Fehler in Links im IG verbessert
+- R5 Backport-Extensions in DiagnosticReport und Observation als Workaround eigenständig ausmodeliert, bis HL7 Lösung verfügbar
 - Ressourcen verwenden in diesem Release modulübergreifend SNOMED CT in der Version http://snomed.info/sct/900000000000207008/version/20250801, um eine stabile ValueSet-Expansion sicherzustellen.
 
 
