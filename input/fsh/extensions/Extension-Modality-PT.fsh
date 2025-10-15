@@ -45,7 +45,7 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[radionuclideHalfLife].valueQuantity.code = #s
 * extension[seriesType].valueCodeableConcept
 * extension[seriesType].valueCodeableConcept.coding ^slicing.discriminator.type = #value
-* extension[seriesType].valueCodeableConcept.coding ^slicing.discriminator.path = "coding"
+* extension[seriesType].valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * extension[seriesType].valueCodeableConcept.coding ^slicing.rules = #open
 * extension[seriesType].valueCodeableConcept.coding contains
     spacial 0..* and

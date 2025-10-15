@@ -380,7 +380,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "coding"
+              "path": "$this"
             }
           ],
           "rules": "open"
