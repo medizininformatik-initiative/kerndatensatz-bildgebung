@@ -1,0 +1,33 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-bildgebung-imaging-study-series-convolutional-kernel",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-convolutional-kernel",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2026.0.0-ballot",
+  "date": "2025-08-27",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Series_ConvolutionalKernel",
+  "status": "active",
+  "experimental": false,
+  "description": "Suchparameter für ImagingStudy.series.extension.convolutionalKernel",
+  "code": "convolutional-kernel",
+  "base": [
+    "ImagingStudy"
+  ],
+  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('convolutionalKernel').value",
+  "type": "string",
+  "modifier": [
+    "contains",
+    "exact",
+    "missing"
+  ]
+}
