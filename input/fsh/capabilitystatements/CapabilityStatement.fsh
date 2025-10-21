@@ -187,6 +187,7 @@ Usage: #definition
 * insert SupportSearchParam(x-ray-tube-current, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current, #quantity, #SHALL)
 * insert SupportSearchParam(kvp, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-kvp, #quantity, #SHALL)
 * insert SupportSearchParam(view-position, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-view-position, #token, #SHALL)
+* insert SupportSearchParam(convolutional-kernel, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-convolutional-kernel, #string, #SHALL)
 //Extension MR
 * insert SupportSearchParam(magnetic-field-strength, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-magnetic-field-strength, #quantity, #SHALL)
 * insert SupportSearchParam(scanning-sequence, https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence, #token, #SHALL)

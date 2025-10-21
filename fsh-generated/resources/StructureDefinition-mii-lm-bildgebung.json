@@ -2188,6 +2188,25 @@
         ]
       },
       {
+        "id": "Bildgebung.Studie.Serien.ModalitaetCT.Filterkern",
+        "path": "Bildgebung.Studie.Serien.ModalitaetCT.Filterkern",
+        "short": "Filterkern",
+        "definition": "Genutzter Filterkern in der Reskonstruktion",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct/convolutionalKernel)"
+          }
+        ]
+      },
+      {
         "id": "Bildgebung.Studie.Serien.ModalitaetMR",
         "path": "Bildgebung.Studie.Serien.ModalitaetMR",
         "short": "Modalitaet MR",

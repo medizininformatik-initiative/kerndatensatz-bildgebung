@@ -18,6 +18,12 @@
         {
           "extension": [
             {
+              "url": "convolutionalKernel",
+              "_valueString": {
+                "value": "SOFT"
+              }
+            },
+            {
               "valueQuantity": {
                 "unit": "milligray",
                 "value": 4.04

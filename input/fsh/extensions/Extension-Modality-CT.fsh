@@ -20,7 +20,8 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     KVP 0..1 and
     exposureTime 0..1 and
     exposure 0..1 and
-    xRayTubeCurrent 0..1
+    xRayTubeCurrent 0..1 and
+    convolutionalKernel 0..1
 * extension[CTDIvol].value[x]  only SimpleQuantity
 * extension[CTDIvol].valueQuantity.unit = "milligray" 
 * extension[CTDIvol].valueQuantity.system = "http://unitsofmeasure.org"
@@ -41,3 +42,4 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[xRayTubeCurrent].valueQuantity.unit = "milliampere" 
 * extension[xRayTubeCurrent].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[xRayTubeCurrent].valueQuantity.code = #mA
+* extension[convolutionalKernel].value[x] only string

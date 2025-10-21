@@ -366,6 +366,25 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
+Instance: mii-sp-bildgebung-imaging-study-series-convolutional-kernel
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-convolutional-kernel"
+* insert SP_Publisher
+* insert Version
+* insert Date
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_ConvolutionalKernel"
+* status = #active
+* experimental = false
+* description = "Suchparameter für ImagingStudy.series.extension.convolutionalKernel"
+* code = #convolutional-kernel
+* base = #ImagingStudy
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('convolutionalKernel').value"
+* type = #string
+* modifier[+] = #contains
+* modifier[+] = #exact
+* modifier[+] = #missing
+
 Instance: mii-sp-bildgebung-imaging-study-series-view-position
 InstanceOf: SearchParameter
 Usage: #definition
