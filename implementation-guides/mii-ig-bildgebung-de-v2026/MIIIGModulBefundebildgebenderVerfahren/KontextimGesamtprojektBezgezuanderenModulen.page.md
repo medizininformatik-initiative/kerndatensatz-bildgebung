@@ -1,7 +1,12 @@
 ## Kontext im Gesamtprojekt / Bezüge zu anderen Modulen
 
-
 Bildgebende Modalitäten sind von essentieller Bedeutung für die medizinische Diagnostik und dienen daraufhin als eine der Grundlagen für die Entscheidung von Therapien und Behandlungsplanung sowie für Forschungszwecke. Der Strukturierungsgrad und die Art der Beschreibungen der Bilddaten variiert jedoch erheblich zwischen den Standorten. Ein umfassender Überblick über die Verfügbarkeit strukturierter Bilddaten an den Konsortialstandorten liegt derzeit nicht vor. Dieser Umstand wird durch die vorgeschlagene abgestufte Bereitstellung berücksichtigt, die von den vorhandenen Daten abhängt.
+
+### Das Modul im Kontext nationaler und internationaler Entwicklungen
+
+Das Erweiterungsmodul Bildgebung wurde innerhalb der MII als erstes umfassendes FHIR-basiertes Informationsmodell für Bildgebungsdaten im deutschen Kontext entwickelt und veröffentlicht. Andere nationale Initiativen, wie beispielsweise MIO42, wurden in die Entwicklung mit eingebunden und haben strukturelle Modellierungsentscheidungen übernommen.
+Auf europäischer Ebene sind insbesondere die Arbeiten im Rahmen des European Health Data Space (EHDS) relevant, in dem aktuell Harmonisierungsvorschläge zu Bildgebungsdatenmodellen diskutiert werden. Das MII-Erweiterungsmodul Bildgebung wird im nächsten Release (2027) auf mögliche Anpassungs- und Kompatibilitätsbedarfe hin überprüft werden.
+Auch das Modell aus dem Swiss Personalized Health Network (SPHN) enthält einzelne konzeptionelle Ansätze, die zukünftig für die Weiterentwicklung des Moduls relevant sein könnten.
 
 ### Beziehung zum Modul Person
 
@@ -13,7 +18,7 @@ Die Zuordnung von Bildgebungsstudien zu einem Behandlungsfall erfolgt über Refe
 
 ### Beziehung zum Modul Prozedur
 
-Im Zusammenhang mit bildgebenden Modalitäten kann es zu Beziehungen zu durchgeführten Prozeduren kommen, beispielsweise einer MRT-Untersuchung vor einer Operation. Für Angaben zur durchgeführten Prozedur wird das Modul [PROZEDUR](https://simplifier.net/mii-basismodul-prozedur-2024) in den Ressourcen **Studie** (ImagingStudy), **Befundbericht** (DiagnosticReport) sowie in der verknüpften Ressource **GenerischeBeobachtung** (Observation) verwendet. 
+Im Zusammenhang mit bildgebenden Modalitäten kann es zu Beziehungen zu durchgeführten Prozeduren kommen, beispielsweise einer MRT-Untersuchung vor einer Operation. Für Angaben zur durchgeführten Prozedur wird das Modul [PROZEDUR](https://simplifier.net/mii-basismodul-prozedur-2024) in den Ressourcen **Studie** (ImagingStudy), **Befundbericht** (DiagnosticReport) sowie in der verknüpften Ressource **GenerischeBeobachtung** (Observation) verwendet.
 
 ### Beziehung zum Modul Diagnose
 
