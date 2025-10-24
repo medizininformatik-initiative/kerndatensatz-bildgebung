@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur",
-  "version": "2026.0.0-ballot",
+  "version": "2026.0.0",
   "name": "MII_PR_Bildgebung_Koerperstruktur",
   "_name": {
     "extension": [
@@ -67,7 +67,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-08-27",
+  "date": "2025-12-31",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -348,7 +348,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-relative-location"
+          "valueSet": "http://hl7.eu/fhir/base/ValueSet/siteQualifier-eu"
         }
       },
       {
