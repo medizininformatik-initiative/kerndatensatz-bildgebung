@@ -30,7 +30,7 @@ Description: "Dieses Profil beschreibt die dargestellte Körperstrukturen nach M
 * location ^short = "Lokalisation"
 * location ^definition = "Lokalisation der Körperstruktur im Bild"
 * locationQualifier MS
-* locationQualifier from $locQual (required)
+* locationQualifier from $locQual-eu (required)
 * locationQualifier ^short = "nähere Lokalisation"
 * locationQualifier ^definition = "explizite Beschreibung der Lokalisation"
 * patient MS
