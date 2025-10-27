@@ -1651,6 +1651,28 @@
         ]
       },
       {
+        "id": "Bildgebung.Studie.Serien.Schichtdicke",
+        "path": "Bildgebung.Studie.Serien.Schichtdicke",
+        "short": "Schichtdicke",
+        "definition": "Schichtdicke über die gesamte Serie hinweg",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke/sliceThickness)"
+          }
+        ]
+      },
+      {
         "id": "Bildgebung.Studie.Serien.Kontrastmittelgabe",
         "path": "Bildgebung.Studie.Serien.Kontrastmittelgabe",
         "short": "Kontrastmittelgabe",

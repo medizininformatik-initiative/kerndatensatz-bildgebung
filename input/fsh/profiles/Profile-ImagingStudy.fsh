@@ -76,7 +76,8 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
   MII_EX_Bildgebung_Modalitaet_PT named modalitätPT 0..1 and
   MII_EX_Bildgebung_Modalitaet_NM named modalitätNM 0..1 and
   MII_EX_Bildgebung_Modalitaet_US named modalitätUS 0..1 and
-  MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1
+  MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1 and
+  MII_EX_Bildgebung_Schichtdicke named schichtdicke 0..1
 * series.extension[modalitätCT] ^short = "Modalität CT"
 * series.extension[modalitätCT] ^definition = "Bildgebungsmodalität CT"
 * series.extension[modalitätMG_CR_DX] ^short = "Modalität MG CR DX"
@@ -91,6 +92,8 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.extension[modalitätUS] ^definition = "Bildgebungsmodalität US"
 * series.extension[kontrastmittel] ^short = "Kontrastmittel"
 * series.extension[kontrastmittel] ^definition = "Kontrastmittelgabe"
+* series.extension[schichtdicke] ^short = "Schichtdicke"
+* series.extension[schichtdicke] ^definition = "Schichtdicke der gesamten Serie"
 * series.uid MS
 * series.uid ^short = "SerienUID"
 * series.uid ^definition = "UID einer Serie"
@@ -228,6 +231,10 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(series.extension[kontrastmittel] ^short, en-US, contrast medication)
 * insert Translation(series.extension[kontrastmittel] ^definition, de-DE, Kontrastmittelgabe)
 * insert Translation(series.extension[kontrastmittel] ^definition, en-US, application of contrast medication)
+* insert Translation(series.extension[schichtdicke] ^short, de-DE, Schichtdicke)
+* insert Translation(series.extension[schichtdicke] ^short, en-US, slice thickness)
+* insert Translation(series.extension[schichtdicke] ^definition, de-DE, Schichtdicke der gesamten Serie)
+* insert Translation(series.extension[schichtdicke] ^definition, en-US, slice thickness of entire series)
 * insert Translation(series.uid ^short, de-DE, SerienUID)
 * insert Translation(series.uid ^short, en-US, series uid)
 * insert Translation(series.uid ^definition, de-DE, UID einer Serie)

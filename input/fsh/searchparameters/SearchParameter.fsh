@@ -825,6 +825,27 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
+Instance: mii-sp-bildgebung-imaging-study-series-slice-thickness
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-slice-thickness"
+* insert SP_Publisher
+* insert Version
+* insert Date
+* name = "MII_SP_Bildgebung_Imaging_Study_Series_Slice_Thickness"
+* status = #active
+* experimental = false
+* description = "Suchparameter für ImagingStudy.series.extension.sliceThickness"
+* code = #slice-thickness
+* base = #ImagingStudy
+* type = #quantity
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke').extension('sliceThickness').value"
+* comparator[+] = #eq 
+* comparator[+] = #gt 
+* comparator[+] = #lt
+* comparator[+] = #ge 
+* comparator[+] = #le
+
 Instance: mii-sp-bildgebung-imaging-study-series-contrast-bolus-details
 InstanceOf: SearchParameter
 Usage: #definition
