@@ -681,8 +681,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "profile",
-              "path": "Composition.section.entry.resolve()"
+              "type": "value",
+              "path": "code"
             }
           ],
           "rules": "open"
