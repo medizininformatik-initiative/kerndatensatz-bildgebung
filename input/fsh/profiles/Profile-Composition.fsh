@@ -55,8 +55,8 @@ Description: "Dieses Profil bietet die Möglichkeit, den Befundbericht in einer 
 * section MS
 * section ^short = "Befundabschnitt"
 * section ^definition = "1. Abschnitt immer der Befundbericht, 2.-X. Abschnitt können Beobachtungen oder Freitext sein. Unterteilt in Titel, Code, Autor, Text und Eintrag"
-* section ^slicing.discriminator.type = #profile
-* section ^slicing.discriminator.path = "Composition.section.entry.resolve()"
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains
     diagRep 1..1
