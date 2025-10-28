@@ -15,6 +15,7 @@ Description: "Die Extension ermöglicht es, die Schichtdicke auf Serien-Ebene an
 * insert ExtensionContext(ImagingStudy.series)
 * ^experimental = false
 //Extension
+* value[x] 1..1 MS
 * value[x] only SimpleQuantity
 * valueQuantity.unit = "millimeter" 
 * valueQuantity.system = "http://unitsofmeasure.org"

@@ -1743,8 +1743,8 @@
               ]
             },
             {
-              "name": "instance-slice-thickness",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-slice-thickness",
+              "name": "slice-thickness",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-slice-thickness",
               "type": "quantity",
               "extension": [
                 {

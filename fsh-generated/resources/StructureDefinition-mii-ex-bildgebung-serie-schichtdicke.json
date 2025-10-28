@@ -111,6 +111,7 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "Quantity",
@@ -118,7 +119,8 @@
               "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Extension.value[x].unit",

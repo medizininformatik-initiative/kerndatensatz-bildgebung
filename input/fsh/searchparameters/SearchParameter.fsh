@@ -839,7 +839,7 @@ Usage: #definition
 * code = #slice-thickness
 * base = #ImagingStudy
 * type = #quantity
-* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke').extension('sliceThickness').value"
+* expression = "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke').value"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -966,21 +966,21 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-instance-slice-thickness
+Instance: mii-sp-bildgebung-imaging-study-slice-thickness
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-slice-thickness"
+* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-slice-thickness"
 * insert SP_Publisher
 * insert Version
 * insert Date
-* name = "MII_SP_Bildgebung_Imaging_Study_Instance_Slice_Thickness"
+* name = "MII_SP_Bildgebung_Imaging_Study_Slice_Thickness"
 * status = #active
 * experimental = false
-* description = "Suchparameter für ImagingStudy.series.instance.extension.sliceThickness"
-* code = #instance-slice-thickness
+* description = "Suchparameter für ImagingStudy.series.instance.extension.sliceThickness | ImagingStudy.series.extension.sliceThickness"
+* code = #slice-thickness
 * base = #ImagingStudy
 * type = #quantity
-* expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('sliceThickness').value"
+* expression = "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('sliceThickness').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke').value"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
