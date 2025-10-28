@@ -21,7 +21,7 @@ url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/Str
 select
 Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 
-````
+```
 
 ### Inhalt
 
@@ -68,4 +68,4 @@ Beispiel eines MRTs:
 {{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr-series.json}}
 
 ---
-````
+
