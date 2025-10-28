@@ -15,12 +15,11 @@ Relevante DICOM-Tags sind:
 
 @```
 from
-StructureDefinition
+    StructureDefinition
 where
-url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke'
+    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke'
 select
-Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
-
+    Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
 ```
 
 ### Inhalt
