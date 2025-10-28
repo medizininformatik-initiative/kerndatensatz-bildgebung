@@ -32,8 +32,8 @@ Title: "MII Example Bildgebung Imaging Study MR Serie"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr].extension[flipAngle].valueQuantity.unit = "plane angle degree"
 * series.performer.actor = Reference(Device/mii-exa-bildgebung-geraet)
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel].extension[contrastBolus].valueBoolean = false
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke].extension[sliceThickness].valueQuantity.value = 4
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke].extension[sliceThickness].valueQuantity.unit = "millimeter"
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke].valueQuantity.value = 4
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke].valueQuantity.unit = "millimeter"
 * series.uid = "series-example-uid"
 * series.number = 9
 * series.modality = $DCM#MR "Magnetic Resonance"

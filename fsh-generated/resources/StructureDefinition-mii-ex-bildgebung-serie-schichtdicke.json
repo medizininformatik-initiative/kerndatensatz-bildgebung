@@ -101,29 +101,16 @@
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
-        "min": 1
-      },
-      {
-        "id": "Extension.extension:sliceThickness",
-        "path": "Extension.extension",
-        "sliceName": "sliceThickness",
-        "min": 1,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Extension.extension:sliceThickness.extension",
-        "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:sliceThickness.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "sliceThickness"
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke"
       },
       {
-        "id": "Extension.extension:sliceThickness.value[x]",
-        "path": "Extension.extension.value[x]",
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
         "type": [
           {
             "code": "Quantity",
@@ -134,29 +121,19 @@
         ]
       },
       {
-        "id": "Extension.extension:sliceThickness.value[x].unit",
-        "path": "Extension.extension.value[x].unit",
+        "id": "Extension.value[x].unit",
+        "path": "Extension.value[x].unit",
         "patternString": "millimeter"
       },
       {
-        "id": "Extension.extension:sliceThickness.value[x].system",
-        "path": "Extension.extension.value[x].system",
+        "id": "Extension.value[x].system",
+        "path": "Extension.value[x].system",
         "patternUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Extension.extension:sliceThickness.value[x].code",
-        "path": "Extension.extension.value[x].code",
+        "id": "Extension.value[x].code",
+        "path": "Extension.value[x].code",
         "patternCode": "mm"
-      },
-      {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke"
-      },
-      {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "max": "0"
       }
     ]
   }
