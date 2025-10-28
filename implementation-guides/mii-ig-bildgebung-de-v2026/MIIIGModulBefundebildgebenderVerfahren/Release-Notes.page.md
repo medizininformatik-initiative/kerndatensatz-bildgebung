@@ -1,32 +1,34 @@
 ## {{page-title}}
+
 **Version: 2026.0.0-ballot**
-- Neue Modalität-Extension für Ultraschall inkl. Suchparameter
-- Kardinalität für Codes in DiagnosticReport.conclusionCode.coding eingeschränkt auf "0..1"
-- Kardinalität für DiagnosticReport.code.coding für Loinc und Diagnostic-Service-Section eingeschränkt auf "0..1"
-- Kardinalität für ContrastBolus in ContrastAdministration-Extension eingeschränkt auf "1..1"
-- Instance-Details-Extension erweitert mit burnedinAnnotation-Tag
-- Festlegung von Codes für Kategorien, Codes und BodySite in den Profilen
-- Kardinalität für Value in Observation eingeschränkt auf "1..1"
-- Erweiterung des Image-Type-CodeSystem für Modalität Ultraschall
-- Anpassung des LogicalModel an die aktuellen Profile
-- Fehlerbehebung in Slicing-Discriminator in Instance-Details-Extension
-- Neue ValueSets für ServiceRequest, DiagnosticReport, Observation
-- ValueSets-Binding für alle ValueSets auf required gesetzt
-- Update der UML-Diagramme an neue Modalität Ultraschall
-- Ausbesserung von Rechtschreibfehlern
-- Übersetzungen für Terminologien für FDPG-Darstellung
-- Fehler in Links im IG verbessert
+
+- Neu hinzugefügt:
+  - Neue Modalität-Extension für Ultraschall
+  - Neue Extension auf Serien-Ebene, um die Schichtdicke analog zur Instanzdetails-Extension abzubilden, falls die Instanz-Ebene nicht umgsetzt wird
+  - Hinzufügen von ConvolutinalKernel in der Modalität-Extension für CT
+  - Hinzufügen von burnedinAnnotation in der Instanzdetails-Extension
+- Anpassungen für eine bessere Abbildung im FDPG:
+  - Kardinalität für Codes in DiagnosticReport.conclusionCode.coding eingeschränkt auf "0..1"
+  - Kardinalität für DiagnosticReport.code.coding für Loinc und Diagnostic-Service-Section eingeschränkt auf "0..1"
+  - Kardinalität für ContrastBolus in ContrastAdministration-Extension eingeschränkt auf "1..1"
+  - Festlegung von Codes für Kategorien, Codes und BodySite in den Profilen
+  - Kardinalität für Value in Observation eingeschränkt auf "1..1"
+  - Übersetzungen für Terminologien für FDPG-Darstellung
+  - Neue ValueSets für ServiceRequest, DiagnosticReport, Observation
+  - ValueSets-Binding für alle ValueSets auf "required" gesetzt
+- Fehlerbehebung:
+  - Fehlerbehebung in Slicing-Discriminator in Instanzdetails-Extension
+  - Ausbesserung von Rechtschreibfehlern und fehlerhaften IG-Links
+- Anpassung des LogicalModels, der UML-Diagramme sowie der Suchparameter an die aktuellen Profile
 - R5 Backport-Extensions in DiagnosticReport und Observation als Workaround eigenständig ausmodeliert, bis HL7 Lösung verfügbar
 - Ressourcen verwenden in diesem Release modulübergreifend SNOMED CT in der Version http://snomed.info/sct/900000000000207008/version/20250801, um eine stabile ValueSet-Expansion sicherzustellen.
 
-
-
-
-
 **Version: 2025.0.2**
+
 - Problemlösung zur Verfügbarkeit des R5-Extension-Package
 
 **Version: 2025.0.1**
+
 - Überarbeitung Translations für bessere Darstellung und Lesbarkeit im FDPG
 - Verbesserung von Tippfehlern in SNOMED CT ValueSets
 - Verbesserung der Kardinalität der Referenz vom Profil Observation auf das Profil BodyStructure
