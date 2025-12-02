@@ -369,7 +369,7 @@ Usage: #definition
 Instance: mii-sp-bildgebung-imaging-study-series-convolutional-kernel
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-convolutional-kernel"
+* url = " "
 * insert SP_Publisher
 * insert Version
 * insert Date

@@ -1,4 +1,4 @@
-## Medizininformatik-Initiative - Kerndatensatz - Modul Diagnostik: Befunde bildgebender Verfahren
+## Medizininformatik-Initiative - Kerndatensatz - Modul Bildgebung
 
 ### Übersicht
 
@@ -6,7 +6,7 @@
 
 [![CI (FHIR Validation)](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/actions/workflows/main.yml/badge.svg)](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/actions/workflows/main.yml)
 
-Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Erweiterungsmoduls 'Diagnostik: Befunde bildgebender Verfahren', welches einen zentralen Teil des Kerndatensatzes der Medizininformatik-Initiative darstellt. Die hier veröffentlichten FHIR-Profile und ImplementationGuides dienen als zentrale und verbindliche Spezifikation für die syntaktische und semantische Kodierung der Modulinhalte
+Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Moduls 'Bildgebung', welches einen zentralen Teil des Kerndatensatzes der Medizininformatik-Initiative darstellt. Die hier veröffentlichten FHIR-Profile und ImplementationGuides dienen als zentrale und verbindliche Spezifikation für die syntaktische und semantische Kodierung der Modulinhalte
 
 ### Status
 
@@ -22,7 +22,7 @@ Alle veröffentlichen FHIR-Artefakte innerhalb des Projektes verfügen über ein
 
 ### Zusammenfassung
 
-Das Erweiterungsmodul Bildgebung umfasst sowohl ein Teilmodul zum _radiologischen_ **Befund** (z.B. Indikation, Beurteilung, Auffälligkeiten, Aufnahmequalität etc.) als auch ein Teilmodul zu den **Imaging-Metadaten**, welche im DICOM-Header enthalten sind (z.B. technische Parameter, Studiendetails, Modalitäten, Körperregionen und -seiten etc.).
+Das Modul Bildgebung umfasst sowohl ein Teilmodul zum _radiologischen_ **Befund** (z.B. Indikation, Beurteilung, Auffälligkeiten, Aufnahmequalität etc.) als auch ein Teilmodul zu den **Imaging-Metadaten**, welche im DICOM-Header enthalten sind (z.B. technische Parameter, Studiendetails, Modalitäten, Körperregionen und -seiten etc.).
 
 #### Teilmodul Befundtext
 
@@ -61,6 +61,8 @@ Zusätzlich gibt es modalitätsspezifische Metadaten, die sich je nach vorliegen
 2024.11.12 - Einreichung AG-IOP- und NSG-Beschlussvorlage nach finaler Einarbeitung der Kommentare
 
 2024.12.17 - Positives Votum NSG zur Veröffentlichung
+
+2025.12.05 - Umbenennung in Modul Bildgebung
 
 ### Wichtige Dokumente und Links
 

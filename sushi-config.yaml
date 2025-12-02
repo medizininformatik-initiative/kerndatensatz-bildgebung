@@ -2,10 +2,10 @@ canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung
 fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
-id: mii-ig-befunde-bildgebender-verfahren
-name: MII_IG_Befunde_Bildgebender_Verfahren
+id: mii-ig-bildgebung
+name: MII_IG_Bildgebung
 status: active
-version: 2026.0.0-ballot
+version: 2026.0.0
 packageId: de.medizininformatikinitiative.kerndatensatz.bildgebung
 copyrightYear: 2024+
 releaseLabel: ci-build
@@ -13,9 +13,9 @@ publisher:
   name: Medizininformatik Initiative
   url: https://www.medizininformatik-initiative.de/
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.meta: 2025.0.0
-  de.medizininformatikinitiative.kerndatensatz.prozedur: 2025.0.0
-  de.medizininformatikinitiative.kerndatensatz.medikation: 2025.0.0
+  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.prozedur: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.0
   #hl7.fhir.extensions.r5: 4.0.1
   fhir.dicom: 2025.3.20250714
   hl7.fhir.r4.core: 4.0.1

@@ -4,8 +4,8 @@ Bildgebende Modalitäten sind von essentieller Bedeutung für die medizinische D
 
 ### Das Modul im Kontext nationaler und internationaler Entwicklungen
 
-Das Erweiterungsmodul Bildgebung wurde innerhalb der MII als erstes umfassendes FHIR-basiertes Informationsmodell für Bildgebungsdaten im deutschen Kontext entwickelt und veröffentlicht. Andere nationale Initiativen, wie beispielsweise MIO42, wurden in die Entwicklung mit eingebunden und haben strukturelle Modellierungsentscheidungen übernommen.
-Auf europäischer Ebene sind insbesondere die Arbeiten im Rahmen des European Health Data Space (EHDS) relevant, in dem aktuell Harmonisierungsvorschläge zu Bildgebungsdatenmodellen diskutiert werden. Das MII-Erweiterungsmodul Bildgebung wird im nächsten Release (2027) auf mögliche Anpassungs- und Kompatibilitätsbedarfe hin überprüft werden.
+Das KDS-Modul Bildgebung wurde innerhalb der MII als erstes umfassendes FHIR-basiertes Informationsmodell für Bildgebungsdaten im deutschen Kontext entwickelt und veröffentlicht. Andere nationale Initiativen, wie beispielsweise MIO42, wurden in die Entwicklung mit eingebunden und haben strukturelle Modellierungsentscheidungen übernommen.
+Auf europäischer Ebene sind insbesondere die Arbeiten im Rahmen des European Health Data Space (EHDS) relevant, in dem aktuell Harmonisierungsvorschläge zu Bildgebungsdatenmodellen diskutiert werden. Das MII KDS-Modul Bildgebung wird im nächsten Release (2027) auf mögliche Anpassungs- und Kompatibilitätsbedarfe hin überprüft werden.
 Auch das Modell aus dem Swiss Personalized Health Network (SPHN) enthält einzelne konzeptionelle Ansätze, die zukünftig für die Weiterentwicklung des Moduls relevant sein könnten.
 
 ### Beziehung zum Modul Person

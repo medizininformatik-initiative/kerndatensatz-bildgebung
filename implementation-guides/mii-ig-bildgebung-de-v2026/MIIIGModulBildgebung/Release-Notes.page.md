@@ -1,4 +1,6 @@
 ## {{page-title}}
+**Version: 2026.0.0**
+- Umbenennung in Modul Bildgebung
 
 **Version: 2026.0.0-ballot**
 
