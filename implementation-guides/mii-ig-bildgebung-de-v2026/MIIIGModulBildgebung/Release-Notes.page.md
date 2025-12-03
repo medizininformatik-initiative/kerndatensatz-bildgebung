@@ -9,6 +9,7 @@
 - ConvolutionalKernel hinzugefügt zu Extension CT
 - Anpassung der Modulbeschreibung
 - Conformance-Seite hinzugefügt
+- Suchparameter ab v2026 im Kerndatensatzmodul Meta integriert
 
 **Version: 2026.0.0-ballot**
 
