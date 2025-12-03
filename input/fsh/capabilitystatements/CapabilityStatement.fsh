@@ -220,10 +220,11 @@ Usage: #definition
 * insert SupportSearchParam(series-laterality, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-laterality, #token, #SHALL)
 * insert SupportSearchParam(series-started, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-started, #date, #SHALL)
 * insert SupportSearchParam(performer, http://hl7.org/fhir/SearchParameter/ImagingStudy-performer, #reference, #SHALL)
+* insert SupportSearchParam(slice-thickness, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-slice-thickness, #quantity, #SHALL)
 //Extension Instance
-* insert SupportSearchParam(instance-pixel-spacing-x, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-spacing-x, #quantity, #SHALL)
-* insert SupportSearchParam(instance-pixel-spacing-y, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-spacing-y, #quantity, #SHALL)
-* insert SupportSearchParam(slice-thickness, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-slice-thickness, #quantity, #SHALL)
+* insert SupportSearchParam(instance-pixel-spacing-x, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-x, #quantity, #SHALL)
+* insert SupportSearchParam(instance-pixel-spacing-y, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-y, #quantity, #SHALL)
+* insert SupportSearchParam(instance-slice-thickness, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-slice-thickness, #quantity, #SHALL)
 * insert SupportSearchParam(instance-burned-in-annotation, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation, #token, #SHALL)
 * insert SupportSearchParam(instance-image-type, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-image-type, #token, #SHALL)
 //Instance
