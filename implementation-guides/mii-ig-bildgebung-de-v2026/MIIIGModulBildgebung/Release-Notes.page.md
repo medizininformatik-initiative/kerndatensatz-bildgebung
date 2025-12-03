@@ -1,6 +1,14 @@
 ## {{page-title}}
 **Version: 2026.0.0**
+
 - Umbenennung in Modul Bildgebung
+- SliceThickness auf Serien- und Instanzebene verwendbar
+- Regeln für Slices in der Composition und Extension PT repariert
+- Neues ValueSet für LocationQualifier
+- Seiteninhalt Extension NM wiederhergestellt
+- ConvolutionalKernel hinzugefügt zu Extension CT
+- Anpassung der Modulbeschreibung
+- Conformance-Seite hinzugefügt
 
 **Version: 2026.0.0-ballot**
 
