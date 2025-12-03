@@ -174,7 +174,7 @@
             },
             {
               "name": "location-qualifier",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-body-structure-location-qualifier",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-body-structure-location-qualifier",
               "type": "token",
               "extension": [
                 {
@@ -315,7 +315,7 @@
             },
             {
               "name": "description",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-description",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-description",
               "type": "string",
               "extension": [
                 {
@@ -337,7 +337,7 @@
             },
             {
               "name": "supporting-info",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-supporting-info",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-supporting-info",
               "type": "reference",
               "extension": [
                 {
@@ -511,7 +511,7 @@
             },
             {
               "name": "section-title",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-title",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-composition-section-title",
               "type": "string",
               "extension": [
                 {
@@ -533,7 +533,7 @@
             },
             {
               "name": "section-author",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-author",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-composition-section-author",
               "type": "reference",
               "extension": [
                 {
@@ -771,7 +771,7 @@
             },
             {
               "name": "supporting-info",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-supporting-info",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-supporting-info",
               "type": "reference",
               "extension": [
                 {
@@ -892,7 +892,7 @@
             },
             {
               "name": "conclusion-text",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion",
               "type": "string",
               "extension": [
                 {
@@ -1086,7 +1086,7 @@
             },
             {
               "name": "report",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-read-proc-report",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-read-proc-report",
               "type": "reference",
               "extension": [
                 {
@@ -1194,7 +1194,7 @@
             },
             {
               "name": "modality-body-site",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-modality-body-site",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality-body-site",
               "type": "composite",
               "extension": [
                 {
@@ -1205,7 +1205,7 @@
             },
             {
               "name": "bildgebungsgrund",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-bildgebungsgrund",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund",
               "type": "string",
               "extension": [
                 {
@@ -1227,7 +1227,7 @@
             },
             {
               "name": "study-modality",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-modality",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality",
               "type": "token",
               "extension": [
                 {
@@ -1293,7 +1293,7 @@
             },
             {
               "name": "number-series",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-number-series",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-series",
               "type": "number",
               "extension": [
                 {
@@ -1304,7 +1304,7 @@
             },
             {
               "name": "number-instances",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-number-instances",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-instances",
               "type": "number",
               "extension": [
                 {
@@ -1315,7 +1315,7 @@
             },
             {
               "name": "procedure-reference",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-procedure-reference",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-procedure-reference",
               "type": "reference",
               "extension": [
                 {
@@ -1326,7 +1326,7 @@
             },
             {
               "name": "reason-reference",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-reason-reference",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-reason-reference",
               "type": "reference",
               "extension": [
                 {
@@ -1337,7 +1337,7 @@
             },
             {
               "name": "description",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-description",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-description",
               "type": "string",
               "extension": [
                 {
@@ -1348,7 +1348,7 @@
             },
             {
               "name": "ctdi-volume",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-ctdi-volume",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-ctdi-volume",
               "type": "quantity",
               "extension": [
                 {
@@ -1359,7 +1359,7 @@
             },
             {
               "name": "exposure-time",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure-time",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure-time",
               "type": "quantity",
               "extension": [
                 {
@@ -1370,7 +1370,7 @@
             },
             {
               "name": "exposure",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure",
               "type": "quantity",
               "extension": [
                 {
@@ -1381,7 +1381,7 @@
             },
             {
               "name": "x-ray-tube-current",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-xray-tube-current",
               "type": "quantity",
               "extension": [
                 {
@@ -1392,7 +1392,7 @@
             },
             {
               "name": "kvp",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-kvp",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-kvp",
               "type": "quantity",
               "extension": [
                 {
@@ -1403,7 +1403,7 @@
             },
             {
               "name": "view-position",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-view-position",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-view-position",
               "type": "token",
               "extension": [
                 {
@@ -1414,7 +1414,7 @@
             },
             {
               "name": "convolutional-kernel",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-convolutional-kernel",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-convolutional-kernel",
               "type": "string",
               "extension": [
                 {
@@ -1425,7 +1425,7 @@
             },
             {
               "name": "magnetic-field-strength",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-magnetic-field-strength",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-magnetic-field-strength",
               "type": "quantity",
               "extension": [
                 {
@@ -1436,7 +1436,7 @@
             },
             {
               "name": "scanning-sequence",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence",
               "type": "token",
               "extension": [
                 {
@@ -1447,7 +1447,7 @@
             },
             {
               "name": "scanning-sequence-variant",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence-variant",
               "type": "token",
               "extension": [
                 {
@@ -1458,7 +1458,7 @@
             },
             {
               "name": "echo-time",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-echo-time",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-echo-time",
               "type": "quantity",
               "extension": [
                 {
@@ -1469,7 +1469,7 @@
             },
             {
               "name": "repetition-time",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-repetition-time",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-repetition-time",
               "type": "quantity",
               "extension": [
                 {
@@ -1480,7 +1480,7 @@
             },
             {
               "name": "inversion-time",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-inversion-time",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-inversion-time",
               "type": "quantity",
               "extension": [
                 {
@@ -1491,7 +1491,7 @@
             },
             {
               "name": "flip-angle",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-flip-angle",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-flip-angle",
               "type": "quantity",
               "extension": [
                 {
@@ -1502,7 +1502,7 @@
             },
             {
               "name": "radiopharmaceutical",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radiopharmaceutical",
               "type": "token",
               "extension": [
                 {
@@ -1513,7 +1513,7 @@
             },
             {
               "name": "radionuclide",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide",
               "type": "token",
               "extension": [
                 {
@@ -1524,7 +1524,7 @@
             },
             {
               "name": "tracer-exposure-time",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-tracer-exposure-time",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-tracer-exposure-time",
               "type": "quantity",
               "extension": [
                 {
@@ -1535,7 +1535,7 @@
             },
             {
               "name": "units",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-units",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-units",
               "type": "token",
               "extension": [
                 {
@@ -1546,7 +1546,7 @@
             },
             {
               "name": "radionuclide-total-dose",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-total-dose",
               "type": "quantity",
               "extension": [
                 {
@@ -1557,7 +1557,7 @@
             },
             {
               "name": "radionuclide-half-life",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-half-life",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-half-life",
               "type": "quantity",
               "extension": [
                 {
@@ -1568,7 +1568,7 @@
             },
             {
               "name": "series-type",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-series-type",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-series-type",
               "type": "token",
               "extension": [
                 {
@@ -1579,7 +1579,7 @@
             },
             {
               "name": "transducer-type",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-type",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-transducer-type",
               "type": "token",
               "extension": [
                 {
@@ -1590,7 +1590,7 @@
             },
             {
               "name": "transducer-frequency",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-frequency",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-transducer-frequency",
               "type": "quantity",
               "extension": [
                 {
@@ -1601,7 +1601,7 @@
             },
             {
               "name": "pulse-repetition-frequency",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-pulse-frequency",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-pulse-frequency",
               "type": "quantity",
               "extension": [
                 {
@@ -1612,7 +1612,7 @@
             },
             {
               "name": "ultrasound-color",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-ultrasound-color",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-ultrasound-color",
               "type": "token",
               "extension": [
                 {
@@ -1623,7 +1623,7 @@
             },
             {
               "name": "contrast-bolus",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus",
               "type": "token",
               "extension": [
                 {
@@ -1634,7 +1634,7 @@
             },
             {
               "name": "contrast-bolus-details",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus-details",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details",
               "type": "reference",
               "extension": [
                 {
@@ -1656,7 +1656,7 @@
             },
             {
               "name": "series-number",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-number",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-number",
               "type": "number",
               "extension": [
                 {
@@ -1689,7 +1689,7 @@
             },
             {
               "name": "series-laterality",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-laterality",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-laterality",
               "type": "token",
               "extension": [
                 {
@@ -1700,7 +1700,7 @@
             },
             {
               "name": "series-started",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-started",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-started",
               "type": "date",
               "extension": [
                 {
@@ -1722,7 +1722,7 @@
             },
             {
               "name": "instance-pixel-spacing-x",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-x",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-spacing-x",
               "type": "quantity",
               "extension": [
                 {
@@ -1733,7 +1733,7 @@
             },
             {
               "name": "instance-pixel-spacing-y",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-y",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-spacing-y",
               "type": "quantity",
               "extension": [
                 {
@@ -1744,7 +1744,7 @@
             },
             {
               "name": "slice-thickness",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-slice-thickness",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-slice-thickness",
               "type": "quantity",
               "extension": [
                 {
@@ -1755,7 +1755,7 @@
             },
             {
               "name": "instance-burned-in-annotation",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-burned-in-annotation",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation",
               "type": "token",
               "extension": [
                 {
@@ -1766,7 +1766,7 @@
             },
             {
               "name": "instance-image-type",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-image-type",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-image-type",
               "type": "token",
               "extension": [
                 {
@@ -1799,7 +1799,7 @@
             },
             {
               "name": "instance-number",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-number",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-number",
               "type": "number",
               "extension": [
                 {
@@ -1907,7 +1907,7 @@
             },
             {
               "name": "series-uid",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-series-uid",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-observation-series-uid",
               "type": "token",
               "extension": [
                 {
@@ -1918,7 +1918,7 @@
             },
             {
               "name": "sop-instance-uid",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-sop-instance-uid",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-observation-sop-instance-uid",
               "type": "token",
               "extension": [
                 {
@@ -1929,7 +1929,7 @@
             },
             {
               "name": "body-structure",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-structure",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/SearchParameter/mii-sp-meta-observation-body-structure",
               "type": "reference",
               "extension": [
                 {
