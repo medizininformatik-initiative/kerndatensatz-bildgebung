@@ -139,6 +139,20 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Observation.extension:SeriesUID",
         "path": "Observation.extension",
         "sliceName": "SeriesUID",
@@ -435,14 +449,6 @@
             }
           ]
         },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
