@@ -1,0 +1,332 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-bildgebung-radiologische-befundungsprozedur",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/spdx-license",
+            "code": "CC-BY-4.0",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur",
+  "version": "2026.0.0",
+  "name": "MII_PR_Bildgebung_Radiologische_Befundungsprozedur",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_PR_Imaging_Radiological_Readprocedure"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII PR Bildgebung Radiologische Befundungsprozedur",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "de-DE"
+          },
+          {
+            "url": "content",
+            "valueString": "radiologische Befundungsprozedur"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "radiological read-procedure"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "date": "2025-12-31",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Diese Profil beschreibt die radiologische Befundungsprozedur. Es legt fest, dass es sich hierbei um eine reine diagnostische Prozedur handelt",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "de-DE"
+          },
+          {
+            "url": "content",
+            "valueString": "BEschreibt eine Befundungsprozedur"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "This FHIR resource profile specifically characterizes the radiological reading process."
+          }
+        ]
+      }
+    ]
+  },
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "min": 1
+      },
+      {
+        "id": "Procedure.category.coding",
+        "path": "Procedure.category.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category.coding.system",
+        "path": "Procedure.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category.coding.code",
+        "path": "Procedure.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category.coding:sct",
+        "path": "Procedure.category.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "363679005",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Procedure.category.coding:sct.display",
+        "path": "Procedure.category.coding.display",
+        "patternString": "Imaging (procedure)"
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding"
+      },
+      {
+        "id": "Procedure.code.coding.system",
+        "path": "Procedure.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:sct",
+        "path": "Procedure.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "28191001",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:sct.display",
+        "path": "Procedure.code.coding.display",
+        "patternString": "Consultation and report by radiologist (procedure)"
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "short": "Person",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Person"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "person"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Person, auf die sich die Befundungprozedur bezieht",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Person, auf die sich die Befundungprozedur bezieht"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "person, which this read procedure is about"
+                }
+              ]
+            }
+          ]
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.report",
+        "path": "Procedure.report",
+        "short": "Bericht",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Bericht"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "report"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Referenz auf den Bericht",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Referenz auf den Bericht"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "reference on the report"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

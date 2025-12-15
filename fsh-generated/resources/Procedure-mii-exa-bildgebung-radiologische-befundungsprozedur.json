@@ -1,0 +1,37 @@
+{
+  "resourceType": "Procedure",
+  "id": "mii-exa-bildgebung-radiologische-befundungsprozedur",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
+    ]
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "165197003",
+        "system": "http://snomed.info/sct",
+        "display": " Diagnostic assessment (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "4261000179100",
+        "system": "http://snomed.info/sct",
+        "display": "Computed tomography imaging report (record artifact)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatExample"
+  },
+  "performedDateTime": "2024-07-19T12:03:30+02:00",
+  "report": [
+    {
+      "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
+    }
+  ]
+}
