@@ -1,15 +1,15 @@
 ## {{page-title}}
 **Version: 2026.0.0**
 
-- Umbenennung in Modul Bildgebung
-- SliceThickness auf Serien- und Instanzebene verwendbar
-- Regeln für Slices in der Composition und Extension PT repariert
-- Neues ValueSet für LocationQualifier
-- Seiteninhalt Extension NM wiederhergestellt
-- ConvolutionalKernel hinzugefügt zu Extension CT
-- Anpassung der Modulbeschreibung
-- Conformance-Seite hinzugefügt
-- Suchparameter ab v2026 im Kerndatensatzmodul Meta integriert
+- Changed: Umbenennung in Modul Bildgebung
+- Changed: SliceThickness auf Serien- und Instanzebene verwendbar
+- Changed: Regeln für Slices in der Composition und Extension PT repariert
+- Changed: Neues ValueSet für LocationQualifier
+- Fixed: Seiteninhalt Extension NM wiederhergestellt
+- Added: ConvolutionalKernel hinzugefügt zu Extension CT
+- Changed: Anpassung der Modulbeschreibung
+- Added: Conformance-Seite hinzugefügt
+- Changed: Suchparameter ab v2026 im Kerndatensatzmodul Meta integriert
 
 **Version: 2026.0.0-ballot**
 
@@ -32,7 +32,7 @@
   - Ausbesserung von Rechtschreibfehlern und fehlerhaften IG-Links
 - Anpassung des LogicalModels, der UML-Diagramme sowie der Suchparameter an die aktuellen Profile
 - R5 Backport-Extensions in DiagnosticReport und Observation als Workaround eigenständig ausmodeliert, bis HL7 Lösung verfügbar
-- Ressourcen verwenden in diesem Release modulübergreifend SNOMED CT in der Version http://snomed.info/sct/900000000000207008/version/20250801, um eine stabile ValueSet-Expansion sicherzustellen.
+- Ressourcen verwenden in diesem Release modulübergreifend SNOMED CT in der Version http://snomed.info/sct/900000000000207008/version/20250701, um eine stabile ValueSet-Expansion sicherzustellen.
 
 **Version: 2025.0.2**
 
