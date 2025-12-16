@@ -22,7 +22,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * meta.profile MS
 //Profile
 * extension contains
-  MII_EX_Bildgebung_Supporting_Info_R5 named supportingInfo 0..* MS
+  $supportingInfo named supportingInfo 0..* MS
 * extension[supportingInfo] ^short = "Zusatzinformation"
 * extension[supportingInfo] ^definition = "Zusatzinformation zum Befundbericht"
 * basedOn MS

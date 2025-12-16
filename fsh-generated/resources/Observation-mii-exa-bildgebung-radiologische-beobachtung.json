@@ -16,7 +16,7 @@
       "valueId": "example-sop-instance-uid"
     },
     {
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure",
+      "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
       "valueReference": {
         "reference": "BodyStructure/mii-exa-bildgebung-koerperstruktur"
       }
