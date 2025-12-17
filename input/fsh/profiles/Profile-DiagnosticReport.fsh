@@ -23,6 +23,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 //Profile
 * extension contains
   $supportingInfo named supportingInfo 0..* MS
+* extension[supportingInfo].valueReference only Reference(DiagnosticReport or Procedure)
 * extension[supportingInfo] ^short = "Zusatzinformation"
 * extension[supportingInfo] ^definition = "Zusatzinformation zum Befundbericht"
 * basedOn MS

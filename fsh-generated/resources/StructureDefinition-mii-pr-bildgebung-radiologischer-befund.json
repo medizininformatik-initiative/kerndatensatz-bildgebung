@@ -231,6 +231,19 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.extension:supportingInfo.value[x]",
+        "path": "DiagnosticReport.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
+            ]
+          }
+        ]
+      },
+      {
         "id": "DiagnosticReport.basedOn",
         "path": "DiagnosticReport.basedOn",
         "short": "Anforderung",

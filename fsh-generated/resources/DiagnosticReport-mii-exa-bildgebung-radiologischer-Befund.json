@@ -18,27 +18,10 @@
   ],
   "extension": [
     {
-      "extension": [
-        {
-          "url": "type",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "SCI",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0936",
-                "display": "Supporting Clinical Information"
-              }
-            ]
-          }
-        },
-        {
-          "url": "reference",
-          "valueReference": {
-            "reference": "DiagnosticReport/DiagRepExample"
-          }
-        }
-      ],
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo"
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+      "valueReference": {
+        "reference": "DiagnosticReport/DiagRepExample"
+      }
     }
   ],
   "basedOn": [

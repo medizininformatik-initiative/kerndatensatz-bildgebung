@@ -29,6 +29,7 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * extension[SeriesUID] ^definition = "UID einer DICOM-Serie"
 * extension[SOPInstanzUID] ^short = "SOP Instanz UID"
 * extension[SOPInstanzUID] ^definition = "UID einer SOP Instanz"
+* extension[bodyStructure].valueReference only Reference(BodyStructure)
 * extension[bodyStructure] ^short = "Körperstruktur"
 * extension[bodyStructure] ^definition = "Referenz auf eine Körperstruktur"
 * partOf MS
