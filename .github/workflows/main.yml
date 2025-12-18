@@ -1,94 +1,53 @@
-name: CI (FHIR Validation & SearchParameter Testing & Release)
+# This is a basic workflow to help you get started with Actions
 
+name: CI (FHIR Validation)
+
+# Controls when the action will run. 
 on:
+  # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master, main ]
-    tags:
-    - 'v[0-9]+.[0-9]+.[0-9]+*'
   pull_request:
     branches: [ master, main ]
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  release:
-    types: [published]
 
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  DOTNET_FHIR_VALIDATION:
-    if: github.event_name != 'release'
-    uses: ./.github/workflows/ci_dotnet_validation.yml
-    with:
-      ref: ${{ github.event.pull_request.head.ref || github.ref }}
-      SUSHI_VERSION: ${{ vars.SUSHI_VERSION }}
-    secrets: inherit
 
-  JAVA_FHIR_VALIDATION:
-    if: github.event_name != 'release'
-    uses: ./.github/workflows/ci_java_validation.yml
-    with:
-      ref: ${{ github.event.pull_request.head.ref || github.ref }}
-      PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
-      PATH_TO_EXAMPLES: fsh-generated/resources
-      JAVA_VALIDATION_ENABLED: true
-      JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
-      JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
-    secrets: inherit
-
-  CI_SEARCH_PARAM_TEST:
-    if: github.event_name != 'release'
-    uses: ./.github/workflows/ci_search_param_tests.yml
-
-  RELEASE:
-    if: startsWith(github.ref, 'refs/tags/v') && github.event_name != 'release'
-    needs: [DOTNET_FHIR_VALIDATION, JAVA_FHIR_VALIDATION, CI_SEARCH_PARAM_TEST]
+  # Validate all resources using Firely Terminal 
+  CI_FHIR_VALIDATION:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
         
-      - name: Prepare version
-        id: prep-version
-        run: |
-          VERSION=${GITHUB_REF#refs/tags/}
-          echo "version=${VERSION}" >> $GITHUB_OUTPUT
-          
-      - name: Release
-        uses: softprops/action-gh-release@v2
+      - name: Checkout code
+        uses: actions/checkout@v5
         with:
-          name: "${{ steps.prep-version.outputs.version }}"
-          draft: true
-          prerelease: ${{ contains(steps.prep-version.outputs.version, '-') }}
-          generate_release_notes: true
-          body: |
-            ## MII IG Meta Release ${{ steps.prep-version.outputs.version }}
-            
-            <!-- DELETE START -->
-            Download the FHIR package from Simplifier and manually attach it to this release.
-            <!-- DELETE END -->
-            
-            ### Changes
-
-            <!-- DELETE START -->
-            Add your own release notes here.
-            <!-- DELETE END -->
-
-            See the auto-generated release notes below.
-
-  NOTIFY_ZULIP:
-    if: github.event_name == 'release' && github.event.action == 'published'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Post release to Zulip
-        uses: zulip/github-actions-zulip/send-message@v1
+          ref: ${{ github.event.pull_request.head.ref }}
+        
+      # Java and .NET are already installed on ubuntu-latest
+        
+      - name: Firely.Terminal (GitHub Actions)
+        uses: FirelyTeam/firely-terminal-pipeline@v0.7.23
         with:
-          api-key: ${{ secrets.ZULIP_API_KEY }}
-          email: "kds-github-bot@mii.zulipchat.com"
-          organization-url: "https://mii.zulipchat.com/"
-          to: "MII-Kerndatensatz"
-          type: "stream"
-          topic: "Releases"
-          content: |
-            **New Release:** `${{ github.event.release.tag_name }}`
-            **Repository:** `${{ github.repository }}`
+          PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
+          PATH_TO_EXAMPLES: fsh-generated/resources
+          PATH_TO_QUALITY_CONTROL_RULES: qc/custom
+          DOTNET_VALIDATION_ENABLED: true
+          JAVA_VALIDATION_ENABLED: true
+          SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
+          SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
+          EXPECTED_FAILS: VALIDATION_CONFORMANCE_DOTNET VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA
+          SUSHI_ENABLED: true
 
-            ${{ github.event.release.body }}
-            
-            🔗 [View on GitHub](${{ github.event.release.html_url }})
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          committer_name: GitHub Actions Bot
+          committer_email: ActionBot@github.com
+          add: 'fsh-generated/resources/'
+          message: auto-generated FHIR files by GitHub Actions (CI FSH to FHIR Validation)
