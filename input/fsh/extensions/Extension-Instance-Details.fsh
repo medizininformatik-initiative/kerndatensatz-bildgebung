@@ -23,15 +23,15 @@ Description: "Die Extension ermöglicht es, Informationen zur ausgewählten Seri
     burnedInAnnotation 0..1 MS
 * extension[pixelSpacingX].value[x] only SimpleQuantity
 * extension[pixelSpacingX].valueQuantity.unit = "millimeter" 
-* extension[pixelSpacingX].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[pixelSpacingX].valueQuantity.system = $ucum
 * extension[pixelSpacingX].valueQuantity.code = #mm
 * extension[pixelSpacingY].value[x] only SimpleQuantity
 * extension[pixelSpacingY].valueQuantity.unit = "millimeter" 
-* extension[pixelSpacingY].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[pixelSpacingY].valueQuantity.system = $ucum
 * extension[pixelSpacingY].valueQuantity.code = #mm
 * extension[sliceThickness].value[x] only SimpleQuantity
 * extension[sliceThickness].valueQuantity.unit = "millimeter" 
-* extension[sliceThickness].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[sliceThickness].valueQuantity.system = $ucum
 * extension[sliceThickness].valueQuantity.code = #mm
 * extension[imageType].value[x] only CodeableConcept
 * extension[imageType].valueCodeableConcept.coding ^slicing.discriminator.type = #value

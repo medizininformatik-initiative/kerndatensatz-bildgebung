@@ -24,22 +24,22 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     convolutionalKernel 0..1
 * extension[CTDIvol].value[x]  only SimpleQuantity
 * extension[CTDIvol].valueQuantity.unit = "milligray" 
-* extension[CTDIvol].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[CTDIvol].valueQuantity.system = $ucum
 * extension[CTDIvol].valueQuantity.code = #mGy
 * extension[KVP].value[x] only SimpleQuantity
 * extension[KVP].valueQuantity.unit = "kilovolt" 
-* extension[KVP].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[KVP].valueQuantity.system = $ucum
 * extension[KVP].valueQuantity.code = #kV
 * extension[exposureTime].value[x] only SimpleQuantity
 * extension[exposureTime].valueQuantity.unit = "milliseconds" 
-* extension[exposureTime].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[exposureTime].valueQuantity.system = $ucum
 * extension[exposureTime].valueQuantity.code = #ms
 * extension[exposure].value[x] only SimpleQuantity
 * extension[exposure].valueQuantity.unit = "milliampere second" 
-* extension[exposure].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[exposure].valueQuantity.system = $ucum
 * extension[exposure].valueQuantity.code = #mA.s
 * extension[xRayTubeCurrent].value[x] only SimpleQuantity
 * extension[xRayTubeCurrent].valueQuantity.unit = "milliampere" 
-* extension[xRayTubeCurrent].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[xRayTubeCurrent].valueQuantity.system = $ucum
 * extension[xRayTubeCurrent].valueQuantity.code = #mA
 * extension[convolutionalKernel].value[x] only string

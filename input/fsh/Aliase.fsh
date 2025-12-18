@@ -26,6 +26,7 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 Alias: $loinc = http://loinc.org
 Alias: $radlex = https://radlex.org
 Alias: $VS-loinc-rsna = http://loinc.org/vs/loinc-rsna-radiology-playbook
+Alias: $ucum = http://unitsofmeasure.org
 //Dicom Alias
 Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 Alias: $radiopharmaceutical_PET = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4021.html

@@ -11,3 +11,4 @@ Title: "MII Example Bildgebung Kontrastmittelgabe"
 * dosage.dose.value = 111
 * dosage.dose.unit = "milliliter"
 * dosage.dose.code = #mm
+* dosage.dose.system = $ucum

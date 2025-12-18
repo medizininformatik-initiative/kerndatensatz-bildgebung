@@ -22,11 +22,11 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     ultrasoundColor 0..1
 * extension[transducerFrequency].value[x] only SimpleQuantity
 * extension[transducerFrequency].valueQuantity.unit = "kilohertz" 
-* extension[transducerFrequency].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[transducerFrequency].valueQuantity.system = $ucum
 * extension[transducerFrequency].valueQuantity.code = #kHz
 * extension[pulseRepetitionFrequency].value[x] only SimpleQuantity
 * extension[pulseRepetitionFrequency].valueQuantity.unit = "hertz" 
-* extension[pulseRepetitionFrequency].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[pulseRepetitionFrequency].valueQuantity.system = $ucum
 * extension[pulseRepetitionFrequency].valueQuantity.code = #Hz
 * extension[ultrasoundColor].value[x]  only boolean
 * extension[transducerType].value[x] only CodeableConcept

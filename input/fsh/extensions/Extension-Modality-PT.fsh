@@ -31,17 +31,17 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[radionuclide].valueCodeableConcept.text MS
 * extension[tracerExposureTime].value[x] only SimpleQuantity
 * extension[tracerExposureTime].valueQuantity.unit = "Seconds" 
-* extension[tracerExposureTime].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[tracerExposureTime].valueQuantity.system = $ucum
 * extension[tracerExposureTime].valueQuantity.code = #s
 * extension[units].value[x] only CodeableConcept
 * extension[units].valueCodeableConcept from $units (extensible)
 * extension[radionuclideTotalDose].value[x] only SimpleQuantity
 * extension[radionuclideTotalDose].valueQuantity.unit = "Becquerel" 
-* extension[radionuclideTotalDose].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[radionuclideTotalDose].valueQuantity.system = $ucum
 * extension[radionuclideTotalDose].valueQuantity.code = #Bq
 * extension[radionuclideHalfLife].value[x] only SimpleQuantity
 * extension[radionuclideHalfLife].valueQuantity.unit = "Seconds" 
-* extension[radionuclideHalfLife].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[radionuclideHalfLife].valueQuantity.system = $ucum
 * extension[radionuclideHalfLife].valueQuantity.code = #s
 * extension[seriesType].valueCodeableConcept
 * extension[seriesType].valueCodeableConcept.coding ^slicing.discriminator.type = #value

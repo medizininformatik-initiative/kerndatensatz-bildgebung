@@ -25,7 +25,7 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
     flipAngle 0..1
 * extension[magneticFieldStrength].value[x]  only SimpleQuantity
 * extension[magneticFieldStrength].valueQuantity.unit = "tesla" 
-* extension[magneticFieldStrength].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[magneticFieldStrength].valueQuantity.system = $ucum
 * extension[magneticFieldStrength].valueQuantity.code = #T
 * extension[scanningSequence].value[x] only CodeableConcept
 * extension[scanningSequence].valueCodeableConcept from MII_VS_Bildgebung_MR_Scanning_Sequence (required)
@@ -33,17 +33,17 @@ Description: "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalys
 * extension[scanningSequenceVariant].valueCodeableConcept from MII_VS_Bildgebung_MR_Scanning_Sequence_Variant (required)
 * extension[echoTime].value[x]  only SimpleQuantity
 * extension[echoTime].valueQuantity.unit = "milliseconds" 
-* extension[echoTime].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[echoTime].valueQuantity.system = $ucum
 * extension[echoTime].valueQuantity.code = #ms
 * extension[inversionTime].value[x]  only SimpleQuantity
 * extension[inversionTime].valueQuantity.unit = "milliseconds" 
-* extension[inversionTime].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[inversionTime].valueQuantity.system = $ucum
 * extension[inversionTime].valueQuantity.code = #ms
 * extension[repetitionTime].value[x]  only SimpleQuantity
 * extension[repetitionTime].valueQuantity.unit = "milliseconds" 
-* extension[repetitionTime].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[repetitionTime].valueQuantity.system = $ucum
 * extension[repetitionTime].valueQuantity.code = #ms
 * extension[flipAngle].value[x]  only SimpleQuantity
 * extension[flipAngle].valueQuantity.unit = "plane angle degree"
-* extension[flipAngle].valueQuantity.system = "http://unitsofmeasure.org"
+* extension[flipAngle].valueQuantity.system = $ucum
 * extension[flipAngle].valueQuantity.code = #deg
