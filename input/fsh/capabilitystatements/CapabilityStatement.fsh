@@ -3,11 +3,6 @@ RuleSet: SupportResource (resource, expectation)
 * rest.resource[=].extension[0].url = $exp
 * rest.resource[=].extension[0].valueCode = {expectation}
 
-RuleSet: Profile (profile, expectation)
-* rest.resource[=].profile[+] = "{profile}"
-* rest.resource[=].profile[=].extension[0].url = $exp
-* rest.resource[=].profile[=].extension[0].valueCode = {expectation}
-
 RuleSet: SupportProfile (profile, expectation)
 // This rule set must follow a SupportResource rule set, and applies to that resource.
 * rest.resource[=].supportedProfile[+] = "{profile}"
@@ -50,7 +45,6 @@ Usage: #definition
 
 //BodyStrucuture
 * insert SupportResource(BodyStructure, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/BodyStructure, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur|2025.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -65,7 +59,6 @@ Usage: #definition
 
 //CarePlan
 * insert SupportResource(CarePlan, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/CarePlan, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung|2025.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -81,7 +74,6 @@ Usage: #definition
 
 //Composition
 * insert SupportResource(Composition, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/Composition, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht|2025.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -102,7 +94,6 @@ Usage: #definition
 
 //Device
 * insert SupportResource(Device, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/Device, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet|2025.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -115,7 +106,6 @@ Usage: #definition
 
 //DiagnosticReport
 * insert SupportResource(DiagnosticReport, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/DiagnosticReport, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|2025.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -139,7 +129,6 @@ Usage: #definition
 
 //Procedure
 * insert SupportResource(Procedure, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/Procedure, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur|2025.0.0, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur|2025.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
@@ -158,7 +147,6 @@ Usage: #definition
 
 //ImagingStudy
 * insert SupportResource(ImagingStudy, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/ImagingStudy, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie|2025.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -234,7 +222,6 @@ Usage: #definition
 
 //Observation
 * insert SupportResource(Observation, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/Observation, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2025.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -280,7 +267,6 @@ Usage: #definition
 
 //ContrastAdministration
 * insert SupportResource(MedicationAdministration, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationAdministration, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe|2025.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -297,7 +283,6 @@ Usage: #definition
 
 //ServiceRequest
 * insert SupportResource(ServiceRequest, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/ServiceRequest, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung|2025.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)

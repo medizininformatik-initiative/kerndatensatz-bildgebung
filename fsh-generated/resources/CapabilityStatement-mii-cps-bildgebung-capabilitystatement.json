@@ -63,15 +63,6 @@
               "valueCode": "SHALL"
             }
           ],
-          "profile": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
-          "_profile": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                "valueCode": "SHALL"
-              }
-            ]
-          },
           "supportedProfile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur|2025.0.0"
           ],
@@ -204,15 +195,6 @@
               "valueCode": "SHALL"
             }
           ],
-          "profile": "http://hl7.org/fhir/StructureDefinition/CarePlan",
-          "_profile": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                "valueCode": "SHALL"
-              }
-            ]
-          },
           "supportedProfile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung|2025.0.0"
           ],
@@ -356,15 +338,6 @@
               "valueCode": "SHALL"
             }
           ],
-          "profile": "http://hl7.org/fhir/StructureDefinition/Composition",
-          "_profile": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                "valueCode": "SHALL"
-              }
-            ]
-          },
           "supportedProfile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht|2025.0.0"
           ],
@@ -563,15 +536,6 @@
               "valueCode": "SHALL"
             }
           ],
-          "profile": "http://hl7.org/fhir/StructureDefinition/Device",
-          "_profile": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                "valueCode": "SHALL"
-              }
-            ]
-          },
           "supportedProfile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet|2025.0.0"
           ],
@@ -682,15 +646,6 @@
               "valueCode": "SHALL"
             }
           ],
-          "profile": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-          "_profile": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                "valueCode": "SHALL"
-              }
-            ]
-          },
           "supportedProfile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|2025.0.0"
           ],
@@ -922,15 +877,6 @@
               "valueCode": "SHALL"
             }
           ],
-          "profile": "http://hl7.org/fhir/StructureDefinition/Procedure",
-          "_profile": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                "valueCode": "SHALL"
-              }
-            ]
-          },
           "supportedProfile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur|2025.0.0",
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur|2025.0.0"
@@ -1105,15 +1051,6 @@
               "valueCode": "SHALL"
             }
           ],
-          "profile": "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
-          "_profile": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                "valueCode": "SHALL"
-              }
-            ]
-          },
           "supportedProfile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie|2025.0.0"
           ],
@@ -1829,15 +1766,6 @@
               "valueCode": "SHALL"
             }
           ],
-          "profile": "http://hl7.org/fhir/StructureDefinition/Observation",
-          "_profile": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                "valueCode": "SHALL"
-              }
-            ]
-          },
           "supportedProfile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2025.0.0"
           ],
@@ -2256,15 +2184,6 @@
               "valueCode": "SHALL"
             }
           ],
-          "profile": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
-          "_profile": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                "valueCode": "SHALL"
-              }
-            ]
-          },
           "supportedProfile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe|2025.0.0"
           ],
@@ -2419,15 +2338,6 @@
               "valueCode": "SHALL"
             }
           ],
-          "profile": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-          "_profile": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                "valueCode": "SHALL"
-              }
-            ]
-          },
           "supportedProfile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung|2025.0.0"
           ],
