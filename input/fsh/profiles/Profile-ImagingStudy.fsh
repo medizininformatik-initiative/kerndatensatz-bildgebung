@@ -70,26 +70,26 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series ^definition = "einzelne Bildserie einer Studie"
 * series.extension contains
   //Extension Serienebene
-  MII_EX_Bildgebung_Modalitaet_CT named modalitätCT 0..1 and
-  MII_EX_Bildgebung_Modalitaet_MG_CR_DX named modalitätMG_CR_DX 0..1 and
-  MII_EX_Bildgebung_Modalitaet_MR named modalitätMR 0..1 and
-  MII_EX_Bildgebung_Modalitaet_PT named modalitätPT 0..1 and
-  MII_EX_Bildgebung_Modalitaet_NM named modalitätNM 0..1 and
-  MII_EX_Bildgebung_Modalitaet_US named modalitätUS 0..1 and
+  MII_EX_Bildgebung_Modalitaet_CT named modalitaetCT 0..1 and
+  MII_EX_Bildgebung_Modalitaet_MG_CR_DX named modalitaetMG_CR_DX 0..1 and
+  MII_EX_Bildgebung_Modalitaet_MR named modalitaetMR 0..1 and
+  MII_EX_Bildgebung_Modalitaet_PT named modalitaetPT 0..1 and
+  MII_EX_Bildgebung_Modalitaet_NM named modalitaetNM 0..1 and
+  MII_EX_Bildgebung_Modalitaet_US named modalitaetUS 0..1 and
   MII_EX_Bildgebung_Kontrastmittel named kontrastmittel 0..1 and
   MII_EX_Bildgebung_Schichtdicke named schichtdicke 0..1
-* series.extension[modalitätCT] ^short = "Modalität CT"
-* series.extension[modalitätCT] ^definition = "Bildgebungsmodalität CT"
-* series.extension[modalitätMG_CR_DX] ^short = "Modalität MG CR DX"
-* series.extension[modalitätMG_CR_DX] ^definition = "Bildgebungsmodalität MG, CR und DX"
-* series.extension[modalitätMR] ^short = "Modalität MR"
-* series.extension[modalitätMR] ^definition = "Bildgebungsmodalität MR"
-* series.extension[modalitätPT] ^short = "Modalität PT"
-* series.extension[modalitätPT] ^definition = "Bildgebungsmodalität PT"
-* series.extension[modalitätNM] ^short = "Modalität NM"
-* series.extension[modalitätNM] ^definition = "Bildgebungsmodalität NM"
-* series.extension[modalitätUS] ^short = "Modalität US"
-* series.extension[modalitätUS] ^definition = "Bildgebungsmodalität US"
+* series.extension[modalitaetCT] ^short = "Modalität CT"
+* series.extension[modalitaetCT] ^definition = "Bildgebungsmodalität CT"
+* series.extension[modalitaetMG_CR_DX] ^short = "Modalität MG CR DX"
+* series.extension[modalitaetMG_CR_DX] ^definition = "Bildgebungsmodalität MG, CR und DX"
+* series.extension[modalitaetMR] ^short = "Modalität MR"
+* series.extension[modalitaetMR] ^definition = "Bildgebungsmodalität MR"
+* series.extension[modalitaetPT] ^short = "Modalität PT"
+* series.extension[modalitaetPT] ^definition = "Bildgebungsmodalität PT"
+* series.extension[modalitaetNM] ^short = "Modalität NM"
+* series.extension[modalitaetNM] ^definition = "Bildgebungsmodalität NM"
+* series.extension[modalitaetUS] ^short = "Modalität US"
+* series.extension[modalitaetUS] ^definition = "Bildgebungsmodalität US"
 * series.extension[kontrastmittel] ^short = "Kontrastmittel"
 * series.extension[kontrastmittel] ^definition = "Kontrastmittelgabe"
 * series.extension[schichtdicke] ^short = "Schichtdicke"
@@ -203,30 +203,30 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * insert Translation(series ^short, en-US, series level)
 * insert Translation(series ^definition, de-DE, einzelne Bildserie einer Studie)
 * insert Translation(series ^definition, en-US, single series in a study)
-* insert Translation(series.extension[modalitätCT] ^short, de-DE, Modalität CT)
-* insert Translation(series.extension[modalitätCT] ^short, en-US, modality CT)
-* insert Translation(series.extension[modalitätCT] ^definition, de-DE, Bildgebungsmodalität CT)
-* insert Translation(series.extension[modalitätCT] ^definition, en-US, Imagingmodality CT)
-* insert Translation(series.extension[modalitätMG_CR_DX] ^short, de-DE, Modalität MG CR DX)
-* insert Translation(series.extension[modalitätMG_CR_DX] ^short, en-US, modality MG CR DX)
-* insert Translation(series.extension[modalitätMG_CR_DX] ^definition, de-DE, Bildgebungsmodalität MG\, CR und DX)
-* insert Translation(series.extension[modalitätMG_CR_DX] ^definition, en-US, Imagingmodality MG\, CR and DX)
-* insert Translation(series.extension[modalitätMR] ^short, de-DE, Modalität MR)
-* insert Translation(series.extension[modalitätMR] ^short, en-US, modality MR)
-* insert Translation(series.extension[modalitätMR] ^definition, de-DE, Bildgebungsmodalität MR)
-* insert Translation(series.extension[modalitätMR] ^definition, en-US, Imagingmodality MR)
-* insert Translation(series.extension[modalitätUS] ^short, de-DE, Modalität US)
-* insert Translation(series.extension[modalitätUS] ^short, en-US, modality US)
-* insert Translation(series.extension[modalitätUS] ^definition, de-DE, Bildgebungsmodalität US)
-* insert Translation(series.extension[modalitätUS] ^definition, en-US, Imagingmodality US)
-* insert Translation(series.extension[modalitätNM] ^short, de-DE, Modalität NM)
-* insert Translation(series.extension[modalitätNM] ^short, en-US, modality NM)
-* insert Translation(series.extension[modalitätNM] ^definition, de-DE, Bildgebungsmodalität NM)
-* insert Translation(series.extension[modalitätNM] ^definition, en-US, Imagingmodality NM)
-* insert Translation(series.extension[modalitätPT] ^short, de-DE, Modalität PT)
-* insert Translation(series.extension[modalitätPT] ^short, en-US, modality PT)
-* insert Translation(series.extension[modalitätPT] ^definition, de-DE, Bildgebungsmodalität PT)
-* insert Translation(series.extension[modalitätPT] ^definition, en-US, Imagingmodality PT)
+* insert Translation(series.extension[modalitaetCT] ^short, de-DE, Modalität CT)
+* insert Translation(series.extension[modalitaetCT] ^short, en-US, modality CT)
+* insert Translation(series.extension[modalitaetCT] ^definition, de-DE, Bildgebungsmodalität CT)
+* insert Translation(series.extension[modalitaetCT] ^definition, en-US, Imagingmodality CT)
+* insert Translation(series.extension[modalitaetMG_CR_DX] ^short, de-DE, Modalität MG CR DX)
+* insert Translation(series.extension[modalitaetMG_CR_DX] ^short, en-US, modality MG CR DX)
+* insert Translation(series.extension[modalitaetMG_CR_DX] ^definition, de-DE, Bildgebungsmodalität MG\, CR und DX)
+* insert Translation(series.extension[modalitaetMG_CR_DX] ^definition, en-US, Imagingmodality MG\, CR and DX)
+* insert Translation(series.extension[modalitaetMR] ^short, de-DE, Modalität MR)
+* insert Translation(series.extension[modalitaetMR] ^short, en-US, modality MR)
+* insert Translation(series.extension[modalitaetMR] ^definition, de-DE, Bildgebungsmodalität MR)
+* insert Translation(series.extension[modalitaetMR] ^definition, en-US, Imagingmodality MR)
+* insert Translation(series.extension[modalitaetUS] ^short, de-DE, Modalität US)
+* insert Translation(series.extension[modalitaetUS] ^short, en-US, modality US)
+* insert Translation(series.extension[modalitaetUS] ^definition, de-DE, Bildgebungsmodalität US)
+* insert Translation(series.extension[modalitaetUS] ^definition, en-US, Imagingmodality US)
+* insert Translation(series.extension[modalitaetNM] ^short, de-DE, Modalität NM)
+* insert Translation(series.extension[modalitaetNM] ^short, en-US, modality NM)
+* insert Translation(series.extension[modalitaetNM] ^definition, de-DE, Bildgebungsmodalität NM)
+* insert Translation(series.extension[modalitaetNM] ^definition, en-US, Imagingmodality NM)
+* insert Translation(series.extension[modalitaetPT] ^short, de-DE, Modalität PT)
+* insert Translation(series.extension[modalitaetPT] ^short, en-US, modality PT)
+* insert Translation(series.extension[modalitaetPT] ^definition, de-DE, Bildgebungsmodalität PT)
+* insert Translation(series.extension[modalitaetPT] ^definition, en-US, Imagingmodality PT)
 * insert Translation(series.extension[kontrastmittel] ^short, de-DE, Kontrastmittel)
 * insert Translation(series.extension[kontrastmittel] ^short, en-US, contrast medication)
 * insert Translation(series.extension[kontrastmittel] ^definition, de-DE, Kontrastmittelgabe)
