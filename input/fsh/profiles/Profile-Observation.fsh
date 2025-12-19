@@ -23,15 +23,11 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 //Profile
 * extension contains
   MII_EX_Bildgebung_Serie_UID named SeriesUID 0..1 and
-  MII_EX_Bildgebung_SOP_Instanz_UID named SOPInstanzUID 0..1 and
-  $bodyStructure named bodyStructure 0..1 MS
+  MII_EX_Bildgebung_SOP_Instanz_UID named SOPInstanzUID 0..1
 * extension[SeriesUID] ^short = "Serien UID"
 * extension[SeriesUID] ^definition = "UID einer DICOM-Serie"
 * extension[SOPInstanzUID] ^short = "SOP Instanz UID"
 * extension[SOPInstanzUID] ^definition = "UID einer SOP Instanz"
-* extension[bodyStructure].valueReference only Reference(BodyStructure)
-* extension[bodyStructure] ^short = "Körperstruktur"
-* extension[bodyStructure] ^definition = "Referenz auf eine Körperstruktur"
 * partOf MS
 * partOf only Reference (MII_PR_Bildgebung_Radiologische_Befundungsprozedur)
 * partOf ^short = "Teil von"
@@ -80,6 +76,11 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * bodySite ^short = "Anatomie"
 * bodySite ^definition = "betrachtete Anatomie der Beobachtung"
 * bodySite from MII_VS_Bildgebung_Observation_Body_Site_SCT (required)
+* bodySite.extension contains
+  $bodyStructure named bodyStructure 0..1 MS
+* bodySite.extension[bodyStructure].valueReference only Reference(BodyStructure)
+* bodySite.extension[bodyStructure] ^short = "Körperstruktur"
+* bodySite.extension[bodyStructure] ^definition = "Referenz auf eine Körperstruktur"
 * hasMember MS
 * hasMember only Reference(Observation)
 * hasMember ^short = "weitere Beobachtungen"
