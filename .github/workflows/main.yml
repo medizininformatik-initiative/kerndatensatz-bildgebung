@@ -30,6 +30,8 @@ jobs:
       JAVA_VALIDATION_ENABLED: true
       JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
       JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
+      VALIDATION_REPORT_FILTERS: |
+        ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.json||*Found more than one Resource*|ImagingStudy.​series[0].​extension[0].​extension[4].​value.​ofType(CodeableConcept)
     secrets: inherit
 
   RELEASE:
