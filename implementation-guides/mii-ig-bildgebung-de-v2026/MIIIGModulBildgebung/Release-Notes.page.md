@@ -12,6 +12,8 @@
 - Changed: Suchparameter ab v2026 im Kerndatensatzmodul Meta integriert
 - Changed: Extension SupportingInfo in DiagnosticReport jetzt aus HL7 Package
 - Changed: Extension BodyStructure in Observation jetzt aus HL7 Package
+- Fixed: Ungültige Codes ausgebessert
+- Fixed: Extension BodyStructure von Observation auf Observation.bodySite umgehängt
 
 **Version: 2026.0.0-ballot**
 
