@@ -11,6 +11,6 @@ Title: "MII Example Bildgebung Service Request"
 * encounter = Reference(Encounter/EncExample)
 * authoredOn = "2024-07-19T12:03:30+02:00"
 * requester = Reference(Practitioner/PracExample1)
-* reasonCode = $SCT#268547008 "Screening for malignant neoplasm of breast (procedure)"
+* reasonCode = $SCT#53430007 "Pain of breast (finding)"
 * reasonReference = Reference(Condition/CondExample)
 * supportingInfo = Reference(DiagnosticReport/DiagRepExample)
