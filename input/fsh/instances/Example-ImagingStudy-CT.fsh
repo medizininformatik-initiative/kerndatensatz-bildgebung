@@ -17,7 +17,7 @@ Title: "MII Example Bildgebung Imaging Study CT"
 * procedureReference = Reference(Procedure/mii-exa-bildgebung-bildgebungsprozedur)
 * reasonReference = Reference(Condition/CondExample)
 * description = "whole body aquisition"
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[convolutionalKernel].valueString.value = "SOFT"
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[convolutionalKernel].valueString = "SOFT"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[CTDIvol].valueQuantity.value = 4.04
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[CTDIvol].valueQuantity.unit = "milligray"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct].extension[KVP].valueQuantity.value = 110
