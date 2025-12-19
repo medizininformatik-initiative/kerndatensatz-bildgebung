@@ -6,7 +6,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## ReadProcedure
 
-Diese Procedure-Ressource wird verwendet, um eine Befundungsprozedur zu erfassen. Hier wird festgelegt, dass es sich rein um eine radiologische Befundungsprozedur handelt.
+Diese Procedure-Ressource wird verwendet, um eine Befundungsprozedur zu erfassen. Hier wird festgelegt, dass es sich um eine rein radiologische Befundungsprozedur handelt.
 
 @```
 from

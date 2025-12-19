@@ -8,7 +8,7 @@ Der Abschnitt Befund kann, je nach Datenlage, in drei verschiedenen Varianten um
 
 ### Variante 1: vollstrukturierte Befunde
 
-Diese Variante kann gewählt werden, wenn es vollstrukturierte Befunden in den vorhandenen Daten gibt. Beispiel wären hier die Templates der DRG.
+Diese Variante kann gewählt werden, wenn es vollstrukturierte Befunde in den vorhandenen Daten gibt. Beispiel wären hier die Templates der DRG.
 
 {{render:implementation-guides/ImplementationGuide-Common/images/UML_Befund_strukturiert.png}}
 

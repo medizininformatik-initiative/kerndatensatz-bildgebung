@@ -6,7 +6,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## Extension SOP Instance UID
 
-Diese Extension ergänzt die Observation-Ressource um den Bezug zur Bildinstanz aus der Bildgebungsstudie herzustellen. Die ID verweist hier dementsprechend direkt auf das jeweilige Schichtbild
+Diese Extension ergänzt die Observation-Ressource um den Bezug zur Bildinstanz aus der Bildgebungsstudie herzustellen. Die ID verweist hier dementsprechend direkt auf das jeweilige Schichtbild.
 
 @```
 from

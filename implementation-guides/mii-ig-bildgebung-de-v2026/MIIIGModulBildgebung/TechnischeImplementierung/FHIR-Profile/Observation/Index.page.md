@@ -6,7 +6,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## Observation
 
-Diese Observation-Ressource wird verwendet, um eine radiologische Beobachtung zu erfassen. Die Ressource ist weitestgehend generisch ausgeführt, um so eine Vielzahl von codierter Befundung abbilden zu können. Beispiele wären hier eine Befundung nach TNM etc. In R4 gibt es noch nicht die Möglichkeit die untersuchte Körperstruktur durch eine BodyStructure zu referenzieren, weshalb diese Möglichkeit aus R5 importiert wurde. Weiterhin wurde die Ressource um die Serien- und Instanzinformation aus der Bildstudie ergänzt, um hier sich direkt auf das jeweilige Bild beziehen zu können.
+Diese Observation-Ressource wird verwendet, um eine radiologische Beobachtung zu erfassen. Die Ressource ist weitestgehend generisch ausgeführt, um so eine Vielzahl von codierter Befundung abbilden zu können. Beispiele wären hier eine Befundung nach TNM etc. In R4 gibt es noch nicht die Möglichkeit die untersuchte Körperstruktur durch eine BodyStructure zu referenzieren, weshalb diese Möglichkeit aus R5 importiert wurde. Weiterhin wurde die Ressource um die Serien- und Instanzinformation aus der Bildstudie ergänzt, um sich hier direkt auf das jeweilige Bild beziehen zu können.
 
 @```
 from
@@ -76,7 +76,7 @@ Folgende Suchparameter sind für das Modul Bildgebung relevant, auch in Kombinat
 
 **Beispiele**
 
-Beispiel einer Observation-Ressource zur strukturierten Darstellung eine radiologischen Beobachtung:
+Beispiel einer Observation-Ressource zur strukturierten Darstellung einer radiologischen Beobachtung:
 
 {{json:fsh-generated/resources/Observation-mii-exa-bildgebung-radiologische-beobachtung.json}}
 

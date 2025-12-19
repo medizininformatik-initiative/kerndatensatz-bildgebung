@@ -6,7 +6,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/S
 
 ## Extension Serien UID
 
-Diese Extension ergänzt die Observation-Ressource um den Bezug zur Bildserien aus der Bildgebungsstudie herzustellen. Die ID verweist hier dementsprechend auf die jeweilige Bilderserie.
+Diese Extension ergänzt die Observation-Ressource um den Bezug zur Bildserie aus der Bildgebungsstudie herzustellen. Die ID verweist hier dementsprechend auf die jeweilige Bilderserie.
 
 @```
 from
