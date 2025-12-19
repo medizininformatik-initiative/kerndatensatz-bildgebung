@@ -436,27 +436,11 @@
         "min": 0,
         "max": "1",
         "patternCoding": {
-          "code": "400999005",
-          "system": "http://snomed.info/sct"
+          "code": "363679005",
+          "system": "http://snomed.info/sct",
+          "display": "Imaging (procedure)"
         },
         "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.category.coding:sct.system",
-        "path": "ServiceRequest.category.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.category.coding:sct.code",
-        "path": "ServiceRequest.category.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.category.coding:sct.display",
-        "path": "ServiceRequest.category.coding.display",
-        "patternString": "Procedure requested (situation)"
       },
       {
         "id": "ServiceRequest.code",
@@ -704,7 +688,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-service-request-code-sct"
+          "valueSet": "http://hl7.org/fhir/ValueSet/procedure-code"
         }
       },
       {
