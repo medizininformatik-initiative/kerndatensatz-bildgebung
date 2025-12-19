@@ -67,7 +67,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-12-31",
+  "date": "2025-12-19",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -137,20 +137,6 @@
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
         "mustSupport": true
-      },
-      {
-        "id": "Observation.extension",
-        "path": "Observation.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Observation.extension:SeriesUID",

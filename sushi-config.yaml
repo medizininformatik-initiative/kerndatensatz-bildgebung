@@ -13,9 +13,9 @@ publisher:
   name: Medizininformatik Initiative
   url: https://www.medizininformatik-initiative.de/
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.x
+  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.x
+  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.x
   hl7.fhir.uv.extensions.r4: 5.2.0
   fhir.dicom: 2025.3.20250714
   hl7.fhir.r4.core: 4.0.1
