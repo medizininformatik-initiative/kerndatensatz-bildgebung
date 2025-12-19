@@ -17,5 +17,3 @@ Description: "Import the ValueSet for Instance Image Type NM"
 * MII_CS_Bildgebung_Instance_Image_Type#GATEDTOMO
 * MII_CS_Bildgebung_Instance_Image_Type#RECONTOMO
 * MII_CS_Bildgebung_Instance_Image_Type#RECONGATEDTOMO
-* MII_CS_Bildgebung_Instance_Image_Type#EMISSION
-* MII_CS_Bildgebung_Instance_Image_Type#TRANSMISSION
