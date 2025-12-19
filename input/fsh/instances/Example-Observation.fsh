@@ -12,7 +12,7 @@ Title: "MII Example Bildgebung Radiologische Beobachtung"
 * subject = Reference(Patient/PatExample)
 * issued = "2024-07-19T12:03:30+02:00"
 * valueString = "microcalcifications in the upper outer quadrant in the left breast"
-* bodySite = $SCT#361716006 "Entire left breast (body structure)"
+* bodySite = $SCT#76752008 "Breast structure (body structure)"
 * bodySite.extension[$bodyStructure].valueReference = Reference(BodyStructure/mii-exa-bildgebung-koerperstruktur)
 * hasMember = Reference(Observation/ObsExample)
 * derivedFrom = Reference(ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct)
