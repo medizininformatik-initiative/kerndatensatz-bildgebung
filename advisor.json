@@ -2,6 +2,6 @@
   "suppress" : [
     "Terminology_TX_NoValid_16",
     "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
-    "UNABLE_TO_INFER_CODESYSTEM@CodeSystem.​name.​extension[0].​extension[0].​value.​ofType(code)"
+    "UNABLE_TO_INFER_CODESYSTEM"
   ]
 }
