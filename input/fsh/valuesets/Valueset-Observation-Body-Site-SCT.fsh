@@ -8,6 +8,6 @@ Description: "Import the ValueSet for Observation"
 * insert PR_CS_VS_Date
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
-* include codes from system $SCT-version where constraint = "123037004 | Body structure (body structure) |"
+* include codes from system $SCT-version where constraint = "< 123037004 | Body structure (body structure) |"
 
 
