@@ -887,12 +887,6 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section.code.coding",
-        "path": "Composition.section.code.coding",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
         "id": "Composition.section.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "min": 1,
@@ -1188,25 +1182,6 @@
       {
         "id": "Composition.section:diagRep.code",
         "path": "Composition.section.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Composition.section:diagRep.code.coding",
-        "path": "Composition.section.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Composition.section:diagRep.code.coding:loinc",
-        "path": "Composition.section.code.coding",
-        "sliceName": "loinc",
         "short": "LOINC Code",
         "_short": {
           "extension": [
@@ -1269,18 +1244,17 @@
             }
           ]
         },
-        "min": 0,
-        "max": "1",
-        "patternCoding": {
-          "code": "18782-3",
-          "system": "http://loinc.org"
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "18782-3",
+              "system": "http://loinc.org",
+              "display": "Radiology Study observation (narrative)"
+            }
+          ]
         },
         "mustSupport": true
-      },
-      {
-        "id": "Composition.section:diagRep.code.coding:loinc.display",
-        "path": "Composition.section.code.coding.display",
-        "patternString": "Radiology Study observation (narrative)"
       },
       {
         "id": "Composition.section:diagRep.author",

@@ -9,8 +9,7 @@ Title: "MII Example Bildgebung Composition"
 * date = "2024-07-19T12:03:30+02:00"
 * author = Reference(Practitioner/PracExample1)
 * title = "Mammographic Report"
-* section.title = "Left Breast"
-* section.code = $loinc#18782-3 "Radiology Study observation (narrative)"
-* section.author = Reference(Practitioner/PracExample2)
-* section.entry = Reference(DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund)
-* section.section.entry = Reference(Observation/mii-exa-bildgebung-radiologische-beobachtung)
+* section[diagRep].title = "Left Breast"
+* section[diagRep].author = Reference(Practitioner/PracExample2)
+* section[diagRep].entry = Reference(DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund)
+* section[diagRep].section.entry = Reference(Observation/mii-exa-bildgebung-radiologische-beobachtung)
