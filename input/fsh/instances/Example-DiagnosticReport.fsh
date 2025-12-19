@@ -13,5 +13,5 @@ Title: "MII Example Bildgebung Diagnostic Report"
 * result = Reference (Observation/mii-exa-bildgebung-radiologische-beobachtung)
 * imagingStudy = Reference (ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct)
 * conclusion = "There are suspicious microcalcifications in the upper outer quadrant in the left breast"
-* conclusionCode = $SCT#12747003 "Microcalcification, calcified structure (morphologic abnormality)"
+* conclusionCode = $SCT#44771000 "Microcalcifications of the breast (disorder)"
 * extension[$supportingInfo].valueReference = Reference(DiagnosticReport/DiagRepExample)
