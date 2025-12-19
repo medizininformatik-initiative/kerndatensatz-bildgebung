@@ -30,7 +30,7 @@ Title: "MII Example Bildgebung Imaging Study US"
 * series.modality = $DCM#US "Ultrasound"
 * series.description = "Abdomen Oberbauch"
 * series.numberOfInstances = 28
-* series.bodySite = $SCT#818981001 "Abdomen (body structure)"
+* series.bodySite = $SCT#80581009 "Upper abdomen structure (body structure)"
 * series.laterality = $SCT#51440002 "Bilateral" 
 * series.started = "2025-07-07T12:03:30+02:00"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueCodeableConcept.coding[pixelData] = MII_CS_Bildgebung_Instance_Image_Type#ORIGINAL

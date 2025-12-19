@@ -34,8 +34,9 @@
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "code": "23451235",
-                    "system": "http://snomed.info/sct"
+                    "code": "77004003",
+                    "system": "http://snomed.info/sct",
+                    "display": "Fluorine-18 (substance)"
                   }
                 ]
               }

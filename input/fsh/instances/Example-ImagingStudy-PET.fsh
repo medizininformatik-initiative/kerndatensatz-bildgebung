@@ -18,7 +18,7 @@ Title: "MII Example Bildgebung Imaging Study PT"
 * reasonReference = Reference(Condition/CondExample)
 * description = "whole body aquisition"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[radiopharmaceutical].valueCodeableConcept.coding = $SCT#35321007 "Fluorodeoxyglucose (18-F) (substance)"
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[radionuclide].valueCodeableConcept.coding = $SCT#23451235 ""
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[radionuclide].valueCodeableConcept.coding = $SCT#77004003 "Fluorine-18 (substance)"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[tracerExposureTime].valueQuantity.value = 10000
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[tracerExposureTime].valueQuantity.unit = "Seconds"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt].extension[units].valueCodeableConcept.coding = http://unitsofmeasure.org#BQML
