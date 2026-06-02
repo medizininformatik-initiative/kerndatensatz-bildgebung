@@ -70,6 +70,8 @@ Die Datenelemente der jeweiligen Extensions finden sich auf den entsprechenden U
 | Modalitäten 				| (0008,0061) 			|
 | Prozedur 				| (0008,1032) 			|
 | Bildgebungsgrund 			| (0040,1002) 			|
+| Körpergröße               | (0010,1020)               |
+| Körpergewicht               | (0010,1030)               |
 | Anfordernde Maßnahme 			| (0032,1064) 			|
 | Serie --> Modalität 			| (0008,0060) 			|
 | Serie --> Körperregion 		| (0018,0015) 			|
