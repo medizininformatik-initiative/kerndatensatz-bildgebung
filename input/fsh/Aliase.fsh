@@ -1,6 +1,9 @@
+//HL7 SD
 Alias: $exp = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation
 Alias: $bodyStructure = http://hl7.org/fhir/StructureDefinition/bodySite
 Alias: $supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
+Alias: $de-height = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse
+Alias: $de-weight = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht
 //HL7 VS
 Alias: $reasonCode = http://hl7.org/fhir/ValueSet/procedure-reason
 Alias: $bodySite = http://hl7.org/fhir/ValueSet/body-site

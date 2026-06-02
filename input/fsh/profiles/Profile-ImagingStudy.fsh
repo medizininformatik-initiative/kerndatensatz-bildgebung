@@ -23,9 +23,15 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 //Studienebene
 * extension contains
   //Extension Studienebene
-  MII_EX_Bildgebung_Bildgebungsgrund named bildgebungsgrund 0..1 
+  MII_EX_Bildgebung_Bildgebungsgrund named bildgebungsgrund 0..1 and
+  MII_EX_Bildgebung_Gewicht named koerpergewicht 0..1 and
+  MII_EX_Bildgebung_Groesse named koerpergroesse 0..1 
 * extension[bildgebungsgrund] ^short = "Bildgebungsgrund"
 * extension[bildgebungsgrund] ^definition = "Bildgebungsgrund aus DICOM-Header"
+* extension[koerpergewicht] ^short = "Bildgebungsgrund"
+* extension[koerpergewicht] ^definition = "Bildgebungsgrund aus DICOM-Header"
+* extension[koerpergroesse] ^short = "Bildgebungsgrund"
+* extension[koerpergroesse] ^definition = "Bildgebungsgrund aus DICOM-Header"
 * status MS
 * status ^short = "Status"
 * status ^definition = "Angemeldet | Verfügbar | Abgebrochen | fehlerhafte Eingabe | Unbekannt"
