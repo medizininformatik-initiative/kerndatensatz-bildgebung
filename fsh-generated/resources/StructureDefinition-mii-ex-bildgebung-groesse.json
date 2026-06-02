@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-ex-bildgebung-sop-instanz-uid",
+  "id": "mii-ex-bildgebung-groesse",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,9 +15,9 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-groesse",
   "version": "2026.1.0",
-  "name": "MII_EX_Bildgebung_SOP_Instanz_UID",
+  "name": "MII_EX_Bildgebung_Groesse",
   "_name": {
     "extension": [
       {
@@ -29,13 +29,13 @@
           },
           {
             "url": "content",
-            "valueString": "MII_EX_Imaging_SOPInstance"
+            "valueString": "MII_EX_Imaging_Height"
           }
         ]
       }
     ]
   },
-  "title": "MII EX Bildgebung SOPInstanz",
+  "title": "MII EX Bildgebung Körpergröße",
   "_title": {
     "extension": [
       {
@@ -47,7 +47,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII EX Imaging SOPInstance"
+            "valueString": "MII EX Imaging Patient Height"
           }
         ]
       }
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "description": "Die Extension ermöglicht es, den SOPInstanz aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.",
+  "description": "Die Extension ermöglicht es, die Körpergröße aus dem entsprechenden DICOM Tag [0010,1020] auf Studien-Ebene anzugeben.",
   "_description": {
     "extension": [
       {
@@ -78,7 +78,7 @@
           },
           {
             "url": "content",
-            "valueString": "The extension allows specifying the reason for the imaging procedure from the corresponding DICOM tag at the study level."
+            "valueString": "The extension allows specifying the patient height from the corresponding DICOM tag [0010,1020] at the study level."
           }
         ]
       }
@@ -90,7 +90,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Observation"
+      "expression": "ImagingStudy"
     }
   ],
   "type": "Extension",
@@ -106,14 +106,17 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid"
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-groesse"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "id"
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse"
+            ]
           }
         ]
       }

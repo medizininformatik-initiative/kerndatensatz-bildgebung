@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "MII_PR_Bildgebung_Bildgebungsstudie",
   "_name": {
     "extension": [
@@ -67,7 +67,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-12-19",
+  "date": "2026-06-08",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -137,6 +137,20 @@
         "id": "ImagingStudy.meta.profile",
         "path": "ImagingStudy.meta.profile",
         "mustSupport": true
+      },
+      {
+        "id": "ImagingStudy.extension",
+        "path": "ImagingStudy.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "ImagingStudy.extension:bildgebungsgrund",
@@ -211,6 +225,40 @@
             "code": "Extension",
             "profile": [
               "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ImagingStudy.extension:koerpergewicht",
+        "path": "ImagingStudy.extension",
+        "sliceName": "koerpergewicht",
+        "short": "Bildgebungsgrund",
+        "definition": "Bildgebungsgrund aus DICOM-Header",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-gewicht"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ImagingStudy.extension:koerpergroesse",
+        "path": "ImagingStudy.extension",
+        "sliceName": "koerpergroesse",
+        "short": "Bildgebungsgrund",
+        "definition": "Bildgebungsgrund aus DICOM-Header",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-groesse"
             ]
           }
         ]
@@ -1097,6 +1145,20 @@
           ]
         },
         "mustSupport": true
+      },
+      {
+        "id": "ImagingStudy.series.extension",
+        "path": "ImagingStudy.series.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "ImagingStudy.series.extension:modalitaetCT",
@@ -2408,6 +2470,20 @@
           ]
         },
         "mustSupport": true
+      },
+      {
+        "id": "ImagingStudy.series.instance.extension",
+        "path": "ImagingStudy.series.instance.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "ImagingStudy.series.instance.extension:InstanceDetails",

@@ -141,7 +141,7 @@
       ]
     }
   ],
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -156,7 +156,7 @@
       }
     }
   ],
-  "date": "2025-12-19",
+  "date": "2026-06-08",
   "caseSensitive": true,
   "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type",
   "count": 16
