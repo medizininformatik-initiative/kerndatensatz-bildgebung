@@ -1,4 +1,8 @@
 ## {{page-title}}
+**Version: 2026.1.0**
+
+- Feature: Körpergewicht und Größe auf Studienebene über Extension abbildbar mit DE-Basisprofile
+
 **Version: 2026.0.0**
 
 - Changed: Umbenennung in Modul Bildgebung

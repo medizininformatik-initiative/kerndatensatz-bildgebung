@@ -28,10 +28,10 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
   MII_EX_Bildgebung_Groesse named koerpergroesse 0..1 
 * extension[bildgebungsgrund] ^short = "Bildgebungsgrund"
 * extension[bildgebungsgrund] ^definition = "Bildgebungsgrund aus DICOM-Header"
-* extension[koerpergewicht] ^short = "Bildgebungsgrund"
-* extension[koerpergewicht] ^definition = "Bildgebungsgrund aus DICOM-Header"
-* extension[koerpergroesse] ^short = "Bildgebungsgrund"
-* extension[koerpergroesse] ^definition = "Bildgebungsgrund aus DICOM-Header"
+* extension[koerpergewicht] ^short = "Körpergewicht"
+* extension[koerpergewicht] ^definition = "Körpergewicht aus DICOM-Header"
+* extension[koerpergroesse] ^short = "Körpergröße"
+* extension[koerpergroesse] ^definition = "Körpergröße aus DICOM-Header"
 * status MS
 * status ^short = "Status"
 * status ^definition = "Angemeldet | Verfügbar | Abgebrochen | fehlerhafte Eingabe | Unbekannt"
