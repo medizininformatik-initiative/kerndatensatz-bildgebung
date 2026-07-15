@@ -16,5 +16,5 @@ Title: "MII Example Bildgebung Radiologische Beobachtung"
 * bodySite.extension[$bodyStructure].valueReference = Reference(BodyStructure/mii-exa-bildgebung-koerperstruktur)
 * hasMember = Reference(Observation/ObsExample)
 * derivedFrom = Reference(ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct)
-* component.code = $loinc#10157-6 "History of family member diseases Narrative"
+* component.code = $loinc#10157-6 "History of family member diseases note"
 * component.valueBoolean = true
