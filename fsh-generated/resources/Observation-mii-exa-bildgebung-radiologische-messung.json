@@ -1,10 +1,15 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-bildgebung-radiologische-beobachtung",
+  "id": "mii-exa-bildgebung-radiologische-messung",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung"
     ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 4.2,
+    "unit": "millimeter"
   },
   "extension": [
     {
@@ -53,9 +58,9 @@
   "code": {
     "coding": [
       {
-        "code": "32422-8",
-        "system": "http://loinc.org",
-        "display": "Physical findings of Breast"
+        "code": "439984002",
+        "system": "http://snomed.info/sct",
+        "display": "Diameter of structure by imaging measurement (observable entity)"
       }
     ]
   },
@@ -63,7 +68,6 @@
     "reference": "Patient/PatExample"
   },
   "issued": "2024-07-19T12:03:30+02:00",
-  "valueString": "microcalcifications in the upper outer quadrant in the left breast",
   "hasMember": [
     {
       "reference": "Observation/ObsExample"
@@ -74,18 +78,13 @@
       "reference": "ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct"
     }
   ],
-  "component": [
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "10157-6",
-            "system": "http://loinc.org",
-            "display": "History of family member diseases note"
-          }
-        ]
-      },
-      "valueBoolean": true
-    }
-  ]
+  "method": {
+    "coding": [
+      {
+        "code": "272391002",
+        "system": "http://snomed.info/sct",
+        "display": "Measurement technique (qualifier value)"
+      }
+    ]
+  }
 }
