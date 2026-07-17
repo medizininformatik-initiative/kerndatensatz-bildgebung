@@ -48,9 +48,9 @@
     {
       "coding": [
         {
-          "code": "imaging",
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "display": "Imaging"
+          "code": "122869004",
+          "system": "http://snomed.info/sct",
+          "display": "Measurement procedure (procedure)"
         }
       ]
     }

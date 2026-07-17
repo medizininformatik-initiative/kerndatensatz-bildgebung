@@ -7,7 +7,7 @@ Title: "MII Example Bildgebung Radiologische Messung"
 * extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid].valueId = "example-sop-instance-uid"
 * partOf = Reference(Procedure/mii-exa-bildgebung-radiologische-befundungsprozedur)
 * status = #final
-* category = $observation-category#imaging "Imaging"
+* category = $SCT#122869004 "Measurement procedure (procedure)"
 * code = $SCT#439984002 "Diameter of structure by imaging measurement (observable entity)"
 * subject = Reference(Patient/PatExample)
 * issued = "2024-07-19T12:03:30+02:00"

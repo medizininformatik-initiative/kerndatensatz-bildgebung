@@ -3,12 +3,12 @@
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatzmoduls **Bildgebung** der Medizininformatik-Initiative.
 Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
-| Veröffentlichung |                 |
-| ---------------- | --------------- |
-| Datum            | 08.06.2026      |
-| Version          | 2026.1.0        |
-| Status           | Active          |
-| Realm            | DE              |
+| Veröffentlichung |            |
+| ---------------- | ---------- |
+| Datum            | 17.07.2026 |
+| Version          | 2026.2.0   |
+| Status           | Active     |
+| Realm            | DE         |
 
 ## Inhaltsverzeichnis
 
@@ -42,12 +42,13 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 - Matthias May (Universitätsklinikum Erlangen)
 - Daniel Pinto dos Santos (Universitätsklinikum Köln, Universitätsklinikum Frankfurt)
 - Tobias Pogarell (Universitätsklinikum Erlangen)
-- Lucas Scherer (Universitätsklinikum Erlangen)
+- Lucas Mundo (Universitätsklinikum Erlangen)
 - Daniel Schmitz (Universitätsmedizin Mainz)
 - Friederike Schneider (Mint Medical GmbH)
 - Damian Wrobel (Mint Medical GmbH)
 
 ## Copyright-Hinweis, Nutzungshinweise
+
 <p>
     © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin. <br>
     Dieses Werk ist lizenziert unter der 

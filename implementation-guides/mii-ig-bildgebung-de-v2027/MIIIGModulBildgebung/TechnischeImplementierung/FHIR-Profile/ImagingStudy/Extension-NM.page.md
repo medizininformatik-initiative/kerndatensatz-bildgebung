@@ -11,36 +11,36 @@ Eine Besonderheit der Nuklearmedizin ist die Verwendung eines Radiopharmakons, d
 Diese Informationen über das Radiopharmakon liegen verschachtelt in dem DICOM-Tag RadiopharmaceuticalInformationSequence (0054,0016) vor, sogenannte nested DICOM-Tags.
 
 Beispiel des Zugriffs auf ein nested DICOM-Tag mit Python aus einer DICOM-Schicht(Instanz):
-    
+
     RadiopharmaceuticalStartTime = layer['RadiopharmaceuticalInformationSequence'][0]['RadiopharmaceuticalStartTime'].value
 
 Implementation:
-    
-* Radiopharmakon (ValueSet mit Codes: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html):
-Das Radiopharmakon kann unter Bestimmung des Codes „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0304“ (Radiopharmaceutical Code Sequence)  → „0008,0100“ (Code Value) als Code in den Klarnamen umgewandelt werden.
-Ist dieser nicht vorhanden, kann der Wert direkt aus dem Tag „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0304“ (Radiopharmaceutical Code Sequence)  → „0008,0104“ (Code Meaning) extrahiert werden. Falls unter Umständen sich der Klarname von dem ValueSet unterscheidet, kann ein lokales Mapping am Standort gemacht werden. Alternativ kann bei weiterem Fehlen auch noch das Tag „0054,0016“ (Radiopharmaceutical Information Sequence) → "0018,0031" (Radiopharmaceutical) zu Rate gezogen werden, bitte nur verwenden, falls sich im String konstant der Tracer UND das Radionuklid befinden (siehe Link des Valuesets).
 
-* Radionuklid (ValueSet mit Codes: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_18.html)
-Das Radionuklid kann unter Bestimmung des Codes „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0300“ (Radiopharmaceutical Code Sequence)  → „0008,0100“ (Code Value) als Code in den Klarnamen umgewandelt werden.
-          
-* Tracer-Einwirkzeit:
-Dies ist ein Custom Tag und wird aus der Differenz zwischen den Zeitangaben in Sekunden der Acquisition Time "0008,0032" (oder ähnlichem) und der „0054,0016“ (Radiopharmaceutical Information Sequence) → "0018, 1072" RadiopharmaceuticalStartTime gebildet.
+- Radiopharmakon (ValueSet mit Codes: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html):
+  Das Radiopharmakon kann unter Bestimmung des Codes „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0304“ (Radiopharmaceutical Code Sequence) → „0008,0100“ (Code Value) als Code in den Klarnamen umgewandelt werden.
+  Ist dieser nicht vorhanden, kann der Wert direkt aus dem Tag „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0304“ (Radiopharmaceutical Code Sequence) → „0008,0104“ (Code Meaning) extrahiert werden. Falls unter Umständen sich der Klarname von dem ValueSet unterscheidet, kann ein lokales Mapping am Standort gemacht werden. Alternativ kann bei weiterem Fehlen auch noch das Tag „0054,0016“ (Radiopharmaceutical Information Sequence) → "0018,0031" (Radiopharmaceutical) zu Rate gezogen werden, bitte nur verwenden, falls sich im String konstant der Tracer UND das Radionuklid befinden (siehe Link des Valuesets).
 
-* Halbwertszeit ["0018, 1075" RadionuclideHalfLife] in Sekunden [s]
+- Radionuklid (ValueSet mit Codes: https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_18.html)
+  Das Radionuklid kann unter Bestimmung des Codes „0054,0016“ (Radiopharmaceutical Information Sequence) → „0054,0300“ (Radiopharmaceutical Code Sequence) → „0008,0100“ (Code Value) als Code in den Klarnamen umgewandelt werden.
+- Tracer-Einwirkzeit:
+  Dies ist ein Custom Tag und wird aus der Differenz zwischen den Zeitangaben in Sekunden der Acquisition Time "0008,0032" (oder ähnlichem) und der „0054,0016“ (Radiopharmaceutical Information Sequence) → "0018, 1072" RadiopharmaceuticalStartTime gebildet.
 
-* Gesamte Radionukliddosis ["0018, 1074" RadionuclideTotalDose] in Becquerel [Bq] 
+- Halbwertszeit ["0018, 1075" RadionuclideHalfLife] in Sekunden [s]
 
-* Skalierungseinheit ["0054,1001" Units]
-Falls Units nicht vorhanden oder leer, kann das Tag "0028,1054" (RescaleType) verwendet werden.
+- Gesamte Radionukliddosis ["0018, 1074" RadionuclideTotalDose] in _Megabecquerel [MBq]_ (Achtung: Bei PT dagegen wird normalerweise die Einheit Bq verwendet!)
+
+- Skalierungseinheit ["0054,1001" Units]
+  Falls Units nicht vorhanden oder leer, kann das Tag "0028,1054" (RescaleType) verwendet werden.
 
 @```
 from
-    StructureDefinition
+StructureDefinition
 where
-    url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm'
+url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm'
 select
-    Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
-```
+Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
+
+````
 
 ### Inhalt
 
@@ -74,7 +74,7 @@ select
   <tab title="Link">{{link}}</tab>
 </tabs>
 
---- 
+---
 **Beispiele**
 
 | Hinweis |  |
@@ -86,3 +86,4 @@ Beispiel einer ImagingStudy-Ressource mit der Extension für PET Metadaten inkl.
 {{json:fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-nm.json}}
 
 ---
+````
