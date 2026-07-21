@@ -1,7 +1,7 @@
 @startuml
 skinparam Linetype ortho
-skinparam Nodesep 150
-skinparam Ranksep 80
+skinparam Nodesep 380
+skinparam Ranksep 200
 skinparam legendBackgroundColor #white
 
 class Studie <<ImagingStudy>> #LightCyan {}
@@ -17,19 +17,25 @@ package "Befund" {
 
   class GenerischeBeobachtung <<Observation>> {}
 
+  class RadiologischeMessung <<Observation>> {}
+
   class SemistrukturiertesBefunddokument <<Composition>>{}
 }
 
 Befundbericht "0..1" -- "0..*" Anforderung: DR.basedOn
 Befundbericht "1..1" -- "0..*" GenerischeBeobachtung: DR.result
+Befundbericht "1..1" -- "0..*" RadiologischeMessung: DR.result
 Befundbericht "0..*" -l- "0..*" Studie: DR.imagingStudy
-Befundbericht "1..1" -u- "0..*" Befundbericht: DR.supportingInfo (R5!)
+Befundbericht "1..1" -u- "0..*" Befundbericht
 
 Empfehlung "0..*" -- "0..*" Befundbericht: CP.supportingInfo
 
 GenerischeBeobachtung "0..*" -- "0..1" Körperstruktur: Obs.bodyStructure (R5!)
 GenerischeBeobachtung "1..1" -u- "0..*" GenerischeBeobachtung: Obs.hasMember
 GenerischeBeobachtung "0..*" -- "0..*" Studie: Obs.derivedFrom
+RadiologischeMessung "0..*" -- "0..1" Körperstruktur: Obs.bodyStructure (R5!)
+RadiologischeMessung "1..1" -u- "0..*" RadiologischeMessung: Obs.hasMember
+RadiologischeMessung "0..*" -- "0..*" Studie: Obs.derivedFrom
 
 Studie "0..*" -- "0..*" Anforderung: ISt.basedOn
 

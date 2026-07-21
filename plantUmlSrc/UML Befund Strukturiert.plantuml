@@ -54,13 +54,34 @@ package <<Befund>> {
     + {field} Studienbezug: Reference(ImagingStudy) [0..*]
     + erweiterte Beschreibung: component [0..*]
   }
+
+  class RadiologischeMessung <<Observation>> {
+    + {field} Extension: Bildnummer: DICOM Instance UID (Series) [0..1]
+    + {field} Extension: Schichtposition: DICOM Instance UID (SOP Instance) [0..1]
+    + {field} Extension: Erweiterte Körperstruktur: Reference(BodyStructure) [0..1]
+    + {field} Teil einer Befundungsprozedur: Reference(Procedure) [0..*]
+    + Status: Coding [1..1]
+    + Messkategorie: CodeableConcept [0..*]
+    + Messstyp: CodeableConcept [1..1]
+    + {field} Personen-Identifikation: Reference(Patient) [1..1]
+    + Messzeitpunkt: issued [0..1]
+    + Beschreibung: value[x] [0..1]
+    + {field} Körperregion(bodySite): CodeableConcept [0..1]
+    + {field} weitere Messung: Reference(Observation) [0..*]
+    + {field} Studienbezug: Reference(ImagingStudy) [0..*]
+    + Messungsbestandteile: component [0..*]
+    + Messmethode: CodeableConcept [0..1]
+  }
 }
 
 Befundbericht "1..1" -u- "0..*" Befundbericht: DR.supportingInfo (R5!)
 Befundbericht "1..1" -- "0..*" GenerischeBeobachtung: DR.result
+Befundbericht "1..1" -- "0..*" RadiologischeMessung: DR.result
 
 Empfehlung "0..*" -- "0..*" Befundbericht: CP.supportingInfo 
 
 GenerischeBeobachtung "1..1" -u- "0..*" GenerischeBeobachtung: Obs.hasMember
+RadiologischeMessung "1..1" -u- "0..*" RadiologischeMessung: Obs.hasMember
 GenerischeBeobachtung "0..*" -- "0..1" Körperstruktur: Obs.bodyStructure (R5!)
+RadiologischeMessung "0..*" -- "0..1" Körperstruktur: Obs.bodyStructure (R5!)
 @enduml

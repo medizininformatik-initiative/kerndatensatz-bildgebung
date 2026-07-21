@@ -17,6 +17,8 @@ package "DICOM-Header" {
   + Anzahl an enthaltenen SOP Instanzen: unsignedInt [0..1]
   + {field} Bildgebungsprozedur: Reference(Procedure) [0..1]
   + Extension: Bildgebungsgrund: string [0..1]
+  + {field} Extension: Körpergröße: Reference(Observation) [0..1]
+  + {field} Extension: Körpergewicht: Reference(Observation) [0..1]
   + {field} Indikation: Reference(Condition|Observation) [0..*]
   + Studien-Beschreibung: string [0..1]
   + DICOM-Serien: DICOM-Serie [0..*]

@@ -17,6 +17,8 @@ package "DICOM-Header" {
   + Anzahl an enthaltenen SOP Instanzen: unsignedInt [0..1]
   + {field} Bildgebungsprozedur: Reference(Procedure) [0..1]
   + Extension: Bildgebungsgrund: string [0..1]
+  + {field} Extension: Körpergröße: Reference(Observation) [0..1]
+  + {field} Extension: Körpergewicht: Reference(Observation) [0..1]
   + {field} Indikation: Reference(Condition|Observation) [0..*]
   + Studien-Beschreibung: string [0..1]
   + DICOM-Serien: DICOM-Serie [0..*]
@@ -187,6 +189,24 @@ package "Befund" {
     + {field} Studienbezug: Reference(ImagingStudy) [0..*]
     + erweiterte Beschreibung: component [0..*]
     }
+
+    class RadiologischeMessung <<Observation>> {
+    + {field} Extension: Bildnummer: DICOM Instance UID (Series) [0..1]
+    + {field} Extension: Schichtposition: DICOM Instance UID (SOP Instance) [0..1]
+    + {field} Extension: Erweiterte Körperstruktur: Reference(BodyStructure) [0..1]
+    + {field} Teil einer Befundungsprozedur: Reference(Procedure) [0..*]
+    + Status: Coding [1..1]
+    + Messkategorie: CodeableConcept [0..*]
+    + Messstyp: CodeableConcept [1..1]
+    + {field} Personen-Identifikation: Reference(Patient) [1..1]
+    + Messzeitpunkt: issued [0..1]
+    + Beschreibung: value[x] [0..1]
+    + {field} Körperregion(bodySite): CodeableConcept [0..1]
+    + {field} weitere Messung: Reference(Observation) [0..*]
+    + {field} Studienbezug: Reference(ImagingStudy) [0..*]
+    + Messungsbestandteile: component [0..*]
+    + Messmethode: CodeableConcept [0..1]
+    }
   }
 
   package "Semistruktur"{
@@ -251,6 +271,7 @@ Befundbericht "0..1" -d- "0..*" Anforderung: DR.basedOn
 Befundbericht "0..*" -- "1..1" "Patient:in": DR.subject
 Befundbericht "0..*" -- "0..1" Versorgungsstellenkontakt: DR.encounter
 Befundbericht "1..1" -- "0..*" GenerischeBeobachtung: DR.result
+Befundbericht "1..1" -- "0..*" RadiologischeMessung: DR.result
 Befundbericht "0..*" -l- "1..*" Studie: DR.imagingStudy
 Befundbericht "1..1" -u- "0..*" Befundbericht: DR.supportingInfo (R5!)
 Befundbericht "0..1" -- "1..1" Befundungsprozedur: DR.supportingInfo (R5!)
@@ -261,6 +282,10 @@ GenerischeBeobachtung "0..*" -- "0..1" Körperstruktur: Obs.bodyStructure (R5!)
 GenerischeBeobachtung "0..*" -- "0..1" Befundungsprozedur: Obs.partOf
 GenerischeBeobachtung "1..1" -u- "0..*" GenerischeBeobachtung: Obs.hasMember
 GenerischeBeobachtung "0..*" -- "0..*" Studie: Obs.derivedFrom
+RadiologischeMessung "0..*" -- "0..1" Körperstruktur: Obs.bodyStructure (R5!)
+RadiologischeMessung "0..*" -- "0..1" Befundungsprozedur: Obs.partOf
+RadiologischeMessung "1..1" -u- "0..*" RadiologischeMessung: Obs.hasMember
+RadiologischeMessung "0..*" -- "0..*" Studie: Obs.derivedFrom
 
 Studie "0..*" -- "0..1" Versorgungsstellenkontakt: ISt.encounter
 Studie "0..*" -- "1..1" "Patient:in": ISt.subject
