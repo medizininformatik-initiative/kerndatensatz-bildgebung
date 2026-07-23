@@ -1,0 +1,110 @@
+{
+  "modul": "bildgebung",
+  "ansatz": "B (Marcel / forschungsgruppe-digital-health, deutsch führend)",
+  "erstellt": "2026-07-23",
+  "quelle": {
+    "source_repo_url": "https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung",
+    "default_branch": "main",
+    "source_rendered_ig_url": "https://simplifier.net/guide/mii-ig-modul-bildgebung",
+    "source_rendered_ig_url_hinweis": "TODO:REVIEW — exakte Simplifier-Guide-URL nicht verifiziert. Maßgebliche Narrativ-Quelle ist stattdessen der IM REPO eingecheckte gerenderte Guide unter implementation-guides/mii-ig-bildgebung-de-v2026/ (Simplifier-Rendersource). Die v2027-Variante ist ein Entwurf; migriert wurde v2026 (aktuelle veröffentlichte Fassung, Version 2026.2.0 laut sushi-config und Index.page.md)."
+  },
+  "module_metadata": {
+    "id": "mii-ig-bildgebung",
+    "name": "MII_IG_Bildgebung",
+    "title_aus_guide": "Medizininformatik Initiative - Implementation Guide - Modul Bildgebung",
+    "canonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung",
+    "packageId": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
+    "version_sushi_config": "2026.2.0",
+    "version_package_json": "2026.1.0",
+    "version_rulesets_fsh": "2026.1.0",
+    "version_index_page": "2026.2.0",
+    "version_hinweis": "TODO:REVIEW — Versions-Inkonsistenz in der Quelle: sushi-config.yaml und Index.page.md = 2026.2.0; package.json und input/fsh/rulesets/version.fsh = 2026.1.0. Ziel-Version (einzige menschliche Entscheidung) auf 2026.2.0 gesetzt = dominante Quelle (sushi-config treibt den IG-Build). FSH unverändert (Guardrail 1).",
+    "status": "active",
+    "releaseLabel": "ci-build",
+    "fhirVersion": "4.0.1",
+    "publisher": {
+      "name": "Medizininformatik Initiative",
+      "url": "https://www.medizininformatik-initiative.de/"
+    },
+    "dependencies": {
+      "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.x",
+      "de.medizininformatikinitiative.kerndatensatz.medikation": "2026.0.x",
+      "de.medizininformatikinitiative.kerndatensatz.base": "2026.0.x",
+      "hl7.fhir.uv.extensions.r4": "5.2.0",
+      "fhir.dicom": "2025.3.20250714",
+      "hl7.fhir.r4.core": "4.0.1",
+      "de.basisprofil.r4": "1.5.x"
+    },
+    "dependencies_floating_pins_hinweis": "TODO:REVIEW — .x-Pins (meta/medikation/base 2026.0.x, basisprofil.r4 1.5.x) sollen laut Spec §2.1 auf konkrete Versionen festgelegt werden. Für den IG-Build unverändert übernommen (Bestandsschutz), Konkretisierung ist fachliche/Release-Entscheidung."
+  },
+  "artefakte": {
+    "profiles": [
+      {"id": "mii-pr-bildgebung-bildgebungsstudie", "name": "MII_PR_Bildgebung_Bildgebungsstudie", "quelle": "input/fsh/profiles/Profile-ImagingStudy.fsh"},
+      {"id": "mii-pr-bildgebung-radiologischer-befund", "name": "MII_PR_Bildgebung_Radiologischer_Befund", "quelle": "input/fsh/profiles/Profile-DiagnosticReport.fsh"},
+      {"id": "mii-pr-bildgebung-radiologische-beobachtung", "name": "MII_PR_Bildgebung_Radiologische_Beobachtung", "quelle": "input/fsh/profiles/Profile-Observation.fsh"},
+      {"id": "mii-pr-bildgebung-radiologische-messung", "name": "MII_PR_Bildgebung_Radiologische_Messung", "quelle": "input/fsh/profiles/Profile-Observation-Measurement.fsh"},
+      {"id": "mii-pr-bildgebung-koerperstruktur", "name": "MII_PR_Bildgebung_Koerperstruktur", "quelle": "input/fsh/profiles/Profile-BodyStructure.fsh"},
+      {"id": "mii-pr-bildgebung-semistrukt-befundbericht", "name": "MII_PR_Bildgebung_Semistrukturierter_Befundbericht", "quelle": "input/fsh/profiles/Profile-Composition.fsh"},
+      {"id": "mii-pr-bildgebung-anforderung-bildgebung", "name": "MII_PR_Bildgebung_Anforderung", "quelle": "input/fsh/profiles/Profile-ServiceRequest.fsh"},
+      {"id": "mii-pr-bildgebung-bildgebungsprozedur", "name": "MII_PR_Bildgebung_Bildgebungsprozedur", "quelle": "input/fsh/profiles/Profile-ImagingProcedure.fsh"},
+      {"id": "mii-pr-bildgebung-radiologische-befundungsprozedur", "name": "MII_PR_Bildgebung_Radiologische_Befundungsprozedur", "quelle": "input/fsh/profiles/Profile-ReadProcedure.fsh"},
+      {"id": "mii-pr-bildgebung-TNM-radiologische-befundungsprozedur", "name": "MII_PR_Bildgebung_TNM_Radiologische_Befundungsprozedur", "quelle": "input/fsh/profiles/Profile-TNMRadiologicalReadProcedure.fsh"},
+      {"id": "mii-pr-bildgebung-kontrastmittelgabe", "name": "MII_PR_Bildgebung_Kontrastmittelgabe", "quelle": "input/fsh/profiles/Profile-ConstrastAdministration.fsh"},
+      {"id": "mii-pr-bildgebung-geraet", "name": "MII_PR_Bildgebung_Geraet", "quelle": "input/fsh/profiles/Profile-Device.fsh"},
+      {"id": "mii-pr-bildgebung-behandlungsempfehlung", "name": "MII_PR_Bildgebung_Behandlungsempfehlung", "quelle": "input/fsh/profiles/Profile-CarePlan.fsh"}
+    ],
+    "extensions": [
+      {"id": "mii-ex-bildgebung-modalitaet-mr", "quelle": "input/fsh/extensions/Extension-Modality-MR.fsh"},
+      {"id": "mii-ex-bildgebung-modalitaet-ct", "quelle": "input/fsh/extensions/Extension-Modality-CT.fsh"},
+      {"id": "mii-ex-bildgebung-modalitaet-us", "quelle": "input/fsh/extensions/Extension-Modality-US.fsh"},
+      {"id": "mii-ex-bildgebung-modalitaet-nm", "quelle": "input/fsh/extensions/Extension-Modality-NM.fsh"},
+      {"id": "mii-ex-bildgebung-modalitaet-pt", "quelle": "input/fsh/extensions/Extension-Modality-PT.fsh"},
+      {"id": "mii-ex-bildgebung-modalitaet-mg-cr-dx", "quelle": "input/fsh/extensions/Extension-Modality-MG_CR_DX.fsh"},
+      {"id": "mii-ex-bildgebung-instanz-details", "quelle": "input/fsh/extensions/Extension-Instance-Details.fsh"},
+      {"id": "mii-ex-bildgebung-kontrastmittel", "quelle": "input/fsh/extensions/Extension-series-contrast.fsh"},
+      {"id": "mii-ex-bildgebung-serie-schichtdicke", "quelle": "input/fsh/extensions/Extension-series-sliceThickness.fsh"},
+      {"id": "mii-ex-bildgebung-serie-uid", "quelle": "input/fsh/extensions/Extension-SeriesUID.fsh"},
+      {"id": "mii-ex-bildgebung-sop-instanz-uid", "quelle": "input/fsh/extensions/Extension-SOPInstanceUID.fsh"},
+      {"id": "mii-ex-bildgebung-bildgebungsgrund", "quelle": "input/fsh/extensions/Extension-ImagingReason.fsh"},
+      {"id": "mii-ex-bildgebung-groesse", "quelle": "input/fsh/extensions/Extension-Patientheight.fsh"},
+      {"id": "mii-ex-bildgebung-gewicht", "quelle": "input/fsh/extensions/Extension-Patientweight.fsh"}
+    ],
+    "logical_models": [
+      {"id": "mii-lm-bildgebung", "quelle": "input/fsh/logicals/LogicalModelBildgebung.fsh"}
+    ],
+    "codesystems": [
+      {"id": "mii-cs-bildgebung-scanning-sequence", "quelle": "input/fsh/codesystems/CodeSystem-MR-Scanning-Sequence.fsh"},
+      {"id": "mii-cs-bildgebung-scanning-sequence-variant", "quelle": "input/fsh/codesystems/CodeSystem-MR-Scanning-Sequence_Variant.fsh"},
+      {"id": "mii-cs-bildgebung-instance-image-type", "quelle": "input/fsh/codesystems/CodeSystem-Image-Type.fsh"},
+      {"id": "mii-cs-bildgebung-series-type", "quelle": "input/fsh/codesystems/CodeSystem-Series-Type.fsh"},
+      {"id": "mii-cs-bildgebung-transducer-type", "quelle": "input/fsh/codesystems/CodeSystem-US-Transducer-Type.fsh"}
+    ],
+    "valuesets_count": 23,
+    "valuesets_quelle": "input/fsh/valuesets/ (23 ValueSets, IDs mit Präfix mii-vs-bildgebung-*)",
+    "capability_statements": [
+      {"id": "mii-cps-bildgebung-capabilitystatement", "quelle": "input/fsh/capabilitystatements/CapabilityStatement.fsh"}
+    ],
+    "examples_instances_count": 20,
+    "examples_quelle": "input/fsh/instances/ (20 Example-Instanzen; bleiben unverändert, Guardrail 1)"
+  },
+  "narrativ_struktur": {
+    "quelle": "implementation-guides/mii-ig-bildgebung-de-v2026/MIIIGModulBildgebung/",
+    "handgeschriebene_seiten": [
+      {"quelle": "Index.page.md", "ziel": "input/pagecontent/index.md", "typ": "handgeschrieben"},
+      {"quelle": "BeschreibungModul.page.md", "ziel": "input/pagecontent/index.md (Abschnitt) / eigener Abschnitt", "typ": "handgeschrieben"},
+      {"quelle": "KontextimGesamtprojektBezgezuanderenModulen.page.md", "ziel": "input/pagecontent/context.md", "typ": "handgeschrieben"},
+      {"quelle": "Referenzen.page.md", "ziel": "input/pagecontent/references.md", "typ": "handgeschrieben"},
+      {"quelle": "Release-Notes.page.md", "ziel": "input/pagecontent/changes.md", "typ": "handgeschrieben"},
+      {"quelle": "AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md", "ziel": "input/pagecontent/use-cases.md", "typ": "handgeschrieben"},
+      {"quelle": "AnwendungsflleInformationsmodell/Datensaetze_inkl._Beschreibungen.page.md", "ziel": "input/pagecontent/data-sets.md", "typ": "handgeschrieben, FQL {{tree:MII_LM_Bildgebung}}"},
+      {"quelle": "AnwendungsflleInformationsmodell/UML/Index.page.md + UML_Meta + UML_Befund", "ziel": "input/pagecontent/uml.md", "typ": "handgeschrieben, {{render:...png}} Bilder"},
+      {"quelle": "TechnischeImplementierung/Conformance.page.md", "ziel": "input/pagecontent/conformance.md", "typ": "handgeschrieben"},
+      {"quelle": "TechnischeImplementierung/CapabilityStatement.page.md", "ziel": "input/pagecontent/conformance.md (Abschnitt Such-API) / Artefaktseite", "typ": "handgeschrieben, {{render:canonical}}"},
+      {"quelle": "TechnischeImplementierung/Terminologien.page.md", "ziel": "input/pagecontent/terminologien.md", "typ": "handgeschrieben"}
+    ],
+    "generierte_artefakt_subseiten": {
+      "anzahl": 42,
+      "hinweis": "TechnischeImplementierung/FHIR-Profile/**.page.md sind pro-Artefakt-Seiten mit FQL-/Render-Direktiven ({{tree}}, {{xml}}, {{json}}, <tabs>, <fql>). Der IG Publisher generiert Artefaktseiten automatisch aus den StructureDefinitions. Fachliche Prosa dieser Seiten (z.B. DiagnosticReport 4-Stufen-Modell, Extension-Erklärungen der DICOM-Tags) wird als StructureDefinition-<id>-intro.md-Fragmente erhalten, um sie über dem generierten Baum anzuzeigen. Siehe migration-report.md."
+    }
+  }
+}

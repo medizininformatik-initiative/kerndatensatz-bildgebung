@@ -1,0 +1,14 @@
+# Bekannte / abgenommene QA-Hinweise (HL7 IG Publisher).
+# Matching ist Glob (KEIN Regex): %text% = enthaelt, text% = beginnt mit,
+# %text = endet mit, text = exakt; case-insensitiv.
+
+== Suppressed Messages ==
+
+# i18n-Sprach-Mismatch de-DE vs. de: Die realen FSH-Ressourcen fuehren
+# Translation-Extensions mit dem BCP-47-Subtag "de-DE" (input/fsh/rulesets/translation.fsh),
+# waehrend der IG (i18n-default-lang) auf "de" konfiguriert ist. de-DE ist ein
+# Subtag von de (BCP 47), die Meldung ist rein kosmetisch und durch das
+# i18n-Feature bedingt. FSH bleibt unveraendert (Bestandsschutz, Guardrail 1).
+# Auf das locale-stabile Token matchen (Publisher gibt die Meldung je nach
+# JVM-Locale deutsch oder englisch aus):
+%(de-DE)%

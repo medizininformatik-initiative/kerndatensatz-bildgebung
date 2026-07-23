@@ -1,0 +1,45 @@
+name: Validate IG
+
+on:
+  pull_request:
+  push:
+    # Migrations-Pilot bildgebung (Ansatz B): Nur die Migrations-Branches; die
+    # bestehende Modul-CI (main.yml) auf main/dev bleibt unberührt (Spec §5a).
+    # PR-Validierung übernimmt der pull_request-Trigger.
+    branches: [ "hl7-ig-build", "hl7-ig-build-2026-07-23" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Etablierte Community-Action (führt SUSHI + IG Publisher aus, inkl. Java/Heap).
+      # Hinweis: Drittanbieter, NICHT von GitHub/HL7 zertifiziert. Version regelmäßig prüfen:
+      # https://github.com/marketplace/actions/fhir-ig-action
+      - name: Build IG (SUSHI + IG Publisher)
+        uses: qligier/fhir-ig-action@v0.3.0
+        with:
+          # qligier/fhir-ig-action@v0.3.0 kennt NUR die Inputs `sushi` und `ig-publisher`.
+          # sushi defaultet auf 'false' -> ohne diesen Input: "Cannot run program sushi".
+          sushi: latest
+          ig-publisher: latest
+
+      - name: Upload QA & Package
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ig-output
+          path: |
+            output/qa.html
+            output/qa.txt
+            output/full-ig.zip
+            output/package.tgz
+
+# --- Alternative ohne Drittanbieter-Action: lokal/CI via ./_genonce.sh
+#     (SUSHI + HL7 IG Publisher publisher.jar direkt). Siehe _genonce.sh.
