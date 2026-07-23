@@ -1,0 +1,18 @@
+# fql-rules.tsv — Mapping-Regeln: Simplifier-/FQL-Direktive -> HL7-IG-Publisher-Aequivalent.
+# Tab-getrennt, 3 Spalten:  LABEL <TAB> ERE-MUSTER <TAB> EMPFEHLUNG
+# Single Source of Truth fuer tools/fql-scan.sh. PER HAND ERWEITERBAR:
+#   - Neue Zeile mit eindeutigem LABEL, einem ERE-Muster (egrep) und einer Empfehlung anfuegen.
+#   - Geschweifte Klammern im Muster als \{ \} schreiben (ERE-Intervall vermeiden).
+#   - Zeilen mit fuehrendem # und Leerzeilen werden ignoriert.
+#   - egrep (ERE) kennt KEIN Lookahead: Muster ueberschneidungsfrei halten, sonst Doppelzaehlung.
+page-title	\{\{page-title\}\}	Entfernen — Seitentitel kommt aus sushi-config (pages:/menu:).
+index-root	\{\{index:root\}\}	Entfernen — Inhaltsverzeichnis/Navigation erzeugt das Template.
+pagelink	\{\{pagelink	[Text](<Typ>-<id>.html) — hint=Artefakt-Name -> id (z.B. MII_PR_X -> mii-pr-x).
+link	\{\{link[:}]	Artefakt-Link [Text](<Typ>-<id>.html).
+render	\{\{render:	Bild ({{render:datei.png|svg|jpg|gif}}) -> nach input/images/ + <img src="datei"> bzw. Markdown-Bild; sonst Ressource/Artefakt/bare-id ({{render:CapabilityStatement}}, {{render:mii-cs-x}}) -> meist entfernen (Artefaktseite wird generiert) ODER {% include <Typ>-<id>-<view>.xhtml %}.
+tree	\{\{tree	{% include <Typ>-<id>-snapshot.xhtml %} (bzw. -dict fuer Element-Woerterbuch / -diff).
+xml	\{\{xml[:}]	{% include <Typ>-<id>-xml.xhtml %} (auch {{xml:Beispiel}}).
+json	\{\{json[:}]	{% include <Typ>-<id>-json-html.xhtml %} (auch {{json:Beispiel}}).
+fql-tag	<fql	Element-Tabelle: {% include <Typ>-<id>-dict.xhtml %}; Metadaten(url/status/version): entfaellt (Header generiert); sonst statische Tabelle oder Liquid ueber site.data.
+fql-at	@```	Simplifier-FQL-Codeblock: wie <fql> behandeln.
+tabs	</?tab	<tabs>/<tab> (Darstellung/XML/JSON): durch die jeweiligen {% include %}-Fragmente ersetzen.

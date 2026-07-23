@@ -1,0 +1,46 @@
+name: Publish IG to GitHub Pages
+
+on:
+  push:
+    # Migrations-Pilot bildgebung (Ansatz B): Publikation NUR aus dem datierten
+    # Migrations-Branch. dev/master/main bleiben unberührt (MIGRATION.md §11,
+    # Spec §5a.3). Pages muss zusätzlich (Admin) auf Source = GitHub Actions
+    # gestellt werden.
+    branches: [ "hl7-ig-build-2026-07-23" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build IG (SUSHI + IG Publisher)
+        uses: qligier/fhir-ig-action@v0.3.0   # Community-Action, nicht zertifiziert
+        with:
+          # qligier/fhir-ig-action@v0.3.0 kennt NUR die Inputs `sushi` und `ig-publisher`.
+          # sushi defaultet auf 'false' -> ohne diesen Input: "Cannot run program sushi".
+          sushi: latest
+          ig-publisher: latest
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: output   # gerendertes IG (HTML), inkl. /de/ und /en/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

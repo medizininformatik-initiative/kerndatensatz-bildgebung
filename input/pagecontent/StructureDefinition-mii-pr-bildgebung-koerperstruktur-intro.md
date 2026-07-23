@@ -1,0 +1,3 @@
+## Körperstruktur
+
+Diese BodyStructure-Ressource wird verwendet, um die Körperstruktur, die in einer Observation-Ressource befundet wird, codiert abzubilden. Dazu wird hier unterteilt in die Morphologie, die Lokalisation und die Lage im Körper. Das hinterlegte CodeSystem von locationQualifier in R4 ist allerdings noch nicht ausreichend granular, um hier eine exakte Angabe darzustellen.

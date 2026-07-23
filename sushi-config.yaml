@@ -4,11 +4,18 @@ FSHOnly: false
 applyExtensionMetadataToRoot: false
 id: mii-ig-bildgebung
 name: MII_IG_Bildgebung
+title: "Medizininformatik Initiative - Modul Bildgebung"
+description: "Modul Bildgebung des MII-Kerndatensatzes. FHIR-Repräsentation zur Dokumentation radiologischer Bildgebung und Befundung aller gängigen Modalitäten (deutsch geführt, HL7 IG Publisher)."
 status: active
 version: 2026.2.0
 packageId: de.medizininformatikinitiative.kerndatensatz.bildgebung
 copyrightYear: 2024+
 releaseLabel: ci-build
+license: CC-BY-4.0
+jurisdiction: urn:iso:std:iso:3166#DE "Germany"
+# Sprachführung: Deutsch ist führend/verbindlich (KDS-Governance), Englisch optional.
+# language: de (NICHT de-DE), passend zur i18n-Mechanik des IG Publishers.
+language: de
 publisher:
   name: Medizininformatik Initiative
   url: https://www.medizininformatik-initiative.de/
@@ -21,9 +28,62 @@ dependencies:
   hl7.fhir.r4.core: 4.0.1
   de.basisprofil.r4: 1.5.x
 
+# --- Mehrsprachigkeit: deutsch führend, englisch optional ---
+parameters:
+  i18n-default-lang: de
+  i18n-lang:
+    - en
+  translation-sources:
+    - input/translations/en
+  apply-contact: "true"
+  apply-jurisdiction: "true"
+  apply-publisher: "true"
+  autoload-resources: "true"
+  shownav: "true"
+
+# --- Narrative Seiten (deutsch) ---
+pages:
+  index.md:
+    title: "Start"
+  use-cases.md:
+    title: "Anwendungsfälle"
+  data-sets.md:
+    title: "Datensätze und Beschreibungen"
+  uml.md:
+    title: "Informationsmodell (UML)"
+  conformance.md:
+    title: "Konformität"
+  terminologien.md:
+    title: "Terminologien"
+  security-privacy.md:
+    title: "Sicherheit und Datenschutz"
+  context.md:
+    title: "Bezüge zu anderen Modulen"
+  references.md:
+    title: "Referenzen"
+  downloads.md:
+    title: "Downloads"
+  changes.md:
+    title: "Release Notes"
+  translationinfo.md:
+    title: "Hinweise zur Mehrsprachigkeit"
+
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# │  Menü deutsch geführt. EN-Übersetzung via .po wird vom Publisher (noch) nicht gerendert.        │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home: index.html
-  Artifacts: artifacts.html
+  Start: index.html
+  Anwendungsfälle:
+    Szenarien: use-cases.html
+    Datensätze: data-sets.html
+    Informationsmodell: uml.html
+  Konformität:
+    Conformance: conformance.html
+    Terminologien: terminologien.html
+  Sicherheit & Datenschutz: security-privacy.html
+  Bezüge zu anderen Modulen: context.html
+  Referenzen: references.html
+  Artefakte: artifacts.html
+  Downloads: downloads.html
+  Release Notes: changes.html
+  Mehrsprachigkeit: translationinfo.html
