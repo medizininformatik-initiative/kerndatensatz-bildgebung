@@ -15,7 +15,6 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
 * insert Publisher
-* insert LicenseCodeableCCBY40
 * id MS
 * meta MS
 * meta.source MS
