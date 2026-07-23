@@ -1,0 +1,1 @@
+This Composition resource is used to capture semi-structured reports of imaging procedures. It offers the possibility to represent the report not only as free text or in structured form, but also in a semi-structured form, section by section.

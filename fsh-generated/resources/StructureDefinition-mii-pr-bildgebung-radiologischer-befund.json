@@ -139,6 +139,20 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.extension",
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "DiagnosticReport.extension:supportingInfo",
         "path": "DiagnosticReport.extension",
         "sliceName": "supportingInfo",

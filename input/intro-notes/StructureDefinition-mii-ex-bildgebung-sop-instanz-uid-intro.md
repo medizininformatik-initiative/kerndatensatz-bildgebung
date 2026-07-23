@@ -1,0 +1,1 @@
+This extension supplements the Observation resource in order to establish the reference to the image instance from the imaging study. Accordingly, the ID here refers directly to the respective slice image.

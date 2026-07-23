@@ -132,7 +132,7 @@ fabric.properties
 # User-specific stuff
 
 # Generated files
-ig.ini
+# ig.ini is now an authored input for the HL7 FHIR IG Publisher (tracked)
 fsh-generated/includes/fsh-link-references.md
 fsh-generated/includes/menu.xml
 fsh-index.json

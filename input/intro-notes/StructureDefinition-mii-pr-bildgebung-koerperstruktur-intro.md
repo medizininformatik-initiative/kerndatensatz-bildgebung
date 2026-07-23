@@ -1,0 +1,1 @@
+This BodyStructure resource is used to represent the body structure that is documented in an Observation resource in a coded manner. For this purpose, it is subdivided into morphology, localization, and position within the body. However, the CodeSystem for locationQualifier in R4 is not yet sufficiently granular to represent an exact specification here.

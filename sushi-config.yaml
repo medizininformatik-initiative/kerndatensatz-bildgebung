@@ -21,9 +21,75 @@ dependencies:
   hl7.fhir.r4.core: 4.0.1
   de.basisprofil.r4: 1.5.x
 
+# ╭─────────────────────────────────────────────pages─────────────────────────────────────────────╮
+# │  Narrative pages (English = primary language). German translations mirror these filenames      │
+# │  under input/translations/de/pagecontent/.                                                     │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+pages:
+  index.md:
+    title: Home
+
+  module-description.md:
+    title: Module Description
+  context.md:
+    title: Context and Related Modules
+
+  use-cases.md:
+    title: Use Cases and Information Model
+    scenarios.md:
+      title: Application Scenarios
+    datasets.md:
+      title: Datasets and Descriptions
+    uml.md:
+      title: UML Diagrams
+
+  conformance.md:
+    title: Conformance
+  terminology.md:
+    title: Terminology
+  capability-statements.md:
+    title: Capability Statements
+
+  references.md:
+    title: References
+  release-notes.md:
+    title: Release Notes
+  downloads.md:
+    title: Downloads
+
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# │  The menu property will be used to generate input/menu.xml. Labels are English (primary        │
+# │  language); German menu labels are provided via the PO translation file.                       │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Module:
+    Module Description: module-description.html
+    Context and Related Modules: context.html
+  Use Cases:
+    Use Cases and Information Model: use-cases.html
+    Application Scenarios: scenarios.html
+    Datasets and Descriptions: datasets.html
+    UML Diagrams: uml.html
+  Technical Implementation:
+    Conformance: conformance.html
+    Terminology: terminology.html
+    Capability Statements: capability-statements.html
   Artifacts: artifacts.html
+  References: references.html
+  Release Notes: release-notes.html
+  Downloads: downloads.html
+
+# ╭──────────────────────────────────────────parameters────────────────────────────────────────────╮
+# │  i18n configuration (EN primary, DE translation) and IG Publisher parameters.                  │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+parameters:
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes # Custom introductory notes
+  i18n-default-lang: en # Default language
+  i18n-lang:
+    - de # Additional languages
+  translation-sources:
+    - input/translations/de # Path to German translations
+  excludettl: true

@@ -1,0 +1,1 @@
+This MedicationAdministration resource is used to capture the administration of a contrast agent from the RIS via the imaging procedure. This is an alternative to representing it via the ImagingStudy from the DICOM metadata.
