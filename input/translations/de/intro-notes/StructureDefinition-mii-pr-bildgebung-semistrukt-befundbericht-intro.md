@@ -1,0 +1,1 @@
+Diese Composition-Ressource wird verwendet, um semistrukturierte Befundberichte bildgebender Verfahren zu erfassen. Sie bietet die Möglichkeit, den Befund nicht nur als Freitext oder in strukturierter Form, sondern auch in semistrukturierter Form kapitelweise darzustellen.
