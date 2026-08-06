@@ -7,7 +7,7 @@ Description: "Die Extension ermöglicht es, die Körpergröße aus dem entsprech
 //Translation
 * insert Translation(^name, en-US, MII_EX_Imaging_Height)
 * insert Translation(^title, en-US, MII EX Imaging Patient Height)
-* insert Translation(^description, en-US, The extension allows specifying the patient height from the corresponding DICOM tag [0010\,1020] at the study level.)
+* insert Translation(^description, en-US, The extension allows specifying the patient height from the corresponding DICOM tag [0010/1020] at the study level.)
 //Meta
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40

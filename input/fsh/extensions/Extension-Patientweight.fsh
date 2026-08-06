@@ -7,7 +7,7 @@ Description: "Die Extension ermöglicht es, das Körpergewicht aus dem entsprech
 //Translation
 * insert Translation(^name, en-US, MII_EX_Imaging_Weight)
 * insert Translation(^title, en-US, MII EX Imaging Weight)
-* insert Translation(^description, en-US, The extension allows specifying the patient weight from the corresponding DICOM tag [0010\,1030] at the study level.)
+* insert Translation(^description, en-US, The extension allows specifying the patient weight from the corresponding DICOM tag [0010/1030] at the study level.)
 //Meta
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40

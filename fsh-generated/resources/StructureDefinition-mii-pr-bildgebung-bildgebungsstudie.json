@@ -219,8 +219,8 @@
         "id": "ImagingStudy.extension:koerpergewicht",
         "path": "ImagingStudy.extension",
         "sliceName": "koerpergewicht",
-        "short": "Bildgebungsgrund",
-        "definition": "Bildgebungsgrund aus DICOM-Header",
+        "short": "Körpergewicht",
+        "definition": "Körpergewicht aus DICOM-Header",
         "min": 0,
         "max": "1",
         "type": [
@@ -236,8 +236,8 @@
         "id": "ImagingStudy.extension:koerpergroesse",
         "path": "ImagingStudy.extension",
         "sliceName": "koerpergroesse",
-        "short": "Bildgebungsgrund",
-        "definition": "Bildgebungsgrund aus DICOM-Header",
+        "short": "Körpergröße",
+        "definition": "Körpergröße aus DICOM-Header",
         "min": 0,
         "max": "1",
         "type": [
