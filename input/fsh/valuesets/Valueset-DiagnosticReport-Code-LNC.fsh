@@ -8,4 +8,4 @@ Description: "Import the ValueSet for Diagnostic Reports"
 * insert PR_CS_VS_Date
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
-* include codes from system $loinc where SCALE_TYP = $loinc#LP32888-7 and CLASS = $loinc#LP29684-5
+* include codes from system $loinc where SCALE_TYP = $loinc#LP32888-7 and CLASS = $loinc#RAD
