@@ -2,19 +2,6 @@
   "resourceType": "CapabilityStatement",
   "id": "mii-cps-bildgebung-capabilitystatement",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata",
-  "version": "2026.1.0",
-  "publisher": "Medizininformatik Initiative",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.medizininformatik-initiative.de"
-        }
-      ]
-    }
-  ],
-  "date": "2026-06-08",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -29,6 +16,19 @@
       }
     }
   ],
+  "version": "2026.1.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2026-06-08",
   "name": "MII_CPS_Bildgebung_CapabilityStatement",
   "title": "MII CPS Bildgebung CapabilityStatement",
   "status": "active",
