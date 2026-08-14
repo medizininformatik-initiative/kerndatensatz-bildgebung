@@ -139,6 +139,20 @@
         "mustSupport": true
       },
       {
+        "id": "ImagingStudy.extension",
+        "path": "ImagingStudy.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "ImagingStudy.extension:bildgebungsgrund",
         "path": "ImagingStudy.extension",
         "sliceName": "bildgebungsgrund",
@@ -1131,6 +1145,20 @@
           ]
         },
         "mustSupport": true
+      },
+      {
+        "id": "ImagingStudy.series.extension",
+        "path": "ImagingStudy.series.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "ImagingStudy.series.extension:modalitaetCT",
@@ -2444,6 +2472,20 @@
         "mustSupport": true
       },
       {
+        "id": "ImagingStudy.series.instance.extension",
+        "path": "ImagingStudy.series.instance.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "ImagingStudy.series.instance.extension:InstanceDetails",
         "path": "ImagingStudy.series.instance.extension",
         "sliceName": "InstanceDetails",
@@ -2654,7 +2696,7 @@
         },
         "mustSupport": true,
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html"
         }
       },

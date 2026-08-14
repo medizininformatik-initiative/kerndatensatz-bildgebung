@@ -72,6 +72,12 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * value[x] 1.. MS
 * value[x] ^short = "Messwert"
 * value[x] ^definition = "Wert der Analyse"
+* valueCodeableConcept.coding.system 1.. MS
+* valueCodeableConcept.coding.code 1.. MS
+* valueQuantity.unit 1.. MS
+* valueQuantity.system 1.. MS
+* valueQuantity.code 1.. MS
+* valueQuantity
 * bodySite MS
 * bodySite ^short = "Anatomie"
 * bodySite ^definition = "betrachtete Anatomie der Beobachtung"
