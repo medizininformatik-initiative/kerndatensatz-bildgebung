@@ -1,4 +1,11 @@
 ## {{page-title}}
+**Version: 2027.0.0-ballot**
+
+- Feature: Körpergewicht und Größe auf Studienebene über Extension abbildbar mit DE-Basisprofile
+- Changed: SOP-Class Binding vereinfacht auf extensible
+- Added: Spezifikation von Observation.valueQuantity und Observation.valueCodeableConcept
+- Added: Spezifische Observation für radiologische Messungen
+
 **Version: 2026.0.0**
 
 - Changed: Umbenennung in Modul Bildgebung
