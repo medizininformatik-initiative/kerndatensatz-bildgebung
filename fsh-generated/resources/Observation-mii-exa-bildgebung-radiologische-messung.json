@@ -6,11 +6,6 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung"
     ]
   },
-  "valueQuantity": {
-    "system": "http://unitsofmeasure.org",
-    "value": 4.2,
-    "unit": "millimeter"
-  },
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid",
@@ -37,6 +32,11 @@
         "display": "Breast structure (body structure)"
       }
     ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 4.2,
+    "unit": "millimeter"
   },
   "partOf": [
     {
