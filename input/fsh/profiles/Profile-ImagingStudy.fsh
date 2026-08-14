@@ -145,7 +145,7 @@ Description: "Dieses Profil beschreibt die Bildgebung anhand der DICOM-Metadaten
 * series.instance.uid ^short = "Instanz UID"
 * series.instance.uid ^definition = "SOP Instanz UID"
 * series.instance.sopClass MS
-* series.instance.sopClass from $sop-class (required)
+* series.instance.sopClass from $sop-class (extensible)
 * series.instance.sopClass ^short = "SOP Klasse"
 * series.instance.sopClass ^definition = "SOP Klasse"
 * series.instance.number MS
