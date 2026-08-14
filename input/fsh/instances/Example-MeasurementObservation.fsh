@@ -18,6 +18,7 @@ Title: "MII Example Bildgebung Radiologische Messung"
 * valueQuantity.value = 4.2
 * valueQuantity.system = $ucum
 * valueQuantity.unit = "millimeter"
+* valueQuantity.code = #mm
 * method.coding.code = $SCT#272391002
 * method.coding.system = $SCT
 * method.coding.display = "Measurement technique (qualifier value)"
