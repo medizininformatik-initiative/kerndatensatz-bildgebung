@@ -364,13 +364,6 @@ parameters:
     - input/predefined-resources
   path-pages:
     - input/intro-notes # Custom introductory notes
-  # Publisher-2.3.2-Workaround (Migration): der DiagnosticReportRenderer wirft
-  # eine NPE, wenn subject (Patient/PatExample) nicht im IG aufloesbar ist —
-  # das Modul liefert bewusst kein Patient-Beispiel (Person kommt aus dem
-  # Basismodul). no-narrative laesst das Beispiel unveraendert, nur die
-  # generierte Narrative entfaellt. Upstream-Bug, ①-Queue.
-  no-narrative:
-    - DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund
   # ── Multi-language (e.g. kerndatensatz-basis uses the same model) ──────────
   # English is the DEFAULT rendering language, German the additional one. The MII
   # naming conventions prefer German for a conformance resource's description/

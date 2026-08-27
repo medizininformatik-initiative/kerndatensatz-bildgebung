@@ -191,7 +191,7 @@ Comments and criticism are welcome as issues on
 
 © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin. This work is licensed
 under the
-[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+[Creative Commons Attribution 4.0 International License (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
 
 For the usage rights of the underlying FHIR technology, see the FHIR base
 specification.

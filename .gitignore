@@ -234,3 +234,7 @@ publisher.jar
 node_modules/
 # --- OS / editor noise ---
 *.log
+
+# IG-Publisher-Nebenprodukte (Migration): Sprachpakete + Narrative-Requirements
+translations/
+Requirements-fromNarrative.json

@@ -205,7 +205,7 @@ gern entgegengenommen.
 
 © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin. Dieses Werk ist
 lizenziert unter der
-[Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).
+[Creative Commons Namensnennung 4.0 International Lizenz (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
 
 Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die
 FHIR-Basis-Spezifikation.
