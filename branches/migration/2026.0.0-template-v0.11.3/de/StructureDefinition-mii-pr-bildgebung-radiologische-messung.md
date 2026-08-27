@@ -161,7 +161,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-bildg
     }]
   },
   "status" : "active",
-  "date" : "2026-08-27T17:54:48+00:00",
+  "date" : "2026-08-27T18:01:55+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{

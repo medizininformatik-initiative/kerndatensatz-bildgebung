@@ -8,14 +8,14 @@
     "description" : "Image type für Radiologische Bilder",
     "uses" : {
     },
-    "ValueSet-mii-vs-bildgebung-instance-image-type-nm-implementation.html" : "MII VS Bildgebung Instance Image Type NM Implementation",
-    "ValueSet-mii-vs-bildgebung-instance-image-type-nm.html" : "MII VS Bildgebung Instance Image Type NM",
-    "ValueSet-mii-vs-bildgebung-instance-image-type-us-implementation.html" : "MII VS Bildgebung Instance Image Type US Implemantation",
-    "ValueSet-mii-vs-bildgebung-instance-image-type-pixel-data.html" : "MII VS Bildgebung Instance Image Type Pixel Data",
     "ValueSet-mii-vs-bildgebung-instance-image-type-ct.html" : "MII VS Bildgebung Instance Image Type CT",
+    "ValueSet-mii-vs-bildgebung-instance-image-type-nm-implementation.html" : "MII VS Bildgebung Instance Image Type NM Implementation",
+    "ValueSet-mii-vs-bildgebung-instance-image-type-patient-examination.html" : "MII VS Bildgebung Instance Image Type Patient Examination",
+    "ValueSet-mii-vs-bildgebung-instance-image-type-pixel-data.html" : "MII VS Bildgebung Instance Image Type Pixel Data",
+    "ValueSet-mii-vs-bildgebung-instance-image-type-us-implementation.html" : "MII VS Bildgebung Instance Image Type US Implemantation",
     "ValueSet-mii-vs-bildgebung-instance-image-type-mr.html" : "MII VS Bildgebung Instance Image Type MR",
     "ValueSet-mii-vs-bildgebung-instance-image-type-us.html" : "MII VS Bildgebung Instance Image Type US",
-    "ValueSet-mii-vs-bildgebung-instance-image-type-patient-examination.html" : "MII VS Bildgebung Instance Image Type Patient Examination"
+    "ValueSet-mii-vs-bildgebung-instance-image-type-nm.html" : "MII VS Bildgebung Instance Image Type NM"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence",
@@ -48,8 +48,8 @@
     "description" : "Series Type für PET Untersuchungen",
     "uses" : {
     },
-    "ValueSet-mii-vs-bildgebung-pt-series-type-volumetric.html" : "MII VS Bildgebung Imaging Study PT Series Type Volumetric",
-    "ValueSet-mii-vs-bildgebung-pt-series-type-spacial.html" : "MII VS Bildgebung Imaging Study PT Series Type Spacial"
+    "ValueSet-mii-vs-bildgebung-pt-series-type-spacial.html" : "MII VS Bildgebung Imaging Study PT Series Type Spacial",
+    "ValueSet-mii-vs-bildgebung-pt-series-type-volumetric.html" : "MII VS Bildgebung Imaging Study PT Series Type Volumetric"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type",
