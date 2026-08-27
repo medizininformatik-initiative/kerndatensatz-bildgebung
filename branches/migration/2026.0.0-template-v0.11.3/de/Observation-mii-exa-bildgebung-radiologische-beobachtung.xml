@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-bildgebung-radiologische-beobachtung"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="extensions"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-bildgebung-radiologische-beobachtung</b></p><a name="de-mii-exa-bildgebung-radiologische-beobachtung"> </a><a name="de-hcmii-exa-bildgebung-radiologische-beobachtung"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html">MII PR Bildgebung Radiologische Beobachtung</a></p></div><p><b>MII EX Bildgebung Bildnummer</b>: example-series-uid</p><p><b>MII EX Bildgebung SOPInstanz</b>: example-sop-instance-uid</p><p><b>partOf</b>: <a href="Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.html">Procedure Consultation and report by radiologist (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category imaging}">Imaging</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 32422-8}">Physical findings of Breast</span></p><p><b>subject</b>: <a href="Patient-PatExample.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>issued</b>: 2024-07-19 12:03:30+0200</p><p><b>value</b>: microcalcifications in the upper outer quadrant in the left breast</p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 76752008}">Breast structure (body structure)</span></p><p><b>hasMember</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/ObsExample">Observation/ObsExample</a></p><p><b>derivedFrom</b>: <a href="ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.html">ImagingStudy: extension = Verdacht auf Karzinom; status = available; modality = Computed Tomography (DICOM#CT); numberOfSeries = 2; numberOfInstances = 390; description = whole body aquisition</a></p><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 10157-6}">History of family member diseases note</span></td><td>true</td></tr></table></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid">
+    <valueId value="example-series-uid"/>
+  </extension>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid">
+    <valueId value="example-sop-instance-uid"/>
+  </extension>
+  <partOf>
+    <reference value="Procedure/mii-exa-bildgebung-radiologische-befundungsprozedur"/>
+  </partOf>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="imaging"/>
+      <display value="Imaging"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="32422-8"/>
+      <display value="Physical findings of Breast"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/PatExample"/>
+  </subject>
+  <issued value="2024-07-19T12:03:30+02:00"/>
+  <valueString value="microcalcifications in the upper outer quadrant in the left breast"/>
+  <bodySite>
+    <extension url="http://hl7.org/fhir/StructureDefinition/bodySite">
+      <valueReference>
+        <reference value="BodyStructure/mii-exa-bildgebung-koerperstruktur"/>
+      </valueReference>
+    </extension>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="76752008"/>
+      <display value="Breast structure (body structure)"/>
+    </coding>
+  </bodySite>
+  <hasMember>
+    <reference value="Observation/ObsExample"/>
+  </hasMember>
+  <derivedFrom>
+    <reference value="ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct"/>
+  </derivedFrom>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="10157-6"/>
+        <display value="History of family member diseases note"/>
+      </coding>
+    </code>
+    <valueBoolean value="true"/>
+  </component>
+</Observation>

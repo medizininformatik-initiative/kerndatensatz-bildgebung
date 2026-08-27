@@ -1,0 +1,14 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PatExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Patient PatExample</b></p><a name=\"PatExample\"> </a><a name=\"hcPatExample\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Erika Beispielpatientin  Female, DoB: 1970-01-01</p><hr/></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Patient PatExample</b></p><a name=\"de-PatExample\"> </a><a name=\"de-hcPatExample\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Erika Beispielpatientin  Female, DoB: 1970-01-01</p><hr/></div></div>"
+  },
+  "name" : [{
+    "family" : "Beispielpatientin",
+    "given" : ["Erika"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1970-01-01"
+}

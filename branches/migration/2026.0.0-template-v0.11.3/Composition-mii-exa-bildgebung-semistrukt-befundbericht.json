@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Composition",
+  "id" : "mii-exa-bildgebung-semistrukt-befundbericht",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Composition mii-exa-bildgebung-semistrukt-befundbericht</b></p><a name=\"mii-exa-bildgebung-semistrukt-befundbericht\"> </a><a name=\"hcmii-exa-bildgebung-semistrukt-befundbericht\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html\">MII PR Bildgebung Semistrukturierter Befundbericht</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 18748-4}\">Diagnostic imaging study</span></p><p><b>date</b>: 2024-07-19 12:03:30+0200</p><p><b>author</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/PracExample1\">Practitioner/PracExample1</a></p><p><b>title</b>: Mammographic Report</p></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Composition mii-exa-bildgebung-semistrukt-befundbericht</b></p><a name=\"de-mii-exa-bildgebung-semistrukt-befundbericht\"> </a><a name=\"de-hcmii-exa-bildgebung-semistrukt-befundbericht\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html\">MII PR Bildgebung Semistrukturierter Befundbericht</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 18748-4}\">Diagnostic imaging study</span></p><p><b>date</b>: 2024-07-19 12:03:30+0200</p><p><b>author</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/PracExample1\">Practitioner/PracExample1</a></p><p><b>title</b>: Mammographic Report</p></div></div>"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "18748-4",
+      "display" : "Diagnostic imaging study"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/PatExample"
+  },
+  "date" : "2024-07-19T12:03:30+02:00",
+  "author" : [{
+    "reference" : "Practitioner/PracExample1"
+  }],
+  "title" : "Mammographic Report",
+  "section" : [{
+    "title" : "Left Breast",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "18782-3",
+        "display" : "Radiology Study observation (narrative)"
+      }]
+    },
+    "author" : [{
+      "reference" : "Practitioner/PracExample2"
+    }],
+    "entry" : [{
+      "reference" : "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
+    }],
+    "section" : [{
+      "entry" : [{
+        "reference" : "Observation/mii-exa-bildgebung-radiologische-beobachtung"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImagingStudy xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-bildgebung-bildgebungsstudie-ct"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImagingStudy mii-exa-bildgebung-bildgebungsstudie-ct</b></p><a name="mii-exa-bildgebung-bildgebungsstudie-ct"> </a><a name="hcmii-exa-bildgebung-bildgebungsstudie-ct"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html">MII PR Bildgebung Bildgebungsstudie</a></p></div><p><b>MII EX Bildgebung Bildgebungsgrund</b>: Verdacht auf Karzinom</p><p><b>status</b>: Available</p><p><b>modality</b>: <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-CT">DICOM: CT</a> (Computed Tomography)</p><p><b>subject</b>: <a href="Patient-PatExample.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/EncExample">Encounter/EncExample</a></p><p><b>basedOn</b>: <a href="ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.html">ServiceRequest Mammography (procedure)</a></p><p><b>numberOfSeries</b>: 2</p><p><b>numberOfInstances</b>: 390</p><p><b>procedureReference</b>: <a href="Procedure-mii-exa-bildgebung-bildgebungsprozedur.html">Procedure Screening mammography of bilateral breasts (procedure)</a></p><p><b>reasonReference</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Condition/CondExample">Condition/CondExample</a></p><p><b>description</b>: whole body aquisition</p><blockquote><p><b>series</b></p><blockquote><p><b>MII EX Bildgebung Modalität CT</b></p><ul><li>convolutionalKernel: SOFT</li><li>CTDIvol: 4.04 milligray</li><li>KVP: 110 kilovolt</li><li>exposure: 38 milliampere second</li><li>exposureTime: 600 milliseconds</li><li>xRayTubeCurrent: 96 milliampere</li></ul></blockquote><blockquote><p><b>MII EX Bildgebung Kontrastmittel</b></p><ul><li>contrastBolus: true</li><li>contrastBolusDetails: </li></ul></blockquote></blockquote><p><b style="color: maroon">Exception Generating Narrative: Cannot invoke &quot;org.hl7.fhir.r5.renderers.utils.ResourceWrapper.fhirType()&quot; because &quot;resource&quot; is null </b></p></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImagingStudy mii-exa-bildgebung-bildgebungsstudie-ct</b></p><a name="de-mii-exa-bildgebung-bildgebungsstudie-ct"> </a><a name="de-hcmii-exa-bildgebung-bildgebungsstudie-ct"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html">MII PR Bildgebung Bildgebungsstudie</a></p></div><p><b>MII EX Bildgebung Bildgebungsgrund</b>: Verdacht auf Karzinom</p><p><b>status</b>: Available</p><p><b>modality</b>: <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-CT">DICOM: CT</a> (Computed Tomography)</p><p><b>subject</b>: <a href="Patient-PatExample.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/EncExample">Encounter/EncExample</a></p><p><b>basedOn</b>: <a href="ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.html">ServiceRequest Mammography (procedure)</a></p><p><b>numberOfSeries</b>: 2</p><p><b>numberOfInstances</b>: 390</p><p><b>procedureReference</b>: <a href="Procedure-mii-exa-bildgebung-bildgebungsprozedur.html">Procedure Screening mammography of bilateral breasts (procedure)</a></p><p><b>reasonReference</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Condition/CondExample">Condition/CondExample</a></p><p><b>description</b>: whole body aquisition</p><blockquote><p><b>series</b></p><blockquote><p><b>MII EX Bildgebung Modalität CT</b></p><ul><li>convolutionalKernel: SOFT</li><li>CTDIvol: 4.04 milligray</li><li>KVP: 110 kilovolt</li><li>exposure: 38 milliampere second</li><li>exposureTime: 600 milliseconds</li><li>xRayTubeCurrent: 96 milliampere</li></ul></blockquote><blockquote><p><b>MII EX Bildgebung Kontrastmittel</b></p><ul><li>contrastBolus: true</li><li>contrastBolusDetails: </li></ul></blockquote></blockquote><p><b style="color: maroon">Exception Generating Narrative: Cannot invoke &quot;org.hl7.fhir.r5.renderers.utils.ResourceWrapper.fhirType()&quot; because &quot;resource&quot; is null </b></p></div></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund">
+    <valueString value="Verdacht auf Karzinom"/>
+  </extension>
+  <status value="available"/>
+  <modality>
+    <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+    <code value="CT"/>
+    <display value="Computed Tomography"/>
+  </modality>
+  <subject>
+    <reference value="Patient/PatExample"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+      </type>
+      <system value="https://system-url"/>
+      <value value="study-uid"/>
+    </identifier>
+  </subject>
+  <encounter>
+    <reference value="Encounter/EncExample"/>
+  </encounter>
+  <basedOn>
+    <reference value="ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"/>
+  </basedOn>
+  <numberOfSeries value="2"/>
+  <numberOfInstances value="390"/>
+  <procedureReference>
+    <reference value="Procedure/mii-exa-bildgebung-bildgebungsprozedur"/>
+  </procedureReference>
+  <reasonReference>
+    <reference value="Condition/CondExample"/>
+  </reasonReference>
+  <description value="whole body aquisition"/>
+  <series>
+    <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct">
+      <extension url="convolutionalKernel">
+        <valueString value="SOFT"/>
+      </extension>
+      <extension url="CTDIvol">
+        <valueQuantity>
+          <value value="4.04"/>
+          <unit value="milligray"/>
+        </valueQuantity>
+      </extension>
+      <extension url="KVP">
+        <valueQuantity>
+          <value value="110"/>
+          <unit value="kilovolt"/>
+        </valueQuantity>
+      </extension>
+      <extension url="exposure">
+        <valueQuantity>
+          <value value="38"/>
+          <unit value="milliampere second"/>
+        </valueQuantity>
+      </extension>
+      <extension url="exposureTime">
+        <valueQuantity>
+          <value value="600"/>
+          <unit value="milliseconds"/>
+        </valueQuantity>
+      </extension>
+      <extension url="xRayTubeCurrent">
+        <valueQuantity>
+          <value value="96"/>
+          <unit value="milliampere"/>
+        </valueQuantity>
+      </extension>
+    </extension>
+    <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel">
+      <extension url="contrastBolus">
+        <valueBoolean value="true"/>
+      </extension>
+      <extension url="contrastBolusDetails">
+        <valueReference>
+          <reference value="MedicationAdministration/mii-exa-bildgebung-kontrastmittelgabe"/>
+        </valueReference>
+      </extension>
+    </extension>
+    <uid value="series-example-uid"/>
+    <number value="1"/>
+    <modality>
+      <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+      <code value="CT"/>
+      <display value="Computed Tomography"/>
+    </modality>
+    <description value="AC LD CT Whole Body 4.0 HD Field of View"/>
+    <numberOfInstances value="195"/>
+    <bodySite>
+      <system value="http://snomed.info/sct"/>
+      <code value="51185008"/>
+      <display value="Thoracic structure (body structure)"/>
+    </bodySite>
+    <laterality>
+      <system value="http://snomed.info/sct"/>
+      <code value="7771000"/>
+      <display value="Left"/>
+    </laterality>
+    <started value="2024-07-19T12:03:30+02:00"/>
+    <performer>
+      <actor>
+        <reference value="Device/mii-exa-bildgebung-geraet"/>
+      </actor>
+    </performer>
+    <instance>
+      <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details">
+        <extension url="pixelSpacingX">
+          <valueQuantity>
+            <value value="1.36"/>
+            <unit value="millimeter"/>
+          </valueQuantity>
+        </extension>
+        <extension url="pixelSpacingY">
+          <valueQuantity>
+            <value value="1.36"/>
+            <unit value="millimeter"/>
+          </valueQuantity>
+        </extension>
+        <extension url="sliceThickness">
+          <valueQuantity>
+            <value value="4"/>
+            <unit value="millimeter"/>
+          </valueQuantity>
+        </extension>
+        <extension url="imageType">
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"/>
+              <code value="DERIVED"/>
+            </coding>
+            <coding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"/>
+              <code value="PRIMARY"/>
+            </coding>
+            <coding>
+              <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"/>
+              <code value="AXIAL"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </extension>
+      <uid value="instance-example-uid"/>
+      <sopClass>
+        <system value="urn:ietf:rfc:3986"/>
+        <code value="urn:oid:1.2.840.10008.5.1.4.1.1.2"/>
+      </sopClass>
+      <number value="31"/>
+    </instance>
+  </series>
+</ImagingStudy>

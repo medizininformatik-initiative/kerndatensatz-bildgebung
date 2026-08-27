@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImagingStudy xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-bildgebung-bildgebungsstudie-pt"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="extensions"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImagingStudy mii-exa-bildgebung-bildgebungsstudie-pt</b></p><a name="de-mii-exa-bildgebung-bildgebungsstudie-pt"> </a><a name="de-hcmii-exa-bildgebung-bildgebungsstudie-pt"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html">MII PR Bildgebung Bildgebungsstudie</a></p></div><p><b>MII EX Bildgebung Bildgebungsgrund</b>: Verdacht auf Karzinom</p><p><b>status</b>: Available</p><p><b>modality</b>: <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-PT">DICOM: PT</a> (Positron emission tomography)</p><p><b>subject</b>: <a href="Patient-PatExample.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/EncExample">Encounter/EncExample</a></p><p><b>basedOn</b>: <a href="ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.html">ServiceRequest Mammography (procedure)</a></p><p><b>numberOfSeries</b>: 2</p><p><b>numberOfInstances</b>: 390</p><p><b>procedureReference</b>: <a href="Procedure-mii-exa-bildgebung-bildgebungsprozedur.html">Procedure Screening mammography of bilateral breasts (procedure)</a></p><p><b>reasonReference</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Condition/CondExample">Condition/CondExample</a></p><p><b>description</b>: whole body aquisition</p><blockquote><p><b>series</b></p><blockquote><p><b>MII EX Bildgebung Modalität PT</b></p><ul><li>radiopharmaceutical: <span title="Codes:{http://snomed.info/sct 35321007}">Fluorodeoxyglucose (18-F) (substance)</span></li><li>radionuclide: <span title="Codes:{http://snomed.info/sct 77004003}">Fluorine-18 (substance)</span></li><li>tracerExposureTime: 10000 Seconds</li><li>units: <span title="Codes:{http://unitsofmeasure.org BQML}">BQML</span></li><li>radionuclideTotalDose: 196 Becquerel</li><li>radionuclideHalfLife: 6586.2 Seconds</li><li>seriesType: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type DYNAMIC}, {https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type IMAGE}">a group of images at a set of spatial locations (e.g., slices) at varying time slices, with all spatial locations acquired at all time slices</span></li></ul></blockquote><p><b>uid</b>: series-example-uid</p><p><b>number</b>: 1</p><p><b>modality</b>: <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-PT">DICOM: PT</a> (Positron emission tomography)</p><p><b>description</b>: PET WB</p><p><b>numberOfInstances</b>: 195</p><p><b>bodySite</b>: <a href="http://snomed.info/id/51185008">SNOMED CT: 51185008</a> (Thoracic structure (body structure))</p><p><b>laterality</b>: <a href="http://snomed.info/id/66459002">SNOMED CT: 66459002</a> (Unilateral)</p><p><b>started</b>: 2024-07-19 12:03:30+0200</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Device-mii-exa-bildgebung-geraet.html">Device: manufacturer = Siemens</a></td></tr></table><h3>Instances</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>Uid</b></td><td><b>SopClass</b></td><td><b>Number</b></td></tr><tr><td style="display: none">*</td><td/><td>instance-example-uid</td><td>unknown: urn:oid:1.2.840.10008.5.1.4.1.1.128 (urn:oid:1.2.840.10008.5.1.4.1.1.128)</td><td>31</td></tr></table></blockquote></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund">
+    <valueString value="Verdacht auf Karzinom"/>
+  </extension>
+  <status value="available"/>
+  <modality>
+    <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+    <code value="PT"/>
+    <display value="Positron emission tomography"/>
+  </modality>
+  <subject>
+    <reference value="Patient/PatExample"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+      </type>
+      <system value="https://system-url"/>
+      <value value="study-uid"/>
+    </identifier>
+  </subject>
+  <encounter>
+    <reference value="Encounter/EncExample"/>
+  </encounter>
+  <basedOn>
+    <reference value="ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"/>
+  </basedOn>
+  <numberOfSeries value="2"/>
+  <numberOfInstances value="390"/>
+  <procedureReference>
+    <reference value="Procedure/mii-exa-bildgebung-bildgebungsprozedur"/>
+  </procedureReference>
+  <reasonReference>
+    <reference value="Condition/CondExample"/>
+  </reasonReference>
+  <description value="whole body aquisition"/>
+  <series>
+    <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt">
+      <extension url="radiopharmaceutical">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="35321007"/>
+            <display value="Fluorodeoxyglucose (18-F) (substance)"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="radionuclide">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="77004003"/>
+            <display value="Fluorine-18 (substance)"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="tracerExposureTime">
+        <valueQuantity>
+          <value value="10000"/>
+          <unit value="Seconds"/>
+        </valueQuantity>
+      </extension>
+      <extension url="units">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="BQML"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="radionuclideTotalDose">
+        <valueQuantity>
+          <value value="196"/>
+          <unit value="Becquerel"/>
+        </valueQuantity>
+      </extension>
+      <extension url="radionuclideHalfLife">
+        <valueQuantity>
+          <value value="6586.2"/>
+          <unit value="Seconds"/>
+        </valueQuantity>
+      </extension>
+      <extension url="seriesType">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type"/>
+            <code value="DYNAMIC"/>
+          </coding>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type"/>
+            <code value="IMAGE"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <uid value="series-example-uid"/>
+    <number value="1"/>
+    <modality>
+      <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+      <code value="PT"/>
+      <display value="Positron emission tomography"/>
+    </modality>
+    <description value="PET WB"/>
+    <numberOfInstances value="195"/>
+    <bodySite>
+      <system value="http://snomed.info/sct"/>
+      <code value="51185008"/>
+      <display value="Thoracic structure (body structure)"/>
+    </bodySite>
+    <laterality>
+      <system value="http://snomed.info/sct"/>
+      <code value="66459002"/>
+      <display value="Unilateral"/>
+    </laterality>
+    <started value="2024-07-19T12:03:30+02:00"/>
+    <performer>
+      <actor>
+        <reference value="Device/mii-exa-bildgebung-geraet"/>
+      </actor>
+    </performer>
+    <instance>
+      <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details">
+        <extension url="pixelSpacingX">
+          <valueQuantity>
+            <value value="2.89"/>
+            <unit value="millimeter"/>
+          </valueQuantity>
+        </extension>
+        <extension url="pixelSpacingY">
+          <valueQuantity>
+            <value value="2.89"/>
+            <unit value="millimeter"/>
+          </valueQuantity>
+        </extension>
+        <extension url="sliceThickness">
+          <valueQuantity>
+            <value value="4"/>
+            <unit value="millimeter"/>
+          </valueQuantity>
+        </extension>
+        <extension url="imageType">
+          <valueCodeableConcept>
+            <coding>
+              <code value="ORIGINAL"/>
+            </coding>
+            <coding>
+              <code value="PRIMARY"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </extension>
+      <uid value="instance-example-uid"/>
+      <sopClass>
+        <system value="urn:ietf:rfc:3986"/>
+        <code value="urn:oid:1.2.840.10008.5.1.4.1.1.128"/>
+      </sopClass>
+      <number value="31"/>
+    </instance>
+  </series>
+</ImagingStudy>

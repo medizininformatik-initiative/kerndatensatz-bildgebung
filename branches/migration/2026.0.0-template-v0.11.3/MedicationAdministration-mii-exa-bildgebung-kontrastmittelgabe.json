@@ -1,0 +1,30 @@
+{
+  "resourceType" : "MedicationAdministration",
+  "id" : "mii-exa-bildgebung-kontrastmittelgabe",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration mii-exa-bildgebung-kontrastmittelgabe</b></p><a name=\"mii-exa-bildgebung-kontrastmittelgabe\"> </a><a name=\"hcmii-exa-bildgebung-kontrastmittelgabe\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html\">MII PR Bildgebung Konstrastmittelgabe</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Medication/MedExample\">Medication/MedExample</a></p><p><b>subject</b>: <a href=\"Patient-PatExample.html\">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>effective</b>: 2024-07-19 12:21:45+0200 --&gt; 2024-07-19 12:22:45+0200</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>111 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></td></tr></table></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration mii-exa-bildgebung-kontrastmittelgabe</b></p><a name=\"de-mii-exa-bildgebung-kontrastmittelgabe\"> </a><a name=\"de-hcmii-exa-bildgebung-kontrastmittelgabe\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html\">MII PR Bildgebung Konstrastmittelgabe</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Medication/MedExample\">Medication/MedExample</a></p><p><b>subject</b>: <a href=\"Patient-PatExample.html\">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>effective</b>: 2024-07-19 12:21:45+0200 --&gt; 2024-07-19 12:22:45+0200</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>111 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></td></tr></table></div></div>"
+  },
+  "status" : "completed",
+  "medicationReference" : {
+    "reference" : "Medication/MedExample"
+  },
+  "subject" : {
+    "reference" : "Patient/PatExample"
+  },
+  "effectivePeriod" : {
+    "start" : "2024-07-19T12:21:45+02:00",
+    "end" : "2024-07-19T12:22:45+02:00"
+  },
+  "dosage" : {
+    "dose" : {
+      "value" : 111,
+      "unit" : "milliliter",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm"
+    }
+  }
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-bildgebung-instance-image-type-us"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-bildgebung-instance-image-type-us</b></p><a name="de-mii-vs-bildgebung-instance-image-type-us"> </a><a name="de-hcmii-vs-bildgebung-instance-image-type-us"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2027.0.0-ballot</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-ABDOMINAL">ABDOMINAL</a></td><td style="color: #cccccc">ABDOMINAL</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-BREAST">BREAST</a></td><td style="color: #cccccc">BREAST</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-CHEST">CHEST</a></td><td style="color: #cccccc">CHEST</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-ENDOCAVITARY">ENDOCAVITARY</a></td><td style="color: #cccccc">ENDOCAVITARY</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-ENDORECTAL">ENDORECTAL</a></td><td style="color: #cccccc">ENDORECTAL</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-ENDOVAGINAL">ENDOVAGINAL</a></td><td style="color: #cccccc">ENDOVAGINAL</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-EPICARDIAL">EPICARDIAL</a></td><td style="color: #cccccc">EPICARDIAL</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-FETAL_HEART">FETAL_HEART</a></td><td style="color: #cccccc">FETAL HEART</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-GYNECOLOGY">GYNECOLOGY</a></td><td style="color: #cccccc">GYNECOLOGY</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-INTRACARDIAC">INTRACARDIAC</a></td><td style="color: #cccccc">INTRACARDIAC</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-INTRAOPERATIVE">INTRAOPERATIVE</a></td><td style="color: #cccccc">INTRAOPERATIVE</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-INTRAVASCULAR">INTRAVASCULAR</a></td><td style="color: #cccccc">INTRAVASCULAR</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-MUSCULOSKELETAL">MUSCULOSKELETAL</a></td><td style="color: #cccccc">MUSCULOSKELETAL</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-NEONATAL_HEAD">NEONATAL_HEAD</a></td><td style="color: #cccccc">NEONATAL HEAD</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-OBSTETRICAL">OBSTETRICAL</a></td><td style="color: #cccccc">OBSTETRICAL</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-OPHTHALMIC">OPHTHALMIC</a></td><td style="color: #cccccc">OPHTHALMIC</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-PEDIATRIC">PEDIATRIC</a></td><td style="color: #cccccc">PEDIATRIC</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-PELVIC">PELVIC</a></td><td style="color: #cccccc">PELVIC</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-RETROPERITONEAL">RETROPERITONEAL</a></td><td style="color: #cccccc">RETROPERITONEAL</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-SCROTAL">SCROTAL</a></td><td style="color: #cccccc">SCROTAL</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-SMALL_PARTS">SMALL_PARTS</a></td><td style="color: #cccccc">SMALL PARTS</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-TEE">TEE</a></td><td style="color: #cccccc">TEE</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-THYROID">THYROID</a></td><td style="color: #cccccc">THYROID</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-TRANSCRANIAL">TRANSCRANIAL</a></td><td style="color: #cccccc">TRANSCRANIAL</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-TTE">TTE</a></td><td style="color: #cccccc">TTE</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-US_BIOPSY">US_BIOPSY</a></td><td style="color: #cccccc">US BIOPSY</td></tr><tr><td><a href="CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-VASCULAR">VASCULAR</a></td><td style="color: #cccccc">VASCULAR</td></tr></table></li></ul></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us"/>
+  <version value="2027.0.0-ballot"/>
+  <name value="MII_VS_Bildgebung_Instance_Image_Type_US"/>
+  <title value="MII VS Bildgebung Instance Image Type US"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-01"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Import the ValueSet for Instance Image Type US"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"/>
+      <concept>
+        <code value="ABDOMINAL"/>
+      </concept>
+      <concept>
+        <code value="BREAST"/>
+      </concept>
+      <concept>
+        <code value="CHEST"/>
+      </concept>
+      <concept>
+        <code value="ENDOCAVITARY"/>
+      </concept>
+      <concept>
+        <code value="ENDORECTAL"/>
+      </concept>
+      <concept>
+        <code value="ENDOVAGINAL"/>
+      </concept>
+      <concept>
+        <code value="EPICARDIAL"/>
+      </concept>
+      <concept>
+        <code value="FETAL_HEART"/>
+      </concept>
+      <concept>
+        <code value="GYNECOLOGY"/>
+      </concept>
+      <concept>
+        <code value="INTRACARDIAC"/>
+      </concept>
+      <concept>
+        <code value="INTRAOPERATIVE"/>
+      </concept>
+      <concept>
+        <code value="INTRAVASCULAR"/>
+      </concept>
+      <concept>
+        <code value="MUSCULOSKELETAL"/>
+      </concept>
+      <concept>
+        <code value="NEONATAL_HEAD"/>
+      </concept>
+      <concept>
+        <code value="OBSTETRICAL"/>
+      </concept>
+      <concept>
+        <code value="OPHTHALMIC"/>
+      </concept>
+      <concept>
+        <code value="PEDIATRIC"/>
+      </concept>
+      <concept>
+        <code value="PELVIC"/>
+      </concept>
+      <concept>
+        <code value="RETROPERITONEAL"/>
+      </concept>
+      <concept>
+        <code value="SCROTAL"/>
+      </concept>
+      <concept>
+        <code value="SMALL_PARTS"/>
+      </concept>
+      <concept>
+        <code value="TEE"/>
+      </concept>
+      <concept>
+        <code value="THYROID"/>
+      </concept>
+      <concept>
+        <code value="TRANSCRANIAL"/>
+      </concept>
+      <concept>
+        <code value="TTE"/>
+      </concept>
+      <concept>
+        <code value="US_BIOPSY"/>
+      </concept>
+      <concept>
+        <code value="VASCULAR"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

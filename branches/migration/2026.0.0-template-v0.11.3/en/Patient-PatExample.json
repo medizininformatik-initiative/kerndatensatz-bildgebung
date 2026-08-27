@@ -1,0 +1,15 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PatExample",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Patient PatExample</b></p><a name=\"PatExample\"> </a><a name=\"hcPatExample\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Erika Beispielpatientin  Female, DoB: 1970-01-01</p><hr/></div>"
+  },
+  "name" : [{
+    "family" : "Beispielpatientin",
+    "given" : ["Erika"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1970-01-01"
+}

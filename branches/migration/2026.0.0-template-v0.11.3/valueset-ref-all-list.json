@@ -1,0 +1,1561 @@
+{
+  "codeSystems" : [{
+    "url" : "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_18.html",
+    "version" : "2025.3.20250714",
+    "status" : "active",
+    "name" : "RadiopharmaceuticalIsotope",
+    "title" : null,
+    "description" : "Transitive closure of CID 18 RadiopharmaceuticalIsotope",
+    "systems" : ["http://snomed.info/srt",
+    "http://ncit.nci.nih.gov",
+    "http://dicom.nema.org/resources/ontology/DCM",
+    "http://snomed.info/sct"],
+    "oids" : ["1.2.840.10008.6.1.12"],
+    "sources" : ["1.2.840.10008.6.1.12"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-nm.html" : "MII EX Bildgebung Modalität PT/NM"
+  },
+  {
+    "url" : "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html",
+    "version" : "2025.3.20250714",
+    "status" : "active",
+    "name" : "Laterality",
+    "title" : null,
+    "description" : "Transitive closure of CID 244 Laterality",
+    "systems" : ["http://snomed.info/srt", "http://snomed.info/sct"],
+    "oids" : ["1.2.840.10008.6.1.37"],
+    "sources" : ["1.2.840.10008.6.1.37"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie"
+  },
+  {
+    "url" : "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html",
+    "version" : "2025.3.20250714",
+    "status" : "active",
+    "name" : "Radiopharmaceutical",
+    "title" : null,
+    "description" : "Transitive closure of CID 25 Radiopharmaceutical",
+    "systems" : ["http://snomed.info/srt",
+    "http://ncit.nci.nih.gov",
+    "http://www.nlm.nih.gov/mesh/meshhome.html",
+    "http://dicom.nema.org/resources/ontology/DCM",
+    "http://snomed.info/sct"],
+    "oids" : ["1.2.840.10008.6.1.17"],
+    "sources" : ["1.2.840.10008.6.1.17"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-nm.html" : "MII EX Bildgebung Modalität PT/NM"
+  },
+  {
+    "url" : "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html",
+    "version" : "2025.3.20250714",
+    "status" : "active",
+    "name" : "Modality",
+    "title" : null,
+    "description" : "Transitive closure of CID 33 Modality",
+    "systems" : ["http://dicom.nema.org/resources/ontology/DCM"],
+    "oids" : ["1.2.840.10008.6.1.1283"],
+    "sources" : ["1.2.840.10008.6.1.1283"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie"
+  },
+  {
+    "url" : "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4010.html",
+    "version" : "2025.3.20250714",
+    "status" : "active",
+    "name" : "DXView",
+    "title" : null,
+    "description" : "Transitive closure of CID 4010 DXView",
+    "systems" : ["http://snomed.info/srt", "http://snomed.info/sct"],
+    "oids" : ["1.2.840.10008.6.1.294"],
+    "sources" : ["1.2.840.10008.6.1.294"],
+    "uses" : {
+    },
+    "ValueSet-mii-vs-bildgebung-imagingStudy-series-view-position.html" : "MII VS Bildgebung ImagingStudy-Series View Position"
+  },
+  {
+    "url" : "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html",
+    "version" : "2025.3.20250714",
+    "status" : "active",
+    "name" : "ViewforMammography",
+    "title" : null,
+    "description" : "Transitive closure of CID 4014 ViewforMammography",
+    "systems" : ["http://snomed.info/srt", "http://snomed.info/sct"],
+    "oids" : ["1.2.840.10008.6.1.298"],
+    "sources" : ["1.2.840.10008.6.1.298"],
+    "uses" : {
+    },
+    "ValueSet-mii-vs-bildgebung-imagingStudy-series-view-position.html" : "MII VS Bildgebung ImagingStudy-Series View Position"
+  },
+  {
+    "url" : "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4020.html",
+    "version" : "2025.3.20250714",
+    "status" : "active",
+    "name" : "PETRadionuclide",
+    "title" : null,
+    "description" : "Transitive closure of CID 4020 PETRadionuclide",
+    "systems" : ["http://snomed.info/srt",
+    "http://dicom.nema.org/resources/ontology/DCM",
+    "http://snomed.info/sct"],
+    "oids" : ["1.2.840.10008.6.1.304"],
+    "sources" : ["1.2.840.10008.6.1.304"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html" : "MII EX Bildgebung Modalität PT"
+  },
+  {
+    "url" : "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4021.html",
+    "version" : "2025.3.20250714",
+    "status" : "active",
+    "name" : "PETRadiopharmaceutical",
+    "title" : null,
+    "description" : "Transitive closure of CID 4021 PETRadiopharmaceutical",
+    "systems" : ["http://snomed.info/srt",
+    "http://ncit.nci.nih.gov",
+    "http://dicom.nema.org/resources/ontology/DCM",
+    "http://snomed.info/sct",
+    "http://www.nlm.nih.gov/research/umls"],
+    "oids" : ["1.2.840.10008.6.1.305"],
+    "sources" : ["1.2.840.10008.6.1.305"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html" : "MII EX Bildgebung Modalität PT"
+  },
+  {
+    "url" : "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_84.html",
+    "version" : "2025.3.20250714",
+    "status" : "active",
+    "name" : "PETUnit",
+    "title" : null,
+    "description" : "Transitive closure of CID 84 PETUnit",
+    "systems" : ["http://unitsofmeasure.org"],
+    "oids" : ["1.2.840.10008.6.1.1030"],
+    "sources" : ["1.2.840.10008.6.1.1030"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html" : "MII EX Bildgebung Modalität PT",
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-nm.html" : "MII EX Bildgebung Modalität PT/NM"
+  },
+  {
+    "url" : "http://fhir.de/ValueSet/bfarm/icd-10-gm",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "ICD10GMVS",
+    "title" : "ICD10GM ValueSet",
+    "description" : "ICD-10-GM",
+    "systems" : ["http://fhir.de/CodeSystem/bfarm/icd-10-gm"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTAdministrationMethodCodes",
+    "title" : "SNOMED CT Administration Method Codes",
+    "description" : "This value set includes some method codes from SNOMED CT - provided as an exemplar",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.97"],
+    "sources" : ["2.16.840.1.113883.4.642.3.97"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTAnatomicalStructureForAdministrationSiteCodes",
+    "title" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+    "description" : "This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.346"],
+    "sources" : ["2.16.840.1.113883.4.642.3.346"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/body-site",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTBodyStructures",
+    "title" : "SNOMED CT Body Structures",
+    "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.141"],
+    "sources" : ["2.16.840.1.113883.4.642.3.141"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
+    "StructureDefinition-mii-pr-bildgebung-koerperstruktur.html" : "MII PR Bildgebung Körperstruktur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/bodystructure-code",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTMorphologicAbnormalities",
+    "title" : "SNOMED CT Morphologic Abnormalities",
+    "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.142"],
+    "sources" : ["2.16.840.1.113883.4.642.3.142"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-koerperstruktur.html" : "MII PR Bildgebung Körperstruktur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanActivityKind",
+    "title" : "Care Plan Activity Kind",
+    "description" : "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+    "systems" : ["http://hl7.org/fhir/resource-types"],
+    "oids" : ["2.16.840.1.113883.4.642.3.145"],
+    "sources" : ["2.16.840.1.113883.4.642.3.145"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-outcome",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanActivityOutcome",
+    "title" : "Care Plan Activity Outcome",
+    "description" : "Example codes indicating the outcome of a care plan activity. Note that these are in no way complete and might not even be appropriate for some uses.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.149"],
+    "sources" : ["2.16.840.1.113883.4.642.3.149"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanActivityStatus",
+    "title" : "CarePlanActivityStatus",
+    "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+    "systems" : ["http://hl7.org/fhir/care-plan-activity-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.146"],
+    "sources" : ["2.16.840.1.113883.4.642.3.146"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanCategory",
+    "title" : "Care Plan Category",
+    "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.148"],
+    "sources" : ["2.16.840.1.113883.4.642.3.148"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanIntent",
+    "title" : "Care Plan Intent",
+    "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+    "systems" : ["http://hl7.org/fhir/request-intent"],
+    "oids" : ["2.16.840.1.113883.4.642.3.150"],
+    "sources" : ["2.16.840.1.113883.4.642.3.150"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTClinicalFindings",
+    "title" : "SNOMED CT Clinical Findings",
+    "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.232"],
+    "sources" : ["2.16.840.1.113883.4.642.3.232"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung",
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/common-tags",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CommonTags",
+    "title" : "Common Tags",
+    "description" : "Common Tag Codes defined by FHIR project",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/common-tags"],
+    "oids" : ["2.16.840.1.113883.4.642.3.79"],
+    "sources" : ["2.16.840.1.113883.4.642.3.79"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund",
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
+    "StructureDefinition-mii-pr-bildgebung-geraet.html" : "MII PR Bildgebung Gerät",
+    "StructureDefinition-mii-pr-bildgebung-koerperstruktur.html" : "MII PR Bildgebung Körperstruktur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionAttestationMode",
+    "title" : "CompositionAttestationMode",
+    "description" : "The way in which a person authenticated a composition.",
+    "systems" : ["http://hl7.org/fhir/composition-attestation-mode"],
+    "oids" : ["2.16.840.1.113883.4.642.3.238"],
+    "sources" : ["2.16.840.1.113883.4.642.3.238"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionStatus",
+    "title" : "CompositionStatus",
+    "description" : "The workflow/clinical status of the composition.",
+    "systems" : ["http://hl7.org/fhir/composition-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.241"],
+    "sources" : ["2.16.840.1.113883.4.642.3.241"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Condition/Problem/DiagnosisCodes",
+    "title" : "Condition/Problem/Diagnosis Codes",
+    "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.161"],
+    "sources" : ["2.16.840.1.113883.4.642.3.161"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DataAbsentReason",
+    "title" : "DataAbsentReason",
+    "description" : "Used to specify why the normally expected content of the data element is missing.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.5"],
+    "sources" : ["2.16.840.1.113883.4.642.3.5"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-action",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ProcedureDeviceActionCodes",
+    "title" : "Procedure Device Action Codes",
+    "description" : "Example codes indicating the change that happened to the device during the procedure.  Note that these are in no way complete and might not even be appropriate for some uses.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.425"],
+    "sources" : ["2.16.840.1.113883.4.642.3.425"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-kind",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRDeviceTypes",
+    "title" : "FHIR Device Types",
+    "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.208"],
+    "sources" : ["2.16.840.1.113883.4.642.3.208"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-nametype",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceNameType",
+    "title" : "DeviceNameType",
+    "description" : "The type of name the device is referred by.",
+    "systems" : ["http://hl7.org/fhir/device-nametype"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1083"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1083"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-geraet.html" : "MII PR Bildgebung Gerät"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRDeviceStatus",
+    "title" : "FHIRDeviceStatus",
+    "description" : "The availability status of the device.",
+    "systems" : ["http://hl7.org/fhir/device-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.209"],
+    "sources" : ["2.16.840.1.113883.4.642.3.209"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-geraet.html" : "MII PR Bildgebung Gerät"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-status-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRDeviceStatusReason",
+    "title" : "FHIRDeviceStatusReason",
+    "description" : "The availability status reason of the device.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/device-status-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1081"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1081"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-geraet.html" : "MII PR Bildgebung Gerät"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceType",
+    "title" : "Device Type",
+    "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1376"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1376"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-geraet.html" : "MII PR Bildgebung Gerät"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticReportStatus",
+    "title" : "DiagnosticReportStatus",
+    "description" : "The status of the diagnostic report.",
+    "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.235"],
+    "sources" : ["2.16.840.1.113883.4.642.3.235"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticServiceSectionCodes",
+    "title" : "Diagnostic Service Section Codes",
+    "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+    "oids" : ["2.16.840.1.113883.4.642.3.234"],
+    "sources" : ["2.16.840.1.113883.4.642.3.234"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentSectionCodes",
+    "title" : "Document Section Codes",
+    "description" : "Document section codes (LOINC codes used in CCDA sections).",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.237"],
+    "sources" : ["2.16.840.1.113883.4.642.3.237"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/doc-typecodes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRDocumentTypeCodes",
+    "title" : "FHIR Document Type Codes",
+    "description" : "FHIR Document Codes - all LOINC codes where scale type = 'DOC'.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.240"],
+    "sources" : ["2.16.840.1.113883.4.642.3.240"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DocumentClassValueSet",
+    "title" : "Document Class Value Set",
+    "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+    "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentRelationshipType",
+    "title" : "DocumentRelationshipType",
+    "description" : "The type of relationship between documents.",
+    "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.244"],
+    "sources" : ["2.16.840.1.113883.4.642.3.244"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/event-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EventStatus",
+    "title" : "EventStatus",
+    "description" : "Codes identifying the lifecycle stage of an event.",
+    "systems" : ["http://hl7.org/fhir/event-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.109"],
+    "sources" : ["2.16.840.1.113883.4.642.3.109"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/imagingstudy-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImagingStudyStatus",
+    "title" : "ImagingStudyStatus",
+    "description" : "The status of the ImagingStudy.",
+    "systems" : ["http://hl7.org/fhir/imagingstudy-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.990"],
+    "sources" : ["2.16.840.1.113883.4.642.3.990"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/languages",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CommonLanguages",
+    "title" : "Common Languages",
+    "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+    "systems" : ["urn:ietf:bcp:47"],
+    "oids" : ["2.16.840.1.113883.4.642.3.20"],
+    "sources" : ["2.16.840.1.113883.4.642.3.20"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund",
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
+    "StructureDefinition-mii-pr-bildgebung-geraet.html" : "MII PR Bildgebung Gerät",
+    "StructureDefinition-mii-pr-bildgebung-koerperstruktur.html" : "MII PR Bildgebung Körperstruktur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListEmptyReasons",
+    "title" : "List Empty Reasons",
+    "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/list-empty-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.322"],
+    "sources" : ["2.16.840.1.113883.4.642.3.322"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/list-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListMode",
+    "title" : "ListMode",
+    "description" : "The processing mode that applies to this list.",
+    "systems" : ["http://hl7.org/fhir/list-mode"],
+    "oids" : ["2.16.840.1.113883.4.642.3.318"],
+    "sources" : ["2.16.840.1.113883.4.642.3.318"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/list-order",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListOrderCodes",
+    "title" : "List Order Codes",
+    "description" : "Base values for the order of the items in a list resource.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/list-order"],
+    "oids" : ["2.16.840.1.113883.4.642.3.324"],
+    "sources" : ["2.16.840.1.113883.4.642.3.324"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MedicationAdministration Performer Function Codes",
+    "title" : "Medication administration  performer  function  codes",
+    "description" : "MedicationAdministration Performer Function Codes",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/med-admin-perform-function"],
+    "oids" : ["2.16.840.1.113883.4.642.3.349"],
+    "sources" : ["2.16.840.1.113883.4.642.3.349"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/medication-admin-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MedicationAdministration Category Codes",
+    "title" : "Medication administration  category  codes",
+    "description" : "MedicationAdministration Category Codes",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/medication-admin-category"],
+    "oids" : ["2.16.840.1.113883.4.642.3.347"],
+    "sources" : ["2.16.840.1.113883.4.642.3.347"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/medication-admin-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MedicationAdministration Status Codes",
+    "title" : "Medication administration  status  codes",
+    "description" : "MedicationAdministration Status Codes",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/medication-admin-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.340"],
+    "sources" : ["2.16.840.1.113883.4.642.3.340"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+    "title" : "SNOMED CT Medication As Needed Reason Codes",
+    "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.96"],
+    "sources" : ["2.16.840.1.113883.4.642.3.96"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTMedicationCodes",
+    "title" : "SNOMED CT Medication Codes",
+    "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.375"],
+    "sources" : ["2.16.840.1.113883.4.642.3.375"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung",
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ObservationCategoryCodes",
+    "title" : "Observation Category Codes",
+    "description" : "Observation Category codes.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+    "oids" : ["2.16.840.1.113883.4.642.3.403"],
+    "sources" : ["2.16.840.1.113883.4.642.3.403"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LOINCCodes",
+    "title" : "LOINC Codes",
+    "description" : "This value set includes all LOINC codes",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.396"],
+    "sources" : ["2.16.840.1.113883.4.642.3.396"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ObservationInterpretationCodes",
+    "title" : "Observation Interpretation Codes",
+    "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"],
+    "oids" : ["2.16.840.1.113883.4.642.3.399"],
+    "sources" : ["2.16.840.1.113883.4.642.3.399"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ObservationMethods",
+    "title" : "Observation Methods",
+    "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.395"],
+    "sources" : ["2.16.840.1.113883.4.642.3.395"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ObservationStatus",
+    "title" : "ObservationStatus",
+    "description" : "Codes providing the status of an observation.",
+    "systems" : ["http://hl7.org/fhir/observation-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.400"],
+    "sources" : ["2.16.840.1.113883.4.642.3.400"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/participant-role",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ParticipantRoles",
+    "title" : "Participant Roles",
+    "description" : "Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.152"],
+    "sources" : ["2.16.840.1.113883.4.642.3.152"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ProcedurePerformerRoleCodes",
+    "title" : "Procedure Performer Role Codes",
+    "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.433"],
+    "sources" : ["2.16.840.1.113883.4.642.3.433"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/procedure-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ProcedureCategoryCodes(SNOMEDCT)",
+    "title" : "Procedure Category Codes (SNOMED CT)",
+    "description" : "Procedure Category code: A selection of relevant SNOMED CT codes.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.430"],
+    "sources" : ["2.16.840.1.113883.4.642.3.430"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ProcedureCodes(SNOMEDCT)",
+    "title" : "Procedure Codes (SNOMED CT)",
+    "description" : "Procedure Code: All SNOMED CT procedure codes.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.427"],
+    "sources" : ["2.16.840.1.113883.4.642.3.427"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/procedure-followup",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ProcedureFollowUpCodes(SNOMEDCT)",
+    "title" : "Procedure Follow up Codes (SNOMED CT)",
+    "description" : "Procedure follow up codes: A selection of SNOMED CT codes relevant to procedure follow up.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.429"],
+    "sources" : ["2.16.840.1.113883.4.642.3.429"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/procedure-not-performed-reason",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ProcedureNotPerformedReason(SNOMED-CT)",
+    "title" : "Procedure Not Performed Reason (SNOMED-CT)",
+    "description" : "Situation codes describing the reason that a procedure, which might otherwise be expected, was not performed, or a procedure that was started and was not completed. Consists of SNOMED CT codes, children of procedure contraindicated (183932001), procedure discontinued (416406003), procedure not done (416237000), procedure not indicated (428119001), procedure not offered (416064006), procedure not wanted (416432009), procedure refused (183944003), and procedure stopped (394908001).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.431"],
+    "sources" : ["2.16.840.1.113883.4.642.3.431"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/procedure-outcome",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ProcedureOutcomeCodes(SNOMEDCT)",
+    "title" : "Procedure Outcome Codes (SNOMED CT)",
+    "description" : "Procedure Outcome code: A selection of relevant SNOMED CT codes.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.428"],
+    "sources" : ["2.16.840.1.113883.4.642.3.428"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ProcedureReasonCodes",
+    "title" : "Procedure Reason Codes",
+    "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.432"],
+    "sources" : ["2.16.840.1.113883.4.642.3.432"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+    "oids" : ["2.16.840.1.113883.4.642.3.59"],
+    "sources" : ["2.16.840.1.113883.4.642.3.59"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-serie-schichtdicke.html" : "MII EX Bildgebung Schichtdicke",
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-mr.html" : "MII EX Bildgebung Modalität MR",
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html" : "MII EX Bildgebung Modalität PT",
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails",
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-ct.html" : "MII EX Bildgebung Modalität CT",
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-nm.html" : "MII EX Bildgebung Modalität PT/NM",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx.html" : "MII EX Bildgebung Modalität MG/CR/DX",
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-us.html" : "MII EX Bildgebung Modalität US",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ReasonMedicationGivenCodes",
+    "title" : "Reason Medication Given Codes",
+    "description" : "This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/reason-medication-given"],
+    "oids" : ["2.16.840.1.113883.4.642.3.344"],
+    "sources" : ["2.16.840.1.113883.4.642.3.344"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTReasonMedicationNotGivenCodes",
+    "title" : "SNOMED CT Reason Medication Not Given Codes",
+    "description" : "This value set includes all medication refused, medication not administered, and non-administration of necessary drug or medicine codes from SNOMED CT - provided as an exemplar value set.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.342"],
+    "sources" : ["2.16.840.1.113883.4.642.3.342"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ObservationReferenceRangeAppliesToCodes",
+    "title" : "Observation Reference Range Applies To Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Race",
+    "http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.407"],
+    "sources" : ["2.16.840.1.113883.4.642.3.407"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ObservationReferenceRangeMeaningCodes",
+    "title" : "Observation Reference Range Meaning Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/referencerange-meaning"],
+    "oids" : ["2.16.840.1.113883.4.642.3.397"],
+    "sources" : ["2.16.840.1.113883.4.642.3.397"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/report-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LOINCDiagnosticReportCodes",
+    "title" : "LOINC Diagnostic Report Codes",
+    "description" : "This value set includes LOINC codes that relate to Diagnostic Observations.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.233"],
+    "sources" : ["2.16.840.1.113883.4.642.3.233"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/request-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestIntent",
+    "title" : "RequestIntent",
+    "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+    "systems" : ["http://hl7.org/fhir/request-intent"],
+    "oids" : ["2.16.840.1.113883.4.642.3.113"],
+    "sources" : ["2.16.840.1.113883.4.642.3.113"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestPriority",
+    "title" : "Request priority",
+    "description" : "The clinical priority of a diagnostic order.",
+    "systems" : ["http://hl7.org/fhir/request-priority"],
+    "oids" : ["2.16.840.1.113883.4.642.3.115"],
+    "sources" : ["2.16.840.1.113883.4.642.3.115"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/request-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestStatus",
+    "title" : "RequestStatus",
+    "description" : "Codes identifying the lifecycle stage of a request.",
+    "systems" : ["http://hl7.org/fhir/request-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.111"],
+    "sources" : ["2.16.840.1.113883.4.642.3.111"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ResourceType",
+    "title" : "ResourceType",
+    "description" : "One of the resource types defined as part of this version of FHIR.",
+    "systems" : ["http://hl7.org/fhir/resource-types"],
+    "oids" : ["2.16.840.1.113883.4.642.3.27"],
+    "sources" : ["2.16.840.1.113883.4.642.3.27"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTRouteCodes",
+    "title" : "SNOMED CT Route Codes",
+    "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.98"],
+    "sources" : ["2.16.840.1.113883.4.642.3.98"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "All Security Labels",
+    "title" : "SecurityLabels",
+    "description" : "A single value set for all security labels defined by FHIR.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason",
+    "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+    "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+    "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"],
+    "oids" : ["2.16.840.1.113883.4.642.3.47"],
+    "sources" : ["2.16.840.1.113883.4.642.3.47"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund",
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
+    "StructureDefinition-mii-pr-bildgebung-geraet.html" : "MII PR Bildgebung Gerät",
+    "StructureDefinition-mii-pr-bildgebung-koerperstruktur.html" : "MII PR Bildgebung Körperstruktur"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/series-performer-function",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImagingStudySeriesPerformerFunction",
+    "title" : "ImagingStudy series performer function",
+    "description" : "Performer function of an agent in an imaging study series",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ParticipationType"],
+    "oids" : ["2.16.840.1.113883.4.642.3.989"],
+    "sources" : ["2.16.840.1.113883.4.642.3.989"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ServiceRequestCategoryCodes",
+    "title" : "Service Request Category Codes",
+    "description" : "An example value set of SNOMED CT concepts that can classify a requested service",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.434"],
+    "sources" : ["2.16.840.1.113883.4.642.3.434"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ServiceRequestOrderDetailsCodes",
+    "title" : "Service Request Order Details Codes",
+    "description" : "An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.435"],
+    "sources" : ["2.16.840.1.113883.4.642.3.435"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/udi-entry-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "UDIEntryType",
+    "title" : "UDIEntryType",
+    "description" : "Codes to identify how UDI data was entered.",
+    "systems" : ["http://hl7.org/fhir/udi-entry-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.211"],
+    "sources" : ["2.16.840.1.113883.4.642.3.211"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-geraet.html" : "MII PR Bildgebung Gerät"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "MedicineRouteOfAdministrationUvIps",
+    "title" : "Medicine EDQM Route of Administration - IPS",
+    "description" : "While SNOMED remains a preferred binding for medicine route, EDQM (European Directorate for the Quality of Medicines and Healthcare) route of administration codes are allowed as additional binding. \n\nEDQM (European Directorate for the Quality of Medicines and Healthcare) Route of Administration codes.  This Value Set includes all the EDQM Standard Terms having:  \n[Concept Status] = ‘C’ AND  \n[Concept Class] = 'ROA' AND  \n[Domain] = 'H+V'  \n\nC = 'Current'; ROA = 'Route of administration'; H+V = 'Human and Veterinary'",
+    "systems" : ["http://standardterms.edqm.eu"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "TargetSiteUvIps",
+    "title" : "Target Site - IPS",
+    "description" : "This value set includes codes from SNOMED Clinical Terms®: all descendants of 442083009 | Anatomical or acquired body structure (body structure)|.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "http://loinc.org/vs/loinc-rsna-radiology-playbook",
+    "version" : null,
+    "status" : "active",
+    "name" : "LOINC/RSNA Radiology Playbook",
+    "title" : null,
+    "description" : "",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ActCode",
+    "title" : "v3 Code System ActCode",
+    "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
+    "version" : "2014-03-26",
+    "status" : "active",
+    "name" : "v3.ConfidentialityClassification",
+    "title" : "V3 Value SetConfidentialityClassification",
+    "description" : " Set of codes used to value Act.Confidentiality and Role.Confidentiality attribute in accordance with the definition for concept domain \"Confidentiality\".",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Confidentiality"],
+    "oids" : ["2.16.840.1.113883.1.11.10228"],
+    "sources" : ["2.16.840.1.113883.1.11.10228"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ServiceDeliveryLocationRoleType",
+    "title" : "ServiceDeliveryLocationRoleType",
+    "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+    "oids" : ["2.16.840.1.113883.1.11.17660"],
+    "sources" : ["2.16.840.1.113883.1.11.17660"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_VS_Medikation_ATC",
+    "title" : "MII VS Medikation ATC",
+    "description" : "Enthaelt ATC-Codes der Versionen 2018 bis 2024",
+    "systems" : ["http://fhir.de/CodeSystem/bfarm/atc"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/mii-vs-prozedur-ops",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_VS_Prozedur_OPS",
+    "title" : "MII VS Prozedur OPS",
+    "description" : "Enthaelt OPS-Codes der Versionen 2010 bis 2025",
+    "systems" : ["http://fhir.de/CodeSystem/bfarm/ops"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_VS_Prozedur_OpsKategorien_SNOMEDCT",
+    "title" : "MII VS Prozedur OPS Kategorien [SNOMED CT]",
+    "description" : "Enthaelt alle SNOMED CT Codes für ein Mapping der OPS Klassentitel",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-intend",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_VS_Prozedur_Durchfuehrungsabsicht_SNOMEDCT",
+    "title" : "MII VS Prozedur Durchführungsabsicht [SNOMED CT]",
+    "description" : "Durchführungsabsicht / Intention mit der Prozedur ausgeführt wird",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-sct",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_VS_Prozedur_Prozeduren_SNOMEDCT",
+    "title" : "MII VS Prozedur Prozeduren [SNOMED CT]",
+    "description" : "Enthaelt alle SNOMED CT Procedure Codes",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Diagnostic_Report_Code_LNC",
+    "title" : "MII VS Bildgebung DiagnosticReport Code Loinc",
+    "description" : "Import the ValueSet for Diagnostic Reports",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Diagnostic_Report_Code_SCT",
+    "title" : "MII VS Bildgebung DiagnosticReport Code SCT",
+    "description" : "Import the ValueSet for Diagnostic Reports",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-lnc",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Findings_LNC",
+    "title" : "MII VS Bildgebung Findings Loinc",
+    "description" : "Import the ValueSet for LOINC Findings",
+    "systems" : ["http://loinc.org"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Findings_SCT",
+    "title" : "MII VS Bildgebung Findings SCT",
+    "description" : "Import the ValueSet for Diagnostic Reports and Service Request",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_ImagingProcedure_Code_SCT",
+    "title" : "MII VS Bildgebung ImagingProcedure Code SCT",
+    "description" : "Import the ValueSet for Imaging Procedures",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_ImagingStudy_Series_View_Position",
+    "title" : "MII VS Bildgebung ImagingStudy-Series View Position",
+    "description" : "Import the ValueSets for view position in MG and DX/CR series",
+    "systems" : ["http://snomed.info/srt", "http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx.html" : "MII EX Bildgebung Modalität MG/CR/DX"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_CT",
+    "title" : "MII VS Bildgebung Instance Image Type CT",
+    "description" : "Import the ValueSet for Instance Image Type CT",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_MR",
+    "title" : "MII VS Bildgebung Instance Image Type MR",
+    "description" : "Import the ValueSet for Instance Image Type MR",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_NM",
+    "title" : "MII VS Bildgebung Instance Image Type NM",
+    "description" : "Import the ValueSet for Instance Image Type NM",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_NM_Implementation",
+    "title" : "MII VS Bildgebung Instance Image Type NM Implementation",
+    "description" : "Import the ValueSet for Instance Image Type NM Implementation",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_Patient_Examination",
+    "title" : "MII VS Bildgebung Instance Image Type Patient Examination",
+    "description" : "Import the ValueSet for Instance Image Type Examination",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_Pixel_Data",
+    "title" : "MII VS Bildgebung Instance Image Type Pixel Data",
+    "description" : "Import the ValueSet for Instance Image Type Pixel Data",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_US",
+    "title" : "MII VS Bildgebung Instance Image Type US",
+    "description" : "Import the ValueSet for Instance Image Type US",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_US_Implemantation",
+    "title" : "MII VS Bildgebung Instance Image Type US Implemantation",
+    "description" : "Import the ValueSet for Instance Image Type US Implemantation",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_MR_Scanning_Sequence",
+    "title" : "MII VS Bildgebung Imaging Study MR Scanning Sequence",
+    "description" : "Import the ValueSet for MR Scanning Sequence",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-mr.html" : "MII EX Bildgebung Modalität MR"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_MR_Scanning_Sequence_Variant",
+    "title" : "MII VS Bildgebung Imaging Study MR Scanning Sequence Variant",
+    "description" : "Import the ValueSet for MR Scanning Sequence Variant",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-mr.html" : "MII EX Bildgebung Modalität MR"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Observation_Body_Site_SCT",
+    "title" : "MII VS Bildgebung Observation Body Site SCT",
+    "description" : "Import the ValueSet for Observation",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_PT_Series_Type_Spacial",
+    "title" : "MII VS Bildgebung Imaging Study PT Series Type Spacial",
+    "description" : "Import the ValueSet for PT Series Type Spacial",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html" : "MII EX Bildgebung Modalität PT"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-volumetric",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_PT_Series_Type_Volumetric",
+    "title" : "MII VS Bildgebung Imaging Study PT Series Type Volumetric",
+    "description" : "Import the ValueSet for PT Series Type Volumetric",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html" : "MII EX Bildgebung Modalität PT"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-service-request-code-sct",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_ServiceRequest_Code_SCT",
+    "title" : "MII VS Bildgebung ServiceRequest Code SCT",
+    "description" : "Import the ValueSet for ServiceRequest",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_US_Transducer_Type",
+    "title" : "MII VS Bildgebung Imaging Study US Transducer Type",
+    "description" : "Import the ValueSet for US Transducer Type",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-us.html" : "MII EX Bildgebung Modalität US"
+  }]
+}

@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-bildgebung-imagingStudy-series-view-position",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "language" : "de",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-bildgebung-imagingStudy-series-view-position</b></p><a name=\"de-mii-vs-bildgebung-imagingStudy-series-view-position\"> </a><a name=\"de-hcmii-vs-bildgebung-imagingStudy-series-view-position\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html\">ViewforMammography</a></li><li>Import all the codes that are contained in <a href=\"http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4010.html\">DXView</a></li></ul></div>"
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_ImagingStudy_Series_View_Position",
+  "title" : "MII VS Bildgebung ImagingStudy-Series View Position",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-01",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Import the ValueSets for view position in MG and DX/CR series",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "This value set includes content from DICOM (https://www.dicomstandard.org/). DICOM® is the registered trademark of the National Electrical Manufacturers Association (NEMA) for its Standards publications relating to digital communications of medical information.",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html"]
+    },
+    {
+      "valueSet" : ["http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4010.html"]
+    }]
+  }
+}

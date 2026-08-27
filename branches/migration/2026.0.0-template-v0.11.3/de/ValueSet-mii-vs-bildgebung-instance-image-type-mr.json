@@ -1,0 +1,86 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-bildgebung-instance-image-type-mr",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "language" : "de",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-bildgebung-instance-image-type-mr</b></p><a name=\"de-mii-vs-bildgebung-instance-image-type-mr\"> </a><a name=\"de-hcmii-vs-bildgebung-instance-image-type-mr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html\"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2027.0.0-ballot</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-DENSITYMAP\">DENSITYMAP</a></td><td style=\"color: #cccccc\">Density Map</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-DIFFUSIONMAP\">DIFFUSIONMAP</a></td><td style=\"color: #cccccc\">Diffusion Map</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-IMAGEADDITION\">IMAGEADDITION</a></td><td style=\"color: #cccccc\">Image Addition</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-MODULUSSUBTRACT\">MODULUSSUBTRACT</a></td><td style=\"color: #cccccc\">Modulus Substract</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-MPR\">MPR</a></td><td style=\"color: #cccccc\">MPR</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-OTHER\">OTHER</a></td><td style=\"color: #cccccc\">Other</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-PHASEMAP\">PHASEMAP</a></td><td style=\"color: #cccccc\">Phase Map</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-PHASESUBTRACT\">PHASESUBTRACT</a></td><td style=\"color: #cccccc\">Phase Substract</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-PROJECTIONIMAGE\">PROJECTIONIMAGE</a></td><td style=\"color: #cccccc\">Projection Image</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-T1MAP\">T1MAP</a></td><td style=\"color: #cccccc\">T1 Map</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-T2MAP\">T2MAP</a></td><td style=\"color: #cccccc\">T2 Map</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-VELOCITYMAP\">VELOCITYMAP</a></td><td style=\"color: #cccccc\">Velocity Map</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Instance_Image_Type_MR",
+  "title" : "MII VS Bildgebung Instance Image Type MR",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-01",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Import the ValueSet for Instance Image Type MR",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+      "concept" : [{
+        "code" : "DENSITYMAP"
+      },
+      {
+        "code" : "DIFFUSIONMAP"
+      },
+      {
+        "code" : "IMAGEADDITION"
+      },
+      {
+        "code" : "MODULUSSUBTRACT"
+      },
+      {
+        "code" : "MPR"
+      },
+      {
+        "code" : "OTHER"
+      },
+      {
+        "code" : "PHASEMAP"
+      },
+      {
+        "code" : "PHASESUBTRACT"
+      },
+      {
+        "code" : "PROJECTIONIMAGE"
+      },
+      {
+        "code" : "T1MAP"
+      },
+      {
+        "code" : "T2MAP"
+      },
+      {
+        "code" : "VELOCITYMAP"
+      }]
+    }]
+  }
+}

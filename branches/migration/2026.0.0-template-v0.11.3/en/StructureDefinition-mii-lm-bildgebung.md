@@ -1,0 +1,3056 @@
+# MII LM Bildgebung - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **MII LM Bildgebung**
+
+## Logical Model: MII LM Bildgebung 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung | *Version*:2027.0.0-ballot |
+| Active as of 2026-09-01 | *Computable Name*:MII_LM_Bildgebung |
+
+ 
+MII LogicalModel Module Bildgebung 
+
+**Usages:**
+
+* This Logical Model is not used by any profiles in this Specification
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.bildgebung|current/StructureDefinition/StructureDefinition-mii-lm-bildgebung.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots, and their representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-mii-lm-bildgebung.csv), [Excel](../StructureDefinition-mii-lm-bildgebung.xlsx) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "mii-lm-bildgebung",
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_LM_Bildgebung",
+  "_name" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en-US"
+      },
+      {
+        "url" : "content",
+        "valueString" : "MII_LM_Bildgebung"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "title" : "MII LM Bildgebung",
+  "_title" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en-US"
+      },
+      {
+        "url" : "content",
+        "valueString" : "MII LM Bildgebung"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "status" : "active",
+  "date" : "2026-09-01",
+  "publisher" : "Medizininformatik Initiative",
+  "_publisher" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "de"
+      },
+      {
+        "url" : "content",
+        "valueString" : "Medizininformatik Initiative"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "MII LogicalModel Modul Bildgebung",
+  "_description" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en-US"
+      },
+      {
+        "url" : "content",
+        "valueString" : "MII LogicalModel Module Bildgebung"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "FHIR",
+    "name" : "Bildgebung LogicalModel FHIR Mapping"
+  },
+  {
+    "identity" : "KDS-Profile",
+    "name" : "Bildgebung LogicalModel KDS-Profile Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [{
+      "id" : "Bildgebung",
+      "path" : "Bildgebung",
+      "short" : "Das Erweiterungsmodul Bildgebung enthält Datenelemente zur Dokumentation Bildgebungsstudien und radiologischen Befundberichten",
+      "definition" : "MII LogicalModel Modul Bildgebung"
+    },
+    {
+      "id" : "Bildgebung.Koerperstruktur",
+      "path" : "Bildgebung.Koerperstruktur",
+      "short" : "Körperstruktur",
+      "definition" : "untersuchte Körperstruktur",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "BodyStructure"
+      },
+      {
+        "identity" : "KDS-Profile",
+        "map" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Koerperstruktur.Morphologie",
+      "path" : "Bildgebung.Koerperstruktur.Morphologie",
+      "short" : "Morphologie",
+      "definition" : "Morphologie der Körperstruktur",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "BodyStructure.morphology"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Koerperstruktur.Lokalisation",
+      "path" : "Bildgebung.Koerperstruktur.Lokalisation",
+      "short" : "Lokalisation",
+      "definition" : "Lokalisation der Körperstruktur im Bild.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "BodyStructure.location"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Koerperstruktur.naehereLokalisation",
+      "path" : "Bildgebung.Koerperstruktur.naehereLokalisation",
+      "short" : "nähere Lokalisation",
+      "definition" : "explizite Beschreibung der Lokalisation.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "BodyStructure.locationQualifier"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Koerperstruktur.Person",
+      "path" : "Bildgebung.Koerperstruktur.Person",
+      "short" : "Person",
+      "definition" : "Person, an der sich die untersuchte Körperstruktur befindet. Hier soll das MII KDS-Modul Person verwendet werden.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "BodyStructure.patient"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Empfehlung",
+      "path" : "Bildgebung.Empfehlung",
+      "short" : "Empfehlung",
+      "definition" : "Therapieempfehlungen aus vorherigen Behandlungen",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "CarePlan"
+      },
+      {
+        "identity" : "KDS-Profile",
+        "map" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Empfehlung.Status",
+      "path" : "Bildgebung.Empfehlung.Status",
+      "short" : "Status",
+      "definition" : "Status der Behandlungsempfehlung",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "CarePlan.status"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Empfehlung.ArtEmpfehlung",
+      "path" : "Bildgebung.Empfehlung.ArtEmpfehlung",
+      "short" : "Art der Empfehlung",
+      "definition" : "Beschreibt die Art und Absicht der Empfehlung.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "CarePlan.intent"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Empfehlung.FreitextEmpfehlung",
+      "path" : "Bildgebung.Empfehlung.FreitextEmpfehlung",
+      "short" : "Freitextempfehlung",
+      "definition" : "Behandlungsempfehlung in Freitextform.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "CarePlan.description"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Empfehlung.Person",
+      "path" : "Bildgebung.Empfehlung.Person",
+      "short" : "Person",
+      "definition" : "Person, auf die sich die Empfehlung bezieht. Hier soll das MII KDS-Modul Person verwendet werden.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "CarePlan.subject"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Empfehlung.Zusatzinformation",
+      "path" : "Bildgebung.Empfehlung.Zusatzinformation",
+      "short" : "Zusatzinformation",
+      "definition" : "Zusatzinformation für einen Befundbericht.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "CarePlan.supportingInfo"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument",
+      "short" : "Semistrukturiertes Befunddokument",
+      "definition" : "Abbildung des Befunds über generische Composition.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition"
+      },
+      {
+        "identity" : "KDS-Profile",
+        "map" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.Status",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.Status",
+      "short" : "Status",
+      "definition" : "Status des semistrukturierten Befundberichts.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.status"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.Typ",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.Typ",
+      "short" : "Typ",
+      "definition" : "bestimmte Dokumentenart in LOINC codiert.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.type"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.Person",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.Person",
+      "short" : "Person",
+      "definition" : "Person, auf die sich das Dokument bezieht. Hier sollte das MII KDS-Profil Person referenziert werden.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.subject"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.DatumUhrzeit",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.DatumUhrzeit",
+      "short" : "Datum und Uhrzeit der Bearbeitung",
+      "definition" : "Datum und Uhrzeit der Bearbeitung",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.date"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.Autor",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.Autor",
+      "short" : "Autor",
+      "definition" : "Referenz auf den Autor der Beschreibung.",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.author"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.Titel",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.Titel",
+      "short" : "Titel",
+      "definition" : "Titel des Befunddokuments",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.title"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt",
+      "short" : "Befundabschnitt",
+      "definition" : "Befundabschnitt des semistrukturierten Befunddokuments. Der erste Abschnitt ist immer ein Befundbericht. Alle weiteren Abschnitte können Freitext oder codierte Beobachtungen sein.",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.section"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Titel",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Titel",
+      "short" : "Titel",
+      "definition" : "Titel des Befundabschnitts.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.section.title"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Art",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Art",
+      "short" : "Art",
+      "definition" : "Art des Befundabschnitts.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.section.code"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Autor",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Autor",
+      "short" : "Autor",
+      "definition" : "Autor des jeweiligen Befundabschnitts. Kann auch von einer KI generiert werden.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/Device"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.section.author"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Text",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Text",
+      "short" : "Text",
+      "definition" : "Textueller Inhalt des Befundabschnitts.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Narrative"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.section.text"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Eintrag",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Eintrag",
+      "short" : "Eintrag",
+      "definition" : "Referenz auf eine Observation, die zum Eintrag des Befundabschnitts gehört.",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+        "http://hl7.org/fhir/StructureDefinition/Observation"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.section.entry"
+      }]
+    },
+    {
+      "id" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Unterabschnitt",
+      "path" : "Bildgebung.SemistrukturiertesBefunddokument.Befundabschnitt.Unterabschnitt",
+      "short" : "Unterabschnitt",
+      "definition" : "Referenz auf einen weiteren Unterabschnitt.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Composition.section.section"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Geraet",
+      "path" : "Bildgebung.Geraet",
+      "short" : "Gerät",
+      "definition" : "Gerät zur Bildgebung",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Device"
+      },
+      {
+        "identity" : "KDS-Profile",
+        "map" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Geraet.Hersteller",
+      "path" : "Bildgebung.Geraet.Hersteller",
+      "short" : "Hersteller",
+      "definition" : "Hersteller des Geräts",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Device.manufacturer"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Geraet.Geraetename",
+      "path" : "Bildgebung.Geraet.Geraetename",
+      "short" : "Gerätename",
+      "definition" : "Name des Geräts",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Device.deviceName"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht",
+      "path" : "Bildgebung.Befundbericht",
+      "short" : "Befundbericht",
+      "definition" : "Bericht einer radiologischen Befundung",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport"
+      },
+      {
+        "identity" : "KDS-Profile",
+        "map" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.AnforderndeMassnahme",
+      "path" : "Bildgebung.Befundbericht.AnforderndeMassnahme",
+      "short" : "Anfordernde Maßnahme",
+      "definition" : "Basiert auf einer ServiceRequest-Anfrage.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.basedOn"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.Status",
+      "path" : "Bildgebung.Befundbericht.Status",
+      "short" : "Status",
+      "definition" : "Status des Befundberichts.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.status"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.Kategorie",
+      "path" : "Bildgebung.Befundbericht.Kategorie",
+      "short" : "Kategorie",
+      "definition" : "Kategorisiert die Untersuchungsart",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.category"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.Code",
+      "path" : "Bildgebung.Befundbericht.Code",
+      "short" : "Code",
+      "definition" : "Festgelegter Code des Befundberichts. Hier Radiologischer Befund",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.code"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.Person",
+      "path" : "Bildgebung.Befundbericht.Person",
+      "short" : "Personen-Identifikation",
+      "definition" : "Die Person, für die der Befundbericht erstellt wurde. Hier sollte das MII KDS-Modul Person referenziert werden",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.subject"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.Fall",
+      "path" : "Bildgebung.Befundbericht.Fall",
+      "short" : "Fall-Referenz",
+      "definition" : "Referenz über Fall auf den Versorgungsstellenkontakt. Hier soll das MII KDS-Modul Fall in Stufe 3 referenziert werden",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.encounter"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.Zeitpunkt",
+      "path" : "Bildgebung.Befundbericht.Zeitpunkt",
+      "short" : "Klinisch relevanter Zeitpunkt",
+      "definition" : "Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.effectiveDateTime"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.Periode",
+      "path" : "Bildgebung.Befundbericht.Periode",
+      "short" : "Klinisch relevante Periode",
+      "definition" : "Klinisch relevante Periode, auf die sich der Bericht bezieht.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.effectivePeriod"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.ZeitpunktErstellung",
+      "path" : "Bildgebung.Befundbericht.ZeitpunktErstellung",
+      "short" : "Zeitpunkt der Erstellung",
+      "definition" : "Zeitpunkt der Erstellung des Berichts.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.issued"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.Beobachtung",
+      "path" : "Bildgebung.Befundbericht.Beobachtung",
+      "short" : "Beobachtung",
+      "definition" : "Referenz auf die generische Beobachtung.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.result"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.Studienbezug",
+      "path" : "Bildgebung.Befundbericht.Studienbezug",
+      "short" : "Studienbezug",
+      "definition" : "Bezug auf die zugehörige(n) Bildgebungsstudie(n).",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ImagingStudy"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.study"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.InterpretationBeobachtung",
+      "path" : "Bildgebung.Befundbericht.InterpretationBeobachtung",
+      "short" : "Interpretation",
+      "definition" : "Freitextinterpretation der Beobachtung.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "markdown"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.conclusion"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.StrukturierteInterpretation",
+      "path" : "Bildgebung.Befundbericht.StrukturierteInterpretation",
+      "short" : "Strukturierte Interpretation",
+      "definition" : "Strukturierte Interpretation der Beobachtung.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.conclusionCode"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.Zusatzinformation",
+      "path" : "Bildgebung.Befundbericht.Zusatzinformation",
+      "short" : "Zusatzinformation",
+      "definition" : "Referenz auf weitere Befundberichte zum Patienten. Backport aus FHIR R5",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+        "http://hl7.org/fhir/StructureDefinition/Procedure"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.supportingInfo.reference"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundbericht.Dokumentenanhang",
+      "path" : "Bildgebung.Befundbericht.Dokumentenanhang",
+      "short" : "Dokumentenanhang",
+      "definition" : "Anhang der Dokumente und Bilder.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Attachment"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.presentedForm"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Bildgebungsprozedur",
+      "path" : "Bildgebung.Bildgebungsprozedur",
+      "short" : "Bildgebungsprozedur",
+      "definition" : "Beschreibt eine Bildgebungsprozedur.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure"
+      },
+      {
+        "identity" : "KDS-Profile",
+        "map" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Bildgebungsprozedur.AnforderndeMassnahme",
+      "path" : "Bildgebung.Bildgebungsprozedur.AnforderndeMassnahme",
+      "short" : "Anfordernde Maßnahme",
+      "definition" : "Anforderung einer Bildgebungsprozedur",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure.basedOn"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Bildgebungsprozedur.Status",
+      "path" : "Bildgebung.Bildgebungsprozedur.Status",
+      "short" : "Status",
+      "definition" : "Status der Befundungsprozedur",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure.status"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Bildgebungsprozedur.Kategorie",
+      "path" : "Bildgebung.Bildgebungsprozedur.Kategorie",
+      "short" : "Kategorie",
+      "definition" : "Kategorisiert die Prozedur",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure.category"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Bildgebungsprozedur.Code",
+      "path" : "Bildgebung.Bildgebungsprozedur.Code",
+      "short" : "Code",
+      "definition" : "Definiert einen spezifischen Code für die Prozedur nach LOINC",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure.code"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Bildgebungsprozedur.Person",
+      "path" : "Bildgebung.Bildgebungsprozedur.Person",
+      "short" : "Person",
+      "definition" : "Zu untersuchende Person. Hier soll das MII KDS-Profil Person verwendet werden.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure.subject"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Bildgebungsprozedur.Zeitpunkt",
+      "path" : "Bildgebung.Bildgebungsprozedur.Zeitpunkt",
+      "short" : "Zeitpunkt der Prozedur",
+      "definition" : "Zeitpunkt an dem die Prozedur durchgeführt wurde.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure.performed[x]"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie",
+      "path" : "Bildgebung.Studie",
+      "short" : "Studie",
+      "definition" : "Bildgebungsstudie",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy"
+      },
+      {
+        "identity" : "KDS-Profile",
+        "map" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Status",
+      "path" : "Bildgebung.Studie.Status",
+      "short" : "Status",
+      "definition" : "Status der Bildgebungsstudie- Info darüber, ob die Studie gültig, ungültig, zurückgezogen, etc. ist.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.status"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Modalitaeten",
+      "path" : "Bildgebung.Studie.Modalitaeten",
+      "short" : "Modalitaeten",
+      "definition" : "Set/Liste aller verschiedenen Modalitaeten, die in dieser DICOM-Studie enthalten sind.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.modality"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Person",
+      "path" : "Bildgebung.Studie.Person",
+      "short" : "Person",
+      "definition" : "Person, auf die sich die Bildgebungsstudie bezieht. Hier soll das MII KDS-Modul Person referenziert werden.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.subject"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Fall",
+      "path" : "Bildgebung.Studie.Fall",
+      "short" : "Fall-Referenz",
+      "definition" : "Referenz zum dazugehörigen Fall der Bildgebungsstudie. Hier soll das MII KDS-Modul Fall in Stufe 3 referenziert werden.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.encounter"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Beginn",
+      "path" : "Bildgebung.Studie.Beginn",
+      "short" : "Beginn",
+      "definition" : "Datum und Zeitpunkt, an dem die Studie gestartet wurde (z.B. Zeitpunkt des Beginns der CT-Untersuchung).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.started"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.AnforderndeMassnahme",
+      "path" : "Bildgebung.Studie.AnforderndeMassnahme",
+      "short" : "Anfordernde Maßnahme",
+      "definition" : "Referenz auf die anfordernde Maßnahme dieser Bildgebungsstudie",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.basedOn"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.QuellePACS",
+      "path" : "Bildgebung.Studie.QuellePACS",
+      "short" : "Quelle zum PACS-Bild",
+      "definition" : "Referenz auf den Speicherort der Bildgebungsstudie im PACS",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Endpoint"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.endpoint"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.AnzahlSerien",
+      "path" : "Bildgebung.Studie.AnzahlSerien",
+      "short" : "Anzahl der Serien",
+      "definition" : "Anzahl der in der Bildgebungsstudie enthaltenen Serien, z.B. 5",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "unsignedInt"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.numberOfSeries"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.AnzahlInstanzen",
+      "path" : "Bildgebung.Studie.AnzahlInstanzen",
+      "short" : "Anzahl der SOP Instanzen",
+      "definition" : "Anzahl der in der Bildgebungsstudie enthaltenen SOP Instanzen, z.B. 127",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "unsignedInt"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.numberOfInstances"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Bildgebungsprozedur",
+      "path" : "Bildgebung.Studie.Bildgebungsprozedur",
+      "short" : "Bildgebungsprozedur",
+      "definition" : "Referenz auf die dazugehörige bildgebende Prozedur der Studie. Hier soll auf das MII KDS-Modul Prozedur referenziert werden.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Procedure"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.procedureReference"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Bildgebungsgrund",
+      "path" : "Bildgebung.Studie.Bildgebungsgrund",
+      "short" : "Bildgebungsgrund",
+      "definition" : "Grund, aus dem die Prozedur angefordert wurde",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Koerpergewicht",
+      "path" : "Bildgebung.Studie.Koerpergewicht",
+      "short" : "Gewicht",
+      "definition" : "Körpergewicht des Patienten",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-gewicht)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Koerpergroesse",
+      "path" : "Bildgebung.Studie.Koerpergroesse",
+      "short" : "Größe",
+      "definition" : "Körpergröße des Patienten",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-groesse)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Indikation",
+      "path" : "Bildgebung.Studie.Indikation",
+      "short" : "Indikation",
+      "definition" : "Indikation der Bildgebungsstudie, d.h. der Grund, aus dem diese Bildgebung angefertigt wurde.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition",
+        "http://hl7.org/fhir/StructureDefinition/Observation"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.reasonReference"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.StudienBeschreibung",
+      "path" : "Bildgebung.Studie.StudienBeschreibung",
+      "short" : "Studien-Beschreibung",
+      "definition" : "Beschreibung der Bildgebungsstudie",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.description"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien",
+      "path" : "Bildgebung.Studie.Serien",
+      "short" : "Serien",
+      "definition" : "Die Serien der DICOM-Studie",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.SerienUID",
+      "path" : "Bildgebung.Studie.Serien.SerienUID",
+      "short" : "Serien-UID",
+      "definition" : "UID der DICOM-Serie",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "id"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.uid"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.SerienNummer",
+      "path" : "Bildgebung.Studie.Serien.SerienNummer",
+      "short" : "Serien-Nummer",
+      "definition" : "Nummer der jeweiligen DICOM-Serie",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "unsignedInt"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.number"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Modalitaet",
+      "path" : "Bildgebung.Studie.Serien.Modalitaet",
+      "short" : "Modalitaet",
+      "definition" : "Modalitaet der DICOM-Serie, z.B. 'MR' oder 'CR'",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.modality"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Serienbeschreibung",
+      "path" : "Bildgebung.Studie.Serien.Serienbeschreibung",
+      "short" : "Serien-Beschreibung",
+      "definition" : "Beschreibung der jeweiligen Serie",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.description"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.AnzahlInstanzen",
+      "path" : "Bildgebung.Studie.Serien.AnzahlInstanzen",
+      "short" : "Anzhal der SOP Instanzen",
+      "definition" : "Anzahl der in der Serie enthaltenen SOP Instanzen, z.B. 28",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "unsignedInt"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.numberOfInstances"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Koerperregion",
+      "path" : "Bildgebung.Studie.Serien.Koerperregion",
+      "short" : "Körperregion",
+      "definition" : "Codierte Information über die untersuchte Körperregion der Serie",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.bodySite"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Koerperseite",
+      "path" : "Bildgebung.Studie.Serien.Koerperseite",
+      "short" : "Körperseite/Lateralität",
+      "definition" : "Information über die Körperseite der untersuchten Körperregion, z.B. linksseitig",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.laterality"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Beginn",
+      "path" : "Bildgebung.Studie.Serien.Beginn",
+      "short" : "Beginn",
+      "definition" : "Datum und Zeitpunkt, an dem die Serie gestartet wurde (z.B. Zeitpunkt des Beginns der jeweiligen Serienaufnahme).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.started"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Ausfuehrender",
+      "path" : "Bildgebung.Studie.Serien.Ausfuehrender",
+      "short" : "Ausführender der Serie",
+      "definition" : "Person oder Gerät das die Serie ausführt",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.performer"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Ausfuehrender.Akteur",
+      "path" : "Bildgebung.Studie.Serien.Ausfuehrender.Akteur",
+      "short" : "Geraet",
+      "definition" : "Genutztes Geraet in der Serie",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.performer.actor"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Schichtdicke",
+      "path" : "Bildgebung.Studie.Serien.Schichtdicke",
+      "short" : "Schichtdicke",
+      "definition" : "Schichtdicke über die gesamte Serie hinweg",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke/sliceThickness)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Kontrastmittelgabe",
+      "path" : "Bildgebung.Studie.Serien.Kontrastmittelgabe",
+      "short" : "Kontrastmittelgabe",
+      "definition" : "Information darüber, ob bei der Serie Kontrastmittel genutzt wurde oder nicht",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel/contrastBolus)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Kontrastmitteldetails",
+      "path" : "Bildgebung.Studie.Serien.Kontrastmitteldetails",
+      "short" : "Kontrastmitteldetails",
+      "definition" : "Details zur Kontrastmittelgabe über das MedicationStatement oder MedicationAdministration. Hier soll auf das MII KDS-Modul Medikation referenziert werden",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+        "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel/contrastBolusDetails)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetDX",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetDX",
+      "short" : "Modalitaet DX",
+      "definition" : "Modalitaet klassisches Röntgen",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetDX.KVP",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetDX.KVP",
+      "short" : "Maximale Röntgenröhrenspannung",
+      "definition" : "Maximale Röntgenröhrenspannung in kV",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/KVP)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetDX.Expositionszeit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetDX.Expositionszeit",
+      "short" : "Expositionszeit",
+      "definition" : "Expositionszeit in ms",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/exposureTime)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetDX.Exposition",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetDX.Exposition",
+      "short" : "Exposition",
+      "definition" : "Exposition in MAs",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/exposure)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetDX.Roentgenroehrenstrom",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetDX.Roentgenroehrenstrom",
+      "short" : "Röntgenröhrenstrom",
+      "definition" : "Röntgenröhrenstrom in mA",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/xRayTubeCurrent)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetDX.Blickposition",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetDX.Blickposition",
+      "short" : "Blickposition",
+      "definition" : "Position der Aufnahme, z.B. medio-lateral",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCR",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCR",
+      "short" : "Modalitaet CR",
+      "definition" : "Modalitaet klassisches Röntgen",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCR.KVP",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCR.KVP",
+      "short" : "Maximale Röntgenröhrenspannung",
+      "definition" : "Maximale Röntgenröhrenspannung in kV",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/KVP)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCR.Expositionszeit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCR.Expositionszeit",
+      "short" : "Expositionszeit",
+      "definition" : "Expositionszeit in ms",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/exposureTime)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCR.Exposition",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCR.Exposition",
+      "short" : "Exposition",
+      "definition" : "Exposition in MAs",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/exposure)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCR.Roentgenroehrenstrom",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCR.Roentgenroehrenstrom",
+      "short" : "Röntgenröhrenstrom",
+      "definition" : "Röntgenröhrenstrom in mA",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/xRayTubeCurrent)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCR.Blickposition",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCR.Blickposition",
+      "short" : "Blickposition",
+      "definition" : "Position der Aufnahme, z.B. medio-lateral",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMG",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMG",
+      "short" : "Modalitaet MG",
+      "definition" : "Modalitaet Mammographie",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMG.KVP",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMG.KVP",
+      "short" : "Maximale Röntgenröhrenspannung",
+      "definition" : "Maximale Röntgenröhrenspannung in kV",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/KVP)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMG.Expositionszeit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMG.Expositionszeit",
+      "short" : "Expositionszeit",
+      "definition" : "Expositionszeit in ms",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/exposureTime)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMG.Exposition",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMG.Exposition",
+      "short" : "Exposition",
+      "definition" : "Exposition in MAs",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/exposure)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMG.Roentgenroehrenstrom",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMG.Roentgenroehrenstrom",
+      "short" : "Röntgenröhrenstrom",
+      "definition" : "Röntgenröhrenstrom in mA",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/xRayTubeCurrent)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMG.Blickposition",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMG.Blickposition",
+      "short" : "Blickposition",
+      "definition" : "Position der Aufnahme, z.B. medio-lateral",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx/viewPosition)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCT",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCT",
+      "short" : "Modalitaet CT",
+      "definition" : "Modalitaet Computertomographie",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCT.CTDIVolume",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCT.CTDIVolume",
+      "short" : "CTDIvolume",
+      "definition" : "CTDIvolume in mGy",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct/CTDIvol)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCT.KVP",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCT.KVP",
+      "short" : "Maximale Röntgenröhrenspannung",
+      "definition" : "Maximale Röntgenröhrenspannung in kV",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct/KVP)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCT.Expositionszeit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCT.Expositionszeit",
+      "short" : "Expositionszeit",
+      "definition" : "Expositionszeit in ms",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct/exposureTime)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCT.Exposition",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCT.Exposition",
+      "short" : "Exposition",
+      "definition" : "Exposition in MAs",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct/exposure)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCT.Roentgenroehrenstrom",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCT.Roentgenroehrenstrom",
+      "short" : "Röntgenröhrenstrom",
+      "definition" : "Röntgenröhrenstrom in mA",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct/xRayTubeCurrent)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetCT.Filterkern",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetCT.Filterkern",
+      "short" : "Filterkern",
+      "definition" : "Genutzter Filterkern in der Reskonstruktion",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct/convolutionalKernel)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMR",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMR",
+      "short" : "Modalitaet MR",
+      "definition" : "Modalitaet Kernspintomographie",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMR.ScanningSequenz",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMR.ScanningSequenz",
+      "short" : "Scanning Sequenz",
+      "definition" : "Code der aktuellen Scanning Sequenz",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMR.ScanningSequenzUntervariante",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMR.ScanningSequenzUntervariante",
+      "short" : "Scanning Sequenz Untervariante",
+      "definition" : "Code der aktuellen Scanning Sequenz Untervariante",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMR.MagnetischeFeldstaerke",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMR.MagnetischeFeldstaerke",
+      "short" : "Magnetische Feldstärke",
+      "definition" : "Magnetische Feldstärke des Kernspins in T",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMR.Echozeit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMR.Echozeit",
+      "short" : "Echozeit (TE)",
+      "definition" : "Zeitintervall zwischen der Anregung und der Messung des MR-Signals in ms",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMR.Repetitionszeit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMR.Repetitionszeit",
+      "short" : "Repetitionszeit (TR)",
+      "definition" : "Zeit, die bei der MRT zwischen zwei Anregungspulsen vergeht in ms",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMR.Inversionszeit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMR.Inversionszeit",
+      "short" : "Inversionszeit (TI)",
+      "definition" : "Zeit, die beim MRT zwischen dem 180°-Umkehrpuls und dem eigentlichen 90°-Anregungspuls vergeht in ms",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetMR.Kippwinkel",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetMR.Kippwinkel",
+      "short" : "Kippwinkel",
+      "definition" : "Ausmaß an Rotation in Winkelmaß (°)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetPT",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetPT",
+      "short" : "Modalitaet PT",
+      "definition" : "Modalitaet PET-Scan",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetPT.Radiopharmakon",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetPT.Radiopharmakon",
+      "short" : "Radiopharmakon",
+      "definition" : "Genutztes Radiopharmakon",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt/radiopharmaceutical)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetPT.Radionuklid",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetPT.Radionuklid",
+      "short" : "Radionuklid",
+      "definition" : "Genutztes Radionuklid",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt/radionuclide)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetPT.TracerExpositionszeit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetPT.TracerExpositionszeit",
+      "short" : "Tracer-Expositionszeit",
+      "definition" : "Zeit die der Tracer im Körper einwirken konnte",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt/tracerExposureTime)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetPT.Skalierungseinheit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetPT.Skalierungseinheit",
+      "short" : "Skalierungseinheit",
+      "definition" : "Einheit die zur Skalierung genutzt wird",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt/units)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetPT.GesamteRadionukliddosis",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetPT.GesamteRadionukliddosis",
+      "short" : "Gesamte Radionukliddosis",
+      "definition" : "Gesamte verabreichte Radionukliddosis in MBq",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt/radionuclideTotalDose)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetPT.Halbwertszeit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetPT.Halbwertszeit",
+      "short" : "Halbwertszeit",
+      "definition" : "Halbwertszeit des Radionuklids in s",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt/radionuclideHalfLife)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetPT.Serientyp",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetPT.Serientyp",
+      "short" : "Serientyp",
+      "definition" : "Angabe, um welchen Typ von Serie es sich handelt",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/seriesType)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetNM",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetNM",
+      "short" : "Modalitaet NM",
+      "definition" : "Modalitaet Nuklearmedizin",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetNM.Radiopharmakon",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetNM.Radiopharmakon",
+      "short" : "Radiopharmakon",
+      "definition" : "Genutztes Radiopharmakon",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/radiopharmaceutical)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetNM.Radionuklid",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetNM.Radionuklid",
+      "short" : "Radionuklid",
+      "definition" : "Genutztes Radionuklid",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/radionuclide)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetNM.TracerExpositionszeit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetNM.TracerExpositionszeit",
+      "short" : "Tracer-Expositionszeit",
+      "definition" : "Zeit die der Tracer im Körper einwirken konnte",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/tracerExposureTime)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetNM.Skalierungseinheit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetNM.Skalierungseinheit",
+      "short" : "Skalierungseinheit",
+      "definition" : "Einheit die zur Skalierung genutzt wird",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/units)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetNM.GesamteRadionukliddosis",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetNM.GesamteRadionukliddosis",
+      "short" : "Gesamte Radionukliddosis",
+      "definition" : "Gesamte verabreichte Radionukliddosis in MBq",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/radionuclideTotalDose)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetNM.Halbwertszeit",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetNM.Halbwertszeit",
+      "short" : "Halbwertszeit",
+      "definition" : "Halbwertszeit des Radionuklids in s",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm/radionuclideHalfLife)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetUS",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetUS",
+      "short" : "Modalitaet US",
+      "definition" : "Modalitaet Ultraschall",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetUS.Schallkopftyp",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetUS.Schallkopftyp",
+      "short" : "Schallkopftyp",
+      "definition" : "Typ des genutzten Schallkopfes",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us/transducerType)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetUS.Schallkopffrequenz",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetUS.Schallkopffrequenz",
+      "short" : "Schallkopffrequenz",
+      "definition" : "Frequenz des genutzten Schallkopfes",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us/transducerFrequency)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetUS.Impulsfolgefrequenz",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetUS.Impulsfolgefrequenz",
+      "short" : "Impulsfolgefrequenz",
+      "definition" : "Frequenz der aufeinanderfolgenden Impulse des Schallkopfes",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us/pulseRepetitionFrequency)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.ModalitaetUS.Ultraschallfarbe",
+      "path" : "Bildgebung.Studie.Serien.ModalitaetUS.Ultraschallfarbe",
+      "short" : "Ultraschallfarbe",
+      "definition" : "Angabe, ob der Ultraschall in Farbe aufgenommen wurde",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us/ultrasoundColor)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Instanzen",
+      "path" : "Bildgebung.Studie.Serien.Instanzen",
+      "short" : "Instanzen",
+      "definition" : "Alle Instanzen dieser DICOM-Serie.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.instance"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Instanzen.SOPInstanz",
+      "path" : "Bildgebung.Studie.Serien.Instanzen.SOPInstanz",
+      "short" : "SOP-Instanz UID",
+      "definition" : "UID der jeweiligen SOP-Instanz",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "id"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.instance.uid"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Instanzen.SOPKlasse",
+      "path" : "Bildgebung.Studie.Serien.Instanzen.SOPKlasse",
+      "short" : "SOP-Klasse",
+      "definition" : "SOP-Klasse der jeweiligen SOP-Instanz",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.instance.sopClass"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Instanzen.InstanzNummer",
+      "path" : "Bildgebung.Studie.Serien.Instanzen.InstanzNummer",
+      "short" : "Instanz-Nummer",
+      "definition" : "Nummer der jeweiligen Instanz",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "unsignedInt"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.instance.number"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Instanzen.Titel",
+      "path" : "Bildgebung.Studie.Serien.Instanzen.Titel",
+      "short" : "Titel des Bilds",
+      "definition" : "Titel des Bilds",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.instance.title"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Instanzen.Bildtyp",
+      "path" : "Bildgebung.Studie.Serien.Instanzen.Bildtyp",
+      "short" : "Bildtyp",
+      "definition" : "Bildtyp der Instanz",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details/imageType)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Instanzen.Schichtdicke",
+      "path" : "Bildgebung.Studie.Serien.Instanzen.Schichtdicke",
+      "short" : "Schichtdicke in mm",
+      "definition" : "Schichtdicke der SOP-Instanz in mm",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details/sliceThickness)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Instanzen.PixelabstandX",
+      "path" : "Bildgebung.Studie.Serien.Instanzen.PixelabstandX",
+      "short" : "Pixelabstand in x-Richtung in mm",
+      "definition" : "Pixelabstand in x-Richtung in mm",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details/pixelSpacingX)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Instanzen.PixelabstandY",
+      "path" : "Bildgebung.Studie.Serien.Instanzen.PixelabstandY",
+      "short" : "Pixelabstand in y-Richtung in mm",
+      "definition" : "Pixelabstand in y-Richtung in mm",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details/pixelSpacingY)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Studie.Serien.Instanzen.EingebrannteAnnotation",
+      "path" : "Bildgebung.Studie.Serien.Instanzen.EingebrannteAnnotation",
+      "short" : "Eingebrannte Annotation",
+      "definition" : "Information über das Vorhandensein einer eingebrannten Annotation in dieser SOP-Instanz",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ImagingStudy.series.instance.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details/burnedInAnnotation)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung",
+      "path" : "Bildgebung.GenerischeBeobachtung",
+      "short" : "Befundabschnitt",
+      "definition" : "Befundabschnitt des semistrukturierten Befunddokuments.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation"
+      },
+      {
+        "identity" : "KDS-Profile",
+        "map" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.Bildnummer",
+      "path" : "Bildgebung.GenerischeBeobachtung.Bildnummer",
+      "short" : "Bildnummer",
+      "definition" : "DICOM Series UID der zugehörigen Serie.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-uid)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.Schichtposition",
+      "path" : "Bildgebung.GenerischeBeobachtung.Schichtposition",
+      "short" : "Schichtposition",
+      "definition" : "DICOM Instance UID der zugehörigen SOP Instance.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.ErweiterteKoerperstruktur",
+      "path" : "Bildgebung.GenerischeBeobachtung.ErweiterteKoerperstruktur",
+      "short" : "Erweiterte Körperstruktur",
+      "definition" : "Backport der R5 Referenz auf das BodyStructure-Profil.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/BodyStructure"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.extension(https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-observation-imaging)"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.TeilEinerBefundungsprozedur",
+      "path" : "Bildgebung.GenerischeBeobachtung.TeilEinerBefundungsprozedur",
+      "short" : "Teil einer Befundungsprozedur",
+      "definition" : "Hier soll auf das MII KDS-Modul Prozedur referenziert werden",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Procedure"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.partOf"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.Status",
+      "path" : "Bildgebung.GenerischeBeobachtung.Status",
+      "short" : "Status",
+      "definition" : "Status der Beobachtung.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.status"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.Beobachtungsklassifizierung",
+      "path" : "Bildgebung.GenerischeBeobachtung.Beobachtungsklassifizierung",
+      "short" : "Beobachtungsklassifizierung",
+      "definition" : "Klassifiziert eine Beobachtung",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.category"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.Beobachtungstyp",
+      "path" : "Bildgebung.GenerischeBeobachtung.Beobachtungstyp",
+      "short" : "Beobachtungstyp",
+      "definition" : "Typ der Beobachtung.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.code"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.Person",
+      "path" : "Bildgebung.GenerischeBeobachtung.Person",
+      "short" : "Person",
+      "definition" : "Person, auf die sich die Beobachtung bezieht. Hier soll das MII KDS-Modul Person verwendet werden.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.subject"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.Beobachtungszeitpunkt",
+      "path" : "Bildgebung.GenerischeBeobachtung.Beobachtungszeitpunkt",
+      "short" : "Beobachtungszeitpunkt",
+      "definition" : "Zeitpunkt an dem die Beobachtung gemacht wird.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.issued"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.Beschreibung",
+      "path" : "Bildgebung.GenerischeBeobachtung.Beschreibung",
+      "short" : "Beschreibung",
+      "definition" : "Detaillierte Beschreibung der Beobachtung mit value[x].",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.value[x]"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.Koerperregion",
+      "path" : "Bildgebung.GenerischeBeobachtung.Koerperregion",
+      "short" : "Körperregion",
+      "definition" : "Codierte Körperregion der Beobachtung",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.bodySite"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.WeitereBeobachtung",
+      "path" : "Bildgebung.GenerischeBeobachtung.WeitereBeobachtung",
+      "short" : "Weitere Beobachtung(en)",
+      "definition" : "Weitere Beobachtung(en) als Referenz auf weitere Observation(s).",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.hasMember"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.Studienbezug",
+      "path" : "Bildgebung.GenerischeBeobachtung.Studienbezug",
+      "short" : "Studienbezug",
+      "definition" : "Bezug auf die zugehörige(n) Bildgebungsstudie(n).",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ImagingStudy"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Obervation.derivedFrom"
+      }]
+    },
+    {
+      "id" : "Bildgebung.GenerischeBeobachtung.ErweiterteBeschreibung",
+      "path" : "Bildgebung.GenerischeBeobachtung.ErweiterteBeschreibung",
+      "short" : "Erweiterte Beschreibung",
+      "definition" : "Kann mehrere Beschreibungen strukturiert abbilden.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.component"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Kontrastmittelgabe",
+      "path" : "Bildgebung.Kontrastmittelgabe",
+      "short" : "Kontrastmittelgabe",
+      "definition" : "Erfassung der Kontrastmittelgabe aus dem RIS",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "MedicationAdministration"
+      },
+      {
+        "identity" : "KDS-Profile",
+        "map" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Kontrastmittelgabe.TeilVon",
+      "path" : "Bildgebung.Kontrastmittelgabe.TeilVon",
+      "short" : "Teil von",
+      "definition" : "Teil einer Prozedur oder einer Medikationsgabe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+        "http://hl7.org/fhir/StructureDefinition/Procedure"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "MedicationAdministration.partOf"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Kontrastmittelgabe.Status",
+      "path" : "Bildgebung.Kontrastmittelgabe.Status",
+      "short" : "Status",
+      "definition" : "Status der Kontrastmittelgabe",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "MedicationAdministration.status"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Kontrastmittelgabe.Medikament",
+      "path" : "Bildgebung.Kontrastmittelgabe.Medikament",
+      "short" : "Medikament",
+      "definition" : "Beschreibung des verwendeten Medikament",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "MedicationAdministration.medication[x]"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Kontrastmittelgabe.Person",
+      "path" : "Bildgebung.Kontrastmittelgabe.Person",
+      "short" : "Person",
+      "definition" : "Person der das Medikament verabreicht wird. Hier soll das MII KDS-Modul Person verwendet werden.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "MedicationAdministration.subject"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Kontrastmittelgabe.Medikationsdauer",
+      "path" : "Bildgebung.Kontrastmittelgabe.Medikationsdauer",
+      "short" : "Medikationsdauer",
+      "definition" : "Dauer über die das Medikament verabreicht worden ist.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "MedicationAdministration.effectivePeriod"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Kontrastmittelgabe.Dosierung",
+      "path" : "Bildgebung.Kontrastmittelgabe.Dosierung",
+      "short" : "Dosierung",
+      "definition" : "Dosierung der Medikation",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "MedicationAdministration.dosage"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Kontrastmittelgabe.Dosierung.Dosis",
+      "path" : "Bildgebung.Kontrastmittelgabe.Dosierung.Dosis",
+      "short" : "Dosis",
+      "definition" : "Dosis des Medikaments",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "MedicatinAdministration.dosage.dose"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundungsprozedur",
+      "path" : "Bildgebung.Befundungsprozedur",
+      "short" : "Befundungsprozedur",
+      "definition" : "Befundungsprozedur",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure"
+      },
+      {
+        "identity" : "KDS-Profile",
+        "map" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundungsprozedur.Status",
+      "path" : "Bildgebung.Befundungsprozedur.Status",
+      "short" : "Status",
+      "definition" : "Status der Befundungsprozedur",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure.status"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundungsprozedur.Kategorie",
+      "path" : "Bildgebung.Befundungsprozedur.Kategorie",
+      "short" : "Kategorie",
+      "definition" : "Kategoriesierung der Befundungsprozedur",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure.category"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundungsprozedur.Code",
+      "path" : "Bildgebung.Befundungsprozedur.Code",
+      "short" : "Code",
+      "definition" : "Code",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure.code"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundungsprozedur.Person",
+      "path" : "Bildgebung.Befundungsprozedur.Person",
+      "short" : "Person",
+      "definition" : "Person, auf die sich die Befundungsprozedur bezieht. Hier soll das MII KDS-Profil Person verwendet werden.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure.subject"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundungsprozedur.Befundungszeit",
+      "path" : "Bildgebung.Befundungsprozedur.Befundungszeit",
+      "short" : "Befundungszeit",
+      "definition" : "Befundungszeit",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure.peformed[x]"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Befundungsprozedur.Bericht",
+      "path" : "Bildgebung.Befundungsprozedur.Bericht",
+      "short" : "Bericht",
+      "definition" : "Referenz auf den Bericht",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+        "http://hl7.org/fhir/StructureDefinition/Composition",
+        "http://hl7.org/fhir/StructureDefinition/DocumentReference"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Procedure.report"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Anforderung",
+      "path" : "Bildgebung.Anforderung",
+      "short" : "Anforderung",
+      "definition" : "Anfoderung der jeweiligen Bildgebungsmaßnahme",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest"
+      },
+      {
+        "identity" : "KDS-Profile",
+        "map" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Anforderung.Status",
+      "path" : "Bildgebung.Anforderung.Status",
+      "short" : "Status",
+      "definition" : "Status der Anforderung",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.status"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Anforderung.Anforderungsabsicht",
+      "path" : "Bildgebung.Anforderung.Anforderungsabsicht",
+      "short" : "Anforderungsabsicht",
+      "definition" : "Absicht in der die Anforderung gestellt worden ist.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.intent"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Anforderung.Anforderungsklassifizierung",
+      "path" : "Bildgebung.Anforderung.Anforderungsklassifizierung",
+      "short" : "Klassifizierung",
+      "definition" : "Klassifizierung der Anfrage",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.category"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Anforderung.ArtAnfrage",
+      "path" : "Bildgebung.Anforderung.ArtAnfrage",
+      "short" : "Art der Anfrage",
+      "definition" : "Art der Anfrage",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.code"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Anforderung.Person",
+      "path" : "Bildgebung.Anforderung.Person",
+      "short" : "Person",
+      "definition" : "Bezug zur Person, für den die Anfoderung besteht. Hier soll auf das MII KDS-Modul Person referenziert werden.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.subject"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Anforderung.Versorgungsstellenkontakt",
+      "path" : "Bildgebung.Anforderung.Versorgungsstellenkontakt",
+      "short" : "Versorgungsstellenkontakt",
+      "definition" : "Kontakt einer Versorgungsstelle. Hier soll das MII KDS-Modul Fall verwendet werden",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.encounter"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Anforderung.Zeitpunkt",
+      "path" : "Bildgebung.Anforderung.Zeitpunkt",
+      "short" : "Zeitpunkt",
+      "definition" : "Zeitpunkt, zu der die Anforderung authorisiert wurde.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.authoredOn"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Anforderung.Anforderer",
+      "path" : "Bildgebung.Anforderung.Anforderer",
+      "short" : "Anforderer",
+      "definition" : "Person, die die Anforderung stellt.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.requester"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Anforderung.Anforderungsgrund",
+      "path" : "Bildgebung.Anforderung.Anforderungsgrund",
+      "short" : "Anforderungsgrund",
+      "definition" : "Anforderungsgrund",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.reasonCode"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Anforderung.Anforderungsbezug",
+      "path" : "Bildgebung.Anforderung.Anforderungsbezug",
+      "short" : "Anforderungsbezug",
+      "definition" : "Anforderungsbezug",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.reasonReference"
+      }]
+    },
+    {
+      "id" : "Bildgebung.Anforderung.Zusatzinformation",
+      "path" : "Bildgebung.Anforderung.Zusatzinformation",
+      "short" : "Zusatzinformation",
+      "definition" : "Zusatzinformation zur jeweiligen Anfoderung",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+        "http://hl7.org/fhir/StructureDefinition/ImagingStudy"]
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.supportingInfo"
+      }]
+    }]
+  }
+}
+
+```

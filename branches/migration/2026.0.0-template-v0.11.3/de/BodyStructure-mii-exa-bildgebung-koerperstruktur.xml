@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BodyStructure xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-bildgebung-koerperstruktur"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: BodyStructure mii-exa-bildgebung-koerperstruktur</b></p><a name="de-mii-exa-bildgebung-koerperstruktur"> </a><a name="de-hcmii-exa-bildgebung-koerperstruktur"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-bildgebung-koerperstruktur.html">MII PR Bildgebung Körperstruktur</a></p></div><p><b>morphology</b>: <span title="Codes:{http://snomed.info/sct 12747003}">Microcalcification, calcified structure (morphologic abnormality)</span></p><p><b>location</b>: <span title="Codes:{http://snomed.info/sct 76752008}">Breast structure (body structure)</span></p><p><b>locationQualifier</b>: <span title="Codes:{http://snomed.info/sct 7771000}">Left (qualifier value)</span></p><p><b>patient</b>: <a href="Patient-PatExample.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p></div>
+  </text>
+  <morphology>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="12747003"/>
+      <display value="Microcalcification, calcified structure (morphologic abnormality)"/>
+    </coding>
+  </morphology>
+  <location>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="76752008"/>
+      <display value="Breast structure (body structure)"/>
+    </coding>
+  </location>
+  <locationQualifier>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="7771000"/>
+      <display value="Left (qualifier value)"/>
+    </coding>
+  </locationQualifier>
+  <patient>
+    <reference value="Patient/PatExample"/>
+  </patient>
+</BodyStructure>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-bildgebung-scanning-sequence-variant"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-bildgebung-scanning-sequence-variant</b></p><a name="mii-cs-bildgebung-scanning-sequence-variant"> </a><a name="hcmii-cs-bildgebung-scanning-sequence-variant"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">SK<a name="mii-cs-bildgebung-scanning-sequence-variant-SK"> </a></td><td>segmented k-space</td></tr><tr><td style="white-space:nowrap">MTC<a name="mii-cs-bildgebung-scanning-sequence-variant-MTC"> </a></td><td>magnetization transfer contrast</td></tr><tr><td style="white-space:nowrap">SS<a name="mii-cs-bildgebung-scanning-sequence-variant-SS"> </a></td><td>steady state</td></tr><tr><td style="white-space:nowrap">TRSS<a name="mii-cs-bildgebung-scanning-sequence-variant-TRSS"> </a></td><td>time reversed steady state</td></tr><tr><td style="white-space:nowrap">SP<a name="mii-cs-bildgebung-scanning-sequence-variant-SP"> </a></td><td>spoiled</td></tr><tr><td style="white-space:nowrap">MP<a name="mii-cs-bildgebung-scanning-sequence-variant-MP"> </a></td><td>MAG prepared</td></tr><tr><td style="white-space:nowrap">OSP<a name="mii-cs-bildgebung-scanning-sequence-variant-OSP"> </a></td><td>oversampling phase</td></tr><tr><td style="white-space:nowrap">NONE<a name="mii-cs-bildgebung-scanning-sequence-variant-NONE"> </a></td><td>no sequence variant</td></tr></table></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant"/>
+  <version value="2027.0.0-ballot"/>
+  <name value="MII_CS_Bildgebung_Scanning_Sequence_Variant"/>
+  <title value="MII CS Bildgebung Scanning Sequence Variant"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-01"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Scanning Sequence Varianten für MR Untersuchungen"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-scanning-sequence-variant"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="SK"/>
+    <display value="segmented k-space"/>
+  </concept>
+  <concept>
+    <code value="MTC"/>
+    <display value="magnetization transfer contrast"/>
+  </concept>
+  <concept>
+    <code value="SS"/>
+    <display value="steady state"/>
+  </concept>
+  <concept>
+    <code value="TRSS"/>
+    <display value="time reversed steady state"/>
+  </concept>
+  <concept>
+    <code value="SP"/>
+    <display value="spoiled"/>
+  </concept>
+  <concept>
+    <code value="MP"/>
+    <display value="MAG prepared"/>
+  </concept>
+  <concept>
+    <code value="OSP"/>
+    <display value="oversampling phase"/>
+  </concept>
+  <concept>
+    <code value="NONE"/>
+    <display value="no sequence variant"/>
+  </concept>
+</CodeSystem>

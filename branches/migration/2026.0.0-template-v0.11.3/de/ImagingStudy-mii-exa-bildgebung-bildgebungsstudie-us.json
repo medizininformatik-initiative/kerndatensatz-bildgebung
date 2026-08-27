@@ -1,0 +1,151 @@
+{
+  "resourceType" : "ImagingStudy",
+  "id" : "mii-exa-bildgebung-bildgebungsstudie-us",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"]
+  },
+  "language" : "de",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImagingStudy mii-exa-bildgebung-bildgebungsstudie-us</b></p><a name=\"de-mii-exa-bildgebung-bildgebungsstudie-us\"> </a><a name=\"de-hcmii-exa-bildgebung-bildgebungsstudie-us\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html\">MII PR Bildgebung Bildgebungsstudie</a></p></div><p><b>MII EX Bildgebung Bildgebungsgrund</b>: Verdacht auf akutes Abdomen</p><p><b>status</b>: Available</p><p><b>modality</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-US\">DICOM: US</a> (Ultrasound)</p><p><b>subject</b>: <a href=\"Patient-PatExample.html\">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>encounter</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/EncExample\">Encounter/EncExample</a></p><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.html\">ServiceRequest Mammography (procedure)</a></p><p><b>numberOfSeries</b>: 2</p><p><b>numberOfInstances</b>: 6</p><p><b>procedureReference</b>: <a href=\"Procedure-mii-exa-bildgebung-bildgebungsprozedur.html\">Procedure Screening mammography of bilateral breasts (procedure)</a></p><p><b>reasonReference</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Condition/CondExample\">Condition/CondExample</a></p><p><b>description</b>: Abdomen Ober- und Unterbauch</p><blockquote><p><b>series</b></p><blockquote><p><b>MII EX Bildgebung Modalität US</b></p><ul><li>transducerFrequency: 1670 kilohertz</li><li>pulseRepetitionFrequency: 5860 hertz</li><li>ultrasoundColor: false</li><li>transducerType: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type CURVED_LINEAR}\">Curved Linear</span></li></ul></blockquote><blockquote><p><b>MII EX Bildgebung Kontrastmittel</b></p><ul><li>contrastBolus: false</li></ul></blockquote><p><b>uid</b>: series-example-uid</p><p><b>number</b>: 1</p><p><b>modality</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-US\">DICOM: US</a> (Ultrasound)</p><p><b>description</b>: Abdomen Oberbauch</p><p><b>numberOfInstances</b>: 28</p><p><b>bodySite</b>: <a href=\"http://snomed.info/id/80581009\">SNOMED CT: 80581009</a> (Upper abdomen structure (body structure))</p><p><b>laterality</b>: <a href=\"http://snomed.info/id/51440002\">SNOMED CT: 51440002</a> (Bilateral)</p><p><b>started</b>: 2025-07-07 12:03:30+0200</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Device-mii-exa-bildgebung-geraet.html\">Device: manufacturer = Siemens</a></td></tr></table><h3>Instances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Uid</b></td><td><b>SopClass</b></td><td><b>Number</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>instance-example-uid</td><td>unknown: urn:oid:1.2.840.10008.5.1.4.1.1.4 (urn:oid:1.2.840.10008.5.1.4.1.1.4)</td><td>1</td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund",
+    "valueString" : "Verdacht auf akutes Abdomen"
+  }],
+  "status" : "available",
+  "modality" : [{
+    "system" : "http://dicom.nema.org/resources/ontology/DCM",
+    "code" : "US",
+    "display" : "Ultrasound"
+  }],
+  "subject" : {
+    "reference" : "Patient/PatExample",
+    "identifier" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+          "code" : "MR",
+          "display" : "Medical record number"
+        }]
+      },
+      "system" : "https://system-url",
+      "value" : "study-uid"
+    }
+  },
+  "encounter" : {
+    "reference" : "Encounter/EncExample"
+  },
+  "basedOn" : [{
+    "reference" : "ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"
+  }],
+  "numberOfSeries" : 2,
+  "numberOfInstances" : 6,
+  "procedureReference" : {
+    "reference" : "Procedure/mii-exa-bildgebung-bildgebungsprozedur"
+  },
+  "reasonReference" : [{
+    "reference" : "Condition/CondExample"
+  }],
+  "description" : "Abdomen Ober- und Unterbauch",
+  "series" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "transducerFrequency",
+        "valueQuantity" : {
+          "value" : 1670,
+          "unit" : "kilohertz"
+        }
+      },
+      {
+        "url" : "pulseRepetitionFrequency",
+        "valueQuantity" : {
+          "value" : 5860,
+          "unit" : "hertz"
+        }
+      },
+      {
+        "url" : "ultrasoundColor",
+        "valueBoolean" : false
+      },
+      {
+        "url" : "transducerType",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type",
+            "code" : "CURVED_LINEAR"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us"
+    },
+    {
+      "extension" : [{
+        "url" : "contrastBolus",
+        "valueBoolean" : false
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
+    }],
+    "uid" : "series-example-uid",
+    "number" : 1,
+    "modality" : {
+      "system" : "http://dicom.nema.org/resources/ontology/DCM",
+      "code" : "US",
+      "display" : "Ultrasound"
+    },
+    "description" : "Abdomen Oberbauch",
+    "numberOfInstances" : 28,
+    "bodySite" : {
+      "system" : "http://snomed.info/sct",
+      "code" : "80581009",
+      "display" : "Upper abdomen structure (body structure)"
+    },
+    "laterality" : {
+      "system" : "http://snomed.info/sct",
+      "code" : "51440002",
+      "display" : "Bilateral"
+    },
+    "started" : "2025-07-07T12:03:30+02:00",
+    "performer" : [{
+      "actor" : {
+        "reference" : "Device/mii-exa-bildgebung-geraet"
+      }
+    }],
+    "instance" : [{
+      "extension" : [{
+        "extension" : [{
+          "url" : "imageType",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+              "code" : "ORIGINAL"
+            },
+            {
+              "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+              "code" : "SECONDARY"
+            },
+            {
+              "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+              "code" : "ABDOMINAL"
+            },
+            {
+              "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+              "code" : "0001"
+            }]
+          }
+        },
+        {
+          "url" : "burnedInAnnotation",
+          "valueBoolean" : true
+        }],
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
+      }],
+      "uid" : "instance-example-uid",
+      "sopClass" : {
+        "system" : "urn:ietf:rfc:3986",
+        "code" : "urn:oid:1.2.840.10008.5.1.4.1.1.4"
+      },
+      "number" : 1
+    }]
+  }]
+}

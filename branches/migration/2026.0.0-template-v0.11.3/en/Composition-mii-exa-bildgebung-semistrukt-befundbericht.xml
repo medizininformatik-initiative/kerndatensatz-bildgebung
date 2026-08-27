@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-bildgebung-semistrukt-befundbericht"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Composition mii-exa-bildgebung-semistrukt-befundbericht</b></p><a name="mii-exa-bildgebung-semistrukt-befundbericht"> </a><a name="hcmii-exa-bildgebung-semistrukt-befundbericht"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html">MII PR Bildgebung Semistrukturierter Befundbericht</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 18748-4}">Diagnostic imaging study</span></p><p><b>date</b>: 2024-07-19 12:03:30+0200</p><p><b>author</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/PracExample1">Practitioner/PracExample1</a></p><p><b>title</b>: Mammographic Report</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18748-4"/>
+      <display value="Diagnostic imaging study"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/PatExample"/>
+  </subject>
+  <date value="2024-07-19T12:03:30+02:00"/>
+  <author>
+    <reference value="Practitioner/PracExample1"/>
+  </author>
+  <title value="Mammographic Report"/>
+  <section>
+    <title value="Left Breast"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18782-3"/>
+        <display value="Radiology Study observation (narrative)"/>
+      </coding>
+    </code>
+    <author>
+      <reference value="Practitioner/PracExample2"/>
+    </author>
+    <entry>
+      <reference value="DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"/>
+    </entry>
+    <section>
+      <entry>
+        <reference value="Observation/mii-exa-bildgebung-radiologische-beobachtung"/>
+      </entry>
+    </section>
+  </section>
+</Composition>

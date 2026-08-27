@@ -1,0 +1,895 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mii-cs-bildgebung-instance-image-type",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mii-cs-bildgebung-instance-image-type</b></p><a name=\"mii-cs-bildgebung-instance-image-type\"> </a><a name=\"hcmii-cs-bildgebung-instance-image-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PDC<a name=\"mii-cs-bildgebung-instance-image-type-PDC\"> </a></td><td>Pixel Data Characteristics</td></tr><tr><td style=\"white-space:nowrap\">ORIGINAL<a name=\"mii-cs-bildgebung-instance-image-type-ORIGINAL\"> </a></td><td>identifies an original image</td></tr><tr><td style=\"white-space:nowrap\">DERIVED<a name=\"mii-cs-bildgebung-instance-image-type-DERIVED\"> </a></td><td>identifies an derived image</td></tr><tr><td style=\"white-space:nowrap\">PEC<a name=\"mii-cs-bildgebung-instance-image-type-PEC\"> </a></td><td>Patient Examination Characteristics</td></tr><tr><td style=\"white-space:nowrap\">PRIMARY<a name=\"mii-cs-bildgebung-instance-image-type-PRIMARY\"> </a></td><td>identifies a primary image</td></tr><tr><td style=\"white-space:nowrap\">SECONDARY<a name=\"mii-cs-bildgebung-instance-image-type-SECONDARY\"> </a></td><td>identifies a secondary image</td></tr><tr><td style=\"white-space:nowrap\">MSC<a name=\"mii-cs-bildgebung-instance-image-type-MSC\"> </a></td><td>Modality Specific Characteristics</td></tr><tr><td style=\"white-space:nowrap\">CT<a name=\"mii-cs-bildgebung-instance-image-type-CT\"> </a></td><td>CT Specific Characteristics</td></tr><tr><td style=\"white-space:nowrap\">AXIAL<a name=\"mii-cs-bildgebung-instance-image-type-AXIAL\"> </a></td><td>a CT Cross-sectional Image</td></tr><tr><td style=\"white-space:nowrap\">LOCALIZER<a name=\"mii-cs-bildgebung-instance-image-type-LOCALIZER\"> </a></td><td>a CT Localizer Image</td></tr><tr><td style=\"white-space:nowrap\">MR<a name=\"mii-cs-bildgebung-instance-image-type-MR\"> </a></td><td>MR Specific Characteristics</td></tr><tr><td style=\"white-space:nowrap\">DENSITYMAP<a name=\"mii-cs-bildgebung-instance-image-type-DENSITYMAP\"> </a></td><td>Density Map</td></tr><tr><td style=\"white-space:nowrap\">DIFFUSIONMAP<a name=\"mii-cs-bildgebung-instance-image-type-DIFFUSIONMAP\"> </a></td><td>Diffusion Map</td></tr><tr><td style=\"white-space:nowrap\">IMAGEADDITION<a name=\"mii-cs-bildgebung-instance-image-type-IMAGEADDITION\"> </a></td><td>Image Addition</td></tr><tr><td style=\"white-space:nowrap\">MODULUSSUBTRACT<a name=\"mii-cs-bildgebung-instance-image-type-MODULUSSUBTRACT\"> </a></td><td>Modulus Substract</td></tr><tr><td style=\"white-space:nowrap\">MPR<a name=\"mii-cs-bildgebung-instance-image-type-MPR\"> </a></td><td>MPR</td></tr><tr><td style=\"white-space:nowrap\">OTHER<a name=\"mii-cs-bildgebung-instance-image-type-OTHER\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">PHASEMAP<a name=\"mii-cs-bildgebung-instance-image-type-PHASEMAP\"> </a></td><td>Phase Map</td></tr><tr><td style=\"white-space:nowrap\">PHASESUBTRACT<a name=\"mii-cs-bildgebung-instance-image-type-PHASESUBTRACT\"> </a></td><td>Phase Substract</td></tr><tr><td style=\"white-space:nowrap\">PROJECTIONIMAGE<a name=\"mii-cs-bildgebung-instance-image-type-PROJECTIONIMAGE\"> </a></td><td>Projection Image</td></tr><tr><td style=\"white-space:nowrap\">T1MAP<a name=\"mii-cs-bildgebung-instance-image-type-T1MAP\"> </a></td><td>T1 Map</td></tr><tr><td style=\"white-space:nowrap\">T2MAP<a name=\"mii-cs-bildgebung-instance-image-type-T2MAP\"> </a></td><td>T2 Map</td></tr><tr><td style=\"white-space:nowrap\">VELOCITYMAP<a name=\"mii-cs-bildgebung-instance-image-type-VELOCITYMAP\"> </a></td><td>Velocity Map</td></tr><tr><td style=\"white-space:nowrap\">NM<a name=\"mii-cs-bildgebung-instance-image-type-NM\"> </a></td><td>NM Specific Characteristics</td></tr><tr><td style=\"white-space:nowrap\">STATIC<a name=\"mii-cs-bildgebung-instance-image-type-STATIC\"> </a></td><td>Static</td></tr><tr><td style=\"white-space:nowrap\">DYNAMIC<a name=\"mii-cs-bildgebung-instance-image-type-DYNAMIC\"> </a></td><td>Dynamic</td></tr><tr><td style=\"white-space:nowrap\">GATED<a name=\"mii-cs-bildgebung-instance-image-type-GATED\"> </a></td><td>Gated</td></tr><tr><td style=\"white-space:nowrap\">WHOLEBODY<a name=\"mii-cs-bildgebung-instance-image-type-WHOLEBODY\"> </a></td><td>Whole Body</td></tr><tr><td style=\"white-space:nowrap\">TOMO<a name=\"mii-cs-bildgebung-instance-image-type-TOMO\"> </a></td><td>Tomo</td></tr><tr><td style=\"white-space:nowrap\">GATEDTOMO<a name=\"mii-cs-bildgebung-instance-image-type-GATEDTOMO\"> </a></td><td>Gated Tomo</td></tr><tr><td style=\"white-space:nowrap\">RECONTOMO<a name=\"mii-cs-bildgebung-instance-image-type-RECONTOMO\"> </a></td><td>Recon Tomo</td></tr><tr><td style=\"white-space:nowrap\">RECONGATEDTOMO<a name=\"mii-cs-bildgebung-instance-image-type-RECONGATEDTOMO\"> </a></td><td>Recon Gated Tomo</td></tr><tr><td style=\"white-space:nowrap\">US<a name=\"mii-cs-bildgebung-instance-image-type-US\"> </a></td><td>US Specific Characteristics</td></tr><tr><td style=\"white-space:nowrap\">ABDOMINAL<a name=\"mii-cs-bildgebung-instance-image-type-ABDOMINAL\"> </a></td><td>ABDOMINAL</td></tr><tr><td style=\"white-space:nowrap\">BREAST<a name=\"mii-cs-bildgebung-instance-image-type-BREAST\"> </a></td><td>BREAST</td></tr><tr><td style=\"white-space:nowrap\">CHEST<a name=\"mii-cs-bildgebung-instance-image-type-CHEST\"> </a></td><td>CHEST</td></tr><tr><td style=\"white-space:nowrap\">ENDOCAVITARY<a name=\"mii-cs-bildgebung-instance-image-type-ENDOCAVITARY\"> </a></td><td>ENDOCAVITARY</td></tr><tr><td style=\"white-space:nowrap\">ENDORECTAL<a name=\"mii-cs-bildgebung-instance-image-type-ENDORECTAL\"> </a></td><td>ENDORECTAL</td></tr><tr><td style=\"white-space:nowrap\">ENDOVAGINAL<a name=\"mii-cs-bildgebung-instance-image-type-ENDOVAGINAL\"> </a></td><td>ENDOVAGINAL</td></tr><tr><td style=\"white-space:nowrap\">EPICARDIAL<a name=\"mii-cs-bildgebung-instance-image-type-EPICARDIAL\"> </a></td><td>EPICARDIAL</td></tr><tr><td style=\"white-space:nowrap\">FETAL_HEART<a name=\"mii-cs-bildgebung-instance-image-type-FETAL_HEART\"> </a></td><td>FETAL HEART</td></tr><tr><td style=\"white-space:nowrap\">GYNECOLOGY<a name=\"mii-cs-bildgebung-instance-image-type-GYNECOLOGY\"> </a></td><td>GYNECOLOGY</td></tr><tr><td style=\"white-space:nowrap\">INTRACARDIAC<a name=\"mii-cs-bildgebung-instance-image-type-INTRACARDIAC\"> </a></td><td>INTRACARDIAC</td></tr><tr><td style=\"white-space:nowrap\">INTRAOPERATIVE<a name=\"mii-cs-bildgebung-instance-image-type-INTRAOPERATIVE\"> </a></td><td>INTRAOPERATIVE</td></tr><tr><td style=\"white-space:nowrap\">INTRAVASCULAR<a name=\"mii-cs-bildgebung-instance-image-type-INTRAVASCULAR\"> </a></td><td>INTRAVASCULAR</td></tr><tr><td style=\"white-space:nowrap\">MUSCULOSKELETAL<a name=\"mii-cs-bildgebung-instance-image-type-MUSCULOSKELETAL\"> </a></td><td>MUSCULOSKELETAL</td></tr><tr><td style=\"white-space:nowrap\">NEONATAL_HEAD<a name=\"mii-cs-bildgebung-instance-image-type-NEONATAL_HEAD\"> </a></td><td>NEONATAL HEAD</td></tr><tr><td style=\"white-space:nowrap\">OBSTETRICAL<a name=\"mii-cs-bildgebung-instance-image-type-OBSTETRICAL\"> </a></td><td>OBSTETRICAL</td></tr><tr><td style=\"white-space:nowrap\">OPHTHALMIC<a name=\"mii-cs-bildgebung-instance-image-type-OPHTHALMIC\"> </a></td><td>OPHTHALMIC</td></tr><tr><td style=\"white-space:nowrap\">PEDIATRIC<a name=\"mii-cs-bildgebung-instance-image-type-PEDIATRIC\"> </a></td><td>PEDIATRIC</td></tr><tr><td style=\"white-space:nowrap\">PELVIC<a name=\"mii-cs-bildgebung-instance-image-type-PELVIC\"> </a></td><td>PELVIC</td></tr><tr><td style=\"white-space:nowrap\">RETROPERITONEAL<a name=\"mii-cs-bildgebung-instance-image-type-RETROPERITONEAL\"> </a></td><td>RETROPERITONEAL</td></tr><tr><td style=\"white-space:nowrap\">SCROTAL<a name=\"mii-cs-bildgebung-instance-image-type-SCROTAL\"> </a></td><td>SCROTAL</td></tr><tr><td style=\"white-space:nowrap\">SMALL_PARTS<a name=\"mii-cs-bildgebung-instance-image-type-SMALL_PARTS\"> </a></td><td>SMALL PARTS</td></tr><tr><td style=\"white-space:nowrap\">TEE<a name=\"mii-cs-bildgebung-instance-image-type-TEE\"> </a></td><td>TEE</td></tr><tr><td style=\"white-space:nowrap\">THYROID<a name=\"mii-cs-bildgebung-instance-image-type-THYROID\"> </a></td><td>THYROID</td></tr><tr><td style=\"white-space:nowrap\">TRANSCRANIAL<a name=\"mii-cs-bildgebung-instance-image-type-TRANSCRANIAL\"> </a></td><td>TRANSCRANIAL</td></tr><tr><td style=\"white-space:nowrap\">TTE<a name=\"mii-cs-bildgebung-instance-image-type-TTE\"> </a></td><td>TTE</td></tr><tr><td style=\"white-space:nowrap\">US_BIOPSY<a name=\"mii-cs-bildgebung-instance-image-type-US_BIOPSY\"> </a></td><td>US BIOPSY</td></tr><tr><td style=\"white-space:nowrap\">VASCULAR<a name=\"mii-cs-bildgebung-instance-image-type-VASCULAR\"> </a></td><td>VASCULAR</td></tr><tr><td style=\"white-space:nowrap\">ISI<a name=\"mii-cs-bildgebung-instance-image-type-ISI\"> </a></td><td>Implemetation Specific Identifiers</td></tr><tr><td style=\"white-space:nowrap\">NMI<a name=\"mii-cs-bildgebung-instance-image-type-NMI\"> </a></td><td>NM Implematation</td></tr><tr><td style=\"white-space:nowrap\">EMISSION<a name=\"mii-cs-bildgebung-instance-image-type-EMISSION\"> </a></td><td>Emission</td></tr><tr><td style=\"white-space:nowrap\">TRANSMISSION<a name=\"mii-cs-bildgebung-instance-image-type-TRANSMISSION\"> </a></td><td>Transmission</td></tr><tr><td style=\"white-space:nowrap\">USI<a name=\"mii-cs-bildgebung-instance-image-type-USI\"> </a></td><td>US Implemantation</td></tr><tr><td style=\"white-space:nowrap\">0001<a name=\"mii-cs-bildgebung-instance-image-type-0001\"> </a></td><td>2D Imaging</td></tr><tr><td style=\"white-space:nowrap\">0002<a name=\"mii-cs-bildgebung-instance-image-type-0002\"> </a></td><td>M-Mode</td></tr><tr><td style=\"white-space:nowrap\">0004<a name=\"mii-cs-bildgebung-instance-image-type-0004\"> </a></td><td>CW Doppler</td></tr><tr><td style=\"white-space:nowrap\">0008<a name=\"mii-cs-bildgebung-instance-image-type-0008\"> </a></td><td>PW Doppler</td></tr><tr><td style=\"white-space:nowrap\">0010<a name=\"mii-cs-bildgebung-instance-image-type-0010\"> </a></td><td>Color Doppler</td></tr><tr><td style=\"white-space:nowrap\">0020<a name=\"mii-cs-bildgebung-instance-image-type-0020\"> </a></td><td>Color M-Mode</td></tr><tr><td style=\"white-space:nowrap\">0040<a name=\"mii-cs-bildgebung-instance-image-type-0040\"> </a></td><td>3D Rendering</td></tr><tr><td style=\"white-space:nowrap\">0100<a name=\"mii-cs-bildgebung-instance-image-type-0100\"> </a></td><td>Color Power Mode</td></tr><tr><td style=\"white-space:nowrap\">0200<a name=\"mii-cs-bildgebung-instance-image-type-0200\"> </a></td><td>Tissue Characterization</td></tr><tr><td style=\"white-space:nowrap\">0400<a name=\"mii-cs-bildgebung-instance-image-type-0400\"> </a></td><td>Spatially-related frames</td></tr></table></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mii-cs-bildgebung-instance-image-type</b></p><a name=\"de-mii-cs-bildgebung-instance-image-type\"> </a><a name=\"de-hcmii-cs-bildgebung-instance-image-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PDC<a name=\"de-mii-cs-bildgebung-instance-image-type-PDC\"> </a></td><td>Pixel Data Characteristics</td></tr><tr><td style=\"white-space:nowrap\">ORIGINAL<a name=\"de-mii-cs-bildgebung-instance-image-type-ORIGINAL\"> </a></td><td>identifies an original image</td></tr><tr><td style=\"white-space:nowrap\">DERIVED<a name=\"de-mii-cs-bildgebung-instance-image-type-DERIVED\"> </a></td><td>identifies an derived image</td></tr><tr><td style=\"white-space:nowrap\">PEC<a name=\"de-mii-cs-bildgebung-instance-image-type-PEC\"> </a></td><td>Patient Examination Characteristics</td></tr><tr><td style=\"white-space:nowrap\">PRIMARY<a name=\"de-mii-cs-bildgebung-instance-image-type-PRIMARY\"> </a></td><td>identifies a primary image</td></tr><tr><td style=\"white-space:nowrap\">SECONDARY<a name=\"de-mii-cs-bildgebung-instance-image-type-SECONDARY\"> </a></td><td>identifies a secondary image</td></tr><tr><td style=\"white-space:nowrap\">MSC<a name=\"de-mii-cs-bildgebung-instance-image-type-MSC\"> </a></td><td>Modality Specific Characteristics</td></tr><tr><td style=\"white-space:nowrap\">CT<a name=\"de-mii-cs-bildgebung-instance-image-type-CT\"> </a></td><td>CT Specific Characteristics</td></tr><tr><td style=\"white-space:nowrap\">AXIAL<a name=\"de-mii-cs-bildgebung-instance-image-type-AXIAL\"> </a></td><td>a CT Cross-sectional Image</td></tr><tr><td style=\"white-space:nowrap\">LOCALIZER<a name=\"de-mii-cs-bildgebung-instance-image-type-LOCALIZER\"> </a></td><td>a CT Localizer Image</td></tr><tr><td style=\"white-space:nowrap\">MR<a name=\"de-mii-cs-bildgebung-instance-image-type-MR\"> </a></td><td>MR Specific Characteristics</td></tr><tr><td style=\"white-space:nowrap\">DENSITYMAP<a name=\"de-mii-cs-bildgebung-instance-image-type-DENSITYMAP\"> </a></td><td>Density Map</td></tr><tr><td style=\"white-space:nowrap\">DIFFUSIONMAP<a name=\"de-mii-cs-bildgebung-instance-image-type-DIFFUSIONMAP\"> </a></td><td>Diffusion Map</td></tr><tr><td style=\"white-space:nowrap\">IMAGEADDITION<a name=\"de-mii-cs-bildgebung-instance-image-type-IMAGEADDITION\"> </a></td><td>Image Addition</td></tr><tr><td style=\"white-space:nowrap\">MODULUSSUBTRACT<a name=\"de-mii-cs-bildgebung-instance-image-type-MODULUSSUBTRACT\"> </a></td><td>Modulus Substract</td></tr><tr><td style=\"white-space:nowrap\">MPR<a name=\"de-mii-cs-bildgebung-instance-image-type-MPR\"> </a></td><td>MPR</td></tr><tr><td style=\"white-space:nowrap\">OTHER<a name=\"de-mii-cs-bildgebung-instance-image-type-OTHER\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">PHASEMAP<a name=\"de-mii-cs-bildgebung-instance-image-type-PHASEMAP\"> </a></td><td>Phase Map</td></tr><tr><td style=\"white-space:nowrap\">PHASESUBTRACT<a name=\"de-mii-cs-bildgebung-instance-image-type-PHASESUBTRACT\"> </a></td><td>Phase Substract</td></tr><tr><td style=\"white-space:nowrap\">PROJECTIONIMAGE<a name=\"de-mii-cs-bildgebung-instance-image-type-PROJECTIONIMAGE\"> </a></td><td>Projection Image</td></tr><tr><td style=\"white-space:nowrap\">T1MAP<a name=\"de-mii-cs-bildgebung-instance-image-type-T1MAP\"> </a></td><td>T1 Map</td></tr><tr><td style=\"white-space:nowrap\">T2MAP<a name=\"de-mii-cs-bildgebung-instance-image-type-T2MAP\"> </a></td><td>T2 Map</td></tr><tr><td style=\"white-space:nowrap\">VELOCITYMAP<a name=\"de-mii-cs-bildgebung-instance-image-type-VELOCITYMAP\"> </a></td><td>Velocity Map</td></tr><tr><td style=\"white-space:nowrap\">NM<a name=\"de-mii-cs-bildgebung-instance-image-type-NM\"> </a></td><td>NM Specific Characteristics</td></tr><tr><td style=\"white-space:nowrap\">STATIC<a name=\"de-mii-cs-bildgebung-instance-image-type-STATIC\"> </a></td><td>Static</td></tr><tr><td style=\"white-space:nowrap\">DYNAMIC<a name=\"de-mii-cs-bildgebung-instance-image-type-DYNAMIC\"> </a></td><td>Dynamic</td></tr><tr><td style=\"white-space:nowrap\">GATED<a name=\"de-mii-cs-bildgebung-instance-image-type-GATED\"> </a></td><td>Gated</td></tr><tr><td style=\"white-space:nowrap\">WHOLEBODY<a name=\"de-mii-cs-bildgebung-instance-image-type-WHOLEBODY\"> </a></td><td>Whole Body</td></tr><tr><td style=\"white-space:nowrap\">TOMO<a name=\"de-mii-cs-bildgebung-instance-image-type-TOMO\"> </a></td><td>Tomo</td></tr><tr><td style=\"white-space:nowrap\">GATEDTOMO<a name=\"de-mii-cs-bildgebung-instance-image-type-GATEDTOMO\"> </a></td><td>Gated Tomo</td></tr><tr><td style=\"white-space:nowrap\">RECONTOMO<a name=\"de-mii-cs-bildgebung-instance-image-type-RECONTOMO\"> </a></td><td>Recon Tomo</td></tr><tr><td style=\"white-space:nowrap\">RECONGATEDTOMO<a name=\"de-mii-cs-bildgebung-instance-image-type-RECONGATEDTOMO\"> </a></td><td>Recon Gated Tomo</td></tr><tr><td style=\"white-space:nowrap\">US<a name=\"de-mii-cs-bildgebung-instance-image-type-US\"> </a></td><td>US Specific Characteristics</td></tr><tr><td style=\"white-space:nowrap\">ABDOMINAL<a name=\"de-mii-cs-bildgebung-instance-image-type-ABDOMINAL\"> </a></td><td>ABDOMINAL</td></tr><tr><td style=\"white-space:nowrap\">BREAST<a name=\"de-mii-cs-bildgebung-instance-image-type-BREAST\"> </a></td><td>BREAST</td></tr><tr><td style=\"white-space:nowrap\">CHEST<a name=\"de-mii-cs-bildgebung-instance-image-type-CHEST\"> </a></td><td>CHEST</td></tr><tr><td style=\"white-space:nowrap\">ENDOCAVITARY<a name=\"de-mii-cs-bildgebung-instance-image-type-ENDOCAVITARY\"> </a></td><td>ENDOCAVITARY</td></tr><tr><td style=\"white-space:nowrap\">ENDORECTAL<a name=\"de-mii-cs-bildgebung-instance-image-type-ENDORECTAL\"> </a></td><td>ENDORECTAL</td></tr><tr><td style=\"white-space:nowrap\">ENDOVAGINAL<a name=\"de-mii-cs-bildgebung-instance-image-type-ENDOVAGINAL\"> </a></td><td>ENDOVAGINAL</td></tr><tr><td style=\"white-space:nowrap\">EPICARDIAL<a name=\"de-mii-cs-bildgebung-instance-image-type-EPICARDIAL\"> </a></td><td>EPICARDIAL</td></tr><tr><td style=\"white-space:nowrap\">FETAL_HEART<a name=\"de-mii-cs-bildgebung-instance-image-type-FETAL_HEART\"> </a></td><td>FETAL HEART</td></tr><tr><td style=\"white-space:nowrap\">GYNECOLOGY<a name=\"de-mii-cs-bildgebung-instance-image-type-GYNECOLOGY\"> </a></td><td>GYNECOLOGY</td></tr><tr><td style=\"white-space:nowrap\">INTRACARDIAC<a name=\"de-mii-cs-bildgebung-instance-image-type-INTRACARDIAC\"> </a></td><td>INTRACARDIAC</td></tr><tr><td style=\"white-space:nowrap\">INTRAOPERATIVE<a name=\"de-mii-cs-bildgebung-instance-image-type-INTRAOPERATIVE\"> </a></td><td>INTRAOPERATIVE</td></tr><tr><td style=\"white-space:nowrap\">INTRAVASCULAR<a name=\"de-mii-cs-bildgebung-instance-image-type-INTRAVASCULAR\"> </a></td><td>INTRAVASCULAR</td></tr><tr><td style=\"white-space:nowrap\">MUSCULOSKELETAL<a name=\"de-mii-cs-bildgebung-instance-image-type-MUSCULOSKELETAL\"> </a></td><td>MUSCULOSKELETAL</td></tr><tr><td style=\"white-space:nowrap\">NEONATAL_HEAD<a name=\"de-mii-cs-bildgebung-instance-image-type-NEONATAL_HEAD\"> </a></td><td>NEONATAL HEAD</td></tr><tr><td style=\"white-space:nowrap\">OBSTETRICAL<a name=\"de-mii-cs-bildgebung-instance-image-type-OBSTETRICAL\"> </a></td><td>OBSTETRICAL</td></tr><tr><td style=\"white-space:nowrap\">OPHTHALMIC<a name=\"de-mii-cs-bildgebung-instance-image-type-OPHTHALMIC\"> </a></td><td>OPHTHALMIC</td></tr><tr><td style=\"white-space:nowrap\">PEDIATRIC<a name=\"de-mii-cs-bildgebung-instance-image-type-PEDIATRIC\"> </a></td><td>PEDIATRIC</td></tr><tr><td style=\"white-space:nowrap\">PELVIC<a name=\"de-mii-cs-bildgebung-instance-image-type-PELVIC\"> </a></td><td>PELVIC</td></tr><tr><td style=\"white-space:nowrap\">RETROPERITONEAL<a name=\"de-mii-cs-bildgebung-instance-image-type-RETROPERITONEAL\"> </a></td><td>RETROPERITONEAL</td></tr><tr><td style=\"white-space:nowrap\">SCROTAL<a name=\"de-mii-cs-bildgebung-instance-image-type-SCROTAL\"> </a></td><td>SCROTAL</td></tr><tr><td style=\"white-space:nowrap\">SMALL_PARTS<a name=\"de-mii-cs-bildgebung-instance-image-type-SMALL_PARTS\"> </a></td><td>SMALL PARTS</td></tr><tr><td style=\"white-space:nowrap\">TEE<a name=\"de-mii-cs-bildgebung-instance-image-type-TEE\"> </a></td><td>TEE</td></tr><tr><td style=\"white-space:nowrap\">THYROID<a name=\"de-mii-cs-bildgebung-instance-image-type-THYROID\"> </a></td><td>THYROID</td></tr><tr><td style=\"white-space:nowrap\">TRANSCRANIAL<a name=\"de-mii-cs-bildgebung-instance-image-type-TRANSCRANIAL\"> </a></td><td>TRANSCRANIAL</td></tr><tr><td style=\"white-space:nowrap\">TTE<a name=\"de-mii-cs-bildgebung-instance-image-type-TTE\"> </a></td><td>TTE</td></tr><tr><td style=\"white-space:nowrap\">US_BIOPSY<a name=\"de-mii-cs-bildgebung-instance-image-type-US_BIOPSY\"> </a></td><td>US BIOPSY</td></tr><tr><td style=\"white-space:nowrap\">VASCULAR<a name=\"de-mii-cs-bildgebung-instance-image-type-VASCULAR\"> </a></td><td>VASCULAR</td></tr><tr><td style=\"white-space:nowrap\">ISI<a name=\"de-mii-cs-bildgebung-instance-image-type-ISI\"> </a></td><td>Implemetation Specific Identifiers</td></tr><tr><td style=\"white-space:nowrap\">NMI<a name=\"de-mii-cs-bildgebung-instance-image-type-NMI\"> </a></td><td>NM Implematation</td></tr><tr><td style=\"white-space:nowrap\">EMISSION<a name=\"de-mii-cs-bildgebung-instance-image-type-EMISSION\"> </a></td><td>Emission</td></tr><tr><td style=\"white-space:nowrap\">TRANSMISSION<a name=\"de-mii-cs-bildgebung-instance-image-type-TRANSMISSION\"> </a></td><td>Transmission</td></tr><tr><td style=\"white-space:nowrap\">USI<a name=\"de-mii-cs-bildgebung-instance-image-type-USI\"> </a></td><td>US Implemantation</td></tr><tr><td style=\"white-space:nowrap\">0001<a name=\"de-mii-cs-bildgebung-instance-image-type-0001\"> </a></td><td>2D Imaging</td></tr><tr><td style=\"white-space:nowrap\">0002<a name=\"de-mii-cs-bildgebung-instance-image-type-0002\"> </a></td><td>M-Mode</td></tr><tr><td style=\"white-space:nowrap\">0004<a name=\"de-mii-cs-bildgebung-instance-image-type-0004\"> </a></td><td>CW Doppler</td></tr><tr><td style=\"white-space:nowrap\">0008<a name=\"de-mii-cs-bildgebung-instance-image-type-0008\"> </a></td><td>PW Doppler</td></tr><tr><td style=\"white-space:nowrap\">0010<a name=\"de-mii-cs-bildgebung-instance-image-type-0010\"> </a></td><td>Color Doppler</td></tr><tr><td style=\"white-space:nowrap\">0020<a name=\"de-mii-cs-bildgebung-instance-image-type-0020\"> </a></td><td>Color M-Mode</td></tr><tr><td style=\"white-space:nowrap\">0040<a name=\"de-mii-cs-bildgebung-instance-image-type-0040\"> </a></td><td>3D Rendering</td></tr><tr><td style=\"white-space:nowrap\">0100<a name=\"de-mii-cs-bildgebung-instance-image-type-0100\"> </a></td><td>Color Power Mode</td></tr><tr><td style=\"white-space:nowrap\">0200<a name=\"de-mii-cs-bildgebung-instance-image-type-0200\"> </a></td><td>Tissue Characterization</td></tr><tr><td style=\"white-space:nowrap\">0400<a name=\"de-mii-cs-bildgebung-instance-image-type-0400\"> </a></td><td>Spatially-related frames</td></tr></table></div></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_CS_Bildgebung_Instance_Image_Type",
+  "_name" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en-US"
+      },
+      {
+        "url" : "content",
+        "valueString" : "MII_CS_Imaging_Image_Type"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "title" : "MII CS Bildgebung Instance Image Type",
+  "_title" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en-US"
+      },
+      {
+        "url" : "content",
+        "valueString" : "MII CS Imaging Image Type"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-01",
+  "publisher" : "Medizininformatik Initiative",
+  "_publisher" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "de"
+      },
+      {
+        "url" : "content",
+        "valueString" : "Medizininformatik Initiative"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Image type für Radiologische Bilder",
+  "_description" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en-US"
+      },
+      {
+        "url" : "content",
+        "valueString" : "Codes for Image Type in radiological images"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 75,
+  "concept" : [{
+    "code" : "PDC",
+    "display" : "Pixel Data Characteristics",
+    "property" : [{
+      "code" : "child",
+      "valueCode" : "ORIGINAL"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "DERIVED"
+    }]
+  },
+  {
+    "code" : "ORIGINAL",
+    "display" : "identifies an original image",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "PDC"
+    }]
+  },
+  {
+    "code" : "DERIVED",
+    "display" : "identifies an derived image",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "PDC"
+    }]
+  },
+  {
+    "code" : "PEC",
+    "display" : "Patient Examination Characteristics",
+    "property" : [{
+      "code" : "child",
+      "valueCode" : "PRIMARY"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "SECONDARY"
+    }]
+  },
+  {
+    "code" : "PRIMARY",
+    "display" : "identifies a primary image",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "PEC"
+    }]
+  },
+  {
+    "code" : "SECONDARY",
+    "display" : "identifies a secondary image",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "PEC"
+    }]
+  },
+  {
+    "code" : "MSC",
+    "display" : "Modality Specific Characteristics",
+    "property" : [{
+      "code" : "child",
+      "valueCode" : "CT"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "MR"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "CR"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "NM"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "XR"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "CT",
+    "display" : "CT Specific Characteristics",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MSC"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "AXIAL"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "LOCALIZER"
+    }]
+  },
+  {
+    "code" : "AXIAL",
+    "display" : "a CT Cross-sectional Image",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "CT"
+    }]
+  },
+  {
+    "code" : "LOCALIZER",
+    "display" : "a CT Localizer Image",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "CT"
+    }]
+  },
+  {
+    "code" : "MR",
+    "display" : "MR Specific Characteristics",
+    "property" : [{
+      "code" : "child",
+      "valueCode" : "VELOCITYMAP"
+    }]
+  },
+  {
+    "code" : "DENSITYMAP",
+    "display" : "Density Map",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MR"
+    }]
+  },
+  {
+    "code" : "DIFFUSIONMAP",
+    "display" : "Diffusion Map",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MR"
+    }]
+  },
+  {
+    "code" : "IMAGEADDITION",
+    "display" : "Image Addition",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MR"
+    }]
+  },
+  {
+    "code" : "MODULUSSUBTRACT",
+    "display" : "Modulus Substract",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MR"
+    }]
+  },
+  {
+    "code" : "MPR",
+    "display" : "MPR",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MR"
+    }]
+  },
+  {
+    "code" : "OTHER",
+    "display" : "Other",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MR"
+    }]
+  },
+  {
+    "code" : "PHASEMAP",
+    "display" : "Phase Map",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MR"
+    }]
+  },
+  {
+    "code" : "PHASESUBTRACT",
+    "display" : "Phase Substract",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MR"
+    }]
+  },
+  {
+    "code" : "PROJECTIONIMAGE",
+    "display" : "Projection Image",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MR"
+    }]
+  },
+  {
+    "code" : "T1MAP",
+    "display" : "T1 Map",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MR"
+    }]
+  },
+  {
+    "code" : "T2MAP",
+    "display" : "T2 Map",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MR"
+    }]
+  },
+  {
+    "code" : "VELOCITYMAP",
+    "display" : "Velocity Map",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MR"
+    }]
+  },
+  {
+    "code" : "NM",
+    "display" : "NM Specific Characteristics",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MSC"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "STATIC"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "DYNAMIC"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "GATED"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "WHOLEBODY"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "TOMO"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "GATEDTOMO"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "RECONTOMO"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "RECONGATEDTOMO"
+    }]
+  },
+  {
+    "code" : "STATIC",
+    "display" : "Static",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "NM"
+    }]
+  },
+  {
+    "code" : "DYNAMIC",
+    "display" : "Dynamic",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "NM"
+    }]
+  },
+  {
+    "code" : "GATED",
+    "display" : "Gated",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "NM"
+    }]
+  },
+  {
+    "code" : "WHOLEBODY",
+    "display" : "Whole Body",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "NM"
+    }]
+  },
+  {
+    "code" : "TOMO",
+    "display" : "Tomo",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "NM"
+    }]
+  },
+  {
+    "code" : "GATEDTOMO",
+    "display" : "Gated Tomo",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "NM"
+    }]
+  },
+  {
+    "code" : "RECONTOMO",
+    "display" : "Recon Tomo",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "NM"
+    }]
+  },
+  {
+    "code" : "RECONGATEDTOMO",
+    "display" : "Recon Gated Tomo",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "NM"
+    }]
+  },
+  {
+    "code" : "US",
+    "display" : "US Specific Characteristics",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "MSC"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "ADOMINAL"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "BREAST"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "CHEST"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "ENDOCAVITARY"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "ENDORECTAL"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "ENDOVAGINAL"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "EPICARDIAL"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "FETAL_HEART"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "GYNECOLOGY"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "INTRACARDIAC"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "INTRAOPERATIVE"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "INTRAVASCULAR"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "MUSCULOSKELETAL"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "NEONATAL_HEAD"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "OBSTETRICAL"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "OPHTHALMIC"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "PEDIATRIC"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "PELVIC"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "RETROPERITONEAL"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "SCROTAL"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "SMALL_PARTS"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "TEE"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "THYROID"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "TRANSCRANIAL"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "TTE"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "US_BIOPSY"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "VASCULAR"
+    }]
+  },
+  {
+    "code" : "ABDOMINAL",
+    "display" : "ABDOMINAL",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "BREAST",
+    "display" : "BREAST",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "CHEST",
+    "display" : "CHEST",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "ENDOCAVITARY",
+    "display" : "ENDOCAVITARY",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "ENDORECTAL",
+    "display" : "ENDORECTAL",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "ENDOVAGINAL",
+    "display" : "ENDOVAGINAL",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "EPICARDIAL",
+    "display" : "EPICARDIAL",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "FETAL_HEART",
+    "display" : "FETAL HEART",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "GYNECOLOGY",
+    "display" : "GYNECOLOGY",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "INTRACARDIAC",
+    "display" : "INTRACARDIAC",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "INTRAOPERATIVE",
+    "display" : "INTRAOPERATIVE",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "INTRAVASCULAR",
+    "display" : "INTRAVASCULAR",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "MUSCULOSKELETAL",
+    "display" : "MUSCULOSKELETAL",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "NEONATAL_HEAD",
+    "display" : "NEONATAL HEAD",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "OBSTETRICAL",
+    "display" : "OBSTETRICAL",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "OPHTHALMIC",
+    "display" : "OPHTHALMIC",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "PEDIATRIC",
+    "display" : "PEDIATRIC",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "PELVIC",
+    "display" : "PELVIC",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "RETROPERITONEAL",
+    "display" : "RETROPERITONEAL",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "SCROTAL",
+    "display" : "SCROTAL",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "SMALL_PARTS",
+    "display" : "SMALL PARTS",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "TEE",
+    "display" : "TEE",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "THYROID",
+    "display" : "THYROID",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "TRANSCRANIAL",
+    "display" : "TRANSCRANIAL",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "TTE",
+    "display" : "TTE",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "US_BIOPSY",
+    "display" : "US BIOPSY",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "VASCULAR",
+    "display" : "VASCULAR",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "US"
+    }]
+  },
+  {
+    "code" : "ISI",
+    "display" : "Implemetation Specific Identifiers",
+    "property" : [{
+      "code" : "child",
+      "valueCode" : "NMI"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "USI"
+    }]
+  },
+  {
+    "code" : "NMI",
+    "display" : "NM Implematation",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "ISI"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "EMISSION"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "TRANSMISSION"
+    }]
+  },
+  {
+    "code" : "EMISSION",
+    "display" : "Emission",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "NMI"
+    }]
+  },
+  {
+    "code" : "TRANSMISSION",
+    "display" : "Transmission",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "NMI"
+    }]
+  },
+  {
+    "code" : "USI",
+    "display" : "US Implemantation",
+    "property" : [{
+      "code" : "child",
+      "valueCode" : "0200"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "0400"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "0100"
+    }]
+  },
+  {
+    "code" : "0001",
+    "display" : "2D Imaging",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "USI"
+    }]
+  },
+  {
+    "code" : "0002",
+    "display" : "M-Mode",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "USI"
+    }]
+  },
+  {
+    "code" : "0004",
+    "display" : "CW Doppler",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "USI"
+    }]
+  },
+  {
+    "code" : "0008",
+    "display" : "PW Doppler",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "USI"
+    }]
+  },
+  {
+    "code" : "0010",
+    "display" : "Color Doppler",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "USI"
+    }]
+  },
+  {
+    "code" : "0020",
+    "display" : "Color M-Mode",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "USI"
+    }]
+  },
+  {
+    "code" : "0040",
+    "display" : "3D Rendering",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "USI"
+    }]
+  },
+  {
+    "code" : "0100",
+    "display" : "Color Power Mode",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "USI"
+    }]
+  },
+  {
+    "code" : "0200",
+    "display" : "Tissue Characterization",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "USI"
+    }]
+  },
+  {
+    "code" : "0400",
+    "display" : "Spatially-related frames",
+    "property" : [{
+      "code" : "parent",
+      "valueCode" : "USI"
+    }]
+  }]
+}

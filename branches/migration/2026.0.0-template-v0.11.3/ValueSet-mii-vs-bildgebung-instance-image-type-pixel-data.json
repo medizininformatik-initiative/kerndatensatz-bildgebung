@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-bildgebung-instance-image-type-pixel-data",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-bildgebung-instance-image-type-pixel-data</b></p><a name=\"mii-vs-bildgebung-instance-image-type-pixel-data\"> </a><a name=\"hcmii-vs-bildgebung-instance-image-type-pixel-data\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html\"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2027.0.0-ballot</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-ORIGINAL\">ORIGINAL</a></td><td style=\"color: #cccccc\">identifies an original image</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-DERIVED\">DERIVED</a></td><td style=\"color: #cccccc\">identifies an derived image</td></tr></table></li></ul></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-bildgebung-instance-image-type-pixel-data</b></p><a name=\"de-mii-vs-bildgebung-instance-image-type-pixel-data\"> </a><a name=\"de-hcmii-vs-bildgebung-instance-image-type-pixel-data\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html\"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2027.0.0-ballot</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-ORIGINAL\">ORIGINAL</a></td><td style=\"color: #cccccc\">identifies an original image</td></tr><tr><td><a href=\"CodeSystem-mii-cs-bildgebung-instance-image-type.html#mii-cs-bildgebung-instance-image-type-DERIVED\">DERIVED</a></td><td style=\"color: #cccccc\">identifies an derived image</td></tr></table></li></ul></div></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Instance_Image_Type_Pixel_Data",
+  "title" : "MII VS Bildgebung Instance Image Type Pixel Data",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-01",
+  "publisher" : "Medizininformatik Initiative",
+  "_publisher" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "de"
+      },
+      {
+        "url" : "content",
+        "valueString" : "Medizininformatik Initiative"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Import the ValueSet for Instance Image Type Pixel Data",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+      "concept" : [{
+        "code" : "ORIGINAL"
+      },
+      {
+        "code" : "DERIVED"
+      }]
+    }]
+  }
+}

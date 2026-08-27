@@ -1,0 +1,81 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mii-cs-bildgebung-scanning-sequence-variant",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mii-cs-bildgebung-scanning-sequence-variant</b></p><a name=\"mii-cs-bildgebung-scanning-sequence-variant\"> </a><a name=\"hcmii-cs-bildgebung-scanning-sequence-variant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SK<a name=\"mii-cs-bildgebung-scanning-sequence-variant-SK\"> </a></td><td>segmented k-space</td></tr><tr><td style=\"white-space:nowrap\">MTC<a name=\"mii-cs-bildgebung-scanning-sequence-variant-MTC\"> </a></td><td>magnetization transfer contrast</td></tr><tr><td style=\"white-space:nowrap\">SS<a name=\"mii-cs-bildgebung-scanning-sequence-variant-SS\"> </a></td><td>steady state</td></tr><tr><td style=\"white-space:nowrap\">TRSS<a name=\"mii-cs-bildgebung-scanning-sequence-variant-TRSS\"> </a></td><td>time reversed steady state</td></tr><tr><td style=\"white-space:nowrap\">SP<a name=\"mii-cs-bildgebung-scanning-sequence-variant-SP\"> </a></td><td>spoiled</td></tr><tr><td style=\"white-space:nowrap\">MP<a name=\"mii-cs-bildgebung-scanning-sequence-variant-MP\"> </a></td><td>MAG prepared</td></tr><tr><td style=\"white-space:nowrap\">OSP<a name=\"mii-cs-bildgebung-scanning-sequence-variant-OSP\"> </a></td><td>oversampling phase</td></tr><tr><td style=\"white-space:nowrap\">NONE<a name=\"mii-cs-bildgebung-scanning-sequence-variant-NONE\"> </a></td><td>no sequence variant</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_CS_Bildgebung_Scanning_Sequence_Variant",
+  "title" : "MII CS Bildgebung Scanning Sequence Variant",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-01",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Scanning Sequence Varianten für MR Untersuchungen",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "caseSensitive" : true,
+  "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-scanning-sequence-variant",
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "SK",
+    "display" : "segmented k-space"
+  },
+  {
+    "code" : "MTC",
+    "display" : "magnetization transfer contrast"
+  },
+  {
+    "code" : "SS",
+    "display" : "steady state"
+  },
+  {
+    "code" : "TRSS",
+    "display" : "time reversed steady state"
+  },
+  {
+    "code" : "SP",
+    "display" : "spoiled"
+  },
+  {
+    "code" : "MP",
+    "display" : "MAG prepared"
+  },
+  {
+    "code" : "OSP",
+    "display" : "oversampling phase"
+  },
+  {
+    "code" : "NONE",
+    "display" : "no sequence variant"
+  }]
+}

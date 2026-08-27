@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-bildgebung-scanning-sequence"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-bildgebung-scanning-sequence</b></p><a name="mii-cs-bildgebung-scanning-sequence"> </a><a name="hcmii-cs-bildgebung-scanning-sequence"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">SE<a name="mii-cs-bildgebung-scanning-sequence-SE"> </a></td><td>Spin Echo</td></tr><tr><td style="white-space:nowrap">IR<a name="mii-cs-bildgebung-scanning-sequence-IR"> </a></td><td>Inversion Recovery</td></tr><tr><td style="white-space:nowrap">GR<a name="mii-cs-bildgebung-scanning-sequence-GR"> </a></td><td>Gradient Recalled</td></tr><tr><td style="white-space:nowrap">EP<a name="mii-cs-bildgebung-scanning-sequence-EP"> </a></td><td>Echo Planar</td></tr><tr><td style="white-space:nowrap">RM<a name="mii-cs-bildgebung-scanning-sequence-RM"> </a></td><td>Research Mode</td></tr></table></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence"/>
+  <version value="2027.0.0-ballot"/>
+  <name value="MII_CS_Bildgebung_Scanning_Sequence"/>
+  <title value="MII CS Bildgebung Scanning Sequence"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-01"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Scanning Sequence für MR Untersuchungen"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="SE"/>
+    <display value="Spin Echo"/>
+  </concept>
+  <concept>
+    <code value="IR"/>
+    <display value="Inversion Recovery"/>
+  </concept>
+  <concept>
+    <code value="GR"/>
+    <display value="Gradient Recalled"/>
+  </concept>
+  <concept>
+    <code value="EP"/>
+    <display value="Echo Planar"/>
+  </concept>
+  <concept>
+    <code value="RM"/>
+    <display value="Research Mode"/>
+  </concept>
+</CodeSystem>

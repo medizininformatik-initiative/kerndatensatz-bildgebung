@@ -1,0 +1,126 @@
+# de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot: MII IG Kerndatensatz-Modul Bildgebung(en)
+
+## Pages
+
+* [Home](en/index.md)
+* [Examples](en/examples.md)
+* [Value Sets](en/value-sets.md)
+* [Code Systems](en/code-systems.md)
+* [Versioning](en/version-history.md)
+* [Extensions](en/extensions.md)
+* [Metadata Overview](en/metadata.md)
+* [Guidance for Implementers](en/implementer-guidance.md)
+* [Profiles](en/profiles.md)
+* [Artifacts Summary](en/artifacts.md)
+* [Translation Information](en/translationinfo.md)
+* [Changelog](en/changes.md)
+* [Logical Models](en/logical-models.md)
+* [Guidance](en/guidance.md)
+* [Downloads](en/downloads.md)
+* [Security and Privacy](en/security-and-privacy.md)
+* [Capability Statements](en/capability-statements.md)
+* [UML Diagrams](en/uml-diagrams.md)
+
+## Resources
+
+### CodeSystems
+
+* [MII CS Bildgebung Instance Image Type](en/CodeSystem-mii-cs-bildgebung-instance-image-type.md)
+* [MII CS Bildgebung Scanning Sequence Variant](en/CodeSystem-mii-cs-bildgebung-scanning-sequence-variant.md)
+* [MII CS Bildgebung Scanning Sequence](en/CodeSystem-mii-cs-bildgebung-scanning-sequence.md)
+* [MII CS Bildgebung Series Type](en/CodeSystem-mii-cs-bildgebung-series-type.md)
+* [MII CS Bildgebung Transducer Type](en/CodeSystem-mii-cs-bildgebung-transducer-type.md)
+
+### ValueSets
+
+* [MII VS Bildgebung DiagnosticReport Code Loinc](en/ValueSet-mii-vs-bildgebung-diagnostic-report-code-lnc.md)
+* [MII VS Bildgebung DiagnosticReport Code SCT](en/ValueSet-mii-vs-bildgebung-diagnostic-report-code-sct.md)
+* [MII VS Bildgebung Findings Loinc](en/ValueSet-mii-vs-bildgebung-findings-lnc.md)
+* [MII VS Bildgebung Findings SCT](en/ValueSet-mii-vs-bildgebung-findings-sct.md)
+* [MII VS Bildgebung ImagingProcedure Code SCT](en/ValueSet-mii-vs-bildgebung-imaging-procedure-code-sct.md)
+* [MII VS Bildgebung ImagingStudy-Series View Position](en/ValueSet-mii-vs-bildgebung-imagingStudy-series-view-position.md)
+* [MII VS Bildgebung Instance Image Type CT](en/ValueSet-mii-vs-bildgebung-instance-image-type-ct.md)
+* [MII VS Bildgebung Instance Image Type MR](en/ValueSet-mii-vs-bildgebung-instance-image-type-mr.md)
+* [MII VS Bildgebung Instance Image Type NM Implementation](en/ValueSet-mii-vs-bildgebung-instance-image-type-nm-implementation.md)
+* [MII VS Bildgebung Instance Image Type NM](en/ValueSet-mii-vs-bildgebung-instance-image-type-nm.md)
+* [MII VS Bildgebung Instance Image Type Patient Examination](en/ValueSet-mii-vs-bildgebung-instance-image-type-patient-examination.md)
+* [MII VS Bildgebung Instance Image Type Pixel Data](en/ValueSet-mii-vs-bildgebung-instance-image-type-pixel-data.md)
+* [MII VS Bildgebung Instance Image Type US Implemantation](en/ValueSet-mii-vs-bildgebung-instance-image-type-us-implementation.md)
+* [MII VS Bildgebung Instance Image Type US](en/ValueSet-mii-vs-bildgebung-instance-image-type-us.md)
+* [MII VS Bildgebung Imaging Study MR Scanning Sequence Variant](en/ValueSet-mii-vs-bildgebung-mr-scanning-sequence-variant.md)
+* [MII VS Bildgebung Imaging Study MR Scanning Sequence](en/ValueSet-mii-vs-bildgebung-mr-scanning-sequence.md)
+* [MII VS Bildgebung Observation Body Site SCT](en/ValueSet-mii-vs-bildgebung-observation-body-site-sct.md)
+* [MII VS Bildgebung Imaging Study PT Series Type Spacial](en/ValueSet-mii-vs-bildgebung-pt-series-type-spacial.md)
+* [MII VS Bildgebung Imaging Study PT Series Type Volumetric](en/ValueSet-mii-vs-bildgebung-pt-series-type-volumetric.md)
+* [MII VS Bildgebung ServiceRequest Code SCT](en/ValueSet-mii-vs-bildgebung-service-request-code-sct.md)
+* [MII VS Bildgebung Imaging Study US Transducer Type](en/ValueSet-mii-vs-bildgebung-us-transducer-type.md)
+
+### Logicals
+
+* [MII LM Bildgebung](en/StructureDefinition-mii-lm-bildgebung.md)
+
+### Resource Profiles
+
+* [MII PR Bildgebung Anforderung Bildgebung](en/StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.md)
+* [MII PR Bildgebung Behandlungsempfehlung](en/StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.md)
+* [MII PR Bildgebung Bildgebungsprozedur](en/StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.md)
+* [MII PR Bildgebung Bildgebungsstudie](en/StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.md)
+* [MII PR Bildgebung Gerät](en/StructureDefinition-mii-pr-bildgebung-geraet.md)
+* [MII PR Bildgebung Körperstruktur](en/StructureDefinition-mii-pr-bildgebung-koerperstruktur.md)
+* [MII PR Bildgebung Konstrastmittelgabe](en/StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.md)
+* [MII PR Bildgebung Radiologische Befundungsprozedur](en/StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.md)
+* [MII PR Bildgebung Radiologische Beobachtung](en/StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.md)
+* [MII PR Bildgebung Radiologische Messung](en/StructureDefinition-mii-pr-bildgebung-radiologische-messung.md)
+* [MII PR Bildgebung Radiologischer Befund](en/StructureDefinition-mii-pr-bildgebung-radiologischer-befund.md)
+* [MII PR Bildgebung Semistrukturierter Befundbericht](en/StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.md)
+
+### Extensions
+
+* [MII EX Bildgebung Bildgebungsgrund](en/StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.md)
+* [MII EX Bildgebung Körpergewicht](en/StructureDefinition-mii-ex-bildgebung-gewicht.md)
+* [MII EX Bildgebung Körpergröße](en/StructureDefinition-mii-ex-bildgebung-groesse.md)
+* [MII EX Bildgebung Instanzdetails](en/StructureDefinition-mii-ex-bildgebung-instanz-details.md)
+* [MII EX Bildgebung Kontrastmittel](en/StructureDefinition-mii-ex-bildgebung-kontrastmittel.md)
+* [MII EX Bildgebung Modalität CT](en/StructureDefinition-mii-ex-bildgebung-modalitaet-ct.md)
+* [MII EX Bildgebung Modalität MG/CR/DX](en/StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx.md)
+* [MII EX Bildgebung Modalität MR](en/StructureDefinition-mii-ex-bildgebung-modalitaet-mr.md)
+* [MII EX Bildgebung Modalität PT/NM](en/StructureDefinition-mii-ex-bildgebung-modalitaet-nm.md)
+* [MII EX Bildgebung Modalität PT](en/StructureDefinition-mii-ex-bildgebung-modalitaet-pt.md)
+* [MII EX Bildgebung Modalität US](en/StructureDefinition-mii-ex-bildgebung-modalitaet-us.md)
+* [MII EX Bildgebung Schichtdicke](en/StructureDefinition-mii-ex-bildgebung-serie-schichtdicke.md)
+* [MII EX Bildgebung Bildnummer](en/StructureDefinition-mii-ex-bildgebung-serie-uid.md)
+* [MII EX Bildgebung SOPInstanz](en/StructureDefinition-mii-ex-bildgebung-sop-instanz-uid.md)
+
+### CapabilityStatements
+
+* [MII CPS Bildgebung CapabilityStatement](en/CapabilityStatement-mii-cps-bildgebung-capabilitystatement.md)
+
+### ImplementationGuides
+
+* [MII IG Kerndatensatz-Modul Bildgebung](en/ImplementationGuide-mii-ig-bildgebung.md)
+
+### Parameters
+
+* [mii-param-bildgebung-manifest](en/Parameters-mii-param-bildgebung-manifest.md)
+
+### Examples
+
+* [mii-exa-bildgebung-koerperstruktur (BodyStructure)](en/BodyStructure-mii-exa-bildgebung-koerperstruktur.md)
+* [mii-exa-bildgebung-behandlungsempfehlung (CarePlan)](en/CarePlan-mii-exa-bildgebung-behandlungsempfehlung.md)
+* [Mammographic Report (Composition)](en/Composition-mii-exa-bildgebung-semistrukt-befundbericht.md)
+* [mii-exa-bildgebung-geraet (Device)](en/Device-mii-exa-bildgebung-geraet.md)
+* [mii-exa-bildgebung-radiologischer-Befund (DiagnosticReport)](en/DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.md)
+* [mii-exa-bildgebung-bildgebungsstudie-cr (ImagingStudy)](en/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.md)
+* [mii-exa-bildgebung-bildgebungsstudie-ct (ImagingStudy)](en/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.md)
+* [mii-exa-bildgebung-bildgebungsstudie-mr-series (ImagingStudy)](en/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr-series.md)
+* [mii-exa-bildgebung-bildgebungsstudie-mr (ImagingStudy)](en/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.md)
+* [mii-exa-bildgebung-bildgebungsstudie-nm (ImagingStudy)](en/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-nm.md)
+* [mii-exa-bildgebung-bildgebungsstudie-pt (ImagingStudy)](en/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.md)
+* [mii-exa-bildgebung-bildgebungsstudie-us (ImagingStudy)](en/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-us.md)
+* [mii-exa-bildgebung-kontrastmittelgabe (MedicationAdministration)](en/MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.md)
+* [mii-exa-bildgebung-radiologische-beobachtung (Observation)](en/Observation-mii-exa-bildgebung-radiologische-beobachtung.md)
+* [mii-exa-bildgebung-radiologische-messung (Observation)](en/Observation-mii-exa-bildgebung-radiologische-messung.md)
+* [PatExample (Patient)](en/Patient-PatExample.md)
+* [mii-exa-bildgebung-bildgebungsprozedur (Procedure)](en/Procedure-mii-exa-bildgebung-bildgebungsprozedur.md)
+* [mii-exa-bildgebung-radiologische-befundungsprozedur (Procedure)](en/Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.md)
+* [mii-exa-bildgebung-anforderung-bildgebung (ServiceRequest)](en/ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.md)

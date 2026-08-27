@@ -1,0 +1,74 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-bildgebung-radiologische-messung",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung"]
+  },
+  "language" : "de",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-bildgebung-radiologische-messung</b></p><a name=\"de-mii-exa-bildgebung-radiologische-messung\"> </a><a name=\"de-hcmii-exa-bildgebung-radiologische-messung\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-bildgebung-radiologische-messung.html\">MII PR Bildgebung Radiologische Messung</a></p></div><p><b>MII EX Bildgebung Bildnummer</b>: example-series-uid</p><p><b>MII EX Bildgebung SOPInstanz</b>: example-sop-instance-uid</p><p><b>partOf</b>: <a href=\"Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.html\">Procedure Consultation and report by radiologist (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 122869004}\">Measurement procedure (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 439984002}\">Diameter of structure by imaging measurement (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-PatExample.html\">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>issued</b>: 2024-07-19 12:03:30+0200</p><p><b>value</b>: 4.2 millimeter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 76752008}\">Breast structure (body structure)</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 272391002}\">Measurement technique (qualifier value)</span></p><p><b>hasMember</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/ObsExample\">Observation/ObsExample</a></p><p><b>derivedFrom</b>: <a href=\"ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.html\">ImagingStudy: extension = Verdacht auf Karzinom; status = available; modality = Computed Tomography (DICOM#CT); numberOfSeries = 2; numberOfInstances = 390; description = whole body aquisition</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid",
+    "valueId" : "example-series-uid"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid",
+    "valueId" : "example-sop-instance-uid"
+  }],
+  "partOf" : [{
+    "reference" : "Procedure/mii-exa-bildgebung-radiologische-befundungsprozedur"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "122869004",
+      "display" : "Measurement procedure (procedure)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "439984002",
+      "display" : "Diameter of structure by imaging measurement (observable entity)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/PatExample"
+  },
+  "issued" : "2024-07-19T12:03:30+02:00",
+  "valueQuantity" : {
+    "value" : 4.2,
+    "unit" : "millimeter",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mm"
+  },
+  "bodySite" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/bodySite",
+      "valueReference" : {
+        "reference" : "BodyStructure/mii-exa-bildgebung-koerperstruktur"
+      }
+    }],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "76752008",
+      "display" : "Breast structure (body structure)"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "272391002",
+      "display" : "Measurement technique (qualifier value)"
+    }]
+  },
+  "hasMember" : [{
+    "reference" : "Observation/ObsExample"
+  }],
+  "derivedFrom" : [{
+    "reference" : "ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct"
+  }]
+}

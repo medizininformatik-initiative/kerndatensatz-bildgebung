@@ -1,0 +1,36 @@
+{
+  "resourceType" : "BodyStructure",
+  "id" : "mii-exa-bildgebung-koerperstruktur",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: BodyStructure mii-exa-bildgebung-koerperstruktur</b></p><a name=\"mii-exa-bildgebung-koerperstruktur\"> </a><a name=\"hcmii-exa-bildgebung-koerperstruktur\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-bildgebung-koerperstruktur.html\">MII PR Bildgebung Körperstruktur</a></p></div><p><b>morphology</b>: <span title=\"Codes:{http://snomed.info/sct 12747003}\">Microcalcification, calcified structure (morphologic abnormality)</span></p><p><b>location</b>: <span title=\"Codes:{http://snomed.info/sct 76752008}\">Breast structure (body structure)</span></p><p><b>locationQualifier</b>: <span title=\"Codes:{http://snomed.info/sct 7771000}\">Left (qualifier value)</span></p><p><b>patient</b>: <a href=\"Patient-PatExample.html\">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p></div>"
+  },
+  "morphology" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "12747003",
+      "display" : "Microcalcification, calcified structure (morphologic abnormality)"
+    }]
+  },
+  "location" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "76752008",
+      "display" : "Breast structure (body structure)"
+    }]
+  },
+  "locationQualifier" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "7771000",
+      "display" : "Left (qualifier value)"
+    }]
+  }],
+  "patient" : {
+    "reference" : "Patient/PatExample"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "mii-exa-bildgebung-behandlungsempfehlung",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CarePlan mii-exa-bildgebung-behandlungsempfehlung</b></p><a name=\"mii-exa-bildgebung-behandlungsempfehlung\"> </a><a name=\"hcmii-exa-bildgebung-behandlungsempfehlung\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html\">MII PR Bildgebung Behandlungsempfehlung</a></p></div><p><b>status</b>: Completed</p><p><b>intent</b>: Proposal</p><p><b>description</b>: The patient must receive vacuum biopsy</p><p><b>subject</b>: <a href=\"Patient-PatExample.html\">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>supportingInfo</b>: <a href=\"DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.html\">Diagnostic Report for 'Mammography report' for '-&gt;Erika Beispielpatientin  Female, DoB: 1970-01-01'</a></p></div>"
+  },
+  "status" : "completed",
+  "intent" : "proposal",
+  "description" : "The patient must receive vacuum biopsy",
+  "subject" : {
+    "reference" : "Patient/PatExample"
+  },
+  "supportingInfo" : [{
+    "reference" : "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
+  }]
+}

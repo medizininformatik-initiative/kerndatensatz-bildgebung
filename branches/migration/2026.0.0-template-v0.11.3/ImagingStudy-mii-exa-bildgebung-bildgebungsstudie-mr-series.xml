@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImagingStudy xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-bildgebung-bildgebungsstudie-mr-series"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImagingStudy mii-exa-bildgebung-bildgebungsstudie-mr-series</b></p><a name="mii-exa-bildgebung-bildgebungsstudie-mr-series"> </a><a name="hcmii-exa-bildgebung-bildgebungsstudie-mr-series"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html">MII PR Bildgebung Bildgebungsstudie</a></p></div><p><b>MII EX Bildgebung Bildgebungsgrund</b>: Verdacht auf Kreuzbandruptur</p><p><b>status</b>: Available</p><p><b>modality</b>: <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-MR">DICOM: MR</a> (Magnetic Resonance)</p><p><b>subject</b>: <a href="Patient-PatExample.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/EncExample">Encounter/EncExample</a></p><p><b>basedOn</b>: <a href="ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.html">ServiceRequest Mammography (procedure)</a></p><p><b>numberOfSeries</b>: 11</p><p><b>numberOfInstances</b>: 294</p><p><b>procedureReference</b>: <a href="Procedure-mii-exa-bildgebung-bildgebungsprozedur.html">Procedure Screening mammography of bilateral breasts (procedure)</a></p><p><b>reasonReference</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Condition/CondExample">Condition/CondExample</a></p><p><b>description</b>: Knie DOT</p><blockquote><p><b>series</b></p><blockquote><p><b>MII EX Bildgebung Modalität MR</b></p><ul><li>magneticFieldStrength: 3 tesla</li><li>scanningSequence: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence SE}">Spin Echo</span></li><li>scanningSequenceVariant: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant SP}, {https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant SK}">spoiled</span></li><li>echoTime: 388 milliseconds</li><li>repetitionTime: 5000 milliseconds</li><li>inversionTime: 900 milliseconds</li><li>flipAngle: 130 plane angle degree</li></ul></blockquote><blockquote><p><b>MII EX Bildgebung Kontrastmittel</b></p><ul><li>contrastBolus: false</li></ul></blockquote><p><b>MII EX Bildgebung Schichtdicke</b>: 4 millimeter</p><p><b>uid</b>: series-example-uid</p><p><b>number</b>: 9</p><p><b>modality</b>: <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-MR">DICOM: MR</a> (Magnetic Resonance)</p><p><b>description</b>: pd_tse_sag</p><p><b>numberOfInstances</b>: 28</p><p><b>bodySite</b>: <a href="http://snomed.info/id/72696002">SNOMED CT: 72696002</a> (Knee region structure (body structure))</p><p><b>laterality</b>: <a href="http://snomed.info/id/24028007">SNOMED CT: 24028007</a> (Right)</p><p><b>started</b>: 2024-07-19 12:03:30+0200</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Device-mii-exa-bildgebung-geraet.html">Device: manufacturer = Siemens</a></td></tr></table></blockquote></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImagingStudy mii-exa-bildgebung-bildgebungsstudie-mr-series</b></p><a name="de-mii-exa-bildgebung-bildgebungsstudie-mr-series"> </a><a name="de-hcmii-exa-bildgebung-bildgebungsstudie-mr-series"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html">MII PR Bildgebung Bildgebungsstudie</a></p></div><p><b>MII EX Bildgebung Bildgebungsgrund</b>: Verdacht auf Kreuzbandruptur</p><p><b>status</b>: Available</p><p><b>modality</b>: <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-MR">DICOM: MR</a> (Magnetic Resonance)</p><p><b>subject</b>: <a href="Patient-PatExample.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/EncExample">Encounter/EncExample</a></p><p><b>basedOn</b>: <a href="ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.html">ServiceRequest Mammography (procedure)</a></p><p><b>numberOfSeries</b>: 11</p><p><b>numberOfInstances</b>: 294</p><p><b>procedureReference</b>: <a href="Procedure-mii-exa-bildgebung-bildgebungsprozedur.html">Procedure Screening mammography of bilateral breasts (procedure)</a></p><p><b>reasonReference</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Condition/CondExample">Condition/CondExample</a></p><p><b>description</b>: Knie DOT</p><blockquote><p><b>series</b></p><blockquote><p><b>MII EX Bildgebung Modalität MR</b></p><ul><li>magneticFieldStrength: 3 tesla</li><li>scanningSequence: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence SE}">Spin Echo</span></li><li>scanningSequenceVariant: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant SP}, {https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant SK}">spoiled</span></li><li>echoTime: 388 milliseconds</li><li>repetitionTime: 5000 milliseconds</li><li>inversionTime: 900 milliseconds</li><li>flipAngle: 130 plane angle degree</li></ul></blockquote><blockquote><p><b>MII EX Bildgebung Kontrastmittel</b></p><ul><li>contrastBolus: false</li></ul></blockquote><p><b>MII EX Bildgebung Schichtdicke</b>: 4 millimeter</p><p><b>uid</b>: series-example-uid</p><p><b>number</b>: 9</p><p><b>modality</b>: <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-MR">DICOM: MR</a> (Magnetic Resonance)</p><p><b>description</b>: pd_tse_sag</p><p><b>numberOfInstances</b>: 28</p><p><b>bodySite</b>: <a href="http://snomed.info/id/72696002">SNOMED CT: 72696002</a> (Knee region structure (body structure))</p><p><b>laterality</b>: <a href="http://snomed.info/id/24028007">SNOMED CT: 24028007</a> (Right)</p><p><b>started</b>: 2024-07-19 12:03:30+0200</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Device-mii-exa-bildgebung-geraet.html">Device: manufacturer = Siemens</a></td></tr></table></blockquote></div></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund">
+    <valueString value="Verdacht auf Kreuzbandruptur"/>
+  </extension>
+  <status value="available"/>
+  <modality>
+    <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+    <code value="MR"/>
+    <display value="Magnetic Resonance"/>
+  </modality>
+  <subject>
+    <reference value="Patient/PatExample"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+      </type>
+      <system value="https://system-url"/>
+      <value value="study-uid"/>
+    </identifier>
+  </subject>
+  <encounter>
+    <reference value="Encounter/EncExample"/>
+  </encounter>
+  <basedOn>
+    <reference value="ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"/>
+  </basedOn>
+  <numberOfSeries value="11"/>
+  <numberOfInstances value="294"/>
+  <procedureReference>
+    <reference value="Procedure/mii-exa-bildgebung-bildgebungsprozedur"/>
+  </procedureReference>
+  <reasonReference>
+    <reference value="Condition/CondExample"/>
+  </reasonReference>
+  <description value="Knie DOT"/>
+  <series>
+    <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr">
+      <extension url="magneticFieldStrength">
+        <valueQuantity>
+          <value value="3"/>
+          <unit value="tesla"/>
+        </valueQuantity>
+      </extension>
+      <extension url="scanningSequence">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence"/>
+            <code value="SE"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="scanningSequenceVariant">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant"/>
+            <code value="SP"/>
+          </coding>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant"/>
+            <code value="SK"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="echoTime">
+        <valueQuantity>
+          <value value="388"/>
+          <unit value="milliseconds"/>
+        </valueQuantity>
+      </extension>
+      <extension url="repetitionTime">
+        <valueQuantity>
+          <value value="5000"/>
+          <unit value="milliseconds"/>
+        </valueQuantity>
+      </extension>
+      <extension url="inversionTime">
+        <valueQuantity>
+          <value value="900"/>
+          <unit value="milliseconds"/>
+        </valueQuantity>
+      </extension>
+      <extension url="flipAngle">
+        <valueQuantity>
+          <value value="130"/>
+          <unit value="plane angle degree"/>
+        </valueQuantity>
+      </extension>
+    </extension>
+    <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel">
+      <extension url="contrastBolus">
+        <valueBoolean value="false"/>
+      </extension>
+    </extension>
+    <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke">
+      <valueQuantity>
+        <value value="4"/>
+        <unit value="millimeter"/>
+      </valueQuantity>
+    </extension>
+    <uid value="series-example-uid"/>
+    <number value="9"/>
+    <modality>
+      <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+      <code value="MR"/>
+      <display value="Magnetic Resonance"/>
+    </modality>
+    <description value="pd_tse_sag"/>
+    <numberOfInstances value="28"/>
+    <bodySite>
+      <system value="http://snomed.info/sct"/>
+      <code value="72696002"/>
+      <display value="Knee region structure (body structure)"/>
+    </bodySite>
+    <laterality>
+      <system value="http://snomed.info/sct"/>
+      <code value="24028007"/>
+      <display value="Right"/>
+    </laterality>
+    <started value="2024-07-19T12:03:30+02:00"/>
+    <performer>
+      <actor>
+        <reference value="Device/mii-exa-bildgebung-geraet"/>
+      </actor>
+    </performer>
+  </series>
+</ImagingStudy>

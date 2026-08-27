@@ -1,0 +1,113 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mii-cs-bildgebung-transducer-type",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mii-cs-bildgebung-transducer-type</b></p><a name=\"mii-cs-bildgebung-transducer-type\"> </a><a name=\"hcmii-cs-bildgebung-transducer-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SECTOR_PHASED<a name=\"mii-cs-bildgebung-transducer-type-SECTOR_PHASED\"> </a></td><td>Sector Phased</td></tr><tr><td style=\"white-space:nowrap\">SECTOR_MECH<a name=\"mii-cs-bildgebung-transducer-type-SECTOR_MECH\"> </a></td><td>Sector Mech</td></tr><tr><td style=\"white-space:nowrap\">SECTOR_ANNULAR<a name=\"mii-cs-bildgebung-transducer-type-SECTOR_ANNULAR\"> </a></td><td>Sector Annular</td></tr><tr><td style=\"white-space:nowrap\">LINEAR<a name=\"mii-cs-bildgebung-transducer-type-LINEAR\"> </a></td><td>Linear</td></tr><tr><td style=\"white-space:nowrap\">CURVED_LINEAR<a name=\"mii-cs-bildgebung-transducer-type-CURVED_LINEAR\"> </a></td><td>Curved Linear</td></tr><tr><td style=\"white-space:nowrap\">SINGLE_CRYSTAL<a name=\"mii-cs-bildgebung-transducer-type-SINGLE_CRYSTAL\"> </a></td><td>Single Crystal</td></tr><tr><td style=\"white-space:nowrap\">SPLIT_XTAL_CWD<a name=\"mii-cs-bildgebung-transducer-type-SPLIT_XTAL_CWD\"> </a></td><td>Split Xtal CWD</td></tr><tr><td style=\"white-space:nowrap\">IV_PHASED<a name=\"mii-cs-bildgebung-transducer-type-IV_PHASED\"> </a></td><td>IV Phased</td></tr><tr><td style=\"white-space:nowrap\">IV_ROT_XTAL<a name=\"mii-cs-bildgebung-transducer-type-IV_ROT_XTAL\"> </a></td><td>IV Rot XTAL</td></tr><tr><td style=\"white-space:nowrap\">IV_ROT_MIRROR<a name=\"mii-cs-bildgebung-transducer-type-IV_ROT_MIRROR\"> </a></td><td>IV Rot Mirror</td></tr><tr><td style=\"white-space:nowrap\">ENDOCAV_PA<a name=\"mii-cs-bildgebung-transducer-type-ENDOCAV_PA\"> </a></td><td>Endocav PA</td></tr><tr><td style=\"white-space:nowrap\">ENDOCAV_MECH<a name=\"mii-cs-bildgebung-transducer-type-ENDOCAV_MECH\"> </a></td><td>Endocav Mech</td></tr><tr><td style=\"white-space:nowrap\">ENDOCAV_CLA<a name=\"mii-cs-bildgebung-transducer-type-ENDOCAV_CLA\"> </a></td><td>EndocavCLA</td></tr><tr><td style=\"white-space:nowrap\">ENDOCAV_AA<a name=\"mii-cs-bildgebung-transducer-type-ENDOCAV_AA\"> </a></td><td>Endocav AA</td></tr><tr><td style=\"white-space:nowrap\">ENDOCAV_LINEAR<a name=\"mii-cs-bildgebung-transducer-type-ENDOCAV_LINEAR\"> </a></td><td>Endocav Linear</td></tr><tr><td style=\"white-space:nowrap\">VECTOR_PHASED<a name=\"mii-cs-bildgebung-transducer-type-VECTOR_PHASED\"> </a></td><td>Vector Phased</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_CS_Bildgebung_Transducer_Type",
+  "title" : "MII CS Bildgebung Transducer Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-01",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Schallkopftyp für US Untersuchungen",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "caseSensitive" : true,
+  "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type",
+  "content" : "complete",
+  "count" : 16,
+  "concept" : [{
+    "code" : "SECTOR_PHASED",
+    "display" : "Sector Phased"
+  },
+  {
+    "code" : "SECTOR_MECH",
+    "display" : "Sector Mech"
+  },
+  {
+    "code" : "SECTOR_ANNULAR",
+    "display" : "Sector Annular"
+  },
+  {
+    "code" : "LINEAR",
+    "display" : "Linear"
+  },
+  {
+    "code" : "CURVED_LINEAR",
+    "display" : "Curved Linear"
+  },
+  {
+    "code" : "SINGLE_CRYSTAL",
+    "display" : "Single Crystal"
+  },
+  {
+    "code" : "SPLIT_XTAL_CWD",
+    "display" : "Split Xtal CWD"
+  },
+  {
+    "code" : "IV_PHASED",
+    "display" : "IV Phased"
+  },
+  {
+    "code" : "IV_ROT_XTAL",
+    "display" : "IV Rot XTAL"
+  },
+  {
+    "code" : "IV_ROT_MIRROR",
+    "display" : "IV Rot Mirror"
+  },
+  {
+    "code" : "ENDOCAV_PA",
+    "display" : "Endocav PA"
+  },
+  {
+    "code" : "ENDOCAV_MECH",
+    "display" : "Endocav Mech"
+  },
+  {
+    "code" : "ENDOCAV_CLA",
+    "display" : "EndocavCLA"
+  },
+  {
+    "code" : "ENDOCAV_AA",
+    "display" : "Endocav AA"
+  },
+  {
+    "code" : "ENDOCAV_LINEAR",
+    "display" : "Endocav Linear"
+  },
+  {
+    "code" : "VECTOR_PHASED",
+    "display" : "Vector Phased"
+  }]
+}

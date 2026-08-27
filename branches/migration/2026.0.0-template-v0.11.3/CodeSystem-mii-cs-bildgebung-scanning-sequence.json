@@ -1,0 +1,120 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mii-cs-bildgebung-scanning-sequence",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mii-cs-bildgebung-scanning-sequence</b></p><a name=\"mii-cs-bildgebung-scanning-sequence\"> </a><a name=\"hcmii-cs-bildgebung-scanning-sequence\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SE<a name=\"mii-cs-bildgebung-scanning-sequence-SE\"> </a></td><td>Spin Echo</td></tr><tr><td style=\"white-space:nowrap\">IR<a name=\"mii-cs-bildgebung-scanning-sequence-IR\"> </a></td><td>Inversion Recovery</td></tr><tr><td style=\"white-space:nowrap\">GR<a name=\"mii-cs-bildgebung-scanning-sequence-GR\"> </a></td><td>Gradient Recalled</td></tr><tr><td style=\"white-space:nowrap\">EP<a name=\"mii-cs-bildgebung-scanning-sequence-EP\"> </a></td><td>Echo Planar</td></tr><tr><td style=\"white-space:nowrap\">RM<a name=\"mii-cs-bildgebung-scanning-sequence-RM\"> </a></td><td>Research Mode</td></tr></table></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mii-cs-bildgebung-scanning-sequence</b></p><a name=\"de-mii-cs-bildgebung-scanning-sequence\"> </a><a name=\"de-hcmii-cs-bildgebung-scanning-sequence\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SE<a name=\"de-mii-cs-bildgebung-scanning-sequence-SE\"> </a></td><td>Spin Echo</td></tr><tr><td style=\"white-space:nowrap\">IR<a name=\"de-mii-cs-bildgebung-scanning-sequence-IR\"> </a></td><td>Inversion Recovery</td></tr><tr><td style=\"white-space:nowrap\">GR<a name=\"de-mii-cs-bildgebung-scanning-sequence-GR\"> </a></td><td>Gradient Recalled</td></tr><tr><td style=\"white-space:nowrap\">EP<a name=\"de-mii-cs-bildgebung-scanning-sequence-EP\"> </a></td><td>Echo Planar</td></tr><tr><td style=\"white-space:nowrap\">RM<a name=\"de-mii-cs-bildgebung-scanning-sequence-RM\"> </a></td><td>Research Mode</td></tr></table></div></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_CS_Bildgebung_Scanning_Sequence",
+  "_name" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en-US"
+      },
+      {
+        "url" : "content",
+        "valueString" : "MII_CS_Imaging_Scanning_Sequence"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "title" : "MII CS Bildgebung Scanning Sequence",
+  "_title" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en-US"
+      },
+      {
+        "url" : "content",
+        "valueString" : "MII CS Imaging Scanning Sequence"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-01",
+  "publisher" : "Medizininformatik Initiative",
+  "_publisher" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "de"
+      },
+      {
+        "url" : "content",
+        "valueString" : "Medizininformatik Initiative"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Scanning Sequence für MR Untersuchungen",
+  "_description" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en-US"
+      },
+      {
+        "url" : "content",
+        "valueString" : "Codes for scanning-sequence in radiological images"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "caseSensitive" : true,
+  "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence",
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "SE",
+    "display" : "Spin Echo"
+  },
+  {
+    "code" : "IR",
+    "display" : "Inversion Recovery"
+  },
+  {
+    "code" : "GR",
+    "display" : "Gradient Recalled"
+  },
+  {
+    "code" : "EP",
+    "display" : "Echo Planar"
+  },
+  {
+    "code" : "RM",
+    "display" : "Research Mode"
+  }]
+}

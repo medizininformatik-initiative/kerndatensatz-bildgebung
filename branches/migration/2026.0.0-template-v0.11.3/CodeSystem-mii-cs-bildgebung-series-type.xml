@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-bildgebung-series-type"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-bildgebung-series-type</b></p><a name="mii-cs-bildgebung-series-type"> </a><a name="hcmii-cs-bildgebung-series-type"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">STATIC<a name="mii-cs-bildgebung-series-type-STATIC"> </a></td><td>a group of images at varying spatial locations at the same time</td></tr><tr><td style="white-space:nowrap">DYNAMIC<a name="mii-cs-bildgebung-series-type-DYNAMIC"> </a></td><td>a group of images at a set of spatial locations (e.g., slices) at varying time slices, with all spatial locations acquired at all time slices</td></tr><tr><td style="white-space:nowrap">GATED<a name="mii-cs-bildgebung-series-type-GATED"> </a></td><td>a group of images at the same spatial location, same starting and ending time, but acquired in different time slots of (possibly) different R-R intervals</td></tr><tr><td style="white-space:nowrap">WHOLEBODY<a name="mii-cs-bildgebung-series-type-WHOLEBODY"> </a></td><td>same as STATIC, except covering multiple transverse fields of view (and therefore acquired at a different time)</td></tr><tr><td style="white-space:nowrap">IMAGE<a name="mii-cs-bildgebung-series-type-IMAGE"> </a></td><td>a tomographic image slice</td></tr><tr><td style="white-space:nowrap">REPROJECTION<a name="mii-cs-bildgebung-series-type-REPROJECTION"> </a></td><td>a projection image derived from forward projection through slices of tomographic images, using the algorithm defined in Reprojection Method (0054,1004)</td></tr></table></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-bildgebung-series-type</b></p><a name="de-mii-cs-bildgebung-series-type"> </a><a name="de-hcmii-cs-bildgebung-series-type"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">STATIC<a name="de-mii-cs-bildgebung-series-type-STATIC"> </a></td><td>a group of images at varying spatial locations at the same time</td></tr><tr><td style="white-space:nowrap">DYNAMIC<a name="de-mii-cs-bildgebung-series-type-DYNAMIC"> </a></td><td>a group of images at a set of spatial locations (e.g., slices) at varying time slices, with all spatial locations acquired at all time slices</td></tr><tr><td style="white-space:nowrap">GATED<a name="de-mii-cs-bildgebung-series-type-GATED"> </a></td><td>a group of images at the same spatial location, same starting and ending time, but acquired in different time slots of (possibly) different R-R intervals</td></tr><tr><td style="white-space:nowrap">WHOLEBODY<a name="de-mii-cs-bildgebung-series-type-WHOLEBODY"> </a></td><td>same as STATIC, except covering multiple transverse fields of view (and therefore acquired at a different time)</td></tr><tr><td style="white-space:nowrap">IMAGE<a name="de-mii-cs-bildgebung-series-type-IMAGE"> </a></td><td>a tomographic image slice</td></tr><tr><td style="white-space:nowrap">REPROJECTION<a name="de-mii-cs-bildgebung-series-type-REPROJECTION"> </a></td><td>a projection image derived from forward projection through slices of tomographic images, using the algorithm defined in Reprojection Method (0054,1004)</td></tr></table></div></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type"/>
+  <version value="2027.0.0-ballot"/>
+  <name value="MII_CS_Bildgebung_Series_Type">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en-US"/>
+      </extension>
+      <extension url="content">
+        <valueString value="MII_CS_Imaging_Series_Type"/>
+      </extension>
+    </extension>
+  </name>
+  <title value="MII CS Bildgebung Series Type">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en-US"/>
+      </extension>
+      <extension url="content">
+        <valueString value="MII CS Imaging Series Type"/>
+      </extension>
+    </extension>
+  </title>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-01"/>
+  <publisher value="Medizininformatik Initiative">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="de"/>
+      </extension>
+      <extension url="content">
+        <valueString value="Medizininformatik Initiative"/>
+      </extension>
+    </extension>
+  </publisher>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Series Type für PET Untersuchungen">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en-US"/>
+      </extension>
+      <extension url="content">
+        <valueString value="Codes for series Type in radiological images"/>
+      </extension>
+    </extension>
+  </description>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="STATIC"/>
+    <display value="a group of images at varying spatial locations at the same time"/>
+  </concept>
+  <concept>
+    <code value="DYNAMIC"/>
+    <display value="a group of images at a set of spatial locations (e.g., slices) at varying time slices, with all spatial locations acquired at all time slices"/>
+  </concept>
+  <concept>
+    <code value="GATED"/>
+    <display value="a group of images at the same spatial location, same starting and ending time, but acquired in different time slots of (possibly) different R-R intervals"/>
+  </concept>
+  <concept>
+    <code value="WHOLEBODY"/>
+    <display value="same as STATIC, except covering multiple transverse fields of view (and therefore acquired at a different time)"/>
+  </concept>
+  <concept>
+    <code value="IMAGE"/>
+    <display value="a tomographic image slice"/>
+  </concept>
+  <concept>
+    <code value="REPROJECTION"/>
+    <display value="a projection image derived from forward projection through slices of tomographic images, using the algorithm defined in Reprojection Method (0054,1004)"/>
+  </concept>
+</CodeSystem>

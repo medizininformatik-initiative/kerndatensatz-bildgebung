@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-bildgebung-anforderung-bildgebung"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ServiceRequest mii-exa-bildgebung-anforderung-bildgebung</b></p><a name="de-mii-exa-bildgebung-anforderung-bildgebung"> </a><a name="de-hcmii-exa-bildgebung-anforderung-bildgebung"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html">MII PR Bildgebung Anforderung Bildgebung</a></p></div><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 363679005}">Imaging (procedure)</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 71651007}">Mammography (procedure)</span></p><p><b>subject</b>: <a href="Patient-PatExample.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/EncExample">Encounter/EncExample</a></p><p><b>authoredOn</b>: 2024-07-19 12:03:30+0200</p><p><b>requester</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/PracExample1">Practitioner/PracExample1</a></p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 53430007}">Pain of breast (finding)</span></p><p><b>reasonReference</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Condition/CondExample">Condition/CondExample</a></p><p><b>supportingInfo</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/DiagnosticReport/DiagRepExample">DiagnosticReport/DiagRepExample</a></p></div>
+  </text>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="363679005"/>
+      <display value="Imaging (procedure)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="71651007"/>
+      <display value="Mammography (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/PatExample"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/EncExample"/>
+  </encounter>
+  <authoredOn value="2024-07-19T12:03:30+02:00"/>
+  <requester>
+    <reference value="Practitioner/PracExample1"/>
+  </requester>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="53430007"/>
+      <display value="Pain of breast (finding)"/>
+    </coding>
+  </reasonCode>
+  <reasonReference>
+    <reference value="Condition/CondExample"/>
+  </reasonReference>
+  <supportingInfo>
+    <reference value="DiagnosticReport/DiagRepExample"/>
+  </supportingInfo>
+</ServiceRequest>

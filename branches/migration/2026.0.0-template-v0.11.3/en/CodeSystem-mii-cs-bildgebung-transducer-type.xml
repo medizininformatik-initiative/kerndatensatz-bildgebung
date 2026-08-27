@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-bildgebung-transducer-type"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-bildgebung-transducer-type</b></p><a name="mii-cs-bildgebung-transducer-type"> </a><a name="hcmii-cs-bildgebung-transducer-type"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">SECTOR_PHASED<a name="mii-cs-bildgebung-transducer-type-SECTOR_PHASED"> </a></td><td>Sector Phased</td></tr><tr><td style="white-space:nowrap">SECTOR_MECH<a name="mii-cs-bildgebung-transducer-type-SECTOR_MECH"> </a></td><td>Sector Mech</td></tr><tr><td style="white-space:nowrap">SECTOR_ANNULAR<a name="mii-cs-bildgebung-transducer-type-SECTOR_ANNULAR"> </a></td><td>Sector Annular</td></tr><tr><td style="white-space:nowrap">LINEAR<a name="mii-cs-bildgebung-transducer-type-LINEAR"> </a></td><td>Linear</td></tr><tr><td style="white-space:nowrap">CURVED_LINEAR<a name="mii-cs-bildgebung-transducer-type-CURVED_LINEAR"> </a></td><td>Curved Linear</td></tr><tr><td style="white-space:nowrap">SINGLE_CRYSTAL<a name="mii-cs-bildgebung-transducer-type-SINGLE_CRYSTAL"> </a></td><td>Single Crystal</td></tr><tr><td style="white-space:nowrap">SPLIT_XTAL_CWD<a name="mii-cs-bildgebung-transducer-type-SPLIT_XTAL_CWD"> </a></td><td>Split Xtal CWD</td></tr><tr><td style="white-space:nowrap">IV_PHASED<a name="mii-cs-bildgebung-transducer-type-IV_PHASED"> </a></td><td>IV Phased</td></tr><tr><td style="white-space:nowrap">IV_ROT_XTAL<a name="mii-cs-bildgebung-transducer-type-IV_ROT_XTAL"> </a></td><td>IV Rot XTAL</td></tr><tr><td style="white-space:nowrap">IV_ROT_MIRROR<a name="mii-cs-bildgebung-transducer-type-IV_ROT_MIRROR"> </a></td><td>IV Rot Mirror</td></tr><tr><td style="white-space:nowrap">ENDOCAV_PA<a name="mii-cs-bildgebung-transducer-type-ENDOCAV_PA"> </a></td><td>Endocav PA</td></tr><tr><td style="white-space:nowrap">ENDOCAV_MECH<a name="mii-cs-bildgebung-transducer-type-ENDOCAV_MECH"> </a></td><td>Endocav Mech</td></tr><tr><td style="white-space:nowrap">ENDOCAV_CLA<a name="mii-cs-bildgebung-transducer-type-ENDOCAV_CLA"> </a></td><td>EndocavCLA</td></tr><tr><td style="white-space:nowrap">ENDOCAV_AA<a name="mii-cs-bildgebung-transducer-type-ENDOCAV_AA"> </a></td><td>Endocav AA</td></tr><tr><td style="white-space:nowrap">ENDOCAV_LINEAR<a name="mii-cs-bildgebung-transducer-type-ENDOCAV_LINEAR"> </a></td><td>Endocav Linear</td></tr><tr><td style="white-space:nowrap">VECTOR_PHASED<a name="mii-cs-bildgebung-transducer-type-VECTOR_PHASED"> </a></td><td>Vector Phased</td></tr></table></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type"/>
+  <version value="2027.0.0-ballot"/>
+  <name value="MII_CS_Bildgebung_Transducer_Type"/>
+  <title value="MII CS Bildgebung Transducer Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-01"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Schallkopftyp für US Untersuchungen"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type"/>
+  <content value="complete"/>
+  <count value="16"/>
+  <concept>
+    <code value="SECTOR_PHASED"/>
+    <display value="Sector Phased"/>
+  </concept>
+  <concept>
+    <code value="SECTOR_MECH"/>
+    <display value="Sector Mech"/>
+  </concept>
+  <concept>
+    <code value="SECTOR_ANNULAR"/>
+    <display value="Sector Annular"/>
+  </concept>
+  <concept>
+    <code value="LINEAR"/>
+    <display value="Linear"/>
+  </concept>
+  <concept>
+    <code value="CURVED_LINEAR"/>
+    <display value="Curved Linear"/>
+  </concept>
+  <concept>
+    <code value="SINGLE_CRYSTAL"/>
+    <display value="Single Crystal"/>
+  </concept>
+  <concept>
+    <code value="SPLIT_XTAL_CWD"/>
+    <display value="Split Xtal CWD"/>
+  </concept>
+  <concept>
+    <code value="IV_PHASED"/>
+    <display value="IV Phased"/>
+  </concept>
+  <concept>
+    <code value="IV_ROT_XTAL"/>
+    <display value="IV Rot XTAL"/>
+  </concept>
+  <concept>
+    <code value="IV_ROT_MIRROR"/>
+    <display value="IV Rot Mirror"/>
+  </concept>
+  <concept>
+    <code value="ENDOCAV_PA"/>
+    <display value="Endocav PA"/>
+  </concept>
+  <concept>
+    <code value="ENDOCAV_MECH"/>
+    <display value="Endocav Mech"/>
+  </concept>
+  <concept>
+    <code value="ENDOCAV_CLA"/>
+    <display value="EndocavCLA"/>
+  </concept>
+  <concept>
+    <code value="ENDOCAV_AA"/>
+    <display value="Endocav AA"/>
+  </concept>
+  <concept>
+    <code value="ENDOCAV_LINEAR"/>
+    <display value="Endocav Linear"/>
+  </concept>
+  <concept>
+    <code value="VECTOR_PHASED"/>
+    <display value="Vector Phased"/>
+  </concept>
+</CodeSystem>

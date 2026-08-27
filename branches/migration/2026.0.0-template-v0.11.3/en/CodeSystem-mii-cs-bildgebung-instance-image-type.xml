@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-bildgebung-instance-image-type"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-bildgebung-instance-image-type</b></p><a name="mii-cs-bildgebung-instance-image-type"> </a><a name="hcmii-cs-bildgebung-instance-image-type"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">PDC<a name="mii-cs-bildgebung-instance-image-type-PDC"> </a></td><td>Pixel Data Characteristics</td></tr><tr><td style="white-space:nowrap">ORIGINAL<a name="mii-cs-bildgebung-instance-image-type-ORIGINAL"> </a></td><td>identifies an original image</td></tr><tr><td style="white-space:nowrap">DERIVED<a name="mii-cs-bildgebung-instance-image-type-DERIVED"> </a></td><td>identifies an derived image</td></tr><tr><td style="white-space:nowrap">PEC<a name="mii-cs-bildgebung-instance-image-type-PEC"> </a></td><td>Patient Examination Characteristics</td></tr><tr><td style="white-space:nowrap">PRIMARY<a name="mii-cs-bildgebung-instance-image-type-PRIMARY"> </a></td><td>identifies a primary image</td></tr><tr><td style="white-space:nowrap">SECONDARY<a name="mii-cs-bildgebung-instance-image-type-SECONDARY"> </a></td><td>identifies a secondary image</td></tr><tr><td style="white-space:nowrap">MSC<a name="mii-cs-bildgebung-instance-image-type-MSC"> </a></td><td>Modality Specific Characteristics</td></tr><tr><td style="white-space:nowrap">CT<a name="mii-cs-bildgebung-instance-image-type-CT"> </a></td><td>CT Specific Characteristics</td></tr><tr><td style="white-space:nowrap">AXIAL<a name="mii-cs-bildgebung-instance-image-type-AXIAL"> </a></td><td>a CT Cross-sectional Image</td></tr><tr><td style="white-space:nowrap">LOCALIZER<a name="mii-cs-bildgebung-instance-image-type-LOCALIZER"> </a></td><td>a CT Localizer Image</td></tr><tr><td style="white-space:nowrap">MR<a name="mii-cs-bildgebung-instance-image-type-MR"> </a></td><td>MR Specific Characteristics</td></tr><tr><td style="white-space:nowrap">DENSITYMAP<a name="mii-cs-bildgebung-instance-image-type-DENSITYMAP"> </a></td><td>Density Map</td></tr><tr><td style="white-space:nowrap">DIFFUSIONMAP<a name="mii-cs-bildgebung-instance-image-type-DIFFUSIONMAP"> </a></td><td>Diffusion Map</td></tr><tr><td style="white-space:nowrap">IMAGEADDITION<a name="mii-cs-bildgebung-instance-image-type-IMAGEADDITION"> </a></td><td>Image Addition</td></tr><tr><td style="white-space:nowrap">MODULUSSUBTRACT<a name="mii-cs-bildgebung-instance-image-type-MODULUSSUBTRACT"> </a></td><td>Modulus Substract</td></tr><tr><td style="white-space:nowrap">MPR<a name="mii-cs-bildgebung-instance-image-type-MPR"> </a></td><td>MPR</td></tr><tr><td style="white-space:nowrap">OTHER<a name="mii-cs-bildgebung-instance-image-type-OTHER"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">PHASEMAP<a name="mii-cs-bildgebung-instance-image-type-PHASEMAP"> </a></td><td>Phase Map</td></tr><tr><td style="white-space:nowrap">PHASESUBTRACT<a name="mii-cs-bildgebung-instance-image-type-PHASESUBTRACT"> </a></td><td>Phase Substract</td></tr><tr><td style="white-space:nowrap">PROJECTIONIMAGE<a name="mii-cs-bildgebung-instance-image-type-PROJECTIONIMAGE"> </a></td><td>Projection Image</td></tr><tr><td style="white-space:nowrap">T1MAP<a name="mii-cs-bildgebung-instance-image-type-T1MAP"> </a></td><td>T1 Map</td></tr><tr><td style="white-space:nowrap">T2MAP<a name="mii-cs-bildgebung-instance-image-type-T2MAP"> </a></td><td>T2 Map</td></tr><tr><td style="white-space:nowrap">VELOCITYMAP<a name="mii-cs-bildgebung-instance-image-type-VELOCITYMAP"> </a></td><td>Velocity Map</td></tr><tr><td style="white-space:nowrap">NM<a name="mii-cs-bildgebung-instance-image-type-NM"> </a></td><td>NM Specific Characteristics</td></tr><tr><td style="white-space:nowrap">STATIC<a name="mii-cs-bildgebung-instance-image-type-STATIC"> </a></td><td>Static</td></tr><tr><td style="white-space:nowrap">DYNAMIC<a name="mii-cs-bildgebung-instance-image-type-DYNAMIC"> </a></td><td>Dynamic</td></tr><tr><td style="white-space:nowrap">GATED<a name="mii-cs-bildgebung-instance-image-type-GATED"> </a></td><td>Gated</td></tr><tr><td style="white-space:nowrap">WHOLEBODY<a name="mii-cs-bildgebung-instance-image-type-WHOLEBODY"> </a></td><td>Whole Body</td></tr><tr><td style="white-space:nowrap">TOMO<a name="mii-cs-bildgebung-instance-image-type-TOMO"> </a></td><td>Tomo</td></tr><tr><td style="white-space:nowrap">GATEDTOMO<a name="mii-cs-bildgebung-instance-image-type-GATEDTOMO"> </a></td><td>Gated Tomo</td></tr><tr><td style="white-space:nowrap">RECONTOMO<a name="mii-cs-bildgebung-instance-image-type-RECONTOMO"> </a></td><td>Recon Tomo</td></tr><tr><td style="white-space:nowrap">RECONGATEDTOMO<a name="mii-cs-bildgebung-instance-image-type-RECONGATEDTOMO"> </a></td><td>Recon Gated Tomo</td></tr><tr><td style="white-space:nowrap">US<a name="mii-cs-bildgebung-instance-image-type-US"> </a></td><td>US Specific Characteristics</td></tr><tr><td style="white-space:nowrap">ABDOMINAL<a name="mii-cs-bildgebung-instance-image-type-ABDOMINAL"> </a></td><td>ABDOMINAL</td></tr><tr><td style="white-space:nowrap">BREAST<a name="mii-cs-bildgebung-instance-image-type-BREAST"> </a></td><td>BREAST</td></tr><tr><td style="white-space:nowrap">CHEST<a name="mii-cs-bildgebung-instance-image-type-CHEST"> </a></td><td>CHEST</td></tr><tr><td style="white-space:nowrap">ENDOCAVITARY<a name="mii-cs-bildgebung-instance-image-type-ENDOCAVITARY"> </a></td><td>ENDOCAVITARY</td></tr><tr><td style="white-space:nowrap">ENDORECTAL<a name="mii-cs-bildgebung-instance-image-type-ENDORECTAL"> </a></td><td>ENDORECTAL</td></tr><tr><td style="white-space:nowrap">ENDOVAGINAL<a name="mii-cs-bildgebung-instance-image-type-ENDOVAGINAL"> </a></td><td>ENDOVAGINAL</td></tr><tr><td style="white-space:nowrap">EPICARDIAL<a name="mii-cs-bildgebung-instance-image-type-EPICARDIAL"> </a></td><td>EPICARDIAL</td></tr><tr><td style="white-space:nowrap">FETAL_HEART<a name="mii-cs-bildgebung-instance-image-type-FETAL_HEART"> </a></td><td>FETAL HEART</td></tr><tr><td style="white-space:nowrap">GYNECOLOGY<a name="mii-cs-bildgebung-instance-image-type-GYNECOLOGY"> </a></td><td>GYNECOLOGY</td></tr><tr><td style="white-space:nowrap">INTRACARDIAC<a name="mii-cs-bildgebung-instance-image-type-INTRACARDIAC"> </a></td><td>INTRACARDIAC</td></tr><tr><td style="white-space:nowrap">INTRAOPERATIVE<a name="mii-cs-bildgebung-instance-image-type-INTRAOPERATIVE"> </a></td><td>INTRAOPERATIVE</td></tr><tr><td style="white-space:nowrap">INTRAVASCULAR<a name="mii-cs-bildgebung-instance-image-type-INTRAVASCULAR"> </a></td><td>INTRAVASCULAR</td></tr><tr><td style="white-space:nowrap">MUSCULOSKELETAL<a name="mii-cs-bildgebung-instance-image-type-MUSCULOSKELETAL"> </a></td><td>MUSCULOSKELETAL</td></tr><tr><td style="white-space:nowrap">NEONATAL_HEAD<a name="mii-cs-bildgebung-instance-image-type-NEONATAL_HEAD"> </a></td><td>NEONATAL HEAD</td></tr><tr><td style="white-space:nowrap">OBSTETRICAL<a name="mii-cs-bildgebung-instance-image-type-OBSTETRICAL"> </a></td><td>OBSTETRICAL</td></tr><tr><td style="white-space:nowrap">OPHTHALMIC<a name="mii-cs-bildgebung-instance-image-type-OPHTHALMIC"> </a></td><td>OPHTHALMIC</td></tr><tr><td style="white-space:nowrap">PEDIATRIC<a name="mii-cs-bildgebung-instance-image-type-PEDIATRIC"> </a></td><td>PEDIATRIC</td></tr><tr><td style="white-space:nowrap">PELVIC<a name="mii-cs-bildgebung-instance-image-type-PELVIC"> </a></td><td>PELVIC</td></tr><tr><td style="white-space:nowrap">RETROPERITONEAL<a name="mii-cs-bildgebung-instance-image-type-RETROPERITONEAL"> </a></td><td>RETROPERITONEAL</td></tr><tr><td style="white-space:nowrap">SCROTAL<a name="mii-cs-bildgebung-instance-image-type-SCROTAL"> </a></td><td>SCROTAL</td></tr><tr><td style="white-space:nowrap">SMALL_PARTS<a name="mii-cs-bildgebung-instance-image-type-SMALL_PARTS"> </a></td><td>SMALL PARTS</td></tr><tr><td style="white-space:nowrap">TEE<a name="mii-cs-bildgebung-instance-image-type-TEE"> </a></td><td>TEE</td></tr><tr><td style="white-space:nowrap">THYROID<a name="mii-cs-bildgebung-instance-image-type-THYROID"> </a></td><td>THYROID</td></tr><tr><td style="white-space:nowrap">TRANSCRANIAL<a name="mii-cs-bildgebung-instance-image-type-TRANSCRANIAL"> </a></td><td>TRANSCRANIAL</td></tr><tr><td style="white-space:nowrap">TTE<a name="mii-cs-bildgebung-instance-image-type-TTE"> </a></td><td>TTE</td></tr><tr><td style="white-space:nowrap">US_BIOPSY<a name="mii-cs-bildgebung-instance-image-type-US_BIOPSY"> </a></td><td>US BIOPSY</td></tr><tr><td style="white-space:nowrap">VASCULAR<a name="mii-cs-bildgebung-instance-image-type-VASCULAR"> </a></td><td>VASCULAR</td></tr><tr><td style="white-space:nowrap">ISI<a name="mii-cs-bildgebung-instance-image-type-ISI"> </a></td><td>Implemetation Specific Identifiers</td></tr><tr><td style="white-space:nowrap">NMI<a name="mii-cs-bildgebung-instance-image-type-NMI"> </a></td><td>NM Implematation</td></tr><tr><td style="white-space:nowrap">EMISSION<a name="mii-cs-bildgebung-instance-image-type-EMISSION"> </a></td><td>Emission</td></tr><tr><td style="white-space:nowrap">TRANSMISSION<a name="mii-cs-bildgebung-instance-image-type-TRANSMISSION"> </a></td><td>Transmission</td></tr><tr><td style="white-space:nowrap">USI<a name="mii-cs-bildgebung-instance-image-type-USI"> </a></td><td>US Implemantation</td></tr><tr><td style="white-space:nowrap">0001<a name="mii-cs-bildgebung-instance-image-type-0001"> </a></td><td>2D Imaging</td></tr><tr><td style="white-space:nowrap">0002<a name="mii-cs-bildgebung-instance-image-type-0002"> </a></td><td>M-Mode</td></tr><tr><td style="white-space:nowrap">0004<a name="mii-cs-bildgebung-instance-image-type-0004"> </a></td><td>CW Doppler</td></tr><tr><td style="white-space:nowrap">0008<a name="mii-cs-bildgebung-instance-image-type-0008"> </a></td><td>PW Doppler</td></tr><tr><td style="white-space:nowrap">0010<a name="mii-cs-bildgebung-instance-image-type-0010"> </a></td><td>Color Doppler</td></tr><tr><td style="white-space:nowrap">0020<a name="mii-cs-bildgebung-instance-image-type-0020"> </a></td><td>Color M-Mode</td></tr><tr><td style="white-space:nowrap">0040<a name="mii-cs-bildgebung-instance-image-type-0040"> </a></td><td>3D Rendering</td></tr><tr><td style="white-space:nowrap">0100<a name="mii-cs-bildgebung-instance-image-type-0100"> </a></td><td>Color Power Mode</td></tr><tr><td style="white-space:nowrap">0200<a name="mii-cs-bildgebung-instance-image-type-0200"> </a></td><td>Tissue Characterization</td></tr><tr><td style="white-space:nowrap">0400<a name="mii-cs-bildgebung-instance-image-type-0400"> </a></td><td>Spatially-related frames</td></tr></table></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"/>
+  <version value="2027.0.0-ballot"/>
+  <name value="MII_CS_Bildgebung_Instance_Image_Type"/>
+  <title value="MII CS Bildgebung Instance Image Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-01"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Image type für Radiologische Bilder"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="75"/>
+  <concept>
+    <code value="PDC"/>
+    <display value="Pixel Data Characteristics"/>
+    <property>
+      <code value="child"/>
+      <valueCode value="ORIGINAL"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="DERIVED"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ORIGINAL"/>
+    <display value="identifies an original image"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="PDC"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="DERIVED"/>
+    <display value="identifies an derived image"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="PDC"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="PEC"/>
+    <display value="Patient Examination Characteristics"/>
+    <property>
+      <code value="child"/>
+      <valueCode value="PRIMARY"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="SECONDARY"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="PRIMARY"/>
+    <display value="identifies a primary image"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="PEC"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="SECONDARY"/>
+    <display value="identifies a secondary image"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="PEC"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="MSC"/>
+    <display value="Modality Specific Characteristics"/>
+    <property>
+      <code value="child"/>
+      <valueCode value="CT"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="MR"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="CR"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="NM"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="XR"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CT"/>
+    <display value="CT Specific Characteristics"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MSC"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="AXIAL"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="LOCALIZER"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="AXIAL"/>
+    <display value="a CT Cross-sectional Image"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="CT"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="LOCALIZER"/>
+    <display value="a CT Localizer Image"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="CT"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="MR"/>
+    <display value="MR Specific Characteristics"/>
+    <property>
+      <code value="child"/>
+      <valueCode value="VELOCITYMAP"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="DENSITYMAP"/>
+    <display value="Density Map"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="DIFFUSIONMAP"/>
+    <display value="Diffusion Map"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="IMAGEADDITION"/>
+    <display value="Image Addition"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="MODULUSSUBTRACT"/>
+    <display value="Modulus Substract"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="MPR"/>
+    <display value="MPR"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="OTHER"/>
+    <display value="Other"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="PHASEMAP"/>
+    <display value="Phase Map"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="PHASESUBTRACT"/>
+    <display value="Phase Substract"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="PROJECTIONIMAGE"/>
+    <display value="Projection Image"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="T1MAP"/>
+    <display value="T1 Map"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="T2MAP"/>
+    <display value="T2 Map"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="VELOCITYMAP"/>
+    <display value="Velocity Map"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NM"/>
+    <display value="NM Specific Characteristics"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MSC"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="STATIC"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="DYNAMIC"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="GATED"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="WHOLEBODY"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="TOMO"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="GATEDTOMO"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="RECONTOMO"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="RECONGATEDTOMO"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="STATIC"/>
+    <display value="Static"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="NM"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="DYNAMIC"/>
+    <display value="Dynamic"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="NM"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="GATED"/>
+    <display value="Gated"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="NM"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="WHOLEBODY"/>
+    <display value="Whole Body"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="NM"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="TOMO"/>
+    <display value="Tomo"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="NM"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="GATEDTOMO"/>
+    <display value="Gated Tomo"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="NM"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="RECONTOMO"/>
+    <display value="Recon Tomo"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="NM"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="RECONGATEDTOMO"/>
+    <display value="Recon Gated Tomo"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="NM"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="US"/>
+    <display value="US Specific Characteristics"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="MSC"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="ADOMINAL"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="BREAST"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="CHEST"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="ENDOCAVITARY"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="ENDORECTAL"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="ENDOVAGINAL"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="EPICARDIAL"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="FETAL_HEART"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="GYNECOLOGY"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="INTRACARDIAC"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="INTRAOPERATIVE"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="INTRAVASCULAR"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="MUSCULOSKELETAL"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="NEONATAL_HEAD"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="OBSTETRICAL"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="OPHTHALMIC"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="PEDIATRIC"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="PELVIC"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="RETROPERITONEAL"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="SCROTAL"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="SMALL_PARTS"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="TEE"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="THYROID"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="TRANSCRANIAL"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="TTE"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="US_BIOPSY"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="VASCULAR"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ABDOMINAL"/>
+    <display value="ABDOMINAL"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="BREAST"/>
+    <display value="BREAST"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CHEST"/>
+    <display value="CHEST"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ENDOCAVITARY"/>
+    <display value="ENDOCAVITARY"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ENDORECTAL"/>
+    <display value="ENDORECTAL"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ENDOVAGINAL"/>
+    <display value="ENDOVAGINAL"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="EPICARDIAL"/>
+    <display value="EPICARDIAL"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="FETAL_HEART"/>
+    <display value="FETAL HEART"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="GYNECOLOGY"/>
+    <display value="GYNECOLOGY"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="INTRACARDIAC"/>
+    <display value="INTRACARDIAC"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="INTRAOPERATIVE"/>
+    <display value="INTRAOPERATIVE"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="INTRAVASCULAR"/>
+    <display value="INTRAVASCULAR"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="MUSCULOSKELETAL"/>
+    <display value="MUSCULOSKELETAL"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NEONATAL_HEAD"/>
+    <display value="NEONATAL HEAD"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="OBSTETRICAL"/>
+    <display value="OBSTETRICAL"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="OPHTHALMIC"/>
+    <display value="OPHTHALMIC"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="PEDIATRIC"/>
+    <display value="PEDIATRIC"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="PELVIC"/>
+    <display value="PELVIC"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="RETROPERITONEAL"/>
+    <display value="RETROPERITONEAL"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="SCROTAL"/>
+    <display value="SCROTAL"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="SMALL_PARTS"/>
+    <display value="SMALL PARTS"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="TEE"/>
+    <display value="TEE"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="THYROID"/>
+    <display value="THYROID"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="TRANSCRANIAL"/>
+    <display value="TRANSCRANIAL"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="TTE"/>
+    <display value="TTE"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="US_BIOPSY"/>
+    <display value="US BIOPSY"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="VASCULAR"/>
+    <display value="VASCULAR"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="US"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ISI"/>
+    <display value="Implemetation Specific Identifiers"/>
+    <property>
+      <code value="child"/>
+      <valueCode value="NMI"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="USI"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NMI"/>
+    <display value="NM Implematation"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="ISI"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="EMISSION"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="TRANSMISSION"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="EMISSION"/>
+    <display value="Emission"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="NMI"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="TRANSMISSION"/>
+    <display value="Transmission"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="NMI"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="USI"/>
+    <display value="US Implemantation"/>
+    <property>
+      <code value="child"/>
+      <valueCode value="0200"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="0400"/>
+    </property>
+    <property>
+      <code value="child"/>
+      <valueCode value="0100"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0001"/>
+    <display value="2D Imaging"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="USI"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0002"/>
+    <display value="M-Mode"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="USI"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0004"/>
+    <display value="CW Doppler"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="USI"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0008"/>
+    <display value="PW Doppler"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="USI"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0010"/>
+    <display value="Color Doppler"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="USI"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0020"/>
+    <display value="Color M-Mode"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="USI"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0040"/>
+    <display value="3D Rendering"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="USI"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0100"/>
+    <display value="Color Power Mode"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="USI"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0200"/>
+    <display value="Tissue Characterization"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="USI"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0400"/>
+    <display value="Spatially-related frames"/>
+    <property>
+      <code value="parent"/>
+      <valueCode value="USI"/>
+    </property>
+  </concept>
+</CodeSystem>
