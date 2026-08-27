@@ -100,7 +100,7 @@ packageId: de.medizininformatikinitiative.kerndatensatz.bildgebung
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: "2024+"
 releaseLabel: ci-build # Quelle gewinnt (sushi-config der Quelle: ci-build; 2027.0.0-ballot ist kein formales Release)
-# license: TODO:REVIEW — die Quelle deklariert in KEINER Quelle eine Lizenz (sushi-config, package.json, publiziertes Paket 2026.0.0, keine LICENSE-Datei). Template-Default CC-BY-4.0 NICHT uebernommen (never default, Skill §2.2) -> Gate A / ①-Queue
+license: CC-BY-4.0 # Evidenz Tier R (KEIN Default): Quell-Guide-Impressum (Index.page.md) deklariert '© 2019+ TMF e. V. ... CC BY 4.0'; kein license-Feld in sushi-config/package.json/publiziertem Paket, keine LICENSE-Datei -> Bestätigung Gate A / ①
 # Must equal the publication date; go-publish.yml validates this.
 date: "2026-08-27" # TODO:REVIEW ci-build-Stand, kein Publikationsdatum (Gate A)
 jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/valueset-jurisdiction.html
@@ -254,7 +254,6 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.base: 2026.0.1 # Quelle: 2026.0.x
   fhir.dicom: 2025.3.20250714 # Quelle: exakt
   hl7.fhir.uv.extensions.r4: 5.2.0 # Quelle: exakt (Template empfiehlt 5.3.0 — Bump = ①-Queue)
-  hl7.fhir.r4.core: 4.0.1 # Quelle: exakt
   # ── Template-Maschinerie (Gate A dokumentiert, Skill Schritt 3) ─────────────
   # CRMI — verlangt von den meta.profile-Claims oben.
   hl7.fhir.uv.crmi: 2.0.0
@@ -365,6 +364,13 @@ parameters:
     - input/predefined-resources
   path-pages:
     - input/intro-notes # Custom introductory notes
+  # Publisher-2.3.2-Workaround (Migration): der DiagnosticReportRenderer wirft
+  # eine NPE, wenn subject (Patient/PatExample) nicht im IG aufloesbar ist —
+  # das Modul liefert bewusst kein Patient-Beispiel (Person kommt aus dem
+  # Basismodul). no-narrative laesst das Beispiel unveraendert, nur die
+  # generierte Narrative entfaellt. Upstream-Bug, ①-Queue.
+  no-narrative:
+    - DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund
   # ── Multi-language (e.g. kerndatensatz-basis uses the same model) ──────────
   # English is the DEFAULT rendering language, German the additional one. The MII
   # naming conventions prefer German for a conformance resource's description/
