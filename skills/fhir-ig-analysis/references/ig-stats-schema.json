@@ -1,0 +1,735 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.org/fhir/kds-sample/ig-stats-schema.json",
+  "title": "ig-stats",
+  "description": "Maschinenlesbare Statistik eines FHIR-IG (Ausgabe von scripts/ig-stats.py analyze). Build-only-Felder sind im statischen Modus null. Ab 1.4: aus der realen Ausgabe regeneriert — alle Gruppen (portfolio, risk, git, quality, linguistics, duplication, hygiene) deklariert; maturity ohne score/band (nur Komponenten); git.history_complete; narrative.mandatory_missing_in_target (das in <=1.2 deklarierte mandatory_missing wurde nie emittiert); additionalProperties auf Top- und Gruppenebene false, damit Drift die Validierung bricht statt sie zu passieren. 1.4+: narrative.translation_pages/translation_words zählen input/translations-Seiten separat (die Kernzahlen bleiben übersetzungsfrei; files[].kind kennt 'translation').",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "tool",
+    "mode",
+    "analyzed",
+    "identity",
+    "artifacts"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "tool": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "static",
+        "full",
+        "reduced"
+      ],
+      "description": "reduced = nur generierte Ressourcen (Package), kein FSH/Narrative"
+    },
+    "analyzed": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "git_commit": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string"
+        },
+        "input": {
+          "type": "string"
+        },
+        "resolved_from": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "identity": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "canonical": {
+          "type": "string"
+        },
+        "packageId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "calver": {
+          "type": "boolean"
+        },
+        "status": {
+          "type": "string"
+        },
+        "fhirVersion": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "publisher": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "artifacts": {
+      "type": "object",
+      "properties": {
+        "profiles": {
+          "type": "integer"
+        },
+        "extensions": {
+          "type": "integer"
+        },
+        "valuesets": {
+          "type": "integer"
+        },
+        "codesystems": {
+          "type": "integer"
+        },
+        "logicals": {
+          "type": "integer"
+        },
+        "capabilitystatements": {
+          "type": "integer"
+        },
+        "questionnaires": {
+          "type": "integer"
+        },
+        "searchparameters": {
+          "type": "integer"
+        },
+        "operations": {
+          "type": "integer"
+        },
+        "examples": {
+          "type": "integer"
+        },
+        "rulesets": {
+          "type": "integer"
+        },
+        "invariants": {
+          "type": "integer"
+        },
+        "mappings": {
+          "type": "integer"
+        },
+        "total": {
+          "type": "integer"
+        },
+        "_source": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "artifacts_detail": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "instanceOf": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "category": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "line": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer"
+        },
+        "pinned": {
+          "type": "integer"
+        },
+        "floating": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Map packageId -> Version"
+        },
+        "floating_items": {
+          "type": "array"
+        },
+        "_source": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "narrative": {
+      "type": "object",
+      "properties": {
+        "format": {
+          "type": "string"
+        },
+        "pages": {
+          "type": "integer"
+        },
+        "pages_all": {
+          "type": "integer"
+        },
+        "translation_pages": {
+          "type": "integer"
+        },
+        "translation_words": {
+          "type": "integer"
+        },
+        "words": {
+          "type": "integer"
+        },
+        "words_all_incl_stubs": {
+          "type": "integer"
+        },
+        "images": {
+          "type": "integer"
+        },
+        "mandatory_present": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mandatory_missing_in_target": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "words": {
+                "type": "integer"
+              },
+              "kind": {
+                "type": "string"
+              },
+              "stub": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": false,
+      "description": "mandatory_missing_in_target ersetzt seit 1.3 das nie emittierte mandatory_missing."
+    },
+    "linguistics": {
+      "type": "object",
+      "properties": {
+        "content_pages": {
+          "type": "integer"
+        },
+        "words_total": {
+          "type": "integer"
+        },
+        "words_avg": {
+          "type": "number"
+        },
+        "words_median": {
+          "type": "integer"
+        },
+        "words_min": {
+          "type": "integer"
+        },
+        "words_max": {
+          "type": "integer"
+        },
+        "longest_page": {
+          "type": "string"
+        },
+        "shortest_page": {
+          "type": "string"
+        },
+        "per_page": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "words": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "duplication": {
+      "type": "object",
+      "properties": {
+        "duplicate_block_count": {
+          "type": "integer"
+        },
+        "duplicate_blocks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "snippet": {
+                "type": "string"
+              },
+              "locations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "duplicate_file_groups": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "hygiene": {
+      "type": "object",
+      "properties": {
+        "images_total": {
+          "type": "integer"
+        },
+        "unreferenced_images": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "examples_total": {
+          "type": "integer"
+        },
+        "examples_not_in_narrative": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "i18n": {
+      "type": "object",
+      "properties": {
+        "default_lang": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "default_lang_source": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "translation_supplements": {
+          "type": "integer"
+        },
+        "supplement_files": {
+          "type": "array"
+        },
+        "translated_pages": {
+          "type": "integer"
+        },
+        "fsh_translation_ext": {
+          "type": "boolean"
+        },
+        "fsh_translation_files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "directives": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer"
+        },
+        "by_label": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Map Direktiven-Label -> Anzahl"
+        },
+        "unknown": {
+          "type": "integer"
+        },
+        "occurrences": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "type": "string"
+              },
+              "line": {
+                "type": "integer"
+              },
+              "label": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "unknown_occurrences": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "quality": {
+      "type": "object",
+      "properties": {
+        "qc_rules_defined": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "qc_rules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "action": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "category": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "qc_source": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "qc_violations": {
+          "type": "null"
+        },
+        "suppressed_messages": {
+          "type": "integer"
+        },
+        "qa_errors": {
+          "type": "null"
+        },
+        "qa_warnings": {
+          "type": "null"
+        },
+        "qa_hints": {
+          "type": "null"
+        },
+        "broken_links": {
+          "type": "null"
+        },
+        "qa_categories": {
+          "type": "null"
+        }
+      },
+      "additionalProperties": false
+    },
+    "maturity": {
+      "type": "object",
+      "properties": {
+        "components": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Map Komponente -> gezählter/abgeleiteter Wert (kein Score)"
+        },
+        "example_coverage": {
+          "type": "object",
+          "properties": {
+            "profiles_total": {
+              "type": "integer"
+            },
+            "covered": {
+              "type": "integer"
+            },
+            "uncovered": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "coverage_pct": {
+              "type": "integer"
+            }
+          },
+          "additionalProperties": true
+        },
+        "governance": {
+          "type": "object",
+          "properties": {
+            "ci_workflows": {
+              "type": "integer"
+            },
+            "publication_request": {
+              "type": "boolean"
+            },
+            "ig_ini": {
+              "type": "boolean"
+            },
+            "devcontainer": {
+              "type": "boolean"
+            },
+            "governance_score": {
+              "type": "integer"
+            }
+          },
+          "additionalProperties": true
+        },
+        "doc_health_pct": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false,
+      "description": "Gezählte Reife-Komponenten nebeneinander — seit 1.4 bewusst OHNE score/band: die frühere Verdichtung war ein Freigabe-Indikator, den der Skill-Scope ausschließt."
+    },
+    "portfolio": {
+      "type": "object",
+      "properties": {
+        "vendor_lockin_score": {
+          "type": "integer"
+        },
+        "vendor_lockin_band": {
+          "type": "string"
+        },
+        "directives_per_page": {
+          "type": "number"
+        },
+        "terminology_standard_systems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "terminology_standard_refs": {
+          "type": "integer"
+        },
+        "local_codesystems": {
+          "type": "integer"
+        },
+        "terminology_standard_share_pct": {
+          "type": "integer"
+        },
+        "canonical_reuse_ratio_pct": {
+          "type": "integer"
+        },
+        "external_parents": {
+          "type": "integer"
+        },
+        "local_parents": {
+          "type": "integer"
+        },
+        "fhir_version_label": {
+          "type": "string"
+        },
+        "fhir_version_note": {
+          "type": "string"
+        },
+        "dependency_stale_count": {
+          "type": "integer"
+        },
+        "dependency_stale": {
+          "type": "array"
+        },
+        "dependency_staleness_note": {
+          "type": "string"
+        },
+        "release_cadence_per_year": {
+          "type": "null"
+        },
+        "days_since_last_commit": {
+          "type": "null"
+        },
+        "tags": {
+          "type": "null"
+        }
+      },
+      "additionalProperties": false
+    },
+    "risk": {
+      "type": "object",
+      "properties": {
+        "terminology_license_flags": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "system": {
+                "type": "string"
+              },
+              "license": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "terminology_license_risk": {
+          "type": "boolean"
+        },
+        "suppressed_total": {
+          "type": "integer"
+        },
+        "suppressed_broad": {
+          "type": "integer"
+        },
+        "suppressed_warning_risk": {
+          "type": "string"
+        },
+        "privacy_page_words": {
+          "type": "integer"
+        },
+        "privacy_page_substantial": {
+          "type": "boolean"
+        },
+        "examples_contain_pii_like": {
+          "type": "boolean"
+        },
+        "bus_factor_top_author_pct": {
+          "type": "null"
+        },
+        "bus_factor_authors": {
+          "type": "null"
+        },
+        "bus_factor_risk": {
+          "type": "null"
+        },
+        "breaking_change_risk": {
+          "type": "null"
+        },
+        "breaking_change_note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "git": {
+      "type": "object",
+      "properties": {
+        "commits": {
+          "type": "null"
+        },
+        "authors": {
+          "type": "null"
+        },
+        "top_author_share": {
+          "type": "null"
+        },
+        "days_since_last": {
+          "type": "null"
+        },
+        "commits_per_year": {
+          "type": "null"
+        },
+        "tags": {
+          "type": "null"
+        },
+        "first": {
+          "type": "null"
+        },
+        "last": {
+          "type": "null"
+        },
+        "history_complete": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false,
+      "description": "Git-Historien-Metriken. history_complete=false (shallow clone, z.B. jeder URL-Input) => alle Historien-Metriken null; null ist nicht 0."
+    }
+  }
+}

@@ -1,0 +1,115 @@
+# sync-ig-template.yml — keep the vendored MII IG template current
+#
+# Purpose:   During development the module IG must always build against the
+#            CURRENT template from ig-template-mii-kds. The template package is
+#            not on a FHIR package registry yet, so ig.ini uses the local folder
+#            (template = #ig-template) and that folder is a vendored mirror.
+#            This workflow refreshes the mirror and opens a PR when it drifts.
+# Triggers:  weekly schedule (Mondays 05:00 UTC), manual workflow_dispatch, and
+#            pull_request (drift CHECK only — never writes on a PR).
+# Toggle:    vars.ENABLE_TEMPLATE_SYNC — ON by default; set the repo variable to
+#            'false' to disable (jobs then skip, which is expected, not an error).
+# Variable:  vars.IG_TEMPLATE_REPO_URL — the clone URL of ig-template-mii-kds
+#            while the repositories are not yet in the target organisation. It
+#            is OPTIONAL: scripts/resolve-ig-template-source.sh probes the URL (the
+#            variable, else the built-in target-org default) and, when it is not
+#            reachable, the job emits a ::notice and skips instead of failing —
+#            so a freshly created module is never born with a red PR check.
+#            docs/recipes/first-run-setup.md step 5 has the `gh variable set`
+#            command.
+# Gated:     never auto-merges. Drift always lands as a reviewable PR.
+#
+# NOTE for a created module: keep this workflow while the template is consumed as
+# a vendored folder. Once you switch ig.ini to the published package
+# (docs/recipes/switch-template-to-published.md), delete this workflow, the
+# ig-template/ folder and scripts/sync-ig-template.sh — the package pin then governs
+# the template version.
+name: Sync IG template
+
+on:
+  schedule:
+    - cron: "0 5 * * 1" # Mondays 05:00 UTC
+  workflow_dispatch:
+  pull_request:
+    branches: [dev]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-ig-template
+  cancel-in-progress: false
+
+jobs:
+  # On a PR: verify only. Fails if the vendored mirror has drifted from the
+  # template repo, so a stale mirror cannot silently reach dev.
+  check:
+    if: ${{ vars.ENABLE_TEMPLATE_SYNC != 'false' && github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Resolve the template source
+        id: source
+        env:
+          SRC_REPO: ${{ vars.IG_TEMPLATE_REPO_URL }}
+        run: bash scripts/resolve-ig-template-source.sh
+
+      - name: Check the vendored template against ig-template-mii-kds@dev
+        if: ${{ steps.source.outputs.reachable == 'true' }}
+        env:
+          # Override the template source while the repos are not yet in the
+          # target organisation (unset once they are).
+          SRC_REPO: ${{ vars.IG_TEMPLATE_REPO_URL }}
+        run: bash scripts/sync-ig-template.sh --check --ref dev
+
+  # Scheduled/manual: refresh the mirror and open a PR if anything changed.
+  sync:
+    if: ${{ vars.ENABLE_TEMPLATE_SYNC != 'false' && github.event_name != 'pull_request' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Resolve the template source
+        id: source
+        env:
+          SRC_REPO: ${{ vars.IG_TEMPLATE_REPO_URL }}
+        run: bash scripts/resolve-ig-template-source.sh
+      - name: Re-vendor the template from ig-template-mii-kds@dev
+        if: ${{ steps.source.outputs.reachable == 'true' }}
+        env:
+          SRC_REPO: ${{ vars.IG_TEMPLATE_REPO_URL }}
+        run: bash scripts/sync-ig-template.sh --ref dev
+      - name: Open a PR if the mirror changed
+        if: ${{ steps.source.outputs.reachable == 'true' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo "::notice::Vendored template already current — nothing to do."
+            exit 0
+          fi
+          src_sha="$(sed -n 's/.*at commit `\([0-9a-f]\{7,\}\)`.*/\1/p' ig-template/README.md | head -1)"
+          branch="chore/sync-ig-template-${src_sha:0:7}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "${branch}"
+          git add ig-template
+          git commit -m "chore: sync vendored IG template with ig-template-mii-kds@${src_sha:0:7}"
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "${branch}"
+          # NOTE: build the PR body in a file. Every line of this `run: |` block
+          # must stay indented — an unindented continuation line would terminate
+          # the YAML block scalar and make the whole workflow unparseable.
+          {
+            printf 'The MII IG template moved on. This refreshes the vendored mirror in `ig-template/` from `ig-template-mii-kds@dev` (`%s`).\n\n' "${src_sha}"
+            printf 'Generated by `.github/workflows/sync-ig-template.yml` via `scripts/sync-ig-template.sh`. Review the rendered preview before merging — template changes affect how every page of this IG looks.\n'
+          } > "${RUNNER_TEMP}/pr-body.md"
+          gh pr create --base dev --head "${branch}" \
+            --title "chore: sync vendored IG template (${src_sha:0:7})" \
+            --body-file "${RUNNER_TEMP}/pr-body.md"

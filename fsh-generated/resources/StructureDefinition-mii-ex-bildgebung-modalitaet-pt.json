@@ -99,6 +99,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MII EX Bildgebung Modalität PT",
+        "definition": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf PT Daten zu erweitern."
+      },
+      {
         "id": "Extension.extension:radiopharmaceutical",
         "path": "Extension.extension",
         "sliceName": "radiopharmaceutical",
