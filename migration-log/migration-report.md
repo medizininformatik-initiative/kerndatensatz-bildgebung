@@ -164,6 +164,19 @@ fsh-generated-Tracking (Quelle trackt, Template generiert — ① geloggt). Defa
 **DEC-12 — STAND-IN Patient-Beispiel PatExample** · severity medium · Gate A/B — FIX-3 bestätigen oder durch
 KDS-Person-konformes Beispiel ersetzen (dann DIZ-Beispielkette komplett). Default: minimaler synthetischer R4-Patient.
 
+**DEC-13 — M6-FAIL: Version `2027.0.0-ballot` vs. Template-CalVer-Check** · severity high · Gate A
+- **Was:** Der Template-Release-Check M6 verlangt reines CalVer `YYYY.n.n`; die Quelle nutzt den Ballot-Suffix
+  (`2027.0.0-ballot` — Konvention der Quelle, `2026.0.0-ballot` ist sogar registry-publiziert). Die Migration
+  normalisiert NICHT stillschweigend (Skill §2: Quelle gewinnt) — der convention-check auf dem PR bleibt daher ROT.
+- **Wo:** `sushi-config.yaml` version; Check: `scripts/convention-check.mjs` (M6).
+- **Wenn niemand handelt:** PR-Check bleibt rot; Merge nur mit Override möglich.
+- **Optionen:** (a) Check upstream erweitern (Ballot-Suffix als zulässige Pre-Release-Form — Issue im
+  mii-kds-module-template) · (b) Version beim Release ohnehin auf `2027.0.0` setzen und den Roten Check bis dahin
+  hinnehmen · (c) jetzt auf `2027.0.0` normalisieren → Semantikänderung (Ballot-Markierung geht verloren).
+  **Default:** unverändert (rot, dokumentiert).
+- **Wer:** Modul-Maintainer + Template-Owner. **Aufwand:** Minuten–Stunden · blockiert Merge-Check. **Reversibel:** ja.
+- **Evidenz:** CI-Lauf 33100813947 (M1–M5, M7, M9–M11 PASS; nur M6 FAIL); run.log `9 ci-triage`.
+
 **Erfundene Werte (STAND-IN):** Autor-E-Mail (DEC-3), Datum (DEC-4), NCI-Topic (DEC-5), PatExample (DEC-12), EN-Description
 + Titel (DEC-2, abgeleitet) — je mit Fundstelle oben.
 
