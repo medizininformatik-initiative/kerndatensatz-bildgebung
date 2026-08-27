@@ -38,7 +38,6 @@
     <ul class="dropdown-menu">
       <li><a href="guidance.html">Guidance</a></li>
       <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="researcher-guidance.html">Guidance for Researchers (optional)</a></li>
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: Logical-Models section of the Artifacts Summary (see header note) -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
@@ -66,9 +65,7 @@
       <li><a href="extensions.html">Extensions (optional)</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="search-parameters.html">Search Parameters (optional)</a></li>
       <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="operations.html">Operations (optional)</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
       <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
       <li><a href="value-sets.html">Value Sets (optional)</a></li>

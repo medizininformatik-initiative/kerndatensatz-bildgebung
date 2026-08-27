@@ -9,20 +9,7 @@
      nicht. Sobald sushi-config.yaml ein CRMI-Profil, eine artifact-*-Extension
      oder einen Manifest-Parameter gewinnt oder verliert, sind die Tabellen unten
      in BEIDEN Sprachen nachzuziehen. -->
-<!-- OPTIONAL-PAGE (0..1) — Marker entfernen, wenn die Seite BLEIBT; andernfalls
-     die Seite gemäß docs/optional-pages.md entfernen. Der Konventions-Check
-     (M9) lässt ein Release mit diesem Marker fehlschlagen. -->
 
-> **Optionale Seite (0..1).** Das KDS-Modulmenü führt diese Seite als
-> *optional* — behalten Sie sie nur, wenn die Profile Ihres Moduls die hier
-> dokumentierten Metadaten-Charakteristiken aufweisen (wie z. B. das
-> Basis-Modul). Entscheiden Sie für Ihr Modul: Seite **behalten** — Inhalte
-> ausfüllen und dieses Banner samt `OPTIONAL-PAGE`-Marker-Kommentar löschen (in
-> dieser Datei UND in der englischen Quellseite) — oder Seite **entfernen**,
-> nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/blob/main/docs/optional-pages.md) dieses
-> Repositories. Ein Release darf dieses Banner nicht enthalten
-> (Konventions-Check M9).
-{: .ig-highlight .ig-highlight-grey}
 
 ### Metadaten-Übersicht
 

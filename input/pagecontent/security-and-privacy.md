@@ -5,9 +5,8 @@
      module-specific aspects. Stages 1 and 2 are static overarching content —
      keep them; stage 3 is where your module writes. Stage 3's CONTENT is
      optional: a module with no aspects of its own adopts the default text in
-     the section. The Person example box is illustrative only and MUST be
-     removed before the first release (ILLUSTRATIVE-EXAMPLE marker, convention
-     check M11).
+     the section. The illustrative Person example box was removed by the
+     migration (M11 decided: module-specific aspects written, marked derived).
      German mirror: input/translations/de/pagecontent/security-and-privacy.md —
      both files must say the same thing. -->
 
@@ -56,20 +55,24 @@ TODO boxes below and adopt it verbatim):
 > data category that raises security or privacy aspects of its own, and it
 > places no module-specific security or privacy requirements on implementers.
 
-<!-- ILLUSTRATIVE-EXAMPLE — decide this section and remove the example box
-     below (in this file AND the German mirror) before the first release;
-     the convention check (M11) fails a release branch while it is present. -->
-> **Illustrative example — remove before the first release.** How another KDS
-> module fills this section (*Person*): the patient identifiers are pseudonyms
-> from the trusted third party; systems must not let record linkage
-> re-identify a person, and the pseudonym's scope (site-wide vs
-> project-specific) must be respected when data is combined.
-{: .ig-highlight .ig-highlight-orange}
+<!-- DERIVED:suggestion source=none gate=B -->
+> **Written during migration - review before release.** The following
+> module-specific aspects were derived from the module's own artifacts
+> (instance-details extension: `burnedInAnnotation`; DICOM metadata in
+> ImagingStudy); they were not present as narrative in the source guide.
+{: .ig-highlight .ig-highlight-blue}
 
-> [TODO: State your module's specific aspects — the data categories it carries
-> and their sensitivity, risks that profile-level pseudonymisation does not
-> cover, and any security- or privacy-related SHALL/SHOULD/MAY requirements
-> this module places on implementers, each with the risk it addresses. Name
-> residual risks that must be handled in system design, deployment or policy —
-> or adopt the default text above if there are none.]
-{: .ig-highlight .ig-highlight-grey}
+Beyond the overarching framework above, two properties of imaging data deserve
+attention when this module is implemented:
+
+* **Identifying DICOM metadata.** The ImagingStudy profile and its extensions
+  carry values taken directly from DICOM headers (UIDs, device data,
+  acquisition parameters). DICOM headers in the source systems can contain
+  directly identifying attributes; the DIMP configuration decides which
+  elements survive a concrete data release.
+* **Burned-in annotations.** Pixel data of some modalities (especially US and
+  secondary captures) can contain patient information burned into the image
+  itself. The instance-details extension represents the DICOM attribute
+  *Burned In Annotation* precisely so that such instances can be recognized;
+  systems providing image data for secondary use SHOULD evaluate this
+  attribute in their de-identification pipelines.

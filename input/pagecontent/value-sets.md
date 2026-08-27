@@ -1,35 +1,24 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Split from the former terminology.md per the TF-KDS-agreed menu structure (one
-     page per artifact type); SNOMED CT version policy from the meta wiki page
-     "Terminology Version Policy". The IG Publisher lists the ValueSets on the
-     artifact pages automatically; this page carries the MII notes on them.
-     German mirror: input/translations/de/pagecontent/value-sets.md. -->
-<!-- OPTIONAL-PAGE (0..1) — remove this marker when you KEEP the page; remove
-     the page per docs/optional-pages.md when you don't. The convention check
-     (M9) fails a release while this marker is present. -->
+<!-- TODO:REVIEW machine translation of source page value-sets.md (de) -->
 
-> **Optional page (0..1).** The KDS module menu lists this page as *optional*.
-> Decide for your module: **keep** it — fill it in and delete this banner and
-> the `OPTIONAL-PAGE` marker comment (in this file AND the German mirror) — or
-> **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/blob/main/docs/optional-pages.md)
-> of this repository. A release must not ship with this banner (convention
-> check M9).
-{: .ig-highlight .ig-highlight-grey}
+This page describes the ValueSets of the **Bildgebung** module. The complete,
+automatically generated list of all ValueSets can be found in the
+[artifact overview](artifacts.html).
 
-### Value Sets
+### Value sets defined by DICOM
 
-This page describes the ValueSets of the **Bildgebung** module (naming
-convention `MII_VS_<Module>_<Name>`). For general guidance on using codes, see
-[FHIR Terminology](http://hl7.org/fhir/R4/terminologies.html); the code systems
-the sets draw from are described on the [Code Systems](code-systems.html) page.
+The DICOM standard defines its own value sets for certain tags, which are also
+to be used in these profiles. These are:
 
-{:.bg-info}
-**Expansions:** ValueSet expansions in this guide are produced by a FHIR
-terminology server — SU-TermServ if the client certificate is configured,
-otherwise the public HL7 server `tx.fhir.org` (in which case some KDS-specific
-ValueSets may not expand completely).
+* Modality: <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html>
+* Laterality: <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html>
+* SOP class: <https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html>
+* Radiopharmaceutical PT: <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4021.html>
+* Radionuclide PT: <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4020.html>
+* Radiopharmaceutical NM: <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html>
+* Radionuclide NM: <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_18.html>
+* Scaling units: <http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_84.html>
 
-> [TODO: If your module uses SNOMED CT, state the edition/version used. List
-> the module's own ValueSets, or refer to the automatically generated artifact
-> list — or remove this page if your module defines none.]
-{: .ig-highlight .ig-highlight-grey}
+For tags with enumerated values for which the DICOM package defines no codes,
+the module created its own code systems with corresponding ValueSets — see the
+[code systems page](code-systems.html).

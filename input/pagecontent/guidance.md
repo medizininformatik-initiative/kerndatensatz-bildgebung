@@ -1,34 +1,29 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Source: kerndatensatz-basis input/pagecontent/guidance.md (MII module page set).
-     "Guidance" overview page. Replace the [TODO] prompts; the sub-page structure
-     follows kerndatensatz-basis. German mirror:
-     input/translations/de/pagecontent/guidance.md — keep both in step. -->
+<!-- TODO:REVIEW machine translation of source page guidance.md (de) -->
 
-This section collects the domain guidance for implementing and using the
-**Bildgebung** module.
+This page bundles the domain-oriented introduction to the **Bildgebung**
+module: application scenarios, the [UML diagrams](uml-diagrams.html) of the
+information model, and the [guidance for implementers](implementer-guidance.html).
 
-### General Implementation Guidance
+### Scenarios for applying the module
 
-* **[Datasets and Descriptions](logical-models.html)** — the module's data
-  elements, described as logical models. (This entry shares its target with
-  *Artifacts → Logical Models*; neither Artifacts-Summary anchor is usable as
-  a link target — see
-  [`docs/page-structure.md`](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/blob/main/docs/page-structure.md) in this repository.)
-* **[UML Diagrams](uml-diagrams.html)** — visual representation of the data
-  models and their relationships.
+Concrete examples:
 
-### Audience-Specific Guidance
+**Recording and documenting an imaging procedure for making a diagnosis:**
 
-* **[Guidance for Researchers](researcher-guidance.html)** — for researchers
-  using the module's data.
-* **[Guidance for Implementers](implementer-guidance.html)** — technical
-  guidance for DIC implementers.
+Example: a patient with suspected axial spondyloarthritis (Bechterew's
+disease) is admitted for diagnostic evaluation. A native MRI is performed to
+establish the diagnosis.
 
-> [TODO: Add the module-specific guidance that is relevant to all audiences —
-> e.g. the domain scope or its delimitations.]
-{: .ig-highlight .ig-highlight-grey}
+MRI is suitable for early diagnosis, since inflammatory changes in the
+sacroiliac joints are already visible while conventional procedures (X-ray)
+are still unremarkable.
 
----
-For the KDS-wide conformance requirements see the
-[Conformance rules of the Meta module](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance);
-for the technical artifacts see [Profiles](profiles.html).
+For this MRI acquisition, a series of the hip region is generated. The
+acquisition parameters, which are also stored in the DICOM header, are matched
+to the individual FHIR resources, and the imaging is thereby documented
+(e.g. Study Instance UID, Series Instance UID, modality etc.).
+
+If, for example, a research request asks how many native hip MRIs were
+performed at this hospital to diagnose Bechterew's disease, this can be
+answered with little effort thanks to the FHIR implementation.

@@ -10,7 +10,6 @@
     <ul class="dropdown-menu">
       <li><a href="guidance.html">Anleitung</a></li>
       <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="researcher-guidance.html">Anleitung für Forschende (optional)</a></li>
       <li><a href="implementer-guidance.html">Anleitung für Implementierende</a></li>
       <!-- Nur-Link-Eintrag: die Seite "Logische Modelle" (Begründung im Quell-Menü) -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
@@ -39,9 +38,7 @@
       <li><a href="extensions.html">Extensions (optional)</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
       <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="search-parameters.html">Suchparameter (optional)</a></li>
       <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="operations.html">Operationen (optional)</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
       <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
       <li><a href="value-sets.html">ValueSets (optional)</a></li>

@@ -1,32 +1,65 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Split from the former terminology.md per the TF-KDS-agreed menu structure (one
-     page per artifact type). The IG Publisher lists the CodeSystems on the
-     artifact pages automatically; this page carries the MII notes on them.
-     German mirror: input/translations/de/pagecontent/code-systems.md. -->
-<!-- OPTIONAL-PAGE (0..1) — remove this marker when you KEEP the page; remove
-     the page per docs/optional-pages.md when you don't. The convention check
-     (M9) fails a release while this marker is present. -->
+<!-- TODO:REVIEW machine translation of source page code-systems.md (de) -->
 
-> **Optional page (0..1).** The KDS module menu lists this page as *optional*.
-> Decide for your module: **keep** it — fill it in and delete this banner and
-> the `OPTIONAL-PAGE` marker comment (in this file AND the German mirror) — or
-> **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/blob/main/docs/optional-pages.md)
-> of this repository. A release must not ship with this banner (convention
-> check M9).
-{: .ig-highlight .ig-highlight-grey}
+This page describes the terminologies used by the **Bildgebung** module and
+the code systems the module defines. The complete, automatically generated
+list of all code systems can be found in the
+[artifact overview](artifacts.html).
 
-### Code Systems
+### DICOM
 
-This page describes the CodeSystems of the **Bildgebung** module (naming
-convention `MII_CS_<Module>_<Name>`). The ValueSets built on them are described
-on the [Value Sets](value-sets.html) page.
+<div class="ig-highlight" markdown="1">
+**Note:** The DICOM FHIR package defines a CodeSystem and ValueSets according
+to the prescribed contents of certain tags. However, the strings of the
+enumerated values are not listed as codes and can therefore not be represented
+as CodeableConcept. These fields are currently implemented as strings; an
+acceptable, practicable solution is still being sought.
+</div>
 
-{:.bg-info}
-**Important:** CodeSystem resources of external terminologies (e.g. ICD-10-GM,
-OPS, SNOMED CT) are **not** published in this module; they are obtained from the
-central KDS terminology service (SU-TermServ):
-[https://mii-termserv.de/](https://mii-termserv.de/).
+DICOM is the leading standard protocol for managing and transmitting medical
+image data. It is used to identify and transfer imaging studies and forms the
+basis for the data referenced in **ImagingStudy** profiles.
 
-> [TODO: List the module's own CodeSystems, or refer to the automatically
-> generated artifact list — or remove this page if your module defines none.]
-{: .ig-highlight .ig-highlight-grey}
+For the following tags, dedicated code systems were created so that tags with
+enumerated values can be represented in a queryable way:
+
+    (0018,0020) Scanning Sequence -> ImagingStudy extension MR scanningSequence
+    (0018,0021) Sequence Variant -> ImagingStudy extension MR scanningSequenceVariant
+    (0008,0008) Image Type -> ImagingStudy extension instance details imageType
+    (0054,1000) Series Type -> ImagingStudy extension PT seriesType
+
+For the transducer type of the US modality, a dedicated code system was also
+created to list the codes semantically correctly according to the FHIR
+standard:
+
+    (0018,6031) Transducer Type -> ImagingStudy extension US transducerType
+
+### SNOMED CT
+
+SNOMED CT is used to code clinical concepts related to imaging procedures,
+including the indications for an examination, the type of procedure performed
+and the findings observed. For mapping the body region represented in DICOM to
+the SNOMED standard, a table exists:
+<https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_L.html>
+
+### LOINC & RadLex
+
+LOINC is used to code observations and results of imaging procedures,
+particularly in connection with the **DiagnosticReport** profile. RadLex is a
+comprehensive lexicon specific to radiology containing terms for imaging
+procedures, anatomical structures, findings and imaging techniques. An
+existing mapping of RadLex codes to the more widely used LOINC standard is
+available at:
+<https://playbook.radlex.org/playbook/SearchRadlexAction>
+
+### Further code systems used
+
+* identifierType: <https://terminology.hl7.org/6.0.2/CodeSystem-v2-0203.html>
+* diagnosticServiceSectionId: <https://terminology.hl7.org/6.0.2/CodeSystem-v2-0074.html>
+* observationType: <https://terminology.hl7.org/6.0.2/CodeSystem-v2-0936.html>
+* Observation Category Codes: <https://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html>
+
+Units of measurement for measured values MUST be given in
+[UCUM](https://unitsofmeasure.org/ucum) units so that results can be converted
+into one another. [Validators](https://ucum.nlm.nih.gov/ucum-lhc/demo.html)
+can be used to ensure that the units used are valid.

@@ -1,8 +1,67 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Source: kerndatensatz-basis input/pagecontent/uml-diagrams.md.
-     German mirror: input/translations/de/pagecontent/uml-diagrams.md. -->
+<!-- TODO:REVIEW machine translation of source page uml-diagrams.md (de) -->
 
-UML overviews of the data models of the **Bildgebung** module and their relationships. Editable sources (e.g. PlantUML) belong in `input/images-source/`, the rendered images in `input/images/`.
+As a more abstract version of an information model, and to better illustrate
+the relationships between the domain concepts, a UML class diagram was created
+based on the specifications in ART-DECOR. Concepts represented as groups in
+ART-DECOR are modelled as separate classes with association relationships.
+This logical model serves only to represent the data elements and their
+descriptions. The data types and cardinalities used are not to be regarded as
+mandatory — they are conclusively defined by the FHIR profiles. The mapping of
+the FHIR elements to the ART-DECOR specification is described in the comment
+field in ART-DECOR. A deliberately generic representation of radiological
+reporting was chosen in order to be able to cover a broad spectrum of
+reporting guidelines and templates. To make the structure easier to follow,
+there are, in addition to the complete UML, two sections that look separately
+at the metadata and report parts.
 
-> [TODO: Add your module's UML diagrams, or delete this page if there are none.]
-{: .ig-highlight .ig-highlight-grey}
+For better readability, the complete UML is also available
+[as an SVG](UML_Modul_Bildgebung.svg). For clarity, the references to the
+"Patient" resource were modelled only from the central profiles. Further
+references to it are described in the texts within the profiles and in the
+corresponding FHIR profiles.
+
+![Complete UML of the Bildgebung module](UML_Modul_Bildgebung.png)
+
+The abstract representation of the UML shows the model purely at class level,
+focusing on the association relationships in the module:
+
+![Abstract UML of the Bildgebung module](UML_Modul_Bildgebung_Simple.png)
+
+### UML metadata
+
+To keep the module with its two sections clear and understandable, the
+complete UML is subdivided here into the sections metadata and report. This
+section deals with the metadata.
+
+This is mainly about capturing the DICOM metadata represented in a FHIR
+ImagingStudy, complemented by modality-specific extensions that capture
+additional relevant data.
+
+![UML metadata](UML_Metadaten.png)
+
+### UML report
+
+Depending on the available data, the report section can be implemented in
+three different variants.
+
+#### Variant 1: fully structured reports
+
+This variant can be chosen when fully structured reports exist in the
+available data — for example the DRG templates.
+
+![UML structured report](UML_Befund_strukturiert.png)
+
+#### Variant 2: semi-structured reports
+
+This variant can be chosen when there are reports in the data that are, for
+example, already structured into chapters.
+
+![UML semi-structured report](UML_Befund_semistrukturiert.png)
+
+#### Variant 3: free-text reports
+
+This variant can be chosen when the data exist purely as unstructured free
+text.
+
+![UML free-text report](UML_Befund_freitext.png)

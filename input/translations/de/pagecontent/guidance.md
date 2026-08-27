@@ -1,32 +1,29 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Übersichtsseite "Anleitung". Ersetzen Sie die [TODO]-Hinweise; die
-     Unterseiten-Struktur folgt kerndatensatz-basis. -->
 
-Dieser Abschnitt bündelt die fachlichen Hinweise zur Umsetzung und Nutzung des
-Moduls **Bildgebung**.
+Diese Seite bündelt den fachlichen Einstieg in das Modul **Bildgebung**:
+Anwendungsszenarien, die [UML-Diagramme](uml-diagrams.html) des
+Informationsmodells sowie die [Hinweise für Implementierende](implementer-guidance.html).
 
-### Allgemeine Umsetzungshinweise
+### Beschreibung von Szenarien für die Anwendung der Module
 
-* **[Datensätze und Beschreibungen](logical-models.html)** — die Datenelemente
-  des Moduls, beschrieben als logische Modelle. (Dieser Eintrag teilt sein Ziel
-  mit *Artefakte → Logische Modelle*; keiner der Anker der Artefakt-Übersicht
-  ist als Linkziel nutzbar — siehe
-  [`docs/page-structure.md`](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/blob/main/docs/page-structure.md) in diesem Repository.)
-* **[UML-Diagramme](uml-diagrams.html)** — visuelle Darstellung der Datenmodelle
-  und ihrer Beziehungen.
+Konkrete Beispiele:
 
-### Zielgruppenspezifische Hinweise
+**Angabe und Dokumentation einer Bildgebung zur Diagnosestellung:**
 
-* **[Anleitung für Forschende](researcher-guidance.html)** — für Forschende, die
-  Moduldaten nutzen.
-* **[Anleitung für Implementierende](implementer-guidance.html)** — technische
-  Hinweise für DIZ-Implementierende.
+Beispiel: Eine Patientin mit Verdacht auf Axiale Spondyloarthritis mit Morbus
+Bechterew kommt stationär zur Diagnoseevaluation. Hierbei wird eine native MRT
+zur Diagnosestellung durchgeführt.
 
-> [TODO: Ergänzen Sie modul-spezifische Hinweise, die für alle Zielgruppen
-> relevant sind — z. B. den fachlichen Geltungsbereich oder Abgrenzungen.]
-{: .ig-highlight .ig-highlight-grey}
+Die MRT ist zur Frühdiagnostik geeignet, da entzündliche Veränderungen in den
+Sakroiliakalgelenken bereits sichtbar sind, wenn konventionelle Verfahren
+(Röntgen) noch unauffällig sind.
 
----
-Für die KDS-weiten Konformitätsanforderungen siehe die
-[Konformitätsregeln des Meta-Moduls](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance);
-für die technischen Artefakte siehe [Profile](profiles.html).
+Für diese MRT-Aufnahme wird eine Serie vom Hüftbereich generiert. Die
+Aufnahmeparameter, die auch im DICOM-Header hinterlegt sind, werden auf die
+einzelnen FHIR-Ressourcen gematcht und die Bildgebung somit dokumentiert
+(bspw. Study-Instance-UID, Series-Instance-UID, Modalität etc.).
+
+Falls beispielsweise für Forschungszwecke angefragt wird, wie viele native
+Hüft-MRTs zur Diagnosestellung von Morbus Bechterew in diesem Krankenhaus
+durchgeführt wurden, kann dies durch die Implementierung in FHIR ohne viel
+Aufwand beantwortet werden.

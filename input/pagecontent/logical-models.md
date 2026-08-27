@@ -1,9 +1,21 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Source: kerndatensatz-basis input/pagecontent/logical-models.md.
-     German mirror: input/translations/de/pagecontent/logical-models.md. -->
-### Logical Models
+<!-- TODO:REVIEW machine translation of source page logical-models.md (de) -->
 
-The logical data models of the **Bildgebung** module describe the domain dataset independently of its concrete FHIR representation.
+### Datasets including descriptions
 
-> [TODO: Add the logical models, or delete this page.]
-{: .ig-highlight .ig-highlight-grey}
+The Core Dataset module **Bildgebung** comprises both profiles for
+representing a radiological report (indication, assessment, findings, image
+quality etc.) and a profile for the metadata contained in the DICOM header
+(technical parameters, study details, modalities, body regions and laterality
+etc.). The structure of the report can be free text, structured, or
+semi-structured.
+
+Note that the logical model aims purely at representing the data elements and
+their descriptions in a hierarchical structure. The data types and
+cardinalities used are not to be regarded as mandatory — they are conclusively
+defined by the FHIR profiles. For every element within the logical model there
+is a 1:1 mapping to an element of a concrete FHIR resource.
+
+Artifact page: [Logical Model Bildgebung](StructureDefinition-mii-lm-bildgebung.html)
+
+{% include StructureDefinition-mii-lm-bildgebung-snapshot.xhtml %}

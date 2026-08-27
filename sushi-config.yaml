@@ -297,8 +297,6 @@ pages:
 
   guidance.md:
     title: Guidance
-    researcher-guidance.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-      title: Guidance for Researchers
     implementer-guidance.md:
       title: Guidance for Implementers
     uml-diagrams.md:

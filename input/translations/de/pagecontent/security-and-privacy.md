@@ -55,23 +55,26 @@ Sie ihn wörtlich):
 > Datenschutzaspekte aufwirft, und stellt keine modulspezifischen Sicherheits-
 > oder Datenschutzanforderungen an Implementierende.
 
-<!-- ILLUSTRATIVE-EXAMPLE — Abschnitt entscheiden und die Beispiel-Box unten
-     (in dieser Datei UND der englischen Quellseite) vor dem ersten Release
-     entfernen; der Konventions-Check (M11) lässt einen Release-Branch damit
-     fehlschlagen. -->
-> **Illustratives Beispiel — vor dem ersten Release entfernen.** So füllt ein
-> anderes KDS-Modul diesen Abschnitt (*Person*): die Patienten-Identifikatoren
-> sind Pseudonyme der Treuhandstelle; Systeme dürfen ein Record Linkage nicht
-> zur Re-Identifizierung führen lassen, und der Geltungsbereich eines
-> Pseudonyms (standortweit vs. projektspezifisch) ist beim Zusammenführen von
-> Daten zu respektieren.
-{: .ig-highlight .ig-highlight-orange}
+<!-- DERIVED:suggestion source=none gate=B -->
+> **Written during migration - review before release.** Die folgenden
+> modulspezifischen Aspekte wurden aus den Artefakten des Moduls abgeleitet
+> (Instanzdetails-Extension: `burnedInAnnotation`; DICOM-Metadaten in der
+> ImagingStudy); sie standen nicht als Narrativ im Quell-Leitfaden.
+{: .ig-highlight .ig-highlight-blue}
 
-> [TODO: Nennen Sie die spezifischen Aspekte Ihres Moduls — die geführten
-> Datenkategorien und ihre Sensibilität, Risiken, die eine Pseudonymisierung
-> auf Profilebene nicht abdeckt, sowie sicherheits- oder datenschutzbezogene
-> SHALL/SHOULD/MAY-Anforderungen dieses Moduls an Implementierende, jeweils mit
-> dem adressierten Risiko. Benennen Sie verbleibende Risiken, die im
-> Systemdesign, im Betrieb oder per Policy behandelt werden müssen — oder
-> übernehmen Sie den Standardtext oben, wenn es keine gibt.]
-{: .ig-highlight .ig-highlight-grey}
+Über den oben verlinkten übergreifenden Rahmen hinaus verdienen zwei
+Eigenschaften von Bildgebungsdaten bei der Implementierung dieses Moduls
+Beachtung:
+
+* **Identifizierende DICOM-Metadaten.** Das ImagingStudy-Profil und seine
+  Extensions übernehmen Werte direkt aus DICOM-Headern (UIDs, Gerätedaten,
+  Aufnahmeparameter). DICOM-Header der Quellsysteme können direkt
+  identifizierende Attribute enthalten; welche Elemente eine konkrete
+  Datenausleitung überstehen, entscheidet die DIMP-Konfiguration.
+* **Eingebrannte Annotationen (Burned-in Annotations).** Pixeldaten mancher
+  Modalitäten (insbesondere US und Secondary Captures) können
+  Patienteninformationen enthalten, die ins Bild selbst eingebrannt sind. Die
+  Instanzdetails-Extension bildet genau dafür das DICOM-Attribut *Burned In
+  Annotation* ab, damit solche Instanzen erkannt werden können; Systeme, die
+  Bilddaten für die Sekundärnutzung bereitstellen, SOLLTEN dieses Attribut in
+  ihren De-Identifikations-Pipelines auswerten.
