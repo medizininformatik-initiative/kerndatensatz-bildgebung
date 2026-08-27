@@ -240,3 +240,7 @@ node_modules/
 # IG-Publisher-Nebenprodukte (Migration): Sprachpakete + Narrative-Requirements
 /translations/
 Requirements-fromNarrative.json
+
+# Migrations-Evidenz: das Run-Log und die Roh-Logs sind zitierte Beweise des
+# Migrationsreports und werden mit dem Branch committed (Skill-Guardrail 7).
+!migration-log/*.log

@@ -1,0 +1,71 @@
+2026-08-27T17:46:28Z  INFO   11  verify-migration  params  target=. source=/private/tmp/claude-501/-Users-thome-code-fhir-profiling-kerndatensatz-bildgebung/35dfd370-bb04-4710-87f2-988cf853a800/scratchpad/bildgebung-source-unmigrated guide_tree=mii-ig-bildgebung-de-v2027 rendered=output log=./migration-log/run.log layers=conservation,fidelity,provenance,rendering,log
+2026-08-27T17:46:30Z  INFO   11  verify-migration  conservation C1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  conservation C2  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  conservation C3  identisch=45 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  conservation C4  identisch=3 divergiert=11 nicht_pruefbar=31
+2026-08-27T17:46:30Z  WARN   11  verify-migration  verification-divergence: conservation C4  count=11 subjects=BeschreibungModul.page.md, CapabilityStatement.page.md, Conformance.page.md …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T17:46:30Z  WARN   11  verify-migration  not-mechanisable: conservation C4  count=31 subjects=AnwendungsflleInformationsmodell/Index.page.md, BodyStructure.page.md, CarePlan.page.md …
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T17:46:30Z  INFO   11  verify-migration  conservation C5  identisch=3 divergiert=0 nicht_pruefbar=1
+2026-08-27T17:46:30Z  WARN   11  verify-migration  not-mechanisable: conservation C5  count=1 subjects=target pages without a source counterpart
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T17:46:30Z  INFO   11  verify-migration  conservation C6  identisch=41 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  conservation C7  identisch=0 divergiert=10 nicht_pruefbar=29
+2026-08-27T17:46:30Z  WARN   11  verify-migration  verification-divergence: conservation C7  count=10 subjects=index, capability-statements, profiles …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T17:46:30Z  WARN   11  verify-migration  not-mechanisable: conservation C7  count=29 subjects=BodyStructure.page.md, CarePlan.page.md, Composition.page.md …
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T17:46:30Z  INFO   11  verify-migration  fidelity F1  identisch=8 divergiert=0 nicht_pruefbar=1
+2026-08-27T17:46:30Z  WARN   11  verify-migration  not-mechanisable: fidelity F1  count=1 subjects=title
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T17:46:30Z  INFO   11  verify-migration  fidelity F2  identisch=3 divergiert=4 nicht_pruefbar=2
+2026-08-27T17:46:30Z  WARN   11  verify-migration  verification-divergence: fidelity F2  count=4 subjects=de.basisprofil.r4, de.medizininformatikinitiative.kerndatensatz.base, de.medizininformatikinitiative.kerndatensatz.medikation …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T17:46:30Z  WARN   11  verify-migration  not-mechanisable: fidelity F2  count=2 subjects=hl7.fhir.uv.crmi, hl7.terminology.r4
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T17:46:30Z  INFO   11  verify-migration  fidelity F3  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  fidelity F4  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  provenance P1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  provenance P2  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  provenance P3  identisch=1 divergiert=0 nicht_pruefbar=1
+2026-08-27T17:46:30Z  WARN   11  verify-migration  not-mechanisable: provenance P3  count=1 subjects=IG Publisher currency
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T17:46:30Z  INFO   11  verify-migration  provenance P4  identisch=0 divergiert=0 nicht_pruefbar=1
+2026-08-27T17:46:30Z  WARN   11  verify-migration  not-mechanisable: provenance P4  count=1 subjects=source guide version
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T17:46:30Z  INFO   11  verify-migration  provenance P5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  rendering R1  identisch=2 divergiert=0 nicht_pruefbar=1
+2026-08-27T17:46:30Z  WARN   11  verify-migration  not-mechanisable: rendering R1  count=1 subjects=source-versus-target rendering
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T17:46:30Z  INFO   11  verify-migration  rendering R2  identisch=0 divergiert=2 nicht_pruefbar=0
+2026-08-27T17:46:30Z  WARN   11  verify-migration  verification-divergence: rendering R2  count=2 subjects=output/de id="ig-status" [{{], output/en id="ig-status" [{{]
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T17:46:30Z  INFO   11  verify-migration  rendering R3  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  rendering R4  identisch=0 divergiert=0 nicht_pruefbar=1
+2026-08-27T17:46:30Z  WARN   11  verify-migration  not-mechanisable: rendering R4  count=1 subjects=template example links
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T17:46:30Z  INFO   11  verify-migration  rendering R5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  log L0  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  log L1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  log L2  identisch=19 divergiert=0 nicht_pruefbar=10
+2026-08-27T17:46:30Z  WARN   11  verify-migration  not-mechanisable: log L2  count=10 subjects=2.1 package-identity, 2.1 repo-identity, 5.1c simplifier-discover …
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T17:46:30Z  INFO   11  verify-migration  log L3  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-27T17:46:30Z  INFO   11  verify-migration  log L4  identisch=1 divergiert=0 nicht_pruefbar=2
+2026-08-27T17:46:30Z  WARN   11  verify-migration  not-mechanisable: log L4  count=2 subjects=conversion count, page count
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T17:46:30Z  WARN   11  verify-migration  result  identisch=141 divergiert=27 nicht_pruefbar=80 findings=./migration-log/verification-findings.tsv markdown=./migration-log/verification.md exit=1
+    exit 1 = at least one DIVERGIERT; exit 3 = none, but verification is INCOMPLETE
+    because a check could not be mechanised. Neither is a pass.
