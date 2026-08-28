@@ -99,6 +99,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MII EX Bildgebung Kontrastmittel",
+        "definition": "Die Extension ermöglicht es, die Gabe von Kontrastmitteln auf Serien-Ebene anzugeben."
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "min": 1

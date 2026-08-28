@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "skills": {
+    "fhir-ig-analysis": {
+      "source": "forschungsgruppe-digital-health/agent-skills",
+      "ref": "v0.15.1",
+      "sourceType": "github",
+      "skillPath": "skills/fhir-ig-analysis/SKILL.md",
+      "computedHash": "dfe4d856fb0f372f0eae4484d2797b1517668eadc9aa11013ec865b6a13e2526"
+    },
+    "fhir-ig-translation": {
+      "source": "forschungsgruppe-digital-health/agent-skills",
+      "ref": "v0.15.1",
+      "sourceType": "github",
+      "skillPath": "skills/fhir-ig-translation/SKILL.md",
+      "computedHash": "960687970646b3dff67ca0ef113de99e84b4e438d54a8ca7eab38caf6c7ba955"
+    }
+  }
+}

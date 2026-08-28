@@ -1,0 +1,109 @@
+# sync-skills.yml — keep the vendored catalog skills current
+#
+# Purpose:   `fhir-ig-analysis` and `fhir-ig-translation` live in the org skill
+#            catalog (forschungsgruppe-digital-health/agent-skills) and are
+#            VENDORED here at a pinned ref, so a module created from this
+#            template can invoke them without any setup. This workflow verifies
+#            the vendored copies against the pin on a pull request, and refreshes
+#            them (opening a PR) on a schedule.
+#            The pin itself lives in skills-lock.json; bumping it is a human
+#            decision — `scripts/sync-skills.sh --ref vX.Y.Z` — never this job.
+# Triggers:  weekly schedule (Mondays 05:30 UTC), manual workflow_dispatch, and
+#            pull_request (drift CHECK only — never writes on a PR).
+# Toggle:    vars.ENABLE_SKILLS_SYNC — ON by default; set the repo variable to
+#            'false' to disable (jobs then skip, which is expected, not an error).
+# Network:   `scripts/sync-skills.sh --probe` reports whether the catalog is
+#            reachable; when it is not, the job emits a ::notice and skips
+#            instead of failing — the vendored copies are committed files and a
+#            GitHub/npm outage is not something a PR author can act on.
+# Gated:     never auto-merges. A refresh always lands as a reviewable PR.
+#
+# NOTE for a created module: keep this workflow. It is what stops the vendored
+# skills in skills/ from silently diverging from the catalog they came from.
+name: Sync catalog skills
+
+on:
+  schedule:
+    - cron: "30 5 * * 1" # Mondays 05:30 UTC (after the IG-template sync)
+  workflow_dispatch:
+  pull_request:
+    branches: [dev]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-skills
+  cancel-in-progress: false
+
+jobs:
+  # On a PR: verify only. Fails if the vendored skills differ from the catalog
+  # at the ref pinned in skills-lock.json, so a hand-edited copy — or a copy
+  # left behind by a pin bump — cannot silently reach dev.
+  check:
+    if: ${{ vars.ENABLE_SKILLS_SYNC != 'false' && github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+      - name: Is the catalog reachable?
+        id: source
+        run: bash scripts/sync-skills.sh --probe
+      - name: Check the vendored skills against the pin in skills-lock.json
+        if: ${{ steps.source.outputs.reachable == 'true' }}
+        run: bash scripts/sync-skills.sh --check
+
+  # Scheduled/manual: re-install at the PINNED ref and open a PR if anything
+  # changed. This repairs drift; it never moves the pin.
+  sync:
+    if: ${{ vars.ENABLE_SKILLS_SYNC != 'false' && github.event_name != 'pull_request' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+      - name: Is the catalog reachable?
+        id: source
+        run: bash scripts/sync-skills.sh --probe
+      - name: Re-vendor the catalog skills at the pinned ref
+        if: ${{ steps.source.outputs.reachable == 'true' }}
+        run: bash scripts/sync-skills.sh
+      - name: Open a PR if the vendored copies changed
+        if: ${{ steps.source.outputs.reachable == 'true' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo "::notice::Vendored skills already match the pin — nothing to do."
+            exit 0
+          fi
+          ref="$(python3 -c "import json;d=json.load(open('skills-lock.json'))['skills'];print(sorted({v['ref'] for v in d.values()})[0])")"
+          branch="chore/sync-skills-${ref}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "${branch}"
+          git add skills skills-lock.json
+          git commit -m "chore: re-vendor the catalog skills at agent-skills@${ref}"
+          git push --force "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "${branch}"
+          # NOTE: build the PR body in a file. Every line of this `run: |` block
+          # must stay indented — an unindented continuation line would terminate
+          # the YAML block scalar and make the whole workflow unparseable.
+          {
+            printf 'The vendored copies in `skills/` no longer match `agent-skills@%s`, the ref pinned in `skills-lock.json`. This restores them.\n\n' "${ref}"
+            printf 'Generated by `.github/workflows/sync-skills.yml` via `scripts/sync-skills.sh`. This job never moves the pin — a catalog upgrade is `scripts/sync-skills.sh --ref vX.Y.Z`, proposed by the weekly dependency check.\n'
+          } > "${RUNNER_TEMP}/pr-body.md"
+          gh pr create --base dev --head "${branch}" \
+            --title "chore: re-vendor the catalog skills (${ref})" \
+            --body-file "${RUNNER_TEMP}/pr-body.md" 2>/dev/null \
+            || echo "::notice::A sync PR for ${branch} is already open — pushed to it."

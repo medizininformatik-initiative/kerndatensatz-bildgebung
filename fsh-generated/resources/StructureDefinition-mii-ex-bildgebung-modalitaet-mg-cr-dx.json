@@ -99,6 +99,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MII EX Bildgebung Modalität MG/CR/DX",
+        "definition": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf MG, CR & DX Daten zu erweitern."
+      },
+      {
         "id": "Extension.extension:KVP",
         "path": "Extension.extension",
         "sliceName": "KVP",

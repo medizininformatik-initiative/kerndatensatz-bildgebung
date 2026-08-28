@@ -1,0 +1,937 @@
+{
+ "generated_from": "repo main@eaeed9a, branch migration/2026.0.0-template-v0.11.3",
+ "authoritative_tree": "implementation-guides/mii-ig-bildgebung-de-v2027",
+ "trees": {
+  "implementation-guides/ImplementationGuide-Common": {
+   "pages": 0,
+   "role": "shared-assets"
+  },
+  "implementation-guides/mii-ig-bildgebung-de-v2025": {
+   "pages": 37,
+   "role": "retained-frozen"
+  },
+  "implementation-guides/mii-ig-bildgebung-de-v2026": {
+   "pages": 42,
+   "role": "retained-frozen"
+  },
+  "implementation-guides/mii-ig-bildgebung-de-v2027": {
+   "pages": 45,
+   "role": "authoritative"
+  }
+ },
+ "fsh_files": [
+  "input/fsh/Aliase.fsh",
+  "input/fsh/capabilitystatements/CapabilityStatement.fsh",
+  "input/fsh/codesystems/CodeSystem-Image-Type.fsh",
+  "input/fsh/codesystems/CodeSystem-MR-Scanning-Sequence.fsh",
+  "input/fsh/codesystems/CodeSystem-MR-Scanning-Sequence_Variant.fsh",
+  "input/fsh/codesystems/CodeSystem-Series-Type.fsh",
+  "input/fsh/codesystems/CodeSystem-US-Transducer-Type.fsh",
+  "input/fsh/extensions/Extension-ImagingReason.fsh",
+  "input/fsh/extensions/Extension-Instance-Details.fsh",
+  "input/fsh/extensions/Extension-Modality-CT.fsh",
+  "input/fsh/extensions/Extension-Modality-MG_CR_DX.fsh",
+  "input/fsh/extensions/Extension-Modality-MR.fsh",
+  "input/fsh/extensions/Extension-Modality-NM.fsh",
+  "input/fsh/extensions/Extension-Modality-PT.fsh",
+  "input/fsh/extensions/Extension-Modality-US.fsh",
+  "input/fsh/extensions/Extension-Patientheight.fsh",
+  "input/fsh/extensions/Extension-Patientweight.fsh",
+  "input/fsh/extensions/Extension-SOPInstanceUID.fsh",
+  "input/fsh/extensions/Extension-SeriesUID.fsh",
+  "input/fsh/extensions/Extension-series-contrast.fsh",
+  "input/fsh/extensions/Extension-series-sliceThickness.fsh",
+  "input/fsh/instances/Example-BodyStructure.fsh",
+  "input/fsh/instances/Example-CarePlan.fsh",
+  "input/fsh/instances/Example-Composition.fsh",
+  "input/fsh/instances/Example-ContrastAdministration.fsh",
+  "input/fsh/instances/Example-Device.fsh",
+  "input/fsh/instances/Example-DiagnosticReport.fsh",
+  "input/fsh/instances/Example-ImagingProcedure.fsh",
+  "input/fsh/instances/Example-ImagingStudy-CR.fsh",
+  "input/fsh/instances/Example-ImagingStudy-CT.fsh",
+  "input/fsh/instances/Example-ImagingStudy-MR-series.fsh",
+  "input/fsh/instances/Example-ImagingStudy-MR.fsh",
+  "input/fsh/instances/Example-ImagingStudy-NM.fsh",
+  "input/fsh/instances/Example-ImagingStudy-PET.fsh",
+  "input/fsh/instances/Example-ImagingStudy-US.fsh",
+  "input/fsh/instances/Example-MeasurementObservation.fsh",
+  "input/fsh/instances/Example-Observation.fsh",
+  "input/fsh/instances/Example-ReadProcedure.fsh",
+  "input/fsh/instances/Example-ServiceRequest.fsh",
+  "input/fsh/logicals/LogicalModelBildgebung.fsh",
+  "input/fsh/profiles/Profile-BodyStructure.fsh",
+  "input/fsh/profiles/Profile-CarePlan.fsh",
+  "input/fsh/profiles/Profile-Composition.fsh",
+  "input/fsh/profiles/Profile-ConstrastAdministration.fsh",
+  "input/fsh/profiles/Profile-Device.fsh",
+  "input/fsh/profiles/Profile-DiagnosticReport.fsh",
+  "input/fsh/profiles/Profile-ImagingProcedure.fsh",
+  "input/fsh/profiles/Profile-ImagingStudy.fsh",
+  "input/fsh/profiles/Profile-Observation-Measurement.fsh",
+  "input/fsh/profiles/Profile-Observation.fsh",
+  "input/fsh/profiles/Profile-ReadProcedure.fsh",
+  "input/fsh/profiles/Profile-ServiceRequest.fsh",
+  "input/fsh/rulesets/copyright.fsh",
+  "input/fsh/rulesets/date.fsh",
+  "input/fsh/rulesets/extensions-context.fsh",
+  "input/fsh/rulesets/license-terms.fsh",
+  "input/fsh/rulesets/publisher.fsh",
+  "input/fsh/rulesets/translation.fsh",
+  "input/fsh/rulesets/version.fsh",
+  "input/fsh/valuesets/Valueset-DiagnosticReport-Code-LNC.fsh",
+  "input/fsh/valuesets/Valueset-DiagnosticReport-Code-SCT.fsh",
+  "input/fsh/valuesets/Valueset-Findings-LNC.fsh",
+  "input/fsh/valuesets/Valueset-Findings-SCT.fsh",
+  "input/fsh/valuesets/Valueset-ImagingProcedure-Code-SCT.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-CT.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-MR.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-NM-Implementation.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-NM.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-Patient-Exam.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-Pixel-Data.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-US.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-Instance-image-Type-US-Implementation.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-MR-Scanning-Sequence-Variant.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-MR-Scanning-Sequence.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-PT-Series-Type-Volumetric.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-PT-Series-Type-spacial.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-Series-View-Position.fsh",
+  "input/fsh/valuesets/Valueset-ImagingStudy-US-TransducerType.fsh",
+  "input/fsh/valuesets/Valueset-Observation-Body-Site-SCT.fsh",
+  "input/fsh/valuesets/Valueset-ServiceRequest-Code-SCT.fsh"
+ ],
+ "artifacts": {
+  "profiles": 12,
+  "extensions": 14,
+  "valuesets": 21,
+  "codesystems": 5,
+  "logicals": 1,
+  "capabilitystatements": 1,
+  "questionnaires": 0,
+  "searchparameters": 0,
+  "operations": 0,
+  "examples": 18,
+  "rulesets": 24,
+  "invariants": 0,
+  "mappings": 2,
+  "other": {},
+  "total": 72,
+  "other_total": 0,
+  "_source": "input/fsh (FSH-Deklarationen)",
+  "generated_crosscheck": {
+   "source": "fsh-generated/resources",
+   "counts": {
+    "profiles": 12,
+    "extensions": 14,
+    "valuesets": 21,
+    "codesystems": 5,
+    "logicals": 1,
+    "capabilitystatements": 1,
+    "questionnaires": 0,
+    "searchparameters": 0,
+    "operations": 0,
+    "examples": 18
+   },
+   "other": {},
+   "mismatches": {}
+  }
+ },
+ "artifacts_detail": [
+  {
+   "type": "RuleSet",
+   "name": "SupportResource",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/capabilitystatements/CapabilityStatement.fsh",
+   "line": 1
+  },
+  {
+   "type": "RuleSet",
+   "name": "SupportProfile",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/capabilitystatements/CapabilityStatement.fsh",
+   "line": 6
+  },
+  {
+   "type": "RuleSet",
+   "name": "SupportInteraction",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/capabilitystatements/CapabilityStatement.fsh",
+   "line": 12
+  },
+  {
+   "type": "RuleSet",
+   "name": "SupportSearchParam",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/capabilitystatements/CapabilityStatement.fsh",
+   "line": 18
+  },
+  {
+   "type": "Instance",
+   "name": "mii-cps-bildgebung-capabilitystatement",
+   "instanceOf": "CapabilityStatement",
+   "category": "capabilitystatements",
+   "path": "input/fsh/capabilitystatements/CapabilityStatement.fsh",
+   "line": 26
+  },
+  {
+   "type": "CodeSystem",
+   "name": "MII_CS_Bildgebung_Instance_Image_Type",
+   "instanceOf": null,
+   "category": "codesystems",
+   "path": "input/fsh/codesystems/CodeSystem-Image-Type.fsh",
+   "line": 1
+  },
+  {
+   "type": "CodeSystem",
+   "name": "MII_CS_Bildgebung_Scanning_Sequence",
+   "instanceOf": null,
+   "category": "codesystems",
+   "path": "input/fsh/codesystems/CodeSystem-MR-Scanning-Sequence.fsh",
+   "line": 1
+  },
+  {
+   "type": "CodeSystem",
+   "name": "MII_CS_Bildgebung_Scanning_Sequence_Variant",
+   "instanceOf": null,
+   "category": "codesystems",
+   "path": "input/fsh/codesystems/CodeSystem-MR-Scanning-Sequence_Variant.fsh",
+   "line": 1
+  },
+  {
+   "type": "CodeSystem",
+   "name": "MII_CS_Bildgebung_Series_Type",
+   "instanceOf": null,
+   "category": "codesystems",
+   "path": "input/fsh/codesystems/CodeSystem-Series-Type.fsh",
+   "line": 1
+  },
+  {
+   "type": "CodeSystem",
+   "name": "MII_CS_Bildgebung_Transducer_Type",
+   "instanceOf": null,
+   "category": "codesystems",
+   "path": "input/fsh/codesystems/CodeSystem-US-Transducer-Type.fsh",
+   "line": 1
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Bildgebungsgrund",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-ImagingReason.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Instanz_Details",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-Instance-Details.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Modalitaet_CT",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-Modality-CT.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Modalitaet_MG_CR_DX",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-Modality-MG_CR_DX.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Modalitaet_MR",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-Modality-MR.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Modalitaet_NM",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-Modality-NM.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Modalitaet_PT",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-Modality-PT.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Modalitaet_US",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-Modality-US.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Groesse",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-Patientheight.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Gewicht",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-Patientweight.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_SOP_Instanz_UID",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-SOPInstanceUID.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Serie_UID",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-SeriesUID.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Kontrastmittel",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-series-contrast.fsh",
+   "line": 2
+  },
+  {
+   "type": "Extension",
+   "name": "MII_EX_Bildgebung_Schichtdicke",
+   "instanceOf": null,
+   "category": "extensions",
+   "path": "input/fsh/extensions/Extension-series-sliceThickness.fsh",
+   "line": 2
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-koerperstruktur",
+   "instanceOf": "MII_PR_Bildgebung_Koerperstruktur",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-BodyStructure.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-behandlungsempfehlung",
+   "instanceOf": "MII_PR_Bildgebung_Behandlungsempfehlung",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-CarePlan.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-semistrukt-befundbericht",
+   "instanceOf": "MII_PR_Bildgebung_Semistrukt_Befundbericht",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-Composition.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-kontrastmittelgabe",
+   "instanceOf": "MII_PR_Bildgebung_Kontrastmittelgabe",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-ContrastAdministration.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-geraet",
+   "instanceOf": "MII_PR_Bildgebung_Geraet",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-Device.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-radiologischer-Befund",
+   "instanceOf": "MII_PR_Bildgebung_Radiologischer_Befund",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-DiagnosticReport.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-bildgebungsprozedur",
+   "instanceOf": "MII_PR_Bildgebung_Bildgebungsprozedur",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-ImagingProcedure.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-bildgebungsstudie-cr",
+   "instanceOf": "MII_PR_Bildgebung_Bildgebungsstudie",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-ImagingStudy-CR.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-bildgebungsstudie-ct",
+   "instanceOf": "MII_PR_Bildgebung_Bildgebungsstudie",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-ImagingStudy-CT.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-bildgebungsstudie-mr-series",
+   "instanceOf": "MII_PR_Bildgebung_Bildgebungsstudie",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-ImagingStudy-MR-series.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-bildgebungsstudie-mr",
+   "instanceOf": "MII_PR_Bildgebung_Bildgebungsstudie",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-ImagingStudy-MR.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-bildgebungsstudie-nm",
+   "instanceOf": "MII_PR_Bildgebung_Bildgebungsstudie",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-ImagingStudy-NM.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-bildgebungsstudie-pt",
+   "instanceOf": "MII_PR_Bildgebung_Bildgebungsstudie",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-ImagingStudy-PET.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-bildgebungsstudie-us",
+   "instanceOf": "MII_PR_Bildgebung_Bildgebungsstudie",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-ImagingStudy-US.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-radiologische-messung",
+   "instanceOf": "MII_PR_Bildgebung_Radiologische_Messung",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-MeasurementObservation.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-radiologische-beobachtung",
+   "instanceOf": "MII_PR_Bildgebung_Radiologische_Beobachtung",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-Observation.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-radiologische-befundungsprozedur",
+   "instanceOf": "MII_PR_Bildgebung_Radiologische_Befundungsprozedur",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-ReadProcedure.fsh",
+   "line": 1
+  },
+  {
+   "type": "Instance",
+   "name": "mii-exa-bildgebung-anforderung-bildgebung",
+   "instanceOf": "MII_PR_Bildgebung_Anforderung_Bildgebung",
+   "category": "examples",
+   "path": "input/fsh/instances/Example-ServiceRequest.fsh",
+   "line": 1
+  },
+  {
+   "type": "Logical",
+   "name": "MII_LM_Bildgebung",
+   "instanceOf": null,
+   "category": "logicals",
+   "path": "input/fsh/logicals/LogicalModelBildgebung.fsh",
+   "line": 2
+  },
+  {
+   "type": "Mapping",
+   "name": "Bildgebung-LogicalModel",
+   "instanceOf": null,
+   "category": "mappings",
+   "path": "input/fsh/logicals/LogicalModelBildgebung.fsh",
+   "line": 207
+  },
+  {
+   "type": "Mapping",
+   "name": "Bildgebung-LogicalModel-Profile",
+   "instanceOf": null,
+   "category": "mappings",
+   "path": "input/fsh/logicals/LogicalModelBildgebung.fsh",
+   "line": 397
+  },
+  {
+   "type": "Profile",
+   "name": "MII_PR_Bildgebung_Koerperstruktur",
+   "instanceOf": null,
+   "category": "profiles",
+   "path": "input/fsh/profiles/Profile-BodyStructure.fsh",
+   "line": 2
+  },
+  {
+   "type": "Profile",
+   "name": "MII_PR_Bildgebung_Behandlungsempfehlung",
+   "instanceOf": null,
+   "category": "profiles",
+   "path": "input/fsh/profiles/Profile-CarePlan.fsh",
+   "line": 2
+  },
+  {
+   "type": "Profile",
+   "name": "MII_PR_Bildgebung_Semistrukt_Befundbericht",
+   "instanceOf": null,
+   "category": "profiles",
+   "path": "input/fsh/profiles/Profile-Composition.fsh",
+   "line": 2
+  },
+  {
+   "type": "Profile",
+   "name": "MII_PR_Bildgebung_Kontrastmittelgabe",
+   "instanceOf": null,
+   "category": "profiles",
+   "path": "input/fsh/profiles/Profile-ConstrastAdministration.fsh",
+   "line": 2
+  },
+  {
+   "type": "Profile",
+   "name": "MII_PR_Bildgebung_Geraet",
+   "instanceOf": null,
+   "category": "profiles",
+   "path": "input/fsh/profiles/Profile-Device.fsh",
+   "line": 2
+  },
+  {
+   "type": "Profile",
+   "name": "MII_PR_Bildgebung_Radiologischer_Befund",
+   "instanceOf": null,
+   "category": "profiles",
+   "path": "input/fsh/profiles/Profile-DiagnosticReport.fsh",
+   "line": 2
+  },
+  {
+   "type": "Profile",
+   "name": "MII_PR_Bildgebung_Bildgebungsprozedur",
+   "instanceOf": null,
+   "category": "profiles",
+   "path": "input/fsh/profiles/Profile-ImagingProcedure.fsh",
+   "line": 2
+  },
+  {
+   "type": "Profile",
+   "name": "MII_PR_Bildgebung_Bildgebungsstudie",
+   "instanceOf": null,
+   "category": "profiles",
+   "path": "input/fsh/profiles/Profile-ImagingStudy.fsh",
+   "line": 2
+  },
+  {
+   "type": "Profile",
+   "name": "MII_PR_Bildgebung_Radiologische_Messung",
+   "instanceOf": null,
+   "category": "profiles",
+   "path": "input/fsh/profiles/Profile-Observation-Measurement.fsh",
+   "line": 2
+  },
+  {
+   "type": "Profile",
+   "name": "MII_PR_Bildgebung_Radiologische_Beobachtung",
+   "instanceOf": null,
+   "category": "profiles",
+   "path": "input/fsh/profiles/Profile-Observation.fsh",
+   "line": 2
+  },
+  {
+   "type": "Profile",
+   "name": "MII_PR_Bildgebung_Radiologische_Befundungsprozedur",
+   "instanceOf": null,
+   "category": "profiles",
+   "path": "input/fsh/profiles/Profile-ReadProcedure.fsh",
+   "line": 2
+  },
+  {
+   "type": "Profile",
+   "name": "MII_PR_Bildgebung_Anforderung_Bildgebung",
+   "instanceOf": null,
+   "category": "profiles",
+   "path": "input/fsh/profiles/Profile-ServiceRequest.fsh",
+   "line": 2
+  },
+  {
+   "type": "RuleSet",
+   "name": "DICOM_Copyright",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/copyright.fsh",
+   "line": 1
+  },
+  {
+   "type": "RuleSet",
+   "name": "SNOMED_Copyright",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/copyright.fsh",
+   "line": 4
+  },
+  {
+   "type": "RuleSet",
+   "name": "LOINC_Copyright",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/copyright.fsh",
+   "line": 7
+  },
+  {
+   "type": "RuleSet",
+   "name": "ICD10_Copyright",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/copyright.fsh",
+   "line": 10
+  },
+  {
+   "type": "RuleSet",
+   "name": "PR_CS_VS_Date",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/date.fsh",
+   "line": 1
+  },
+  {
+   "type": "RuleSet",
+   "name": "Date",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/date.fsh",
+   "line": 4
+  },
+  {
+   "type": "RuleSet",
+   "name": "ExtensionContext",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/extensions-context.fsh",
+   "line": 1
+  },
+  {
+   "type": "RuleSet",
+   "name": "LicenseCodeableCCBY40",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/license-terms.fsh",
+   "line": 3
+  },
+  {
+   "type": "RuleSet",
+   "name": "LicenseCodeableCCBY40Instance",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/license-terms.fsh",
+   "line": 7
+  },
+  {
+   "type": "RuleSet",
+   "name": "Publisher",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/publisher.fsh",
+   "line": 1
+  },
+  {
+   "type": "RuleSet",
+   "name": "SP_Publisher",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/publisher.fsh",
+   "line": 6
+  },
+  {
+   "type": "RuleSet",
+   "name": "Translation",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/translation.fsh",
+   "line": 1
+  },
+  {
+   "type": "RuleSet",
+   "name": "AddSnomedCodingTranslation",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/translation.fsh",
+   "line": 8
+  },
+  {
+   "type": "RuleSet",
+   "name": "AddLoincCodingTranslation",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/translation.fsh",
+   "line": 16
+  },
+  {
+   "type": "RuleSet",
+   "name": "AddRadLexCodingTranslation",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/translation.fsh",
+   "line": 24
+  },
+  {
+   "type": "RuleSet",
+   "name": "AddOpsCodingTranslation",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/translation.fsh",
+   "line": 32
+  },
+  {
+   "type": "RuleSet",
+   "name": "AddDSSCodingTranslation",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/translation.fsh",
+   "line": 40
+  },
+  {
+   "type": "RuleSet",
+   "name": "AddICDCodingTranslation",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/translation.fsh",
+   "line": 48
+  },
+  {
+   "type": "RuleSet",
+   "name": "Version",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/version.fsh",
+   "line": 1
+  },
+  {
+   "type": "RuleSet",
+   "name": "PR_CS_VS_Version",
+   "instanceOf": null,
+   "category": "rulesets",
+   "path": "input/fsh/rulesets/version.fsh",
+   "line": 4
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Diagnostic_Report_Code_LNC",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-DiagnosticReport-Code-LNC.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Diagnostic_Report_Code_SCT",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-DiagnosticReport-Code-SCT.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Findings_LNC",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-Findings-LNC.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Findings_SCT",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-Findings-SCT.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_ImagingProcedure_Code_SCT",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingProcedure-Code-SCT.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Instance_Image_Type_CT",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-CT.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Instance_Image_Type_MR",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-MR.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Instance_Image_Type_NM_Implementation",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-NM-Implementation.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Instance_Image_Type_NM",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-NM.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Instance_Image_Type_Patient_Examination",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-Patient-Exam.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Instance_Image_Type_Pixel_Data",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-Pixel-Data.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Instance_Image_Type_US",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-Instance-Image-Type-US.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Instance_Image_Type_US_Implemantation",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-Instance-image-Type-US-Implementation.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_MR_Scanning_Sequence_Variant",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-MR-Scanning-Sequence-Variant.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_MR_Scanning_Sequence",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-MR-Scanning-Sequence.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_PT_Series_Type_Volumetric",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-PT-Series-Type-Volumetric.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_PT_Series_Type_Spacial",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-PT-Series-Type-spacial.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_ImagingStudy_Series_View_Position",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-Series-View-Position.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_US_Transducer_Type",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ImagingStudy-US-TransducerType.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_Observation_Body_Site_SCT",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-Observation-Body-Site-SCT.fsh",
+   "line": 1
+  },
+  {
+   "type": "ValueSet",
+   "name": "MII_VS_Bildgebung_ServiceRequest_Code_SCT",
+   "instanceOf": null,
+   "category": "valuesets",
+   "path": "input/fsh/valuesets/Valueset-ServiceRequest-Code-SCT.fsh",
+   "line": 1
+  }
+ ],
+ "images": {
+  "common": "implementation-guides/ImplementationGuide-Common/images",
+  "plantuml_src": "plantUmlSrc"
+ },
+ "qa_baseline": {
+  "ci_run": 33073272472,
+  "commit": "eaeed9a",
+  "conclusion": "failure",
+  "errors": 2,
+  "classification": "extern: THO artifact-version-policy Unknown code package (Validator-bundled THO 5.2.0), 2x StructureDefinition (bildgebungsprozedur, radiologische-befundungsprozedur); DOTNET success"
+ }
+}

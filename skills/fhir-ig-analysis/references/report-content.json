@@ -1,0 +1,431 @@
+{
+  "mandatory_pages": [
+    "index",
+    "guidance",
+    "implementer-guidance",
+    "uml-diagrams",
+    "profiles",
+    "capability-statements",
+    "logical-models",
+    "examples",
+    "security-and-privacy",
+    "changes",
+    "version-history",
+    "downloads",
+    "translationinfo"
+  ],
+  "mandatory_pages_note": "Neu geseedet 2026-08-15 aus dem TF-KDS-restrukturierten Template (mii-kds-module-template v0.10.3): nur die verpflichtenden (1..1) Seiten mit eigener Datei. conformance und datasets-and-descriptions sind seit Template v0.8 KEINE Seiten mehr (Nur-Link-Menüeinträge auf das Meta-Modul bzw. logical-models.html); researcher-guidance, extensions, search-parameters, operations, value-sets, code-systems und metadata sind OPTIONAL (0..1, M9-Entscheidung) — ihr Fehlen ist legitim und gehört nicht in eine Pflichtseiten-Metrik. Für die Messung eines Alt-Moduls (vor Template v0.8) die Liste bewusst auf den alten Satz zurückstellen und das im Report sagen.",
+  "_comment": "Hand-editierbare, NEUTRALE Report-Texte für ig-analyze. Self-contained (kein Bezug zu anderen Skills/Dateien des Repos nötig zur Laufzeit). Direktiven-Muster + laienverständliche Erklärungen + Glossar. Wird von scripts/ig-stats.py geladen.",
+  "palette": [
+    "#4E79A7",
+    "#F28E2B",
+    "#59A14F",
+    "#E15759",
+    "#76B7B2",
+    "#EDC948",
+    "#B07AA1",
+    "#FF9DA7",
+    "#9C755F",
+    "#BAB0AC",
+    "#86BCB6",
+    "#D37295"
+  ],
+  "directive_patterns_note": "Label-Taxonomie abgeleitet aus der normativen fql-rules.tsv des Katalog-Skills mii-ig-migration; einzige gewollte Abweichung: dessen 'render' ist hier in 'render-image' + 'render-resource' aufgeteilt. Nach Änderungen an einer der beiden Dateien im Katalog scripts/check_directive_rules.py laufen lassen (CI prüft das). render-image ist bewusst auf echte {{render:…}}-Syntax beschränkt: frühere Alternativen (<img…, raw.githubusercontent) zählten übernommenes HTML und die von der Migrations-Skill vorgeschriebenen Provenienz-Kommentare als Direktiven (False Positives).",
+  "directive_patterns": {
+    "page-title": "\\{\\{page-title\\}\\}",
+    "index-root": "\\{\\{index:root\\}\\}",
+    "pagelink": "\\{\\{pagelink",
+    "link": "\\{\\{link[:}]",
+    "render-image": "\\{\\{render:[^}]*\\.(?:png|jpe?g|gif|svg)",
+    "render-resource": "\\{\\{render:(?![^}]*\\.(?:png|jpe?g|gif|svg))",
+    "tree": "\\{\\{tree",
+    "xml": "\\{\\{xml[:}]",
+    "json": "\\{\\{json[:}]",
+    "fql-tag": "<fql",
+    "fql-at": "@```",
+    "tabs": "</?tab"
+  },
+  "directive_info": {
+    "page-title": {
+      "what": "Setzt an dieser Stelle den Titel der Seite, der aus den Seiteneinstellungen gezogen wird.",
+      "reco": "Entfällt ersatzlos - Seitentitel und Überschrift steuert man zentral über die Seiten- und Menükonfiguration."
+    },
+    "index-root": {
+      "what": "Erzeugt an dieser Stelle ein automatisches Inhaltsverzeichnis bzw. die Wurzel der Navigationsstruktur.",
+      "reco": "Entfällt - Navigation und Inhaltsverzeichnis erzeugt der IG Publisher selbst aus der konfigurierten Seitenstruktur."
+    },
+    "pagelink": {
+      "what": "Erzeugt einen Verweis auf eine andere Seite oder ein Artefakt anhand eines Namens-Hinweises.",
+      "reco": "Durch einen normalen Markdown-Link auf die generierte Artefaktseite ersetzen (Form Typ-id.html); der Artefaktname wird in die kleingeschriebene id umgesetzt."
+    },
+    "link": {
+      "what": "Erzeugt einen Verweis auf ein einzelnes Artefakt (z.B. dessen Übersichtsseite).",
+      "reco": "Durch einen normalen Markdown-Link auf die generierte Artefaktseite ersetzen (Form Typ-id.html)."
+    },
+    "render-image": {
+      "what": "Bindet ein Bild bzw. eine Grafik in die Seite ein.",
+      "reco": "Das Bild in das Bilderverzeichnis des Ziel-IG (input/images/) legen und über ein normales Markdown- oder HTML-Bild einbinden."
+    },
+    "render-resource": {
+      "what": "Rendert eine vollständige FHIR-Ressource (z.B. ein CapabilityStatement) in die Seite hinein.",
+      "reco": "Meist entfernen, da der IG Publisher für jedes Artefakt automatisch eine eigene Seite erzeugt; alternativ das passende vorgefertigte Anzeige-Fragment einbinden."
+    },
+    "tree": {
+      "what": "Zeigt die Struktur eines Profils/einer Extension als aufklappbaren Strukturbaum an.",
+      "reco": "Durch das vom IG Publisher erzeugte Struktur-Fragment ersetzen (Snapshot- oder Differential-Ansicht bzw. Element-Wörterbuch)."
+    },
+    "xml": {
+      "what": "Zeigt eine Ressource oder ein Beispiel in XML-Darstellung an.",
+      "reco": "Durch das vom IG Publisher erzeugte XML-Anzeige-Fragment ersetzen."
+    },
+    "json": {
+      "what": "Zeigt eine Ressource oder ein Beispiel in JSON-Darstellung an.",
+      "reco": "Durch das vom IG Publisher erzeugte JSON-Anzeige-Fragment ersetzen."
+    },
+    "fql-tag": {
+      "what": "Öffnet einen Abfrageblock, der eine Tabelle aus FHIR-Inhalten erzeugt.",
+      "reco": "Bei Elementtabellen eines Profils durch das vorgefertigte Element-Wörterbuch-Fragment ersetzen; reine Metadaten (URL, Status, Version) entfallen (im generierten Kopfbereich vorhanden); sonst statische oder vorlagenbasierte Tabelle."
+    },
+    "fql-at": {
+      "what": "Markiert einen Abfrage-Codeblock in besonderer Schreibweise (mit @-Präfix).",
+      "reco": "Wie einen normalen Abfrageblock behandeln und durch ein generiertes Tabellen-Fragment oder eine statische Tabelle ersetzen."
+    },
+    "tabs": {
+      "what": "Gruppiert mehrere Inhalte (z.B. Darstellung, XML, JSON) in umschaltbare Reiter.",
+      "reco": "Die einzelnen Reiterinhalte durch die jeweils passenden generierten Anzeige-Fragmente (Struktur, XML, JSON) ersetzen; eine eigene Reiter-Mechanik ist meist nicht nötig."
+    }
+  },
+  "mapping_rows": [
+    {
+      "bereich": "Artefakte (FSH)",
+      "einordnung": "Zählt die publizierten Konformitätsressourcen und ob FSH-Quelltext vorliegt. FSH-Quellen machen den Bestand direkt les-, diff- und weiterverarbeitbar; ohne sie ist nur das generierte JSON/XML die Quelle."
+    },
+    {
+      "bereich": "Narrative",
+      "einordnung": "Anzahl und Format der Erklärseiten (source = Plattformformat, target = IG-Publisher-Format). Das Format bestimmt, welche Werkzeuge die Seiten unverändert verarbeiten können."
+    },
+    {
+      "bereich": "Direktiven",
+      "einordnung": "Vorkommen plattformspezifischer Platzhalter/Tags, die nur die Quellplattform interpretiert. Je mehr davon, desto stärker ist die Darstellung an die Plattform gebunden (vgl. Lock-in-Kennzahl)."
+    },
+    {
+      "bereich": "Dependencies",
+      "einordnung": "Deklarierte Paket-Abhängigkeiten und ihr Pinning. Floating-Einträge folgen automatisch neuen Versionen und machen Builds weniger reproduzierbar — der Wert zeigt, wie reproduzierbar der aktuelle Stand ist."
+    },
+    {
+      "bereich": "Mehrsprachigkeit",
+      "einordnung": "Ob Übersetzungen in den FSH-Quellen (translation-Extensions) und/oder als Publisher-Supplements vorliegen. Die beiden Mechanismen decken unterschiedliche Textarten ab; der Wert zeigt den vorhandenen Stand, nicht den Bedarf."
+    },
+    {
+      "bereich": "Pflichtseiten",
+      "einordnung": "Wie viele Seiten des hinterlegten Pflicht-Rasters (mandatory_pages in dieser Datei) im Zielformat existieren. Die Aussagekraft hängt vom Raster ab: Nutzt ein Guide legitim ein anderes Seitenraster, wird das Raster korrigiert — nicht die Seiten als fehlend gewertet."
+    },
+    {
+      "bereich": "QC-Regeln",
+      "einordnung": "Anzahl der im Projekt definierten Qualitätsregeln (qc/custom.rules.yaml). Statisch wird nur die Definition gezählt; Verletzungen zeigt erst der Qualitätslauf eines Builds."
+    },
+    {
+      "bereich": "Metadaten/Config",
+      "einordnung": "Kern-Identität (id, Version) wie in sushi-config.yaml/package.json deklariert; die vollständigen Identitätsfelder stehen im Anhang."
+    }
+  ],
+  "section_intros": {
+    "artefakte": "Hier wird gezählt, wie viele FHIR-Bausteine (Profile, Extensions, ValueSets usw.) der IG je Typ definiert.",
+    "direktiven": "Dieser Abschnitt listet die plattformspezifischen Platzhalter in den Erklärseiten, die ein generischer IG Publisher nicht versteht und die daher umgesetzt werden müssen.",
+    "inhaltsumfang": "Linguistische Kennzahlen zum Textumfang (Wörter je Seite, Durchschnitt) sowie Hinweise auf inhaltliche Dopplungen und nicht referenzierte Dateien (Dead-Code-Analogie) - hilft, Umfang und Aufräumpotenzial einzuschätzen.",
+    "hygiene_detail": "Konkrete Fundstellen doppelter Inhaltsblöcke sowie Listen nicht referenzierter Bilder und nicht eingebundener Beispiele.",
+    "reife": "Gezählte Reife-Komponenten nebeneinander: Status, Vollständigkeit der Dokumentation, Beispiel-Abdeckung der Profile und Governance-Merkmale. Bewusst kein verdichteter Score und kein Freigabe-Urteil — die Einordnung bleibt menschlich.",
+    "strategie": "Strategische Kennzahlen: Bindung an die Quellplattform (Lock-in), Anteil standardisierter Terminologie, Wiederverwendung externer Bausteine und Zukunftssicherheit (FHIR-Version, Pflege-Aktivität).",
+    "risiko": "Entscheidungsrelevante Risiken für die Freigabe: Terminologie-Lizenzen, unterdrückte Warnungen, Datenschutz-Substanz, Wissenskonzentration (Bus-Faktor) und Kompatibilitätsbruch zur Vorversion.",
+    "empfehlungen": "Je Themenbereich der gemessene Befund und eine neutrale Einordnung, was er über den Guide aussagt — keine Handlungs- oder Migrationsanweisungen.",
+    "direktiven_mapping": "Dieser Abschnitt ordnet jedem Direktiven-Typ sein dokumentiertes Standard-Gegenstück im IG-Publisher-Format zu — eine Faktenreferenz, kein Arbeitsauftrag; sortiert nach Häufigkeit.",
+    "anhang": "Im Anhang steht jeder Einzelwert mit seiner Quelle, damit man die Kennzahlen nachvollziehen kann, ohne im Projekt suchen zu müssen.",
+    "identität": "Kerndaten des IG (Kennungen, Version, Status, Herausgeber) und woher sie stammen.",
+    "dependencies": "Die FHIR-Pakete, auf denen der IG aufbaut, samt Version und ob diese fest oder offen angegeben ist.",
+    "artefakte_detail": "Jedes definierte Artefakt mit Typ, Name und Fundort in den Quelldateien.",
+    "narrative": "Die Erklärseiten des IG mit Umfang und der Angabe, ob es sich um Inhalts- oder reine Platzhalterseiten handelt.",
+    "fundstellen": "Jede gefundene Direktive mit genauer Fundstelle und Originaltext zur weiteren Bearbeitung.",
+    "qc": "Die im Projekt hinterlegten Qualitätsregeln; ihre Einhaltung wird erst beim Qualitätslauf des Builds geprüft.",
+    "mehrsprachigkeit": "Sprachkonfiguration und welche Übersetzungsmittel bereits vorhanden sind.",
+    "glossar": "Kurzerklärung der im Report verwendeten Fachbegriffe für Leser mit grundlegendem FHIR-Verständnis.",
+    "methodik": "Beschreibung jeder im Report verwendeten Kennzahl - was sie misst und wie sie ermittelt wird - zur Nachvollziehbarkeit.",
+    "same_module": "Migrations-/Zustandstreue eines EINEN Moduls über mehrere Stände: Identitätsfelder, Artefakt-Satz und Canonical-URLs müssen identisch sein; die Narrative-Tabelle zeigt Seiten/Wörter je Sprach-Ebene (verbleibende Plattform-Quellseiten getrennt), die Wort-Abdeckung ist ein heuristischer Vollständigkeits-Indikator. Alles gezählt — keine Prognose."
+  },
+  "metric_explanations": [
+    {
+      "metrik": "Artefakte (publiziert)",
+      "misst": "Anzahl der vom IG bereitgestellten FHIR-Konformitätsressourcen je Typ (Profile, Extensions, ValueSets, CodeSystems, Logical Models, CapabilityStatements, Beispiele).",
+      "herkunft": "Zählung der Deklarationen in input/fsh (bzw. generierten Ressourcen); interne FSH-Konstrukte (RuleSets/Invarianten/Mappings) separat, nicht im Total."
+    },
+    {
+      "metrik": "Plattform-/Simplifier-Direktiven",
+      "misst": "Vorkommen plattformspezifischer Platzhalter in den Erklärseiten, die ein generischer IG Publisher nicht versteht.",
+      "herkunft": "Mustererkennung je Direktiven-Typ in den Narrative-Seiten; nicht abgedeckte -> UNBEKANNT."
+    },
+    {
+      "metrik": "Linguistik (Wörter/Seite)",
+      "misst": "Textumfang der Inhalts-Seiten als Durchschnitt, Median und Extremwerte - Indikator für Dokumentations- und Übersetzungsumfang.",
+      "herkunft": "Wortzählung je Inhalts-Seite (ohne Stubs)."
+    },
+    {
+      "metrik": "Inhaltliche Dopplungen",
+      "misst": "Identische Textabsätze (>= 12 Wörter) bzw. identische Seiten - Hinweis auf Redundanz/Aufräumpotenzial.",
+      "herkunft": "Hash-Vergleich normalisierter Absätze/Dateien."
+    },
+    {
+      "metrik": "Repo-Hygiene (ungenutzte Dateien)",
+      "misst": "Bilder/Beispiele, die in keiner Erklärseite referenziert sind (Dead-Code-Analogie).",
+      "herkunft": "Heuristik: Datei-/Artefaktname kommt im Seitentext nicht vor (kein Beweis für Ungenutztheit)."
+    },
+    {
+      "metrik": "Reife-Komponenten",
+      "misst": "Status, Doku-Vollständigkeit (Inhalt vs. Stubs), Beispiel-Abdeckung der Profile und Governance-Merkmale — nebeneinander, bewusst nicht zu einem Score verdichtet.",
+      "herkunft": "Gezählt/abgeleitet aus sushi-config, Narrative, artifacts_detail und Repo-Dateien; die Freigabe-Einordnung bleibt menschlich."
+    },
+    {
+      "metrik": "Hersteller-Lock-in",
+      "misst": "Bindung an die Quellplattform durch proprietäre Direktiven (0-100, Band).",
+      "herkunft": "Grobe Heuristik aus Direktiven je Seite."
+    },
+    {
+      "metrik": "Standard-Terminologie-Anteil",
+      "misst": "Anteil standardisierter Terminologie (SNOMED/LOINC/ICD/UCUM) gegenüber Eigen-Terminologie.",
+      "herkunft": "Grobe Heuristik aus Textvorkommen der Standardsysteme vs. Anzahl lokaler CodeSystems."
+    },
+    {
+      "metrik": "Wiederverwendung externer Profile",
+      "misst": "Anteil der Profil-Parents, die auf externen Basisbausteinen statt eigenem Material beruhen.",
+      "herkunft": "FSH Parent:-Referenzen; abstrakte LM-Basistypen (Element/Base/...) ausgeschlossen."
+    },
+    {
+      "metrik": "FHIR-Versions-Aktualität",
+      "misst": "Wie aktuell die FHIR-Basis ist (R4/R4B/R5) - Zukunftssicherheit.",
+      "herkunft": "fhirVersion aus sushi-config, gegen bekannte Versionslinie eingeordnet."
+    },
+    {
+      "metrik": "Pflege-Kadenz",
+      "misst": "Lebendigkeit der Pflege (Commits/Jahr, Tage seit letztem Commit).",
+      "herkunft": "Git-Historie des analysierten Repos. Erfordert vollständige Git-Historie: bei einem shallow clone (jeder URL-Input wird shallow geklont) nicht ermittelbar und daher null."
+    },
+    {
+      "metrik": "Bus-Faktor (Wissenskonzentration)",
+      "misst": "Schlüsselpersonen-Risiko: Anteil des Top-Autors an allen Commits.",
+      "herkunft": "Git-Historie, Autoren nach E-Mail gruppiert (Alias-robust). Erfordert vollständige Git-Historie: bei einem shallow clone (jeder URL-Input wird shallow geklont) nicht ermittelbar und daher null."
+    },
+    {
+      "metrik": "Terminologie-Lizenz",
+      "misst": "Lizenz-/IP-Risiko gebundener Terminologien (z.B. SNOMED CT lizenzpflichtig).",
+      "herkunft": "Erkennung der Standardsysteme im FSH + hinterlegte Lizenzeinstufung."
+    },
+    {
+      "metrik": "Unterdrückte Warnungen",
+      "misst": "Risiko, dass ausgeblendete QA-Meldungen echte Fehler verbergen (breit/Wildcard vs. eng).",
+      "herkunft": "Klassifikation der Einträge in input/ignoreWarnings.txt."
+    },
+    {
+      "metrik": "Datenschutz-Substanz",
+      "misst": "Ob die Datenschutz-Seite substanziell ist und ob Beispiele PII-artige Daten enthalten.",
+      "herkunft": "Wortzahl der security-privacy-Seite + Heuristik (birthDate/name) in Beispielen."
+    },
+    {
+      "metrik": "Breaking-Change-Risiko",
+      "misst": "Kompatibilitätsbruch gegenüber der publizierten Vorversion.",
+      "herkunft": "Nur per Build/Vorversions-Diff ermittelbar - im statischen Modus nicht erhoben (null)."
+    },
+    {
+      "metrik": "Statisch vs. Build",
+      "misst": "Erhebungsmodus jeder Kennzahl.",
+      "herkunft": "static = nur Quelldateien/Git; build = erfordert IG-Publisher-Lauf (qa.json); extern = Registry/Netz. Nicht statisch erhebbare Größen bleiben null und sind so markiert."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Implementierungsleitfaden (IG)",
+      "plain": "Ein Dokumentenpaket, das beschreibt, wie ein FHIR-Standard für einen konkreten Anwendungsfall genau zu verwenden ist - mit Regeln, Beispielen und erklärendem Text."
+    },
+    {
+      "term": "IG Publisher",
+      "plain": "Das offizielle Werkzeug von HL7, das aus den Quelldateien eines IG die fertige Webseite (HTML) und das Veröffentlichungspaket erzeugt."
+    },
+    {
+      "term": "Artefakt",
+      "plain": "Ein einzelnes definiertes Element im IG, z.B. ein Profil, eine Extension, ein ValueSet oder ein Beispiel - die Bausteine, die der IG bereitstellt."
+    },
+    {
+      "term": "Profile",
+      "plain": "Eine Einschränkung/Anpassung eines FHIR-Basistyps für einen bestimmten Zweck - legt fest, welche Felder Pflicht sind, welche Werte erlaubt sind usw."
+    },
+    {
+      "term": "Extension",
+      "plain": "Eine standardisierte Erweiterung, mit der man einer FHIR-Ressource zusätzliche Informationen hinzufügt, die der Basisstandard nicht vorsieht."
+    },
+    {
+      "term": "ValueSet",
+      "plain": "Eine definierte Auswahl erlaubter Codes (Werteliste), die für ein bestimmtes Feld zulässig sind."
+    },
+    {
+      "term": "CodeSystem",
+      "plain": "Eine Sammlung von Codes mit ihrer Bedeutung - die Quelle, aus der ein ValueSet seine Codes bezieht."
+    },
+    {
+      "term": "Logical Model",
+      "plain": "Ein abstraktes Datenmodell, das Inhalte fachlich beschreibt, ohne direkt an einen FHIR-Ressourcentyp gebunden zu sein."
+    },
+    {
+      "term": "CapabilityStatement",
+      "plain": "Eine Beschreibung, welche FHIR-Funktionen ein Server oder System unterstützt (welche Ressourcen, Operationen, Suchparameter)."
+    },
+    {
+      "term": "Beispiel (Example/Instance)",
+      "plain": "Eine konkrete, ausgefüllte FHIR-Ressource, die zeigt, wie ein Profil in der Praxis aussieht."
+    },
+    {
+      "term": "RuleSet",
+      "plain": "Ein wiederverwendbarer Block von FSH-Regeln, der in mehreren Artefakten eingebunden werden kann, um Wiederholungen zu vermeiden."
+    },
+    {
+      "term": "Invariant",
+      "plain": "Eine zusätzliche Prüfregel (Bedingung), die eine Ressource erfüllen muss, um gültig zu sein."
+    },
+    {
+      "term": "Mapping",
+      "plain": "Eine Zuordnung, die zeigt, wie Elemente eines Modells anderen Standards oder Modellen entsprechen."
+    },
+    {
+      "term": "FSH (FHIR Shorthand)",
+      "plain": "Eine kompakte Textsprache, in der Profile, Extensions und andere FHIR-Artefakte geschrieben werden; ein Werkzeug übersetzt sie in die eigentlichen FHIR-Dateien."
+    },
+    {
+      "term": "SUSHI",
+      "plain": "Das Werkzeug, das FSH-Dateien in fertige FHIR-Ressourcen (JSON) umwandelt."
+    },
+    {
+      "term": "GoFSH",
+      "plain": "Das umgekehrte Werkzeug zu SUSHI: Es erzeugt aus vorhandenen FHIR-Dateien (JSON) FSH-Quellcode - nötig, wenn ein IG noch kein FSH besitzt."
+    },
+    {
+      "term": "Canonical-URL",
+      "plain": "Die weltweit eindeutige, dauerhafte Web-Adresse, mit der ein Artefakt offiziell identifiziert und referenziert wird."
+    },
+    {
+      "term": "id / packageId / name / title",
+      "plain": "Verschiedene Kennungen eines IG: id ist die technische Kurzbezeichnung, packageId der Paketname zur Auslieferung, name der maschinenlesbare Name, title der Anzeigetitel."
+    },
+    {
+      "term": "FHIR-Version",
+      "plain": "Die Version des FHIR-Standards, auf der der IG aufbaut (z.B. 4.0.1 = FHIR R4)."
+    },
+    {
+      "term": "Status (draft/active)",
+      "plain": "Reifegrad eines IG oder Artefakts; 'draft' bedeutet Entwurf, noch nicht endgültig freigegeben."
+    },
+    {
+      "term": "Publisher",
+      "plain": "Die herausgebende Organisation, die für den IG verantwortlich zeichnet."
+    },
+    {
+      "term": "Lizenz",
+      "plain": "Die Nutzungsbedingungen des IG; CC0-1.0 bedeutet Gemeinfreiheit, also freie Nutzung ohne Einschränkung."
+    },
+    {
+      "term": "CalVer (Kalender-Versionierung)",
+      "plain": "Ein Versionsschema, das die Version aus dem Datum ableitet (z.B. Jahr.Nummer), statt fortlaufender Zählung."
+    },
+    {
+      "term": "Dependency (Abhängigkeit)",
+      "plain": "Ein anderes FHIR-Paket, auf dessen Inhalte der IG aufbaut und das beim Bauen mitgeladen wird."
+    },
+    {
+      "term": "Pinning (gepinnt/floating)",
+      "plain": "'Gepinnt' heißt, eine Abhängigkeit ist auf eine feste Version festgelegt; 'floating' heißt, sie folgt automatisch der neuesten Version - was Builds weniger reproduzierbar macht."
+    },
+    {
+      "term": "Narrative-Seite",
+      "plain": "Eine frei geschriebene Erklärseite des IG (Fliesstext, meist Markdown), im Gegensatz zu den automatisch generierten Artefaktseiten."
+    },
+    {
+      "term": "Stub-Seite",
+      "plain": "Eine sehr kurze Seite (z.B. nur Navigation oder Platzhalter, unter 20 Wörtern), die keinen echten Inhalt trägt."
+    },
+    {
+      "term": "Pflichtseiten",
+      "plain": "Ein festes Raster an Standardseiten (z.B. Startseite, Anwendungsfälle, Konformität, Änderungen), das ein vollständiger IG enthalten sollte."
+    },
+    {
+      "term": "Quell-/Zielformat (source/target)",
+      "plain": "'source' kennzeichnet Seiten im ursprünglichen Plattformformat, 'target' Seiten bereits im Format des Ziel-IG."
+    },
+    {
+      "term": "Direktive",
+      "plain": "Ein spezieller Platzhalter oder Tag in einer Seite, der zur Anzeige-Zeit durch generierten Inhalt ersetzt wird (z.B. ein eingebettetes Diagramm oder eine Tabelle)."
+    },
+    {
+      "term": "FQL (FHIR Query Language)",
+      "plain": "Eine Abfragesprache aus der Quellplattform, mit der Tabellen aus FHIR-Inhalten erzeugt werden - im generischen IG Publisher nicht verfügbar."
+    },
+    {
+      "term": "Include (Vorlagen-Fragment)",
+      "plain": "Vorlagen-Mechanismus des IG Publishers: Mit einem Include-Befehl bindet man vorgefertigte HTML-Fragmente (z.B. die Strukturtabelle einer Ressource) in eine Seite ein."
+    },
+    {
+      "term": "Snapshot / Differential",
+      "plain": "Zwei Sichten eines Profils: Differential zeigt nur die Änderungen gegenüber der Basis, Snapshot die vollständige Struktur mit allen Elementen."
+    },
+    {
+      "term": "Element-Wörterbuch (Dictionary)",
+      "plain": "Eine Tabelle, die alle Elemente eines Profils mit Beschreibung, Kardinalität und Datentyp auflistet."
+    },
+    {
+      "term": "Mehrsprachigkeit (i18n)",
+      "plain": "Fähigkeit eines IG, Inhalte in mehreren Sprachen bereitzustellen; eine Sprache ist führend/verbindlich."
+    },
+    {
+      "term": "Default-Sprache",
+      "plain": "Die Hauptsprache des IG, in der die Inhalte primär verfasst und ausgeliefert werden (z.B. de-DE)."
+    },
+    {
+      "term": "Übersetzungs-Supplement",
+      "plain": "Eine separate Datei, die übersetzte Texte zu einer Terminologie- oder Strukturressource liefert, ohne das Original zu verändern."
+    },
+    {
+      "term": "FSH-Translation-Extension",
+      "plain": "Eine im FSH gesetzte Erweiterung, die übersetzte Textfassungen direkt in die Ressource einbettet; der Build kann daraus mehrsprachige Anzeigen erzeugen."
+    },
+    {
+      "term": "QC-Regel (Qualitätsregel)",
+      "plain": "Eine formalisierte Prüfregel, die beim Qualitätslauf prüft, ob Ressourcen gültig sind und Konventionen (z.B. Namensschema) einhalten."
+    },
+    {
+      "term": "Validierung",
+      "plain": "Prüfung, ob eine FHIR-Ressource dem Standard und ihrem Profil entspricht."
+    },
+    {
+      "term": "QA-Meldungen (Errors/Warnings/Hints)",
+      "plain": "Hinweise aus dem Build-Qualitätsbericht: Fehler verhindern eine saubere Veröffentlichung, Warnungen und Hinweise sind weniger kritisch."
+    },
+    {
+      "term": "Unterdrückte Warnungen",
+      "plain": "Bewusst ausgeblendete QA-Meldungen, die als bekannt/akzeptiert gelten und den Bericht nicht stören sollen."
+    },
+    {
+      "term": "sushi-config.yaml",
+      "plain": "Die zentrale Konfigurationsdatei eines FSH-basierten IG: enthält Kennungen, Version, Abhängigkeiten, Seiten- und Menüstruktur."
+    },
+    {
+      "term": "ig.ini",
+      "plain": "Eine kleine Startkonfigurationsdatei, die dem IG Publisher grundlegende Bau-Einstellungen vorgibt."
+    },
+    {
+      "term": "Heuristische Schätzung",
+      "plain": "Eine näherungsweise, auf Erfahrungswerten beruhende Schätzung - kein exakter Wert, sondern eine Spanne."
+    },
+    {
+      "term": "statischer / full-Modus",
+      "plain": "Statisch heißt, es wird nur der Quellcode ausgewertet ohne den IG zu bauen; im full-Modus wird zusätzlich gebaut, um z.B. Validierungsfehler zu erfassen."
+    },
+    {
+      "term": "Mermaid-Diagramm",
+      "plain": "Ein aus Textbeschreibung erzeugtes Diagramm (hier ein Tortendiagramm), das direkt in Markdown eingebettet wird."
+    }
+  ]
+}

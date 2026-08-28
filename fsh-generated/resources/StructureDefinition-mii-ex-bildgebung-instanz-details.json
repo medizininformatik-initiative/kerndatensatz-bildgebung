@@ -99,6 +99,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MII EX Bildgebung Instanzdetails",
+        "definition": "Die Extension ermöglicht es, Informationen zur ausgewählten Serie auf Instanz-Ebene anzugeben."
+      },
+      {
         "id": "Extension.extension:pixelSpacingX",
         "path": "Extension.extension",
         "sliceName": "pixelSpacingX",
