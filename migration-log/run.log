@@ -4524,3 +4524,13 @@
 2026-08-27T17:53:00Z  INFO   8  report  migration-log/migration-report.md geschrieben (589 Zeilen): Summary, 7 FIX, 12 DEC, 6 REV + 2 derived, 6 QA-Gruppen, Gate-0, Content-Map (comparison-table eingebettet), Identität (claims eingebettet), Verifikation (verification.md eingebettet), Sign-off (qa-checklist eingebettet + DEC/REV/QA-Boxen), Protokoll-Verweis; FIX-Commit-Bündelung 9701229 transparent dokumentiert
 2026-08-27T17:54:06Z  INFO   9  pull-request  PR #108 eröffnet: https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/pull/108 — base=main (Repo-Konvention: alle gemergten PRs basieren auf main, vgl. #98); Hinweis im PR: main ist zugleich Publikations-Branch des Templates (Merge publiziert Preview, kein Paket) -> Gate D. Body = Report-Kurzfassung (21.5k), Voll-Report im Branch verlinkt. NICHT publiziert (Guardrail 4)
 2026-08-27T17:55:42Z  INFO   9  ci-triage  PR-CI: convention-check FAIL nur M6 (version 2027.0.0-ballot != reines CalVer — Quell-Konvention, nicht normalisiert; DEC-13); M1-M5, M7, M9-M11 PASS. Uebrige Workflows (FHIR validation, altes CI, Build+Publish-Preview) laufen an — Doppel-CI wie in DEC-11 vorhergesagt
+2026-08-28T06:20:25Z  INFO   5.1c  simplifier-discover  params  base=https://simplifier.net org=medizininformatik-initiative module=bildgebung package=<none> project=<none> guide=<none> pin=<propose> out=migration-log
+    Discovery only: nothing in the module repository is written, and no value is
+    claimed into the identity ledger -- a guide's version is not the module's
+    version (spec §5.1c).
+2026-08-28T06:20:25Z  WARN   5.1c  simplifier-discover  org-project-list-unreachable: hop 1 read nothing  http=404 url=https://simplifier.net/organization/medizininformatik-initiative/~projects
+    Reported as unread, never as empty.
+2026-08-28T06:20:25Z  WARN   5.1c  simplifier-discover  no-discovery: the chain yielded no guide page  pages=0 exit=1
+    Read the WARNs above for the hop that stopped it. An empty result is a
+    finding for a human, never a licence to construct a key, a slug or a version.
+2026-08-28T06:42:39Z  INFO   9  pages-enabled  GitHub Pages im Repo aktiviert (Quelle gh-pages, legacy build) — war nie eingeschaltet, deshalb 404 trotz erfolgreichem Preview-Push; korrekte Preview-URL nutzt SLASH: branches/migration/2026.0.0-template-v0.11.3/ (dashed-Variante in PR-Body/Report/comparison-table korrigiert; run.log-Historie bleibt unveraendert, append-only)
