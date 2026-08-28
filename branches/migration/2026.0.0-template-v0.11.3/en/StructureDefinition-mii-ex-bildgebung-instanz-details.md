@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details | *Version*:2027.0.0-ballot |
-| Active as of 2026-08-27 | *Computable Name*:MII_EX_Bildgebung_Instanz_Details |
+| Active as of 2026-08-28 | *Computable Name*:MII_EX_Bildgebung_Instanz_Details |
 
 The extension allows specifying information about the selected series at the instance level.
 
@@ -109,7 +109,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-bildgebung
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-27T18:01:55+00:00",
+  "date" : "2026-08-28T06:44:38+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{

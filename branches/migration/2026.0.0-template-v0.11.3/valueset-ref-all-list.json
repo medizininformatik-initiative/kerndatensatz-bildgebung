@@ -136,8 +136,8 @@
     "sources" : ["1.2.840.10008.6.1.1030"],
     "uses" : {
     },
-    "StructureDefinition-mii-ex-bildgebung-modalitaet-nm.html" : "MII EX Bildgebung Modalität PT/NM",
-    "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html" : "MII EX Bildgebung Modalität PT"
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html" : "MII EX Bildgebung Modalität PT",
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-nm.html" : "MII EX Bildgebung Modalität PT/NM"
   },
   {
     "url" : "http://fhir.de/ValueSet/bfarm/icd-10-gm",
@@ -191,11 +191,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
     "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
     "StructureDefinition-mii-pr-bildgebung-koerperstruktur.html" : "MII PR Bildgebung Körperstruktur",
-    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/bodystructure-code",
@@ -308,18 +308,18 @@
     "sources" : ["2.16.840.1.113883.4.642.3.79"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
     "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund",
     "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht",
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
-    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe",
     "StructureDefinition-mii-pr-bildgebung-geraet.html" : "MII PR Bildgebung Gerät",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
-    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
     "StructureDefinition-mii-pr-bildgebung-koerperstruktur.html" : "MII PR Bildgebung Körperstruktur",
-    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
@@ -376,8 +376,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.5"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/device-action",
@@ -590,18 +590,18 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
     "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund",
     "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht",
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
-    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe",
     "StructureDefinition-mii-pr-bildgebung-geraet.html" : "MII PR Bildgebung Gerät",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
-    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
     "StructureDefinition-mii-pr-bildgebung-koerperstruktur.html" : "MII PR Bildgebung Körperstruktur",
-    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
@@ -728,8 +728,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.403"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -743,8 +743,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.396"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -758,8 +758,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.399"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -773,8 +773,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.395"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -788,8 +788,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.400"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/participant-role",
@@ -848,9 +848,9 @@
     "uses" : {
     },
     "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
     "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
-    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung",
-    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/procedure-followup",
@@ -909,10 +909,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.432"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
     "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
-    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
@@ -927,16 +927,16 @@
     "uses" : {
     },
     "StructureDefinition-mii-ex-bildgebung-modalitaet-ct.html" : "MII EX Bildgebung Modalität CT",
-    "StructureDefinition-mii-ex-bildgebung-modalitaet-mr.html" : "MII EX Bildgebung Modalität MR",
-    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails",
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html" : "MII EX Bildgebung Modalität PT",
     "StructureDefinition-mii-ex-bildgebung-serie-schichtdicke.html" : "MII EX Bildgebung Schichtdicke",
     "StructureDefinition-mii-ex-bildgebung-modalitaet-nm.html" : "MII EX Bildgebung Modalität PT/NM",
-    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe",
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails",
     "StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx.html" : "MII EX Bildgebung Modalität MG/CR/DX",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-mr.html" : "MII EX Bildgebung Modalität MR",
     "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
     "StructureDefinition-mii-ex-bildgebung-modalitaet-us.html" : "MII EX Bildgebung Modalität US",
-    "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html" : "MII EX Bildgebung Modalität PT"
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes",
@@ -979,8 +979,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.407"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -994,8 +994,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.397"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/report-codes",
@@ -1051,8 +1051,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.111"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung",
-    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -1099,18 +1099,18 @@
     "sources" : ["2.16.840.1.113883.4.642.3.47"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
     "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund",
     "StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.html" : "MII PR Bildgebung Semistrukturierter Befundbericht",
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
-    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe",
     "StructureDefinition-mii-pr-bildgebung-geraet.html" : "MII PR Bildgebung Gerät",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
-    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
     "StructureDefinition-mii-pr-bildgebung-koerperstruktur.html" : "MII PR Bildgebung Körperstruktur",
-    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.html" : "MII PR Bildgebung Konstrastmittelgabe",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
+    "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/series-performer-function",
@@ -1202,8 +1202,8 @@
     "systems" : ["http://loinc.org"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
-    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
@@ -1352,9 +1352,9 @@
     "uses" : {
     },
     "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
     "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
-    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung"
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct",
@@ -1510,8 +1510,8 @@
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial",
