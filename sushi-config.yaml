@@ -5,7 +5,7 @@ applyExtensionMetadataToRoot: false
 id: mii-ig-bildgebung
 name: MII_IG_Bildgebung
 status: active
-version: 2027.0.0-ballot
+version: 2027.0.0-ballot.rc1
 packageId: de.medizininformatikinitiative.kerndatensatz.bildgebung
 copyrightYear: 2024+
 releaseLabel: ci-build
@@ -13,13 +13,13 @@ publisher:
   name: Medizininformatik Initiative
   url: https://www.medizininformatik-initiative.de/
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.x
+  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.1
+  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.1
   hl7.fhir.uv.extensions.r4: 5.2.0
   fhir.dicom: 2025.3.20250714
   hl7.fhir.r4.core: 4.0.1
-  de.basisprofil.r4: 1.5.x
+  de.basisprofil.r4: 1.6.0
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │

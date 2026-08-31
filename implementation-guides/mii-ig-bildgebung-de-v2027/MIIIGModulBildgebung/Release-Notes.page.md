@@ -1,5 +1,5 @@
 ## {{page-title}}
-**Version: 2027.0.0-ballot**
+**Version: 2027.0.0-ballot.rc1**
 
 - Feature: Körpergewicht und Größe auf Studienebene über Extension abbildbar mit DE-Basisprofile
 - Changed: SOP-Class Binding vereinfacht auf extensible
