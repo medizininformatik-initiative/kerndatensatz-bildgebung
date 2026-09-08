@@ -334,7 +334,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 
 <!-- markdownlint-disable MD041 -->
-<!-- TODO:REVIEW machine translation of source page extensions.md (de) -->
 
 <h3 id="extensions">Extensions</h3>
 
@@ -344,27 +343,40 @@ base resources and profiles cannot express; the profiles that use them are on
 the <a href="profiles.html">Profiles</a> page, and the complete generated list is in the
 <a href="artifacts.html">artifact overview</a>.</p>
 
-<p>The module defines three groups of extensions:</p>
+<p>The module defines four groups of extensions:</p>
 
 <ul>
-  <li><strong>Modality-specific ImagingStudy extensions</strong> at series level —
+  <li>
+    <p><strong>Cross-modality ImagingStudy extensions at study level:</strong>
+<a href="StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.html">imaging reason</a>,
+<a href="StructureDefinition-mii-ex-bildgebung-groesse.html">patient height</a> und
+<a href="StructureDefinition-mii-ex-bildgebung-gewicht.html">patient weight</a></p>
+  </li>
+  <li><strong>ImagingStudy extensions at series level:</strong>
+    <ul>
+      <li>
+        <p>Modality-specific:
 <a href="StructureDefinition-mii-ex-bildgebung-modalitaet-ct.html">CT</a>,
 <a href="StructureDefinition-mii-ex-bildgebung-modalitaet-mr.html">MR</a>,
 <a href="StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx.html">MG/CR/DX</a>,
 <a href="StructureDefinition-mii-ex-bildgebung-modalitaet-nm.html">NM</a>,
-<a href="StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html">PT</a> and
-<a href="StructureDefinition-mii-ex-bildgebung-modalitaet-us.html">US</a> — capturing
-the technical acquisition parameters of the respective modality.</li>
-  <li><strong>Cross-modality ImagingStudy extensions</strong> —
-<a href="StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.html">imaging reason</a>,
-<a href="StructureDefinition-mii-ex-bildgebung-groesse.html">patient height</a>,
-<a href="StructureDefinition-mii-ex-bildgebung-gewicht.html">patient weight</a>,
-<a href="StructureDefinition-mii-ex-bildgebung-kontrastmittel.html">contrast media at series level</a>,
-<a href="StructureDefinition-mii-ex-bildgebung-serie-schichtdicke.html">slice thickness at series level</a> and
-<a href="StructureDefinition-mii-ex-bildgebung-instanz-details.html">instance details</a>.</li>
-  <li><strong>Observation extensions</strong> linking a finding to the image it was made on —
-<a href="StructureDefinition-mii-ex-bildgebung-serie-uid.html">series UID</a> and
-<a href="StructureDefinition-mii-ex-bildgebung-sop-instanz-uid.html">SOP instance UID</a>.</li>
+<a href="StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html">PT</a> und
+<a href="StructureDefinition-mii-ex-bildgebung-modalitaet-us.html">US</a></p>
+      </li>
+      <li>
+        <p>Cross-modality:
+<a href="StructureDefinition-mii-ex-bildgebung-kontrastmittel.html">contrast agent at series level</a> und
+<a href="StructureDefinition-mii-ex-bildgebung-serie-schichtdicke.html">slice thickness auf Serien-Ebene</a></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Cross-modality ImagingStudy extensions at instance level:</strong>
+<a href="StructureDefinition-mii-ex-bildgebung-instanz-details.html">instance details</a></p>
+  </li>
+  <li><strong>Observation-Extensions</strong>, linking a finding to the series/image the finding is based on:
+<a href="StructureDefinition-mii-ex-bildgebung-serie-uid.html">Series UID</a> und
+<a href="StructureDefinition-mii-ex-bildgebung-sop-instanz-uid.html">SOP Instance UID</a></li>
 </ul>
 
 
@@ -392,7 +404,7 @@ the technical acquisition parameters of the respective modality.</li>
 
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Aug 28, 2026 06:44+0000">2026-08-28</span>
+          Generated <span title="Tue, Sep 8, 2026 13:41+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

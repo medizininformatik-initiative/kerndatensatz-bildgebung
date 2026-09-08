@@ -2,8 +2,8 @@ MII_IG_Bildgebung : Validation Results
 =========================================
 
 err = 43, warn = 755, info = 3009
-IG Publisher Version: 2.3.2 Out of date - current version is 2.3.3
-Generated Fri Aug 28 06:49:28 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung)
+IG Publisher Version: 2.3.2 Out of date - current version is 2.3.4
+Generated Tue Sep 08 13:45:33 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung)
  Build Errors : 5 / 14 / 0
  /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/BodyStructure-mii-exa-bildgebung-koerperstruktur : 0 / 6 / 1
  /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/CapabilityStatement-mii-cps-bildgebung-capabilitystatement : 3 / 2 / 189
@@ -95,9 +95,9 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/mii-exa-bildgebung-radiologische-befundungsprozedur.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/mii-param-bildgebung-manifest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/output/UML_Befund_strukturiert.svg: Unable to Parse HTML - does not start with tag. Found '�'  at line 1 column 0
 ERROR: /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/output/en/UML_Befund_strukturiert.svg: Unable to Parse HTML - does not start with tag. Found '�'  at line 1 column 0
 ERROR: /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/output/de/UML_Befund_strukturiert.svg: Unable to Parse HTML - does not start with tag. Found '�'  at line 1 column 0
+ERROR: /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/output/UML_Befund_strukturiert.svg: Unable to Parse HTML - does not start with tag. Found '�'  at line 1 column 0
 ERROR: de/profiles.html#/html/body/div/div/div/div/div/div/p/a at Line 338, column 2: The link 'http://hl7.org/fhir/uv/ips/STU1/design.html#must-support' for "Regeln der IPS" cannot be resolved
 ERROR: en/profiles.html#/html/body/div/div/div/div/div/div/p/a at Line 360, column 2: The link 'http://hl7.org/fhir/uv/ips/STU1/design.html#must-support' for "IPS rules" cannot be resolved
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide

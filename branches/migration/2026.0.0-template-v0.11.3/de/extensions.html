@@ -321,28 +321,40 @@ Informationen, die die Basis-Ressourcen und Profile nicht ausdrücken können;
 die Profile, die sie verwenden, stehen auf der <a href="profiles.html">Profile-Seite</a>,
 die vollständige generierte Liste in der <a href="artifacts.html">Artefakt-Übersicht</a>.</p>
 
-<p>Das Modul definiert drei Gruppen von Extensions:</p>
+<p>Das Modul definiert vier Gruppen von Extensions:</p>
 
 <ul>
-  <li><strong>Modalitätsspezifische ImagingStudy-Extensions</strong> auf Serien-Ebene —
+  <li>
+    <p><strong>Modalitätsübergreifende ImagingStudy-Extensions auf Studien-Ebene:</strong>
+<a href="StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.html">Bildgebungsgrund</a>,
+<a href="StructureDefinition-mii-ex-bildgebung-groesse.html">Körpergröße</a> und
+<a href="StructureDefinition-mii-ex-bildgebung-gewicht.html">Körpergewicht</a></p>
+  </li>
+  <li><strong>ImagingStudy-Extensions auf Serien-Ebene:</strong>
+    <ul>
+      <li>
+        <p>Modalitätsspezifische:
 <a href="StructureDefinition-mii-ex-bildgebung-modalitaet-ct.html">CT</a>,
 <a href="StructureDefinition-mii-ex-bildgebung-modalitaet-mr.html">MR</a>,
 <a href="StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx.html">MG/CR/DX</a>,
 <a href="StructureDefinition-mii-ex-bildgebung-modalitaet-nm.html">NM</a>,
 <a href="StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html">PT</a> und
-<a href="StructureDefinition-mii-ex-bildgebung-modalitaet-us.html">US</a> — sie erfassen
-die technischen Aufnahmeparameter der jeweiligen Modalität.</li>
-  <li><strong>Modalitätsübergreifende ImagingStudy-Extensions</strong> —
-<a href="StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.html">Bildgebungsgrund</a>,
-<a href="StructureDefinition-mii-ex-bildgebung-groesse.html">Körpergröße</a>,
-<a href="StructureDefinition-mii-ex-bildgebung-gewicht.html">Körpergewicht</a>,
-<a href="StructureDefinition-mii-ex-bildgebung-kontrastmittel.html">Kontrastmittel auf Serien-Ebene</a>,
-<a href="StructureDefinition-mii-ex-bildgebung-serie-schichtdicke.html">Schichtdicke auf Serien-Ebene</a> und
-<a href="StructureDefinition-mii-ex-bildgebung-instanz-details.html">Instanzdetails</a>.</li>
-  <li><strong>Observation-Extensions</strong>, die einen Befund mit dem Bild verknüpfen, auf dem
-er erhoben wurde —
+<a href="StructureDefinition-mii-ex-bildgebung-modalitaet-us.html">US</a></p>
+      </li>
+      <li>
+        <p>Modalitätsübergreifende:
+<a href="StructureDefinition-mii-ex-bildgebung-kontrastmittel.html">Kontrastmittel auf Serien-Ebene</a> und
+<a href="StructureDefinition-mii-ex-bildgebung-serie-schichtdicke.html">Schichtdicke auf Serien-Ebene</a></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Modalitätsübergreifende ImagingStudy-Extensions auf Instanz-Ebene:</strong>
+<a href="StructureDefinition-mii-ex-bildgebung-instanz-details.html">Instanzdetails</a></p>
+  </li>
+  <li><strong>Observation-Extensions</strong>, die eine Beobachtung mit der Serie/dem Bild verknüpfen, auf dem sie beruht:
 <a href="StructureDefinition-mii-ex-bildgebung-serie-uid.html">Serien-UID</a> und
-<a href="StructureDefinition-mii-ex-bildgebung-sop-instanz-uid.html">SOP-Instanz-UID</a>.</li>
+<a href="StructureDefinition-mii-ex-bildgebung-sop-instanz-uid.html">SOP-Instanz-UID</a></li>
 </ul>
 
 
@@ -370,7 +382,7 @@ er erhoben wurde —
 
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Fri, Aug 28, 2026 06:44+0000">2026-08-28</span>
+          Erstellt <span title="Tue, Sep 8, 2026 13:41+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
