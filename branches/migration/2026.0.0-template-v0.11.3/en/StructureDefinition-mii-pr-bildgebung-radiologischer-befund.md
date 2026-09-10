@@ -43,7 +43,7 @@ Example of a DiagnosticReport resource:
 **Usages:**
 
 * Refer to this Profile: [MII PR Bildgebung Behandlungsempfehlung](StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.md) and [MII PR Bildgebung Semistrukturierter Befundbericht](StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht.md)
-* Examples for this Profile: [DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund](DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.md)
+* Examples for this Profile: [DiagnosticReport/mii-exa-bildgebung-radiologischer-befund](DiagnosticReport-mii-exa-bildgebung-radiologischer-befund.md)
 * CapabilityStatements using this Profile: [MII CPS Bildgebung CapabilityStatement](CapabilityStatement-mii-cps-bildgebung-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.bildgebung|current/StructureDefinition/StructureDefinition-mii-pr-bildgebung-radiologischer-befund.json)

@@ -1195,18 +1195,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/PatExample"
-      },
-      "name" : "Beispiel-Patient (synthetisch)",
-      "description" : "Synthetischer Beispiel-Patient als Ziel der Patient/PatExample-Referenzen der Beispielinstanzen dieses Moduls. Kein Bestandteil der Spezifikation — dient ausschließlich der Auflösbarkeit der Beispiel-Referenzen im gerenderten Leitfaden.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -1481,6 +1469,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/mii-exa-bildgebung-radiologische-diagnose"
+      },
+      "name" : "MII Example Bildgebung Condition",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Device"
       }],
       "reference" : {
@@ -1495,10 +1494,21 @@
         "valueString" : "DiagnosticReport"
       }],
       "reference" : {
-        "reference" : "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
+        "reference" : "DiagnosticReport/mii-exa-bildgebung-radiologischer-befund"
       },
       "name" : "MII Example Bildgebung Diagnostic Report",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/mii-exa-bildgebung-radiologischer-fall"
+      },
+      "name" : "MII Example Bildgebung Fall",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1598,6 +1608,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/mii-exa-bildgebung-kontrastmittel"
+      },
+      "name" : "MII Example Bildgebung Kontrastmittel",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "MedicationAdministration"
       }],
       "reference" : {
@@ -1605,6 +1626,30 @@
       },
       "name" : "MII Example Bildgebung Kontrastmittelgabe",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient"
+      },
+      "name" : "MII Example Bildgebung Patient",
+      "description" : "Synthetischer Beispiel-Patient als Ziel der Patient-Referenzen der Beispielinstanzen dieses Moduls. Kein Bestandteil der Spezifikation — dient ausschließlich der Auflösbarkeit der Beispiel-Referenzen im gerenderten Leitfaden.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/mii-exa-bildgebung-radiologischer-practitioner"
+      },
+      "name" : "MII Example Bildgebung Practitioner",
+      "description" : "Synthetischer Beispiel-Practitioner als Ziel der Practitioner-Referenzen der Beispielinstanzen dieses Moduls. Kein Bestandteil der Spezifikation — dient ausschließlich der Auflösbarkeit der Beispiel-Referenzen im gerenderten Leitfaden.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{

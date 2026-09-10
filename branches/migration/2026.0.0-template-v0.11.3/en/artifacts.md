@@ -109,12 +109,13 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [ Beispiel-Patient (synthetisch)  ](Patient-PatExample.md) | Synthetischer Beispiel-Patient als Ziel der Patient/PatExample-Referenzen der Beispielinstanzen dieses Moduls. Kein Bestandteil der Spezifikation — dient ausschließlich der Auflösbarkeit der Beispiel-Referenzen im gerenderten Leitfaden. |
 | [ MII Example Bildgebung BodyStructure  ](BodyStructure-mii-exa-bildgebung-koerperstruktur.md) |  |
 | [ MII Example Bildgebung Care Plan  ](CarePlan-mii-exa-bildgebung-behandlungsempfehlung.md) | The patient must receive vacuum biopsy |
 | [ MII Example Bildgebung Composition  ](Composition-mii-exa-bildgebung-semistrukt-befundbericht.md) |  |
+| [ MII Example Bildgebung Condition  ](Condition-mii-exa-bildgebung-radiologische-diagnose.md) |  |
 | [ MII Example Bildgebung Device  ](Device-mii-exa-bildgebung-geraet.md) |  |
-| [ MII Example Bildgebung Diagnostic Report  ](DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.md) |  |
+| [ MII Example Bildgebung Diagnostic Report  ](DiagnosticReport-mii-exa-bildgebung-radiologischer-befund.md) |  |
+| [ MII Example Bildgebung Fall  ](Encounter-mii-exa-bildgebung-radiologischer-fall.md) |  |
 | [ MII Example Bildgebung Imaging Procedure  ](Procedure-mii-exa-bildgebung-bildgebungsprozedur.md) |  |
 | [ MII Example Bildgebung Imaging Study CR  ](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.md) | Thorax auf Station; |
 | [ MII Example Bildgebung Imaging Study CT  ](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.md) | whole body aquisition |
@@ -123,7 +124,10 @@ These are example instances that show what data produced and consumed by systems
 | [ MII Example Bildgebung Imaging Study NM  ](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-nm.md) | whole body aquisition |
 | [ MII Example Bildgebung Imaging Study PT  ](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.md) | whole body aquisition |
 | [ MII Example Bildgebung Imaging Study US  ](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-us.md) | Abdomen Ober- und Unterbauch |
+| [ MII Example Bildgebung Kontrastmittel  ](Medication-mii-exa-bildgebung-kontrastmittel.md) |  |
 | [ MII Example Bildgebung Kontrastmittelgabe  ](MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.md) |  |
+| [ MII Example Bildgebung Patient  ](Patient-mii-exa-bildgebung-radiologischer-patient.md) | Synthetischer Beispiel-Patient als Ziel der Patient-Referenzen der Beispielinstanzen dieses Moduls. Kein Bestandteil der Spezifikation — dient ausschließlich der Auflösbarkeit der Beispiel-Referenzen im gerenderten Leitfaden. |
+| [ MII Example Bildgebung Practitioner  ](Practitioner-mii-exa-bildgebung-radiologischer-practitioner.md) | Synthetischer Beispiel-Practitioner als Ziel der Practitioner-Referenzen der Beispielinstanzen dieses Moduls. Kein Bestandteil der Spezifikation — dient ausschließlich der Auflösbarkeit der Beispiel-Referenzen im gerenderten Leitfaden. |
 | [ MII Example Bildgebung Radiologische Beobachtung  ](Observation-mii-exa-bildgebung-radiologische-beobachtung.md) |  |
 | [ MII Example Bildgebung Radiologische Messung  ](Observation-mii-exa-bildgebung-radiologische-messung.md) |  |
 | [ MII Example Bildgebung ReadProcedure  ](Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.md) |  |

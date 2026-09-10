@@ -20,7 +20,7 @@ Profile: [MII PR Bildgebung Körperstruktur](StructureDefinition-mii-pr-bildgebu
 
 **locationQualifier**: Left (qualifier value)
 
-**patient**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-PatExample.md)
+**patient**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-bildgebung-radiologischer-patient.md)
 
 
 
@@ -55,7 +55,7 @@ Profile: [MII PR Bildgebung Körperstruktur](StructureDefinition-mii-pr-bildgebu
     }]
   }],
   "patient" : {
-    "reference" : "Patient/PatExample"
+    "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient"
   }
 }
 

@@ -16,9 +16,9 @@ Profile: [MII PR Bildgebung Konstrastmittelgabe](StructureDefinition-mii-pr-bild
 
 **status**: Completed
 
-**medication**: [Medication/MedExample](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Medication/MedExample)
+**medication**: [Medication Iopromide](Medication-mii-exa-bildgebung-kontrastmittel.md)
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-PatExample.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-bildgebung-radiologischer-patient.md)
 
 **effective**: 2024-07-19 12:21:45+0200 --> 2024-07-19 12:22:45+0200
 
@@ -42,10 +42,10 @@ Profile: [MII PR Bildgebung Konstrastmittelgabe](StructureDefinition-mii-pr-bild
   },
   "status" : "completed",
   "medicationReference" : {
-    "reference" : "Medication/MedExample"
+    "reference" : "Medication/mii-exa-bildgebung-kontrastmittel"
   },
   "subject" : {
-    "reference" : "Patient/PatExample"
+    "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient"
   },
   "effectivePeriod" : {
     "start" : "2024-07-19T12:21:45+02:00",

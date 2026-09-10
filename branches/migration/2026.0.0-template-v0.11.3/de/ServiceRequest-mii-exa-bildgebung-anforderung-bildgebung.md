@@ -22,19 +22,19 @@ Profile: [MII PR Bildgebung Anforderung Bildgebung](StructureDefinition-mii-pr-b
 
 **code**: Mammography (procedure)
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-PatExample.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-bildgebung-radiologischer-patient.md)
 
-**encounter**: [Encounter/EncExample](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/EncExample)
+**encounter**: [Encounter: status = finished; class = AMB (AMB)](Encounter-mii-exa-bildgebung-radiologischer-fall.md)
 
 **authoredOn**: 2024-07-19 12:03:30+0200
 
-**requester**: [Practitioner/PracExample1](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/PracExample1)
+**requester**: [Practitioner Max Mustermann ](Practitioner-mii-exa-bildgebung-radiologischer-practitioner.md)
 
 **reasonCode**: Pain of breast (finding)
 
 **reasonReference**: [Condition/CondExample](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Condition/CondExample)
 
-**supportingInfo**: [DiagnosticReport/DiagRepExample](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/DiagnosticReport/DiagRepExample)
+**supportingInfo**: [DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund)
 
 
 
@@ -64,14 +64,14 @@ Profile: [MII PR Bildgebung Anforderung Bildgebung](StructureDefinition-mii-pr-b
     }]
   },
   "subject" : {
-    "reference" : "Patient/PatExample"
+    "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient"
   },
   "encounter" : {
-    "reference" : "Encounter/EncExample"
+    "reference" : "Encounter/mii-exa-bildgebung-radiologischer-fall"
   },
   "authoredOn" : "2024-07-19T12:03:30+02:00",
   "requester" : {
-    "reference" : "Practitioner/PracExample1"
+    "reference" : "Practitioner/mii-exa-bildgebung-radiologischer-practitioner"
   },
   "reasonCode" : [{
     "coding" : [{
@@ -84,7 +84,7 @@ Profile: [MII PR Bildgebung Anforderung Bildgebung](StructureDefinition-mii-pr-b
     "reference" : "Condition/CondExample"
   }],
   "supportingInfo" : [{
-    "reference" : "DiagnosticReport/DiagRepExample"
+    "reference" : "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
   }]
 }
 

@@ -78,7 +78,7 @@ This publication includes IP covered under the following statements.
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [BodyStructure/mii-exa-bildgebung-koerperstruktur](BodyStructure-mii-exa-bildgebung-koerperstruktur.md), [DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund](DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.md)... Show 28 more, [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-cr](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.md), [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.md), [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-mr](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.md), [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-mr-series](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr-series.md), [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-nm](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-nm.md), [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-pt](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.md), [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-us](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-us.md), [MII_EX_Bildgebung_Modalitaet_NM](StructureDefinition-mii-ex-bildgebung-modalitaet-nm.md), [MII_EX_Bildgebung_Modalitaet_PT](StructureDefinition-mii-ex-bildgebung-modalitaet-pt.md), [MII_PR_Bildgebung_Anforderung_Bildgebung](StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.md), [MII_PR_Bildgebung_Bildgebungsprozedur](StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.md), [MII_PR_Bildgebung_Bildgebungsstudie](StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.md), [MII_PR_Bildgebung_Koerperstruktur](StructureDefinition-mii-pr-bildgebung-koerperstruktur.md), [MII_PR_Bildgebung_Kontrastmittelgabe](StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.md), [MII_PR_Bildgebung_Radiologische_Befundungsprozedur](StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.md), [MII_PR_Bildgebung_Radiologische_Beobachtung](StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.md), [MII_PR_Bildgebung_Radiologische_Messung](StructureDefinition-mii-pr-bildgebung-radiologische-messung.md), [MII_PR_Bildgebung_Radiologischer_Befund](StructureDefinition-mii-pr-bildgebung-radiologischer-befund.md), [MII_VS_Bildgebung_Diagnostic_Report_Code_SCT](ValueSet-mii-vs-bildgebung-diagnostic-report-code-sct.md), [MII_VS_Bildgebung_Findings_SCT](ValueSet-mii-vs-bildgebung-findings-sct.md), [MII_VS_Bildgebung_ImagingProcedure_Code_SCT](ValueSet-mii-vs-bildgebung-imaging-procedure-code-sct.md), [MII_VS_Bildgebung_Observation_Body_Site_SCT](ValueSet-mii-vs-bildgebung-observation-body-site-sct.md), [MII_VS_Bildgebung_ServiceRequest_Code_SCT](ValueSet-mii-vs-bildgebung-service-request-code-sct.md), [Observation/mii-exa-bildgebung-radiologische-beobachtung](Observation-mii-exa-bildgebung-radiologische-beobachtung.md), [Observation/mii-exa-bildgebung-radiologische-messung](Observation-mii-exa-bildgebung-radiologische-messung.md), [Procedure/mii-exa-bildgebung-bildgebungsprozedur](Procedure-mii-exa-bildgebung-bildgebungsprozedur.md), [Procedure/mii-exa-bildgebung-radiologische-befundungsprozedur](Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.md) and [ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung](ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [BodyStructure/mii-exa-bildgebung-koerperstruktur](BodyStructure-mii-exa-bildgebung-koerperstruktur.md), [DiagnosticReport/mii-exa-bildgebung-radiologischer-befund](DiagnosticReport-mii-exa-bildgebung-radiologischer-befund.md)... Show 29 more, [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-cr](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.md), [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.md), [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-mr](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.md), [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-mr-series](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr-series.md), [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-nm](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-nm.md), [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-pt](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.md), [ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-us](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-us.md), [MII_EX_Bildgebung_Modalitaet_NM](StructureDefinition-mii-ex-bildgebung-modalitaet-nm.md), [MII_EX_Bildgebung_Modalitaet_PT](StructureDefinition-mii-ex-bildgebung-modalitaet-pt.md), [MII_PR_Bildgebung_Anforderung_Bildgebung](StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.md), [MII_PR_Bildgebung_Bildgebungsprozedur](StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.md), [MII_PR_Bildgebung_Bildgebungsstudie](StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.md), [MII_PR_Bildgebung_Koerperstruktur](StructureDefinition-mii-pr-bildgebung-koerperstruktur.md), [MII_PR_Bildgebung_Kontrastmittelgabe](StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.md), [MII_PR_Bildgebung_Radiologische_Befundungsprozedur](StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.md), [MII_PR_Bildgebung_Radiologische_Beobachtung](StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.md), [MII_PR_Bildgebung_Radiologische_Messung](StructureDefinition-mii-pr-bildgebung-radiologische-messung.md), [MII_PR_Bildgebung_Radiologischer_Befund](StructureDefinition-mii-pr-bildgebung-radiologischer-befund.md), [MII_VS_Bildgebung_Diagnostic_Report_Code_SCT](ValueSet-mii-vs-bildgebung-diagnostic-report-code-sct.md), [MII_VS_Bildgebung_Findings_SCT](ValueSet-mii-vs-bildgebung-findings-sct.md), [MII_VS_Bildgebung_ImagingProcedure_Code_SCT](ValueSet-mii-vs-bildgebung-imaging-procedure-code-sct.md), [MII_VS_Bildgebung_Observation_Body_Site_SCT](ValueSet-mii-vs-bildgebung-observation-body-site-sct.md), [MII_VS_Bildgebung_ServiceRequest_Code_SCT](ValueSet-mii-vs-bildgebung-service-request-code-sct.md), [Medication/mii-exa-bildgebung-kontrastmittel](Medication-mii-exa-bildgebung-kontrastmittel.md), [Observation/mii-exa-bildgebung-radiologische-beobachtung](Observation-mii-exa-bildgebung-radiologische-beobachtung.md), [Observation/mii-exa-bildgebung-radiologische-messung](Observation-mii-exa-bildgebung-radiologische-messung.md), [Procedure/mii-exa-bildgebung-bildgebungsprozedur](Procedure-mii-exa-bildgebung-bildgebungsprozedur.md), [Procedure/mii-exa-bildgebung-radiologische-befundungsprozedur](Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.md) and [ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung](ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
@@ -1313,22 +1313,6 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Patient-PatExample.html"
-      }],
-      "reference" : {
-        "reference" : "Patient/PatExample"
-      },
-      "name" : "Beispiel-Patient (synthetisch)",
-      "description" : "Synthetischer Beispiel-Patient als Ziel der Patient/PatExample-Referenzen der Beispielinstanzen dieses Moduls. Kein Bestandteil der Spezifikation — dient ausschließlich der Auflösbarkeit der Beispiel-Referenzen im gerenderten Leitfaden.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       },
       {
@@ -1695,6 +1679,21 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Condition-mii-exa-bildgebung-radiologische-diagnose.html"
+      }],
+      "reference" : {
+        "reference" : "Condition/mii-exa-bildgebung-radiologische-diagnose"
+      },
+      "name" : "MII Example Bildgebung Condition",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Device"
       },
       {
@@ -1714,13 +1713,28 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.html"
+        "valueUri" : "DiagnosticReport-mii-exa-bildgebung-radiologischer-befund.html"
       }],
       "reference" : {
-        "reference" : "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
+        "reference" : "DiagnosticReport/mii-exa-bildgebung-radiologischer-befund"
       },
       "name" : "MII Example Bildgebung Diagnostic Report",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Encounter-mii-exa-bildgebung-radiologischer-fall.html"
+      }],
+      "reference" : {
+        "reference" : "Encounter/mii-exa-bildgebung-radiologischer-fall"
+      },
+      "name" : "MII Example Bildgebung Fall",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1852,6 +1866,21 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Medication-mii-exa-bildgebung-kontrastmittel.html"
+      }],
+      "reference" : {
+        "reference" : "Medication/mii-exa-bildgebung-kontrastmittel"
+      },
+      "name" : "MII Example Bildgebung Kontrastmittel",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "MedicationAdministration"
       },
       {
@@ -1863,6 +1892,38 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       "name" : "MII Example Bildgebung Kontrastmittelgabe",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-mii-exa-bildgebung-radiologischer-patient.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient"
+      },
+      "name" : "MII Example Bildgebung Patient",
+      "description" : "Synthetischer Beispiel-Patient als Ziel der Patient-Referenzen der Beispielinstanzen dieses Moduls. Kein Bestandteil der Spezifikation — dient ausschließlich der Auflösbarkeit der Beispiel-Referenzen im gerenderten Leitfaden.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Practitioner-mii-exa-bildgebung-radiologischer-practitioner.html"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/mii-exa-bildgebung-radiologischer-practitioner"
+      },
+      "name" : "MII Example Bildgebung Practitioner",
+      "description" : "Synthetischer Beispiel-Practitioner als Ziel der Practitioner-Referenzen der Beispielinstanzen dieses Moduls. Kein Bestandteil der Spezifikation — dient ausschließlich der Auflösbarkeit der Beispiel-Referenzen im gerenderten Leitfaden.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{

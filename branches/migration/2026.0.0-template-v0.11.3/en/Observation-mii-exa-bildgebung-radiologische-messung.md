@@ -26,7 +26,7 @@ Profile: [MII PR Bildgebung Radiologische Messung](StructureDefinition-mii-pr-bi
 
 **code**: Diameter of structure by imaging measurement (observable entity)
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-PatExample.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-bildgebung-radiologischer-patient.md)
 
 **issued**: 2024-07-19 12:03:30+0200
 
@@ -36,7 +36,7 @@ Profile: [MII PR Bildgebung Radiologische Messung](StructureDefinition-mii-pr-bi
 
 **method**: Measurement technique (qualifier value)
 
-**hasMember**: [Observation/ObsExample](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/ObsExample)
+**hasMember**: [Observation Physical findings of Breast](Observation-mii-exa-bildgebung-radiologische-beobachtung.md)
 
 **derivedFrom**: [ImagingStudy: extension = Verdacht auf Karzinom; status = available; modality = Computed Tomography (DICOM#CT); numberOfSeries = 2; numberOfInstances = 390; description = whole body aquisition](ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.md)
 
@@ -78,7 +78,7 @@ Profile: [MII PR Bildgebung Radiologische Messung](StructureDefinition-mii-pr-bi
     }]
   },
   "subject" : {
-    "reference" : "Patient/PatExample"
+    "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient"
   },
   "issued" : "2024-07-19T12:03:30+02:00",
   "valueQuantity" : {
@@ -108,7 +108,7 @@ Profile: [MII PR Bildgebung Radiologische Messung](StructureDefinition-mii-pr-bi
     }]
   },
   "hasMember" : [{
-    "reference" : "Observation/ObsExample"
+    "reference" : "Observation/mii-exa-bildgebung-radiologische-beobachtung"
   }],
   "derivedFrom" : [{
     "reference" : "ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct"

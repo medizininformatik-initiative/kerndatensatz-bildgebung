@@ -901,17 +901,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/PatExample"/>
-      </reference>
-      <name value="Beispiel-Patient (synthetisch)"/>
-      <description value="Synthetischer Beispiel-Patient als Ziel der Patient/PatExample-Referenzen der Beispielinstanzen dieses Moduls. Kein Bestandteil der Spezifikation — dient ausschließlich der Auflösbarkeit der Beispiel-Referenzen im gerenderten Leitfaden."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -1163,6 +1152,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/mii-exa-bildgebung-radiologische-diagnose"/>
+      </reference>
+      <name value="MII Example Bildgebung Condition"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Device"/>
       </extension>
       <reference>
@@ -1176,10 +1175,20 @@
         <valueString value="DiagnosticReport"/>
       </extension>
       <reference>
-        <reference value="DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"/>
+        <reference value="DiagnosticReport/mii-exa-bildgebung-radiologischer-befund"/>
       </reference>
       <name value="MII Example Bildgebung Diagnostic Report"/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/mii-exa-bildgebung-radiologischer-fall"/>
+      </reference>
+      <name value="MII Example Bildgebung Fall"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1270,6 +1279,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/mii-exa-bildgebung-kontrastmittel"/>
+      </reference>
+      <name value="MII Example Bildgebung Kontrastmittel"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationAdministration"/>
       </extension>
       <reference>
@@ -1277,6 +1296,28 @@
       </reference>
       <name value="MII Example Bildgebung Kontrastmittelgabe"/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/mii-exa-bildgebung-radiologischer-patient"/>
+      </reference>
+      <name value="MII Example Bildgebung Patient"/>
+      <description value="Synthetischer Beispiel-Patient als Ziel der Patient-Referenzen der Beispielinstanzen dieses Moduls. Kein Bestandteil der Spezifikation — dient ausschließlich der Auflösbarkeit der Beispiel-Referenzen im gerenderten Leitfaden."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/mii-exa-bildgebung-radiologischer-practitioner"/>
+      </reference>
+      <name value="MII Example Bildgebung Practitioner"/>
+      <description value="Synthetischer Beispiel-Practitioner als Ziel der Practitioner-Referenzen der Beispielinstanzen dieses Moduls. Kein Bestandteil der Spezifikation — dient ausschließlich der Auflösbarkeit der Beispiel-Referenzen im gerenderten Leitfaden."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

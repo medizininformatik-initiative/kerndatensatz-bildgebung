@@ -22,7 +22,7 @@ Profile: [MII PR Bildgebung Bildgebungsprozedur](StructureDefinition-mii-pr-bild
 
 **code**: Screening mammography of bilateral breasts (procedure)
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-PatExample.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-bildgebung-radiologischer-patient.md)
 
 **performed**: 2024-07-19 12:03:30+0200
 
@@ -56,7 +56,7 @@ Profile: [MII PR Bildgebung Bildgebungsprozedur](StructureDefinition-mii-pr-bild
     }]
   },
   "subject" : {
-    "reference" : "Patient/PatExample"
+    "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient"
   },
   "performedDateTime" : "2024-07-19T12:03:30+02:00"
 }

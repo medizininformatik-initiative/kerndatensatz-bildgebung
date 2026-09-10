@@ -26,7 +26,7 @@ Profile: [MII PR Bildgebung Radiologische Beobachtung](StructureDefinition-mii-p
 
 **code**: Physical findings of Breast
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-PatExample.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-bildgebung-radiologischer-patient.md)
 
 **issued**: 2024-07-19 12:03:30+0200
 
@@ -83,7 +83,7 @@ Profile: [MII PR Bildgebung Radiologische Beobachtung](StructureDefinition-mii-p
     }]
   },
   "subject" : {
-    "reference" : "Patient/PatExample"
+    "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient"
   },
   "issued" : "2024-07-19T12:03:30+02:00",
   "valueString" : "microcalcifications in the upper outer quadrant in the left breast",

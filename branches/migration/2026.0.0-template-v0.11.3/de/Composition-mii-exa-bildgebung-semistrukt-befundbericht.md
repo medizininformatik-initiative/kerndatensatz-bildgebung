@@ -20,7 +20,7 @@ Profile: [MII PR Bildgebung Semistrukturierter Befundbericht](StructureDefinitio
 
 **date**: 2024-07-19 12:03:30+0200
 
-**author**: [Practitioner/PracExample1](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/PracExample1)
+**author**: [Practitioner Max Mustermann ](Practitioner-mii-exa-bildgebung-radiologischer-practitioner.md)
 
 **title**: Mammographic Report
 
@@ -44,11 +44,11 @@ Profile: [MII PR Bildgebung Semistrukturierter Befundbericht](StructureDefinitio
     }]
   },
   "subject" : {
-    "reference" : "Patient/PatExample"
+    "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient"
   },
   "date" : "2024-07-19T12:03:30+02:00",
   "author" : [{
-    "reference" : "Practitioner/PracExample1"
+    "reference" : "Practitioner/mii-exa-bildgebung-radiologischer-practitioner"
   }],
   "title" : "Mammographic Report",
   "section" : [{
@@ -61,10 +61,10 @@ Profile: [MII PR Bildgebung Semistrukturierter Befundbericht](StructureDefinitio
       }]
     },
     "author" : [{
-      "reference" : "Practitioner/PracExample2"
+      "reference" : "Practitioner/mii-exa-bildgebung-radiologischer-practitioner"
     }],
     "entry" : [{
-      "reference" : "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
+      "reference" : "DiagnosticReport/mii-exa-bildgebung-radiologischer-befund"
     }],
     "section" : [{
       "entry" : [{

@@ -7,7 +7,7 @@
   "language" : "en",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImagingStudy mii-exa-bildgebung-bildgebungsstudie-ct</b></p><a name=\"mii-exa-bildgebung-bildgebungsstudie-ct\"> </a><a name=\"hcmii-exa-bildgebung-bildgebungsstudie-ct\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html\">MII PR Bildgebung Bildgebungsstudie</a></p></div><p><b>MII EX Bildgebung Bildgebungsgrund</b>: Verdacht auf Karzinom</p><p><b>status</b>: Available</p><p><b>modality</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-CT\">DICOM: CT</a> (Computed Tomography)</p><p><b>subject</b>: <a href=\"Patient-PatExample.html\">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>encounter</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/EncExample\">Encounter/EncExample</a></p><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.html\">ServiceRequest Mammography (procedure)</a></p><p><b>numberOfSeries</b>: 2</p><p><b>numberOfInstances</b>: 390</p><p><b>procedureReference</b>: <a href=\"Procedure-mii-exa-bildgebung-bildgebungsprozedur.html\">Procedure Screening mammography of bilateral breasts (procedure)</a></p><p><b>reasonReference</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Condition/CondExample\">Condition/CondExample</a></p><p><b>description</b>: whole body aquisition</p><blockquote><p><b>series</b></p><blockquote><p><b>MII EX Bildgebung Modalität CT</b></p><ul><li>convolutionalKernel: SOFT</li><li>CTDIvol: 4.04 milligray</li><li>KVP: 110 kilovolt</li><li>exposure: 38 milliampere second</li><li>exposureTime: 600 milliseconds</li><li>xRayTubeCurrent: 96 milliampere</li></ul></blockquote><blockquote><p><b>MII EX Bildgebung Kontrastmittel</b></p><ul><li>contrastBolus: true</li><li>contrastBolusDetails: </li></ul></blockquote></blockquote><p><b style=\"color: maroon\">Exception Generating Narrative: Cannot invoke &quot;org.hl7.fhir.r5.renderers.utils.ResourceWrapper.fhirType()&quot; because &quot;resource&quot; is null </b></p></div>"
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImagingStudy mii-exa-bildgebung-bildgebungsstudie-ct</b></p><a name=\"mii-exa-bildgebung-bildgebungsstudie-ct\"> </a><a name=\"hcmii-exa-bildgebung-bildgebungsstudie-ct\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html\">MII PR Bildgebung Bildgebungsstudie</a></p></div><p><b>MII EX Bildgebung Bildgebungsgrund</b>: Verdacht auf Karzinom</p><p><b>status</b>: Available</p><p><b>modality</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-CT\">DICOM: CT</a> (Computed Tomography)</p><p><b>subject</b>: <a href=\"Patient-mii-exa-bildgebung-radiologischer-patient.html\">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-bildgebung-radiologischer-fall.html\">Encounter: status = finished; class = AMB (AMB)</a></p><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.html\">ServiceRequest Mammography (procedure)</a></p><p><b>numberOfSeries</b>: 2</p><p><b>numberOfInstances</b>: 390</p><p><b>procedureReference</b>: <a href=\"Procedure-mii-exa-bildgebung-bildgebungsprozedur.html\">Procedure Screening mammography of bilateral breasts (procedure)</a></p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-bildgebung-radiologische-diagnose.html\">Condition </a></p><p><b>description</b>: whole body aquisition</p><blockquote><p><b>series</b></p><blockquote><p><b>MII EX Bildgebung Modalität CT</b></p><ul><li>convolutionalKernel: SOFT</li><li>CTDIvol: 4.04 milligray</li><li>KVP: 110 kilovolt</li><li>exposure: 38 milliampere second</li><li>exposureTime: 600 milliseconds</li><li>xRayTubeCurrent: 96 milliampere</li></ul></blockquote><blockquote><p><b>MII EX Bildgebung Kontrastmittel</b></p><ul><li>contrastBolus: true</li><li>contrastBolusDetails: <a href=\"MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Medication Iopromide; effective[x] = 2024-07-19 12:21:45+0200 --&gt; 2024-07-19 12:22:45+0200</a></li></ul></blockquote><p><b>uid</b>: series-example-uid</p><p><b>number</b>: 1</p><p><b>modality</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-CT\">DICOM: CT</a> (Computed Tomography)</p><p><b>description</b>: AC LD CT Whole Body 4.0 HD Field of View</p><p><b>numberOfInstances</b>: 195</p><p><b>bodySite</b>: <a href=\"http://snomed.info/id/51185008\">SNOMED CT: 51185008</a> (Thoracic structure (body structure))</p><p><b>laterality</b>: <a href=\"http://snomed.info/id/7771000\">SNOMED CT: 7771000</a> (Left)</p><p><b>started</b>: 2024-07-19 12:03:30+0200</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Device-mii-exa-bildgebung-geraet.html\">Device: manufacturer = Siemens</a></td></tr></table><h3>Instances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Uid</b></td><td><b>SopClass</b></td><td><b>Number</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>instance-example-uid</td><td>unknown: urn:oid:1.2.840.10008.5.1.4.1.1.2 (urn:oid:1.2.840.10008.5.1.4.1.1.2)</td><td>31</td></tr></table></blockquote></div>"
   },
   "extension" : [{
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund",
@@ -20,7 +20,7 @@
     "display" : "Computed Tomography"
   }],
   "subject" : {
-    "reference" : "Patient/PatExample",
+    "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient",
     "identifier" : {
       "type" : {
         "coding" : [{
@@ -34,7 +34,7 @@
     }
   },
   "encounter" : {
-    "reference" : "Encounter/EncExample"
+    "reference" : "Encounter/mii-exa-bildgebung-radiologischer-fall"
   },
   "basedOn" : [{
     "reference" : "ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"
@@ -45,7 +45,7 @@
     "reference" : "Procedure/mii-exa-bildgebung-bildgebungsprozedur"
   },
   "reasonReference" : [{
-    "reference" : "Condition/CondExample"
+    "reference" : "Condition/mii-exa-bildgebung-radiologische-diagnose"
   }],
   "description" : "whole body aquisition",
   "series" : [{

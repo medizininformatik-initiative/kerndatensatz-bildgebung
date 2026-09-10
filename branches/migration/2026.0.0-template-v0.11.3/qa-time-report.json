@@ -1,102 +1,97 @@
 {
-  "date" : "Thu, 10 Sep, 2026 11:56:08 +0000",
+  "date" : "Thu, 10 Sep, 2026 13:12:52 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [{
     "name" : "/fsh-generated/resources/ImplementationGuide-mii-ig-bildgebung.json",
-    "size" : 37332,
+    "size" : 38463,
     "processes" : [{
       "activity" : "load",
       "start" : 113,
-      "length" : 304
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 114,
-      "length" : 1
+      "length" : 276
     },
     {
       "activity" : "checkR4R4B",
       "start" : 118,
-      "length" : 21
+      "length" : 20
     },
     {
       "activity" : "generateNarratives",
       "start" : 118,
-      "length" : 85
+      "length" : 92
     },
     {
       "activity" : "validate",
       "start" : 143,
-      "length" : 11789
+      "length" : 6072
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 155,
+      "start" : 149,
       "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 31
+      "start" : 153,
+      "length" : 32
     },
     {
       "activity" : "generate1",
-      "start" : 161,
-      "length" : 205
+      "start" : 154,
+      "length" : 210
     },
     {
       "activity" : "generate2",
-      "start" : 179,
-      "length" : 862
+      "start" : 170,
+      "length" : 630
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 10
+      "start" : 237,
+      "length" : 8
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 4
+      "start" : 299,
+      "length" : 7
     }]
   },
   {
     "name" : "fsh-generated/resources/BodyStructure-mii-exa-bildgebung-koerperstruktur.json",
-    "size" : 929,
+    "size" : 960,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 113,
+      "start" : 112,
       "length" : 4
     },
     {
       "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 13
+      "start" : 118,
+      "length" : 11
     },
     {
       "activity" : "validate",
-      "start" : 155,
-      "length" : 181
+      "start" : 149,
+      "length" : 112
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 7
     },
     {
       "activity" : "generate1",
-      "start" : 162,
+      "start" : 154,
       "length" : 11
     },
     {
       "activity" : "generate2",
-      "start" : 180,
-      "length" : 27
+      "start" : 171,
+      "length" : 25
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 235,
+      "length" : 1
     }]
   },
   {
@@ -104,8 +99,8 @@
     "size" : 96748,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 113,
-      "length" : 19
+      "start" : 112,
+      "length" : 27
     },
     {
       "activity" : "load",
@@ -113,108 +108,93 @@
       "length" : 163
     },
     {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 1
-    },
-    {
       "activity" : "load-configure",
       "start" : 118,
-      "length" : 2
+      "length" : 1
     },
     {
       "activity" : "checkR4R4B",
       "start" : 118,
-      "length" : 12
+      "length" : 7
     },
     {
       "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 91
+      "start" : 118,
+      "length" : 80
     },
     {
       "activity" : "validate",
       "start" : 142,
-      "length" : 701
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 2
+      "length" : 482
     },
     {
       "activity" : "validate",
-      "start" : 155,
+      "start" : 149,
       "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 8
+      "start" : 154,
+      "length" : 9
     },
     {
       "activity" : "generate1",
-      "start" : 162,
-      "length" : 331
+      "start" : 154,
+      "length" : 340
     },
     {
       "activity" : "generate2",
-      "start" : 180,
-      "length" : 283
+      "start" : 171,
+      "length" : 204
     },
     {
       "activity" : "makeDependencies",
-      "start" : 218,
-      "length" : 1
-    },
-    {
-      "activity" : "makeDependencies",
-      "start" : 228,
-      "length" : 1
+      "start" : 208,
+      "length" : 2
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 249,
+      "start" : 237,
       "length" : 7
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 315,
+      "start" : 299,
       "length" : 4
     }]
   },
   {
     "name" : "fsh-generated/resources/CarePlan-mii-exa-bildgebung-behandlungsempfehlung.json",
-    "size" : 547,
+    "size" : 578,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 113,
-      "length" : 3
+      "start" : 112,
+      "length" : 2
     },
     {
       "activity" : "generateNarratives",
-      "start" : 119,
+      "start" : 118,
       "length" : 8
     },
     {
       "activity" : "validate",
-      "start" : 155,
-      "length" : 5
+      "start" : 149,
+      "length" : 6
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 6
     },
     {
       "activity" : "generate1",
-      "start" : 162,
-      "length" : 10
+      "start" : 155,
+      "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 181,
-      "length" : 64
+      "start" : 171,
+      "length" : 37
     }]
   },
   {
@@ -222,62 +202,67 @@
     "size" : 19764,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 113,
-      "length" : 9
+      "start" : 112,
+      "length" : 8
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 28
+      "length" : 25
     },
     {
       "activity" : "checkR4R4B",
       "start" : 118,
-      "length" : 4
+      "length" : 3
     },
     {
       "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 26
+      "start" : 118,
+      "length" : 20
     },
     {
       "activity" : "validate",
       "start" : 123,
-      "length" : 1386
+      "length" : 1179
     },
     {
       "activity" : "checkConformanceResources",
-      "start" : 155,
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
       "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 155,
+      "start" : 149,
       "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 7
+      "start" : 154,
+      "length" : 8
     },
     {
       "activity" : "generate1",
-      "start" : 162,
-      "length" : 80
+      "start" : 155,
+      "length" : 75
     },
     {
       "activity" : "generate2",
-      "start" : 181,
-      "length" : 407
+      "start" : 171,
+      "length" : 282
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 249,
+      "start" : 237,
       "length" : 1
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 315,
+      "start" : 299,
       "length" : 1
     }]
   },
@@ -286,42 +271,52 @@
     "size" : 3192,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 113,
+      "start" : 112,
       "length" : 3
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 11
+      "length" : 13
     },
     {
       "activity" : "generateNarratives",
-      "start" : 119,
+      "start" : 118,
       "length" : 6
     },
     {
       "activity" : "validate",
       "start" : 124,
-      "length" : 273
+      "length" : 187
+    },
+    {
+      "activity" : "validate",
+      "start" : 149,
+      "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 6
+      "start" : 154,
+      "length" : 7
     },
     {
       "activity" : "generate1",
-      "start" : 162,
-      "length" : 20
+      "start" : 155,
+      "length" : 21
     },
     {
       "activity" : "generate2",
-      "start" : 181,
-      "length" : 114
+      "start" : 171,
+      "length" : 89
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 249,
+      "start" : 237,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
       "length" : 1
     }]
   },
@@ -330,13 +325,62 @@
     "size" : 2882,
     "processes" : [{
       "activity" : "loadResources",
+      "start" : 112,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
       "start" : 113,
+      "length" : 12
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 118,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 124,
+      "length" : 34
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 7
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 17
+    },
+    {
+      "activity" : "generate2",
+      "start" : 171,
+      "length" : 81
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-mii-cs-bildgebung-series-type.json",
+    "size" : 3361,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
       "length" : 2
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 11
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 114,
+      "length" : 1
     },
     {
       "activity" : "checkR4R4B",
@@ -345,91 +389,42 @@
     },
     {
       "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 4
+      "start" : 118,
+      "length" : 5
     },
     {
       "activity" : "validate",
       "start" : 125,
-      "length" : 30
+      "length" : 27
     },
     {
       "activity" : "checkConformanceResources",
-      "start" : 155,
+      "start" : 149,
       "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 7
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 18
-    },
-    {
-      "activity" : "generate2",
-      "start" : 181,
-      "length" : 99
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/CodeSystem-mii-cs-bildgebung-series-type.json",
-    "size" : 3361,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 3
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 5
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 5
-    },
-    {
-      "activity" : "validate",
-      "start" : 125,
-      "length" : 39
-    },
-    {
-      "activity" : "validate",
-      "start" : 155,
+      "start" : 149,
       "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 5
+      "start" : 154,
+      "length" : 6
     },
     {
       "activity" : "generate1",
-      "start" : 162,
+      "start" : 155,
       "length" : 20
     },
     {
       "activity" : "generate2",
-      "start" : 181,
-      "length" : 85
+      "start" : 171,
+      "length" : 78
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 1
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
+      "start" : 237,
       "length" : 1
     }]
   },
@@ -438,281 +433,13 @@
     "size" : 3733,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 113,
-      "length" : 4
+      "start" : 112,
+      "length" : 2
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 11
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 118,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 6
-    },
-    {
-      "activity" : "validate",
-      "start" : 125,
-      "length" : 45
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 5
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 26
-    },
-    {
-      "activity" : "generate2",
-      "start" : 181,
-      "length" : 106
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/Composition-mii-exa-bildgebung-semistrukt-befundbericht.json",
-    "size" : 1368,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 3
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 6
-    },
-    {
-      "activity" : "validate",
-      "start" : 155,
-      "length" : 125
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 4
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 11
-    },
-    {
-      "activity" : "generate2",
-      "start" : 181,
-      "length" : 73
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/Device-mii-exa-bildgebung-geraet.json",
-    "size" : 353,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 5
-    },
-    {
-      "activity" : "validate",
-      "start" : 155,
-      "length" : 4
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 4
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 8
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 17
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json",
-    "size" : 1705,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 4
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 295
-    },
-    {
-      "activity" : "validate",
-      "start" : 155,
-      "length" : 355
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 4
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 15
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 80
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.json",
-    "size" : 5134,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 3
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 118,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 27
-    },
-    {
-      "activity" : "validate",
-      "start" : 155,
-      "length" : 640
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 4
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 26
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 86
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.json",
-    "size" : 6128,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 3
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 118,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 9
-    },
-    {
-      "activity" : "validate",
-      "start" : 156,
-      "length" : 308
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 3
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 22
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 45
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr-series.json",
-    "size" : 5028,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 3
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 118,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 10
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 156,
-      "length" : 289
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 3
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 24
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 45
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.json",
-    "size" : 6838,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 4
+      "length" : 13
     },
     {
       "activity" : "load-configure",
@@ -720,374 +447,301 @@
       "length" : 1
     },
     {
-      "activity" : "checkR4R4B",
-      "start" : 118,
-      "length" : 1
-    },
-    {
       "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 22
+      "start" : 118,
+      "length" : 5
     },
     {
       "activity" : "validate",
-      "start" : 157,
-      "length" : 314
+      "start" : 125,
+      "length" : 29
+    },
+    {
+      "activity" : "validate",
+      "start" : 149,
+      "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 4
+      "start" : 154,
+      "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 162,
-      "length" : 28
+      "start" : 155,
+      "length" : 25
     },
     {
       "activity" : "generate2",
-      "start" : 182,
-      "length" : 52
+      "start" : 172,
+      "length" : 83
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 315,
+      "start" : 299,
       "length" : 1
     }]
   },
   {
-    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-nm.json",
-    "size" : 6425,
+    "name" : "fsh-generated/resources/Composition-mii-exa-bildgebung-semistrukt-befundbericht.json",
+    "size" : 1467,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 113,
-      "length" : 4
+      "start" : 112,
+      "length" : 2
     },
     {
-      "activity" : "checkR4R4B",
+      "activity" : "generateNarratives",
       "start" : 118,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 149,
+      "length" : 96
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 5
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 55
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Condition-mii-exa-bildgebung-radiologische-diagnose.json",
+    "size" : 400,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 255
-    },
-    {
-      "activity" : "validate",
-      "start" : 157,
-      "length" : 1638
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 4
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 21
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 62
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json",
-    "size" : 6248,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 4
-    },
-    {
-      "activity" : "checkR4R4B",
       "start" : 118,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 17
+      "length" : 47
     },
     {
       "activity" : "validate",
-      "start" : 159,
-      "length" : 693
+      "start" : 149,
+      "length" : 9
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 162,
-      "length" : 22
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 80
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-us.json",
-    "size" : 5505,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 4
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 17
-    },
-    {
-      "activity" : "validate",
-      "start" : 159,
-      "length" : 196
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 4
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 23
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 64
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.json",
-    "size" : 689,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 2
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 118,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 116
-    },
-    {
-      "activity" : "validate",
-      "start" : 159,
-      "length" : 8
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 5
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 8
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 38
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/Observation-mii-exa-bildgebung-radiologische-beobachtung.json",
-    "size" : 2261,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 3
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 7
-    },
-    {
-      "activity" : "validate",
-      "start" : 159,
-      "length" : 188
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 4
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 13
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 63
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/Observation-mii-exa-bildgebung-radiologische-messung.json",
-    "size" : 2247,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 2
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 5
-    },
-    {
-      "activity" : "validate",
-      "start" : 160,
-      "length" : 301
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 4
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 12
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 58
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/Patient-PatExample.json",
-    "size" : 212,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 2
-    },
-    {
-      "activity" : "validate",
-      "start" : 160,
-      "length" : 2
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 5
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 3
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 15
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/Procedure-mii-exa-bildgebung-bildgebungsprozedur.json",
-    "size" : 888,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 2
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 4
-    },
-    {
-      "activity" : "validate",
-      "start" : 160,
-      "length" : 232
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 4
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 8
-    },
-    {
-      "activity" : "generate2",
-      "start" : 182,
-      "length" : 37
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.json",
-    "size" : 903,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 2
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 119,
-      "length" : 3
-    },
-    {
-      "activity" : "validate",
-      "start" : 143,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 160,
-      "length" : 120
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 4
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
+      "start" : 155,
       "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 182,
-      "length" : 28
+      "start" : 172,
+      "length" : 29
     }]
   },
   {
-    "name" : "fsh-generated/resources/ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.json",
-    "size" : 1300,
+    "name" : "fsh-generated/resources/Device-mii-exa-bildgebung-geraet.json",
+    "size" : 353,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 113,
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 118,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 149,
       "length" : 2
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 5
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 16
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-befund.json",
+    "size" : 1561,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 118,
+      "length" : 140
+    },
+    {
+      "activity" : "validate",
+      "start" : 149,
+      "length" : 213
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 5
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 16
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 41
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Encounter-mii-exa-bildgebung-radiologischer-fall.json",
+    "size" : 233,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 118,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 149,
+      "length" : 5
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 8
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 19
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.json",
+    "size" : 5223,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 118,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 118,
+      "length" : 20
+    },
+    {
+      "activity" : "validate",
+      "start" : 149,
+      "length" : 450
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 6
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 26
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 68
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 236,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.json",
+    "size" : 6217,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 15
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 118,
+      "length" : 20
+    },
+    {
+      "activity" : "validate",
+      "start" : 150,
+      "length" : 290
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 5
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 27
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 62
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr-series.json",
+    "size" : 5117,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 8
     },
     {
       "activity" : "checkR4R4B",
@@ -1097,27 +751,489 @@
     {
       "activity" : "generateNarratives",
       "start" : 119,
-      "length" : 7
+      "length" : 9
     },
     {
       "activity" : "validate",
-      "start" : 160,
-      "length" : 238
+      "start" : 150,
+      "length" : 210
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 3
+      "start" : 154,
+      "length" : 6
     },
     {
       "activity" : "generate1",
-      "start" : 162,
-      "length" : 10
+      "start" : 155,
+      "length" : 21
     },
     {
       "activity" : "generate2",
-      "start" : 182,
-      "length" : 55
+      "start" : 172,
+      "length" : 68
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.json",
+    "size" : 6927,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 5
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 21
+    },
+    {
+      "activity" : "validate",
+      "start" : 150,
+      "length" : 244
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 10
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 21
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 65
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-nm.json",
+    "size" : 6514,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 8
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 118,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 157
+    },
+    {
+      "activity" : "validate",
+      "start" : 151,
+      "length" : 1028
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 11
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 22
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 61
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json",
+    "size" : 6337,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 12
+    },
+    {
+      "activity" : "validate",
+      "start" : 152,
+      "length" : 466
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 7
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 26
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 67
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-us.json",
+    "size" : 5594,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 118,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 14
+    },
+    {
+      "activity" : "validate",
+      "start" : 152,
+      "length" : 165
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 7
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 30
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 57
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-mii-exa-bildgebung-kontrastmittel.json",
+    "size" : 264,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 152,
+      "length" : 32
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 7
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 5
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 13
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.json",
+    "size" : 743,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 67
+    },
+    {
+      "activity" : "validate",
+      "start" : 152,
+      "length" : 11
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 6
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 30
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-mii-exa-bildgebung-radiologische-beobachtung.json",
+    "size" : 2292,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 152,
+      "length" : 120
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 7
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 13
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 33
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-mii-exa-bildgebung-radiologische-messung.json",
+    "size" : 2312,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 152,
+      "length" : 177
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 7
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 14
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 29
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-mii-exa-bildgebung-radiologischer-patient.json",
+    "size" : 243,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 2
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 6
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Practitioner-mii-exa-bildgebung-radiologischer-practitioner.json",
+    "size" : 260,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 3
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 6
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 5
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Procedure-mii-exa-bildgebung-bildgebungsprozedur.json",
+    "size" : 919,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 134
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 6
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 21
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.json",
+    "size" : 934,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 2
+    },
+    {
+      "activity" : "scan",
+      "start" : 118,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 73
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 6
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 17
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.json",
+    "size" : 1419,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 119,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 145
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 6
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 172,
+      "length" : 34
     }]
   },
   {
@@ -1125,7 +1241,7 @@
     "size" : 3501,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 113,
+      "start" : 112,
       "length" : 3
     },
     {
@@ -1136,51 +1252,66 @@
     {
       "activity" : "generateSnapshots",
       "start" : 114,
-      "length" : 36
+      "length" : 20
+    },
+    {
+      "activity" : "scan",
+      "start" : 118,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 118,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 120,
-      "length" : 591
+      "start" : 119,
+      "length" : 1572
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 2339
+      "start" : 125,
+      "length" : 1781
     },
     {
-      "activity" : "checkConformanceResources",
-      "start" : 155,
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 162,
-      "length" : 53
+      "start" : 155,
+      "length" : 52
     },
     {
       "activity" : "generate2",
-      "start" : 182,
-      "length" : 942
+      "start" : 172,
+      "length" : 871
     },
     {
       "activity" : "generate2",
-      "start" : 211,
-      "length" : 749
+      "start" : 201,
+      "length" : 1589
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 249,
+      "start" : 237,
       "length" : 2
     },
     {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
+      "activity" : "scanProfilesForR5",
+      "start" : 299,
       "length" : 1
     }]
   },
@@ -1189,8 +1320,8 @@
     "size" : 3563,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 113,
-      "length" : 3
+      "start" : 112,
+      "length" : 2
     },
     {
       "activity" : "load",
@@ -1200,66 +1331,7 @@
     {
       "activity" : "generateSnapshots",
       "start" : 114,
-      "length" : 32
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 120,
-      "length" : 10
-    },
-    {
-      "activity" : "validate",
-      "start" : 128,
-      "length" : 51
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 162,
-      "length" : 52
-    },
-    {
-      "activity" : "generate2",
-      "start" : 183,
-      "length" : 334
-    },
-    {
-      "activity" : "generate2",
-      "start" : 212,
-      "length" : 67
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 1
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-groesse.json",
-    "size" : 3571,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 3
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 4
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 114,
-      "length" : 24
+      "length" : 19
     },
     {
       "activity" : "generateNarratives",
@@ -1268,32 +1340,86 @@
     },
     {
       "activity" : "validate",
-      "start" : 128,
-      "length" : 48
+      "start" : 127,
+      "length" : 79
     },
     {
       "activity" : "checkConformanceResources",
-      "start" : 155,
+      "start" : 149,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 163,
-      "length" : 58
+      "start" : 155,
+      "length" : 62
     },
     {
       "activity" : "generate2",
-      "start" : 184,
-      "length" : 309
+      "start" : 173,
+      "length" : 334
     },
     {
       "activity" : "generate2",
-      "start" : 212,
-      "length" : 49
+      "start" : 202,
+      "length" : 68
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 249,
+      "start" : 237,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-groesse.json",
+    "size" : 3571,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 114,
+      "length" : 18
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 120,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 127,
+      "length" : 83
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 63
+    },
+    {
+      "activity" : "generate2",
+      "start" : 174,
+      "length" : 311
+    },
+    {
+      "activity" : "generate2",
+      "start" : 203,
+      "length" : 51
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
       "length" : 1
     }]
   },
@@ -1302,7 +1428,342 @@
     "size" : 12575,
     "processes" : [{
       "activity" : "loadResources",
+      "start" : 112,
+      "length" : 47
+    },
+    {
+      "activity" : "load",
       "start" : 113,
+      "length" : 14
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 114,
+      "length" : 127
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 120,
+      "length" : 101
+    },
+    {
+      "activity" : "validate",
+      "start" : 127,
+      "length" : 368
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 392
+    },
+    {
+      "activity" : "generate2",
+      "start" : 174,
+      "length" : 965
+    },
+    {
+      "activity" : "generate2",
+      "start" : 203,
+      "length" : 311
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 13
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-kontrastmittel.json",
+    "size" : 4942,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 8
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 114,
+      "length" : 59
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 22
+    },
+    {
+      "activity" : "validate",
+      "start" : 128,
+      "length" : 104
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 156,
+      "length" : 112
+    },
+    {
+      "activity" : "generate2",
+      "start" : 175,
+      "length" : 367
+    },
+    {
+      "activity" : "generate2",
+      "start" : 203,
+      "length" : 53
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-modalitaet-ct.json",
+    "size" : 10367,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 6
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 12
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 114,
+      "length" : 121
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 68
+    },
+    {
+      "activity" : "validate",
+      "start" : 128,
+      "length" : 299
+    },
+    {
+      "activity" : "generate1",
+      "start" : 156,
+      "length" : 363
+    },
+    {
+      "activity" : "generate2",
+      "start" : 175,
+      "length" : 891
+    },
+    {
+      "activity" : "generate2",
+      "start" : 203,
+      "length" : 181
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 8
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx.json",
+    "size" : 9362,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 31
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 11
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 114,
+      "length" : 109
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 57
+    },
+    {
+      "activity" : "validate",
+      "start" : 128,
+      "length" : 247
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 156,
+      "length" : 313
+    },
+    {
+      "activity" : "generate2",
+      "start" : 176,
+      "length" : 657
+    },
+    {
+      "activity" : "generate2",
+      "start" : 203,
+      "length" : 128
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 208,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 7
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-modalitaet-mr.json",
+    "size" : 11714,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 6
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 12
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 114,
+      "length" : 123
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 61
+    },
+    {
+      "activity" : "validate",
+      "start" : 128,
+      "length" : 277
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 157,
+      "length" : 397
+    },
+    {
+      "activity" : "generate2",
+      "start" : 177,
+      "length" : 783
+    },
+    {
+      "activity" : "generate2",
+      "start" : 203,
+      "length" : 137
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 10
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-modalitaet-nm.json",
+    "size" : 10265,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
       "length" : 6
     },
     {
@@ -1313,129 +1774,1164 @@
     {
       "activity" : "generateSnapshots",
       "start" : 114,
-      "length" : 156
+      "length" : 101
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 118,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 120,
-      "length" : 100
+      "start" : 121,
+      "length" : 50
     },
     {
       "activity" : "validate",
-      "start" : 128,
-      "length" : 288
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 1
+      "start" : 129,
+      "length" : 233
     },
     {
       "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 163,
-      "length" : 396
+      "start" : 157,
+      "length" : 344
     },
     {
       "activity" : "generate2",
-      "start" : 184,
-      "length" : 958
+      "start" : 178,
+      "length" : 696
     },
     {
       "activity" : "generate2",
-      "start" : 212,
-      "length" : 256
-    },
-    {
-      "activity" : "makeDependencies",
-      "start" : 218,
-      "length" : 1
+      "start" : 203,
+      "length" : 121
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 12
+      "start" : 237,
+      "length" : 7
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 315,
+      "start" : 299,
       "length" : 2
     }]
   },
   {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-kontrastmittel.json",
-    "size" : 4942,
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-modalitaet-pt.json",
+    "size" : 12617,
     "processes" : [{
       "activity" : "loadResources",
+      "start" : 112,
+      "length" : 6
+    },
+    {
+      "activity" : "load",
       "start" : 113,
+      "length" : 13
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 114,
+      "length" : 116
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 118,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 174
+    },
+    {
+      "activity" : "validate",
+      "start" : 129,
+      "length" : 283
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 157,
+      "length" : 450
+    },
+    {
+      "activity" : "generate2",
+      "start" : 178,
+      "length" : 928
+    },
+    {
+      "activity" : "generate2",
+      "start" : 204,
+      "length" : 126
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 216,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 10
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-modalitaet-us.json",
+    "size" : 7598,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 9
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 114,
+      "length" : 92
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 34
+    },
+    {
+      "activity" : "validate",
+      "start" : 129,
+      "length" : 172
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 158,
+      "length" : 227
+    },
+    {
+      "activity" : "generate2",
+      "start" : 179,
+      "length" : 476
+    },
+    {
+      "activity" : "generate2",
+      "start" : 204,
+      "length" : 68
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-serie-schichtdicke.json",
+    "size" : 4061,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 114,
+      "length" : 35
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 16
+    },
+    {
+      "activity" : "validate",
+      "start" : 129,
+      "length" : 73
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 158,
+      "length" : 81
+    },
+    {
+      "activity" : "generate2",
+      "start" : 180,
+      "length" : 296
+    },
+    {
+      "activity" : "generate2",
+      "start" : 204,
+      "length" : 30
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-serie-uid.json",
+    "size" : 3404,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 114,
+      "length" : 16
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 9
+    },
+    {
+      "activity" : "validate",
+      "start" : 129,
+      "length" : 48
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 158,
+      "length" : 51
+    },
+    {
+      "activity" : "generate2",
+      "start" : 180,
+      "length" : 212
+    },
+    {
+      "activity" : "generate2",
+      "start" : 204,
+      "length" : 21
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 1
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 299,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-sop-instanz-uid.json",
+    "size" : 3426,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 114,
+      "length" : 14
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 9
+    },
+    {
+      "activity" : "validate",
+      "start" : 129,
+      "length" : 45
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 158,
+      "length" : 49
+    },
+    {
+      "activity" : "generate2",
+      "start" : 180,
+      "length" : 248
+    },
+    {
+      "activity" : "generate2",
+      "start" : 204,
+      "length" : 17
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-lm-bildgebung.json",
+    "size" : 116910,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 29
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 67
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 114,
+      "length" : 253
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 178
+    },
+    {
+      "activity" : "validate",
+      "start" : 129,
+      "length" : 748
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 15
+    },
+    {
+      "activity" : "generate1",
+      "start" : 158,
+      "length" : 1338
+    },
+    {
+      "activity" : "generate2",
+      "start" : 180,
+      "length" : 2163
+    },
+    {
+      "activity" : "generate2",
+      "start" : 204,
+      "length" : 407
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 208,
+      "length" : 2
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 31
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.json",
+    "size" : 36974,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 12
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 17
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 115,
+      "length" : 172
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 73
+    },
+    {
+      "activity" : "validate",
+      "start" : 130,
+      "length" : 1480
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 159,
+      "length" : 496
+    },
+    {
+      "activity" : "generate2",
+      "start" : 183,
+      "length" : 1326
+    },
+    {
+      "activity" : "generate2",
+      "start" : 204,
+      "length" : 206
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 14
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.json",
+    "size" : 13898,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 6
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 9
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 115,
+      "length" : 99
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 25
+    },
+    {
+      "activity" : "validate",
+      "start" : 132,
+      "length" : 269
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 160,
+      "length" : 216
+    },
+    {
+      "activity" : "generate2",
+      "start" : 184,
+      "length" : 769
+    },
+    {
+      "activity" : "generate2",
+      "start" : 204,
+      "length" : 152
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 6
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.json",
+    "size" : 15984,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 6
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 10
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 115,
+      "length" : 786
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 55
+    },
+    {
+      "activity" : "validate",
+      "start" : 132,
+      "length" : 1193
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 160,
+      "length" : 458
+    },
+    {
+      "activity" : "generate2",
+      "start" : 185,
+      "length" : 1420
+    },
+    {
+      "activity" : "generate2",
+      "start" : 205,
+      "length" : 381
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 13
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.json",
+    "size" : 79379,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 21
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 29
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 116,
+      "length" : 219
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 118,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 158
+    },
+    {
+      "activity" : "validate",
+      "start" : 133,
+      "length" : 1837
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 161,
+      "length" : 526
+    },
+    {
+      "activity" : "generate2",
+      "start" : 186,
+      "length" : 836
+    },
+    {
+      "activity" : "generate2",
+      "start" : 205,
+      "length" : 163
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 14
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 299,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 7
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-geraet.json",
+    "size" : 7622,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
       "length" : 4
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 7
+      "length" : 8
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 114,
-      "length" : 43
+      "start" : 116,
+      "length" : 97
     },
     {
       "activity" : "generateNarratives",
-      "start" : 120,
-      "length" : 21
+      "start" : 121,
+      "length" : 24
     },
     {
       "activity" : "validate",
-      "start" : 129,
-      "length" : 86
+      "start" : 135,
+      "length" : 214
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 163,
-      "length" : 113
+      "start" : 161,
+      "length" : 193
     },
     {
       "activity" : "generate2",
-      "start" : 185,
-      "length" : 352
+      "start" : 187,
+      "length" : 433
     },
     {
       "activity" : "generate2",
-      "start" : 213,
-      "length" : 49
+      "start" : 205,
+      "length" : 162
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 208,
+      "length" : 1
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 249,
+      "start" : 237,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
       "length" : 2
     }]
   },
   {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-modalitaet-ct.json",
-    "size" : 10367,
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",
+    "size" : 11895,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 113,
-      "length" : 7
+      "start" : 112,
+      "length" : 5
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 11
+      "length" : 7
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 114,
+      "start" : 116,
+      "length" : 40
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 122,
+      "length" : 82
+    },
+    {
+      "activity" : "validate",
+      "start" : 135,
+      "length" : 301
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 161,
+      "length" : 134
+    },
+    {
+      "activity" : "generate2",
+      "start" : 187,
+      "length" : 296
+    },
+    {
+      "activity" : "generate2",
+      "start" : 205,
+      "length" : 64
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 4
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.json",
+    "size" : 13993,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 9
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 116,
+      "length" : 191
+    },
+    {
+      "activity" : "loadInfo",
+      "start" : 118,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 122,
+      "length" : 50
+    },
+    {
+      "activity" : "validate",
+      "start" : 136,
+      "length" : 3195
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 161,
+      "length" : 445
+    },
+    {
+      "activity" : "generate2",
+      "start" : 188,
+      "length" : 1603
+    },
+    {
+      "activity" : "generate2",
+      "start" : 205,
+      "length" : 294
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 13
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.json",
+    "size" : 12802,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 8
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 116,
+      "length" : 147
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 122,
+      "length" : 48
+    },
+    {
+      "activity" : "validate",
+      "start" : 139,
+      "length" : 525
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 162,
+      "length" : 456
+    },
+    {
+      "activity" : "generate2",
+      "start" : 189,
+      "length" : 1205
+    },
+    {
+      "activity" : "generate2",
+      "start" : 206,
+      "length" : 186
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 12
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.json",
+    "size" : 42583,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 13
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 18
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 116,
+      "length" : 121
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 122,
+      "length" : 70
+    },
+    {
+      "activity" : "validate",
+      "start" : 139,
+      "length" : 767
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 162,
+      "length" : 559
+    },
+    {
+      "activity" : "generate2",
+      "start" : 190,
+      "length" : 1625
+    },
+    {
+      "activity" : "generate2",
+      "start" : 206,
+      "length" : 170
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 15
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 299,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-radiologische-messung.json",
+    "size" : 8501,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 8
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 117,
+      "length" : 167
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 122,
+      "length" : 56
+    },
+    {
+      "activity" : "validate",
+      "start" : 140,
+      "length" : 517
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 163,
+      "length" : 489
+    },
+    {
+      "activity" : "generate2",
+      "start" : 192,
+      "length" : 1190
+    },
+    {
+      "activity" : "generate2",
+      "start" : 206,
+      "length" : 199
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 15
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-radiologischer-befund.json",
+    "size" : 53631,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 112,
+      "length" : 13
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 21
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 117,
       "length" : 134
     },
     {
@@ -1445,1392 +2941,52 @@
     },
     {
       "activity" : "generateNarratives",
-      "start" : 120,
-      "length" : 57
-    },
-    {
-      "activity" : "validate",
-      "start" : 129,
-      "length" : 246
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 2
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 163,
-      "length" : 368
-    },
-    {
-      "activity" : "generate2",
-      "start" : 185,
-      "length" : 760
-    },
-    {
-      "activity" : "generate2",
-      "start" : 213,
-      "length" : 186
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 10
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 2
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx.json",
-    "size" : 9362,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 6
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 9
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 114,
-      "length" : 99
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 120,
-      "length" : 58
-    },
-    {
-      "activity" : "validate",
-      "start" : 129,
-      "length" : 202
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 163,
-      "length" : 312
-    },
-    {
-      "activity" : "generate2",
-      "start" : 186,
-      "length" : 749
-    },
-    {
-      "activity" : "generate2",
-      "start" : 213,
-      "length" : 135
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 10
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 2
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-modalitaet-mr.json",
-    "size" : 11714,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 8
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 11
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 114,
-      "length" : 125
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 120,
-      "length" : 49
-    },
-    {
-      "activity" : "validate",
-      "start" : 129,
-      "length" : 238
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 164,
-      "length" : 440
-    },
-    {
-      "activity" : "generate2",
-      "start" : 187,
-      "length" : 781
-    },
-    {
-      "activity" : "generate2",
-      "start" : 213,
-      "length" : 174
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 14
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 2
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-modalitaet-nm.json",
-    "size" : 10265,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 7
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 9
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 114,
-      "length" : 97
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 120,
-      "length" : 41
-    },
-    {
-      "activity" : "validate",
-      "start" : 129,
-      "length" : 204
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 164,
-      "length" : 377
-    },
-    {
-      "activity" : "generate2",
-      "start" : 188,
-      "length" : 703
-    },
-    {
-      "activity" : "generate2",
-      "start" : 213,
-      "length" : 116
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 12
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 2
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-modalitaet-pt.json",
-    "size" : 12617,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 8
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 11
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 115,
-      "length" : 109
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 120,
-      "length" : 67
-    },
-    {
-      "activity" : "validate",
-      "start" : 130,
-      "length" : 235
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 165,
-      "length" : 457
-    },
-    {
-      "activity" : "generate2",
-      "start" : 188,
-      "length" : 826
-    },
-    {
-      "activity" : "generate2",
-      "start" : 213,
-      "length" : 143
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 16
-    },
-    {
-      "activity" : "scanProfilesForR5",
-      "start" : 315,
-      "length" : 1
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 2
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-modalitaet-us.json",
-    "size" : 7598,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 5
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 9
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 115,
-      "length" : 61
-    },
-    {
-      "activity" : "load-configure",
-      "start" : 118,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 21
-    },
-    {
-      "activity" : "validate",
-      "start" : 130,
-      "length" : 141
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 165,
-      "length" : 225
-    },
-    {
-      "activity" : "generate2",
-      "start" : 189,
-      "length" : 349
-    },
-    {
-      "activity" : "generate2",
-      "start" : 213,
-      "length" : 67
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 8
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 1
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-serie-schichtdicke.json",
-    "size" : 4061,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 4
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 5
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 115,
-      "length" : 26
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 12
-    },
-    {
-      "activity" : "validate",
-      "start" : 130,
-      "length" : 62
-    },
-    {
-      "activity" : "generate1",
-      "start" : 165,
-      "length" : 79
-    },
-    {
-      "activity" : "generate2",
-      "start" : 189,
-      "length" : 222
-    },
-    {
-      "activity" : "generate2",
-      "start" : 213,
-      "length" : 31
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 2
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-serie-uid.json",
-    "size" : 3404,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 3
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 5
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 115,
-      "length" : 13
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 8
-    },
-    {
-      "activity" : "validate",
-      "start" : 130,
-      "length" : 40
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 165,
-      "length" : 50
-    },
-    {
-      "activity" : "generate2",
-      "start" : 190,
-      "length" : 190
-    },
-    {
-      "activity" : "generate2",
-      "start" : 213,
-      "length" : 18
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 2
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-sop-instanz-uid.json",
-    "size" : 3426,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 3
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 4
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 115,
-      "length" : 13
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 7
-    },
-    {
-      "activity" : "validate",
-      "start" : 130,
-      "length" : 39
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 165,
-      "length" : 50
-    },
-    {
-      "activity" : "generate2",
-      "start" : 190,
-      "length" : 190
-    },
-    {
-      "activity" : "generate2",
-      "start" : 213,
-      "length" : 17
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 2
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 1
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-lm-bildgebung.json",
-    "size" : 116910,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 29
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 48
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 115,
-      "length" : 223
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 117
-    },
-    {
-      "activity" : "validate",
-      "start" : 130,
-      "length" : 760
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 4
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 14
-    },
-    {
-      "activity" : "generate1",
-      "start" : 165,
-      "length" : 1345
-    },
-    {
-      "activity" : "generate2",
-      "start" : 190,
-      "length" : 2184
-    },
-    {
-      "activity" : "generate2",
-      "start" : 213,
-      "length" : 372
-    },
-    {
-      "activity" : "makeDependencies",
-      "start" : 228,
-      "length" : 1
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 45
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 4
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.json",
-    "size" : 36974,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 12
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 16
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 115,
-      "length" : 184
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 118,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 56
-    },
-    {
-      "activity" : "validate",
-      "start" : 131,
-      "length" : 1681
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 2
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 167,
-      "length" : 498
-    },
-    {
-      "activity" : "generate2",
-      "start" : 192,
-      "length" : 1272
-    },
-    {
-      "activity" : "generate2",
-      "start" : 214,
-      "length" : 192
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 23
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 5
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.json",
-    "size" : 13898,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 5
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 8
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 115,
-      "length" : 117
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 20
-    },
-    {
-      "activity" : "validate",
-      "start" : 133,
-      "length" : 238
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 167,
-      "length" : 219
-    },
-    {
-      "activity" : "generate2",
-      "start" : 193,
-      "length" : 758
-    },
-    {
-      "activity" : "generate2",
-      "start" : 214,
-      "length" : 102
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 9
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 2
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.json",
-    "size" : 15984,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 7
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 10
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 115,
-      "length" : 528
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 38
-    },
-    {
-      "activity" : "validate",
-      "start" : 133,
-      "length" : 1433
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 3
-    },
-    {
-      "activity" : "generate1",
-      "start" : 168,
-      "length" : 462
-    },
-    {
-      "activity" : "generate2",
-      "start" : 194,
-      "length" : 1469
-    },
-    {
-      "activity" : "generate2",
-      "start" : 214,
-      "length" : 246
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 23
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 5
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.json",
-    "size" : 79379,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 19
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 26
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 116,
-      "length" : 120
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 202
-    },
-    {
-      "activity" : "validate",
-      "start" : 134,
-      "length" : 1284
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 2
-    },
-    {
-      "activity" : "generate1",
-      "start" : 168,
-      "length" : 529
-    },
-    {
-      "activity" : "generate2",
-      "start" : 196,
-      "length" : 990
-    },
-    {
-      "activity" : "generate2",
-      "start" : 214,
-      "length" : 100
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 23
-    },
-    {
-      "activity" : "scanProfilesForR5",
-      "start" : 315,
-      "length" : 1
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 7
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-geraet.json",
-    "size" : 7622,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 5
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 7
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 116,
-      "length" : 76
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 22
-    },
-    {
-      "activity" : "validate",
-      "start" : 136,
-      "length" : 147
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 169,
-      "length" : 205
-    },
-    {
-      "activity" : "generate2",
-      "start" : 197,
-      "length" : 618
-    },
-    {
-      "activity" : "generate2",
-      "start" : 214,
-      "length" : 103
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 8
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 2
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-koerperstruktur.json",
-    "size" : 11895,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 5
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 7
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 116,
-      "length" : 41
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 126
-    },
-    {
-      "activity" : "validate",
-      "start" : 136,
-      "length" : 306
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 169,
-      "length" : 135
-    },
-    {
-      "activity" : "generate2",
-      "start" : 197,
-      "length" : 388
-    },
-    {
-      "activity" : "generate2",
-      "start" : 215,
-      "length" : 42
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 10
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 1
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe.json",
-    "size" : 13993,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 5
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 8
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 116,
-      "length" : 194
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 47
-    },
-    {
-      "activity" : "validate",
-      "start" : 136,
-      "length" : 3192
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 3
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 169,
-      "length" : 467
-    },
-    {
-      "activity" : "generate2",
-      "start" : 198,
-      "length" : 1717
-    },
-    {
-      "activity" : "generate2",
-      "start" : 215,
-      "length" : 198
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 20
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 5
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.json",
-    "size" : 12802,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 6
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 8
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 116,
-      "length" : 147
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 50
-    },
-    {
-      "activity" : "validate",
-      "start" : 139,
-      "length" : 498
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 3
-    },
-    {
-      "activity" : "generate1",
-      "start" : 169,
-      "length" : 484
-    },
-    {
-      "activity" : "generate2",
-      "start" : 199,
-      "length" : 1227
-    },
-    {
-      "activity" : "generate2",
-      "start" : 215,
-      "length" : 191
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 19
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 5
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.json",
-    "size" : 42583,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 12
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 17
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 116,
-      "length" : 222
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 66
-    },
-    {
-      "activity" : "validate",
-      "start" : 140,
-      "length" : 660
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 2
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 170,
-      "length" : 576
-    },
-    {
-      "activity" : "generate2",
-      "start" : 201,
-      "length" : 2130
-    },
-    {
-      "activity" : "generate2",
-      "start" : 215,
-      "length" : 147
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 249,
-      "length" : 23
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 5
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-radiologische-messung.json",
-    "size" : 8501,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 4
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 7
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 117,
-      "length" : 128
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 57
-    },
-    {
-      "activity" : "validate",
-      "start" : 140,
-      "length" : 471
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 155,
-      "length" : 1
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 2
-    },
-    {
-      "activity" : "generate1",
-      "start" : 170,
-      "length" : 499
-    },
-    {
-      "activity" : "generate2",
-      "start" : 203,
-      "length" : 1160
-    },
-    {
-      "activity" : "generate2",
-      "start" : 215,
-      "length" : 184
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 250,
-      "length" : 28
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 5
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-radiologischer-befund.json",
-    "size" : 53631,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 15
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 20
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 117,
-      "length" : 157
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 118,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 80
+      "start" : 122,
+      "length" : 77
     },
     {
       "activity" : "validate",
       "start" : 141,
-      "length" : 723
+      "length" : 1104
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 3
+      "start" : 149,
+      "length" : 2
     },
     {
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 2
-    },
-    {
-      "activity" : "generate1",
-      "start" : 171,
-      "length" : 682
-    },
-    {
-      "activity" : "generate2",
-      "start" : 204,
-      "length" : 999
-    },
-    {
-      "activity" : "generate2",
-      "start" : 215,
-      "length" : 147
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 250,
-      "length" : 27
-    },
-    {
-      "activity" : "scanProfilesForR5",
-      "start" : 315,
+      "start" : 154,
       "length" : 1
     },
     {
+      "activity" : "generate1",
+      "start" : 163,
+      "length" : 662
+    },
+    {
+      "activity" : "generate2",
+      "start" : 193,
+      "length" : 938
+    },
+    {
+      "activity" : "generate2",
+      "start" : 206,
+      "length" : 152
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 16
+    },
+    {
       "activity" : "scanExamplesForR5",
-      "start" : 315,
+      "start" : 299,
       "length" : 6
     }]
   },
@@ -2840,71 +2996,56 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
-      "length" : 11
+      "length" : 10
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 15
+      "length" : 16
     },
     {
       "activity" : "generateSnapshots",
       "start" : 117,
-      "length" : 118
+      "length" : 116
     },
     {
       "activity" : "generateNarratives",
-      "start" : 121,
-      "length" : 73
+      "start" : 122,
+      "length" : 78
     },
     {
       "activity" : "validate",
       "start" : 142,
-      "length" : 558
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 155,
-      "length" : 1
+      "length" : 809
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 155,
-      "length" : 2
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
+      "start" : 149,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 543
+      "start" : 164,
+      "length" : 566
     },
     {
       "activity" : "generate2",
-      "start" : 205,
-      "length" : 1152
+      "start" : 194,
+      "length" : 1102
     },
     {
       "activity" : "generate2",
-      "start" : 215,
-      "length" : 134
-    },
-    {
-      "activity" : "makeDependencies",
-      "start" : 218,
-      "length" : 1
+      "start" : 206,
+      "length" : 142
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 250,
-      "length" : 23
+      "start" : 237,
+      "length" : 14
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 315,
+      "start" : 299,
       "length" : 5
     }]
   },
@@ -2914,42 +3055,42 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
-      "length" : 3
+      "length" : 2
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 6
+      "length" : 8
     },
     {
       "activity" : "generateNarratives",
       "start" : 122,
-      "length" : 742
+      "length" : 530
     },
     {
       "activity" : "validate",
       "start" : 125,
-      "length" : 249
+      "length" : 150
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 6
+      "start" : 154,
+      "length" : 7
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 12
+      "start" : 165,
+      "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 206,
-      "length" : 676
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 250,
-      "length" : 1
+      "start" : 195,
+      "length" : 660
     }]
   },
   {
@@ -2958,42 +3099,37 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
-      "length" : 1
+      "length" : 2
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 4
+      "length" : 5
     },
     {
       "activity" : "generateNarratives",
-      "start" : 122,
-      "length" : 389
+      "start" : 123,
+      "length" : 223
     },
     {
       "activity" : "validate",
       "start" : 125,
-      "length" : 186
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
+      "length" : 112
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 12
+      "start" : 165,
+      "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 207,
-      "length" : 202
+      "start" : 196,
+      "length" : 219
     }]
   },
   {
@@ -3002,41 +3138,51 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
-      "length" : 2
+      "length" : 1
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 7
+      "length" : 3
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 118,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 116
+      "length" : 68
     },
     {
       "activity" : "validate",
       "start" : 125,
-      "length" : 130
+      "length" : 84
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 5
+      "start" : 154,
+      "length" : 6
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 12
+      "start" : 165,
+      "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 207,
-      "length" : 374
+      "start" : 196,
+      "length" : 359
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 250,
+      "start" : 237,
       "length" : 1
     }]
   },
@@ -3046,7 +3192,7 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
-      "length" : 1
+      "length" : 2
     },
     {
       "activity" : "load",
@@ -3056,32 +3202,27 @@
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 60
+      "length" : 35
     },
     {
       "activity" : "validate",
       "start" : 125,
-      "length" : 65
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
+      "length" : 48
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 4
+      "start" : 154,
+      "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 13
+      "start" : 165,
+      "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 207,
-      "length" : 77
+      "start" : 197,
+      "length" : 85
     }]
   },
   {
@@ -3105,32 +3246,32 @@
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 59
+      "length" : 38
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 66
+      "start" : 125,
+      "length" : 45
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 10
+      "start" : 165,
+      "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 207,
-      "length" : 191
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 250,
-      "length" : 2
+      "start" : 197,
+      "length" : 153
     }]
   },
   {
@@ -3144,41 +3285,36 @@
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 6
+      "length" : 7
     },
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 46
+      "length" : 85
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 12
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
+      "start" : 125,
+      "length" : 17
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 5
+      "start" : 154,
+      "length" : 6
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 11
+      "start" : 165,
+      "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 208,
-      "length" : 469
+      "start" : 197,
+      "length" : 313
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 250,
+      "start" : 237,
       "length" : 1
     }]
   },
@@ -3188,7 +3324,7 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
-      "length" : 2
+      "length" : 1
     },
     {
       "activity" : "load",
@@ -3196,39 +3332,34 @@
       "length" : 5
     },
     {
-      "activity" : "load-configure",
-      "start" : 118,
-      "length" : 1
-    },
-    {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 6
+      "length" : 7
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 14
+      "start" : 125,
+      "length" : 24
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 13
+      "start" : 165,
+      "length" : 11
     },
     {
       "activity" : "generate2",
-      "start" : 208,
-      "length" : 77
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 315,
-      "length" : 1
+      "start" : 197,
+      "length" : 81
     }]
   },
   {
@@ -3237,46 +3368,41 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
-      "length" : 1
+      "length" : 2
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 4
+      "length" : 5
     },
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 9
+      "length" : 8
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 16
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
+      "start" : 125,
+      "length" : 26
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
+      "start" : 165,
       "length" : 17
     },
     {
       "activity" : "generate2",
-      "start" : 208,
-      "length" : 83
+      "start" : 197,
+      "length" : 87
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 250,
+      "start" : 237,
       "length" : 1
     }]
   },
@@ -3286,6 +3412,50 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 113,
+      "length" : 5
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 123,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 125,
+      "length" : 22
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 6
+    },
+    {
+      "activity" : "generate1",
+      "start" : 165,
+      "length" : 10
+    },
+    {
+      "activity" : "generate2",
+      "start" : 197,
+      "length" : 78
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-nm.json",
+    "size" : 1912,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 113,
       "length" : 2
     },
     {
@@ -3296,85 +3466,31 @@
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 7
-    },
-    {
-      "activity" : "validate",
-      "start" : 126,
-      "length" : 15
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
-      "length" : 5
-    },
-    {
-      "activity" : "generate1",
-      "start" : 172,
-      "length" : 12
-    },
-    {
-      "activity" : "generate2",
-      "start" : 208,
-      "length" : 74
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-nm.json",
-    "size" : 1912,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 113,
-      "length" : 1
-    },
-    {
-      "activity" : "load",
-      "start" : 113,
-      "length" : 4
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 118,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 123,
       "length" : 8
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 18
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "processProvenanceDetails",
-      "start" : 161,
-      "length" : 1
+      "start" : 125,
+      "length" : 23
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 4
+      "start" : 154,
+      "length" : 6
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 15
+      "start" : 165,
+      "length" : 14
     },
     {
       "activity" : "generate2",
-      "start" : 208,
-      "length" : 80
+      "start" : 197,
+      "length" : 81
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 250,
+      "start" : 237,
       "length" : 1
     }]
   },
@@ -3384,42 +3500,52 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
-      "length" : 2
+      "length" : 1
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 3
+      "length" : 5
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 118,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 6
+      "length" : 5
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 16
+      "start" : 125,
+      "length" : 14
     },
     {
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 4
+      "start" : 154,
+      "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 12
+      "start" : 165,
+      "length" : 11
     },
     {
       "activity" : "generate2",
-      "start" : 208,
-      "length" : 75
+      "start" : 197,
+      "length" : 73
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 299,
+      "length" : 1
     }]
   },
   {
@@ -3438,27 +3564,32 @@
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 6
+      "length" : 5
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 17
+      "start" : 125,
+      "length" : 19
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 11
+      "start" : 165,
+      "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 208,
-      "length" : 81
+      "start" : 198,
+      "length" : 62
     }]
   },
   {
@@ -3467,12 +3598,12 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
-      "length" : 2
+      "length" : 1
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 4
+      "length" : 7
     },
     {
       "activity" : "generateNarratives",
@@ -3481,32 +3612,27 @@
     },
     {
       "activity" : "validate",
-      "start" : 126,
+      "start" : 125,
       "length" : 16
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 4
+      "start" : 154,
+      "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 16
+      "start" : 165,
+      "length" : 15
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 79
+      "start" : 198,
+      "length" : 65
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 250,
+      "start" : 237,
       "length" : 1
     }]
   },
@@ -3521,42 +3647,37 @@
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 5
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 118,
-      "length" : 1
+      "length" : 6
     },
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 12
+      "length" : 11
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 21
+      "start" : 125,
+      "length" : 24
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
+      "start" : 165,
       "length" : 24
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 90
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 250,
-      "length" : 1
+      "start" : 198,
+      "length" : 82
     }]
   },
   {
@@ -3570,7 +3691,7 @@
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 3
+      "length" : 4
     },
     {
       "activity" : "generateNarratives",
@@ -3579,28 +3700,28 @@
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 13
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
+      "start" : 125,
+      "length" : 15
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 4
+      "start" : 154,
+      "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
+      "start" : 165,
       "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 71
+      "start" : 198,
+      "length" : 64
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 1
     }]
   },
   {
@@ -3609,37 +3730,47 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
-      "length" : 2
+      "length" : 1
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 3
+      "length" : 4
     },
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 3
-    },
-    {
-      "activity" : "validate",
-      "start" : 126,
-      "length" : 12
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
       "length" : 4
     },
     {
+      "activity" : "validate",
+      "start" : 125,
+      "length" : 16
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 6
+    },
+    {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 9
+      "start" : 165,
+      "length" : 11
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 70
+      "start" : 198,
+      "length" : 58
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 216,
+      "length" : 1
     }]
   },
   {
@@ -3648,47 +3779,57 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
-      "length" : 1
+      "length" : 2
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 3
+      "length" : 4
+    },
+    {
+      "activity" : "loadDepInfo",
+      "start" : 118,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 118,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 58
+      "length" : 38
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 67
+      "start" : 125,
+      "length" : 40
+    },
+    {
+      "activity" : "validateExpressions",
+      "start" : 149,
+      "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 11
+      "start" : 165,
+      "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 66
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 250,
-      "length" : 1
+      "start" : 198,
+      "length" : 57
     }]
   },
   {
@@ -3702,36 +3843,36 @@
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 3
+      "length" : 4
     },
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 5
+      "length" : 8
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 18
+      "start" : 125,
+      "length" : 17
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 4
+      "start" : 154,
+      "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 13
+      "start" : 165,
+      "length" : 12
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 58
+      "start" : 198,
+      "length" : 62
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 250,
+      "start" : 237,
       "length" : 1
     }]
   },
@@ -3741,12 +3882,12 @@
     "processes" : [{
       "activity" : "loadResources",
       "start" : 113,
-      "length" : 2
+      "length" : 1
     },
     {
       "activity" : "load",
       "start" : 113,
-      "length" : 3
+      "length" : 4
     },
     {
       "activity" : "generateNarratives",
@@ -3755,28 +3896,28 @@
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 19
+      "start" : 125,
+      "length" : 21
     },
     {
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "translate",
-      "start" : 161,
-      "length" : 4
+      "start" : 154,
+      "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 11
+      "start" : 165,
+      "length" : 12
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 58
+      "start" : 198,
+      "length" : 67
     }]
   },
   {
@@ -3793,44 +3934,29 @@
       "length" : 3
     },
     {
-      "activity" : "checkR4R4B",
-      "start" : 118,
-      "length" : 1
-    },
-    {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 58
+      "length" : 37
     },
     {
       "activity" : "validate",
-      "start" : 126,
-      "length" : 70
-    },
-    {
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
+      "start" : 125,
+      "length" : 48
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 9
+      "start" : 165,
+      "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 178
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 250,
-      "length" : 1
+      "start" : 198,
+      "length" : 129
     }]
   },
   {
@@ -3849,27 +3975,37 @@
     {
       "activity" : "generateNarratives",
       "start" : 123,
-      "length" : 2
-    },
-    {
-      "activity" : "validate",
-      "start" : 126,
-      "length" : 19
-    },
-    {
-      "activity" : "translate",
-      "start" : 161,
       "length" : 4
     },
     {
+      "activity" : "validate",
+      "start" : 125,
+      "length" : 13
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 5
+    },
+    {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 12
+      "start" : 165,
+      "length" : 8
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 63
+      "start" : 198,
+      "length" : 79
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 237,
+      "length" : 1
     }]
   },
   {
@@ -3883,36 +4019,36 @@
     {
       "activity" : "checkR4R4B",
       "start" : 118,
-      "length" : 4
+      "length" : 3
     },
     {
-      "activity" : "scanForUsageStats",
-      "start" : 155,
+      "activity" : "generateNarratives",
+      "start" : 123,
       "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 161,
-      "length" : 61
+      "start" : 153,
+      "length" : 89
     },
     {
       "activity" : "translate",
-      "start" : 161,
+      "start" : 154,
       "length" : 6
     },
     {
       "activity" : "generate1",
-      "start" : 172,
-      "length" : 65
+      "start" : 165,
+      "length" : 63
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 2102
+      "start" : 198,
+      "length" : 2571
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 315,
+      "start" : 299,
       "length" : 2
     }]
   },
@@ -3921,26 +4057,26 @@
     "size" : 5700,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/fsh-generated/includes/fsh-link-references.md",
-    "size" : 7356,
+    "size" : 7818,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -3949,7 +4085,7 @@
     "size" : 504,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     }]
   },
@@ -3958,7 +4094,7 @@
     "size" : 1804,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -3967,57 +4103,52 @@
     "size" : 1336,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-koerperstruktur-intro.md",
-    "size" : 821,
-    "processes" : [{
-      "activity" : "scan",
-      "start" : 118,
-      "length" : 1
-    }]
+    "size" : 821
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-sop-instanz-uid-intro.md",
     "size" : 522,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-radiologischer-befund-intro.md",
-    "size" : 2817
+    "size" : 2817,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur-intro.md",
-    "size" : 652,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    }]
+    "size" : 652
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung-intro.md",
     "size" : 1054,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4030,7 +4161,7 @@
     "size" : 748,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     }]
   },
@@ -4038,53 +4169,58 @@
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-gewicht-intro.md",
     "size" : 1338,
     "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-bildgebungsgrund-intro.md",
-    "size" : 1472,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    }]
+    "size" : 1472
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx-intro.md",
-    "size" : 1858
+    "size" : 1858,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung-intro.md",
     "size" : 566,
     "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-pt-intro.md",
-    "size" : 3470
+    "size" : 3470,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-ct-intro.md",
     "size" : 1666,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4096,8 +4232,8 @@
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-serie-schichtdicke-intro.md",
     "size" : 1504,
     "processes" : [{
-      "activity" : "generate2",
-      "start" : 211,
+      "activity" : "validate",
+      "start" : 153,
       "length" : 1
     }]
   },
@@ -4105,8 +4241,8 @@
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-kontrastmittel-intro.md",
     "size" : 1400,
     "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
+      "activity" : "generate2",
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4114,8 +4250,8 @@
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht-intro.md",
     "size" : 758,
     "processes" : [{
-      "activity" : "generate2",
-      "start" : 211,
+      "activity" : "validate",
+      "start" : 153,
       "length" : 1
     }]
   },
@@ -4124,12 +4260,12 @@
     "size" : 3424,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4142,12 +4278,12 @@
     "size" : 1107,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4160,12 +4296,12 @@
     "size" : 656,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4174,7 +4310,7 @@
     "size" : 650,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     }]
   },
@@ -4183,115 +4319,115 @@
     "size" : 4513,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/input/pagecontent/value-sets.md",
-    "size" : 1467
+    "size" : 1467,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 201,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/profiles.md",
     "size" : 1589,
     "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/input/pagecontent/extensions.md",
-    "size" : 1844
+    "size" : 1844,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/code-systems.md",
     "size" : 3144,
     "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/input/pagecontent/downloads.md",
-    "size" : 3287
+    "size" : 3287,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/examples.md",
-    "size" : 2158,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    }]
+    "size" : 2158
   },
   {
     "name" : "/input/pagecontent/security-and-privacy.md",
     "size" : 4463,
     "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/input/pagecontent/logical-models.md",
-    "size" : 1055,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    }]
+    "size" : 1055
   },
   {
     "name" : "/input/pagecontent/metadata.md",
     "size" : 20958,
     "processes" : [{
-      "activity" : "generate2",
-      "start" : 211,
+      "activity" : "validate",
+      "start" : 153,
       "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 201,
+      "length" : 2
     }]
   },
   {
     "name" : "/input/pagecontent/translationinfo.md",
-    "size" : 982,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    }]
+    "size" : 982
   },
   {
     "name" : "/input/pagecontent/guidance.md",
-    "size" : 1316
+    "size" : 1316,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 201,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/changes.md",
     "size" : 4250,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate2",
-      "start" : 211,
+      "start" : 153,
       "length" : 1
     }]
   },
@@ -4304,7 +4440,12 @@
     "size" : 3488,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4312,8 +4453,8 @@
     "name" : "/input/pagecontent/uml-diagrams.md",
     "size" : 2784,
     "processes" : [{
-      "activity" : "generate2",
-      "start" : 211,
+      "activity" : "validate",
+      "start" : 153,
       "length" : 1
     }]
   },
@@ -4321,8 +4462,8 @@
     "name" : "/input/pagecontent/index.md",
     "size" : 9779,
     "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
+      "activity" : "generate2",
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4330,49 +4471,49 @@
     "name" : "/input/pagecontent/implementer-guidance.md",
     "size" : 6943,
     "processes" : [{
+      "activity" : "checkConformanceResources",
+      "start" : 149,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/input/intro-notes",
-    "size" : 0,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    }]
+    "size" : 0
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-serie-uid-intro.md",
     "size" : 504,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-mr-intro.md",
-    "size" : 1804,
-    "processes" : [{
-      "activity" : "scan",
-      "start" : 118,
-      "length" : 1
-    },
-    {
-      "activity" : "generate2",
-      "start" : 211,
-      "length" : 1
-    }]
+    "size" : 1804
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-groesse-intro.md",
     "size" : 1336,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     }]
   },
@@ -4381,25 +4522,30 @@
     "size" : 821,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-sop-instanz-uid-intro.md",
-    "size" : 522,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 211,
-      "length" : 1
-    }]
+    "size" : 522
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-radiologischer-befund-intro.md",
     "size" : 2817,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4408,25 +4554,20 @@
     "size" : 652,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung-intro.md",
-    "size" : 1054,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 211,
-      "length" : 1
-    }]
+    "size" : 1054
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-geraet-intro.md",
     "size" : 470,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     }]
   },
@@ -4435,7 +4576,12 @@
     "size" : 748,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4448,34 +4594,39 @@
     "size" : 1472,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate2",
-      "start" : 211,
+      "start" : 153,
       "length" : 1
     }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx-intro.md",
-    "size" : 1858
+    "size" : 1858,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 201,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung-intro.md",
-    "size" : 566,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    }]
+    "size" : 566
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-pt-intro.md",
     "size" : 3470,
     "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4484,7 +4635,7 @@
     "size" : 1666,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     }]
   },
@@ -4497,48 +4648,48 @@
     "size" : 1504,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     },
     {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-kontrastmittel-intro.md",
-    "size" : 1400,
-    "processes" : [{
-      "activity" : "scan",
-      "start" : 118,
-      "length" : 1
-    }]
+    "size" : 1400
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht-intro.md",
     "size" : 758,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-nm-intro.md",
-    "size" : 3424
+    "size" : 3424,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 201,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-bildgebungsstudie-intro.md",
     "size" : 3032,
     "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4547,69 +4698,74 @@
     "size" : 1107,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-us-intro.md",
-    "size" : 1544
+    "size" : 1544,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung-intro.md",
-    "size" : 656,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    }]
+    "size" : 656
   },
   {
     "name" : "/input/intro-notes/StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur-intro.md",
     "size" : 650,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    },
-    {
-      "activity" : "generate2",
-      "start" : 211,
+      "start" : 153,
       "length" : 1
     }]
   },
   {
     "name" : "/template/config",
-    "size" : 0
+    "size" : 0,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 201,
+      "length" : 1
+    }]
   },
   {
     "name" : "/template/config/_config.yml",
-    "size" : 140,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    }]
+    "size" : 140
   },
   {
     "name" : "/input/images",
-    "size" : 0
+    "size" : 0,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/images/UML_Metadaten.png",
-    "size" : 101005,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    }]
+    "size" : 101005
   },
   {
     "name" : "/input/images/UML_Befund_semistrukturiert.png",
     "size" : 370755,
     "processes" : [{
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
       "activity" : "generate2",
-      "start" : 211,
+      "start" : 201,
       "length" : 1
     }]
   },
@@ -4622,60 +4778,65 @@
     "size" : 68529,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     }]
   },
   {
     "name" : "/input/images/UML_Modul_Bildgebung_Simple.svg",
-    "size" : 28105,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 211,
-      "length" : 1
-    }]
+    "size" : 28105
   },
   {
     "name" : "/input/images/UML_Modul_Bildgebung_Simple.png",
     "size" : 32140,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 201,
       "length" : 1
     }]
   },
   {
     "name" : "/input/images/UML_Modul_Bildgebung.png",
-    "size" : 420717
+    "size" : 420717,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 201,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/images/UML_Befund_semistrukturiert.svg",
     "size" : 33702,
     "processes" : [{
-      "activity" : "generate2",
-      "start" : 211,
+      "activity" : "validate",
+      "start" : 153,
       "length" : 1
     }]
   },
   {
     "name" : "/input/images/UML_Befund_freitext.png",
-    "size" : 134070,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 161,
-      "length" : 1
-    }]
+    "size" : 134070
   },
   {
     "name" : "/input/images/UML_Befund_strukturiert.png",
-    "size" : 68529
+    "size" : 68529,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 201,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/images/UML_Befund_freitext.svg",
     "size" : 11657,
     "processes" : [{
       "activity" : "validate",
-      "start" : 161,
+      "start" : 153,
       "length" : 1
     }]
   },
@@ -4683,18 +4844,18 @@
     "name" : "/input/images/UML_Modul_Bildgebung.svg",
     "size" : 136588,
     "processes" : [{
-      "activity" : "generate2",
-      "start" : 211,
+      "activity" : "validate",
+      "start" : 153,
       "length" : 1
     }]
   },
   {
     "name" : "/temp/pages/_includes/artifacts.xml",
-    "size" : 49988,
+    "size" : 52516,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 211,
-      "length" : 2
+      "start" : 201,
+      "length" : 3
     }]
   }]
 }

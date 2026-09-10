@@ -20,9 +20,9 @@ Profile: [MII PR Bildgebung Bildgebungsstudie](StructureDefinition-mii-pr-bildge
 
 **modality**: [DICOM: CR](http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-CR) (Computed Radiography)
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-PatExample.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-bildgebung-radiologischer-patient.md)
 
-**encounter**: [Encounter/EncExample](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/EncExample)
+**encounter**: [Encounter: status = finished; class = AMB (AMB)](Encounter-mii-exa-bildgebung-radiologischer-fall.md)
 
 **basedOn**: [ServiceRequest Mammography (procedure)](ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.md)
 
@@ -32,7 +32,7 @@ Profile: [MII PR Bildgebung Bildgebungsstudie](StructureDefinition-mii-pr-bildge
 
 **procedureReference**: [Procedure Screening mammography of bilateral breasts (procedure)](Procedure-mii-exa-bildgebung-bildgebungsprozedur.md)
 
-**reasonReference**: [Condition/CondExample](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Condition/CondExample)
+**reasonReference**: [Condition ](Condition-mii-exa-bildgebung-radiologische-diagnose.md)
 
 **description**: Thorax auf Station;
 
@@ -86,7 +86,7 @@ Profile: [MII PR Bildgebung Bildgebungsstudie](StructureDefinition-mii-pr-bildge
     "display" : "Computed Radiography"
   }],
   "subject" : {
-    "reference" : "Patient/PatExample",
+    "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient",
     "identifier" : {
       "type" : {
         "coding" : [{
@@ -100,7 +100,7 @@ Profile: [MII PR Bildgebung Bildgebungsstudie](StructureDefinition-mii-pr-bildge
     }
   },
   "encounter" : {
-    "reference" : "Encounter/EncExample"
+    "reference" : "Encounter/mii-exa-bildgebung-radiologischer-fall"
   },
   "basedOn" : [{
     "reference" : "ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"
@@ -111,7 +111,7 @@ Profile: [MII PR Bildgebung Bildgebungsstudie](StructureDefinition-mii-pr-bildge
     "reference" : "Procedure/mii-exa-bildgebung-bildgebungsprozedur"
   },
   "reasonReference" : [{
-    "reference" : "Condition/CondExample"
+    "reference" : "Condition/mii-exa-bildgebung-radiologische-diagnose"
   }],
   "description" : "Thorax auf Station;",
   "series" : [{

@@ -20,11 +20,11 @@ Profile: [MII PR Bildgebung Radiologische Befundungsprozedur](StructureDefinitio
 
 **code**: Consultation and report by radiologist (procedure)
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-PatExample.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-bildgebung-radiologischer-patient.md)
 
 **performed**: 2024-07-19 12:03:30+0200
 
-**report**: [Diagnostic Report for 'Mammography report' for '->Erika Beispielpatientin Female, DoB: 1970-01-01'](DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.md)
+**report**: [DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund)
 
 
 
@@ -53,7 +53,7 @@ Profile: [MII PR Bildgebung Radiologische Befundungsprozedur](StructureDefinitio
     }]
   },
   "subject" : {
-    "reference" : "Patient/PatExample"
+    "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient"
   },
   "performedDateTime" : "2024-07-19T12:03:30+02:00",
   "report" : [{

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-bildgebung-kontrastmittel"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Medication mii-exa-bildgebung-kontrastmittel</b></p><a name="mii-exa-bildgebung-kontrastmittel"> </a><a name="hcmii-exa-bildgebung-kontrastmittel"> </a><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 395756007}">Iopromide</span></p></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Medication mii-exa-bildgebung-kontrastmittel</b></p><a name="de-mii-exa-bildgebung-kontrastmittel"> </a><a name="de-hcmii-exa-bildgebung-kontrastmittel"> </a><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 395756007}">Iopromide</span></p></div></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="395756007"/>
+      <display value="Iopromide"/>
+    </coding>
+    <text value="Iopromide"/>
+  </code>
+</Medication>

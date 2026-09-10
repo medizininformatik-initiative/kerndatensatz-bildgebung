@@ -20,9 +20,9 @@ Profile: [MII PR Bildgebung Behandlungsempfehlung](StructureDefinition-mii-pr-bi
 
 **description**: The patient must receive vacuum biopsy
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-PatExample.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-bildgebung-radiologischer-patient.md)
 
-**supportingInfo**: [Diagnostic Report for 'Mammography report' for '->Erika Beispielpatientin Female, DoB: 1970-01-01'](DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.md)
+**supportingInfo**: [Diagnostic Report for 'Mammography report' for '->Erika Beispielpatientin Female, DoB: 1970-01-01'](DiagnosticReport-mii-exa-bildgebung-radiologischer-befund.md)
 
 
 
@@ -39,10 +39,10 @@ Profile: [MII PR Bildgebung Behandlungsempfehlung](StructureDefinition-mii-pr-bi
   "intent" : "proposal",
   "description" : "The patient must receive vacuum biopsy",
   "subject" : {
-    "reference" : "Patient/PatExample"
+    "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient"
   },
   "supportingInfo" : [{
-    "reference" : "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
+    "reference" : "DiagnosticReport/mii-exa-bildgebung-radiologischer-befund"
   }]
 }
 

@@ -20,9 +20,9 @@ Profile: [MII PR Bildgebung Bildgebungsstudie](StructureDefinition-mii-pr-bildge
 
 **modality**: [DICOM: CT](http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-CT) (Computed Tomography)
 
-**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-PatExample.md)
+**subject**: [Erika Beispielpatientin Female, DoB: 1970-01-01](Patient-mii-exa-bildgebung-radiologischer-patient.md)
 
-**encounter**: [Encounter/EncExample](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/EncExample)
+**encounter**: [Encounter: status = finished; class = AMB (AMB)](Encounter-mii-exa-bildgebung-radiologischer-fall.md)
 
 **basedOn**: [ServiceRequest Mammography (procedure)](ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.md)
 
@@ -32,7 +32,7 @@ Profile: [MII PR Bildgebung Bildgebungsstudie](StructureDefinition-mii-pr-bildge
 
 **procedureReference**: [Procedure Screening mammography of bilateral breasts (procedure)](Procedure-mii-exa-bildgebung-bildgebungsprozedur.md)
 
-**reasonReference**: [Condition/CondExample](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Condition/CondExample)
+**reasonReference**: [Condition ](Condition-mii-exa-bildgebung-radiologische-diagnose.md)
 
 **description**: whole body aquisition
 
@@ -47,10 +47,24 @@ Profile: [MII PR Bildgebung Bildgebungsstudie](StructureDefinition-mii-pr-bildge
 
 > **MII EX Bildgebung Kontrastmittel**
 * contrastBolus: true
-* contrastBolusDetails: 
+* contrastBolusDetails: [MedicationAdministration: status = completed; medication[x] = ->Medication Iopromide; effective[x] = 2024-07-19 12:21:45+0200 --> 2024-07-19 12:22:45+0200](MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.md)
 
+**uid**: series-example-uid**number**: 1**modality**: [DICOM: CT](http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-CT) (Computed Tomography)**description**: AC LD CT Whole Body 4.0 HD Field of View**numberOfInstances**: 195**bodySite**: [SNOMED CT: 51185008](http://snomed.info/id/51185008) (Thoracic structure (body structure))**laterality**: [SNOMED CT: 7771000](http://snomed.info/id/7771000) (Left)**started**: 2024-07-19 12:03:30+0200
 
-**Exception Generating Narrative: Cannot invoke "org.hl7.fhir.r5.renderers.utils.ResourceWrapper.fhirType()" because "resource" is null **
+### Performers
+
+| | |
+| :--- | :--- |
+| - | **Actor** |
+| * | [Device: manufacturer = Siemens](Device-mii-exa-bildgebung-geraet.md) |
+
+### Instances
+
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| - | **Extension** | **Uid** | **SopClass** | **Number** |
+| * |  | instance-example-uid | unknown: urn:oid:1.2.840.10008.5.1.4.1.1.2 (urn:oid:1.2.840.10008.5.1.4.1.1.2) | 31 |
+
 
 
 
@@ -74,7 +88,7 @@ Profile: [MII PR Bildgebung Bildgebungsstudie](StructureDefinition-mii-pr-bildge
     "display" : "Computed Tomography"
   }],
   "subject" : {
-    "reference" : "Patient/PatExample",
+    "reference" : "Patient/mii-exa-bildgebung-radiologischer-patient",
     "identifier" : {
       "type" : {
         "coding" : [{
@@ -88,7 +102,7 @@ Profile: [MII PR Bildgebung Bildgebungsstudie](StructureDefinition-mii-pr-bildge
     }
   },
   "encounter" : {
-    "reference" : "Encounter/EncExample"
+    "reference" : "Encounter/mii-exa-bildgebung-radiologischer-fall"
   },
   "basedOn" : [{
     "reference" : "ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung"
@@ -99,7 +113,7 @@ Profile: [MII PR Bildgebung Bildgebungsstudie](StructureDefinition-mii-pr-bildge
     "reference" : "Procedure/mii-exa-bildgebung-bildgebungsprozedur"
   },
   "reasonReference" : [{
-    "reference" : "Condition/CondExample"
+    "reference" : "Condition/mii-exa-bildgebung-radiologische-diagnose"
   }],
   "description" : "whole body aquisition",
   "series" : [{
