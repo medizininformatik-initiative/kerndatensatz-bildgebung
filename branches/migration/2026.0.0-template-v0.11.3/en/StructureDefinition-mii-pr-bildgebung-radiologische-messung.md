@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-08 | *Computable Name*:MII_PR_Bildgebung_Radiologische_Messung |
+| Active as of 2026-09-10 | *Computable Name*:MII_PR_Bildgebung_Radiologische_Messung |
 
  
 The profile describes a observation for radiological images. 
@@ -103,7 +103,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-bildgebung
     }]
   },
   "status" : "active",
-  "date" : "2026-09-08T13:41:14+00:00",
+  "date" : "2026-09-10T11:56:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{

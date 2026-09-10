@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-gewicht | *Version*:2027.0.0-ballot |
-| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_EX_Bildgebung_Gewicht |
+| Active Stand: 2026-09-10 | *Maschinenlesbarer Name*:MII_EX_Bildgebung_Gewicht |
 
 Die Extension ermöglicht es, das Körpergewicht aus dem entsprechenden DICOM Tag [0010,1030] auf Studien-Ebene anzugeben.
 
@@ -128,7 +128,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-bildg
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T13:41:14+00:00",
+  "date" : "2026-09-10T11:56:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{

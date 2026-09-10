@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid | *Version*:2027.0.0-ballot |
-| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_EX_Bildgebung_Serie_UID |
+| Active Stand: 2026-09-10 | *Maschinenlesbarer Name*:MII_EX_Bildgebung_Serie_UID |
 
 Die Extension ermöglicht es, den Bildnummer aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben.
 
@@ -121,7 +121,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-bildg
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T13:41:14+00:00",
+  "date" : "2026-09-10T11:56:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{
