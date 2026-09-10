@@ -8,10 +8,10 @@
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/PatExample"
+    "reference": "Patient/mii-exa-bildgebung-radiologischer-patient"
   },
   "medicationReference": {
-    "reference": "Medication/MedExample"
+    "reference": "Medication/mii-exa-bildgebung-kontrastmittel"
   },
   "effectivePeriod": {
     "end": "2024-07-19T12:22:45+02:00",

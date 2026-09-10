@@ -1,0 +1,20 @@
+{
+  "resourceType": "Condition",
+  "id": "mii-exa-bildgebung-radiologische-diagnose",
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active"
+      }
+    ]
+  },
+  "code": {
+    "text": "Liver lesion"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-bildgebung-radiologischer-patient"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-bildgebung-radiologischer-fall"
+  }
+}

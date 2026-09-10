@@ -9,7 +9,7 @@ Title: "MII Example Bildgebung Radiologische Beobachtung"
 * status = #final
 * category = $observation-category#imaging "Imaging"
 * code = $loinc#32422-8 "Physical findings of Breast"
-* subject = Reference(Patient/PatExample)
+* subject = Reference(Patient/mii-exa-bildgebung-radiologischer-patient)
 * issued = "2024-07-19T12:03:30+02:00"
 * valueString = "microcalcifications in the upper outer quadrant in the left breast"
 * bodySite = $SCT#76752008 "Breast structure (body structure)"

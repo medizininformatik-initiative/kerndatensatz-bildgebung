@@ -1,6 +1,6 @@
 {
   "resourceType": "DiagnosticReport",
-  "id": "mii-exa-bildgebung-radiologischer-Befund",
+  "id": "mii-exa-bildgebung-radiologischer-befund",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
@@ -14,14 +14,6 @@
           "system": "http://snomed.info/sct"
         }
       ]
-    }
-  ],
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
-      "valueReference": {
-        "reference": "DiagnosticReport/DiagRepExample"
-      }
     }
   ],
   "basedOn": [
@@ -40,10 +32,10 @@
     ]
   },
   "subject": {
-    "reference": "Patient/PatExample"
+    "reference": "Patient/mii-exa-bildgebung-radiologischer-patient"
   },
   "encounter": {
-    "reference": "Encounter/EncExample"
+    "reference": "Encounter/mii-exa-bildgebung-radiologischer-fall"
   },
   "effectiveDateTime": "2024-07-19T12:03:30+02:00",
   "issued": "2024-07-19T12:03:30+02:00",

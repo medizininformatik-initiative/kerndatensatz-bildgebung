@@ -9,11 +9,11 @@ Title: "MII Example Bildgebung Radiologische Messung"
 * status = #final
 * category = $SCT#122869004 "Measurement procedure (procedure)"
 * code = $SCT#439984002 "Diameter of structure by imaging measurement (observable entity)"
-* subject = Reference(Patient/PatExample)
+* subject = Reference(Patient/mii-exa-bildgebung-radiologischer-patient)
 * issued = "2024-07-19T12:03:30+02:00"
 * bodySite = $SCT#76752008 "Breast structure (body structure)"
 * bodySite.extension[$bodyStructure].valueReference = Reference(BodyStructure/mii-exa-bildgebung-koerperstruktur)
-* hasMember = Reference(Observation/ObsExample)
+* hasMember = Reference(Observation/mii-exa-bildgebung-radiologische-beobachtung)
 * derivedFrom = Reference(ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct)
 * valueQuantity.value = 4.2
 * valueQuantity.system = $ucum

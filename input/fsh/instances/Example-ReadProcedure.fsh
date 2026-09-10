@@ -6,6 +6,6 @@ Title: "MII Example Bildgebung ReadProcedure"
 * status = #completed
 * category = $SCT#363679005 "Imaging (procedure)"
 * code = $SCT#28191001 "Consultation and report by radiologist (procedure)"
-* subject = Reference(Patient/PatExample)
+* subject = Reference(Patient/mii-exa-bildgebung-radiologischer-patient)
 * performedDateTime = "2024-07-19T12:03:30+02:00"
 * report = Reference(DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund)
