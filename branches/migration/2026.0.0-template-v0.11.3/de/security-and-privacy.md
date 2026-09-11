@@ -19,12 +19,6 @@ Wie Daten, die ein Datenintegrationszentrum verlassen, praktisch de-identifizier
 
 #### 3. Modul-spezifische Aspekte
 
-Dies ist der eigene Beitrag des Moduls: die Sicherheits- und Datenschutz-Eigenschaften, die aus der **Art der Daten dieses Moduls** folgen. **Der Inhalt dieses Abschnitts ist optional** — nicht jedes Modul hat eigene Aspekte. Hat Ihres keine, besteht der gesamte Abschnitt aus dem folgenden Standardtext (löschen Sie die Beispiel- und TODO-Boxen unten und übernehmen Sie ihn wörtlich):
-
-> Über den oben verlinkten übergreifenden Rahmen hinaus — das übergreifende Datenschutzkonzept, den ihm zugrunde liegenden Broad Consent und DIMP — führt dieses Modul keine Datenkategorie, die eigene Sicherheits- oder Datenschutzaspekte aufwirft, und stellt keine modulspezifischen Sicherheits- oder Datenschutzanforderungen an Implementierende.
-
-> **Written during migration - review before release.** Die folgenden modulspezifischen Aspekte wurden aus den Artefakten des Moduls abgeleitet (Instanzdetails-Extension: `burnedInAnnotation`; DICOM-Metadaten in der ImagingStudy); sie standen nicht als Narrativ im Quell-Leitfaden.
-
 Über den oben verlinkten übergreifenden Rahmen hinaus verdienen zwei Eigenschaften von Bildgebungsdaten bei der Implementierung dieses Moduls Beachtung:
 
 * **Identifizierende DICOM-Metadaten.** Das ImagingStudy-Profil und seine Extensions übernehmen Werte direkt aus DICOM-Headern (UIDs, Gerätedaten, Aufnahmeparameter). DICOM-Header der Quellsysteme können direkt identifizierende Attribute enthalten; welche Elemente eine konkrete Datenausleitung überstehen, entscheidet die DIMP-Konfiguration.

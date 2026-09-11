@@ -17,12 +17,6 @@ How data leaving a Data Integration Center is de-identified in practice is speci
 
 #### 3. Module-specific aspects
 
-This is the module's own contribution: the security and privacy properties that follow from the **kind of data this module carries**. **Its content is optional** — not every module has aspects of its own. If yours does not, the whole section body becomes the following default text (delete the example and TODO boxes below and adopt it verbatim):
-
-> Beyond the overarching framework above — the overarching data protection concept, the Broad Consent it rests on, and DIMP — this module carries no data category that raises security or privacy aspects of its own, and it places no module-specific security or privacy requirements on implementers.
-
-> **Written during migration - review before release.** The following module-specific aspects were derived from the module's own artifacts (instance-details extension: `burnedInAnnotation`; DICOM metadata in ImagingStudy); they were not present as narrative in the source guide.
-
 Beyond the overarching framework above, two properties of imaging data deserve attention when this module is implemented:
 
 * **Identifying DICOM metadata.** The ImagingStudy profile and its extensions carry values taken directly from DICOM headers (UIDs, device data, acquisition parameters). DICOM headers in the source systems can contain directly identifying attributes; the DIMP configuration decides which elements survive a concrete data release.

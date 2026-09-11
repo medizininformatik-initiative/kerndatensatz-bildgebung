@@ -145,7 +145,7 @@
 
 
 
-  <img alt="Germany Flagge" src="assets/images/deu.svg" height="16" title="Germany"/>
+  Germany
 
 
             </span>
@@ -335,8 +335,8 @@ Modellierungsentscheidungen übernommen.
 Auf europäischer Ebene sind insbesondere die Arbeiten im Rahmen des European
 Health Data Space (EHDS) relevant, in dem aktuell Harmonisierungsvorschläge zu
 Bildgebungsdatenmodellen diskutiert werden. Das MII KDS-Modul Bildgebung wird
-im nächsten Release (2027) auf mögliche Anpassungs- und Kompatibilitätsbedarfe
-hin überprüft werden.
+bei jedem Release auf mögliche Anpassungs- und Kompatibilitätsbedarfe
+hin überprüft.
 Auch das Modell aus dem Swiss Personalized Health Network (SPHN) enthält
 einzelne konzeptionelle Ansätze, die zukünftig für die Weiterentwicklung des
 Moduls relevant sein könnten.</p>
@@ -345,10 +345,10 @@ Moduls relevant sein könnten.</p>
 
 <p>Die Zuordnung von Bildgebungsstudien zu einem Patienten oder einer Patientin
 erfolgt über Referenzen von der Ressource <strong>Studie</strong> (ImagingStudy) zum Modul
-<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/de/">PERSON</a>.
+<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis">PERSON</a>.
 Ebenso wird im <strong>Befundbericht</strong> (DiagnosticReport) und in der <strong>Anforderung</strong>
 (ServiceRequest) das Modul
-<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/de/">PERSON</a>
+<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis">PERSON</a>
 referenziert.</p>
 
 <h4 id="beziehung-zum-modul-fall">Beziehung zum Modul Fall</h4>
@@ -356,7 +356,7 @@ referenziert.</p>
 <p>Die Zuordnung von Bildgebungsstudien zu einem Behandlungsfall erfolgt über
 Referenzen von der Ressource <strong>Studie</strong> (ImagingStudy) bzw. <strong>Befundbericht</strong>
 (DiagnosticReport) zum Modul
-<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/de/">FALL</a>.
+<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis">FALL</a>.
 Es sollte stets eine Referenz auf den jeweiligen Behandlungsfall mitgeführt
 werden, um den Bezug der Bildgebungsstudie zu diesem Fall herzustellen.</p>
 
@@ -365,7 +365,7 @@ werden, um den Bezug der Bildgebungsstudie zu diesem Fall herzustellen.</p>
 <p>Im Zusammenhang mit bildgebenden Modalitäten kann es zu Beziehungen zu
 durchgeführten Prozeduren kommen, beispielsweise einer MRT-Untersuchung vor
 einer Operation. Für Angaben zur durchgeführten Prozedur wird das Modul
-<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/de/">PROZEDUR</a>
+<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis">PROZEDUR</a>
 in den Ressourcen <strong>Studie</strong> (ImagingStudy), <strong>Befundbericht</strong>
 (DiagnosticReport) sowie in der verknüpften Ressource <strong>GenerischeBeobachtung</strong>
 (Observation) verwendet.</p>
@@ -373,7 +373,7 @@ in den Ressourcen <strong>Studie</strong> (ImagingStudy), <strong>Befundbericht<
 <h4 id="beziehung-zum-modul-diagnose">Beziehung zum Modul Diagnose</h4>
 
 <p>Die Ressource <strong>Vorbefund</strong> (Condition) enthält Verknüpfungen zum Modul
-<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/de/">DIAGNOSE</a>,
+<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis">DIAGNOSE</a>,
 die es ermöglichen, die bildgebende Untersuchung als diagnostisches Werkzeug
 zur Unterstützung der Diagnose zu erfassen. Diese werden über eine Referenz in
 der Ressource <strong>Anforderung</strong> (ServiceRequest) abgebildet, welche wiederum im
@@ -384,7 +384,7 @@ der Ressource <strong>Anforderung</strong> (ServiceRequest) abgebildet, welche w
 <p>Zur Darstellung der Kontrastmittelgabe wird sowohl in der
 <strong>Bildgebungsprozedur</strong> (Procedure), als auch in der <strong>Studie</strong> (ImagingStudy)
 ein Bezug auf das Modul
-<a href="https://www.medizininformatik-initiative.de/Kerndatensatz/KDS_Medikation_2026/MIIIGModulMedikation.html">MEDIKATION</a>
+<a href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation">MEDIKATION</a>
 hergestellt. In der <strong>Bildgebungsprozedur</strong> wird die Kontrastmittelgabe mit
 Hilfe der <strong>Medikamentenverabreichung</strong> (MedicationAdministration) abgebildet
 und in der <strong>Studie</strong> (ImagingStudy) zusätzlich durch die
@@ -462,7 +462,7 @@ sowie der Datensatzbeschreibung in
 
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Thu, Sep 10, 2026 13:12+0000">2026-09-10</span>
+          Erstellt <span title="Fri, Sep 11, 2026 13:12+0000">2026-09-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

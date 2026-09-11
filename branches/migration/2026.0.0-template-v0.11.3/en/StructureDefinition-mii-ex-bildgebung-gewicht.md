@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-gewicht | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-10 | *Computable Name*:MII_EX_Bildgebung_Gewicht |
+| Active as of 2026-09-11 | *Computable Name*:MII_EX_Bildgebung_Gewicht |
 
 The extension allows specifying the patient weight from the corresponding DICOM tag [0010/1030] at the study level.
 
@@ -99,7 +99,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-bildgebung
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-10T13:12:52+00:00",
+  "date" : "2026-09-11T13:12:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{

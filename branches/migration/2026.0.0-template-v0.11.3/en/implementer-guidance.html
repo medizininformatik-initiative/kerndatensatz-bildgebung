@@ -145,7 +145,7 @@
 
 
 
-  <img alt="Germany flag" src="assets/images/deu.svg" height="16" title="Germany"/>
+  Germany
 
 
             </span>
@@ -362,9 +362,8 @@ German context. Other national initiatives, such as MIO42, were involved in
 the development and have adopted structural modelling decisions.
 At the European level, the work within the European Health Data Space (EHDS)
 is particularly relevant; harmonization proposals for imaging data models are
-currently being discussed there. The MII KDS module Bildgebung will be
-reviewed for possible adaptation and compatibility needs in the next release
-(2027).
+currently being discussed there. The MII KDS module Bildgebung is being
+reviewed for possible adaptation and compatibility needs in every release.
 The model of the Swiss Personalized Health Network (SPHN) also contains
 individual conceptual approaches that could become relevant for the future
 development of the module.</p>
@@ -373,17 +372,17 @@ development of the module.</p>
 
 <p>Imaging studies are assigned to a patient via references from the <strong>study</strong>
 resource (ImagingStudy) to the module
-<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/">PERSON</a>.
+<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis">PERSON</a>.
 Likewise, the <strong>diagnostic report</strong> (DiagnosticReport) and the <strong>request</strong>
 (ServiceRequest) reference the module
-<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/">PERSON</a>.</p>
+<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis">PERSON</a>.</p>
 
 <h4 id="relation-to-the-module-fall-encounter">Relation to the module Fall (encounter)</h4>
 
 <p>Imaging studies are assigned to an encounter via references from the <strong>study</strong>
 resource (ImagingStudy) or the <strong>diagnostic report</strong> (DiagnosticReport) to the
 module
-<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/">FALL</a>.
+<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis">FALL</a>.
 A reference to the respective encounter should always be carried along to
 establish the relation of the imaging study to that encounter.</p>
 
@@ -392,7 +391,7 @@ establish the relation of the imaging study to that encounter.</p>
 <p>In connection with imaging modalities there can be relations to performed
 procedures, for example an MRI examination before an operation. For
 information about the performed procedure, the module
-<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/">PROZEDUR</a>
+<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis">PROZEDUR</a>
 is used in the resources <strong>study</strong> (ImagingStudy), <strong>diagnostic report</strong>
 (DiagnosticReport) and in the linked resource <strong>generic observation</strong>
 (Observation).</p>
@@ -400,7 +399,7 @@ is used in the resources <strong>study</strong> (ImagingStudy), <strong>diagnost
 <h4 id="relation-to-the-module-diagnose-diagnosis">Relation to the module Diagnose (diagnosis)</h4>
 
 <p>The <strong>previous finding</strong> resource (Condition) contains links to the module
-<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/">DIAGNOSE</a>,
+<a href="https://medizininformatik-initiative.github.io/kerndatensatz-basis">DIAGNOSE</a>,
 which make it possible to record the imaging examination as a diagnostic tool
 supporting the diagnosis. These are represented via a reference in the
 <strong>request</strong> resource (ServiceRequest), which in turn is referenced in the
@@ -410,7 +409,7 @@ supporting the diagnosis. These are represented via a reference in the
 
 <p>To represent contrast administration, both the <strong>imaging procedure</strong>
 (Procedure) and the <strong>study</strong> (ImagingStudy) establish a relation to the module
-<a href="https://www.medizininformatik-initiative.de/Kerndatensatz/KDS_Medikation_2026/MIIIGModulMedikation.html">MEDIKATION</a>.
+<a href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation">MEDIKATION</a>.
 In the <strong>imaging procedure</strong>, the contrast administration is represented via
 the <strong>medication administration</strong> (MedicationAdministration), and in the
 <strong>study</strong> (ImagingStudy) it is additionally complemented by the <strong>medication
@@ -488,7 +487,7 @@ and the dataset description in
 
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Sep 10, 2026 13:12+0000">2026-09-10</span>
+          Generated <span title="Fri, Sep 11, 2026 13:12+0000">2026-09-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

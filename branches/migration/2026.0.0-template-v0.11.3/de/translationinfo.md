@@ -9,9 +9,13 @@
 
 ### Übersetzungsinformationen
 
-Dieser Leitfaden ist **englischsprachig** (Standardsprache); **Deutsch** ist die Übersetzung. Englisch ist damit sowohl die Basis-Darstellung des Leitfadens als auch die `/en/`-Darstellung; über den Sprachumschalter oben rechts wechseln Sie zwischen `/en/` und `/de/`.
+Dieser Leitfaden ist **englischsprachig** (Standardsprache); **Deutsch** ist die Übersetzung. Englisch ist damit sowohl die Basis-Darstellung des Leitfadens als auch die `/en/`-Darstellung; über den Sprachumschalter oben rechts wechseln Sie zwischen `/en/` und `/de/`. Es wurden Anstrengungen unternommen, um genaue Übersetzungen sicherzustellen. Im Falle von Unstimmigkeiten zwischen den Übersetzungen, geben Sie bitte Feedback und schlagen Verbesserungen vor.
 
-Übersetzte Seiten liegen unter `input/translations/de/pagecontent/` (gleicher Dateiname wie die englische Seite); Ressourcen-Übersetzungen als `.po`-Dateien unter `input/translations/de/`. Details: [`docs/recipes/add-translation.md`](https://github.com/medizininformatik-initiative/kerndatensatz-bildgebung/blob/main/docs/recipes/add-translation.md) in diesem Repository.
+#### Teilweise übersetzte Inhalte
 
-> [TODO: Vermerken Sie, welche Teile des Moduls bereits ins Deutsche übersetzt sind.]
+Einige Inhalte sind derzeit nur auf Deutsch verfügbar:
+
+* UML-Diagramme - Alle UML-Diagramme enthalten deutsche Beschriftungen und Anmerkungen
+* Logische Modelle - Die Dokumentation der logischen Modelle ist derzeit nur auf Deutsch verfügbar
+* Profile - Profilseiten können gemischte englische und deutsche Inhalte enthalten, da FHIR-Kernelemente auf Englisch sind, während Extensions und Datentypen aus den Deutschen FHIR-Basisprofilen deutsche Beschreibungen und Terminologie enthalten können.
 

@@ -89,7 +89,7 @@ Scientists using KDS data for medical research.
 
 ### Related guides
 
-The MII Core Dataset consists of several modules; the [Meta module](https://www.medizininformatik-initiative.de/fhir/fdpg/ImplementationGuide/mii-ig-meta) holds the cross-module artifacts. The basic modules (Person, Fall, Diagnose, Prozedur, Laborbefund, Medikation, Consent) are referenced by this module — see the relations described under [Guidance for Implementers](implementer-guidance.md).
+The MII Core Dataset consists of several modules; the [Meta module](https://medizininformatik-initiative.github.io/kerndatensatz-meta) holds the cross-module artifacts. The basic modules (Person, Fall, Diagnose, Prozedur, Laborbefund, Medikation, Consent) are referenced by this module — see the relations described under [Guidance for Implementers](implementer-guidance.md).
 
 ### Imprint
 

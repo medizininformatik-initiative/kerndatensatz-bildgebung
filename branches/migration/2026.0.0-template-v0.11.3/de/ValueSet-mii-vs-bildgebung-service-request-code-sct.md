@@ -25,8 +25,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Expansion
 
-No Expansion for this valueset (Unsupported Code System Version)
-
 -------
 
  [Beschreibung der obigen Tabelle(n)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 

@@ -14,27 +14,27 @@ Imaging modalities are of essential importance for medical diagnostics and conse
 
 #### The module in the context of national and international developments
 
-Within the MII, the KDS module Bildgebung was the first comprehensive FHIR-based information model for imaging data developed and published in the German context. Other national initiatives, such as MIO42, were involved in the development and have adopted structural modelling decisions. At the European level, the work within the European Health Data Space (EHDS) is particularly relevant; harmonization proposals for imaging data models are currently being discussed there. The MII KDS module Bildgebung will be reviewed for possible adaptation and compatibility needs in the next release (2027). The model of the Swiss Personalized Health Network (SPHN) also contains individual conceptual approaches that could become relevant for the future development of the module.
+Within the MII, the KDS module Bildgebung was the first comprehensive FHIR-based information model for imaging data developed and published in the German context. Other national initiatives, such as MIO42, were involved in the development and have adopted structural modelling decisions. At the European level, the work within the European Health Data Space (EHDS) is particularly relevant; harmonization proposals for imaging data models are currently being discussed there. The MII KDS module Bildgebung is being reviewed for possible adaptation and compatibility needs in every release. The model of the Swiss Personalized Health Network (SPHN) also contains individual conceptual approaches that could become relevant for the future development of the module.
 
 #### Relation to the module Person
 
-Imaging studies are assigned to a patient via references from the **study** resource (ImagingStudy) to the module [PERSON](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/). Likewise, the **diagnostic report** (DiagnosticReport) and the **request** (ServiceRequest) reference the module [PERSON](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/).
+Imaging studies are assigned to a patient via references from the **study** resource (ImagingStudy) to the module [PERSON](https://medizininformatik-initiative.github.io/kerndatensatz-basis). Likewise, the **diagnostic report** (DiagnosticReport) and the **request** (ServiceRequest) reference the module [PERSON](https://medizininformatik-initiative.github.io/kerndatensatz-basis).
 
 #### Relation to the module Fall (encounter)
 
-Imaging studies are assigned to an encounter via references from the **study** resource (ImagingStudy) or the **diagnostic report** (DiagnosticReport) to the module [FALL](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/). A reference to the respective encounter should always be carried along to establish the relation of the imaging study to that encounter.
+Imaging studies are assigned to an encounter via references from the **study** resource (ImagingStudy) or the **diagnostic report** (DiagnosticReport) to the module [FALL](https://medizininformatik-initiative.github.io/kerndatensatz-basis). A reference to the respective encounter should always be carried along to establish the relation of the imaging study to that encounter.
 
 #### Relation to the module Prozedur (procedure)
 
-In connection with imaging modalities there can be relations to performed procedures, for example an MRI examination before an operation. For information about the performed procedure, the module [PROZEDUR](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/) is used in the resources **study** (ImagingStudy), **diagnostic report** (DiagnosticReport) and in the linked resource **generic observation** (Observation).
+In connection with imaging modalities there can be relations to performed procedures, for example an MRI examination before an operation. For information about the performed procedure, the module [PROZEDUR](https://medizininformatik-initiative.github.io/kerndatensatz-basis) is used in the resources **study** (ImagingStudy), **diagnostic report** (DiagnosticReport) and in the linked resource **generic observation** (Observation).
 
 #### Relation to the module Diagnose (diagnosis)
 
-The **previous finding** resource (Condition) contains links to the module [DIAGNOSE](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/), which make it possible to record the imaging examination as a diagnostic tool supporting the diagnosis. These are represented via a reference in the **request** resource (ServiceRequest), which in turn is referenced in the **diagnostic report** (DiagnosticReport).
+The **previous finding** resource (Condition) contains links to the module [DIAGNOSE](https://medizininformatik-initiative.github.io/kerndatensatz-basis), which make it possible to record the imaging examination as a diagnostic tool supporting the diagnosis. These are represented via a reference in the **request** resource (ServiceRequest), which in turn is referenced in the **diagnostic report** (DiagnosticReport).
 
 #### Relation to the module Medikation (medication)
 
-To represent contrast administration, both the **imaging procedure** (Procedure) and the **study** (ImagingStudy) establish a relation to the module [MEDIKATION](https://www.medizininformatik-initiative.de/Kerndatensatz/KDS_Medikation_2026/MIIIGModulMedikation.html). In the **imaging procedure**, the contrast administration is represented via the **medication administration** (MedicationAdministration), and in the **study** (ImagingStudy) it is additionally complemented by the **medication statement** (MedicationStatement).
+To represent contrast administration, both the **imaging procedure** (Procedure) and the **study** (ImagingStudy) establish a relation to the module [MEDIKATION](https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation). In the **imaging procedure**, the contrast administration is represented via the **medication administration** (MedicationAdministration), and in the **study** (ImagingStudy) it is additionally complemented by the **medication statement** (MedicationStatement).
 
 ### References
 

@@ -14,7 +14,7 @@
 
 Profile: [MII PR Bildgebung Radiologischer Befund](StructureDefinition-mii-pr-bildgebung-radiologischer-befund.md)
 
-## Mammography report (4201000179104) 
+## Mammography report (Imaging report) 
 
 | | |
 | :--- | :--- |

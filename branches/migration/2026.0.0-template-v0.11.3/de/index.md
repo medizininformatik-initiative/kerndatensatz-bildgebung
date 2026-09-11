@@ -89,7 +89,7 @@ Wissenschaftler:innen, die KDS-Daten für die medizinische Forschung nutzen.
 
 ### Verwandte Leitfäden
 
-Der MII-Kerndatensatz besteht aus mehreren Modulen; das [Meta-Modul](https://www.medizininformatik-initiative.de/fhir/fdpg/ImplementationGuide/mii-ig-meta) hält die modulübergreifenden Artefakte. Die Basismodule (Person, Fall, Diagnose, Prozedur, Laborbefund, Medikation, Consent) werden von diesem Modul referenziert — siehe die unter [Hinweise für Implementierende](implementer-guidance.md) beschriebenen Bezüge.
+Der MII-Kerndatensatz besteht aus mehreren Modulen; das [Meta-Modul](https://medizininformatik-initiative.github.io/kerndatensatz-meta) hält die modulübergreifenden Artefakte. Die Basismodule (Person, Fall, Diagnose, Prozedur, Laborbefund, Medikation, Consent) werden von diesem Modul referenziert — siehe die unter [Hinweise für Implementierende](implementer-guidance.md) beschriebenen Bezüge.
 
 ### Impressum
 

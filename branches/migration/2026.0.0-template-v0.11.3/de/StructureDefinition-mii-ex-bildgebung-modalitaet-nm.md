@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm | *Version*:2027.0.0-ballot |
-| Active Stand: 2026-09-10 | *Maschinenlesbarer Name*:MII_EX_Bildgebung_Modalitaet_NM |
+| Active Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_EX_Bildgebung_Modalitaet_NM |
 
 Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf NM Daten zu erweitern.
 
@@ -147,7 +147,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-bildg
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-10T13:12:52+00:00",
+  "date" : "2026-09-11T13:12:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{

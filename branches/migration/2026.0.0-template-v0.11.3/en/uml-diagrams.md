@@ -10,7 +10,7 @@ As a more abstract version of an information model, and to better illustrate the
 
 For better readability, the complete UML is also available [as an SVG](UML_Modul_Bildgebung.svg). For clarity, the references to the "Patient" resource were modelled only from the central profiles. Further references to it are described in the texts within the profiles and in the corresponding FHIR profiles.
 
-![](UML_Modul_Bildgebung.png)
+![](UML_Modul_Bildgebung.svg)
 
 The abstract representation of the UML shows the model purely at class level, focusing on the association relationships in the module:
 

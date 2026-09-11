@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke | *Version*:2027.0.0-ballot |
-| Active Stand: 2026-09-10 | *Maschinenlesbarer Name*:MII_EX_Bildgebung_Schichtdicke |
+| Active Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_EX_Bildgebung_Schichtdicke |
 
 Die Extension ermöglicht es, die Schichtdicke auf Serien-Ebene anzugeben, anstelle der individuellen Angabe auf Instanz-Ebene.
 
@@ -127,7 +127,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-bildg
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-10T13:12:52+00:00",
+  "date" : "2026-09-11T13:12:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{
