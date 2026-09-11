@@ -25,8 +25,8 @@ Modellierungsentscheidungen übernommen.
 Auf europäischer Ebene sind insbesondere die Arbeiten im Rahmen des European
 Health Data Space (EHDS) relevant, in dem aktuell Harmonisierungsvorschläge zu
 Bildgebungsdatenmodellen diskutiert werden. Das MII KDS-Modul Bildgebung wird
-im nächsten Release (2027) auf mögliche Anpassungs- und Kompatibilitätsbedarfe
-hin überprüft werden.
+bei jedem Release auf mögliche Anpassungs- und Kompatibilitätsbedarfe
+hin überprüft.
 Auch das Modell aus dem Swiss Personalized Health Network (SPHN) enthält
 einzelne konzeptionelle Ansätze, die zukünftig für die Weiterentwicklung des
 Moduls relevant sein könnten.
@@ -35,10 +35,10 @@ Moduls relevant sein könnten.
 
 Die Zuordnung von Bildgebungsstudien zu einem Patienten oder einer Patientin
 erfolgt über Referenzen von der Ressource **Studie** (ImagingStudy) zum Modul
-[PERSON](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/de/).
+[PERSON](https://medizininformatik-initiative.github.io/kerndatensatz-basis).
 Ebenso wird im **Befundbericht** (DiagnosticReport) und in der **Anforderung**
 (ServiceRequest) das Modul
-[PERSON](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/de/)
+[PERSON](https://medizininformatik-initiative.github.io/kerndatensatz-basis)
 referenziert.
 
 #### Beziehung zum Modul Fall
@@ -46,7 +46,7 @@ referenziert.
 Die Zuordnung von Bildgebungsstudien zu einem Behandlungsfall erfolgt über
 Referenzen von der Ressource **Studie** (ImagingStudy) bzw. **Befundbericht**
 (DiagnosticReport) zum Modul
-[FALL](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/de/).
+[FALL](https://medizininformatik-initiative.github.io/kerndatensatz-basis).
 Es sollte stets eine Referenz auf den jeweiligen Behandlungsfall mitgeführt
 werden, um den Bezug der Bildgebungsstudie zu diesem Fall herzustellen.
 
@@ -55,7 +55,7 @@ werden, um den Bezug der Bildgebungsstudie zu diesem Fall herzustellen.
 Im Zusammenhang mit bildgebenden Modalitäten kann es zu Beziehungen zu
 durchgeführten Prozeduren kommen, beispielsweise einer MRT-Untersuchung vor
 einer Operation. Für Angaben zur durchgeführten Prozedur wird das Modul
-[PROZEDUR](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/de/)
+[PROZEDUR](https://medizininformatik-initiative.github.io/kerndatensatz-basis)
 in den Ressourcen **Studie** (ImagingStudy), **Befundbericht**
 (DiagnosticReport) sowie in der verknüpften Ressource **GenerischeBeobachtung**
 (Observation) verwendet.
@@ -63,7 +63,7 @@ in den Ressourcen **Studie** (ImagingStudy), **Befundbericht**
 #### Beziehung zum Modul Diagnose
 
 Die Ressource **Vorbefund** (Condition) enthält Verknüpfungen zum Modul
-[DIAGNOSE](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/de/),
+[DIAGNOSE](https://medizininformatik-initiative.github.io/kerndatensatz-basis),
 die es ermöglichen, die bildgebende Untersuchung als diagnostisches Werkzeug
 zur Unterstützung der Diagnose zu erfassen. Diese werden über eine Referenz in
 der Ressource **Anforderung** (ServiceRequest) abgebildet, welche wiederum im
@@ -74,7 +74,7 @@ der Ressource **Anforderung** (ServiceRequest) abgebildet, welche wiederum im
 Zur Darstellung der Kontrastmittelgabe wird sowohl in der
 **Bildgebungsprozedur** (Procedure), als auch in der **Studie** (ImagingStudy)
 ein Bezug auf das Modul
-[MEDIKATION](https://www.medizininformatik-initiative.de/Kerndatensatz/KDS_Medikation_2026/MIIIGModulMedikation.html)
+[MEDIKATION](https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation)
 hergestellt. In der **Bildgebungsprozedur** wird die Kontrastmittelgabe mit
 Hilfe der **Medikamentenverabreichung** (MedicationAdministration) abgebildet
 und in der **Studie** (ImagingStudy) zusätzlich durch die
@@ -90,23 +90,23 @@ relevanter technischer und medizinischer Fragestellungen.
 Die verwendeten Codesysteme, Terminologien und Referenzen für Prozeduren,
 Diagnosen und verwandter medizinischer Fragestellungen sind:
 
-* [SNOMED CT](https://www.snomed.org/)
-* [OPS - Operationen- und Prozedurenschlüssel](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/OPS-ICHI/OPS/_node.html)
-* [RadLex](https://www.rsna.org/practice-tools/data-tools-and-standards/radlex-radiology-lexicon)
-* [LOINC - Logical Observation Identifiers Names and Codes](https://loinc.org/)
-* [ICD - International Statistical Classification of Diseases and Related Health Problems](https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/index.htm)
-* [GOLD - German Oncological Data Standard](https://vision-zero-oncology.github.io/GOLD/profiles.html)
-* [MIO](https://mio.kbv.de/site/mio#)
+- [SNOMED CT](https://www.snomed.org/)
+- [OPS - Operationen- und Prozedurenschlüssel](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/OPS-ICHI/OPS/_node.html)
+- [RadLex](https://www.rsna.org/practice-tools/data-tools-and-standards/radlex-radiology-lexicon)
+- [LOINC - Logical Observation Identifiers Names and Codes](https://loinc.org/)
+- [ICD - International Statistical Classification of Diseases and Related Health Problems](https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/index.htm)
+- [GOLD - German Oncological Data Standard](https://vision-zero-oncology.github.io/GOLD/profiles.html)
+- [MIO](https://mio.kbv.de/site/mio#)
 
 Befundungsspezifische Erweiterungsmodule und Profile zur Befundung, die auf
 diese Implementierung referenzieren, sollen sich inhaltlich an den gängigen
 Befundungsrichtlinien und -kriterien orientieren. Z.B.:
 
-* Mamma - [BI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/BI-RADS)
-* Prostata - [PI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/PI-RADS)
-* Leber - [LI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS)
-* COVID-19 - [CO-RADS](https://radiologyassistant.nl/chest/covid-19/corads-classification)
-* DRG Befundvorlagen - [DRG-Templates GitHub](https://github.com/DRGagit/ak_befundung)
+- Mamma - [BI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/BI-RADS)
+- Prostata - [PI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/PI-RADS)
+- Leber - [LI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS)
+- COVID-19 - [CO-RADS](https://radiologyassistant.nl/chest/covid-19/corads-classification)
+- DRG Befundvorlagen - [DRG-Templates GitHub](https://github.com/DRGagit/ak_befundung)
 
 Es wurden außerdem die [Kernspezifikation von HL7 FHIR](http://hl7.org/fhir/R4/license.html)
 verwendet — darunter insbesondere die entsprechenden Ressourcen

@@ -11,7 +11,6 @@
      sushi-config.yaml). Die Links funktionieren nur in der veröffentlichten
      Ausgabe, nicht in einer lokalen Vorschau dieser Markdown-Datei. -->
 
-
 Diese Seite verlinkt die herunterladbaren Artefakte des Moduls
 **Bildgebung**.
 
@@ -26,20 +25,20 @@ darüber hinaus den Inhalt der Spezifikation und die einschlägigen Profile kenn
 um eine konforme Umsetzung zu bauen — siehe die FHIR-Dokumentation zur
 [Validierung von Profilen und Ressourcen](http://hl7.org/fhir/R4/validation.html).
 
-* [Paket (komprimierter Ordner)](../package.tgz){::download="true"}
+- [Paket (komprimierter Ordner)](../package.tgz){::download="true"}
 
 #### Herunterladbare Kopie dieses Leitfadens
 
 Eine herunterladbare Fassung des gerenderten Leitfadens für den lokalen Betrieb:
 
-* [Herunterladbare Kopie (komprimierter Ordner)](../full-ig.zip)
+- [Herunterladbare Kopie (komprimierter Ordner)](../full-ig.zip)
 
 #### Beispiele
 
 Alle Beispiele dieses Leitfadens:
 
-* [XML (komprimierter Ordner)](../examples.xml.zip)
-* [JSON (komprimierter Ordner)](../examples.json.zip)
+- [XML (komprimierter Ordner)](../examples.xml.zip)
+- [JSON (komprimierter Ordner)](../examples.json.zip)
 
 #### Konsolidierte CSV- und Excel-Darstellungen der Profile
 
@@ -47,12 +46,12 @@ Die Profilinformationen des gesamten Leitfadens in einer einzigen CSV- oder
 Excel-Datei — nützlich für Testende und Analysierende, die Element-Eigenschaften
 profilübergreifend in einer Tabelle sichten wollen:
 
-* [CSV (komprimierter Ordner)](../csvs.zip)
-* [Excel (komprimierter Ordner)](../excels.zip)
+- [CSV (komprimierter Ordner)](../csvs.zip)
+- [Excel (komprimierter Ordner)](../excels.zip)
 
 #### Schematrons
 
-* [Schematrons (komprimierter Ordner)](../schematrons.zip)
+- [Schematrons (komprimierter Ordner)](../schematrons.zip)
 
 #### ImplementationGuide-Ressource
 
@@ -61,22 +60,17 @@ Veröffentlichung einschließlich ihrer Abhängigkeiten und
 Veröffentlichungsparameter.
 
 > [TODO: Diese Vorlage liefert keine Seite für diese Ressource aus, hier ist
-> also noch nichts zu verlinken. `kerndatensatz-basis` veröffentlicht eine
-> solche Seite als `input/pagecontent/ImplementationGuide-mii-ig-base.md`,
-> eingetragen unter `pages:` in `sushi-config.yaml`. Legen Sie das Gegenstück
-> für Ihr Modul in beiden Sprachen an und verlinken Sie es hier. Der Dateiname
-> muss Ihren Slug wörtlich enthalten: ein `pages:`-Dateiname kann keinen
-> Platzhalter tragen, weil die Platzhalter-Ersetzung Dateiinhalte ersetzt, nicht
-> Dateinamen.]
-{: .ig-highlight .ig-highlight-grey}
+> > also noch nichts zu verlinken. `kerndatensatz-basis` veröffentlicht eine
+> > solche Seite als `input/pagecontent/ImplementationGuide-mii-ig-base.md`,
+> > eingetragen unter `pages:` in `sushi-config.yaml`. Legen Sie das Gegenstück
+> > für Ihr Modul in beiden Sprachen an und verlinken Sie es hier. Der Dateiname
+> > muss Ihren Slug wörtlich enthalten: ein `pages:`-Dateiname kann keinen
+> > Platzhalter tragen, weil die Platzhalter-Ersetzung Dateiinhalte ersetzt, nicht
+> > Dateinamen.]
+> {: .ig-highlight .ig-highlight-grey}
 
 #### Versionshistorie
 
 Frühere Versionen und die ausführliche Änderungshistorie stehen auf den Seiten
 [Versionierung](version-history.html) und
 [Änderungshistorie](changes.html).
-
-> [TODO: Ergänzen Sie weitere Downloads Ihres Moduls — etwa ein Beispiel-Bundle,
-> ein Datenwörterbuch oder eine Mapping-Tabelle — und entfernen Sie die oben
-> aufgeführten Einträge, die Ihr Build nicht erzeugt.]
-{: .ig-highlight .ig-highlight-grey}

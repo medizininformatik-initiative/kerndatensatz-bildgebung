@@ -2,7 +2,7 @@
 
 Diese Seite listet die Beispielinstanzen des Moduls **Bildgebung**. Die
 vollständige, automatisch generierte Liste aller Beispiele findet sich in der
-[Artefakt-Übersicht](artifacts.html) (Abschnitt *Example Instances*).
+[Artefakt-Übersicht](artifacts.html) (Abschnitt _Example Instances_).
 
 {:.bg-warning}
 **Nur synthetische Daten** — niemals echte oder realistisch wirkende
@@ -23,7 +23,7 @@ Highlights:
   [Anforderung](ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.html)
   über die [Bildgebungsprozedur](Procedure-mii-exa-bildgebung-bildgebungsprozedur.html)
   mit [Kontrastmittelgabe](MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.html)
-  zum [radiologischen Befund](DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.html),
+  zum [radiologischen Befund](DiagnosticReport-mii-exa-bildgebung-radiologischer-befund.html),
   der [radiologischen Beobachtung](Observation-mii-exa-bildgebung-radiologische-beobachtung.html),
   der [radiologischen Messung](Observation-mii-exa-bildgebung-radiologische-messung.html),
   der [Körperstruktur](BodyStructure-mii-exa-bildgebung-koerperstruktur.html) und der

@@ -3,7 +3,7 @@
 
 This page lists the example instances of the **Bildgebung** module. The
 complete, automatically generated list of all examples can be found in the
-[artifact overview](artifacts.html) (section *Example Instances*).
+[artifact overview](artifacts.html) (section _Example Instances_).
 
 {:.bg-warning}
 **Synthetic data only** — never use real or realistic-looking patient data in
@@ -24,7 +24,7 @@ Highlights:
   [request](ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.html) via
   the [imaging procedure](Procedure-mii-exa-bildgebung-bildgebungsprozedur.html)
   with [contrast administration](MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.html)
-  to the [diagnostic report](DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.html),
+  to the [diagnostic report](DiagnosticReport-mii-exa-bildgebung-radiologischer-befund.html),
   the [radiological observation](Observation-mii-exa-bildgebung-radiologische-beobachtung.html),
   the [radiological measurement](Observation-mii-exa-bildgebung-radiologische-messung.html),
   the [body structure](BodyStructure-mii-exa-bildgebung-koerperstruktur.html) and the

@@ -22,7 +22,7 @@ Referenzen auf die "Patient"-Ressource nur von den zentralen Profilen aus
 modelliert. Aufschluss über weitere Referenzen darauf geben die Texte
 innerhalb der Profile sowie die dazugehörigen FHIR-Profile.
 
-![Vollständiges UML des Moduls Bildgebung](UML_Modul_Bildgebung.png)
+![Vollständiges UML des Moduls Bildgebung](UML_Modul_Bildgebung.svg)
 
 Die abstrakte Darstellung des UMLs zeigt das UML rein auf Klassenebene mit dem
 Fokus auf die Assoziationsbeziehungen im Modul:

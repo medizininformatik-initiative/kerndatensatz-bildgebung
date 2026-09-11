@@ -9,12 +9,12 @@ FHIR-Profile, Extensions und Terminologie-Ressourcen in ihrer verbindlichen
 Form beschrieben. Der MII-Kerndatensatz ermöglicht die standardisierte
 Sekundärnutzung klinischer Routinedaten für die medizinische Forschung.
 
-| Veröffentlichung |                |
-| ---------------- | -------------- |
-| Datum            | 01.09.2026     |
+| Veröffentlichung |                                     |
+| ---------------- | ----------------------------------- |
+| Datum            | 01.09.2026                          |
 | Version          | 2027.0.0-ballot (CalVer `YYYY.n.n`) |
-| Status           | active         |
-| Realm            | DE             |
+| Status           | active                              |
+| Realm            | DE                                  |
 
 ### Beschreibung des Moduls
 
@@ -62,15 +62,15 @@ Ergänzt wurden vorrangig modalitätsspezifische Attribute auf Serien-Ebene.
 Diese sollen dazu beitragen, einen tieferen technischen Einblick in die
 jeweilige genutzte Modalität zu erlangen.
 
-* Bei den röntgenbasierten Modalitäten (DX, CT, MG, CR) werden die Werte der
+- Bei den röntgenbasierten Modalitäten (DX, CT, MG, CR) werden die Werte der
   Röntgenröhrenspannung und des Röntgenröhrenstroms betrachtet sowie die Werte
   der Exposition und der Expositionszeit und der Blickposition.
-* Die nuklearmedizinischen Modalitäten (NM und PT) beinhalten Dosis und weitere
+- Die nuklearmedizinischen Modalitäten (NM und PT) beinhalten Dosis und weitere
   Informationen zum applizierten Radiopharmakon, Radionuklid und Tracer.
-* Bei der Modalität MR werden die Scanning Sequence und Variant sowie die
+- Bei der Modalität MR werden die Scanning Sequence und Variant sowie die
   genutzte magnetische Feldstärke und die Zeitintervalle TE, TR und TI
   abgebildet.
-* Beim Ultraschall (US) werden der genutzte Schallkopftyp, die
+- Beim Ultraschall (US) werden der genutzte Schallkopftyp, die
   Schallkopffrequenz, die Impulsfolgefrequenz und die Ultraschallfarbe
   betrachtet.
 
@@ -154,7 +154,7 @@ zugrunde liegenden Bilder, die als Studie dargestellt werden (vgl. Teilmodul
 ### Verwandte Leitfäden
 
 Der MII-Kerndatensatz besteht aus mehreren Modulen; das
-[Meta-Modul](https://www.medizininformatik-initiative.de/fhir/fdpg/ImplementationGuide/mii-ig-meta)
+[Meta-Modul](https://medizininformatik-initiative.github.io/kerndatensatz-meta)
 hält die modulübergreifenden Artefakte. Die Basismodule (Person, Fall,
 Diagnose, Prozedur, Laborbefund, Medikation, Consent) werden von diesem Modul
 referenziert — siehe die unter

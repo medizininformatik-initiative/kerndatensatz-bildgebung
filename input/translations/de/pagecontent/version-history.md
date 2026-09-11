@@ -6,19 +6,18 @@
      des MII-Meta-Wikis
      (https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Module-Release-Workflow). -->
 
-
 #### Versionsschema
 
 Das Modul **Bildgebung** folgt dem KDS-Schema der Kalender-Versionierung
 (CalVer) in einer SemVer-kompatiblen numerischen Form:
 
-* Format **`JJJJ.MINOR.PATCH[-label]`** — die aktuelle Version ist
+- Format **`JJJJ.MINOR.PATCH[-label]`** — die aktuelle Version ist
   `2027.0.0-ballot`;
-* **`JJJJ`** — das Jahr, in dem der Leitfaden gilt und genutzt werden soll; es
+- **`JJJJ`** — das Jahr, in dem der Leitfaden gilt und genutzt werden soll; es
   tritt an die Stelle der Major-Version;
-* **`MINOR`** — wird für nicht brechende Ergänzungen und Präzisierungen erhöht;
-* **`PATCH`** — wird für Korrekturen und Fehlerbehebungen erhöht;
-* **`label`** — optionales Vorab- oder Build-Label, z. B. `draft`, `ballot` oder
+- **`MINOR`** — wird für nicht brechende Ergänzungen und Präzisierungen erhöht;
+- **`PATCH`** — wird für Korrekturen und Fehlerbehebungen erhöht;
+- **`label`** — optionales Vorab- oder Build-Label, z. B. `draft`, `ballot` oder
   `cibuild`.
 
 #### Versionen vergleichen
@@ -47,15 +46,15 @@ Merge wird das Release getaggt.
 
 #### Versionshistorie und Änderungen
 
-* **[Änderungshistorie](changes.html)** — die Änderungen jeder veröffentlichten
+- **[Änderungshistorie](changes.html)** — die Änderungen jeder veröffentlichten
   Version.
 
 #### Versionsvergleich
 
 Ab der zweiten **formalen Publikation** veröffentlicht dieser Leitfaden
 zusätzlich einen **maschinell erzeugten Versionsvergleich**. Er ergänzt die
-Änderungshistorie: Die Änderungshistorie erklärt *warum* und *was zu tun
-ist*, der Vergleich zeigt, *was sich genau geändert hat*.
+Änderungshistorie: Die Änderungshistorie erklärt _warum_ und _was zu tun
+ist_, der Vergleich zeigt, _was sich genau geändert hat_.
 
 **Wo er liegt.** Der Bericht ist Teil der veröffentlichten Website selbst:
 `comparison-v<Vorversion>/index.html` neben den Seiten des Leitfadens,
@@ -86,9 +85,3 @@ veröffentlicht das Ergebnis unter `comparison-demo/index.html`.
 Die Repository-Variable `ENABLE_VERSION_COMPARISON=false` schaltet das
 gesamte Feature ab — den Publisher-Vergleich in allen Build-Workflows ebenso
 wie diese Demonstration; ein erstelltes Modul rendert die Demonstration nie.
-
-> [TODO: Falls Ihr Modul über das KDS-Schema hinaus eine eigene
-> Versionierungs-Politik hat — etwa einen Unterstützungszeitraum für ältere
-> Versionen oder eine Abkündigungs-Politik für Profile —, beschreiben Sie sie
-> hier. Löschen Sie diesen Hinweis anschließend.]
-{: .ig-highlight .ig-highlight-grey}

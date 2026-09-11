@@ -9,12 +9,12 @@ It covers the module's use cases and the associated FHIR profiles, extensions
 and terminology resources in their normative form. The MII Core Dataset enables
 the standardized secondary use of routine clinical data for medical research.
 
-| Publication |               |
-|-------------|---------------|
-| Date        | 2026-09-01    |
+| Publication |                                     |
+| ----------- | ----------------------------------- |
+| Date        | 2026-09-01                          |
 | Version     | 2027.0.0-ballot (CalVer `YYYY.n.n`) |
-| Status      | active        |
-| Realm       | DE            |
+| Status      | active                              |
+| Realm       | DE                                  |
 
 ### Module description
 
@@ -58,14 +58,14 @@ profile.
 Primarily, modality-specific attributes were added at series level. These are
 intended to provide deeper technical insight into the modality used:
 
-* For the X-ray-based modalities (DX, CT, MG, CR), the X-ray tube voltage and
+- For the X-ray-based modalities (DX, CT, MG, CR), the X-ray tube voltage and
   tube current are captured, as well as exposure, exposure time and view
   position.
-* The nuclear-medicine modalities (NM and PT) include the dose and further
+- The nuclear-medicine modalities (NM and PT) include the dose and further
   information on the administered radiopharmaceutical, radionuclide and tracer.
-* For the MR modality, the scanning sequence and variant as well as the magnetic
+- For the MR modality, the scanning sequence and variant as well as the magnetic
   field strength and the time intervals TE, TR and TI are represented.
-* For ultrasound (US), the transducer type, transducer frequency, pulse
+- For ultrasound (US), the transducer type, transducer frequency, pulse
   repetition frequency and ultrasound color are captured.
 
 At present these eight modalities (MR, CT, DX, CR, MG, US, NM and PT) are
@@ -143,7 +143,7 @@ are represented as a study (cf. submodule "Metadata").
 ### Related guides
 
 The MII Core Dataset consists of several modules; the
-[Meta module](https://www.medizininformatik-initiative.de/fhir/fdpg/ImplementationGuide/mii-ig-meta)
+[Meta module](https://medizininformatik-initiative.github.io/kerndatensatz-meta)
 holds the cross-module artifacts. The basic modules (Person, Fall, Diagnose,
 Prozedur, Laborbefund, Medikation, Consent) are referenced by this module —
 see the relations described under

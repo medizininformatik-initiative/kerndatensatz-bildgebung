@@ -6,19 +6,18 @@
      German mirror: input/translations/de/pagecontent/version-history.md — both
      files must say the same thing. -->
 
-
 #### Version scheme
 
 The **Bildgebung** module follows the KDS calendar-versioning (CalVer)
 scheme in a SemVer-compatible numeric form:
 
-* format **`YYYY.MINOR.PATCH[-label]`** — the current version is
+- format **`YYYY.MINOR.PATCH[-label]`** — the current version is
   `2027.0.0-ballot`;
-* **`YYYY`** — the year in which the guide applies and is intended to be used;
+- **`YYYY`** — the year in which the guide applies and is intended to be used;
   it takes the place of the major version;
-* **`MINOR`** — incremented for non-breaking additions and refinements;
-* **`PATCH`** — incremented for corrections and bug fixes;
-* **`label`** — optional pre-release or build label, e.g. `draft`, `ballot` or
+- **`MINOR`** — incremented for non-breaking additions and refinements;
+- **`PATCH`** — incremented for corrections and bug fixes;
+- **`label`** — optional pre-release or build label, e.g. `draft`, `ballot` or
   `cibuild`.
 
 #### Comparing versions
@@ -46,14 +45,14 @@ after the merge.
 
 #### Version history and changes
 
-* **[Changelog](changes.html)** — the changes of each released version.
+- **[Changelog](changes.html)** — the changes of each released version.
 
 #### Version comparison
 
 From the second **formal publication** on, this guide also publishes a
 **machine-generated version comparison**. It complements the changelog: the
-changelog explains *why* and *what to do*, the comparison shows *exactly what
-changed*.
+changelog explains _why_ and _what to do_, the comparison shows _exactly what
+changed_.
 
 **Where it lives.** The report is part of the published site itself:
 `comparison-v<previous>/index.html` next to the guide's pages, linked from the
@@ -81,8 +80,3 @@ compares itself against the previous `dev` preview using the FHIR validator's
 The repository variable `ENABLE_VERSION_COMPARISON=false` switches the whole
 feature off — the publisher's comparison in every build workflow and this
 demonstration alike; a created module never renders the demonstration.
-
-> [TODO: If your module has a versioning policy of its own beyond the KDS scheme
-> — for example a support window for older versions, or a deprecation policy for
-> profiles — describe it here. Delete this prompt afterwards.]
-{: .ig-highlight .ig-highlight-grey}

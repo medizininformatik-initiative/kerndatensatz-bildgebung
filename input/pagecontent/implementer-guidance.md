@@ -24,9 +24,8 @@ German context. Other national initiatives, such as MIO42, were involved in
 the development and have adopted structural modelling decisions.
 At the European level, the work within the European Health Data Space (EHDS)
 is particularly relevant; harmonization proposals for imaging data models are
-currently being discussed there. The MII KDS module Bildgebung will be
-reviewed for possible adaptation and compatibility needs in the next release
-(2027).
+currently being discussed there. The MII KDS module Bildgebung is being
+reviewed for possible adaptation and compatibility needs in every release.
 The model of the Swiss Personalized Health Network (SPHN) also contains
 individual conceptual approaches that could become relevant for the future
 development of the module.
@@ -35,17 +34,17 @@ development of the module.
 
 Imaging studies are assigned to a patient via references from the **study**
 resource (ImagingStudy) to the module
-[PERSON](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/).
+[PERSON](https://medizininformatik-initiative.github.io/kerndatensatz-basis).
 Likewise, the **diagnostic report** (DiagnosticReport) and the **request**
 (ServiceRequest) reference the module
-[PERSON](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/).
+[PERSON](https://medizininformatik-initiative.github.io/kerndatensatz-basis).
 
 #### Relation to the module Fall (encounter)
 
 Imaging studies are assigned to an encounter via references from the **study**
 resource (ImagingStudy) or the **diagnostic report** (DiagnosticReport) to the
 module
-[FALL](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/).
+[FALL](https://medizininformatik-initiative.github.io/kerndatensatz-basis).
 A reference to the respective encounter should always be carried along to
 establish the relation of the imaging study to that encounter.
 
@@ -54,7 +53,7 @@ establish the relation of the imaging study to that encounter.
 In connection with imaging modalities there can be relations to performed
 procedures, for example an MRI examination before an operation. For
 information about the performed procedure, the module
-[PROZEDUR](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/)
+[PROZEDUR](https://medizininformatik-initiative.github.io/kerndatensatz-basis)
 is used in the resources **study** (ImagingStudy), **diagnostic report**
 (DiagnosticReport) and in the linked resource **generic observation**
 (Observation).
@@ -62,7 +61,7 @@ is used in the resources **study** (ImagingStudy), **diagnostic report**
 #### Relation to the module Diagnose (diagnosis)
 
 The **previous finding** resource (Condition) contains links to the module
-[DIAGNOSE](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.0/en/),
+[DIAGNOSE](https://medizininformatik-initiative.github.io/kerndatensatz-basis),
 which make it possible to record the imaging examination as a diagnostic tool
 supporting the diagnosis. These are represented via a reference in the
 **request** resource (ServiceRequest), which in turn is referenced in the
@@ -72,7 +71,7 @@ supporting the diagnosis. These are represented via a reference in the
 
 To represent contrast administration, both the **imaging procedure**
 (Procedure) and the **study** (ImagingStudy) establish a relation to the module
-[MEDIKATION](https://www.medizininformatik-initiative.de/Kerndatensatz/KDS_Medikation_2026/MIIIGModulMedikation.html).
+[MEDIKATION](https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation).
 In the **imaging procedure**, the contrast administration is represented via
 the **medication administration** (MedicationAdministration), and in the
 **study** (ImagingStudy) it is additionally complemented by the **medication
@@ -88,23 +87,23 @@ relevant technical and medical concerns.
 The code systems, terminologies and references used for procedures, diagnoses
 and related medical concerns are:
 
-* [SNOMED CT](https://www.snomed.org/)
-* [OPS - Operationen- und Prozedurenschlüssel](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/OPS-ICHI/OPS/_node.html)
-* [RadLex](https://www.rsna.org/practice-tools/data-tools-and-standards/radlex-radiology-lexicon)
-* [LOINC - Logical Observation Identifiers Names and Codes](https://loinc.org/)
-* [ICD - International Statistical Classification of Diseases and Related Health Problems](https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/index.htm)
-* [GOLD - German Oncological Data Standard](https://vision-zero-oncology.github.io/GOLD/profiles.html)
-* [MIO](https://mio.kbv.de/site/mio#)
+- [SNOMED CT](https://www.snomed.org/)
+- [OPS - Operationen- und Prozedurenschlüssel](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/OPS-ICHI/OPS/_node.html)
+- [RadLex](https://www.rsna.org/practice-tools/data-tools-and-standards/radlex-radiology-lexicon)
+- [LOINC - Logical Observation Identifiers Names and Codes](https://loinc.org/)
+- [ICD - International Statistical Classification of Diseases and Related Health Problems](https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/index.htm)
+- [GOLD - German Oncological Data Standard](https://vision-zero-oncology.github.io/GOLD/profiles.html)
+- [MIO](https://mio.kbv.de/site/mio#)
 
 Reporting-specific extension modules and reporting profiles that reference
 this implementation should follow the common reporting guidelines and
 criteria, e.g.:
 
-* Breast - [BI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/BI-RADS)
-* Prostate - [PI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/PI-RADS)
-* Liver - [LI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS)
-* COVID-19 - [CO-RADS](https://radiologyassistant.nl/chest/covid-19/corads-classification)
-* DRG reporting templates - [DRG-Templates GitHub](https://github.com/DRGagit/ak_befundung)
+- Breast - [BI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/BI-RADS)
+- Prostate - [PI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/PI-RADS)
+- Liver - [LI-RADS](https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS)
+- COVID-19 - [CO-RADS](https://radiologyassistant.nl/chest/covid-19/corads-classification)
+- DRG reporting templates - [DRG-Templates GitHub](https://github.com/DRGagit/ak_befundung)
 
 In addition, the [HL7 FHIR core specification](http://hl7.org/fhir/R4/license.html)
 was used — in particular the resources

@@ -21,7 +21,7 @@ For better readability, the complete UML is also available
 references to it are described in the texts within the profiles and in the
 corresponding FHIR profiles.
 
-![Complete UML of the Bildgebung module](UML_Modul_Bildgebung.png)
+![Complete UML of the Bildgebung module](UML_Modul_Bildgebung.svg)
 
 The abstract representation of the UML shows the model purely at class level,
 focusing on the association relationships in the module:
