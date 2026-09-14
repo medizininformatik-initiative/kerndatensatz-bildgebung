@@ -142,12 +142,13 @@ jobs:
       # Pinned Java validator (fixed versions); mirrors the reusable workflow's
       # own default at the pinned SHA. Overridable via the repo variable.
       JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION || '6.5.7' }}
-      # Wire the repo's advisor file into the validator CLI. The reusable
-      # workflow passes JAVA_VALIDATION_OPTIONS verbatim to validator_cli.jar
-      # (verified at the pinned SHA); without this the advisor.json shipped at
-      # the repo root would be read by NOTHING and the "suppressed via
-      # advisor.json" contract in this file's header would be false.
-      JAVA_VALIDATION_OPTIONS: "-advisor-file advisor.json"
+      # Validator options come from the ORG-LEVEL variable (same as main.yml):
+      # it carries -advisor-file advisor.json, -authorise-non-conformant-tx-servers
+      # (without which validator_cli refuses SU-TermServ and exits 1) and
+      # -output validation.json (without which the reusable workflow's renderer
+      # step fails with ENOENT on ./validation.json). Hardcoding a subset here
+      # is what broke this job — always inherit the central value.
+      JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
       VALIDATION_REPORT_FILTERS: |
         filename | messageId | detailsWildcard | location
     # Secret-name reconciliation: the MII reusable workflow declares
