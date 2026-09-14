@@ -99,8 +99,6 @@ concurrency:
 env:
   # The module's FHIR canonical (MII convention — for example,
   # kerndatensatz-basis uses .../fhir/modul-base).
-  # Bildgebung publishes in the ext canonical space (see sushi-config.yaml:
-  # "Quelle gewinnt: publizierter Canonical (ext-Raum), NICHT das Template-Muster").
   EXPECTED_CANONICAL: "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung"
   # The publication website: GitHub Pages under the creating org. Deliberately
   # different from the canonical ("canonical-mismatch").
