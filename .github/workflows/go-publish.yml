@@ -99,7 +99,7 @@ concurrency:
 env:
   # The module's FHIR canonical (MII convention — for example,
   # kerndatensatz-basis uses .../fhir/modul-base).
-  EXPECTED_CANONICAL: "https://www.medizininformatik-initiative.de/fhir/modul-bildgebung"
+  EXPECTED_CANONICAL: "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung"
   # The publication website: GitHub Pages under the creating org. Deliberately
   # different from the canonical ("canonical-mismatch").
   EXPECTED_PUBLICATION_BASE: "https://medizininformatik-initiative.github.io/kerndatensatz-bildgebung"
