@@ -653,10 +653,18 @@ jobs:
             }' > site/publish-setup.json
           touch site/.nojekyll
 
+          # Publisher 2.3.2 refuses -go-publish without a package-registry.json
+          # in the webroot ("There is no package-registry.json file...") even on
+          # the very first publication. Seed the empty registry the
+          # -generate-package-registry helper would produce for a fresh site;
+          # -go-publish maintains it from then on.
+          jq -n '{ "packages": [] }' > site/package-registry.json
+
           {
             echo "### First-publication webroot seeded"
             echo
             echo "- Generated publish-setup.json for ${PUBLICATION_BASE}"
+            echo "- Seeded empty package-registry.json"
           } >> "${GITHUB_STEP_SUMMARY}"
 
       - name: Prepare publication workspace
