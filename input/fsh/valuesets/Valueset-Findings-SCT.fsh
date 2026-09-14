@@ -8,4 +8,4 @@ Description: "Import the ValueSet for Diagnostic Reports and Service Request"
 * insert PR_CS_VS_Date
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
-* include codes from system $SCT-version where constraint = "< 404684003 | Clinical finding (finding)|"
+* include codes from system $sct where constraint = "< 404684003 | Clinical finding (finding)|"

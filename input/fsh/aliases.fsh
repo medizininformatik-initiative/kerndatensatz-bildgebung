@@ -32,6 +32,7 @@
 //   MII release (CalVer) | SNOMED CT International release | version string
 //   v2025.*              | 2024-07-01 | http://snomed.info/sct/900000000000207008/version/20240701
 //   v2026.*              | 2025-07-01 | http://snomed.info/sct/900000000000207008/version/20250701
+//   v2027.*              | 2026-07-01 | http://snomed.info/sct/900000000000207008/version/20260701
 //
 // The value below is the verified v2026.* pin (this template's dependencies are
 // pinned to the 2026 line). When your module moves to a later CalVer line, look
@@ -39,7 +40,7 @@
 // input/resources/Parameters-expansion-manifest.json — do not guess.
 // Note the policy applies to ValueSet expansion; MII profiles do not currently
 // require Coding.version for SNOMED CT in instance data.
-Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701
+Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701
 Alias: $sct-no-ver = http://snomed.info/sct
 
 // ── Further code systems used across MII modules ─────────────────────────────
@@ -50,6 +51,21 @@ Alias: $alpha-id = http://fhir.de/CodeSystem/bfarm/alpha-id
 Alias: $alpha-id-vs = http://fhir.de/ValueSet/bfarm/alpha-id
 Alias: $ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $orpha = http://www.orpha.net
+Alias: $loinc = http://loinc.org
+Alias: $radlex = https://radlex.org
+Alias: $VS-loinc-rsna = http://loinc.org/vs/loinc-rsna-radiology-playbook
+Alias: $ucum = http://unitsofmeasure.org
+
+// ── DICOM code systems ─────────────────────────────
+Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
+Alias: $radiopharmaceutical_PET = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4021.html
+Alias: $radiopharmaceutical_NM = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_25.html
+Alias: $radionuclide_NM = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_18.html
+Alias: $radionuclide_PET = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4020.html
+Alias: $units = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_84.html
+Alias: $modality = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html
+Alias: $laterality = http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html
+Alias: $sop-class = http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html
 
 // ── HL7 terminology ──────────────────────────────────────────────────────────
 Alias: $v3-ObservationValue = http://terminology.hl7.org/CodeSystem/v3-ObservationValue
@@ -58,10 +74,31 @@ Alias: $v3-ActPriority = http://terminology.hl7.org/CodeSystem/v3-ActPriority
 Alias: $identifier-type-de-basis = http://fhir.de/CodeSystem/identifier-type-de-basis
 Alias: $gender-amtlich-de = http://fhir.de/CodeSystem/gender-amtlich-de
 Alias: $ags = http://fhir.de/sid/destatis/ags
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $v2-0936 = http://terminology.hl7.org/CodeSystem/v2-0936
+Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $bodyStructure = http://hl7.org/fhir/StructureDefinition/bodySite
+Alias: $supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
+Alias: $de-height = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse
+Alias: $de-weight = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht
+Alias: $reasonCode = http://hl7.org/fhir/ValueSet/procedure-reason
+Alias: $bodySite = http://hl7.org/fhir/ValueSet/body-site
+Alias: $performerFunction = http://hl7.org/fhir/ValueSet/series-performer-function
+Alias: $morphology = http://hl7.org/fhir/ValueSet/bodystructure-code
+Alias: $location = http://hl7.org/fhir/ValueSet/body-site
+Alias: $locQual-eu = http://hl7.eu/fhir/base/ValueSet/siteQualifier-eu
+Alias: $VSdeviceName = http://hl7.org/fhir/ValueSet/device-nametype
+Alias: $CSdeviceName = http://hl7.org/fhir/device-nametype
+Alias: $docType = http://hl7.org/fhir/ValueSet/doc-typecodes
+Alias: $procedure = http://hl7.org/fhir/ValueSet/procedure-code
+Alias: $clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical
 
 // ── FHIR core extensions / MII cross-module ──────────────────────────────────
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $MII-Reference = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
+Alias: $MII-Procedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
+Alias: $MII-MedicationAdministration = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration
 
 // ── CRMI (hl7.fhir.uv.crmi, a pinned dependency) ─────────────────────────────
 // The full basis block. The profiles are claimed via the RuleSets in

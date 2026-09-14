@@ -58,7 +58,7 @@ Description: "Dieses Profil beschreibt den Befund/eine Beobachtung in der radiol
 * code.coding ^slicing.rules = #open
 * code.coding contains
     sct 0..1 MS
-* code.coding[sct] ^patternCoding.system = $SCT
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] from MII_VS_Bildgebung_Findings_SCT (required)
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS

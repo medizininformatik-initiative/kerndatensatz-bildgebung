@@ -5,12 +5,12 @@ Title: "MII Example Bildgebung Service Request"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
 * status = #completed
 * intent = #order
-* category = $SCT#363679005 "Imaging (procedure)"
+* category = $sct#363679005 "Imaging (procedure)"
 * subject = Reference(Patient/mii-exa-bildgebung-radiologischer-patient)
-* code = $SCT#71651007 "Mammography (procedure)"
+* code = $sct#71651007 "Mammography (procedure)"
 * encounter = Reference(Encounter/mii-exa-bildgebung-radiologischer-fall)
 * authoredOn = "2024-07-19T12:03:30+02:00"
 * requester = Reference(Practitioner/mii-exa-bildgebung-radiologischer-practitioner)
-* reasonCode = $SCT#53430007 "Pain of breast (finding)"
+* reasonCode = $sct#53430007 "Pain of breast (finding)"
 * reasonReference = Reference(Condition/CondExample)
 * supportingInfo = Reference(DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund)

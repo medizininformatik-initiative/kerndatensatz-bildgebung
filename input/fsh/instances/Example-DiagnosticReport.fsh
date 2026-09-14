@@ -5,7 +5,7 @@ Title: "MII Example Bildgebung Diagnostic Report"
 * basedOn = Reference(ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung)
 * status = #final
 //* category.coding[sct] = $SCT#4201000179104 "Imaging report"
-* code = $SCT#4231000179109 "Mammography report"
+* code = $sct#4231000179109 "Mammography report"
 * subject = Reference(Patient/mii-exa-bildgebung-radiologischer-patient)
 * encounter = Reference(Encounter/mii-exa-bildgebung-radiologischer-fall)
 * effectiveDateTime = "2024-07-19T12:03:30+02:00"
@@ -13,4 +13,4 @@ Title: "MII Example Bildgebung Diagnostic Report"
 * result = Reference (Observation/mii-exa-bildgebung-radiologische-beobachtung)
 * imagingStudy = Reference (ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-ct)
 * conclusion = "There are suspicious microcalcifications in the upper outer quadrant in the left breast"
-* conclusionCode = $SCT#44771000 "Microcalcifications of the breast (disorder)"
+* conclusionCode = $sct#44771000 "Microcalcifications of the breast (disorder)"

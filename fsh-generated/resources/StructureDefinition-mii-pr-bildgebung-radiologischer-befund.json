@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot",
   "name": "MII_PR_Bildgebung_Radiologischer_Befund",
   "_name": {
     "extension": [
@@ -67,7 +67,7 @@
     ]
   },
   "status": "active",
-  "date": "2026-09-01",
+  "date": "2026-09-15",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -137,6 +137,20 @@
         "id": "DiagnosticReport.meta.profile",
         "path": "DiagnosticReport.meta.profile",
         "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.extension",
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "DiagnosticReport.extension:supportingInfo",
@@ -537,26 +551,10 @@
         "max": "1",
         "patternCoding": {
           "code": "18748-4",
-          "system": "http://loinc.org"
+          "system": "http://loinc.org",
+          "display": "Diagnostic imaging study"
         },
         "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:loinc.system",
-        "path": "DiagnosticReport.category.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:loinc.code",
-        "path": "DiagnosticReport.category.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:loinc.display",
-        "path": "DiagnosticReport.category.coding.display",
-        "patternString": "Diagnostic imaging study"
       },
       {
         "id": "DiagnosticReport.category.coding:diagnostic-service-sections",
@@ -628,26 +626,10 @@
         "max": "1",
         "patternCoding": {
           "code": "RAD",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "display": "Radiology"
         },
         "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:diagnostic-service-sections.system",
-        "path": "DiagnosticReport.category.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:diagnostic-service-sections.code",
-        "path": "DiagnosticReport.category.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:diagnostic-service-sections.display",
-        "path": "DiagnosticReport.category.coding.display",
-        "patternString": "Radiology"
       },
       {
         "id": "DiagnosticReport.category.coding:sct",
@@ -719,26 +701,11 @@
         "max": "1",
         "patternCoding": {
           "code": "4201000179104",
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+          "display": "Imaging report (record artifact)"
         },
         "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:sct.system",
-        "path": "DiagnosticReport.category.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:sct.code",
-        "path": "DiagnosticReport.category.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:sct.display",
-        "path": "DiagnosticReport.category.coding.display",
-        "patternString": "Imaging report (record artifact)"
       },
       {
         "id": "DiagnosticReport.code",
@@ -903,7 +870,7 @@
         "min": 0,
         "max": "1",
         "patternCoding": {
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"
         },
         "mustSupport": true,
         "binding": {
@@ -1640,7 +1607,7 @@
             }
           ]
         },
-        "definition": "Ein Verweis auf einen vom Bfarm",
+        "definition": "Ein Verweis auf einen vom Bundesinstitut für Arzneimittel und Medizinprodukte definierten Code",
         "_definition": {
           "extension": [
             {
@@ -1679,7 +1646,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.de/ValueSet/bfarm/icd-10-gm"
+          "valueSet": "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
         }
       },
       {
@@ -1751,7 +1718,7 @@
         "min": 0,
         "max": "1",
         "patternCoding": {
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"
         },
         "mustSupport": true,
         "binding": {

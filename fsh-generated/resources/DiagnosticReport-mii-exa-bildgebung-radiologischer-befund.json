@@ -11,7 +11,9 @@
       "coding": [
         {
           "code": "4201000179104",
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+          "display": "Imaging report (record artifact)"
         }
       ]
     }
@@ -27,6 +29,7 @@
       {
         "code": "4231000179109",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Mammography report"
       }
     ]
@@ -56,6 +59,7 @@
         {
           "code": "44771000",
           "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701",
           "display": "Microcalcifications of the breast (disorder)"
         }
       ]

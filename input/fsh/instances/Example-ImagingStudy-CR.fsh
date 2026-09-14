@@ -25,7 +25,7 @@ Title: "MII Example Bildgebung Imaging Study CR"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[exposureTime].valueQuantity.unit = "milliseconds"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[xRayTubeCurrent].valueQuantity.value = 96
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[xRayTubeCurrent].valueQuantity.unit = "milliampere"
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[viewPosition].valueCodeableConcept.coding = $SCT#399038007 "Right posterior oblique projection (qualifier value)"
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx].extension[viewPosition].valueCodeableConcept.coding = $sct#399038007 "Right posterior oblique projection (qualifier value)"
 * series.performer.actor = Reference(Device/mii-exa-bildgebung-geraet)
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel].extension[contrastBolus].valueBoolean = false
 * series.uid = "series-example-uid"
@@ -33,8 +33,8 @@ Title: "MII Example Bildgebung Imaging Study CR"
 * series.modality = $DCM#CR "Computed Radiography"
 * series.description = "X Thorax a.p. liegend"
 * series.numberOfInstances = 1
-* series.bodySite = $SCT#43799004 "Thoracic cavity structure (body structure)"
-* series.laterality = $SCT#66459002 "Unilateral"
+* series.bodySite = $sct#43799004 "Thoracic cavity structure (body structure)"
+* series.laterality = $sct#66459002 "Unilateral"
 * series.started = "2024-07-19T12:03:30+02:00"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueCodeableConcept.coding[pixelData] = MII_CS_Bildgebung_Instance_Image_Type#ORIGINAL
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[imageType].valueCodeableConcept.coding[patientExamination] = MII_CS_Bildgebung_Instance_Image_Type#PRIMARY

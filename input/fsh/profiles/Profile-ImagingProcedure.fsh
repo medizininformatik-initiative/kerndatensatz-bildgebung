@@ -1,6 +1,6 @@
 //Head
 Profile: MII_PR_Bildgebung_Bildgebungsprozedur
-Parent: $miiProcedure
+Parent: $MII-Procedure
 Id: mii-pr-bildgebung-bildgebungsprozedur
 Title: "MII PR Bildgebung Bildgebungsprozedur"
 Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird."
@@ -32,8 +32,7 @@ Description: "Beschreibt die Tätigkeiten, wie eine Bildgebung ausgeführt wird.
 * category ^short = "Kategorie"
 * category ^definition = "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
 * category.coding 1.. MS
-* category.coding[sct] = $SCT#363679005
-* category.coding[sct].display = "Imaging (procedure)"
+* category.coding[sct] = $sct#363679005 "Imaging (procedure)"
 * category.coding.system 1.. MS
 * category.coding.code 1.. MS
 * code MS

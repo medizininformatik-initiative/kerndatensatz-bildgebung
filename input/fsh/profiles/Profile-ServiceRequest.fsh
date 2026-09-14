@@ -36,8 +36,7 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * category.coding ^slicing.rules = #open
 * category.coding contains
     sct 0..1 MS
-* category.coding[sct] ^patternCoding.system = $SCT
-* category.coding[sct] = $SCT#363679005 "Imaging (procedure)"
+* category.coding[sct] = $sct#363679005 "Imaging (procedure)"
 * category.coding.system 1.. MS
 * category.coding.code 1.. MS
 * code 1.. MS
@@ -52,7 +51,7 @@ Description: "Profil zur Anforderung einer Bildgebung."
     sct 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] from $VS-loinc-rsna (required)
-* code.coding[sct] ^patternCoding.system = $SCT
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] from $procedure (required)
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
@@ -78,7 +77,7 @@ Description: "Profil zur Anforderung einer Bildgebung."
 * reasonCode.coding ^slicing.rules = #open
 * reasonCode.coding contains
     sct 0..1 MS
-* reasonCode.coding[sct] ^patternCoding.system = $SCT
+* reasonCode.coding[sct] ^patternCoding.system = $sct
 * reasonCode.coding[sct] from MII_VS_Bildgebung_Findings_SCT (required)
 * reasonCode.coding.system 1.. MS
 * reasonCode.coding.code 1.. MS

@@ -37,8 +37,8 @@ Title: "MII Example Bildgebung Imaging Study MR"
 * series.modality = $DCM#MR "Magnetic Resonance"
 * series.description = "pd_tse_sag"
 * series.numberOfInstances = 28
-* series.bodySite = $SCT#72696002 "Knee region structure (body structure)"
-* series.laterality = $SCT#24028007 "Right" 
+* series.bodySite = $sct#72696002 "Knee region structure (body structure)"
+* series.laterality = $sct#24028007 "Right" 
 * series.started = "2024-07-19T12:03:30+02:00"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacingX].valueQuantity.value = 0.260417
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacingX].valueQuantity.unit = "millimeter"
