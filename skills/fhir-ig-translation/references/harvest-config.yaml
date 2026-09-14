@@ -1,0 +1,87 @@
+# Harvest configuration — adopt an existing rendering instead of re-translating.
+#
+# Use this when the same content is ALREADY published in the target language
+# somewhere, so the texts can be extracted and mapped into the files the IG
+# Publisher expects (see translate-spec.md) rather than translated again.
+#
+# LANGUAGE-AGNOSTIC. source_lang / target_lang below must be taken from the
+# guide's own sushi-config.yaml (parameters.i18n-default-lang and
+# parameters.i18n-lang). Do not assume a pair: this skill was originally written
+# for exactly one direction, and the MII reversed its own default from German to
+# English, which would have put every harvested file in the wrong place.
+#
+# This is a TEMPLATE — copy it per guide and fill it in. Every value here is an
+# example or a placeholder.
+
+apiVersion: fhir-ig-translation/v1
+kind: HarvestConfig
+
+module:
+  id: mii-ig-person                 # IG id of the target guide (sushi-config: id)
+  source_lang: en                   # = i18n-default-lang of the TARGET guide
+  target_lang: de                   # = the i18n-lang entry being harvested into
+
+# --- (A) Narrative pages from a parallel, already-rendered guide ---------------
+narratives:
+  enabled: true
+  source_kind: rendered-guide       # rendered-guide | none
+  # Base URL of the rendered guide in the TARGET language, or a local path to its
+  # source. Example: a module that publishes a German rendering alongside.
+  rendered_ig_url: "https://example.org/fhir/person/de/"   # TODO: real URL
+  # Map a page in the harvested guide -> the page it becomes in the target guide.
+  # Target file is input/translations/<target_lang>/pagecontent/<right-hand>.md
+  #
+  # LEFT-HAND keys are the HARVESTED guide's own page identifiers — in whatever
+  # language that rendering uses. A German Simplifier guide has German page names;
+  # do not translate the keys, map them. Right-hand names below are the MII KDS
+  # module template's ACTUAL page names; replace them with the page set of the
+  # guide you are working on. An entry naming a page that does not exist is
+  # silently harvested into a file nothing renders — verify both sides.
+  #
+  # Example for a German Simplifier source (kerndatensatz-style page names):
+  #   Beschreibung:               guidance
+  #   Kontext-Bezuege:            index                  # lands in § Related guides
+  #   Referenzen:                 index
+  #   Datensaetze:                datasets-and-descriptions
+  #   Release-Notes:              changes
+  page_map:
+    index:                      index
+    guidance:                   guidance
+    datasets-and-descriptions:  datasets-and-descriptions
+    implementer-guidance:       implementer-guidance
+    researcher-guidance:        researcher-guidance
+    conformance:                conformance
+    uml-diagrams:               uml-diagrams
+    changes:                    changes
+    downloads:                  downloads
+    security-and-privacy:       security-and-privacy
+    translationinfo:            translationinfo
+  # Note: adapt internal links/anchors to the artifact ids of the TARGET guide;
+  # do not translate FHIR identifiers or code values; cite every adopted page.
+
+# --- (B) Resource texts from the source's FSH/conformance ---------------------
+resources:
+  enabled: true
+  # Where the target-language texts come from:
+  #   fsh-translation-extensions : ^short/^definition carry a translation extension
+  #                                (http://hl7.org/fhir/StructureDefinition/translation)
+  #   designations               : CodeSystem/ValueSet concepts with a designation
+  #                                in the target language
+  #   parallel-fsh               : a separate FSH/resource branch in that language
+  source_kind: fsh-translation-extensions
+  source_repo: "https://github.com/medizininformatik-initiative/kerndatensatzmodul-person"  # TODO
+  source_ref: "main"
+  # Only these types render as a supplement (Publisher restriction):
+  supported_types: [StructureDefinition, CodeSystem, Questionnaire]
+  # Output format of the generated supplements:
+  output_format: po                 # po | xliff | json
+  # Optional: explicit source-resource -> target-id map (otherwise id-equal).
+  id_map: {}
+
+# --- Guardrails (do not change) -----------------------------------------------
+guardrails:
+  default_language_source_leads: true  # the i18n-default-lang text stays binding
+  never_modify_source_text: true       # additive adoption; the source is untouched
+  keep_fhir_identifiers: true          # do not translate name/id/codes/canonicals
+  mark_unverified: "TODO:REVIEW"       # mark uncited or machine-produced content
+  human_review_gate: true              # a bilingual human must sign off the language

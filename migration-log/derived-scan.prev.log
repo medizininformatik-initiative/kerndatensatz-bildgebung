@@ -1,0 +1,9 @@
+2026-08-27T17:28:18Z  INFO   11  derived-scan  params  target=. out=migration-log/derived-content.tsv markdown=no
+2026-08-27T17:28:18Z  ERROR  11  derived-scan  derived-marker-no-box: input/pagecontent/security-and-privacy.md:58  subject=security-and-privacy  no blockquote and no {: .ig-highlight } line within 10 lines of the marker -- the comment renders as nothing
+    action: add the visible box: a '> **Written during migration - review before release.** …' blockquote followed by '{: .ig-highlight .ig-highlight-blue}'
+2026-08-27T17:28:18Z  ERROR  11  derived-scan  derived-marker-no-box: input/translations/de/pagecontent/security-and-privacy.md:58  subject=security-and-privacy  no blockquote and no {: .ig-highlight } line within 10 lines of the marker -- the comment renders as nothing
+    action: add the visible box: a '> **Written during migration - review before release.** …' blockquote followed by '{: .ig-highlight .ig-highlight-blue}'
+2026-08-27T17:28:18Z  INFO   11  derived-scan  result  files=88 markers=2 gates=A:0,B:2,C:0 kinds=suggestion:2 langs=default,de findings=2 (no-box=2) out=migration-log/derived-content.tsv exit=1
+2026-08-27T17:28:18Z  WARN   11  derived-scan  derived-scan: 2 finding(s) -- a marker that does not parse, renders no box, or is missing from a language mirror is derived content that is NOT marked where it counts.
+    Every finding above names its file:line and its exact action.
+    The TSV was still written: it is the artefact, not the verdict.

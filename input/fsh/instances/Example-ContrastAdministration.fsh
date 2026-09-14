@@ -4,8 +4,8 @@ Usage: #example
 Title: "MII Example Bildgebung Kontrastmittelgabe"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"
 * status = #completed
-* subject = Reference(Patient/PatExample)
-* medicationReference = Reference(Medication/MedExample)
+* subject = Reference(Patient/mii-exa-bildgebung-radiologischer-patient)
+* medicationReference = Reference(Medication/mii-exa-bildgebung-kontrastmittel)
 * effectivePeriod.end = "2024-07-19T12:22:45+02:00"
 * effectivePeriod.start = "2024-07-19T12:21:45+02:00"
 * dosage.dose.value = 111

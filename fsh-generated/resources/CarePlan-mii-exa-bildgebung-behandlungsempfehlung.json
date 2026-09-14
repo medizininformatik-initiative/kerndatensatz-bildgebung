@@ -10,11 +10,11 @@
   "intent": "proposal",
   "description": "The patient must receive vacuum biopsy",
   "subject": {
-    "reference": "Patient/PatExample"
+    "reference": "Patient/mii-exa-bildgebung-radiologischer-patient"
   },
   "supportingInfo": [
     {
-      "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
+      "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischer-befund"
     }
   ]
 }

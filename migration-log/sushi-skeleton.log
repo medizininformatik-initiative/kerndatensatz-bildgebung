@@ -1,0 +1,58 @@
+info  Running SUSHI v3.20.0 (implements FHIR Shorthand specification v3.0.0)
+info  Arguments:
+info    /Users/thome/code/fhir-profiling/kerndatensatz-bildgebung
+info  No output path specified. Output to .
+info  Using configuration file: /Users/thome/code/fhir-profiling/kerndatensatz-bildgebung/sushi-config.yaml
+info  Importing FSH text...
+info  Preprocessed 86 documents with 82 aliases.
+info  Imported 53 definitions and 19 instances.
+info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources
+info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 1.1.2
+info  Loaded hl7.fhir.uv.tools.r4#1.1.2 with 119 resources
+info  Loaded hl7.terminology.r4#7.3.0 with 4176 resources
+info  Loaded de.basisprofil.r4#1.5.4 with 168 resources
+info  Loaded de.medizininformatikinitiative.kerndatensatz.meta#2026.0.0 with 173 resources
+info  Loaded de.medizininformatikinitiative.kerndatensatz.medikation#2026.0.1 with 16 resources
+info  Loaded de.medizininformatikinitiative.kerndatensatz.base#2026.0.1 with 36 resources
+info  Attempting to download fhir.dicom#2025.3.20250714 from https://packages.fhir.org/fhir.dicom/2025.3.20250714
+info  Downloaded fhir.dicom#2025.3.20250714
+info  Cached fhir.dicom#2025.3.20250714 to /Users/thome/.fhir/packages/fhir.dicom#2025.3.20250714
+info  Loaded fhir.dicom#2025.3.20250714 with 1412 resources
+info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources
+info  Loaded hl7.fhir.uv.crmi#2.0.0 with 123 resources
+info  hl7.fhir.r4.core#4.0.1 already loaded
+info  Loaded hl7.fhir.uv.extensions.r4#5.2.0 with 759 resources
+info  Found 1 non-JSON / non-XML file(s) in directory: /Users/thome/code/fhir-profiling/kerndatensatz-bildgebung/input/resources. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging.
+info  Loaded virtual package sushi-local#LOCAL with 1 resources
+info  Converting FSH to FHIR resources...
+info  Converted 27 FHIR StructureDefinitions.
+info  Converted 5 FHIR CodeSystems.
+info  Converted 21 FHIR ValueSets.
+info  Converted 19 FHIR instances.
+info  Exporting FHIR resources as JSON...
+info  Exported 72 FHIR resources as JSON.
+info  Assembling Implementation Guide sources...
+info  Generated ImplementationGuide-mii-ig-bildgebung.json
+info  Assembled Implementation Guide sources; ready for IG Publisher.
+info  The _build script hosted at https://github.com/HL7/ig-publisher-scripts is useful for downloading and running the IG Publisher.
+
+========================= SUSHI RESULTS ===========================
+|  -------------------------------------------------------------  |
+| |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
+| |-------------------------------------------------------------| |
+| |      12       |      14      |      1       |       0       | |
+|  -------------------------------------------------------------  |
+|  -------------------------------------------------------------  |
+| |      ValueSets     |    CodeSystems    |     Instances      | |
+| |-------------------------------------------------------------| |
+| |         21         |         5         |         19         | |
+|  -------------------------------------------------------------  |
+|                                                                 |
+===================================================================
+| Just like a perfect pearl.             0 Errors      0 Warnings |
+===================================================================
+|    You are using SUSHI version 3.20.0, but the latest stable    |
+| release is version 3.20.1. To install the latest release, run:  |
+|                    npm install -g fsh-sushi                     |
+===================================================================
+

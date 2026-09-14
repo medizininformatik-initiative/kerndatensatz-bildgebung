@@ -1,0 +1,14 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-bildgebung-kontrastmittel",
+  "code": {
+    "coding": [
+      {
+        "code": "395756007",
+        "system": "http://snomed.info/sct",
+        "display": "Iopromide"
+      }
+    ],
+    "text": "Iopromide"
+  }
+}

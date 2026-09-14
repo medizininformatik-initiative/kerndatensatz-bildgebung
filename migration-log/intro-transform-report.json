@@ -1,0 +1,280 @@
+{
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/BodyStructure.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-pr-bildgebung-koerperstruktur-intro.md",
+  "words": 74,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "LM-Mapping-FQL -> Link auf Logical Model",
+   "Suchparameter-Boilerplate (Gate-B-Entscheid Onkologie 2026-08-27: SP gehoeren auf die CapabilityStatement-Seite)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/CarePlan.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung-intro.md",
+  "words": 34,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "LM-Mapping-FQL -> Link auf Logical Model",
+   "Suchparameter-Boilerplate (Gate-B-Entscheid Onkologie 2026-08-27: SP gehoeren auf die CapabilityStatement-Seite)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/Composition.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-pr-bildgebung-semistrukt-befundbericht-intro.md",
+  "words": 59,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "LM-Mapping-FQL -> Link auf Logical Model",
+   "Suchparameter-Boilerplate (Gate-B-Entscheid Onkologie 2026-08-27: SP gehoeren auf die CapabilityStatement-Seite)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/Device.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-pr-bildgebung-geraet-intro.md",
+  "words": 32,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "LM-Mapping-FQL -> Link auf Logical Model",
+   "Suchparameter-Boilerplate (Gate-B-Entscheid Onkologie 2026-08-27: SP gehoeren auf die CapabilityStatement-Seite)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/DiagnosticReport.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-pr-bildgebung-radiologischer-befund-intro.md",
+  "words": 338,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "LM-Mapping-FQL -> Link auf Logical Model",
+   "Suchparameter-Boilerplate (Gate-B-Entscheid Onkologie 2026-08-27: SP gehoeren auf die CapabilityStatement-Seite)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingProcedure.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur-intro.md",
+  "words": 52,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "LM-Mapping-FQL -> Link auf Logical Model",
+   "Suchparameter-Boilerplate (Gate-B-Entscheid Onkologie 2026-08-27: SP gehoeren auf die CapabilityStatement-Seite)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ContrastAdministration.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-pr-bildgebung-kontrastmittelgabe-intro.md",
+  "words": 54,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "LM-Mapping-FQL -> Link auf Logical Model",
+   "Suchparameter-Boilerplate (Gate-B-Entscheid Onkologie 2026-08-27: SP gehoeren auf die CapabilityStatement-Seite)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ReadProcedure.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur-intro.md",
+  "words": 47,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "LM-Mapping-FQL -> Link auf Logical Model",
+   "Suchparameter-Boilerplate (Gate-B-Entscheid Onkologie 2026-08-27: SP gehoeren auf die CapabilityStatement-Seite)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ServiceRequest.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung-intro.md",
+  "words": 44,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "LM-Mapping-FQL -> Link auf Logical Model",
+   "Suchparameter-Boilerplate (Gate-B-Entscheid Onkologie 2026-08-27: SP gehoeren auf die CapabilityStatement-Seite)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Index.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-pr-bildgebung-bildgebungsstudie-intro.md",
+  "words": 349,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "LM-Mapping-FQL -> Link auf Logical Model",
+   "Suchparameter-Boilerplate (Gate-B-Entscheid Onkologie 2026-08-27: SP gehoeren auf die CapabilityStatement-Seite)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x4 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Extension-ImagingReason.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-bildgebungsgrund-intro.md",
+  "words": 139,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x4 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Extension-Height.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-groesse-intro.md",
+  "words": 120,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x4 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Extension-Weight.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-gewicht-intro.md",
+  "words": 119,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x4 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Extension-CT.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-ct-intro.md",
+  "words": 190,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Extension-MG_CR_DX.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx-intro.md",
+  "words": 197,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Extension-MR.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-mr-intro.md",
+  "words": 201,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Extension-PT.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-pt-intro.md",
+  "words": 395,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Extension-NM.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-nm-intro.md",
+  "words": 391,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Extension-US.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-modalitaet-us-intro.md",
+  "words": 179,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Extension-series-contrast.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-kontrastmittel-intro.md",
+  "words": 134,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x3 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Extension-series-sliceThickness.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-serie-schichtdicke-intro.md",
+  "words": 171,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/ImagingStudy/Extension-instance-details.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-instanz-details-intro.md",
+  "words": 234,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x4 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/Observation/Index.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung-intro.md",
+  "words": 107,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "LM-Mapping-FQL -> Link auf Logical Model",
+   "Suchparameter-Boilerplate (Gate-B-Entscheid Onkologie 2026-08-27: SP gehoeren auf die CapabilityStatement-Seite)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/Observation/Extension-SeriesUID.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-serie-uid-intro.md",
+  "words": 35,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/Observation/Extension-SOPInstanceUID.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-sop-instanz-uid-intro.md",
+  "words": 36,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/Messung/Index.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-pr-bildgebung-radiologische-messung-intro.md",
+  "words": 116,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "LM-Mapping-FQL -> Link auf Logical Model",
+   "Suchparameter-Boilerplate (Gate-B-Entscheid Onkologie 2026-08-27: SP gehoeren auf die CapabilityStatement-Seite)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/Messung/Extension-SeriesUID.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-serie-uid-intro.md",
+  "note": "duplicate-merge",
+  "identical": true,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ },
+ "MIIIGModulBildgebung/TechnischeImplementierung/FHIR-Profile/Messung/Extension-SOPInstanceUID.page.md": {
+  "target": "input/translations/de/intro-notes/StructureDefinition-mii-ex-bildgebung-sop-instanz-uid-intro.md",
+  "note": "duplicate-merge",
+  "identical": true,
+  "dropped": [
+   "tabs-block x1 (Artefaktseite rendert Struktur/XML/JSON selbst)",
+   "FQL-Metadaten/Tabellen-Block x1 (Publisher generiert Header/Struktur)",
+   "json/xml-Beispiel-Dump x1 -> Link auf Beispielseite"
+  ]
+ }
+}

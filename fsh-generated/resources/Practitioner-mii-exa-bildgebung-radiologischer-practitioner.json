@@ -1,0 +1,15 @@
+{
+  "resourceType": "Practitioner",
+  "id": "mii-exa-bildgebung-radiologischer-practitioner",
+  "name": [
+    {
+      "family": "Mustermann",
+      "given": [
+        "Max"
+      ]
+    }
+  ],
+  "active": true,
+  "gender": "male",
+  "birthDate": "1999-01-01"
+}

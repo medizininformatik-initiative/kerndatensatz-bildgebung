@@ -1,0 +1,14 @@
+{
+  "profiles": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-bildgebung/StructureDefinition/example-patient",
+      "tests": [
+        {
+          "source": "valid/example-patient-valid.json",
+          "description": "Valid: Patient with a family name (name 1..* and name.family 1..1 satisfied)",
+          "valid": true
+        }
+      ]
+    }
+  ]
+}

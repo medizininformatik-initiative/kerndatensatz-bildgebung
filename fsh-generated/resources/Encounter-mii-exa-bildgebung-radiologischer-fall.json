@@ -1,0 +1,11 @@
+{
+  "resourceType": "Encounter",
+  "id": "mii-exa-bildgebung-radiologischer-fall",
+  "status": "finished",
+  "class": {
+    "code": "AMB"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-bildgebung-radiologischer-patient"
+  }
+}

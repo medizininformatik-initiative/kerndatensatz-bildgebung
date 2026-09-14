@@ -99,6 +99,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MII EX Bildgebung Körpergewicht",
+        "definition": "Die Extension ermöglicht es, das Körpergewicht aus dem entsprechenden DICOM Tag [0010,1030] auf Studien-Ebene anzugeben."
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

@@ -99,6 +99,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MII EX Bildgebung Schichtdicke",
+        "definition": "Die Extension ermöglicht es, die Schichtdicke auf Serien-Ebene anzugeben, anstelle der individuellen Angabe auf Instanz-Ebene."
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

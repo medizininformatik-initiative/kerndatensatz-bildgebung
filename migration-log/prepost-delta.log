@@ -1,0 +1,13 @@
+2026-08-27T17:46:28Z  INFO   7  prepost-delta  params  pre=migration-log/preflight-analysis.json post=migration-log/postflight-analysis.json out=migration-log/prepost-delta.md tsv=migration-log/prepost-delta.tsv
+2026-08-27T17:46:28Z  WARN   7  prepost-delta  delta-not-measurable: identity.license  pre=- post=CC-BY-4.0
+    the field is absent from the pre measurement
+2026-08-27T17:46:28Z  WARN   7  prepost-delta  delta-not-measurable: identity.title  pre=- post=MII IG Kerndatensatz-Modul Bildgebung
+    the field is absent from the pre measurement
+2026-08-27T17:46:28Z  ERROR  7  prepost-delta  delta-regression: licence.contradictory  pre=false post=true
+    why: the target now declares CONTRADICTORY licences (the target declares: cc-by-4.0, creativecommons) -- one file will be read as the licence by someone, and it will be the wrong one
+2026-08-27T17:46:28Z  ERROR  7  prepost-delta  delta-regression: narrative_sources.dual_source  pre=false post=true
+    why: the migration introduced a SECOND narrative source tree -- two trees is how the wrong one gets edited
+2026-08-27T17:46:28Z  INFO   7  prepost-delta  result  rows=34 unchanged=23 improved=1 expected-change=6 regression=2 not-measurable=2 out=migration-log/prepost-delta.md tsv=migration-log/prepost-delta.tsv exit=1
+2026-08-27T17:46:28Z  WARN   7  prepost-delta  prepost-delta: 2 regression(s) -- a property of the module got WORSE between the pre- and post-measurement.
+    Every regression above names its property and both values.
+    The reports were still written: they are the artefact, not the verdict.

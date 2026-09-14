@@ -1,0 +1,14 @@
+2026-08-27T17:29:14Z  INFO   5.5  gen-page-title-po  params  ig=fsh-generated/resources/ImplementationGuide-mii-ig-bildgebung.json seed=migration-log/menu-titles-de.txt lang=de out=input/translations/de/ImplementationGuide-mii-ig-bildgebung.po
+2026-08-27T17:29:14Z  INFO   5.5  gen-page-title-po  seed  path=migration-log/menu-titles-de.txt  lines=24 entries=24 matched=18 applied=0 unused=6
+2026-08-27T17:29:14Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='Artifacts Summary'
+2026-08-27T17:29:14Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='Conformance'
+2026-08-27T17:29:14Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='Datasets and Descriptions'
+2026-08-27T17:29:14Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='General Requirements'
+2026-08-27T17:29:14Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='Handling Missing Data'
+2026-08-27T17:29:14Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='Must Support'
+2026-08-27T17:29:14Z  INFO   5.5  gen-page-title-po  written  out=input/translations/de/ImplementationGuide-mii-ig-bildgebung.po pages=19 units=19 translated=19 untranslated=0 carried_over=19 preserved_foreign=2 header_preserved=False
+2026-08-27T17:29:14Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Guidance for Researchers'
+2026-08-27T17:29:14Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Operations'
+2026-08-27T17:29:14Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Rendering Artifacts (demo)'
+2026-08-27T17:29:14Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Search Parameters'
+2026-08-27T17:29:14Z  INFO   5.5  gen-page-title-po  result  exit=0  every page title translated

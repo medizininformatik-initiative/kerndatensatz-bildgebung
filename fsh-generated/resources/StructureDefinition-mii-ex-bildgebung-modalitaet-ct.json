@@ -99,6 +99,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MII EX Bildgebung Modalität CT",
+        "definition": "Die Extension ermöglicht es die Ressourcen und Machbarkeitsanalysen auf CT Daten zu erweitern."
+      },
+      {
         "id": "Extension.extension:CTDIvol",
         "path": "Extension.extension",
         "sliceName": "CTDIvol",

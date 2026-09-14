@@ -20,12 +20,12 @@
       "title": "Left Breast",
       "author": [
         {
-          "reference": "Practitioner/PracExample2"
+          "reference": "Practitioner/mii-exa-bildgebung-radiologischer-practitioner"
         }
       ],
       "entry": [
         {
-          "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund"
+          "reference": "DiagnosticReport/mii-exa-bildgebung-radiologischer-befund"
         }
       ],
       "section": [
@@ -50,12 +50,12 @@
     ]
   },
   "subject": {
-    "reference": "Patient/PatExample"
+    "reference": "Patient/mii-exa-bildgebung-radiologischer-patient"
   },
   "date": "2024-07-19T12:03:30+02:00",
   "author": [
     {
-      "reference": "Practitioner/PracExample1"
+      "reference": "Practitioner/mii-exa-bildgebung-radiologischer-practitioner"
     }
   ],
   "title": "Mammographic Report"

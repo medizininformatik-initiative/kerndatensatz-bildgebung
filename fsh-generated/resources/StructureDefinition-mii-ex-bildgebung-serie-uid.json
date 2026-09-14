@@ -99,6 +99,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MII EX Bildgebung Bildnummer",
+        "definition": "Die Extension ermöglicht es, den Bildnummer aus dem entsprechenden DICOM Tag auf Studien-Ebene anzugeben."
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

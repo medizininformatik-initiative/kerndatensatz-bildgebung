@@ -1,0 +1,17 @@
+{
+   "package-id" : "de.medizininformatikinitiative.kerndatensatz.bildgebung",
+   "version" : "2027.0.0-ballot",
+   "path" : "https://medizininformatik-initiative.github.io/kerndatensatz-bildgebung/2027.0.0-ballot",
+   "mode" : "milestone",
+   "status" : "release",
+   "sequence" : "2027",
+   "desc" : "Ballot pre-release of the MII Core Dataset module Bildgebung (Imaging) 2027.0.0 — TODO:REVIEW",
+   "first" : true,
+   "title" : "MII Implementation Guide Bildgebung",
+   "ci-build" : "https://medizininformatik-initiative.github.io/kerndatensatz-bildgebung/branches/dev/",
+   "category" : "Research",
+   "introduction" : "FHIR profiles for representing imaging procedures, imaging studies, and structured radiological findings and measurements, part of the MII core dataset.",
+   "registry-description" : "FHIR profiles for representing imaging procedures, imaging studies, and structured radiological findings and measurements, part of the MII core dataset. TODO:REVIEW",
+   "registry-country" : "de",
+   "registry-authority" : "Medical Informatics Initiative (MII)"
+}

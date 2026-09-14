@@ -176,7 +176,7 @@
     }
   ],
   "subject": {
-    "reference": "Patient/PatExample",
+    "reference": "Patient/mii-exa-bildgebung-radiologischer-patient",
     "identifier": {
       "type": {
         "coding": [
@@ -192,7 +192,7 @@
     }
   },
   "encounter": {
-    "reference": "Encounter/EncExample"
+    "reference": "Encounter/mii-exa-bildgebung-radiologischer-fall"
   },
   "basedOn": [
     {
@@ -206,7 +206,7 @@
   },
   "reasonReference": [
     {
-      "reference": "Condition/CondExample"
+      "reference": "Condition/mii-exa-bildgebung-radiologische-diagnose"
     }
   ],
   "description": "whole body aquisition"
