@@ -64,6 +64,8 @@ Zusätzlich gibt es modalitätsspezifische Metadaten, die sich je nach vorliegen
 
 2025.12.05 - Umbenennung in Modul Bildgebung
 
+2026.09.01 - Umzug IG auf IG-Publisher
+
 ### Wichtige Dokumente und Links
 
 - [Beschreibung des MII-Kerndatensatzes in der Version 1.0 vom 10.3.2017 (PDF)](https://www.medizininformatik-initiative.de/sites/default/files/inline-files/MII_04_Kerndatensatz_1-0.pdf)
