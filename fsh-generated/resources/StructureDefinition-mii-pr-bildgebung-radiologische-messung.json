@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot",
   "name": "MII_PR_Bildgebung_Radiologische_Messung",
   "_name": {
     "extension": [
@@ -67,7 +67,7 @@
     ]
   },
   "status": "active",
-  "date": "2026-09-01",
+  "date": "2026-09-15",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -188,14 +188,11 @@
         "max": "1",
         "patternCoding": {
           "code": "122869004",
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+          "display": "Measurement procedure (procedure)"
         },
         "mustSupport": true
-      },
-      {
-        "id": "Observation.category.coding:sct.display",
-        "path": "Observation.category.coding.display",
-        "patternString": "Measurement procedure (procedure)"
       },
       {
         "id": "Observation.value[x]",
@@ -320,14 +317,14 @@
         "min": 0,
         "max": "1",
         "patternCoding": {
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"
         },
         "mustSupport": true
       },
       {
         "id": "Observation.component.code.coding.system",
         "path": "Observation.component.code.coding.system",
-        "patternUri": "http://snomed.info/sct"
+        "patternUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "id": "Observation.component.value[x]",

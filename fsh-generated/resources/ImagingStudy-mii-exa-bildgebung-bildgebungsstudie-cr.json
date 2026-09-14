@@ -52,6 +52,7 @@
                   {
                     "code": "399038007",
                     "system": "http://snomed.info/sct",
+                    "version": "http://snomed.info/sct/900000000000207008/version/20260701",
                     "display": "Right posterior oblique projection (qualifier value)"
                   }
                 ]
@@ -121,11 +122,13 @@
       "bodySite": {
         "code": "43799004",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Thoracic cavity structure (body structure)"
       },
       "laterality": {
         "code": "66459002",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Unilateral"
       },
       "started": "2024-07-19T12:03:30+02:00"

@@ -1,6 +1,6 @@
 //Head
 Profile: MII_PR_Bildgebung_Kontrastmittelgabe
-Parent: $miiMedicationAdministration
+Parent: $MII-MedicationAdministration
 Id: mii-pr-bildgebung-kontrastmittelgabe
 Title: "MII PR Bildgebung Konstrastmittelgabe"
 Description: "Dieses Profil bietet die Möglichkeit die Kontrastmittelgabe aus dem RIS zu erfassen und ist somit die Alternative zu der Erfassung der Kontrastmittelgabe aus den DICOM-Metadaten."

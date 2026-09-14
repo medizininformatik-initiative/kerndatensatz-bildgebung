@@ -29,6 +29,7 @@
       {
         "code": "76752008",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Breast structure (body structure)"
       }
     ]
@@ -51,6 +52,7 @@
         {
           "code": "122869004",
           "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701",
           "display": "Measurement procedure (procedure)"
         }
       ]
@@ -61,6 +63,7 @@
       {
         "code": "439984002",
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Diameter of structure by imaging measurement (observable entity)"
       }
     ]
@@ -83,7 +86,7 @@
     "coding": [
       {
         "code": "272391002",
-        "system": "http://snomed.info/sct",
+        "system": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701",
         "display": "Measurement technique (qualifier value)"
       }
     ]

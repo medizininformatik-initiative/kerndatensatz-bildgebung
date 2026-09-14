@@ -45,14 +45,10 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
     diagnostic-service-sections 0..1 MS and 
     sct 1..1 MS
 * category.coding[loinc] ^patternCoding.system = $loinc
-* category.coding[loinc] = $loinc#18748-4
-* category.coding[loinc].display = "Diagnostic imaging study"
-* category.coding[diagnostic-service-sections] ^patternCoding.system = $DSS
-* category.coding[diagnostic-service-sections] = $DSS#RAD
-* category.coding[diagnostic-service-sections].display = "Radiology"
-* category.coding[sct] ^patternCoding.system = $SCT
-* category.coding[sct] = $SCT#4201000179104
-* category.coding[sct].display = "Imaging report (record artifact)"
+* category.coding[loinc] = $loinc#18748-4 "Diagnostic imaging study"
+* category.coding[diagnostic-service-sections] ^patternCoding.system = $v2-0074
+* category.coding[diagnostic-service-sections] = $v2-0074#RAD "Radiology"
+* category.coding[sct] = $sct#4201000179104 "Imaging report (record artifact)"
 * category.coding.system 1.. MS
 * category.coding.code 1.. MS
 * code MS
@@ -67,7 +63,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
     loinc 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] from MII_VS_Bildgebung_Diagnostic_Report_Code_LNC (required)
-* code.coding[sct] ^patternCoding.system = $SCT
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] from MII_VS_Bildgebung_Diagnostic_Report_Code_SCT (required)
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
@@ -107,9 +103,9 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
 * conclusionCode.coding contains
     icd10-gm 0..1 MS and
     sct 0..1 MS
-* conclusionCode.coding[icd10-gm] ^patternCoding.system = $CS_icd10-gm
-* conclusionCode.coding[icd10-gm] from $VS_icd10-gm (required)
-* conclusionCode.coding[sct] ^patternCoding.system = $SCT
+* conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd-10-gm
+* conclusionCode.coding[icd10-gm] from $icd-10-gm (required)
+* conclusionCode.coding[sct] ^patternCoding.system = $sct
 * conclusionCode.coding[sct] from MII_VS_Bildgebung_Findings_SCT (required)
 * conclusionCode.coding.system 1.. MS
 * conclusionCode.coding.code 1.. MS

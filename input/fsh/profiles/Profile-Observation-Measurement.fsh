@@ -22,9 +22,7 @@ Description: "Dieses Profil beschreibt eine Messung in der radiologischer Bildge
 * category.coding ^slicing.rules = #open
 * category.coding contains
     sct 0..1 MS
-* category.coding[sct] ^patternCoding.system = $SCT
-* category.coding[sct] = $SCT#122869004
-* category.coding[sct].display = "Measurement procedure (procedure)"
+* category.coding[sct] = $sct#122869004 "Measurement procedure (procedure)"
 * value[x] only Quantity
 * valueQuantity.system = $ucum
 * method MS
@@ -34,12 +32,12 @@ Description: "Dieses Profil beschreibt eine Messung in der radiologischer Bildge
 * method.coding ^slicing.rules = #open
 * method.coding contains
     sct 0..1 MS
-* method.coding[sct] ^patternCoding.system = $SCT
+* method.coding[sct] ^patternCoding.system = $sct
 * method.coding.system 1.. MS
 * method.coding.code 1.. MS
 * component.value[x] only Quantity
 * component.valueQuantity.system = $ucum
-* component.code.coding.system = $SCT
+* component.code.coding.system = $sct
 
 //Translation Profile
 * insert AddSnomedCodingTranslation(category.coding[sct])

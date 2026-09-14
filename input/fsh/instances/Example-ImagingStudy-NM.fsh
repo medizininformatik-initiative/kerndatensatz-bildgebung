@@ -17,11 +17,11 @@ Title: "MII Example Bildgebung Imaging Study NM"
 * procedureReference = Reference(Procedure/mii-exa-bildgebung-bildgebungsprozedur)
 * reasonReference = Reference(Condition/mii-exa-bildgebung-radiologische-diagnose)
 * description = "whole body aquisition"
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[radiopharmaceutical].valueCodeableConcept.coding = $SCT#35321007 "Fluorodeoxyglucose (18-F) (substance)"
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[radionuclide].valueCodeableConcept.coding = $SCT#77004003 "Fluorine-18 (substance)"
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[radiopharmaceutical].valueCodeableConcept.coding = $sct#35321007 "Fluorodeoxyglucose (18-F) (substance)"
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[radionuclide].valueCodeableConcept.coding = $sct#77004003 "Fluorine-18 (substance)"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[tracerExposureTime].valueQuantity.value = 10000
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[tracerExposureTime].valueQuantity.unit = "Seconds"
-* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[units].valueCodeableConcept.coding = http://unitsofmeasure.org#BQML
+* series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[units].valueCodeableConcept.coding = $ucum#BQML
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[radionuclideTotalDose].valueQuantity.value = 196
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[radionuclideTotalDose].valueQuantity.unit = "Megabecquerel"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm].extension[radionuclideHalfLife].valueQuantity.value = 6586.2
@@ -32,8 +32,8 @@ Title: "MII Example Bildgebung Imaging Study NM"
 * series.modality = $DCM#NM "Nuclear Medicine"
 * series.description = "NM WB"
 * series.numberOfInstances = 195
-* series.bodySite = $SCT#51185008 "Thoracic structure (body structure)"
-* series.laterality = $SCT#66459002 "Unilateral"
+* series.bodySite = $sct#51185008 "Thoracic structure (body structure)"
+* series.laterality = $sct#66459002 "Unilateral"
 * series.started = "2024-07-19T12:03:30+02:00"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacingX].valueQuantity.value = 2.89
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacingX].valueQuantity.unit = "millimeter"

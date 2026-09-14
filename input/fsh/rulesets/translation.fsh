@@ -49,6 +49,6 @@ RuleSet: AddICDCodingTranslation(path)
 * {path} ^short = "ICD-10-GM Code"
 * insert Translation({path} ^short, de-DE, ICD-10-GM Code)
 * insert Translation({path} ^short, en-US, ICD-10-GM code)
-* {path} ^definition = "Ein Verweis auf einen vom Bfarm"
+* {path} ^definition = "Ein Verweis auf einen vom Bundesinstitut für Arzneimittel und Medizinprodukte definierten Code"
 * insert Translation({path} ^definition, de-DE, Ein Verweis auf einen vom Bundesinstitut für Arzneimittel und Medizinprodukte definierten Code)
 * insert Translation({path} ^definition, en-US, A reference to a code defined by the german Federal Institute for Drugs and Medical Devices)
