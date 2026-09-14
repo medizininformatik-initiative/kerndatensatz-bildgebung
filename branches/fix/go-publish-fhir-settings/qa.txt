@@ -3,7 +3,7 @@ MII_IG_Bildgebung : Validation Results
 
 err = 29, warn = 761, info = 2984
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.4
-Generated Mon Sep 14 16:38:28 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung)
+Generated Mon Sep 14 17:05:50 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung)
  Build Errors : 7 / 17 / 0
  /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/BodyStructure-mii-exa-bildgebung-koerperstruktur : 2 / 1 / 3
  /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/CapabilityStatement-mii-cps-bildgebung-capabilitystatement : 3 / 3 / 189
@@ -3842,11 +3842,11 @@ INFORMATION: ValueSet.compose.include[1].valueSet[0]: Pinned the version of http
 WARNING: ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'mii-vs-bildgebung-imagingStudy-series-view-position'): Unable to expand included value set 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html': Error from http://127.0.0.1:8090/fhir: Error: [671cfe1b-769b-4255-99d6-ddaa4bdf0590]: A usable code system with URL http://snomed.info/srt could not be resolved.
-Information: X-Request-Id: dec5c718-aafc-4d56-af93-21c70b13de46 (and Error from http://127.0.0.1:8090/fhir: Error: [705f6e55-ea49-444e-9aad-820f35db9f65]: A usable code system with URL http://snomed.info/srt could not be resolved.
-Information: X-Request-Id: 3114d09f-e39b-469a-9607-053f1b433fcb)
+Information: X-Request-Id: 41b963b3-217a-452a-8353-1094f5131527 (and Error from http://127.0.0.1:8090/fhir: Error: [62460397-123f-498f-b1f3-216672398dc9]: A usable code system with URL http://snomed.info/srt could not be resolved.
+Information: X-Request-Id: 13824e4c-cd2c-44bb-8754-535bb7a651be)
 WARNING: ValueSet.where(id = 'mii-vs-bildgebung-imagingStudy-series-view-position'): Unable to expand included value set 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html': Error from http://127.0.0.1:8090/fhir: Error: [671cfe1b-769b-4255-99d6-ddaa4bdf0590]: A usable code system with URL http://snomed.info/srt could not be resolved.
-Information: X-Request-Id: dec5c718-aafc-4d56-af93-21c70b13de46 (and Error from http://127.0.0.1:8090/fhir: Error: [e8281ae6-8f8d-4c7b-8ca9-ca74c68036b4]: A usable code system with URL http://snomed.info/srt could not be resolved.
-Information: X-Request-Id: 4c082de5-c328-4d1e-8ed6-b04213457507)
+Information: X-Request-Id: 41b963b3-217a-452a-8353-1094f5131527 (and Error from http://127.0.0.1:8090/fhir: Error: [a43f8386-313f-4847-bc58-8b4f571211ce]: A usable code system with URL http://snomed.info/srt could not be resolved.
+Information: X-Request-Id: 12812029-2847-40a8-a4c8-4a14aabd52e2)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-ct.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
