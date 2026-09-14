@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-11 | *Computable Name*:MII_PR_Bildgebung_Radiologische_Messung |
+| Active as of 2026-09-01 | *Computable Name*:MII_PR_Bildgebung_Radiologische_Messung |
 
  
 The profile describes a observation for radiological images. 
@@ -103,7 +103,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-bildgebung
     }]
   },
   "status" : "active",
-  "date" : "2026-09-11T13:12:48+00:00",
+  "date" : "2026-09-01",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{
@@ -197,6 +197,56 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-bildgebung
       "id" : "Observation.category.coding:sct",
       "path" : "Observation.category.coding",
       "sliceName" : "sct",
+      "short" : "SNOMED CT Code",
+      "_short" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de-DE"
+          },
+          {
+            "url" : "content",
+            "valueString" : "SNOMED CT Code"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        },
+        {
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en-US"
+          },
+          {
+            "url" : "content",
+            "valueString" : "SNOMED CT code"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "definition" : "Ein Verweis auf einen von SNOMED CT definierten Code",
+      "_definition" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de-DE"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Ein Verweis auf einen von SNOMED CT definierten Code"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        },
+        {
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en-US"
+          },
+          {
+            "url" : "content",
+            "valueString" : "A reference to a code defined by SNOMED CT"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "min" : 0,
       "max" : "1",
       "patternCoding" : {
@@ -318,35 +368,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-bildgebung
         "system" : "http://snomed.info/sct"
       },
       "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component",
-      "path" : "Observation.component",
-      "definition" : "Detailierte Bestandteile der Messung",
-      "_definition" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de-DE"
-          },
-          {
-            "url" : "content",
-            "valueString" : "detailierte Bestandteile der Messung"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        },
-        {
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "en-US"
-          },
-          {
-            "url" : "content",
-            "valueString" : "detailed components of this observation"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      }
     },
     {
       "id" : "Observation.component.code.coding.system",

@@ -81,7 +81,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "BodyStructure",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur|2027.0.0-ballot"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur|2027.0.0-ballot.rc1"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -181,7 +181,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "CarePlan",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung|2027.0.0-ballot"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung|2027.0.0-ballot.rc1"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -290,7 +290,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "Composition",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht|2027.0.0-ballot"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht|2027.0.0-ballot.rc1"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -444,7 +444,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "Device",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet|2027.0.0-ballot"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet|2027.0.0-ballot.rc1"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -526,7 +526,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "DiagnosticReport",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|2027.0.0-ballot"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|2027.0.0-ballot.rc1"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -707,8 +707,8 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "Procedure",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur|2027.0.0-ballot",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur|2027.0.0-ballot"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur|2027.0.0-ballot.rc1",
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur|2027.0.0-ballot.rc1"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -841,7 +841,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "ImagingStudy",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie|2027.0.0-ballot"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie|2027.0.0-ballot.rc1"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -1436,8 +1436,8 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "Observation",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2027.0.0-ballot",
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung|2027.0.0-ballot"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2027.0.0-ballot.rc1",
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung|2027.0.0-ballot.rc1"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -1786,7 +1786,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "MedicationAdministration",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe|2027.0.0-ballot"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe|2027.0.0-ballot.rc1"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -1904,7 +1904,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "ServiceRequest",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung|2027.0.0-ballot"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung|2027.0.0-ballot.rc1"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",

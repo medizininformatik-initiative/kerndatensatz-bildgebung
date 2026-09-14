@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-11 | *Computable Name*:MII_EX_Bildgebung_Modalitaet_MR |
+| Active as of 2026-09-14 | *Computable Name*:MII_EX_Bildgebung_Modalitaet_MR |
 
 The extension allows to extend the resources and feasibility analysis to MR data.
 
@@ -104,7 +104,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-bildgebung
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-11T13:12:48+00:00",
+  "date" : "2026-09-14T06:55:37+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{

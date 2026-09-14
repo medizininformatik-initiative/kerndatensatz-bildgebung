@@ -57,7 +57,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="BodyStructure"/>
-      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur|2027.0.0-ballot">
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur|2027.0.0-ballot.rc1">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -144,7 +144,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="CarePlan"/>
-      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung|2027.0.0-ballot">
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung|2027.0.0-ballot.rc1">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -239,7 +239,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Composition"/>
-      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht|2027.0.0-ballot">
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht|2027.0.0-ballot.rc1">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -374,7 +374,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Device"/>
-      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet|2027.0.0-ballot">
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet|2027.0.0-ballot.rc1">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -445,7 +445,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="DiagnosticReport"/>
-      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|2027.0.0-ballot">
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|2027.0.0-ballot.rc1">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -604,12 +604,12 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Procedure"/>
-      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur|2027.0.0-ballot">
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur|2027.0.0-ballot.rc1">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur|2027.0.0-ballot">
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur|2027.0.0-ballot.rc1">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -720,7 +720,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="ImagingStudy"/>
-      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie|2027.0.0-ballot">
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie|2027.0.0-ballot.rc1">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -1247,12 +1247,12 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Observation"/>
-      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2027.0.0-ballot">
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2027.0.0-ballot.rc1">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung|2027.0.0-ballot">
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung|2027.0.0-ballot.rc1">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -1555,7 +1555,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="MedicationAdministration"/>
-      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe|2027.0.0-ballot">
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe|2027.0.0-ballot.rc1">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -1658,7 +1658,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="ServiceRequest"/>
-      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung|2027.0.0-ballot">
+      <supportedProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung|2027.0.0-ballot.rc1">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
