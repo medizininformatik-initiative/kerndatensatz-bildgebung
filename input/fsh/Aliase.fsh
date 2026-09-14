@@ -15,6 +15,7 @@ Alias: $VSdeviceName = http://hl7.org/fhir/ValueSet/device-nametype
 Alias: $CSdeviceName = http://hl7.org/fhir/device-nametype
 Alias: $docType = http://hl7.org/fhir/ValueSet/doc-typecodes
 Alias: $procedure = http://hl7.org/fhir/ValueSet/procedure-code
+Alias: $clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical
 //MII-Profile
 Alias: $miiProcedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
 Alias: $miiMedicationAdministration = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration
