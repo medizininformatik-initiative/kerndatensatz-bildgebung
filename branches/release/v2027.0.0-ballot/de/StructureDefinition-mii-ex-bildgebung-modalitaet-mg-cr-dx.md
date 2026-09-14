@@ -139,7 +139,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-bildg
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-14T09:21:34+00:00",
+  "date" : "2026-09-14T10:46:28+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{
