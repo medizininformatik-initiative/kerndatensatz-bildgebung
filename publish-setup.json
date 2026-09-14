@@ -1,0 +1,21 @@
+{
+  "canonical-mismatch": true,
+  "website": {
+    "style": "fhir.layout",
+    "url": "https://medizininformatik-initiative.github.io/kerndatensatz-bildgebung",
+    "server": "cloud",
+    "org": "Medical Informatics Initiative (MII)",
+    "clone-xml-json": false
+  },
+  "feeds": {
+    "package": "package-feed.xml",
+    "publication": "publication-feed.xml"
+  },
+  "layout-rules": [
+    {
+      "npm": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
+      "canonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung",
+      "destination": "/"
+    }
+  ]
+}

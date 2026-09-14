@@ -1,0 +1,21 @@
+{
+  "packages" : [{
+    "path" : "package-list.json",
+    "package-id" : "de.medizininformatikinitiative.kerndatensatz.bildgebung",
+    "title" : "MII Implementation Guide Bildgebung",
+    "canonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung",
+    "category" : "Research",
+    "ci-build" : "https://medizininformatik-initiative.github.io/kerndatensatz-bildgebung/branches/develop/",
+    "version-count" : 1,
+    "latest" : {
+      "version" : "2027.0.0-ballot",
+      "date" : "2026-09-15",
+      "path" : "https://medizininformatik-initiative.github.io/kerndatensatz-bildgebung/2027.0.0-ballot"
+    },
+    "milestone" : {
+      "version" : "2027.0.0-ballot",
+      "date" : "2026-09-15",
+      "path" : "https://medizininformatik-initiative.github.io/kerndatensatz-bildgebung/2027.0.0-ballot"
+    }
+  }]
+}

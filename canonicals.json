@@ -1,0 +1,385 @@
+[{
+  "id" : "mii-cps-bildgebung-capabilitystatement",
+  "type" : "CapabilityStatement",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_CPS_Bildgebung_CapabilityStatement"
+},
+{
+  "id" : "mii-cs-bildgebung-instance-image-type",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_CS_Bildgebung_Instance_Image_Type"
+},
+{
+  "id" : "mii-cs-bildgebung-scanning-sequence",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_CS_Bildgebung_Scanning_Sequence"
+},
+{
+  "id" : "mii-cs-bildgebung-scanning-sequence-variant",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_CS_Bildgebung_Scanning_Sequence_Variant"
+},
+{
+  "id" : "mii-cs-bildgebung-series-type",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_CS_Bildgebung_Series_Type"
+},
+{
+  "id" : "mii-cs-bildgebung-transducer-type",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_CS_Bildgebung_Transducer_Type"
+},
+{
+  "id" : "mii-ig-bildgebung",
+  "type" : "ImplementationGuide",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ImplementationGuide/mii-ig-bildgebung",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_IG_Bildgebung"
+},
+{
+  "id" : "mii-lm-bildgebung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_LM_Bildgebung"
+},
+{
+  "id" : "mii-ex-bildgebung-bildgebungsgrund",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Bildgebungsgrund"
+},
+{
+  "id" : "mii-ex-bildgebung-gewicht",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-gewicht",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Gewicht"
+},
+{
+  "id" : "mii-ex-bildgebung-groesse",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-groesse",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Groesse"
+},
+{
+  "id" : "mii-ex-bildgebung-instanz-details",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Instanz_Details"
+},
+{
+  "id" : "mii-ex-bildgebung-kontrastmittel",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Kontrastmittel"
+},
+{
+  "id" : "mii-ex-bildgebung-modalitaet-ct",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Modalitaet_CT"
+},
+{
+  "id" : "mii-ex-bildgebung-modalitaet-mg-cr-dx",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Modalitaet_MG_CR_DX"
+},
+{
+  "id" : "mii-ex-bildgebung-modalitaet-mr",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Modalitaet_MR"
+},
+{
+  "id" : "mii-ex-bildgebung-modalitaet-nm",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Modalitaet_NM"
+},
+{
+  "id" : "mii-ex-bildgebung-modalitaet-pt",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Modalitaet_PT"
+},
+{
+  "id" : "mii-ex-bildgebung-modalitaet-us",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Modalitaet_US"
+},
+{
+  "id" : "mii-ex-bildgebung-serie-schichtdicke",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Schichtdicke"
+},
+{
+  "id" : "mii-ex-bildgebung-serie-uid",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_Serie_UID"
+},
+{
+  "id" : "mii-ex-bildgebung-sop-instanz-uid",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_EX_Bildgebung_SOP_Instanz_UID"
+},
+{
+  "id" : "mii-pr-bildgebung-anforderung-bildgebung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_PR_Bildgebung_Anforderung_Bildgebung"
+},
+{
+  "id" : "mii-pr-bildgebung-behandlungsempfehlung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_PR_Bildgebung_Behandlungsempfehlung"
+},
+{
+  "id" : "mii-pr-bildgebung-bildgebungsprozedur",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_PR_Bildgebung_Bildgebungsprozedur"
+},
+{
+  "id" : "mii-pr-bildgebung-bildgebungsstudie",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_PR_Bildgebung_Bildgebungsstudie"
+},
+{
+  "id" : "mii-pr-bildgebung-geraet",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_PR_Bildgebung_Geraet"
+},
+{
+  "id" : "mii-pr-bildgebung-koerperstruktur",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_PR_Bildgebung_Koerperstruktur"
+},
+{
+  "id" : "mii-pr-bildgebung-kontrastmittelgabe",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_PR_Bildgebung_Kontrastmittelgabe"
+},
+{
+  "id" : "mii-pr-bildgebung-radiologische-befundungsprozedur",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_PR_Bildgebung_Radiologische_Befundungsprozedur"
+},
+{
+  "id" : "mii-pr-bildgebung-radiologische-beobachtung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_PR_Bildgebung_Radiologische_Beobachtung"
+},
+{
+  "id" : "mii-pr-bildgebung-radiologische-messung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_PR_Bildgebung_Radiologische_Messung"
+},
+{
+  "id" : "mii-pr-bildgebung-radiologischer-befund",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_PR_Bildgebung_Radiologischer_Befund"
+},
+{
+  "id" : "mii-pr-bildgebung-semistrukt-befundbericht",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_PR_Bildgebung_Semistrukt_Befundbericht"
+},
+{
+  "id" : "mii-vs-bildgebung-diagnostic-report-code-lnc",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Diagnostic_Report_Code_LNC"
+},
+{
+  "id" : "mii-vs-bildgebung-diagnostic-report-code-sct",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Diagnostic_Report_Code_SCT"
+},
+{
+  "id" : "mii-vs-bildgebung-findings-lnc",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-lnc",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Findings_LNC"
+},
+{
+  "id" : "mii-vs-bildgebung-findings-sct",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Findings_SCT"
+},
+{
+  "id" : "mii-vs-bildgebung-imaging-procedure-code-sct",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_ImagingProcedure_Code_SCT"
+},
+{
+  "id" : "mii-vs-bildgebung-imagingStudy-series-view-position",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_ImagingStudy_Series_View_Position"
+},
+{
+  "id" : "mii-vs-bildgebung-instance-image-type-ct",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Instance_Image_Type_CT"
+},
+{
+  "id" : "mii-vs-bildgebung-instance-image-type-mr",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Instance_Image_Type_MR"
+},
+{
+  "id" : "mii-vs-bildgebung-instance-image-type-nm",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Instance_Image_Type_NM"
+},
+{
+  "id" : "mii-vs-bildgebung-instance-image-type-nm-implementation",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Instance_Image_Type_NM_Implementation"
+},
+{
+  "id" : "mii-vs-bildgebung-instance-image-type-patient-examination",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Instance_Image_Type_Patient_Examination"
+},
+{
+  "id" : "mii-vs-bildgebung-instance-image-type-pixel-data",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Instance_Image_Type_Pixel_Data"
+},
+{
+  "id" : "mii-vs-bildgebung-instance-image-type-us",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Instance_Image_Type_US"
+},
+{
+  "id" : "mii-vs-bildgebung-instance-image-type-us-implementation",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Instance_Image_Type_US_Implemantation"
+},
+{
+  "id" : "mii-vs-bildgebung-mr-scanning-sequence",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_MR_Scanning_Sequence"
+},
+{
+  "id" : "mii-vs-bildgebung-mr-scanning-sequence-variant",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_MR_Scanning_Sequence_Variant"
+},
+{
+  "id" : "mii-vs-bildgebung-observation-body-site-sct",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_Observation_Body_Site_SCT"
+},
+{
+  "id" : "mii-vs-bildgebung-pt-series-type-spacial",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_PT_Series_Type_Spacial"
+},
+{
+  "id" : "mii-vs-bildgebung-pt-series-type-volumetric",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-volumetric",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_PT_Series_Type_Volumetric"
+},
+{
+  "id" : "mii-vs-bildgebung-service-request-code-sct",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-service-request-code-sct",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_ServiceRequest_Code_SCT"
+},
+{
+  "id" : "mii-vs-bildgebung-us-transducer-type",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type",
+  "version" : "2027.0.0-ballot",
+  "name" : "MII_VS_Bildgebung_US_Transducer_Type"
+}]
