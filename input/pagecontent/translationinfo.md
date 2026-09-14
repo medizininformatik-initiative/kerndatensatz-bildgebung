@@ -1,5 +1,3 @@
-### Translation information
-
 This guide is written in **English** (the default language); **German** is the
 translation. English is therefore both the base rendering of the guide and the
 `/en/` rendering; use the language switcher at the top right to move between

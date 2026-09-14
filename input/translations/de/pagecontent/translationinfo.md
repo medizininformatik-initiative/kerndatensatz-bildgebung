@@ -1,5 +1,3 @@
-### Übersetzungsinformationen
-
 Dieser Leitfaden ist **englischsprachig** (Standardsprache); **Deutsch** ist die
 Übersetzung. Englisch ist damit sowohl die Basis-Darstellung des Leitfadens als
 auch die `/en/`-Darstellung; über den Sprachumschalter oben rechts wechseln Sie
