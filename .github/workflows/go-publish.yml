@@ -709,6 +709,7 @@ jobs:
             -zips "${RUNNER_TEMP}/publication-zips" \
             -date "${PUBLICATION_DATE}" \
             -tx "${TX_URL}" \
+            -fhir-settings "${GITHUB_WORKSPACE}/source/.github/fhir-settings.json" \
             2>&1 | tee "${RUNNER_TEMP}/go-publish.log"
 
       - name: Correct and validate FHIR IG registry entry
