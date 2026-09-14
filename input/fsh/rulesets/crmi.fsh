@@ -24,11 +24,11 @@
 
 RuleSet: CRMIVersionPolicyStrict
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy"
-* ^extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes#package "Package"
+* ^extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0#package "Package"
 
 RuleSet: CRMIVersionPolicyStrictInstance
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy"
-* extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes#package "Package"
+* extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0#package "Package"
 
 // ── Copyright label ──────────────────────────────────────────────────────────
 // basis notes that there is currently no resource type in the module where
