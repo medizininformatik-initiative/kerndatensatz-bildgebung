@@ -147,7 +147,7 @@ jobs:
       # (verified at the pinned SHA); without this the advisor.json shipped at
       # the repo root would be read by NOTHING and the "suppressed via
       # advisor.json" contract in this file's header would be false.
-      JAVA_VALIDATION_OPTIONS: "-advisor-file advisor.json"
+      JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
       VALIDATION_REPORT_FILTERS: |
         filename | messageId | detailsWildcard | location
     # Secret-name reconciliation: the MII reusable workflow declares
