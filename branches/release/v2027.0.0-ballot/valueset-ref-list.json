@@ -152,10 +152,10 @@
     "uses" : {
     },
     "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
     "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
-    "StructureDefinition-mii-pr-bildgebung-koerperstruktur.html" : "MII PR Bildgebung Körperstruktur",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur"
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsstudie.html" : "MII PR Bildgebung Bildgebungsstudie",
+    "StructureDefinition-mii-pr-bildgebung-koerperstruktur.html" : "MII PR Bildgebung Körperstruktur"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/bodystructure-code",
@@ -197,10 +197,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.427"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
     "StructureDefinition-mii-pr-bildgebung-behandlungsempfehlung.html" : "MII PR Bildgebung Behandlungsempfehlung",
-    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur"
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-befundungsprozedur.html" : "MII PR Bildgebung Radiologische Befundungsprozedur",
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc",
@@ -246,9 +246,9 @@
     "uses" : {
     },
     "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund",
     "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
-    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
-    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund"
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct",
