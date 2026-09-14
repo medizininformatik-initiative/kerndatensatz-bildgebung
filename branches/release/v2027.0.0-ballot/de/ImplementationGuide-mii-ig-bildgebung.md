@@ -231,7 +231,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
   "title" : "MII IG Kerndatensatz-Modul Bildgebung",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-27",
+  "date" : "2026-09-15",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{

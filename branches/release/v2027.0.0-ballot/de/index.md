@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ImplementationGuide/mii-ig-bildgebung | *Version*:2027.0.0-ballot |
-| Active Stand: 2026-08-27 | *Maschinenlesbarer Name*:MII_IG_Bildgebung |
+| Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_IG_Bildgebung |
 
 ### Einführung
 

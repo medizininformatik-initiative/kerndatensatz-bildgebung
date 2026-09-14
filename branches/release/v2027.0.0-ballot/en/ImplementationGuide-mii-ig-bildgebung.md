@@ -231,7 +231,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   "title" : "MII IG Kerndatensatz-Modul Bildgebung",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-27",
+  "date" : "2026-09-15",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{
