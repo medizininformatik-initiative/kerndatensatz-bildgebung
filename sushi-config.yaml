@@ -102,7 +102,7 @@ copyrightYear: "2024+"
 releaseLabel: ci-build # Quelle gewinnt (sushi-config der Quelle: ci-build; 2027.0.0-ballot ist kein formales Release)
 license: CC-BY-4.0 # Evidenz Tier R (KEIN Default): Quell-Guide-Impressum (Index.page.md) deklariert '© 2019+ TMF e. V. ... CC BY 4.0'; kein license-Feld in sushi-config/package.json/publiziertem Paket, keine LICENSE-Datei -> Bestätigung Gate A / ①
 # Must equal the publication date; go-publish.yml validates this.
-date: "2026-08-27" # TODO:REVIEW ci-build-Stand, kein Publikationsdatum (Gate A)
+date: "2026-09-15"
 jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 # NUM-DIZ takes over IG development and maintenance when MII funding ends
 # (end-2026), so NUM-DIZ is the publisher shown in the footer's
