@@ -1,7 +1,7 @@
 MII_IG_Bildgebung : Validation Results
 =========================================
 
-err = 22, warn = 756, info = 3028
+err = 21, warn = 755, info = 3028
 $--
 Generated $--. FHIR version $-- for de.medizininformatikinitiative.kerndatensatz.bildgebung#$-- (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung)
  Build Errors : 7 / 17 / 0
@@ -14,7 +14,7 @@ Generated $--. FHIR version $-- for de.medizininformatikinitiative.kerndatensatz
  /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/CodeSystem-mii-cs-bildgebung-series-type : 0 / 2 / 4
  /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/CodeSystem-mii-cs-bildgebung-transducer-type : 0 / 2 / 4
  /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/Composition-mii-exa-bildgebung-semistrukt-befundbericht : 0 / 0 / 2
- /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/Condition-mii-exa-bildgebung-radiologische-diagnose : 1 / 1 / 1
+ /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/Condition-mii-exa-bildgebung-radiologische-diagnose : 0 / 0 / 1
  /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/Device-mii-exa-bildgebung-geraet : 0 / 0 / 1
  /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-befund : 0 / 0 / 2
  /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/Encounter-mii-exa-bildgebung-radiologischer-fall : 0 / 1 / 1
@@ -468,8 +468,6 @@ WARNING: Resource: The resource CodeSystem/mii-cs-bildgebung-transducer-type sho
 == fsh-generated/resources/Composition-mii-exa-bildgebung-semistrukt-befundbericht.json ==
 INFORMATION: Composition/mii-exa-bildgebung-semistrukt-befundbericht: Composition.type: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1
 == fsh-generated/resources/Condition-mii-exa-bildgebung-radiologische-diagnose.json ==
-WARNING: Condition/mii-exa-bildgebung-radiologische-diagnose: Condition.clinicalStatus.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-ERROR: Condition/mii-exa-bildgebung-radiologische-diagnose: Condition.clinicalStatus: None of the codings provided are in the value set 'Condition Clinical Status Codes' (http://hl7.org/fhir/ValueSet/condition-clinical|4.0.1), and a coding from this value set is required) (codes = null#active)
 == fsh-generated/resources/Device-mii-exa-bildgebung-geraet.json ==
 == fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-befund.json ==
 INFORMATION: DiagnosticReport/mii-exa-bildgebung-radiologischer-befund: DiagnosticReport.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#4231000179109)
@@ -3873,12 +3871,12 @@ INFORMATION: ValueSet.compose.include[0].valueSet[0]: Pinned the version of http
 INFORMATION: ValueSet.compose.include[1].valueSet[0]: Pinned the version of http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4010.html to 2025.3.20250714
 WARNING: ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-WARNING: ValueSet.where(id = 'mii-vs-bildgebung-imagingStudy-series-view-position'): Unable to expand included value set 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html': Error from http://127.0.0.1:8090/fhir: Error: [88cf5e5e-53a5-4e64-b7a5-2278ee3fa9f7]: A usable code system with URL http://snomed.info/srt could not be resolved.
-Information: X-Request-Id: 207195c5-1165-4d5d-b8d8-b6dbfe60fc83 (and Error from http://127.0.0.1:8090/fhir: Error: [0c9194c9-2b3b-45a2-b47c-b6240e71836e]: A usable code system with URL http://snomed.info/srt could not be resolved.
-Information: X-Request-Id: ac9eed67-dffb-4936-8053-6261b5142984)
-WARNING: ValueSet.where(id = 'mii-vs-bildgebung-imagingStudy-series-view-position'): Unable to expand included value set 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html': Error from http://127.0.0.1:8090/fhir: Error: [88cf5e5e-53a5-4e64-b7a5-2278ee3fa9f7]: A usable code system with URL http://snomed.info/srt could not be resolved.
-Information: X-Request-Id: 207195c5-1165-4d5d-b8d8-b6dbfe60fc83 (and Error from http://127.0.0.1:8090/fhir: Error: [39a8b4bc-ba66-43ff-9c21-de3da5737f63]: A usable code system with URL http://snomed.info/srt could not be resolved.
-Information: X-Request-Id: 08bc26f6-f808-49a5-976b-30dfda18ff61)
+WARNING: ValueSet.where(id = 'mii-vs-bildgebung-imagingStudy-series-view-position'): Unable to expand included value set 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html': Error from http://127.0.0.1:8090/fhir: Error: [266c4896-5645-41a6-9770-39d46b97daf5]: A usable code system with URL http://snomed.info/srt could not be resolved.
+Information: X-Request-Id: 0c0fdf01-3718-4740-930e-07573b936265 (and Error from http://127.0.0.1:8090/fhir: Error: [6badb7fe-6f84-44f1-8a06-4c8ab005903d]: A usable code system with URL http://snomed.info/srt could not be resolved.
+Information: X-Request-Id: d22250a8-63ec-4e60-a1f8-f899ef510d63)
+WARNING: ValueSet.where(id = 'mii-vs-bildgebung-imagingStudy-series-view-position'): Unable to expand included value set 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html': Error from http://127.0.0.1:8090/fhir: Error: [266c4896-5645-41a6-9770-39d46b97daf5]: A usable code system with URL http://snomed.info/srt could not be resolved.
+Information: X-Request-Id: 0c0fdf01-3718-4740-930e-07573b936265 (and Error from http://127.0.0.1:8090/fhir: Error: [6c78cb63-f1aa-4a21-a768-85d428b64d75]: A usable code system with URL http://snomed.info/srt could not be resolved.
+Information: X-Request-Id: bab025d2-23a8-4b48-861f-cfe7d99f12b9)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-ct.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2

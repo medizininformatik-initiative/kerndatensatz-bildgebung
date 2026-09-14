@@ -12,7 +12,7 @@
 
 -------
 
-**clinicalStatus**: active
+**clinicalStatus**: Active
 
 **code**: Liver lesion
 
@@ -30,6 +30,7 @@
   "id" : "mii-exa-bildgebung-radiologische-diagnose",
   "clinicalStatus" : {
     "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
       "code" : "active"
     }]
   },

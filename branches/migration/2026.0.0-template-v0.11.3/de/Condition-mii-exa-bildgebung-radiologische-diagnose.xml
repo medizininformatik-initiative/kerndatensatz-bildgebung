@@ -4,10 +4,11 @@
   <id value="mii-exa-bildgebung-radiologische-diagnose"/>
   <language value="de"/>
   <text>
-    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Condition mii-exa-bildgebung-radiologische-diagnose</b></p><a name="de-mii-exa-bildgebung-radiologische-diagnose"> </a><a name="de-hcmii-exa-bildgebung-radiologische-diagnose"> </a><p><b>clinicalStatus</b>: <span title="Codes:">active</span></p><p><b>code</b>: <span title="Codes:">Liver lesion</span></p><p><b>subject</b>: <a href="Patient-mii-exa-bildgebung-radiologischer-patient.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>encounter</b>: <a href="Encounter-mii-exa-bildgebung-radiologischer-fall.html">Encounter: status = finished; class = AMB (AMB)</a></p></div>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Condition mii-exa-bildgebung-radiologische-diagnose</b></p><a name="de-mii-exa-bildgebung-radiologische-diagnose"> </a><a name="de-hcmii-exa-bildgebung-radiologische-diagnose"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>code</b>: <span title="Codes:">Liver lesion</span></p><p><b>subject</b>: <a href="Patient-mii-exa-bildgebung-radiologischer-patient.html">Erika Beispielpatientin  Female, DoB: 1970-01-01</a></p><p><b>encounter</b>: <a href="Encounter-mii-exa-bildgebung-radiologischer-fall.html">Encounter: status = finished; class = AMB (AMB)</a></p></div>
   </text>
   <clinicalStatus>
     <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
       <code value="active"/>
     </coding>
   </clinicalStatus>
