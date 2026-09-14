@@ -660,11 +660,36 @@ jobs:
           # -go-publish maintains it from then on.
           jq -n '{ "packages": [] }' > site/package-registry.json
 
+          # Same story for the RSS feeds declared in publish-setup.json: the
+          # Publisher appends an item per publication but copies the existing
+          # files ("Attempt to copy .../package-feed.xml but it doesn't
+          # exist"). Seed empty channels in the shape kerndatensatz-basis
+          # carries on gh-pages.
+          seed_feed() {
+            local file="$1" title="$2"
+            {
+              printf '%s\n' '<?xml version="1.0" encoding="UTF-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:fhir="http://hl7.org/fhir/feed" version="2.0">'
+              printf '  <channel>\n'
+              printf '    <title>%s</title>\n' "${title}"
+              printf '    <description>FHIR packages published by the Medical Informatics Initiative</description>\n'
+              printf '    <link>%s</link>\n' "${PUBLICATION_BASE}"
+              printf '    <generator>Medical Informatics Initiative (MII)</generator>\n'
+              printf '    <atom:link href="%s/%s" rel="self" type="application/rss+xml"/>\n' "${PUBLICATION_BASE}" "${file}"
+              printf '    <language>en</language>\n'
+              printf '    <ttl>600</ttl>\n'
+              printf '  </channel>\n'
+              printf '</rss>\n'
+            } > "site/${file}"
+          }
+          seed_feed package-feed.xml "MII Core Dataset Bildgebung FHIR packages"
+          seed_feed publication-feed.xml "MII Core Dataset Bildgebung publications"
+
           {
             echo "### First-publication webroot seeded"
             echo
             echo "- Generated publish-setup.json for ${PUBLICATION_BASE}"
             echo "- Seeded empty package-registry.json"
+            echo "- Seeded empty package-feed.xml / publication-feed.xml"
           } >> "${GITHUB_STEP_SUMMARY}"
 
       - name: Prepare publication workspace
