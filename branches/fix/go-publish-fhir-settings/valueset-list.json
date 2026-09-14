@@ -1,0 +1,252 @@
+{
+  "codeSystems" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Diagnostic_Report_Code_LNC",
+    "title" : "MII VS Bildgebung DiagnosticReport Code Loinc",
+    "description" : "Import the ValueSet for Diagnostic Reports",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Diagnostic_Report_Code_SCT",
+    "title" : "MII VS Bildgebung DiagnosticReport Code SCT",
+    "description" : "Import the ValueSet for Diagnostic Reports",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-lnc",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Findings_LNC",
+    "title" : "MII VS Bildgebung Findings Loinc",
+    "description" : "Import the ValueSet for LOINC Findings",
+    "systems" : ["http://loinc.org"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Findings_SCT",
+    "title" : "MII VS Bildgebung Findings SCT",
+    "description" : "Import the ValueSet for Diagnostic Reports and Service Request",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_ImagingProcedure_Code_SCT",
+    "title" : "MII VS Bildgebung ImagingProcedure Code SCT",
+    "description" : "Import the ValueSet for Imaging Procedures",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-bildgebungsprozedur.html" : "MII PR Bildgebung Bildgebungsprozedur"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_ImagingStudy_Series_View_Position",
+    "title" : "MII VS Bildgebung ImagingStudy-Series View Position",
+    "description" : "Import the ValueSets for view position in MG and DX/CR series",
+    "systems" : ["http://snomed.info/srt", "http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-mg-cr-dx.html" : "MII EX Bildgebung Modalität MG/CR/DX"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_CT",
+    "title" : "MII VS Bildgebung Instance Image Type CT",
+    "description" : "Import the ValueSet for Instance Image Type CT",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_MR",
+    "title" : "MII VS Bildgebung Instance Image Type MR",
+    "description" : "Import the ValueSet for Instance Image Type MR",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_NM",
+    "title" : "MII VS Bildgebung Instance Image Type NM",
+    "description" : "Import the ValueSet for Instance Image Type NM",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_NM_Implementation",
+    "title" : "MII VS Bildgebung Instance Image Type NM Implementation",
+    "description" : "Import the ValueSet for Instance Image Type NM Implementation",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_Patient_Examination",
+    "title" : "MII VS Bildgebung Instance Image Type Patient Examination",
+    "description" : "Import the ValueSet for Instance Image Type Examination",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_Pixel_Data",
+    "title" : "MII VS Bildgebung Instance Image Type Pixel Data",
+    "description" : "Import the ValueSet for Instance Image Type Pixel Data",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_US",
+    "title" : "MII VS Bildgebung Instance Image Type US",
+    "description" : "Import the ValueSet for Instance Image Type US",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Instance_Image_Type_US_Implemantation",
+    "title" : "MII VS Bildgebung Instance Image Type US Implemantation",
+    "description" : "Import the ValueSet for Instance Image Type US Implemantation",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-instanz-details.html" : "MII EX Bildgebung Instanzdetails"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_MR_Scanning_Sequence",
+    "title" : "MII VS Bildgebung Imaging Study MR Scanning Sequence",
+    "description" : "Import the ValueSet for MR Scanning Sequence",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-mr.html" : "MII EX Bildgebung Modalität MR"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_MR_Scanning_Sequence_Variant",
+    "title" : "MII VS Bildgebung Imaging Study MR Scanning Sequence Variant",
+    "description" : "Import the ValueSet for MR Scanning Sequence Variant",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-mr.html" : "MII EX Bildgebung Modalität MR"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_Observation_Body_Site_SCT",
+    "title" : "MII VS Bildgebung Observation Body Site SCT",
+    "description" : "Import the ValueSet for Observation",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung",
+    "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_PT_Series_Type_Spacial",
+    "title" : "MII VS Bildgebung Imaging Study PT Series Type Spacial",
+    "description" : "Import the ValueSet for PT Series Type Spacial",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html" : "MII EX Bildgebung Modalität PT"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-volumetric",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_PT_Series_Type_Volumetric",
+    "title" : "MII VS Bildgebung Imaging Study PT Series Type Volumetric",
+    "description" : "Import the ValueSet for PT Series Type Volumetric",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-pt.html" : "MII EX Bildgebung Modalität PT"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-service-request-code-sct",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_ServiceRequest_Code_SCT",
+    "title" : "MII VS Bildgebung ServiceRequest Code SCT",
+    "description" : "Import the ValueSet for ServiceRequest",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type",
+    "version" : "2027.0.0-ballot",
+    "status" : "active",
+    "name" : "MII_VS_Bildgebung_US_Transducer_Type",
+    "title" : "MII VS Bildgebung Imaging Study US Transducer Type",
+    "description" : "Import the ValueSet for US Transducer Type",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-bildgebung-modalitaet-us.html" : "MII EX Bildgebung Modalität US"
+  }]
+}
