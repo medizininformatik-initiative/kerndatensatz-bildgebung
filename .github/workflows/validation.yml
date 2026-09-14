@@ -149,8 +149,11 @@ jobs:
       # step fails with ENOENT on ./validation.json). Hardcoding a subset here
       # is what broke this job — always inherit the central value.
       JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
+      # Same accepted suppression as main.yml: the CR example trips a duplicate
+      # DICOM ValueSet URL (CID 4014) in the SU-TermServ context — a known
+      # package-duplication issue, not a profile error.
       VALIDATION_REPORT_FILTERS: |
-        filename | messageId | detailsWildcard | location
+        ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.json|||
     # Secret-name reconciliation: the MII reusable workflow declares
     # CDS_DEV_CLIENT_CERT / _KEY / _CERT_PASSWORD (all required), but THIS repo's
     # canonical name for the same SU-TermServ client certificate is
