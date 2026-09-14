@@ -665,6 +665,11 @@ jobs:
           # files ("Attempt to copy .../package-feed.xml but it doesn't
           # exist"). Seed empty channels in the shape kerndatensatz-basis
           # carries on gh-pages.
+          # lastBuildDate + pubDate MUST exist with text content: the
+          # Publisher's XML feed updater rewrites them in place and NPEs
+          # without them; its text fallback then crashes on an item-less
+          # feed (indexOf("<item") == -1).
+          seed_date="$(LC_ALL=C date -u '+%a, %d %b %Y %H:%M:%S +0000')"
           seed_feed() {
             local file="$1" title="$2"
             {
@@ -674,7 +679,9 @@ jobs:
               printf '    <description>FHIR packages published by the Medical Informatics Initiative</description>\n'
               printf '    <link>%s</link>\n' "${PUBLICATION_BASE}"
               printf '    <generator>Medical Informatics Initiative (MII)</generator>\n'
+              printf '    <lastBuildDate>%s</lastBuildDate>\n' "${seed_date}"
               printf '    <atom:link href="%s/%s" rel="self" type="application/rss+xml"/>\n' "${PUBLICATION_BASE}" "${file}"
+              printf '    <pubDate>%s</pubDate>\n' "${seed_date}"
               printf '    <language>en</language>\n'
               printf '    <ttl>600</ttl>\n'
               printf '  </channel>\n'
