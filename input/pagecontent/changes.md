@@ -70,8 +70,13 @@ section, so the prose explanation and the technical diff sit side by side.</p>
 </div>
 
 ---
+#### Version 2027.0.0-ballot.1
 
-### Version 2027.0.0-ballot
+**Date:** 206-09-15
+
+- **Changed**: Abhängigkeiten zu anderen Profilen angepasst auf ballot-Stand
+
+#### Version 2027.0.0-ballot
 
 - **Added**: body weight and height can be represented at study level via extensions based on the German base profiles
 - **Changed**: SOP class binding simplified to extensible
@@ -79,7 +84,7 @@ section, so the prose explanation and the technical diff sit side by side.</p>
 - **Added**: dedicated Observation for radiological measurements
 - **Added**: exampleressource for Patient, Condition and Encounter
 
-### Version 2026.0.0
+#### Version 2026.0.0
 
 - Changed: renamed to module Bildgebung
 - Changed: SliceThickness usable at series and instance level
@@ -95,7 +100,7 @@ section, so the prose explanation and the technical diff sit side by side.</p>
 - Fixed: corrected invalid codes
 - Fixed: moved the BodyStructure extension of Observation to Observation.bodySite
 
-### Version 2026.0.0-ballot
+#### Version 2026.0.0-ballot
 
 - Newly added:
   - new modality extension for ultrasound
@@ -118,17 +123,17 @@ section, so the prose explanation and the technical diff sit side by side.</p>
 - R5 backport extensions in DiagnosticReport and Observation modelled independently as a workaround until an HL7 solution is available
 - In this release, resources use SNOMED CT version http://snomed.info/sct/900000000000207008/version/20250701 across all modules to ensure stable ValueSet expansion.
 
-### Version 2025.0.2
+#### Version 2025.0.2
 
 - Fixed the availability of the R5 extension package
 
-### Version 2025.0.1
+#### Version 2025.0.1
 
 - Reworked translations for better display and readability in the FDPG
 - Fixed typos in SNOMED CT ValueSets
 - Improved the cardinality of the reference from the Observation profile to the BodyStructure profile
 
-### Version 2025.0.0
+#### Version 2025.0.0
 
 - Additional separate UML diagrams for report and metadata for better understanding
 - Additional abstract UML diagram for the module

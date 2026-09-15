@@ -79,7 +79,13 @@ werden können.</p>
 </div>
 
 ---
-### Version 2027.0.0-ballot
+#### Version 2027.0.0-ballot.1
+
+**Datum:** 206-09-15
+
+- **Geändert**: Abhängigkeiten zu anderen Profilen angepasst auf ballot-Stand
+
+#### Version 2027.0.0-ballot
 
 - **Hinzugefügt**: Körpergewicht und Größe auf Studienebene über Extension abbildbar mit DE-Basisprofile
 - **Geändert**: SOP-Class Binding vereinfacht auf extensible
@@ -87,7 +93,7 @@ werden können.</p>
 - **Hinzugefügt**: Spezifische Observation für radiologische Messungen
 - **Hinzugefügt**: Beispielressourcen für Patient, Condition und Encounter
 
-### Version 2026.0.0
+#### Version 2026.0.0
 
 - Changed: Umbenennung in Modul Bildgebung
 - Changed: SliceThickness auf Serien- und Instanzebene verwendbar
@@ -103,7 +109,7 @@ werden können.</p>
 - Fixed: Ungültige Codes ausgebessert
 - Fixed: Extension BodyStructure von Observation auf Observation.bodySite umgehängt
 
-### Version 2026.0.0-ballot
+#### Version 2026.0.0-ballot
 
 - Neu hinzugefügt:
   - Neue Modalität-Extension für Ultraschall
@@ -126,17 +132,17 @@ werden können.</p>
 - R5 Backport-Extensions in DiagnosticReport und Observation als Workaround eigenständig ausmodeliert, bis HL7 Lösung verfügbar
 - Ressourcen verwenden in diesem Release modulübergreifend SNOMED CT in der Version http://snomed.info/sct/900000000000207008/version/20250701, um eine stabile ValueSet-Expansion sicherzustellen.
 
-### Version 2025.0.2
+#### Version 2025.0.2
 
 - Problemlösung zur Verfügbarkeit des R5-Extension-Package
 
-### Version 2025.0.1
+#### Version 2025.0.1
 
 - Überarbeitung Translations für bessere Darstellung und Lesbarkeit im FDPG
 - Verbesserung von Tippfehlern in SNOMED CT ValueSets
 - Verbesserung der Kardinalität der Referenz vom Profil Observation auf das Profil BodyStructure
 
-### Version 2025.0.0
+#### Version 2025.0.0
 
 - Zusätzliche UMLs gesondert für Befund und Metadaten zum besseren Verständnis
 - Zusätzliches abstraktes UML für das Modul
