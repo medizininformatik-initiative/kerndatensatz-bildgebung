@@ -1,4 +1,4 @@
-# UML Diagrams - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# UML Diagrams - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Guidance**](guidance.md)

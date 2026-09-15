@@ -1,4 +1,4 @@
-# Hinweise zur Übersetzung - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# Hinweise zur Übersetzung - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Hinweise zur Übersetzung**

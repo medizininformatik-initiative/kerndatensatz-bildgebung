@@ -1,4 +1,4 @@
-# Startseite - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# Startseite - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Startseite**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ImplementationGuide/mii-ig-bildgebung | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ImplementationGuide/mii-ig-bildgebung | *Version*:2027.0.0-ballot.1 |
 | Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_IG_Bildgebung |
 
 ### Einführung
@@ -17,7 +17,7 @@ Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatens
 | | |
 | :--- | :--- |
 | Datum | 15.09.2026 |
-| Version | 2027.0.0-ballot (CalVer`YYYY.n.n`) |
+| Version | 2027.0.0-ballot.1 (CalVer`YYYY.n.n`) |
 | Status | active |
 | Realm | DE |
 

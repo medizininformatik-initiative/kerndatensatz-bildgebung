@@ -1,4 +1,4 @@
-# MII VS Bildgebung ImagingProcedure Code SCT - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# MII VS Bildgebung ImagingProcedure Code SCT - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct | *Version*:2027.0.0-ballot.1 |
 | Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_VS_Bildgebung_ImagingProcedure_Code_SCT |
 | **Copyright/Rechtliches**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
@@ -41,7 +41,7 @@ Import the ValueSet for Imaging Procedures
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_VS_Bildgebung_ImagingProcedure_Code_SCT",
   "title" : "MII VS Bildgebung ImagingProcedure Code SCT",
   "status" : "active",

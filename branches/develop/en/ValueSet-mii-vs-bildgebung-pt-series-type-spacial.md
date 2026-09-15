@@ -1,4 +1,4 @@
-# MII VS Bildgebung Imaging Study PT Series Type Spacial - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# MII VS Bildgebung Imaging Study PT Series Type Spacial - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial | *Version*:2027.0.0-ballot.1 |
 | Active as of 2026-09-15 | *Computable Name*:MII_VS_Bildgebung_PT_Series_Type_Spacial |
 
  
@@ -50,7 +50,7 @@ Import the ValueSet for PT Series Type Spacial
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_VS_Bildgebung_PT_Series_Type_Spacial",
   "title" : "MII VS Bildgebung Imaging Study PT Series Type Spacial",
   "status" : "active",

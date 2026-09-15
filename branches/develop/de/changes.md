@@ -1,9 +1,11 @@
-# Änderungshistorie - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# Änderungshistorie - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Änderungshistorie**
 
 ## Änderungshistorie
+
+ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
 
 Diese Seite hält die Änderungen zwischen den veröffentlichten Versionen des Moduls **Bildgebung** fest, die neueste Version zuerst. Sie folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/) und dem KDS-CalVer-Schema, das die Seite [Versionierung](version-history.md) beschreibt.
 
@@ -38,7 +40,13 @@ Kennzeichnen Sie solche Einträge deutlich (zum Beispiel mit dem Präfix **BREAK
 
 -------
 
-### Version 2027.0.0-ballot
+#### Version 2027.0.0-ballot.1
+
+**Datum:** 206-09-15
+
+* **Geändert**: Abhängigkeiten zu anderen Profilen angepasst auf ballot-Stand
+
+#### Version 2027.0.0-ballot
 
 * **Hinzugefügt**: Körpergewicht und Größe auf Studienebene über Extension abbildbar mit DE-Basisprofile
 * **Geändert**: SOP-Class Binding vereinfacht auf extensible
@@ -46,7 +54,7 @@ Kennzeichnen Sie solche Einträge deutlich (zum Beispiel mit dem Präfix **BREAK
 * **Hinzugefügt**: Spezifische Observation für radiologische Messungen
 * **Hinzugefügt**: Beispielressourcen für Patient, Condition und Encounter
 
-### Version 2026.0.0
+#### Version 2026.0.0
 
 * Changed: Umbenennung in Modul Bildgebung
 * Changed: SliceThickness auf Serien- und Instanzebene verwendbar
@@ -62,7 +70,7 @@ Kennzeichnen Sie solche Einträge deutlich (zum Beispiel mit dem Präfix **BREAK
 * Fixed: Ungültige Codes ausgebessert
 * Fixed: Extension BodyStructure von Observation auf Observation.bodySite umgehängt
 
-### Version 2026.0.0-ballot
+#### Version 2026.0.0-ballot
 
 * Neu hinzugefügt: 
 * Neue Modalität-Extension für Ultraschall
@@ -88,17 +96,17 @@ Kennzeichnen Sie solche Einträge deutlich (zum Beispiel mit dem Präfix **BREAK
 * R5 Backport-Extensions in DiagnosticReport und Observation als Workaround eigenständig ausmodeliert, bis HL7 Lösung verfügbar
 * Ressourcen verwenden in diesem Release modulübergreifend SNOMED CT in der Version http://snomed.info/sct/900000000000207008/version/20250701, um eine stabile ValueSet-Expansion sicherzustellen.
 
-### Version 2025.0.2
+#### Version 2025.0.2
 
 * Problemlösung zur Verfügbarkeit des R5-Extension-Package
 
-### Version 2025.0.1
+#### Version 2025.0.1
 
 * Überarbeitung Translations für bessere Darstellung und Lesbarkeit im FDPG
 * Verbesserung von Tippfehlern in SNOMED CT ValueSets
 * Verbesserung der Kardinalität der Referenz vom Profil Observation auf das Profil BodyStructure
 
-### Version 2025.0.0
+#### Version 2025.0.0
 
 * Zusätzliche UMLs gesondert für Befund und Metadaten zum besseren Verständnis
 * Zusätzliches abstraktes UML für das Modul

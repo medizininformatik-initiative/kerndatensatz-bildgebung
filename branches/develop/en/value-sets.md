@@ -1,4 +1,4 @@
-# Value Sets - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# Value Sets - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * **Value Sets**

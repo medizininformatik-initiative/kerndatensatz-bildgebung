@@ -1,4 +1,4 @@
-# MII VS Bildgebung Imaging Study MR Scanning Sequence - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# MII VS Bildgebung Imaging Study MR Scanning Sequence - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence | *Version*:2027.0.0-ballot.1 |
 | Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_VS_Bildgebung_MR_Scanning_Sequence |
 
  
@@ -50,7 +50,7 @@ Import the ValueSet for MR Scanning Sequence
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_VS_Bildgebung_MR_Scanning_Sequence",
   "title" : "MII VS Bildgebung Imaging Study MR Scanning Sequence",
   "status" : "active",

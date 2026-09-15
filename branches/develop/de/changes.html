@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Änderungshistorie - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot</title>
+    <title>Änderungshistorie - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG Kerndatensatz-Modul Bildgebung</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot - 
+            <span style="display:inline-block;">2027.0.0-ballot.1 - 
 
 
 
@@ -285,7 +285,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG Kerndatensatz-Modul Bildgebung - Local Development build (v2027.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG Kerndatensatz-Modul Bildgebung - Local Development build (v2027.0.0-ballot.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Änderungshistorie</h2>
   
 
@@ -301,17 +301,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#version-202700-ballot" id="markdown-toc-version-202700-ballot">Version 2027.0.0-ballot</a></li>
-  <li><a href="#version-202600" id="markdown-toc-version-202600">Version 2026.0.0</a></li>
-  <li><a href="#version-202600-ballot" id="markdown-toc-version-202600-ballot">Version 2026.0.0-ballot</a></li>
-  <li><a href="#version-202502" id="markdown-toc-version-202502">Version 2025.0.2</a></li>
-  <li><a href="#version-202501" id="markdown-toc-version-202501">Version 2025.0.1</a></li>
-  <li><a href="#version-202500" id="markdown-toc-version-202500">Version 2025.0.0</a></li>
-</ul>
-
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
+
+<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+
+Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
+
+</p>
+
 <!-- markdownlint-disable MD041 -->
 <!-- markdownlint-disable MD041 -->
 <!-- Deutsche Übersetzung der Standardsprachseite input/pagecontent/changes.md
@@ -395,7 +394,15 @@ werden können.</p>
 </div>
 
 <hr />
-<h3 id="version-202700-ballot">Version 2027.0.0-ballot</h3>
+<h4 id="version-202700-ballot1">Version 2027.0.0-ballot.1</h4>
+
+<p><strong>Datum:</strong> 206-09-15</p>
+
+<ul>
+  <li><strong>Geändert</strong>: Abhängigkeiten zu anderen Profilen angepasst auf ballot-Stand</li>
+</ul>
+
+<h4 id="version-202700-ballot">Version 2027.0.0-ballot</h4>
 
 <ul>
   <li><strong>Hinzugefügt</strong>: Körpergewicht und Größe auf Studienebene über Extension abbildbar mit DE-Basisprofile</li>
@@ -405,7 +412,7 @@ werden können.</p>
   <li><strong>Hinzugefügt</strong>: Beispielressourcen für Patient, Condition und Encounter</li>
 </ul>
 
-<h3 id="version-202600">Version 2026.0.0</h3>
+<h4 id="version-202600">Version 2026.0.0</h4>
 
 <ul>
   <li>Changed: Umbenennung in Modul Bildgebung</li>
@@ -423,7 +430,7 @@ werden können.</p>
   <li>Fixed: Extension BodyStructure von Observation auf Observation.bodySite umgehängt</li>
 </ul>
 
-<h3 id="version-202600-ballot">Version 2026.0.0-ballot</h3>
+<h4 id="version-202600-ballot">Version 2026.0.0-ballot</h4>
 
 <ul>
   <li>Neu hinzugefügt:
@@ -457,13 +464,13 @@ werden können.</p>
   <li>Ressourcen verwenden in diesem Release modulübergreifend SNOMED CT in der Version http://snomed.info/sct/900000000000207008/version/20250701, um eine stabile ValueSet-Expansion sicherzustellen.</li>
 </ul>
 
-<h3 id="version-202502">Version 2025.0.2</h3>
+<h4 id="version-202502">Version 2025.0.2</h4>
 
 <ul>
   <li>Problemlösung zur Verfügbarkeit des R5-Extension-Package</li>
 </ul>
 
-<h3 id="version-202501">Version 2025.0.1</h3>
+<h4 id="version-202501">Version 2025.0.1</h4>
 
 <ul>
   <li>Überarbeitung Translations für bessere Darstellung und Lesbarkeit im FDPG</li>
@@ -471,7 +478,7 @@ werden können.</p>
   <li>Verbesserung der Kardinalität der Referenz vom Profil Observation auf das Profil BodyStructure</li>
 </ul>
 
-<h3 id="version-202500">Version 2025.0.0</h3>
+<h4 id="version-202500">Version 2025.0.0</h4>
 
 <ul>
   <li>Zusätzliche UMLs gesondert für Befund und Metadaten zum besseren Verständnis</li>
@@ -513,8 +520,8 @@ werden können.</p>
 
 
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Sep 14, 2026 19:47+0000">2026-09-14</span>
+          Package de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Tue, Sep 15, 2026 06:37+0000">2026-09-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

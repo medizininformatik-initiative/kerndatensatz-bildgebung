@@ -3,7 +3,7 @@ MII_IG_Bildgebung : Validation Results
 
 err = 29, warn = 761, info = 2984
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.4
-Generated Mon Sep 14 19:54:00 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung)
+Generated Tue Sep 15 06:44:13 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot.1 (canonical = https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung)
  Build Errors : 7 / 17 / 0
  /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/BodyStructure-mii-exa-bildgebung-koerperstruktur : 2 / 1 / 3
  /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/CapabilityStatement-mii-cps-bildgebung-capabilitystatement : 3 / 3 / 189
@@ -473,8 +473,8 @@ INFORMATION: Composition/mii-exa-bildgebung-semistrukt-befundbericht: Compositio
 == fsh-generated/resources/Device-mii-exa-bildgebung-geraet.json ==
 == fsh-generated/resources/DiagnosticReport-mii-exa-bildgebung-radiologischer-befund.json ==
 INFORMATION: DiagnosticReport/mii-exa-bildgebung-radiologischer-befund: DiagnosticReport.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#4231000179109)
-INFORMATION: DiagnosticReport/mii-exa-bildgebung-radiologischer-befund: DiagnosticReport.code.coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|2027.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: DiagnosticReport/mii-exa-bildgebung-radiologischer-befund: DiagnosticReport.conclusionCode[0].coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|2027.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: DiagnosticReport/mii-exa-bildgebung-radiologischer-befund: DiagnosticReport.code.coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|2027.0.0-ballot.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: DiagnosticReport/mii-exa-bildgebung-radiologischer-befund: DiagnosticReport.conclusionCode[0].coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|2027.0.0-ballot.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Encounter-mii-exa-bildgebung-radiologischer-fall.json ==
 WARNING: Encounter/mii-exa-bildgebung-radiologischer-fall: Encounter.class: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.json ==
@@ -546,24 +546,24 @@ INFORMATION: ImagingStudy/mii-exa-bildgebung-bildgebungsstudie-us: ImagingStudy.
 INFORMATION: ImplementationGuide.meta.profile[0]: Pinned the version of http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide to 2.0.0
 INFORMATION: ImplementationGuide.meta.profile[1]: Pinned the version of http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide to 2.0.0
 INFORMATION: ImplementationGuide.meta.profile[2]: Pinned the version of http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-implementationguide to 2.0.0
-INFORMATION: ImplementationGuide.definition.resource[20].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[21].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[22].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[24].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[25].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[27].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[28].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[29].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[30].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[31].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[32].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[33].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[34].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[36].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[39].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[40].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[41].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur to 2027.0.0-ballot
-INFORMATION: ImplementationGuide.definition.resource[42].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[20].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[21].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[22].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[24].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[25].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[27].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[28].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[29].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[30].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[31].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[32].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[33].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[34].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[36].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[39].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[40].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[41].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur to 2027.0.0-ballot.1
+INFORMATION: ImplementationGuide.definition.resource[42].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung to 2027.0.0-ballot.1
 INFORMATION: ImplementationGuide.title: Unused 'de' translation 'MII Implementation Guide Bildgebung' -> 'MII Implementierungsleitfaden Bildgebung'
 INFORMATION: ImplementationGuide/mii-ig-bildgebung: ImplementationGuide.language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ImplementationGuide/mii-ig-bildgebung: ImplementationGuide.language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
@@ -612,15 +612,15 @@ INFORMATION: Resource: The resource ImplementationGuide/mii-ig-bildgebung could 
 == fsh-generated/resources/MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.json ==
 WARNING: MedicationAdministration/mii-exa-bildgebung-kontrastmittelgabe: MedicationAdministration.dosage.dose: Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#mm')
 == fsh-generated/resources/Observation-mii-exa-bildgebung-radiologische-beobachtung.json ==
-INFORMATION: Observation/mii-exa-bildgebung-radiologische-beobachtung: Observation.value.ofType(string): This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2027.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/mii-exa-bildgebung-radiologische-beobachtung: Observation.category[0].coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2027.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/mii-exa-bildgebung-radiologische-beobachtung: Observation.code.coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2027.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/mii-exa-bildgebung-radiologische-beobachtung: Observation.value.ofType(string): This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2027.0.0-ballot.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/mii-exa-bildgebung-radiologische-beobachtung: Observation.category[0].coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2027.0.0-ballot.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/mii-exa-bildgebung-radiologische-beobachtung: Observation.code.coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2027.0.0-ballot.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Observation/mii-exa-bildgebung-radiologische-beobachtung: Observation.hasMember[0]: Unable to resolve resource with reference 'Observation/ObsExample'
 WARNING: Observation/mii-exa-bildgebung-radiologische-beobachtung: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/mii-exa-bildgebung-radiologische-beobachtung: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-mii-exa-bildgebung-radiologische-messung.json ==
 INFORMATION: Observation/mii-exa-bildgebung-radiologische-messung: Observation.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#122869004)
-INFORMATION: Observation/mii-exa-bildgebung-radiologische-messung: Observation.code.coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung|2027.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/mii-exa-bildgebung-radiologische-messung: Observation.code.coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung|2027.0.0-ballot.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Observation/mii-exa-bildgebung-radiologische-messung: Observation.value.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#mm')
 WARNING: Observation/mii-exa-bildgebung-radiologische-messung: Observation.method.coding[0].system: A definition for CodeSystem 'http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701' could not be found, so the code cannot be validated
 WARNING: Observation/mii-exa-bildgebung-radiologische-messung: Observation: Best Practice Recommendation: In general, all observations should have a performer
@@ -631,8 +631,8 @@ WARNING: Observation/mii-exa-bildgebung-radiologische-messung: Observation: Best
 == fsh-generated/resources/Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.json ==
 ERROR: Procedure/mii-exa-bildgebung-radiologische-befundungsprozedur: Procedure.report[0]: Unable to resolve resource with reference 'DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund'
 == fsh-generated/resources/ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.json ==
-INFORMATION: ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung: ServiceRequest.code.coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung|2027.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung: ServiceRequest.reasonCode[0].coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung|2027.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung: ServiceRequest.code.coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung|2027.0.0-ballot.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung: ServiceRequest.reasonCode[0].coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung|2027.0.0-ballot.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung: ServiceRequest.reasonReference[0]: Unable to resolve resource with reference 'Condition/CondExample'
 ERROR: ServiceRequest/mii-exa-bildgebung-anforderung-bildgebung: ServiceRequest.supportingInfo[0]: Unable to resolve resource with reference 'DiagnosticReport/mii-exa-bildgebung-radiologischer-Befund'
 == fsh-generated/resources/StructureDefinition-mii-ex-bildgebung-bildgebungsgrund.json ==
@@ -725,21 +725,21 @@ INFORMATION: StructureDefinition.snapshot.element[45].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[45].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[46].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[47].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[47].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[47].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[48].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[48].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[48].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[49].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[49].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[49].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[50].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[50].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[50].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[51].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[51].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[51].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[52].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[52].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[52].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[53].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[53].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[53].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[54].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[54].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[54].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[55].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[56].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[56].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
@@ -750,14 +750,14 @@ INFORMATION: StructureDefinition.snapshot.element[62].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.differential.element[4].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition.differential.element[11].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition.differential.element[18].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
-INFORMATION: StructureDefinition.differential.element[27].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[28].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[29].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[30].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[31].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[32].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[33].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[34].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[27].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[28].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[29].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[30].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[31].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[32].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[33].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[34].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition/mii-ex-bildgebung-instanz-details: StructureDefinition.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: StructureDefinition/mii-ex-bildgebung-instanz-details: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 INFORMATION: Resource: The resource StructureDefinition/mii-ex-bildgebung-instanz-details could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
@@ -933,13 +933,13 @@ INFORMATION: StructureDefinition.snapshot.element[51].constraint[1].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[53].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[53].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[55].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[55].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[55].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[57].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[4].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition.differential.element[11].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition.differential.element[18].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition.differential.element[25].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
-INFORMATION: StructureDefinition.differential.element[32].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[32].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx: StructureDefinition.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 INFORMATION: Resource: The resource StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
@@ -967,13 +967,13 @@ INFORMATION: StructureDefinition.snapshot.element[15].constraint[1].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[17].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[17].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[19].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[19].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[19].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[20].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[20].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[22].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[22].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[24].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[24].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[24].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[25].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[25].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[27].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1028,8 +1028,8 @@ INFORMATION: StructureDefinition.snapshot.element[71].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[72].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[74].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[4].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
-INFORMATION: StructureDefinition.differential.element[11].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[15].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[11].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[15].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.differential.element[19].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition.differential.element[26].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition.differential.element[33].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
@@ -1199,9 +1199,9 @@ INFORMATION: StructureDefinition.snapshot.element[69].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[69].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[70].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[71].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[71].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[71].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[72].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[72].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-volumetric to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[72].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-volumetric to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[73].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[75].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[4].binding.valueSet: Pinned the version of http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4021.html to 2025.3.20250714
@@ -1210,8 +1210,8 @@ INFORMATION: StructureDefinition.differential.element[14].type[0].profile[0]: Pi
 INFORMATION: StructureDefinition.differential.element[21].binding.valueSet: Pinned the version of http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_84.html to 2025.3.20250714
 INFORMATION: StructureDefinition.differential.element[25].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition.differential.element[32].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
-INFORMATION: StructureDefinition.differential.element[42].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[43].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-volumetric to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[42].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[43].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-volumetric to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition/mii-ex-bildgebung-modalitaet-pt: StructureDefinition.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: StructureDefinition/mii-ex-bildgebung-modalitaet-pt: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 INFORMATION: Resource: The resource StructureDefinition/mii-ex-bildgebung-modalitaet-pt could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
@@ -1226,7 +1226,7 @@ INFORMATION: StructureDefinition.snapshot.element[3].constraint[1].source: Pinne
 INFORMATION: StructureDefinition.snapshot.element[5].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[5].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[7].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[7].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[7].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[8].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[8].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[10].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1259,7 +1259,7 @@ INFORMATION: StructureDefinition.snapshot.element[34].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[34].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[36].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[38].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.differential.element[4].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[4].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.differential.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition.differential.element[15].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition/mii-ex-bildgebung-modalitaet-us: StructureDefinition.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
@@ -2158,7 +2158,7 @@ INFORMATION: StructureDefinition.snapshot.element[95].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[96].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[97].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[98].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[98].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[98].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[100].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[100].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[101].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -2179,7 +2179,7 @@ INFORMATION: StructureDefinition.snapshot.element[113].constraint[0].source: Pin
 INFORMATION: StructureDefinition.snapshot.element[114].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[17].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/procedure-code to 4.0.1
 INFORMATION: StructureDefinition.differential.element[18].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
-INFORMATION: StructureDefinition.differential.element[26].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[26].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.differential.element[28].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/DiagnosticReport to 4.0.1
 INFORMATION: StructureDefinition.differential.element[28].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/ImagingStudy to 4.0.1
 INFORMATION: StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung: StructureDefinition.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
@@ -2240,7 +2240,7 @@ INFORMATION: StructureDefinition.snapshot.element[32].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[33].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[34].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[35].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[36].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[36].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[36].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[37].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[38].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/CarePlan to 4.0.1
@@ -2277,7 +2277,7 @@ INFORMATION: StructureDefinition.snapshot.element[65].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[66].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[67].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[8].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
-INFORMATION: StructureDefinition.differential.element[9].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[9].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung: StructureDefinition.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 INFORMATION: Resource: The resource StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
@@ -2330,7 +2330,7 @@ INFORMATION: StructureDefinition.snapshot.element[33].constraint[1].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[34].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[35].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[36].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[37].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[37].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[37].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[38].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[39].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -2393,7 +2393,7 @@ INFORMATION: StructureDefinition.snapshot.element[89].constraint[1].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[90].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[91].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[92].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[92].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[92].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[94].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[94].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[95].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -2465,8 +2465,8 @@ INFORMATION: StructureDefinition.snapshot.element[155].constraint[0].source: Pin
 INFORMATION: StructureDefinition.snapshot.element[156].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[157].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[158].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.differential.element[1].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[11].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[1].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[11].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.differential.element[13].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
 INFORMATION: StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur: StructureDefinition.extension[5].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e
 INFORMATION: StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur: StructureDefinition.extension[12].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
@@ -2502,13 +2502,13 @@ INFORMATION: StructureDefinition.snapshot.element[12].binding.extension[0].value
 INFORMATION: StructureDefinition.snapshot.element[13].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[15].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[15].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[16].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[16].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[16].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[16].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[17].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-gewicht to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[17].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-gewicht to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[17].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[17].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[18].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-groesse to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[18].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-groesse to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[18].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[18].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[19].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -2537,28 +2537,28 @@ INFORMATION: StructureDefinition.snapshot.element[38].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[39].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[41].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[41].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[42].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[42].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[42].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[42].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[43].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[43].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[43].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[43].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[44].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[44].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[44].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[44].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[45].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[45].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[45].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[45].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[46].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[46].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[46].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[46].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[47].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[47].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[47].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[47].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[48].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[48].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[48].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[48].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[49].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[49].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[49].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[49].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[50].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -2582,12 +2582,12 @@ INFORMATION: StructureDefinition.snapshot.element[63].constraint[1].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[64].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[64].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[65].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[66].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[66].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[66].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[67].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[69].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[69].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[70].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[70].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[70].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[70].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[71].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -2596,24 +2596,24 @@ INFORMATION: StructureDefinition.snapshot.element[72].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[73].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[74].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[75].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.differential.element[6].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[7].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-gewicht to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[8].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-groesse to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[6].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[7].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-gewicht to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[8].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-groesse to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.differential.element[10].binding.valueSet: Pinned the version of http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html to 2025.3.20250714
 INFORMATION: StructureDefinition.differential.element[11].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
-INFORMATION: StructureDefinition.differential.element[23].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[24].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[25].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[26].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[27].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[28].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[29].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[30].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[23].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[24].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[25].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[26].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[27].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[28].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[29].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[30].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.differential.element[33].binding.valueSet: Pinned the version of http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html to 2025.3.20250714
 INFORMATION: StructureDefinition.differential.element[36].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/body-site to 4.0.1
 INFORMATION: StructureDefinition.differential.element[37].binding.valueSet: Pinned the version of http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html to 2025.3.20250714
-INFORMATION: StructureDefinition.differential.element[40].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[43].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[40].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[43].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition/mii-pr-bildgebung-bildgebungsstudie: StructureDefinition.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: StructureDefinition/mii-pr-bildgebung-bildgebungsstudie: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/mii-pr-bildgebung-bildgebungsstudie: StructureDefinition.snapshot.element[33].binding.valueSet: A definition could not be found for Canonical URL 'http://www.rsna.org/RadLex_Playbook.aspx'
@@ -3161,17 +3161,17 @@ INFORMATION: StructureDefinition.snapshot.element[12].binding.extension[0].value
 INFORMATION: StructureDefinition.snapshot.element[13].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[15].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[15].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[16].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[16].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[16].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[16].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[17].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[17].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[17].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[17].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[18].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[18].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[19].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[20].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[21].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[21].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[21].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[22].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[23].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -3206,7 +3206,7 @@ INFORMATION: StructureDefinition.snapshot.element[51].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[52].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[53].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[54].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[54].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[54].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[56].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[56].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[57].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -3247,7 +3247,7 @@ INFORMATION: StructureDefinition.snapshot.element[90].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[91].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[92].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[93].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[93].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[93].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[95].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[95].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[96].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.3.0
@@ -3283,12 +3283,12 @@ INFORMATION: StructureDefinition.snapshot.element[119].constraint[0].source: Pin
 INFORMATION: StructureDefinition.snapshot.element[120].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[121].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[122].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.differential.element[6].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[7].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[8].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[22].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[6].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[7].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[8].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[22].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.differential.element[23].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
-INFORMATION: StructureDefinition.differential.element[33].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[33].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.differential.element[34].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.3.0
 INFORMATION: StructureDefinition.differential.element[35].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Observation to 4.0.1
 INFORMATION: StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung: StructureDefinition.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
@@ -3303,7 +3303,7 @@ WARNING: StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung: Struct
 WARNING: StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 INFORMATION: Resource: The resource StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-mii-pr-bildgebung-radiologische-messung.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung to 2027.0.0-ballot
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/DomainResource to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/DomainResource to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[2].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/DomainResource to 4.0.1
@@ -3326,17 +3326,17 @@ INFORMATION: StructureDefinition.snapshot.element[12].binding.extension[0].value
 INFORMATION: StructureDefinition.snapshot.element[13].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[15].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[15].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[16].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[16].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[16].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[16].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[17].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[17].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[17].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[17].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[18].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[18].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[19].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[20].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[21].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[21].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[21].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[22].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[23].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -3365,7 +3365,7 @@ INFORMATION: StructureDefinition.snapshot.element[45].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[46].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[47].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[48].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[48].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[48].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[50].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[50].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[51].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -3406,7 +3406,7 @@ INFORMATION: StructureDefinition.snapshot.element[84].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[85].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[86].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[87].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[87].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[87].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[89].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[89].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[90].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.3.0
@@ -3523,7 +3523,7 @@ INFORMATION: StructureDefinition.snapshot.element[20].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[21].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[21].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[22].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[23].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[23].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[23].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/CarePlan to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[23].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[24].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -3575,7 +3575,7 @@ INFORMATION: StructureDefinition.snapshot.element[69].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[70].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[71].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[72].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[72].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[72].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[74].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[74].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[75].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -3584,7 +3584,7 @@ INFORMATION: StructureDefinition.snapshot.element[77].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[78].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[79].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[80].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[80].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[80].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[82].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[82].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[83].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -3604,7 +3604,7 @@ INFORMATION: StructureDefinition.snapshot.element[95].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[96].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[97].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[98].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[99].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[99].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[99].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[100].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[102].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -3634,7 +3634,7 @@ INFORMATION: StructureDefinition.snapshot.element[123].constraint[0].source: Pin
 INFORMATION: StructureDefinition.snapshot.element[124].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[125].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[126].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[126].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[126].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[128].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[128].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[129].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -3647,13 +3647,13 @@ INFORMATION: StructureDefinition.snapshot.element[135].constraint[0].source: Pin
 INFORMATION: StructureDefinition.differential.element[6].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo to 5.3.0
 INFORMATION: StructureDefinition.differential.element[7].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/DiagnosticReport to 4.0.1
 INFORMATION: StructureDefinition.differential.element[7].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Procedure to 4.0.1
-INFORMATION: StructureDefinition.differential.element[8].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[8].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.differential.element[8].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/CarePlan to 4.0.1
-INFORMATION: StructureDefinition.differential.element[21].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[22].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[21].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[22].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.differential.element[23].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
-INFORMATION: StructureDefinition.differential.element[30].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot
-INFORMATION: StructureDefinition.differential.element[37].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[30].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie to 2027.0.0-ballot.1
+INFORMATION: StructureDefinition.differential.element[37].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition/mii-pr-bildgebung-radiologischer-befund: StructureDefinition.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: StructureDefinition/mii-pr-bildgebung-radiologischer-befund: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/mii-pr-bildgebung-radiologischer-befund: StructureDefinition.snapshot.element[16].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.3.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (from hl7.fhir.uv.extensions.r4#5.3.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo' to 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo|5.3.0'
@@ -3800,13 +3800,13 @@ INFORMATION: StructureDefinition.snapshot.element[110].constraint[0].source: Pin
 INFORMATION: StructureDefinition.snapshot.element[111].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[112].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[113].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[114].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[114].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition.snapshot.element[114].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[115].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[116].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[14].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
 INFORMATION: StructureDefinition.differential.element[16].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Practitioner to 4.0.1
-INFORMATION: StructureDefinition.differential.element[32].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[32].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund to 2027.0.0-ballot.1
 INFORMATION: StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht: StructureDefinition.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht: StructureDefinition.differential.element[7].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -3841,56 +3841,56 @@ INFORMATION: ValueSet.compose.include[0].valueSet[0]: Pinned the version of http
 INFORMATION: ValueSet.compose.include[1].valueSet[0]: Pinned the version of http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4010.html to 2025.3.20250714
 WARNING: ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-WARNING: ValueSet.where(id = 'mii-vs-bildgebung-imagingStudy-series-view-position'): Unable to expand included value set 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html': Error from http://127.0.0.1:8090/fhir: Error: [e5bfb04e-cfb1-44b2-b02c-80968a9bd12e]: A usable code system with URL http://snomed.info/srt could not be resolved.
-Information: X-Request-Id: d41da8fc-ad3d-4ed5-8409-5d6b502a9b69 (and Error from http://127.0.0.1:8090/fhir: Error: [626b6fb5-75bc-46c1-8394-0bd9d27e1484]: A usable code system with URL http://snomed.info/srt could not be resolved.
-Information: X-Request-Id: 7eaa8306-0bf2-4a7d-9dd1-f5acd9787cf9)
-WARNING: ValueSet.where(id = 'mii-vs-bildgebung-imagingStudy-series-view-position'): Unable to expand included value set 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html': Error from http://127.0.0.1:8090/fhir: Error: [e5bfb04e-cfb1-44b2-b02c-80968a9bd12e]: A usable code system with URL http://snomed.info/srt could not be resolved.
-Information: X-Request-Id: d41da8fc-ad3d-4ed5-8409-5d6b502a9b69 (and Error from http://127.0.0.1:8090/fhir: Error: [49304eb0-5d50-4cf6-9262-26be73cb1a36]: A usable code system with URL http://snomed.info/srt could not be resolved.
-Information: X-Request-Id: 0c3ef15c-7da5-4c56-a674-acb163d73690)
+WARNING: ValueSet.where(id = 'mii-vs-bildgebung-imagingStudy-series-view-position'): Unable to expand included value set 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html': Error from http://127.0.0.1:8090/fhir: Error: [bfad6a1e-7b5c-4942-8555-d76fb2ccd6cb]: A usable code system with URL http://snomed.info/srt could not be resolved.
+Information: X-Request-Id: aeb31635-ae3d-4a7e-94c1-8d940ed649d0 (and Error from http://127.0.0.1:8090/fhir: Error: [a6e07021-70f4-4eda-b6cd-331744c8a108]: A usable code system with URL http://snomed.info/srt could not be resolved.
+Information: X-Request-Id: 168d7c08-2cb5-4c60-8dae-864de6b9508f)
+WARNING: ValueSet.where(id = 'mii-vs-bildgebung-imagingStudy-series-view-position'): Unable to expand included value set 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html': Error from http://127.0.0.1:8090/fhir: Error: [bfad6a1e-7b5c-4942-8555-d76fb2ccd6cb]: A usable code system with URL http://snomed.info/srt could not be resolved.
+Information: X-Request-Id: aeb31635-ae3d-4a7e-94c1-8d940ed649d0 (and Error from http://127.0.0.1:8090/fhir: Error: [d2056c4c-273f-48ec-8def-59f35a435481]: A usable code system with URL http://snomed.info/srt could not be resolved.
+Information: X-Request-Id: 998e015e-067d-4d84-9cf6-393b695166bc)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-ct.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-ct: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-ct: ValueSet.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: ValueSet/mii-vs-bildgebung-instance-image-type-ct: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-instance-image-type-ct should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-mr.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-mr: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-mr: ValueSet.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: ValueSet/mii-vs-bildgebung-instance-image-type-mr: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-instance-image-type-mr should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-nm.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-nm: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-nm: ValueSet.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: ValueSet/mii-vs-bildgebung-instance-image-type-nm: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-instance-image-type-nm should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-nm-implementation.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation: ValueSet.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-patient-examination.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination: ValueSet.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-pixel-data.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data: ValueSet.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-us.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-us: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-us: ValueSet.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
@@ -3898,7 +3898,7 @@ WARNING: ValueSet/mii-vs-bildgebung-instance-image-type-us: ValueSet.jurisdictio
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-instance-image-type-us should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-us-implementation.json ==
 ERROR: ValueSet.where(url = 'https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation'): Conformance resource /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-us-implementation.json - the canonical URL (https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implementation) does not match the URL (https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 ERROR: ValueSet.url: Resource id/url mismatch: mii-vs-bildgebung-instance-image-type-us-implementation/https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation
 INFORMATION: ValueSet/mii-vs-bildgebung-instance-image-type-us-implementation: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -3907,14 +3907,14 @@ WARNING: ValueSet/mii-vs-bildgebung-instance-image-type-us-implementation: Value
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-instance-image-type-us-implementation should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /home/runner/work/kerndatensatz-bildgebung/kerndatensatz-bildgebung/fsh-generated/resources/ValueSet-mii-vs-bildgebung-instance-image-type-us-implementation: URL Mismatch https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implementation vs https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-mr-scanning-sequence.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-bildgebung-mr-scanning-sequence: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ValueSet/mii-vs-bildgebung-mr-scanning-sequence: ValueSet.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: ValueSet/mii-vs-bildgebung-mr-scanning-sequence: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-mr-scanning-sequence should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-mr-scanning-sequence-variant.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant: ValueSet.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
@@ -3925,14 +3925,14 @@ INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir
 WARNING: ValueSet/mii-vs-bildgebung-observation-body-site-sct: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-observation-body-site-sct should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-pt-series-type-spacial.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-bildgebung-pt-series-type-spacial: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ValueSet/mii-vs-bildgebung-pt-series-type-spacial: ValueSet.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 WARNING: ValueSet/mii-vs-bildgebung-pt-series-type-spacial: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-pt-series-type-spacial should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-pt-series-type-volumetric.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-bildgebung-pt-series-type-volumetric: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ValueSet/mii-vs-bildgebung-pt-series-type-volumetric: ValueSet.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
@@ -3943,7 +3943,7 @@ INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir
 WARNING: ValueSet/mii-vs-bildgebung-service-request-code-sct: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-bildgebung-service-request-code-sct should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-bildgebung-us-transducer-type.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type to 2027.0.0-ballot
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type to 2027.0.0-ballot.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-bildgebung-us-transducer-type: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ValueSet/mii-vs-bildgebung-us-transducer-type: ValueSet.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7

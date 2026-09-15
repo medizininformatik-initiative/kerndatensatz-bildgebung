@@ -1,4 +1,4 @@
-# Metadaten-Übersicht - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# Metadaten-Übersicht - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Metadaten-Übersicht**

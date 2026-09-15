@@ -1,4 +1,4 @@
-# Logische Modelle - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# Logische Modelle - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Logische Modelle**

@@ -10,7 +10,7 @@
     <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-bildgebung-imagingStudy-series-view-position</b></p><a name="de-mii-vs-bildgebung-imagingStudy-series-view-position"> </a><a name="de-hcmii-vs-bildgebung-imagingStudy-series-view-position"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html">ViewforMammography</a></li><li>Import all the codes that are contained in <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4010.html">DXView</a></li></ul></div>
   </text>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position"/>
-  <version value="2027.0.0-ballot"/>
+  <version value="2027.0.0-ballot.1"/>
   <name value="MII_VS_Bildgebung_ImagingStudy_Series_View_Position"/>
   <title value="MII VS Bildgebung ImagingStudy-Series View Position"/>
   <status value="active"/>

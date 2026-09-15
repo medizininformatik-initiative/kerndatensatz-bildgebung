@@ -1,4 +1,4 @@
-# MII LM Bildgebung - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# MII LM Bildgebung - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung | *Version*:2027.0.0-ballot.1 |
 | Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_LM_Bildgebung |
 
  
@@ -99,7 +99,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-bildg
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/LogicalModel/Bildgebung",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_LM_Bildgebung",
   "_name" : {
     "extension" : [{

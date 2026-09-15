@@ -1,4 +1,4 @@
-# Versioning - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# Versioning - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * **Versioning**

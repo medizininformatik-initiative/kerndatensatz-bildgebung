@@ -1,4 +1,4 @@
-# MII VS Bildgebung Instance Image Type MR - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# MII VS Bildgebung Instance Image Type MR - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr | *Version*:2027.0.0-ballot.1 |
 | Active as of 2026-09-15 | *Computable Name*:MII_VS_Bildgebung_Instance_Image_Type_MR |
 
  
@@ -50,7 +50,7 @@ Import the ValueSet for Instance Image Type MR
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_VS_Bildgebung_Instance_Image_Type_MR",
   "title" : "MII VS Bildgebung Instance Image Type MR",
   "status" : "active",

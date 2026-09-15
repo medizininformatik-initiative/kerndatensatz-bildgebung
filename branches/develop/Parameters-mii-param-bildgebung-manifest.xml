@@ -31,23 +31,23 @@
   </parameter>
   <parameter>
     <name value="system-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="system-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="system-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="system-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-series-type|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="system-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -599,51 +599,51 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -667,35 +667,35 @@
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -707,15 +707,15 @@
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
@@ -739,15 +739,15 @@
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-volumetric|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-volumetric|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -823,7 +823,7 @@
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -863,7 +863,7 @@
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -871,15 +871,15 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-gewicht|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-gewicht|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-groesse|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-groesse|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
@@ -887,35 +887,35 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
@@ -927,7 +927,7 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
@@ -963,15 +963,15 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -979,11 +979,11 @@
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc|2027.0.0-ballot"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc|2027.0.0-ballot.1"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>

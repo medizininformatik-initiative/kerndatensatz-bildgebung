@@ -1,4 +1,4 @@
-# MII Example Bildgebung Radiologische Messung - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# MII Example Bildgebung Radiologische Messung - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

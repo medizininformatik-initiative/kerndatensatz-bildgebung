@@ -1,4 +1,4 @@
-# Home - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# Home - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ImplementationGuide/mii-ig-bildgebung | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ImplementationGuide/mii-ig-bildgebung | *Version*:2027.0.0-ballot.1 |
 | Active as of 2026-09-15 | *Computable Name*:MII_IG_Bildgebung |
 
 ### Introduction
@@ -17,7 +17,7 @@ This specification describes the FHIR representation of the Core Dataset (CDS) m
 | | |
 | :--- | :--- |
 | Date | 2026-09-15 |
-| Version | 2027.0.0-ballot (CalVer`YYYY.n.n`) |
+| Version | 2027.0.0-ballot.1 (CalVer`YYYY.n.n`) |
 | Status | active |
 | Realm | DE |
 

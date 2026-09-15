@@ -1,4 +1,4 @@
-# MII CS Bildgebung Transducer Type - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# MII CS Bildgebung Transducer Type - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type | *Version*:2027.0.0-ballot.1 |
 | Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_CS_Bildgebung_Transducer_Type |
 
  
@@ -44,7 +44,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-transducer-type",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_CS_Bildgebung_Transducer_Type",
   "_name" : {
     "extension" : [{

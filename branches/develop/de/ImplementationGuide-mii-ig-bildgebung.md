@@ -1,4 +1,4 @@
-# MII ImplementationGuide Ressource - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# MII ImplementationGuide Ressource - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **MII ImplementationGuide Ressource**
@@ -126,7 +126,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     },
     {
       "url" : "version",
-      "valueString" : "2027.0.0-ballot"
+      "valueString" : "2027.0.0-ballot.1"
     },
     {
       "url" : "uri",
@@ -145,7 +145,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     "valueContactDetail" : {
       "telecom" : [{
         "system" : "email",
-        "value" : "TODO:REVIEW"
+        "value" : "kds-bildgebung@medizininformatik-initiative.de"
       }]
     }
   },
@@ -226,7 +226,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ImplementationGuide/mii-ig-bildgebung",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_IG_Bildgebung",
   "title" : "MII IG Kerndatensatz-Modul Bildgebung",
   "status" : "active",

@@ -17,7 +17,7 @@
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_PR_Bildgebung_Radiologische_Messung",
   "title" : "MII PR Bildgebung Radiologische Messung",
   "status" : "active",
@@ -72,7 +72,7 @@
   "snapshot" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString" : "2027.0.0-ballot"
+      "valueString" : "2027.0.0-ballot.1"
     }],
     "element" : [{
       "id" : "Observation",

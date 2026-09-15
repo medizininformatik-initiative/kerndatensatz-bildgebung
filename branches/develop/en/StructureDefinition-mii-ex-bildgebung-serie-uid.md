@@ -1,4 +1,4 @@
-# MII EX Bildgebung Bildnummer - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# MII EX Bildgebung Bildnummer - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-14 | *Computable Name*:MII_EX_Bildgebung_Serie_UID |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid | *Version*:2027.0.0-ballot.1 |
+| Active as of 2026-09-15 | *Computable Name*:MII_EX_Bildgebung_Serie_UID |
 
 The extension allows specifying the reason for the imaging procedure from the corresponding DICOM tag at the study level.
 
@@ -61,7 +61,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-bildgebung
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_EX_Bildgebung_Serie_UID",
   "_name" : {
     "extension" : [{
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-bildgebung
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-14T19:47:15+00:00",
+  "date" : "2026-09-15T06:37:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{

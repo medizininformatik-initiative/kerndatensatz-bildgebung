@@ -20,12 +20,12 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid"/>
-  <version value="2027.0.0-ballot"/>
+  <version value="2027.0.0-ballot.1"/>
   <name value="MII_EX_Bildgebung_Serie_UID"/>
   <title value="MII EX Bildgebung Bildnummer"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-14T19:47:15+00:00"/>
+  <date value="2026-09-15T06:37:19+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>

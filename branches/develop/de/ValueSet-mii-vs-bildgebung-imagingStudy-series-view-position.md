@@ -1,4 +1,4 @@
-# MII VS Bildgebung ImagingStudy-Series View Position - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# MII VS Bildgebung ImagingStudy-Series View Position - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position | *Version*:2027.0.0-ballot.1 |
 | Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_VS_Bildgebung_ImagingStudy_Series_View_Position |
 | **Copyright/Rechtliches**: This value set includes content from DICOM (https://www.dicomstandard.org/). DICOM® is the registered trademark of the National Electrical Manufacturers Association (NEMA) for its Standards publications relating to digital communications of medical information. | |
 
@@ -43,7 +43,7 @@ No Expansion for this valueset (Unknown Code System)
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_VS_Bildgebung_ImagingStudy_Series_View_Position",
   "title" : "MII VS Bildgebung ImagingStudy-Series View Position",
   "status" : "active",

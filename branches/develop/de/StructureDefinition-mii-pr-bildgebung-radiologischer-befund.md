@@ -1,4 +1,4 @@
-# MII PR Bildgebung Radiologischer Befund - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# MII PR Bildgebung Radiologischer Befund - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund | *Version*:2027.0.0-ballot.1 |
 | Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_PR_Bildgebung_Radiologischer_Befund |
 
  
@@ -169,7 +169,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-bildg
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_PR_Bildgebung_Radiologischer_Befund",
   "_name" : {
     "extension" : [{

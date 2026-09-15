@@ -35,7 +35,7 @@
       <valueId value="de.medizininformatikinitiative.kerndatensatz.bildgebung"/>
     </extension>
     <extension url="version">
-      <valueString value="2027.0.0-ballot"/>
+      <valueString value="2027.0.0-ballot.1"/>
     </extension>
     <extension url="uri">
       <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung"/>
@@ -50,7 +50,7 @@
     <valueContactDetail>
       <telecom>
         <system value="email"/>
-        <value value="TODO:REVIEW"/>
+        <value value="kds-bildgebung@medizininformatik-initiative.de"/>
       </telecom>
     </valueContactDetail>
   </extension>
@@ -121,7 +121,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ImplementationGuide/mii-ig-bildgebung"/>
-  <version value="2027.0.0-ballot"/>
+  <version value="2027.0.0-ballot.1"/>
   <name value="MII_IG_Bildgebung"/>
   <title value="MII IG Kerndatensatz-Modul Bildgebung"/>
   <status value="active"/>
