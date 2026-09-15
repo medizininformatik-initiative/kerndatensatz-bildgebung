@@ -3,7 +3,7 @@
       "4.0.1"
     ],
     "name": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
-    "version": "2027.0.0-ballot",
+    "version": "2027.0.0-ballot.1",
     "description": "Medizininformatik Initiative - Modul Bildgebung",
     "author": "lucasscherer",
     "dependencies": {
@@ -12,8 +12,9 @@
       "de.medizininformatikinitiative.kerndatensatz.medikation": "2027.0.0-ballot",
       "de.medizininformatikinitiative.kerndatensatz.meta": "2027.0.0-ballot",
       "hl7.fhir.uv.extensions.r4": "5.3.0",
-      "hl7.fhir.r4.core": "4.0.1",
-      "de.basisprofil.r4": "1.6.0"
+      "de.basisprofil.r4": "1.6.0",
+      "hl7.fhir.uv.crmi": "2.0.0",
+      "hl7.terminology.r4": "7.3.0"
     },
     "jurisdiction": "urn:iso:std:iso:3166#DE"
   }

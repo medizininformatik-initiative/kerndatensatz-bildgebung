@@ -12,7 +12,7 @@ Sekundärnutzung klinischer Routinedaten für die medizinische Forschung.
 | Veröffentlichung |                                     |
 | ---------------- | ----------------------------------- |
 | Datum            | 15.09.2026                          |
-| Version          | 2027.0.0-ballot (CalVer `YYYY.n.n`) |
+| Version          | 2027.0.0-ballot.1 (CalVer `YYYY.n.n`) |
 | Status           | active                              |
 | Realm            | DE                                  |
 
