@@ -1,4 +1,4 @@
-# MII EX Bildgebung Kontrastmittel - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot
+# MII EX Bildgebung Kontrastmittel - MII IG Kerndatensatz-Modul Bildgebung v2027.0.0-ballot.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel | *Version*:2027.0.0-ballot |
-| Active Stand: 2026-09-14 | *Maschinenlesbarer Name*:MII_EX_Bildgebung_Kontrastmittel |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel | *Version*:2027.0.0-ballot.1 |
+| Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_EX_Bildgebung_Kontrastmittel |
 
 Die Extension ermöglicht es, die Gabe von Kontrastmitteln auf Serien-Ebene anzugeben.
 
@@ -100,7 +100,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-bildg
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.1",
   "name" : "MII_EX_Bildgebung_Kontrastmittel",
   "_name" : {
     "extension" : [{
@@ -131,7 +131,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-bildg
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-14T20:28:51+00:00",
+  "date" : "2026-09-15T08:26:06+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{

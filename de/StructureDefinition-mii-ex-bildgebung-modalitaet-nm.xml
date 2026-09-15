@@ -60,12 +60,12 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm"/>
-  <version value="2027.0.0-ballot"/>
+  <version value="2027.0.0-ballot.1"/>
   <name value="MII_EX_Bildgebung_Modalitaet_NM"/>
   <title value="MII EX Bildgebung Modalität PT/NM"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-14T20:28:51+00:00"/>
+  <date value="2026-09-15T08:26:06+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>

@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Diagnostic_Report_Code_LNC",
     "title" : "MII VS Bildgebung DiagnosticReport Code Loinc",
@@ -13,7 +13,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Diagnostic_Report_Code_SCT",
     "title" : "MII VS Bildgebung DiagnosticReport Code SCT",
@@ -25,7 +25,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-lnc",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Findings_LNC",
     "title" : "MII VS Bildgebung Findings Loinc",
@@ -34,7 +34,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Findings_SCT",
     "title" : "MII VS Bildgebung Findings SCT",
@@ -42,14 +42,14 @@
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
-    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund",
     "StructureDefinition-mii-pr-bildgebung-radiologische-beobachtung.html" : "MII PR Bildgebung Radiologische Beobachtung",
+    "StructureDefinition-mii-pr-bildgebung-radiologischer-befund.html" : "MII PR Bildgebung Radiologischer Befund",
+    "StructureDefinition-mii-pr-bildgebung-anforderung-bildgebung.html" : "MII PR Bildgebung Anforderung Bildgebung",
     "StructureDefinition-mii-pr-bildgebung-radiologische-messung.html" : "MII PR Bildgebung Radiologische Messung"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_ImagingProcedure_Code_SCT",
     "title" : "MII VS Bildgebung ImagingProcedure Code SCT",
@@ -61,7 +61,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imagingStudy-series-view-position",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_ImagingStudy_Series_View_Position",
     "title" : "MII VS Bildgebung ImagingStudy-Series View Position",
@@ -73,7 +73,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Instance_Image_Type_CT",
     "title" : "MII VS Bildgebung Instance Image Type CT",
@@ -85,7 +85,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-mr",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Instance_Image_Type_MR",
     "title" : "MII VS Bildgebung Instance Image Type MR",
@@ -97,7 +97,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Instance_Image_Type_NM",
     "title" : "MII VS Bildgebung Instance Image Type NM",
@@ -109,7 +109,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-nm-implementation",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Instance_Image_Type_NM_Implementation",
     "title" : "MII VS Bildgebung Instance Image Type NM Implementation",
@@ -121,7 +121,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-patient-examination",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Instance_Image_Type_Patient_Examination",
     "title" : "MII VS Bildgebung Instance Image Type Patient Examination",
@@ -133,7 +133,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-pixel-data",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Instance_Image_Type_Pixel_Data",
     "title" : "MII VS Bildgebung Instance Image Type Pixel Data",
@@ -145,7 +145,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Instance_Image_Type_US",
     "title" : "MII VS Bildgebung Instance Image Type US",
@@ -157,7 +157,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us-implemantation",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Instance_Image_Type_US_Implemantation",
     "title" : "MII VS Bildgebung Instance Image Type US Implemantation",
@@ -169,7 +169,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_MR_Scanning_Sequence",
     "title" : "MII VS Bildgebung Imaging Study MR Scanning Sequence",
@@ -181,7 +181,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence-variant",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_MR_Scanning_Sequence_Variant",
     "title" : "MII VS Bildgebung Imaging Study MR Scanning Sequence Variant",
@@ -193,7 +193,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_Observation_Body_Site_SCT",
     "title" : "MII VS Bildgebung Observation Body Site SCT",
@@ -206,7 +206,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-spacial",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_PT_Series_Type_Spacial",
     "title" : "MII VS Bildgebung Imaging Study PT Series Type Spacial",
@@ -218,7 +218,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-pt-series-type-volumetric",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_PT_Series_Type_Volumetric",
     "title" : "MII VS Bildgebung Imaging Study PT Series Type Volumetric",
@@ -230,7 +230,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-service-request-code-sct",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_ServiceRequest_Code_SCT",
     "title" : "MII VS Bildgebung ServiceRequest Code SCT",
@@ -239,7 +239,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-us-transducer-type",
-    "version" : "2027.0.0-ballot",
+    "version" : "2027.0.0-ballot.1",
     "status" : "active",
     "name" : "MII_VS_Bildgebung_US_Transducer_Type",
     "title" : "MII VS Bildgebung Imaging Study US Transducer Type",
