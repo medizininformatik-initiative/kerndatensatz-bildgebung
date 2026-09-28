@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-09-15 | *Computable Name*:MII_EX_Bildgebung_Serie_UID |
+| Active as of 2026-09-28 | *Computable Name*:MII_EX_Bildgebung_Serie_UID |
 
 The extension allows specifying the reason for the imaging procedure from the corresponding DICOM tag at the study level.
 
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-bildgebung
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-15T06:37:19+00:00",
+  "date" : "2026-09-28T13:30:20+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{

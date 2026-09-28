@@ -251,7 +251,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Sometimes implied by being first"
 "DiagnosticReport.code.coding:sct","DiagnosticReport.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701""/>
+  <system value=""http://snomed.info/sct""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
 "DiagnosticReport.code.coding:sct.id","DiagnosticReport.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -440,7 +440,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Sometimes implied by being first"
 "DiagnosticReport.conclusionCode.coding:sct","DiagnosticReport.conclusionCode.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","SNOMED CT Code","Ein Verweis auf einen von SNOMED CT definierten Code","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701""/>
+  <system value=""http://snomed.info/sct""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
 "DiagnosticReport.conclusionCode.coding:sct.id","DiagnosticReport.conclusionCode.coding.id","","","",0,1,"","","","string {[]} {[]}

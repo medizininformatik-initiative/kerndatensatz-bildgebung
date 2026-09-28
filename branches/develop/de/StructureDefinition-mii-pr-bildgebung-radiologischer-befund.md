@@ -916,7 +916,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-bildg
       "min" : 0,
       "max" : "1",
       "patternCoding" : {
-        "system" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"
+        "system" : "http://snomed.info/sct"
       },
       "mustSupport" : true,
       "binding" : {
@@ -1616,7 +1616,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-bildg
       "min" : 0,
       "max" : "1",
       "patternCoding" : {
-        "system" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"
+        "system" : "http://snomed.info/sct"
       },
       "mustSupport" : true,
       "binding" : {
