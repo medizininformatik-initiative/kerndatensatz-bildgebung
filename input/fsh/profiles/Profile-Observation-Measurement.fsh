@@ -32,7 +32,7 @@ Description: "Dieses Profil beschreibt eine Messung in der radiologischer Bildge
 * method.coding ^slicing.rules = #open
 * method.coding contains
     sct 0..1 MS
-* method.coding[sct] ^patternCoding.system = $sct
+* method.coding[sct] ^patternCoding.system = $sct-no-ver
 * method.coding.system 1.. MS
 * method.coding.code 1.. MS
 * component.value[x] only Quantity

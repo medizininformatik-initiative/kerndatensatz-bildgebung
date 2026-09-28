@@ -63,7 +63,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
     loinc 0..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] from MII_VS_Bildgebung_Diagnostic_Report_Code_LNC (required)
-* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.system = $sct-no-ver
 * code.coding[sct] from MII_VS_Bildgebung_Diagnostic_Report_Code_SCT (required)
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS
@@ -105,7 +105,7 @@ Description: "Diese Ressource beschreibt einen radiologischen Befund"
     sct 0..1 MS
 * conclusionCode.coding[icd10-gm] ^patternCoding.system = $icd-10-gm
 * conclusionCode.coding[icd10-gm] from $icd-10-gm (required)
-* conclusionCode.coding[sct] ^patternCoding.system = $sct
+* conclusionCode.coding[sct] ^patternCoding.system = $sct-no-ver
 * conclusionCode.coding[sct] from MII_VS_Bildgebung_Findings_SCT (required)
 * conclusionCode.coding.system 1.. MS
 * conclusionCode.coding.code 1.. MS
