@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel | *Version*:2027.0.0-ballot.1 |
-| Active as of 2026-09-28 | *Computable Name*:MII_EX_Bildgebung_Kontrastmittel |
+| Active as of 2026-11-05 | *Computable Name*:MII_EX_Bildgebung_Kontrastmittel |
 
 The extension allows specifying the administration of contrast agents at the series level.
 
@@ -102,7 +102,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-bildgebung
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-28T13:30:20+00:00",
+  "date" : "2026-11-05T12:55:42+00:00",
   "publisher" : "Medizininformatik Initiative",
   "_publisher" : {
     "extension" : [{
