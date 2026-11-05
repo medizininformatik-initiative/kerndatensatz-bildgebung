@@ -37,7 +37,7 @@ Description: "Dieses Profil beschreibt eine Messung in der radiologischer Bildge
 * method.coding.code 1.. MS
 * component.value[x] only Quantity
 * component.valueQuantity.system = $ucum
-* component.code.coding.system = $sct
+* component.code.coding.system = $sct-no-ver
 
 //Translation Profile
 * insert AddSnomedCodingTranslation(category.coding[sct])
