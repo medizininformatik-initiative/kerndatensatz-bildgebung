@@ -13,6 +13,15 @@ Description: "Scanning Sequence für MR Untersuchungen"
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40 
 * insert PR_CS_VS_Date
+* insert CRMIShareableCodeSystem
+* insert CRMIPublishableCodeSystem
+* insert CRMIKnowledgeCapabilitiesCodeSystem
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIApprovalDate(2024-12-19)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactContributors
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C115715)
 * ^caseSensitive = true
 * ^valueSet = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence"
 * ^content = #complete

@@ -110,22 +110,10 @@
           }
         ]
       }
-    },
-    {
-      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "CC-BY-4.0",
-            "system": "http://hl7.org/fhir/spdx-license",
-            "display": "Creative Commons Attribution 4.0 International"
-          }
-        ]
-      }
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur",
-  "version": "2027.0.0-ballot.1",
+  "version": "2027.0.0-ballot",
   "name": "MII_PR_Bildgebung_Bildgebungsprozedur",
   "_name": {
     "extension": [

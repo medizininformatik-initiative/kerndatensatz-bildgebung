@@ -6,6 +6,15 @@ Description: "Import the ValueSets for view position in MG and DX/CR series"
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
 * insert DICOM_Copyright
+* insert CRMIShareableValueSet
+* insert CRMIPublishableValueSet
+* insert CRMIKnowledgeCapabilitiesValueSet
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactContributors
+* insert CRMIApprovalDate(2024-12-19)
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C115715)
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 * include codes from valueset http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4014.html

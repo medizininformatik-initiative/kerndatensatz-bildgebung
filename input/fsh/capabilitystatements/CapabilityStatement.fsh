@@ -5,6 +5,16 @@ Usage: #definition
 * insert SP_Publisher
 * insert Date
 * insert LicenseCodeableCCBY40Instance
+* insert CRMIShareableCapabilityStatement
+* insert CRMIPublishableCapabilityStatement
+* insert CRMIKnowledgeCapabilitiesCapabilityStatement
+* insert CRMIVersionPolicyStrictInstance
+* insert CRMIPackageSource
+* insert CRMIArtifactUsageCapabilityStatement
+* insert CRMIApprovalDateInstance(2024-12-19)
+* insert CRMIResourceEffectivePeriodInstance
+* insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C115715)
+* insert CRMIArtifactContributorsInstance
 * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CapabilityStatement/metadata"
 * name = "MII_CPS_Bildgebung_CapabilityStatement"
 * title = "MII CPS Bildgebung CapabilityStatement"

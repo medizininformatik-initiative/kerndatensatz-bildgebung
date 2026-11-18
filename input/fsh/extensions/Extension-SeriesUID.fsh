@@ -12,6 +12,16 @@ Description: "Die Extension ermöglicht es, den Bildnummer aus dem entsprechende
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
 * insert Publisher
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageExtension
+* insert CRMIApprovalDate(2024-12-19)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C115715)
+* insert CRMIArtifactContributors
 * insert ExtensionContext(Observation)
 * ^experimental = false
 //Extension

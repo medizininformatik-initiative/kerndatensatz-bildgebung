@@ -17,7 +17,7 @@
 //   "2019+ Medical Informatics Initiative (MII)" → "2024+ …"
 //   the basis artifact-author contact email      → TODO:REVIEW
 // The approval date and the artifact topic stay RuleSet PARAMETERS (as in
-// basis); pass 2026-08-27 / {{TOPIC_NCI_CODE}} at the call site.
+// basis); pass 2026-08-28 / C38081 at the call site.
 // ─────────────────────────────────────────────────────────────────────────────
 
 // ── Resource-independent version policy ──────────────────────────────────────
@@ -45,7 +45,7 @@ RuleSet: CRMICopyrightLabelInstance
 * extension[=].valueString = "2024+ Medical Informatics Initiative (MII)"
 
 // ── Approval date (StructureDefinition, CapabilityStatement, IG) ─────────────
-// Call with the module's approval date, e.g. `insert CRMIApprovalDate(2026-08-27)`.
+// Call with the module's approval date, e.g. `insert CRMIApprovalDate(2026-08-28)`.
 
 RuleSet: CRMIApprovalDate(approvalDate)
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/resource-approvalDate"
@@ -58,7 +58,7 @@ RuleSet: CRMIApprovalDateInstance(approvalDate)
 // ── Artifact topic (StructureDefinition, CapabilityStatement, IG, CS, VS) ────
 // MII codes module topics with the NCI Thesaurus. Call with the system and the
 // module's topic code, e.g.
-//   insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, {{TOPIC_NCI_CODE}})
+//   insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C38081)
 // Repeat the insert for each topic of the module.
 
 RuleSet: CRMIArtifactTopic(system, code)
