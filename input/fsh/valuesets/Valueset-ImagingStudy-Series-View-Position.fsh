@@ -6,6 +6,7 @@ Description: "Import the ValueSets for view position in MG and DX/CR series"
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
 * insert DICOM_Copyright
+* insert LicenseCodeableCCBY40
 * insert CRMIShareableValueSet
 * insert CRMIPublishableValueSet
 * insert CRMIKnowledgeCapabilitiesValueSet

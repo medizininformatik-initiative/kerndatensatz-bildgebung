@@ -6,6 +6,7 @@ Description: "Import the ValueSet for MR Scanning Sequence Variant"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
+* insert LicenseCodeableCCBY40
 * insert CRMIShareableValueSet
 * insert CRMIPublishableValueSet
 * insert CRMIKnowledgeCapabilitiesValueSet

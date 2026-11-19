@@ -6,6 +6,7 @@ Description: "Import the ValueSet for Diagnostic Reports and Service Request"
 * insert PR_CS_VS_Version
 * insert PR_CS_VS_Date
 * insert SNOMED_Copyright
+* insert LicenseCodeableCCBY40
 * insert CRMIShareableValueSet
 * insert CRMIPublishableValueSet
 * insert CRMIKnowledgeCapabilitiesValueSet

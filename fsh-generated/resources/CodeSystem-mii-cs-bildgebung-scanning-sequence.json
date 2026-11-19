@@ -80,45 +80,6 @@
       "display": "Research Mode"
     }
   ],
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem",
-      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
-      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"
-    ],
-    "extension": [
-      {
-        "url": "http://hl7.org/fhir/StructureDefinition/package-source",
-        "extension": [
-          {
-            "url": "packageId",
-            "valueId": "de.medizininformatikinitiative.kerndatensatz.bildgebung"
-          },
-          {
-            "url": "version",
-            "valueString": "2027.0.0-ballot.1"
-          },
-          {
-            "url": "uri",
-            "valueUri": "https://www.medizininformatik-initiative.de/fhir/modul-bildgebung"
-          }
-        ]
-      }
-    ]
-  },
-  "experimental": false,
-  "publisher": "Medizininformatik Initiative",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.medizininformatik-initiative.de"
-        }
-      ]
-    }
-  ],
-  "version": "2027.0.0-ballot",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
@@ -139,10 +100,6 @@
           }
         ]
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
-      "valueCode": "shareable"
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
@@ -191,20 +148,12 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
       "valueContactDetail": {
-        "name": "Interoperability Working Group",
+        "name": "National Steering Committee",
         "telecom": [
           {
             "system": "url",
             "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
-      "valueContactDetail": {
-        "name": "National Steering Committee",
-        "telecom": [
+          },
           {
             "system": "url",
             "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
@@ -215,20 +164,12 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
       "valueContactDetail": {
-        "name": "Interoperability Working Group",
+        "name": "National Steering Committee",
         "telecom": [
           {
             "system": "url",
             "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
-      "valueContactDetail": {
-        "name": "National Steering Committee",
-        "telecom": [
+          },
           {
             "system": "url",
             "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
@@ -248,6 +189,45 @@
       }
     }
   ],
+  "meta": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "packageId",
+            "valueId": "de.medizininformatikinitiative.kerndatensatz.bildgebung"
+          },
+          {
+            "url": "version",
+            "valueString": "2027.0.0-ballot.1"
+          },
+          {
+            "url": "uri",
+            "valueUri": "https://www.medizininformatik-initiative.de/fhir/modul-bildgebung"
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+      }
+    ],
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2027.0.0-ballot",
   "date": "2026-09-15",
   "caseSensitive": true,
   "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-mr-scanning-sequence",

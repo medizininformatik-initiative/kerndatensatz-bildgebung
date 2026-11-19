@@ -5,13 +5,6 @@ RuleSet: SupportResource (resource, expectation)
 * rest.resource[=].extension[0].url = $exp
 * rest.resource[=].extension[0].valueCode = {expectation}
 
-/*
-Error @ CapabilityStatement.rest[0].resource[0].profile (line 66, col73): The extension http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation 
-is not allowed to be used at this point (this element is [CapabilityStatement.rest.resource.profile, canonical]
-
-Remove expectation from profile because it is not allowed there.
-*/
-
 RuleSet: Profile (profile)
 * rest.resource[=].profile[+] = "{profile}"
 //* rest.resource[=].profile[=].extension[0].url = $exp

@@ -16,6 +16,16 @@ Description: "Dieses Profil beschreibt eine Messung in der radiologischer Bildge
 * insert PR_CS_VS_Date
 * insert Publisher
 * insert LicenseCodeableCCBY40
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageProfile
+* insert CRMIApprovalDate(2024-12-19)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C115715)
+* insert CRMIArtifactContributors
 //Profile
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"

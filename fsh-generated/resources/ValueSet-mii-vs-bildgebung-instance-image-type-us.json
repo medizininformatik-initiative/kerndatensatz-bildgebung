@@ -6,18 +6,6 @@
   "title": "MII VS Bildgebung Instance Image Type US",
   "description": "Import the ValueSet for Instance Image Type US",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-us",
-  "publisher": "Medizininformatik Initiative",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.medizininformatik-initiative.de"
-        }
-      ]
-    }
-  ],
-  "version": "2027.0.0-ballot",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
@@ -28,12 +16,16 @@
       }
     },
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
-      "valueCode": "shareable"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
-      "valueCode": "publishable"
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
@@ -78,20 +70,12 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
       "valueContactDetail": {
-        "name": "Interoperability Working Group",
+        "name": "National Steering Committee",
         "telecom": [
           {
             "system": "url",
             "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
-      "valueContactDetail": {
-        "name": "National Steering Committee",
-        "telecom": [
+          },
           {
             "system": "url",
             "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
@@ -102,20 +86,12 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
       "valueContactDetail": {
-        "name": "Interoperability Working Group",
+        "name": "National Steering Committee",
         "telecom": [
           {
             "system": "url",
             "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
-      "valueContactDetail": {
-        "name": "National Steering Committee",
-        "telecom": [
+          },
           {
             "system": "url",
             "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
@@ -139,15 +115,9 @@
       }
     }
   ],
-  "date": "2026-09-15",
   "meta": {
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
-      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
-    ],
     "extension": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/package-source",
         "extension": [
           {
             "url": "packageId",
@@ -161,10 +131,28 @@
             "url": "uri",
             "valueUri": "https://www.medizininformatik-initiative.de/fhir/modul-bildgebung"
           }
-        ]
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/package-source"
       }
+    ],
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
     ]
   },
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2027.0.0-ballot",
+  "date": "2026-09-15",
   "experimental": false,
   "compose": {
     "include": [

@@ -1,6 +1,31 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-bildgebung-bildgebungsprozedur",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
+    ],
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+        "extension": [
+          {
+            "url": "packageId",
+            "valueId": "de.medizininformatikinitiative.kerndatensatz.bildgebung"
+          },
+          {
+            "url": "version",
+            "valueString": "2027.0.0-ballot.1"
+          },
+          {
+            "url": "uri",
+            "valueUri": "https://www.medizininformatik-initiative.de/fhir/modul-bildgebung"
+          }
+        ]
+      }
+    ]
+  },
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
@@ -12,7 +37,7 @@
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
-      "valueCode": "shareable"
+      "valueCode": "publishable"
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
@@ -41,7 +66,7 @@
         "coding": [
           {
             "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "code": "C25218"
+            "code": "C115715"
           }
         ]
       }
@@ -52,7 +77,7 @@
         "telecom": [
           {
             "system": "email",
-            "value": "julian.sass@charite.de"
+            "value": "kds-bildgebung@medizininformatik-initiative.de"
           }
         ]
       }
@@ -66,11 +91,15 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
       "valueContactDetail": {
-        "name": "Interoperability Working Group",
+        "name": "National Steering Committee",
         "telecom": [
           {
             "system": "url",
             "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          },
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
           }
         ]
       }
@@ -90,11 +119,15 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
       "valueContactDetail": {
-        "name": "Interoperability Working Group",
+        "name": "National Steering Committee",
         "telecom": [
           {
             "system": "url",
             "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          },
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
           }
         ]
       }
@@ -109,6 +142,28 @@
             "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
           }
         ]
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
+      "valueDate": "2024-12-19"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2027"
       }
     }
   ],
