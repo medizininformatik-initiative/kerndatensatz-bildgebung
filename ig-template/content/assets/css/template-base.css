@@ -18,8 +18,15 @@
 /* ── Highlight boxes (background-colour highlight) ────────────────────────────
    Reusable, purpose-neutral highlight-box classes the template provides for
    calling out content on a page. A page writes:
-     <div class="ig-highlight ig-highlight-blue"><h5>…</h5><p>…</p></div>
+     <div class="ig-highlight ig-highlight-blue"><h4>…</h4><p>…</p></div>
      Variants: -blue, -green, -orange (warning), -red (important), -grey (hint).
+   The box title is a heading at the level the page outline needs - usually
+   one below the section it sits in (<h4> under a ### section). IG Publisher
+   3.0+ reports a skipped level as an error (HTML_HEADING_LEVEL_SKIPPED), so
+   the rules below style h2-h6 alike, with the look of the former <h5>
+   title, and keep the base template's silver section number off the box
+   title: it is a label, not a section, and must not use up a number of the
+   section it sits in. <h5> keeps working, so existing pages need no change.
    STRUCTURE lives here; the COLOURS are palette variables, so each corporate
    design brings its own set (MII: the kerndatensatz-basis-aligned values;
    NUM-DIZ: values derived from the NUM-DIZ site/logo palette - styleguide §3).
@@ -31,42 +38,51 @@
   border-left: 5px solid;
   border-radius: 3px;
 }
-.ig-highlight h5, .mii-highlight h5 {
+.ig-highlight :is(h2, h3, h4, h5, h6),
+.mii-highlight :is(h2, h3, h4, h5, h6) {
   margin-top: 0;
+  font-size: 14px; /* the base template's h5 size, whatever the level */
+}
+/* More specific than the h2:before ... h6:before numbering rules the base
+   template and each page's own <style> block declare, so it wins in any order. */
+.ig-highlight :is(h2, h3, h4, h5, h6)::before,
+.mii-highlight :is(h2, h3, h4, h5, h6)::before {
+  content: none;
+  counter-increment: none;
 }
 .ig-highlight-blue, .mii-highlight-blue {
   background-color: var(--ig-highlight-blue-bg-color);
   border-left-color: var(--ig-highlight-blue-border-color);
 }
-.ig-highlight-blue h5, .mii-highlight-blue h5 {
+.ig-highlight-blue :is(h2, h3, h4, h5, h6), .mii-highlight-blue :is(h2, h3, h4, h5, h6) {
   color: var(--ig-highlight-blue-heading-color);
 }
 .ig-highlight-green, .mii-highlight-green {
   background-color: var(--ig-highlight-green-bg-color);
   border-left-color: var(--ig-highlight-green-border-color);
 }
-.ig-highlight-green h5, .mii-highlight-green h5 {
+.ig-highlight-green :is(h2, h3, h4, h5, h6), .mii-highlight-green :is(h2, h3, h4, h5, h6) {
   color: var(--ig-highlight-green-heading-color);
 }
 .ig-highlight-orange, .mii-highlight-orange {
   background-color: var(--ig-highlight-orange-bg-color);
   border-left-color: var(--ig-highlight-orange-border-color);
 }
-.ig-highlight-orange h5, .mii-highlight-orange h5 {
+.ig-highlight-orange :is(h2, h3, h4, h5, h6), .mii-highlight-orange :is(h2, h3, h4, h5, h6) {
   color: var(--ig-highlight-orange-heading-color);
 }
 .ig-highlight-red, .mii-highlight-red {
   background-color: var(--ig-highlight-red-bg-color);
   border-left-color: var(--ig-highlight-red-border-color);
 }
-.ig-highlight-red h5, .mii-highlight-red h5 {
+.ig-highlight-red :is(h2, h3, h4, h5, h6), .mii-highlight-red :is(h2, h3, h4, h5, h6) {
   color: var(--ig-highlight-red-heading-color);
 }
 .ig-highlight-grey, .mii-highlight-grey {
   background-color: var(--ig-highlight-grey-bg-color);
   border-left-color: var(--ig-highlight-grey-border-color);
 }
-.ig-highlight-grey h5, .mii-highlight-grey h5 {
+.ig-highlight-grey :is(h2, h3, h4, h5, h6), .mii-highlight-grey :is(h2, h3, h4, h5, h6) {
   color: var(--ig-highlight-grey-heading-color);
 }
 
