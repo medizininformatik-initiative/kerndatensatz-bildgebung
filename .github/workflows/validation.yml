@@ -96,7 +96,7 @@ jobs:
     # ON by default, and only on created modules — the placeholder
     # template repo cannot produce clean SUSHI output for validation.
     if: ${{ vars.ENABLE_VALIDATION != 'false' && !endsWith(github.repository, '/mii-kds-module-template') && needs.dotnet-validation-guard.outputs.has_creds == 'true' }}
-    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_dotnet_validation.yml@1db2e534704d92e5ee0cde663ce3e7ccd8825fa7 # kerndatensatz-meta master @ 2026-07-15
+    uses: medizininformatik-initiative/mii-kds-module-template/.github/workflows/ci_dotnet_validation.yml@0fe43b730ff59ab6fea9c87ffb708f5c64a2dfa0 # v0.15.0
     with:
       ref: ${{ github.event.pull_request.head.ref || github.ref }}
       # Pinned SUSHI (fixed versions); overridable via the repo variable.
@@ -133,7 +133,7 @@ jobs:
     name: HL7 Java validator (SU-TermServ)
     needs: java-validation-guard
     if: ${{ vars.ENABLE_VALIDATION != 'false' && !endsWith(github.repository, '/mii-kds-module-template') && needs.java-validation-guard.outputs.has_cert == 'true' }}
-    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@1db2e534704d92e5ee0cde663ce3e7ccd8825fa7 # kerndatensatz-meta master @ 2026-07-15
+    uses: medizininformatik-initiative/mii-kds-module-template/.github/workflows/ci_java_validation.yml@0fe43b730ff59ab6fea9c87ffb708f5c64a2dfa0 # v0.15.0
     with:
       ref: ${{ github.event.pull_request.head.ref || github.ref }}
       PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
