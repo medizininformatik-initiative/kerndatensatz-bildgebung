@@ -1,0 +1,21 @@
+{
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ImplementationGuide/mii-ig-bildgebung",
+  "name" : "MII_IG_Bildgebung",
+  "title" : "MII IG Kerndatensatz-Modul Bildgebung",
+  "description" : "FHIR profiles for representing imaging procedures, imaging studies, and structured radiological findings and measurements, part of the MII core dataset.",
+  "ig-date" : "2026-09-15",
+  "status" : "active",
+  "package-id" : "de.medizininformatikinitiative.kerndatensatz.bildgebung",
+  "ig-ver" : "2027.0.0-ballot.1",
+  "date" : "Fri, 27 Nov, 2026 14:09:07 +0000",
+  "dateISO8601" : "2026-11-27T14:09:07+00:00",
+  "errs" : 3099,
+  "warnings" : 943,
+  "hints" : 3696,
+  "broken-links" : 4,
+  "suppressed-hints" : 2962,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 2779732296
+}
