@@ -15,12 +15,13 @@ import { parseWorkflowEnvPin } from "./check-updates.mjs";
 const repository = fileURLToPath(new URL("../", import.meta.url));
 
 const WORKFLOWS = [
+  ".github/workflows/ci_build.yml",
   ".github/workflows/go-publish.yml",
   ".github/workflows/ig-publisher.yml",
   ".github/workflows/module-release.yml",
   // Template-repo only — the first-run bootstrap removes it from a created
   // module, which readIfPresent below tolerates. It matters here because the
-  // release demo is the artifact the Pages landing page calls "the release": a
+  // release demo is the artifact the Pages root index calls "the release": a
   // demo rendered by a different IG Publisher than the previews it is compared
   // against would be a silent difference in exactly that artifact.
   ".github/workflows/release-demo.yml",
@@ -33,9 +34,16 @@ function readIfPresent(relativePath) {
   return existsSync(file) ? readFileSync(file, "utf8") : null;
 }
 
-/** The build workflows that exist here — a created module may drop one. */
+// A thin caller of the reusable build (ci_build.yml) carries no toolchain pins
+// of its own: the pins live in the reusable workflow at the caller's SHA.
+const CALLS_REUSABLE_BUILD = /uses:\s*\S*\/\.github\/workflows\/ci_build\.yml@/;
+
+/** The build workflows that exist here and pin the toolchain themselves —
+ * a created module may drop one, or call the reusable build instead. */
 function presentWorkflows() {
-  return WORKFLOWS.map((file) => ({ file, text: readIfPresent(file) })).filter((w) => w.text !== null);
+  return WORKFLOWS.map((file) => ({ file, text: readIfPresent(file) })).filter(
+    (w) => w.text !== null && !CALLS_REUSABLE_BUILD.test(w.text),
+  );
 }
 
 for (const key of KEYS) {
@@ -60,18 +68,20 @@ for (const key of KEYS) {
   });
 }
 
-// validation.yml carries a fourth SUSHI pin in a different shape: a
-// reusable-workflow input with a repository-variable override.
-// parseWorkflowEnvPin would return the literal `${{`, so read the fallback
-// literal directly.
-test("validation.yml's SUSHI fallback matches the build workflows", () => {
+// validation.yml carries further SUSHI pins in a different shape: a
+// reusable-workflow input with a repository-variable override, once per job
+// (.NET and Java). parseWorkflowEnvPin would return the literal `${{`, so read
+// every fallback literal directly.
+test("validation.yml's SUSHI fallbacks match the build workflows", () => {
   const text = readIfPresent(".github/workflows/validation.yml");
   if (text === null) return;
-  const m = text.match(/SUSHI_VERSION:\s*\$\{\{\s*vars\.SUSHI_VERSION\s*\|\|\s*'([^']+)'/);
-  assert.ok(m, "validation.yml has no SUSHI_VERSION reusable-workflow input");
+  const found = [...text.matchAll(/SUSHI_VERSION:\s*\$\{\{\s*vars\.SUSHI_VERSION\s*\|\|\s*'([^']+)'/g)];
+  assert.ok(found.length > 0, "validation.yml has no SUSHI_VERSION reusable-workflow input");
 
   const build = presentWorkflows()[0];
   if (!build) return;
   const pinned = parseWorkflowEnvPin(build.text, "SUSHI_VERSION");
-  assert.equal(m[1], pinned, `validation.yml falls back to SUSHI ${m[1]}, ${build.file} pins ${pinned}`);
+  for (const m of found) {
+    assert.equal(m[1], pinned, `validation.yml falls back to SUSHI ${m[1]}, ${build.file} pins ${pinned}`);
+  }
 });

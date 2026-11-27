@@ -19,8 +19,11 @@ updates:
       day: monday
     target-branch: dev # updates land on the integration branch, never on main
     groups:
+      mii-kds-module-template:
+        patterns: ["medizininformatik-initiative/mii-kds-module-template*"]
       actions:
         patterns: ["*"]
+        exclude-patterns: ["medizininformatik-initiative/mii-kds-module-template*"]
 
   # npm — the publication scripts (scripts/*.mjs) are dependency-free today,
   # but a root package.json may land with them. Until a manifest exists,
